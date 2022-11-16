@@ -82,7 +82,7 @@
   </div>
   <div class="product-page-section">
     <h2 class="with-keyline">
-      _('Send messages manually or automatically')
+      {{_('Send messages manually or automatically')}}
     </h2>
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-half">
@@ -122,15 +122,15 @@
       <h2>{{_('Who’s using GOV.UK Notify')}}</h2>
       <div class="govuk-grid-row bottom-gutter">
         <div class="govuk-grid-column-one-half">
-          <span class="govuk-visually-hidden">There are</span>
-          <div class="product-page-big-number">{{ counts.organisations|format_thousands }}</div>
+          {{_("<span class=\"govuk-visually-hidden\">There are</span>
+          <div class=\"product-page-big-number\">%%s</div>
           organisations
         </div>
-        <div class="govuk-grid-column-one-half">
-          <span class="govuk-visually-hidden">and</span>
-          {{_("<div class=\"product-page-big-number\">%%s</div>
+        <div class=\"govuk-grid-column-one-half\">
+          <span class=\"govuk-visually-hidden\">and</span>
+          <div class=\"product-page-big-number\">%%s</div>
           services
-          <span class=\"govuk-visually-hidden\">using Notify.</span>") % counts.services|format_thousands }}
+          <span class=\"govuk-visually-hidden\">using Notify.</span>") % (counts.organisations|format_thousand, scounts.services|format_thousands) }}
         </div>
       </div>
       <p class="govuk-body">
@@ -141,7 +141,7 @@
   </div>
   <div class="product-page-section">
     <div class="with-keyline bottom-gutter-2">
-      <h2>Pricing</h2>
+      <h2>{{_('Pricing')}}</h2>
       <div class="govuk-grid-row bottom-gutter">
         <div class="govuk-grid-column-one-half">
           <h3 class="govuk-visually-hidden">{{_('Emails')}}</h3>

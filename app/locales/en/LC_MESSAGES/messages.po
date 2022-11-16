@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-16 19:47+0800\n"
+"POT-Creation-Date: 2022-11-16 22:06+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -80,6 +80,10 @@ msgid ""
 "sent"
 msgstr ""
 
+#: templates/views/signedout.html:85
+msgid "Send messages manually or automatically"
+msgstr ""
+
 #: templates/views/signedout.html:90
 msgid ""
 "Upload a spreadsheet of email&nbsp;addresses or\n"
@@ -110,10 +114,16 @@ msgstr ""
 msgid "Who’s using GOV.UK Notify"
 msgstr ""
 
-#: templates/views/signedout.html:131
+#: templates/views/signedout.html:125
 #, python-format
 msgid ""
-"<div class=\"product-page-big-number\">%%s</div>\n"
+"<span class=\"govuk-visually-hidden\">There are</span>\n"
+"          <div class=\"product-page-big-number\">%%s</div>\n"
+"          organisations\n"
+"        </div>\n"
+"        <div class=\"govuk-grid-column-one-half\">\n"
+"          <span class=\"govuk-visually-hidden\">and</span>\n"
+"          <div class=\"product-page-big-number\">%%s</div>\n"
 "          services\n"
 "          <span class=\"govuk-visually-hidden\">using Notify.</span>"
 msgstr ""
@@ -124,6 +134,10 @@ msgid ""
 "See the\n"
 "      <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">list of services and organisations</a>."
+msgstr ""
+
+#: templates/views/signedout.html:144
+msgid "Pricing"
 msgstr ""
 
 #: templates/views/signedout.html:147
@@ -236,4 +250,10 @@ msgstr ""
 #~ " want\n"
 #~ "          to give feedback.\n"
 #~ "        </p>"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "<div class=\"product-page-big-number\">%%s</div>\n"
+#~ "          services\n"
+#~ "          <span class=\"govuk-visually-hidden\">using Notify.</span>"
 #~ msgstr ""
