@@ -38,7 +38,7 @@
               "classes": "product-page-button button-container__button govuk-!-margin-right-3",
               "href": url_for('main.register' )
             }) }}
-            {{ _("or <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%s\">sign in</a> if you’ve used it before") % url_for('.sign_in' ) }}
+            {{ _("or <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">sign in</a> if you’ve used it before") % url_for('.sign_in') }}
           </div>
         </div>
       </div>
@@ -128,14 +128,14 @@
         </div>
         <div class="govuk-grid-column-one-half">
           <span class="govuk-visually-hidden">and</span>
-          {{_("<div class=\"product-page-big-number\">%s</div>
+          {{_("<div class=\"product-page-big-number\">%%s</div>
           services
           <span class=\"govuk-visually-hidden\">using Notify.</span>") % counts.services|format_thousands }}
         </div>
       </div>
       <p class="govuk-body">
       {{_("See the
-      <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%s\">list of services and organisations</a>.") % url_for('main.performance') }}
+      <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">list of services and organisations</a>.") % url_for('main.performance') }}
       </p>
     </div>
   </div>
@@ -152,7 +152,7 @@
           <h3 class="govuk-visually-hidden">{{_('Text messages')}}</h3>
           {{_("<div class=\"product-page-big-number\">Up to 40,000</div>
           free text messages a year,<br>
-          then %s pence per message") % sms_rate }}
+          then %%s pence per message") % sms_rate }}
         </div>
         <div class="govuk-grid-column-one-half">
           <h3 class="govuk-visually-hidden">{{_('Letters')}}</h3>
@@ -180,7 +180,7 @@
           and is supported 24 hours a day, 7 days a week.
         </p>
         <p class=\"govuk-body\">
-          <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%s\">Contact us</a> if you have a question or want
+          <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact us</a> if you have a question or want
           to give feedback.
         </p>") % url_for('main.support') }}
       </div>
