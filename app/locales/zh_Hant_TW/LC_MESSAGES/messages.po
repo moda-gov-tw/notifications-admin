@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-15 16:49+0800\n"
+"POT-Creation-Date: 2022-11-16 12:21+0800\n"
 "PO-Revision-Date: 2022-11-14 22:34+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hant_TW\n"
@@ -25,9 +25,17 @@ msgid ""
 "or the NHS."
 msgstr ""
 
-#: templates/views/signedout.html:9
+#: templates/views/signedout.html:9 templates/views/signedout.html:22
 msgid "GOV.UK Notify"
 msgstr "[TEST] GOV.UK Notify"
+
+#: templates/views/signedout.html:19
+msgid "GOV.UK services"
+msgstr ""
+
+#: templates/views/signedout.html:29
+msgid "Send emails, text messages and letters to your users"
+msgstr ""
 
 #: templates/views/signedout.html:32
 msgid ""
@@ -35,66 +43,155 @@ msgid ""
 "authority, or the NHS."
 msgstr "試試 ...."
 
-#: templates/views/signedout.html:56
+#: templates/views/signedout.html:37
+msgid "Create an account"
+msgstr ""
+
+#: templates/views/signedout.html:41
+#, python-format
+msgid ""
+"or <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%s\">sign "
+"in</a> if you’ve used it before"
+msgstr ""
+
+#: templates/views/signedout.html:52
+msgid "Control your content"
+msgstr ""
+
+#: templates/views/signedout.html:55
 msgid ""
 "You do not need any technical knowledge to create email,\n"
 "          text&nbsp;message or letter templates."
 msgstr ""
 
-#: templates/views/signedout.html:72
+#: templates/views/signedout.html:68
+msgid "See how your messages perform"
+msgstr ""
+
+#: templates/views/signedout.html:71
 msgid ""
 "Track how many messages you’ve sent and\n"
 "          find out which ones are not being delivered."
 msgstr ""
 
-#: templates/views/signedout.html:79
+#: templates/views/signedout.html:78
 msgid ""
 "A screenshot of GOV.UK Notify showing counts of emails and text messages "
 "sent"
 msgstr ""
 
-#: templates/views/signedout.html:91
+#: templates/views/signedout.html:90
 msgid ""
 "Upload a spreadsheet of email&nbsp;addresses or\n"
 "          phone&nbsp;numbers and Notify sends the messages."
 msgstr ""
 
-#: templates/views/signedout.html:96
+#: templates/views/signedout.html:95
 msgid ""
 "A screenshot of a spreadsheet with columns for email address, name and "
 "colour"
 msgstr ""
 
-#: templates/views/signedout.html:101
+#: templates/views/signedout.html:100
 msgid ""
 "Integrate the GOV.UK Notify API with your web&nbsp;application or\n"
 "          back office system."
 msgstr ""
 
-#: templates/views/signedout.html:106
+#: templates/views/signedout.html:105
 msgid "A screenshot of some computer code with a notify.send_email function"
 msgstr ""
 
-#: templates/views/signedout.html:113
+#: templates/views/signedout.html:112
 msgid "Introducing GOV.UK Notify"
 msgstr ""
 
-#: templates/views/signedout.html:123
+#: templates/views/signedout.html:122
 msgid "Who’s using GOV.UK Notify"
 msgstr ""
 
-#: templates/views/signedout.html:165
+#: templates/views/signedout.html:131
+#, python-format
+msgid ""
+"<div class=\"product-page-big-number\">%s</div>\n"
+"          services\n"
+"          <span class=\"govuk-visually-hidden\">using Notify.</span>"
+msgstr ""
+
+#: templates/views/signedout.html:137
+#, python-format
+msgid ""
+"See the\n"
+"      <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%s\">list of services and organisations</a>."
+msgstr ""
+
+#: templates/views/signedout.html:147
+msgid "Emails"
+msgstr ""
+
+#: templates/views/signedout.html:148
+msgid ""
+"<div class=\"product-page-big-number\">Unlimited</div>\n"
+"          free emails"
+msgstr ""
+
+#: templates/views/signedout.html:152
+msgid "Text messages"
+msgstr ""
+
+#: templates/views/signedout.html:153
+#, python-format
+msgid ""
+"<div class=\"product-page-big-number\">Up to 40,000</div>\n"
+"          free text messages a year,<br>\n"
+"          then %s pence per message"
+msgstr ""
+
+#: templates/views/signedout.html:158
+msgid "Letters"
+msgstr ""
+
+#: templates/views/signedout.html:159
+msgid ""
+"<div class=\"product-page-big-number\">41 pence</div>\n"
+"          to print and post a one page letter"
+msgstr ""
+
+#: templates/views/signedout.html:164
 msgid "There’s no monthly charge, no setup fee and no&nbsp;procurement process."
 msgstr ""
 
-#: templates/views/signedout.html:180
+#: templates/views/signedout.html:166
 msgid ""
-"GOV.UK Notify is built by the Government Digital Service\n"
-"          and is supported 24 hours a day, 7 days a week."
+"Find out more about <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://www.notifications.service.gov.uk/pricing\">pricing</a>."
 msgstr ""
 
-#: templates/views/signedout.html:191
+#: templates/views/signedout.html:175
+#, python-format
+msgid ""
+"<h2 class=\"with-keyline\">\n"
+"          The team\n"
+"        </h2>\n"
+"        <p class=\"govuk-body\">\n"
+"          GOV.UK Notify is built by the Government Digital Service\n"
+"          and is supported 24 hours a day, 7 days a week.\n"
+"        </p>\n"
+"        <p class=\"govuk-body\">\n"
+"          <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%s\">Contact us</a> if you have a question or want\n"
+"          to give feedback.\n"
+"        </p>"
+msgstr ""
+
+#: templates/views/signedout.html:190
 msgid ""
 "A photo of the GOV.UK Notify team gathered around a big screen. One team "
 "member is pointing at a graph on the screen."
 msgstr ""
+
+#~ msgid ""
+#~ "GOV.UK Notify is built by the Government Digital Service\n"
+#~ "          and is supported 24 hours a day, 7 days a week."
+#~ msgstr ""

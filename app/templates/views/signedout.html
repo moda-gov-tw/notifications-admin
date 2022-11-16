@@ -16,17 +16,17 @@
       <nav class="breadcrumbs breadcrumbs--inverse" aria-label="Breadcrumbs">
        <ol itemscope itemtype="http://schema.org/BreadcrumbList">
          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-           <a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/service-toolkit#gov-uk-services" itemprop="item"><span itemprop="name">GOV.UK services</span></a>
+             <a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/service-toolkit#gov-uk-services" itemprop="item"><span itemprop="name">{{_('GOV.UK services')}}</span></a>
          </li>
          <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-           <a class="govuk-link govuk-link--no-visited-state" href="#main" itemprop="item"><span itemprop="name">GOV.UK Notify</span></a>
+             <a class="govuk-link govuk-link--no-visited-state" href="#main" itemprop="item"><span itemprop="name">{{_('GOV.UK Notify')}}</span></a>
          </li>
        </ol>
       </nav>
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h1>
-            Send emails, text messages and letters to your users
+            {{_('Send emails, text messages and letters to your users')}}
           </h1>
           <p class="govuk-body">
             {{_('Try GOV.UK Notify now if you work in central government, a&nbsp;local authority, or the NHS.')}}
@@ -34,12 +34,11 @@
           <div class="button-container">
             {{ govukButton({
               "element": "a",
-              "text": "_('Create an account')",
+              "text": _('Create an account'),
               "classes": "product-page-button button-container__button govuk-!-margin-right-3",
               "href": url_for('main.register' )
             }) }}
-            or <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.sign_in' )}}">sign in</a> if you’ve used
-            it before
+            {{ _("or <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%s\">sign in</a> if you’ve used it before") % url_for('.sign_in' ) }}
           </div>
         </div>
       </div>
@@ -50,7 +49,7 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-half">
         <h2>
-          Control your content
+          {{_('Control your content')}}
         </h2>
         <p class="govuk-body">
           {{_('You do not need any technical knowledge to create email,
@@ -66,7 +65,7 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-half">
         <h2>
-          See how your messages perform
+          {{_('See how your messages perform')}}
         </h2>
         <p class="govuk-body">
           {{_('Track how many messages you’ve sent and
@@ -129,14 +128,14 @@
         </div>
         <div class="govuk-grid-column-one-half">
           <span class="govuk-visually-hidden">and</span>
-          <div class="product-page-big-number">{{ counts.services|format_thousands }}</div>
+          {{_("<div class=\"product-page-big-number\">%s</div>
           services
-          <span class="govuk-visually-hidden">using Notify.</span>
+          <span class=\"govuk-visually-hidden\">using Notify.</span>") % counts.services|format_thousands }}
         </div>
       </div>
       <p class="govuk-body">
-        See the
-        <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.performance') }}">list of services and organisations</a>.
+      {{_("See the
+      <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%s\">list of services and organisations</a>.") % url_for('main.performance') }}
       </p>
     </div>
   </div>
@@ -145,26 +144,26 @@
       <h2>Pricing</h2>
       <div class="govuk-grid-row bottom-gutter">
         <div class="govuk-grid-column-one-half">
-          <h3 class="govuk-visually-hidden">Emails</h3>
-          <div class="product-page-big-number">Unlimited</div>
-          free emails
+          <h3 class="govuk-visually-hidden">{{_('Emails')}}</h3>
+          {{_("<div class=\"product-page-big-number\">Unlimited</div>
+          free emails")}}
         </div>
         <div class="govuk-grid-column-one-half">
-          <h3 class="govuk-visually-hidden">Text messages</h3>
-          <div class="product-page-big-number">Up to 40,000</div>
+          <h3 class="govuk-visually-hidden">{{_('Text messages')}}</h3>
+          {{_("<div class=\"product-page-big-number\">Up to 40,000</div>
           free text messages a year,<br>
-          then {{ sms_rate }} pence per message
+          then %s pence per message") % sms_rate }}
         </div>
         <div class="govuk-grid-column-one-half">
-          <h3 class="govuk-visually-hidden">Letters</h3>
-          <div class="product-page-big-number">41 pence</div>
-          to print and post a one page letter
+          <h3 class="govuk-visually-hidden">{{_('Letters')}}</h3>
+          {{_("<div class=\"product-page-big-number\">41 pence</div>
+          to print and post a one page letter")}}
         </div>
         <div class="govuk-grid-column-one-half">
           <p class="align-with-big-number-hint">
             {{_('There’s no monthly charge, no setup fee and no&nbsp;procurement process.')}}
           </p>
-          <p class="govuk-body">Find out more about <a class="govuk-link govuk-link--no-visited-state" href="https://www.notifications.service.gov.uk/pricing">pricing</a>.
+          <p class="govuk-body">{{_("Find out more about <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.notifications.service.gov.uk/pricing\">pricing</a>.")}}
           </p>
         </div>
       </div>
@@ -173,17 +172,17 @@
   <div class="product-page-section">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-half">
-        <h2 class="with-keyline">
+        {{_("<h2 class=\"with-keyline\">
           The team
         </h2>
-        <p class="govuk-body">
-          {{_('GOV.UK Notify is built by the Government Digital Service
-          and is supported 24 hours a day, 7 days a week.')}}
+        <p class=\"govuk-body\">
+          GOV.UK Notify is built by the Government Digital Service
+          and is supported 24 hours a day, 7 days a week.
         </p>
-        <p class="govuk-body">
-          <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.support') }}">Contact us</a> if you have a question or want
+        <p class=\"govuk-body\">
+          <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%s\">Contact us</a> if you have a question or want
           to give feedback.
-        </p>
+        </p>") % url_for('main.support') }}
       </div>
       <div class="govuk-grid-column-one-half">
         <img
