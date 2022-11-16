@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-16 22:06+0800\n"
+"POT-Creation-Date: 2022-11-16 22:36+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -17,6 +17,177 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
+
+#: templates/views/cookies.html:6 templates/views/cookies.html:21
+msgid "Cookies"
+msgstr ""
+
+#: templates/views/cookies.html:16
+msgid "Your cookie settings were saved"
+msgstr ""
+
+#: templates/views/cookies.html:18
+msgid "Go back to the page you were looking at"
+msgstr ""
+
+#: templates/views/cookies.html:23
+msgid ""
+"Cookies are small files saved on your phone, tablet or computer when you "
+"visit a website."
+msgstr ""
+
+#: templates/views/cookies.html:25
+msgid ""
+"We use cookies to make GOV.UK Notify work and collect information about "
+"how you use our service."
+msgstr ""
+
+#: templates/views/cookies.html:27 templates/views/cookies.html:32
+msgid "Essential cookies"
+msgstr ""
+
+#: templates/views/cookies.html:29
+msgid ""
+"Essential cookies keep your information secure while you use Notify. We "
+"do not need to ask permission to use them."
+msgstr ""
+
+#: templates/views/cookies.html:35 templates/views/cookies.html:85
+msgid "Name"
+msgstr ""
+
+#: templates/views/cookies.html:36 templates/views/cookies.html:86
+msgid "Purpose"
+msgstr ""
+
+#: templates/views/cookies.html:37 templates/views/cookies.html:87
+msgid "Expires"
+msgstr ""
+
+#: templates/views/cookies.html:42
+#, python-format
+msgid ""
+"<td>\n"
+"                  notify_admin_session\n"
+"                </td>\n"
+"                <td width=\"50%%\">\n"
+"                  Used to keep you signed in\n"
+"                </td>\n"
+"                <td>\n"
+"                  20 hours\n"
+"                </td>"
+msgstr ""
+
+#: templates/views/cookies.html:53
+#, python-format
+msgid ""
+"<td>\n"
+"                  cookie_policy\n"
+"                </td>\n"
+"                <td width=\"50%%\">\n"
+"                  Saves your cookie consent settings\n"
+"                </td>\n"
+"                <td>\n"
+"                  1 year\n"
+"                </td>"
+msgstr ""
+
+#: templates/views/cookies.html:66
+msgid "Analytics cookies (optional)"
+msgstr ""
+
+#: templates/views/cookies.html:68
+msgid ""
+"With your permission, we use Google Analytics to collect data about how "
+"you use Notify. This information helps us to improve our service."
+msgstr ""
+
+#: templates/views/cookies.html:71
+msgid "Google is not allowed to use or share our analytics data with anyone."
+msgstr ""
+
+#: templates/views/cookies.html:74
+msgid "Google Analytics stores anonymised information about:"
+msgstr ""
+
+#: templates/views/cookies.html:77
+msgid ""
+"<li>how you got to GOV.UK Notify</li>\n"
+"      <li>the pages you visit on Notify and how long you spend on "
+"them</li>\n"
+"      <li>any errors you see while using Notify</li>"
+msgstr ""
+
+#: templates/views/cookies.html:82
+msgid "Google Analytics cookies"
+msgstr ""
+
+#: templates/views/cookies.html:92
+#, python-format
+msgid ""
+"<td>\n"
+"                  _ga\n"
+"                </td>\n"
+"                <td width=\"50%%\">\n"
+"                  Checks if you’ve visited Notify before. This helps us "
+"count how many people visit our site.\n"
+"                </td>\n"
+"                <td>\n"
+"                  2 years\n"
+"                </td>"
+msgstr ""
+
+#: templates/views/cookies.html:103
+#, python-format
+msgid ""
+"<td>\n"
+"                  _gid\n"
+"                </td>\n"
+"                <td width=\"50%%\">\n"
+"                  Checks if you’ve visited Notify before. This helps us "
+"count how many people visit our site.\n"
+"                </td>\n"
+"                <td>\n"
+"                  24 hours\n"
+"                </td>"
+msgstr ""
+
+#: templates/views/cookies.html:116 templates/views/cookies.html:128
+msgid "Do you want to accept analytics cookies?"
+msgstr ""
+
+#: templates/views/cookies.html:117
+msgid ""
+"We use Javascript to set our analytics cookies. Unfortunately Javascript "
+"is not running on your browser, so you cannot change your settings. You "
+"can try:"
+msgstr ""
+
+#: templates/views/cookies.html:119
+msgid ""
+"<li>reloading the page</li>\n"
+"        <li>turning on Javascript in your browser</li>"
+msgstr ""
+
+#: templates/views/cookies.html:133
+msgid ""
+"<label class=\"govuk-label govuk-radios__label\" for=\"cookies-analytics-"
+"yes\">\n"
+"                  Yes\n"
+"                </label>"
+msgstr ""
+
+#: templates/views/cookies.html:139
+msgid ""
+"<label class=\"govuk-label govuk-radios__label\" for=\"cookies-analytics-"
+"no\">\n"
+"                  No\n"
+"                </label>"
+msgstr ""
+
+#: templates/views/cookies.html:147
+msgid "Save cookie settings"
+msgstr ""
 
 #: templates/views/signedout.html:5
 msgid ""
