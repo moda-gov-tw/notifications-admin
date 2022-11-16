@@ -2,11 +2,11 @@
 {% from "govuk_frontend_jinja/components/button/macro.html" import govukButton %}
 
 {% block meta %}
-  <meta name="description" content="GOV.UK Notify lets you send emails, text messages and letters to your users. Try it now if you work in central government, a local authority, or the NHS.">
+<meta name="description" content="{{_('GOV.UK Notify lets you send emails, text messages and letters to your users. Try it now if you work in central government, a local authority, or the NHS.')}}">
 {% endblock %}
 
 {% block pageTitle %}
-  GOV.UK Notify
+    {{_("GOV.UK Notify")}}
 {% endblock %}
 
 {% block content %}
@@ -29,12 +29,12 @@
             Send emails, text messages and letters to your users
           </h1>
           <p class="govuk-body">
-            Try GOV.UK Notify now if you work in central government, a&nbsp;local authority, or the NHS.
+            {{_('Try GOV.UK Notify now if you work in central government, a&nbsp;local authority, or the NHS.')}}
           </p>
           <div class="button-container">
             {{ govukButton({
               "element": "a",
-              "text": "Create an account",
+              "text": "_('Create an account')",
               "classes": "product-page-button button-container__button govuk-!-margin-right-3",
               "href": url_for('main.register' )
             }) }}
@@ -53,8 +53,8 @@
           Control your content
         </h2>
         <p class="govuk-body">
-          You do not need any technical knowledge to create email,
-          text&nbsp;message or letter templates.
+          {{_('You do not need any technical knowledge to create email,
+          text&nbsp;message or letter templates.')}}
         </p>
       </div>
       <div class="govuk-grid-column-one-half">
@@ -69,48 +69,48 @@
           See how your messages perform
         </h2>
         <p class="govuk-body">
-          Track how many messages you’ve sent and
-          find out which ones are not being delivered.
+          {{_('Track how many messages you’ve sent and
+          find out which ones are not being delivered.')}}
         </p>
       </div>
       <div class="govuk-grid-column-one-half">
         <img
           src="{{ asset_url('images/product/02-reporting.svg') }}"
-          alt="A screenshot of GOV.UK Notify showing counts of emails and text messages sent"
+          alt="{{_('A screenshot of GOV.UK Notify showing counts of emails and text messages sent')}}"
         >
       </div>
     </div>
   </div>
   <div class="product-page-section">
     <h2 class="with-keyline">
-      Send messages manually or automatically
+      _('Send messages manually or automatically')
     </h2>
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-half">
         <p class="govuk-body">
-          Upload a spreadsheet of email&nbsp;addresses or
-          phone&nbsp;numbers and Notify sends the messages.
+          {{_('Upload a spreadsheet of email&nbsp;addresses or
+          phone&nbsp;numbers and Notify sends the messages.')}}
         </p>
         <img
           src="{{ asset_url('images/product/03-spreadsheet.svg') }}"
-          alt="A screenshot of a spreadsheet with columns for email address, name and colour"
+          alt="{{_('A screenshot of a spreadsheet with columns for email address, name and colour')}}"
         >
       </div>
       <div class="govuk-grid-column-one-half">
         <p class="govuk-body">
-          Integrate the GOV.UK Notify API with your web&nbsp;application or
-          back office system.
+          {{_('Integrate the GOV.UK Notify API with your web&nbsp;application or
+          back office system.')}}
         </p>
         <img
           src="{{ asset_url('images/product/04-api.svg') }}"
-          alt="A screenshot of some computer code with a notify.send_email function"
+          alt="{{_('A screenshot of some computer code with a notify.send_email function')}}"
         >
       </div>
     </div>
   </div>
   <div class="product-page-section">
     <h2 class="with-keyline">
-      Introducing GOV.UK Notify
+        {{_('Introducing GOV.UK Notify')}}
     </h2>
     <div class="responsive-embed responsive-embed--16by9 responsive-embed--bordered bottom-gutter-2">
       <div class="responsive-embed__wrapper">
@@ -120,7 +120,7 @@
   </div>
   <div class="product-page-section">
     <div class="with-keyline bottom-gutter-2" id="whos-using-notify">
-      <h2>Who’s using GOV.UK Notify</h2>
+      <h2>{{_('Who’s using GOV.UK Notify')}}</h2>
       <div class="govuk-grid-row bottom-gutter">
         <div class="govuk-grid-column-one-half">
           <span class="govuk-visually-hidden">There are</span>
@@ -162,7 +162,7 @@
         </div>
         <div class="govuk-grid-column-one-half">
           <p class="align-with-big-number-hint">
-            There’s no monthly charge, no setup fee and no&nbsp;procurement process.
+            {{_('There’s no monthly charge, no setup fee and no&nbsp;procurement process.')}}
           </p>
           <p class="govuk-body">Find out more about <a class="govuk-link govuk-link--no-visited-state" href="https://www.notifications.service.gov.uk/pricing">pricing</a>.
           </p>
@@ -177,8 +177,8 @@
           The team
         </h2>
         <p class="govuk-body">
-          GOV.UK Notify is built by the Government Digital Service
-          and is supported 24 hours a day, 7 days a week.
+          {{_('GOV.UK Notify is built by the Government Digital Service
+          and is supported 24 hours a day, 7 days a week.')}}
         </p>
         <p class="govuk-body">
           <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.support') }}">Contact us</a> if you have a question or want
@@ -188,7 +188,7 @@
       <div class="govuk-grid-column-one-half">
         <img
           src="{{ asset_url('images/product/team.jpg') }}"
-          alt="A photo of the GOV.UK Notify team gathered around a big screen. One team member is pointing at a graph on the screen."
+          alt="{{_('A photo of the GOV.UK Notify team gathered around a big screen. One team member is pointing at a graph on the screen.')}}"
         >
       </div>
     </div>

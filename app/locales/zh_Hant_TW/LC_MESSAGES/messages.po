@@ -1,0 +1,100 @@
+# Chinese (Traditional, Taiwan) translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-11-15 16:49+0800\n"
+"PO-Revision-Date: 2022-11-14 22:34+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hant_TW\n"
+"Language-Team: zh_Hant_TW <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: templates/views/signedout.html:5
+msgid ""
+"GOV.UK Notify lets you send emails, text messages and letters to your "
+"users. Try it now if you work in central government, a local authority, "
+"or the NHS."
+msgstr ""
+
+#: templates/views/signedout.html:9
+msgid "GOV.UK Notify"
+msgstr "[TEST] GOV.UK Notify"
+
+#: templates/views/signedout.html:32
+msgid ""
+"Try GOV.UK Notify now if you work in central government, a&nbsp;local "
+"authority, or the NHS."
+msgstr "試試 ...."
+
+#: templates/views/signedout.html:56
+msgid ""
+"You do not need any technical knowledge to create email,\n"
+"          text&nbsp;message or letter templates."
+msgstr ""
+
+#: templates/views/signedout.html:72
+msgid ""
+"Track how many messages you’ve sent and\n"
+"          find out which ones are not being delivered."
+msgstr ""
+
+#: templates/views/signedout.html:79
+msgid ""
+"A screenshot of GOV.UK Notify showing counts of emails and text messages "
+"sent"
+msgstr ""
+
+#: templates/views/signedout.html:91
+msgid ""
+"Upload a spreadsheet of email&nbsp;addresses or\n"
+"          phone&nbsp;numbers and Notify sends the messages."
+msgstr ""
+
+#: templates/views/signedout.html:96
+msgid ""
+"A screenshot of a spreadsheet with columns for email address, name and "
+"colour"
+msgstr ""
+
+#: templates/views/signedout.html:101
+msgid ""
+"Integrate the GOV.UK Notify API with your web&nbsp;application or\n"
+"          back office system."
+msgstr ""
+
+#: templates/views/signedout.html:106
+msgid "A screenshot of some computer code with a notify.send_email function"
+msgstr ""
+
+#: templates/views/signedout.html:113
+msgid "Introducing GOV.UK Notify"
+msgstr ""
+
+#: templates/views/signedout.html:123
+msgid "Who’s using GOV.UK Notify"
+msgstr ""
+
+#: templates/views/signedout.html:165
+msgid "There’s no monthly charge, no setup fee and no&nbsp;procurement process."
+msgstr ""
+
+#: templates/views/signedout.html:180
+msgid ""
+"GOV.UK Notify is built by the Government Digital Service\n"
+"          and is supported 24 hours a day, 7 days a week."
+msgstr ""
+
+#: templates/views/signedout.html:191
+msgid ""
+"A photo of the GOV.UK Notify team gathered around a big screen. One team "
+"member is pointing at a graph on the screen."
+msgstr ""
