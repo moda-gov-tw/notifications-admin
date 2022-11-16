@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-11-16 12:21+0800\n"
-"PO-Revision-Date: 2022-11-14 22:34+0800\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2022-11-16 11:02+0000\n"
+"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
+"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
-"Language-Team: zh_Hant_TW <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: templates/views/signedout.html:5
@@ -27,7 +29,7 @@ msgstr ""
 
 #: templates/views/signedout.html:9 templates/views/signedout.html:22
 msgid "GOV.UK Notify"
-msgstr "[TEST] GOV.UK Notify"
+msgstr ""
 
 #: templates/views/signedout.html:19
 msgid "GOV.UK services"
@@ -38,6 +40,7 @@ msgid "Send emails, text messages and letters to your users"
 msgstr ""
 
 #: templates/views/signedout.html:32
+#, fuzzy
 msgid ""
 "Try GOV.UK Notify now if you work in central government, a&nbsp;local "
 "authority, or the NHS."
@@ -45,7 +48,7 @@ msgstr "試試 ...."
 
 #: templates/views/signedout.html:37
 msgid "Create an account"
-msgstr ""
+msgstr "建立帳號"
 
 #: templates/views/signedout.html:41
 #, python-format
@@ -53,6 +56,8 @@ msgid ""
 "or <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%s\">sign "
 "in</a> if you’ve used it before"
 msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%s\">登入</a> "
+"如果之前已經註冊過"
 
 #: templates/views/signedout.html:52
 msgid "Control your content"
