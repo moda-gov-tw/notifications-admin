@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-16 22:36+0800\n"
+"POT-Creation-Date: 2022-11-16 22:59+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -187,6 +187,316 @@ msgstr ""
 
 #: templates/views/cookies.html:147
 msgid "Save cookie settings"
+msgstr ""
+
+#: templates/views/privacy.html:5 templates/views/privacy.html:12
+msgid "Privacy notice: how we use your data"
+msgstr ""
+
+#: templates/views/privacy.html:16
+msgid "1 October 2021"
+msgstr ""
+
+#: templates/views/privacy.html:20
+msgid "Who we are"
+msgstr ""
+
+#: templates/views/privacy.html:22
+msgid ""
+"GOV.UK Notify is a service that lets public service teams in the UK send "
+"emails, text messages, and letters\n"
+"    to users of their service."
+msgstr ""
+
+#: templates/views/privacy.html:25
+msgid ""
+"GOV.UK Notify is provided by the Government Digital Service (GDS) which "
+"is part of the Cabinet Office."
+msgstr ""
+
+#: templates/views/privacy.html:27
+msgid ""
+"Organisations sending notifications using GOV.UK Notify are the data "
+"controller and Cabinet Office is the data processor. The data controller "
+"must tell you about what they are doing with your personal data."
+msgstr ""
+
+#: templates/views/privacy.html:29
+msgid ""
+"For the credentials used to access GOV.UK Notify, Cabinet Office is the "
+"data controller."
+msgstr ""
+
+#: templates/views/privacy.html:31
+msgid ""
+"For more information see the Information Commissioner’s Office (ICO) <a "
+"class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://ico.org.uk/esdwebpages/search\">Data Protection Public "
+"Register</a>.\n"
+"    The Cabinet Office registration number is: Z7414053"
+msgstr ""
+
+#: templates/views/privacy.html:34
+msgid "What data we collect from you"
+msgstr ""
+
+#: templates/views/privacy.html:36
+msgid ""
+"The personal data we collect from public sector employees that create a "
+"GOV.UK Notify account includes:"
+msgstr ""
+
+#: templates/views/privacy.html:39 templates/views/privacy.html:72
+msgid "your name"
+msgstr ""
+
+#: templates/views/privacy.html:40
+msgid "your email address"
+msgstr ""
+
+#: templates/views/privacy.html:41 templates/views/privacy.html:73
+msgid "your mobile phone number"
+msgstr ""
+
+#: templates/views/privacy.html:42
+msgid "the IP address you use to access GOV.UK Notify"
+msgstr ""
+
+#: templates/views/privacy.html:45
+msgid ""
+"The legal basis for processing this data is ‘public task’ – allowing you "
+"to access GOV.UK Notify to send notifications\n"
+"    to users of your public service."
+msgstr ""
+
+#: templates/views/privacy.html:48
+msgid "Why we need your data"
+msgstr ""
+
+#: templates/views/privacy.html:50
+msgid ""
+"We need your personal data to ensure that only legitimate users of GOV.UK"
+" Notify can use it to send notifications."
+msgstr ""
+
+#: templates/views/privacy.html:52
+msgid "What we do with your data"
+msgstr ""
+
+#: templates/views/privacy.html:54
+msgid ""
+"We use your data to check that you are allowed to access GOV.UK Notify "
+"and to record your activity when using it. We use third party suppliers "
+"to do this."
+msgstr ""
+
+#: templates/views/privacy.html:56
+msgid "We will not:"
+msgstr ""
+
+#: templates/views/privacy.html:59
+msgid ""
+"<li>sell or rent your data to third parties</li>\n"
+"        <li>share your data with third parties for marketing purposes</li>"
+msgstr ""
+
+#: templates/views/privacy.html:63
+msgid ""
+"We will share your data if we are required to do so by law – for example,"
+" by court order, or to prevent fraud or other crime."
+msgstr ""
+
+#: templates/views/privacy.html:65
+msgid "How long we keep your data"
+msgstr ""
+
+#: templates/views/privacy.html:67
+msgid ""
+"We’ll keep your personal data for as long as you have a GOV.UK Notify "
+"account."
+msgstr ""
+
+#: templates/views/privacy.html:69
+msgid "When you ask us to close your account, we will delete:"
+msgstr ""
+
+#: templates/views/privacy.html:74
+msgid "your GOV.UK Notify password"
+msgstr ""
+
+#: templates/views/privacy.html:77
+msgid ""
+"For security, we’ll keep your email address and IP addresses for 1 year "
+"before we delete them."
+msgstr ""
+
+#: templates/views/privacy.html:79
+msgid "Where your data is processed and stored"
+msgstr ""
+
+#: templates/views/privacy.html:81
+msgid ""
+"We design, build and run our systems to make sure that your data is as "
+"safe as possible at any stage, both while it’s\n"
+"    processed and when it’s stored."
+msgstr ""
+
+#: templates/views/privacy.html:84
+msgid ""
+"Your personal data will be processed both in the UK and the European "
+"Economic Area (EEA). Your data receives the same level of protection in "
+"the EEA as it does in the UK through the safeguard of <a class=\"govuk-"
+"link govuk-link--no-visited-state\" href=\"https://ico.org.uk/for-"
+"organisations/dp-at-the-end-of-the-transition-period/data-protection-and-"
+"the-eu-in-detail/adequacy/\">Adequacy Decisions</a>."
+msgstr ""
+
+#: templates/views/privacy.html:86
+msgid "How we protect your data and keep it secure"
+msgstr ""
+
+#: templates/views/privacy.html:88
+msgid ""
+"We are committed to doing all that we can to keep your data secure. To "
+"prevent unauthorised access or disclosure we have\n"
+"      put in place technical and organisational procedures to secure the "
+"data we collect about you – for example, we protect your\n"
+"      data using varying levels of encryption. We also make sure that any"
+" third parties that we deal with have an obligation to\n"
+"      keep all personal data they process on our behalf secure."
+msgstr ""
+
+#: templates/views/privacy.html:93
+msgid "Children’s privacy protection"
+msgstr ""
+
+#: templates/views/privacy.html:95
+msgid ""
+"We understand the importance of protecting children’s privacy online. Our"
+" services are not designed for, or intentionally\n"
+"      targeted at, children 13 years of age or younger. It is not our "
+"policy to intentionally collect or maintain data about anyone\n"
+"      under the age of 13."
+msgstr ""
+
+#: templates/views/privacy.html:99
+msgid "What are your rights"
+msgstr ""
+
+#: templates/views/privacy.html:101
+msgid "You have the right to request:"
+msgstr ""
+
+#: templates/views/privacy.html:104
+msgid "information about how your personal data is processed"
+msgstr ""
+
+#: templates/views/privacy.html:105
+msgid ""
+"a copy of that personal data - this copy will be provided in a "
+"structured, commonly used and machine-readable format"
+msgstr ""
+
+#: templates/views/privacy.html:106
+msgid "that anything inaccurate in your personal data is corrected immediately"
+msgstr ""
+
+#: templates/views/privacy.html:109
+msgid "You can also:"
+msgstr ""
+
+#: templates/views/privacy.html:112
+msgid "raise an objection about how your personal data is processed"
+msgstr ""
+
+#: templates/views/privacy.html:113
+msgid ""
+"request that your personal data is erased if there is no longer a "
+"justification for it"
+msgstr ""
+
+#: templates/views/privacy.html:114
+msgid ""
+"ask that the processing of your personal data is restricted in certain "
+"circumstances"
+msgstr ""
+
+#: templates/views/privacy.html:117
+msgid ""
+"If you have any of these requests, get in contact with our Data "
+"Protection Officer - you can find their contact details below."
+msgstr ""
+
+#: templates/views/privacy.html:119
+msgid "Changes to this notice"
+msgstr ""
+
+#: templates/views/privacy.html:121
+msgid ""
+"We may modify or amend this privacy notice at our discretion at any time."
+" When we make changes to this notice, we will\n"
+"      amend the last modified date at the top of this page. Any "
+"modification or amendment to this privacy notice will be applied\n"
+"      to you and your data as of that revision date. We encourage you to "
+"periodically review this privacy notice to be informed\n"
+"      about how we are protecting your data."
+msgstr ""
+
+#: templates/views/privacy.html:126
+msgid "Questions and complaints"
+msgstr ""
+
+#: templates/views/privacy.html:128
+msgid "Contact the GDS Privacy Team if you either:"
+msgstr ""
+
+#: templates/views/privacy.html:131
+msgid "have questions about anything in this document"
+msgstr ""
+
+#: templates/views/privacy.html:132
+msgid "think that your personal data has been misused or mishandled"
+msgstr ""
+
+#: templates/views/privacy.html:136
+msgid "GDS Privacy Team"
+msgstr ""
+
+#: templates/views/privacy.html:141
+msgid "You can also contact the Cabinet Office Data Protection Officer."
+msgstr ""
+
+#: templates/views/privacy.html:145
+msgid "Data Protection Officer"
+msgstr ""
+
+#: templates/views/privacy.html:147
+msgid ""
+"Data Protection Officer<br>\n"
+"    Cabinet Office<br>\n"
+"    70 Whitehall<br>\n"
+"    London SW1A 2AS"
+msgstr ""
+
+#: templates/views/privacy.html:153
+msgid ""
+"If you have a complaint, you can also contact the <a class=\"govuk-link "
+"govuk-link--no-visited-state\" href=\"https://ico.org.uk/\">Information "
+"Commissioner's Office</a> (ICO). The ICO is an independent regulator set "
+"up to uphold information rights."
+msgstr ""
+
+#: templates/views/privacy.html:156
+msgid "Information Commissioner’s Office"
+msgstr ""
+
+#: templates/views/privacy.html:158
+msgid ""
+"0303 123 1113</br>\n"
+"    Wycliffe House<br>\n"
+"    Water Lane<br>\n"
+"    Wilmslow<br>\n"
+"    Cheshire SK9 5AF"
 msgstr ""
 
 #: templates/views/signedout.html:5
