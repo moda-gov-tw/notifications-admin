@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 20:02+0800\n"
+"POT-Creation-Date: 2022-11-17 20:06+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -1796,6 +1796,120 @@ msgstr ""
 msgid ""
 "A photo of the GOV.UK Notify team gathered around a big screen. One team "
 "member is pointing at a graph on the screen."
+msgstr ""
+
+#: templates/views/terms-of-use.html:9 templates/views/terms-of-use.html:14
+msgid "Terms of use"
+msgstr ""
+
+#: templates/views/terms-of-use.html:17
+msgid ""
+"These terms apply to your service’s use of GOV.UK&nbsp;Notify. You must "
+"be the service manager to accept them."
+msgstr ""
+
+#: templates/views/terms-of-use.html:20
+msgid "When using Notify"
+msgstr ""
+
+#: templates/views/terms-of-use.html:21
+msgid "You must:"
+msgstr ""
+
+#: templates/views/terms-of-use.html:23
+msgid ""
+"complete your organisation’s information assurance process (you do not "
+"need to include Notify or our delivery partners, we’ve already done that)"
+msgstr ""
+
+#: templates/views/terms-of-use.html:24
+msgid "tell us immediately if you have any security breaches"
+msgstr ""
+
+#: templates/views/terms-of-use.html:25
+msgid "keep your API keys secure"
+msgstr ""
+
+#: templates/views/terms-of-use.html:26
+msgid "get the right levels of consent (to send messages and to use data)"
+msgstr ""
+
+#: templates/views/terms-of-use.html:27
+msgid ""
+"not send unsolicited messages, only ones related to a transaction or "
+"something the user has subscribed to be updated about (<a class=\"govuk-"
+"link govuk-link--no-visited-state\" href=\"https://www.gov.uk/service-"
+"manual/design/sending-emails-and-text-messages\">check the Service "
+"Manual</a> if you’re not sure)"
+msgstr ""
+
+#: templates/views/terms-of-use.html:29
+msgid ""
+"send messages that meet the GOV.UK Service Manual standards for <a class"
+"=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.gov.uk"
+"/service-manual/design/sending-emails-and-text-messages\">writing text "
+"messages and emails</a>"
+msgstr ""
+
+#: templates/views/terms-of-use.html:30
+msgid ""
+"check that the data you add to Notify is accurate and complies with data "
+"protection legislation"
+msgstr ""
+
+#: templates/views/terms-of-use.html:32
+msgid ""
+"If you do not keep to these terms, we might have to stop sending your "
+"messages."
+msgstr ""
+
+#: templates/views/terms-of-use.html:34
+msgid "Notify will:"
+msgstr ""
+
+#: templates/views/terms-of-use.html:36
+msgid "send all the messages you pass to us, as long as they meet our guidelines"
+msgstr ""
+
+#: templates/views/terms-of-use.html:38
+msgid ""
+"show how Notify is performing (through our <a class=\"govuk-link govuk-"
+"link--no-visited-state\" href=\"{{ url_for('main.performance') "
+"}}\">performance</a> and <a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"https://status.notifications.service.gov.uk/\">status</a> "
+"pages)"
+msgstr ""
+
+#: templates/views/terms-of-use.html:40
+#, python-format
+msgid ""
+"keep your data <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">secure</a>"
+msgstr ""
+
+#: templates/views/terms-of-use.html:41
+msgid ""
+"give you one month’s notice by email if we change our terms of use or "
+"delivery providers"
+msgstr ""
+
+#: templates/views/terms-of-use.html:44
+msgid "Leaving Notify"
+msgstr ""
+
+#: templates/views/terms-of-use.html:45
+#, python-format
+msgid ""
+"You can <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">contact us</a> at any time to close your account."
+msgstr ""
+
+#: templates/views/terms-of-use.html:46
+#, python-format
+msgid ""
+"Check our privacy notice to find out <a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"%%s#how-long-we-keep-your-data\">how long we "
+"keep your personal data</a>."
 msgstr ""
 
 #: templates/views/features/emails.html:15
