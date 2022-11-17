@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 20:46+0800\n"
+"POT-Creation-Date: 2022-11-17 20:52+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -2696,6 +2696,140 @@ msgstr ""
 
 #: templates/views/features/text-messages.html:38
 msgid "Each service you add has an annual allowance of free text messages."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:9
+#: templates/views/guidance/branding-and-customisation.html:14
+msgid "Branding and customisation"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:16
+msgid "This page explains how to:"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:19
+msgid "change your email branding"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:20
+msgid "add a reply-to email address"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:21
+msgid "change the text message sender"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:22
+msgid "change your letter branding"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:25
+msgid "Change your email branding"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:27
+msgid "The default branding for email templates is the GOV.UK logo."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:29
+msgid "To change your email branding:"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:32
+#: templates/views/guidance/branding-and-customisation.html:43
+#, python-format
+msgid ""
+"Go to the <b class=\"govuk-!-font-weight-bold\">Email settings</b> "
+"section of the %%s page."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:33
+msgid ""
+"Select <b class=\"govuk-!-font-weight-bold\">Change</b> on the <b "
+"class=\"govuk-!-font-weight-bold\">Email branding</b> row."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:36
+msgid "Add a reply-to email address"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:38
+#, python-format
+msgid ""
+"You can choose the email address that your users reply to. You must add "
+"at least one reply-to address for your service before you can <a class"
+"=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">request to go "
+"live</a>."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:40
+msgid "To add a reply-to email address:"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:44
+msgid ""
+"Select <b class=\"govuk-!-font-weight-bold\">Manage</b> on the <b "
+"class=\"govuk-!-font-weight-bold\">Reply-to email addresses</b> row."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:45
+msgid "Select <b class=\"govuk-!-font-weight-bold\">Add reply-to address</b>."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:48
+msgid "Change the text message sender"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:50
+msgid "The text message sender tells your users who the message is from."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:52
+msgid "To change the text message sender from the default of ‘GOVUK’:"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:55
+#, python-format
+msgid ""
+"Go to the <b class=\"govuk-!-font-weight-bold\">Text message settings</b>"
+" section of the %%s page."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:56
+msgid ""
+"Select <b class=\"govuk-!-font-weight-bold\">Manage</b> on the <b "
+"class=\"govuk-!-font-weight-bold\">Text message senders</b> row."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:57
+msgid ""
+"Select <b class=\"govuk-!-font-weight-bold\">Change</b> or <b "
+"class=\"govuk-!-font-weight-bold\">Add text message sender</b>."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:60
+msgid "Change your letter branding"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:62
+msgid "Letter templates do not have default branding."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:64
+msgid "To add a logo to your letters:"
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:67
+#, python-format
+msgid ""
+"Go to the <b class=\"govuk-!-font-weight-bold\">Letter settings</b> "
+"section of the %%s page."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:68
+msgid ""
+"Select <b class=\"govuk-!-font-weight-bold\">Change</b> on the <b "
+"class=\"govuk-!-font-weight-bold\">Letter branding</b> row."
 msgstr ""
 
 #: templates/views/guidance/index.html:10
