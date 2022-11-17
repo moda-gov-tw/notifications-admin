@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 17:53+0800\n"
+"POT-Creation-Date: 2022-11-17 18:07+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -613,6 +613,7 @@ msgstr ""
 
 #: templates/views/features.html:10 templates/views/features.html:15
 #: templates/views/features/emails.html:20
+#: templates/views/features/text-messages.html:20
 msgid "Features"
 msgstr ""
 
@@ -1468,7 +1469,9 @@ msgid ""
 "href=\"%%s\">list of services and organisations</a>."
 msgstr ""
 
-#: templates/views/features/emails.html:50 templates/views/signedout.html:144
+#: templates/views/features/emails.html:50
+#: templates/views/features/text-messages.html:37
+#: templates/views/signedout.html:144
 msgid "Pricing"
 msgstr ""
 
@@ -1478,6 +1481,8 @@ msgid ""
 "          free emails"
 msgstr ""
 
+#: templates/views/features/text-messages.html:9
+#: templates/views/features/text-messages.html:14
 #: templates/views/signedout.html:152
 msgid "Text messages"
 msgstr ""
@@ -1538,6 +1543,7 @@ msgid "Send an unlimited number of emails for free with GOV.UK Notify."
 msgstr ""
 
 #: templates/views/features/emails.html:17
+#: templates/views/features/text-messages.html:17
 #, python-format
 msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Create "
@@ -1545,6 +1551,7 @@ msgid ""
 msgstr ""
 
 #: templates/views/features/emails.html:21
+#: templates/views/features/text-messages.html:21
 msgid "Notify makes it easy to:"
 msgstr ""
 
@@ -1557,6 +1564,7 @@ msgid "personalise the content of your emails"
 msgstr ""
 
 #: templates/views/features/emails.html:25
+#: templates/views/features/text-messages.html:25
 msgid "send and schedule bulk messages"
 msgstr ""
 
@@ -1640,10 +1648,76 @@ msgid "It’s free to send emails through Notify."
 msgstr ""
 
 #: templates/views/features/emails.html:52
+#: templates/views/features/text-messages.html:39
 #, python-format
 msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">See "
 "pricing</a> for more details."
+msgstr ""
+
+#: templates/views/features/text-messages.html:15
+msgid ""
+"Send thousands of free text messages to UK and international numbers with"
+" GOV.UK Notify."
+msgstr ""
+
+#: templates/views/features/text-messages.html:23
+msgid "create reusable text message templates"
+msgstr ""
+
+#: templates/views/features/text-messages.html:24
+msgid "personalise the content of your texts"
+msgstr ""
+
+#: templates/views/features/text-messages.html:26
+#, python-format
+msgid ""
+"You can also <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">integrate with our API</a> to send text messages "
+"automatically"
+msgstr ""
+
+#: templates/views/features/text-messages.html:28
+msgid "Receive text messages"
+msgstr ""
+
+#: templates/views/features/text-messages.html:29
+msgid "Let people send messages to your service or reply to your texts."
+msgstr ""
+
+#: templates/views/features/text-messages.html:30
+msgid ""
+"You can see and reply to the messages you receive when you sign in to "
+"Notify. If you’re using our API, you can set up your own automated "
+"processes to manage replies."
+msgstr ""
+
+#: templates/views/features/text-messages.html:31
+#, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
+" us</a> to request a unique number for text message replies."
+msgstr ""
+
+#: templates/views/features/text-messages.html:33
+msgid "Show people who your texts are from"
+msgstr ""
+
+#: templates/views/features/text-messages.html:34
+msgid ""
+"When you send a text message with Notify, the sender name tells people "
+"who it’s from."
+msgstr ""
+
+#: templates/views/features/text-messages.html:35
+#, python-format
+msgid ""
+"See <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">how"
+" to change the text message sender</a>."
+msgstr ""
+
+#: templates/views/features/text-messages.html:38
+msgid "Each service you add has an annual allowance of free text messages."
 msgstr ""
 
 #: templates/views/service-settings/letter-preview.html:6
