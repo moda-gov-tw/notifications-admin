@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 20:24+0800\n"
+"POT-Creation-Date: 2022-11-17 20:37+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -862,6 +862,153 @@ msgid ""
 msgstr ""
 "或 <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/get-started.html:7 templates/views/get-started.html:15
+msgid "Get started"
+msgstr ""
+
+#: templates/views/get-started.html:19
+msgid "Check if GOV.UK Notify is right for you"
+msgstr ""
+
+#: templates/views/get-started.html:20
+#, python-format
+msgid ""
+"Read about our <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">features</a>, <a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"{{ url_for('.pricing') }}\">pricing</a> and <a class"
+"=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">roadmap</a>."
+msgstr ""
+
+#: templates/views/get-started.html:22
+#, fuzzy, python-format
+msgid ""
+"Check <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">whether your organisation can use Notify</a>."
+msgstr ""
+"參閱 \n"
+"      <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">服務與組織列表</a>。"
+
+#: templates/views/get-started.html:27 templates/views/signedout.html:37
+msgid "Create an account"
+msgstr "建立帳號"
+
+#: templates/views/get-started.html:29
+#, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Create "
+"an account</a> for free and add your first Notify service. When you add a"
+" new service it will start in <a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"%%s\">trial mode</a>."
+msgstr ""
+
+#: templates/views/get-started.html:31
+#, fuzzy, python-format
+msgid ""
+"Create an account for free and add your first Notify service. When you "
+"add a new service, it will start in <a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"%%s\">trial mode</a>."
+msgstr ""
+"參閱 \n"
+"      <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">服務與組織列表</a>。"
+
+#: templates/views/get-started.html:36
+msgid "Write some messages"
+msgstr ""
+
+#: templates/views/get-started.html:37
+#, fuzzy, python-format
+msgid ""
+"Add message templates with examples of the content you plan to send. You "
+"can use our <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">guidance</a> to help you."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/get-started.html:41
+msgid "Set up your service"
+msgstr ""
+
+#: templates/views/get-started.html:43
+msgid ""
+"Review your settings to add message branding, reply-to addresses and "
+"sender information."
+msgstr ""
+
+#: templates/views/get-started.html:44
+msgid "Add team members and check their permissions."
+msgstr ""
+
+#: templates/views/get-started.html:46
+#, fuzzy, python-format
+msgid ""
+"Review your <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">settings</a> to add message branding, reply-to addresses and"
+" sender information."
+msgstr ""
+"參閱 \n"
+"      <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">服務與組織列表</a>。"
+
+#: templates/views/get-started.html:47
+#, fuzzy, python-format
+msgid ""
+"Add <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">team members</a> and check their permissions."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/get-started.html:52
+msgid "Set up an API integration (optional)"
+msgstr ""
+
+#: templates/views/get-started.html:53
+msgid "You can use the Notify API to send messages automatically."
+msgstr ""
+
+#: templates/views/get-started.html:54
+#, fuzzy, python-format
+msgid ""
+"Our <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">documentation</a> explains how to integrate the API with a "
+"web application or back office system."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/get-started.html:58
+msgid "Start sending messages"
+msgstr ""
+
+#: templates/views/get-started.html:60
+msgid ""
+"When you’re ready to send messages to people outside your team, go to the"
+" <b class=\"govuk-!-font-weight-bold\">Settings</b> page and select <b "
+"class=\"govuk-!-font-weight-bold\">Request to go live</b>. We’ll approve "
+"your request within one working day."
+msgstr ""
+
+#: templates/views/get-started.html:62
+#, python-format
+msgid ""
+"You should <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">request to go live</a> when you’re ready to send messages to"
+" people outside your team. We’ll approve your request within one working "
+"day."
+msgstr ""
+
+#: templates/views/get-started.html:64
+#, python-format
+msgid ""
+"Check <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">how to pay</a> if you’re planning to send letters or exceed "
+"the <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">free text message allowance</a>."
+msgstr ""
 
 #: templates/views/integration-testing.html:5
 #: templates/views/integration-testing.html:12
@@ -1938,10 +2085,6 @@ msgid ""
 "Try GOV.UK Notify now if you work in central government, a&nbsp;local "
 "authority, or the NHS."
 msgstr "試試 ...."
-
-#: templates/views/signedout.html:37
-msgid "Create an account"
-msgstr "建立帳號"
 
 #: templates/views/signedout.html:41
 #, python-format
