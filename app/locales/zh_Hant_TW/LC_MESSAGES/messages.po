@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-16 22:59+0800\n"
+"POT-Creation-Date: 2022-11-17 17:04+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -19,6 +19,388 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
+
+#: templates/views/accessibility_statement.html:6
+#: templates/views/accessibility_statement.html:11
+msgid "Accessibility statement"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:22
+msgid ""
+"This accessibility statement applies to the "
+"www.notifications.service.gov.uk domain. It does not apply to the <a "
+"class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://docs.notifications.service.gov.uk\">GOV.UK Notify API "
+"documentation subdomain"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:26
+msgid ""
+"This website is run by the GOV.UK Notify team at the Government Digital "
+"Service (GDS). It is designed to be used by as many people as possible. "
+"You should be able to:"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:29
+msgid "change colours, contrast levels and fonts"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:30
+msgid "zoom in up to 300% without the text spilling off the screen"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:31
+msgid "navigate most of the website using just a keyboard"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:32
+msgid "navigate most of the website using speech recognition software"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:33
+msgid ""
+"listen to most of the website using a screen reader (including the most "
+"recent versions of JAWS, NVDA and VoiceOver)"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:37
+msgid "The text should be clear and simple to understand."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:41
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://mcmw.abilitynet.org.uk\">AbilityNet</a> has advice on "
+"making your device easier to use if you have a disability."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:44
+msgid "How accessible this website is"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:47
+msgid "We know some parts of this website are not fully accessible:"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:50
+msgid "validation errors may be confusing for screen reader users"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:51
+msgid "the ‘copy to clipboard’ button does not work with some screen readers"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:52
+msgid ""
+"if a team adds template folders, screen readers may announce the page "
+"heading in a confusing way"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:53
+msgid "Windows users cannot view our icons in high contrast mode"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:54
+msgid ""
+"choosing the date and time to send a message may be hard for some screen "
+"reader users"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:55
+msgid ""
+"screen reader users may find it hard to expand or collapse groups of "
+"checkboxes"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:56
+msgid "one page links to a PDF document that is not fully accessible"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:57
+msgid "the Notify status page has several accessibility issues"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:61
+msgid ""
+"We also know that the emails Notify sends are not fully accessible. The "
+"JAWS and NVDA screen readers announce extra spaces in emails when you "
+"view them in Microsoft Outlook."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:64
+msgid "Feedback and contact information"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:67
+msgid ""
+"If you need any part of this service in a different format like large "
+"print, audio recording or braille, <a class=\"govuk-link govuk-link--no-"
+"visited-state\" "
+"href=\"https://www.notifications.service.gov.uk/support\">contact the "
+"GOV.UK Notify team</a>."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:71
+msgid "We’ll consider your request and get back to you within one working day."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:74
+msgid "Reporting accessibility problems with this website"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:77
+msgid ""
+"We’re always looking to improve the accessibility of this website. If you"
+" find any problems not listed on this page or think we’re not meeting "
+"accessibility requirements, <a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"https://www.notifications.service.gov.uk/support\">contact"
+" the GOV.UK Notify team</a>."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:80
+msgid "Enforcement procedure"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:83
+msgid ""
+"The Equality and Human Rights Commission (EHRC) is responsible for "
+"enforcing the Public Sector Bodies (Websites and Mobile Applications) "
+"(No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’)."
+" If you’re not happy with how we respond to your complaint, contact the "
+"Equality Advisory and Support Service (EASS)."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:87
+#, fuzzy, python-format
+msgid ""
+"Find out how to <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://www.notifications.service.gov.uk/support\">contact the "
+"GOV.UK Notify team</a>."
+msgstr ""
+"參閱 \n"
+"      <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">服務與組織列表</a>。"
+
+#: templates/views/accessibility_statement.html:90
+msgid "Technical information about this website’s accessibility"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:93
+msgid ""
+"GDS is committed to making its website accessible, in accordance with the"
+" Public Sector Bodies (Websites and Mobile Applications) (No. 2) "
+"Accessibility Regulations 2018."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:97
+msgid ""
+"GOV.UK Notify is partially compliant with the Web Content Accessibility "
+"Guidelines (WCAG) version 2.1 AA standard, due to the non-compliances "
+"listed below."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:100
+msgid "Non-accessible content"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:103
+msgid "The content listed below is non-accessible for the following reasons."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:106
+msgid "Non-compliance with the WCAG version 2.1 AA standard"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:110
+msgid ""
+"The JAWS and NVDA screen readers do not announce the ‘copy to clipboard’ "
+"button. This fails <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://www.w3.org/WAI/WCAG21/Understanding/status-"
+"messages.html\">success criterion 4.1.3: status messages</a>. We plan to "
+"fix this in January 2023."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:113
+msgid ""
+"Some icons do not appear when using high contrast mode on Windows. This "
+"fails <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://www.w3.org/WAI/WCAG21/Understanding/visual-"
+"presentation.html\">success criterion 1.4.8: visual presentation</a>. We "
+"plan to fix this in February 2023."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:117
+msgid "Problems with using the interface"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:121
+msgid ""
+"Our validation errors cause problems for screen readers. This means it "
+"can be hard to know when an error has occurred or what to do next. We "
+"plan to fix this in December 2022."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:124
+msgid ""
+"The JAWS screen reader announces template folder page headings as "
+"multiple sentences. We plan to fix this in January 2023."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:127
+msgid ""
+"Choosing the date and time you want to send a message using a screen "
+"reader can be confusing. We plan to fix this in March 2023."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:130
+msgid ""
+"Expanding and collapsing groups of checkboxes using a screen reader can "
+"be confusing. We plan to fix this in April 2023."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:135
+msgid "PDFs and other documents"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:139
+msgid ""
+"One page links to a PDF document that is not fully accessible. This is "
+"not a fail under any WCAG 2.1 success criterion."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:142
+msgid ""
+"We provide a written description of the information in the PDF on an HTML"
+" page as an accessible alternative."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:146
+#: templates/views/signedout.html:147
+msgid "Emails"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:150
+msgid ""
+"The JAWS and NVDA screen readers announce extra spaces in emails when "
+"viewed in Microsoft Outlook."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:154
+msgid ""
+"We’ll continue to investigate the cause of this issue and, if possible, "
+"fix it in May 2023."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:158
+msgid "Status page"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:162
+msgid ""
+"The following content on the <a class=\"govuk-link govuk-link--no-"
+"visited-state\" "
+"href=\"https://status.notifications.service.gov.uk/\">Notify status "
+"page</a> is not compliant with the WCAG version 2.1 AA standard:"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:166
+msgid ""
+"an incorrect heading hierarchy which fails <a class=\"govuk-link govuk-"
+"link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#info-and-"
+"relationships\">success criterion 1.3.1: info and relationships</a>"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:167
+msgid ""
+"missing level 1 headings (users may not be able to accurately determine "
+"the structure of content on the page)"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:168
+msgid ""
+"our status incident page is missing the main heading and the status home "
+"page has an incorrect heading hierarchy – this fails <a class=\"govuk-"
+"link govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21"
+"/#info-and-relationships\">success criterion 1.3.1: info and "
+"relationships</a>"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:169
+msgid ""
+"our status page ‘subscribe to updates’ link does not contain "
+"programmatically discernible link text – this fails <a class=\"govuk-link"
+" govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21"
+"/#info-and-relationships\">success criterion 1.3.1: info and "
+"relationships</a>"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:170
+msgid ""
+"our status page subscribe to updates form fields do not contain an "
+"explicit label – this fails <a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"https://www.w3.org/TR/WCAG21/#info-and-"
+"relationships\">success criterion 1.3.1: info and relationships</a>"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:171
+msgid ""
+"our status page subscribe to updates forms do not indicate to users that "
+"they are expandable or collapsible – this fails <a class=\"govuk-link "
+"govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#name-"
+"role-value\">success criterion 4.1.2: name, role, value</a>"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:172
+msgid ""
+"our status page subscribe to updates forms contain some text that does "
+"not meet the minimum colour contrast requirements – this fails <a class"
+"=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://www.w3.org/TR/WCAG21/#contrast-minimum\">success criterion"
+" 1.4.3: contrast, minimum</a>"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:173
+msgid ""
+"our status page subscribe to updates form close link (x) is not "
+"descriptive enough for some users to determine its function or purpose – "
+"this fails <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://www.w3.org/TR/WCAG21/#link-purpose-in-context\">success "
+"criterion 2.4.4: link purpose, in context</a>"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:174
+msgid ""
+"our status page subscribe to updates forms, when submitted with incorrect"
+" data, do not inform screen reader users of the error message when it "
+"becomes available – this fails <a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"https://www.w3.org/TR/WCAG21/#status-"
+"messages\">success criterion 4.1.3: status messages</a>"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:178
+msgid ""
+"We plan to have the status page issues addressed by the current supplier "
+"or move to an alternative supplier in 2022."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:182
+msgid "How we tested this service"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:186
+msgid ""
+"The parts of the website used to send text messages, emails and letters "
+"were last tested in February 2021. The emails we send out, the web pages "
+"users see when they are sent a file by Notify and a sample letter PDF "
+"were last tested on 11 March 2019. Both tests were carried out by DAC."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:190
+msgid ""
+"We decided which pages to test based on the most common tasks that GOV.UK"
+" Notify users need to complete. We also tested a sample of pages with "
+"common user interface components."
+msgstr ""
 
 #: templates/views/cookies.html:6 templates/views/cookies.html:21
 msgid "Cookies"
@@ -627,10 +1009,6 @@ msgstr ""
 
 #: templates/views/signedout.html:144
 msgid "Pricing"
-msgstr ""
-
-#: templates/views/signedout.html:147
-msgid "Emails"
 msgstr ""
 
 #: templates/views/signedout.html:148

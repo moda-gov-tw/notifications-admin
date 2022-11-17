@@ -3,12 +3,12 @@
 {% from "components/content-metadata.html" import content_metadata %}
 
 {% block per_page_title %}
-  Accessibility statement
+  {{_('Accessibility statement')}}
 {% endblock %}
 
 {% block content_column_content %}
 
-  <h1 class="heading-large">Accessibility statement</h1>
+  <h1 class="heading-large">{{_('Accessibility statement')}}</h1>
 
   {{ content_metadata(
     data={
@@ -19,174 +19,174 @@
     ) }}
 
   <p class="govuk-body">
-    This accessibility statement applies to the www.notifications.service.gov.uk domain. It does not apply to the <a class="govuk-link govuk-link--no-visited-state" href="https://docs.notifications.service.gov.uk">GOV.UK Notify API documentation subdomain</a>.
+    {{_("This accessibility statement applies to the www.notifications.service.gov.uk domain. It does not apply to the <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://docs.notifications.service.gov.uk\">GOV.UK Notify API documentation subdomain")}}</a>.
   </p>
 
   <p class="govuk-body">
-    This website is run by the GOV.UK Notify team at the Government Digital Service (GDS). It is designed to be used by as many people as possible. You should be able to:
+    {{_('This website is run by the GOV.UK Notify team at the Government Digital Service (GDS). It is designed to be used by as many people as possible. You should be able to:')}}
   </p>
   <ul class="govuk-list govuk-list--bullet">
-    <li>change colours, contrast levels and fonts</li>
-    <li>zoom in up to 300% without the text spilling off the screen</li>
-    <li>navigate most of the website using just a keyboard</li>
-    <li>navigate most of the website using speech recognition software</li>
-    <li>listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)</li>
+    <li>{{_('change colours, contrast levels and fonts')}}</li>
+    <li>{{_('zoom in up to 300% without the text spilling off the screen')}}</li>
+    <li>{{_('navigate most of the website using just a keyboard')}}</li>
+    <li>{{_('navigate most of the website using speech recognition software')}}</li>
+    <li>{{_('listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)')}}</li>
   </ul>
 
   <p class="govuk-body">
-    The text should be clear and simple to understand.
+    {{_('The text should be clear and simple to understand.')}}
   </p>
 
   <p class="govuk-body">
-    <a class="govuk-link govuk-link--no-visited-state" href="https://mcmw.abilitynet.org.uk">AbilityNet</a> has advice on making your device easier to use if you have a disability.
+    {{_("<a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://mcmw.abilitynet.org.uk\">AbilityNet</a> has advice on making your device easier to use if you have a disability.")}}
   </p>
 
-  <h2 class="heading-medium" id="how-accessible-this-website-is">How accessible this website is</h2>
+  <h2 class="heading-medium" id="how-accessible-this-website-is">{{_('How accessible this website is')}}</h2>
 
   <p class="govuk-body">
-    We know some parts of this website are not fully accessible:
+    {{_('We know some parts of this website are not fully accessible:')}}
   </p>
   <ul class="govuk-list govuk-list--bullet">
-    <li>validation errors may be confusing for screen reader users</li>
-    <li>the ‘copy to clipboard’ button does not work with some screen readers</li>
-    <li>if a team adds template folders, screen readers may announce the page heading in a confusing way</li>
-    <li>Windows users cannot view our icons in high contrast mode</li>
-    <li>choosing the date and time to send a message may be hard for some screen reader users</li>
-    <li>screen reader users may find it hard to expand or collapse groups of checkboxes</li>
-    <li>one page links to a PDF document that is not fully accessible</li>
-    <li>the Notify status page has several accessibility issues</li>
+    <li>{{_('validation errors may be confusing for screen reader users')}}</li>
+    <li>{{_('the ‘copy to clipboard’ button does not work with some screen readers')}}</li>
+    <li>{{_('if a team adds template folders, screen readers may announce the page heading in a confusing way')}}</li>
+    <li>{{_('Windows users cannot view our icons in high contrast mode')}}</li>
+    <li>{{_('choosing the date and time to send a message may be hard for some screen reader users')}}</li>
+    <li>{{_('screen reader users may find it hard to expand or collapse groups of checkboxes')}}</li>
+    <li>{{_('one page links to a PDF document that is not fully accessible')}}</li>
+    <li>{{_('the Notify status page has several accessibility issues')}}</li>
   </ul>
 
   <p class="govuk-body">
-    We also know that the emails Notify sends are not fully accessible. The JAWS and NVDA screen readers announce extra spaces in emails when you view them in Microsoft Outlook.
+    {{_('We also know that the emails Notify sends are not fully accessible. The JAWS and NVDA screen readers announce extra spaces in emails when you view them in Microsoft Outlook.')}}
   </p>
 
-  <h2 class="heading-medium" id="feedback-and-contact-information">Feedback and contact information</h2>
+  <h2 class="heading-medium" id="feedback-and-contact-information">{{_('Feedback and contact information')}}</h2>
 
   <p class="govuk-body">
-    If you need any part of this service in a different format like large print, audio recording or braille, <a class="govuk-link govuk-link--no-visited-state" href="https://www.notifications.service.gov.uk/support">contact the GOV.UK Notify team</a>.
-  </p>
-
-  <p class="govuk-body">
-    We’ll consider your request and get back to you within one working day.
-  </p>
-
-  <h2 class="heading-medium" id="reporting-accessibility-problems">Reporting accessibility problems with this website</h2>
-
-  <p class="govuk-body">
-    We’re always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we’re not meeting accessibility requirements, <a class="govuk-link govuk-link--no-visited-state" href="https://www.notifications.service.gov.uk/support">contact the GOV.UK Notify team</a>.
-  </p>
-
-  <h2 class="heading-medium" id="enforcement-procedure">Enforcement procedure</h2>
-
-  <p class="govuk-body">
-    The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’). If you’re not happy with how we respond to your complaint, contact the Equality Advisory and Support Service (EASS).
+    {{_("If you need any part of this service in a different format like large print, audio recording or braille, <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.notifications.service.gov.uk/support\">contact the GOV.UK Notify team</a>.")}}
   </p>
 
   <p class="govuk-body">
-    Find out how to <a class="govuk-link govuk-link--no-visited-state" href="https://www.notifications.service.gov.uk/support">contact the GOV.UK Notify team</a>.
+    {{_('We’ll consider your request and get back to you within one working day.')}}
   </p>
 
-  <h2 class="heading-medium" id="technical-information">Technical information about this website’s accessibility</h2>
+  <h2 class="heading-medium" id="reporting-accessibility-problems">{{_('Reporting accessibility problems with this website')}}</h2>
 
   <p class="govuk-body">
-    GDS is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
+    {{_("We’re always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we’re not meeting accessibility requirements, <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.notifications.service.gov.uk/support\">contact the GOV.UK Notify team</a>.")}}
+  </p>
+
+  <h2 class="heading-medium" id="enforcement-procedure">{{_('Enforcement procedure')}}</h2>
+
+  <p class="govuk-body">
+    {{_('The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’). If you’re not happy with how we respond to your complaint, contact the Equality Advisory and Support Service (EASS).')}}
   </p>
 
   <p class="govuk-body">
-    GOV.UK Notify is partially compliant with the Web Content Accessibility Guidelines (WCAG) version 2.1 AA standard, due to the non-compliances listed below.
+    {{_("Find out how to <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.notifications.service.gov.uk/support\">contact the GOV.UK Notify team</a>.")}}
   </p>
 
-  <h2 class="heading-medium" id="non-accessible-content">Non-accessible content</h2>
+  <h2 class="heading-medium" id="technical-information">{{_('Technical information about this website’s accessibility')}}</h2>
 
   <p class="govuk-body">
-    The content listed below is non-accessible for the following reasons.
+    {{_('GDS is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.')}}
   </p>
 
-  <h3 class="heading-small" id="non-compliance">Non-compliance with the WCAG version 2.1 AA standard</h3>
+  <p class="govuk-body">
+    {{_('GOV.UK Notify is partially compliant with the Web Content Accessibility Guidelines (WCAG) version 2.1 AA standard, due to the non-compliances listed below.')}}
+  </p>
+
+  <h2 class="heading-medium" id="non-accessible-content">{{_('Non-accessible content')}}</h2>
+
+  <p class="govuk-body">
+    {{_('The content listed below is non-accessible for the following reasons.')}}
+  </p>
+
+  <h3 class="heading-small" id="non-compliance">{{_('Non-compliance with the WCAG version 2.1 AA standard')}}</h3>
 
   <ol class="govuk-list govuk-list--number">
     <li>
-      The JAWS and NVDA screen readers do not announce the ‘copy to clipboard’ button. This fails <a class="govuk-link govuk-link--no-visited-state" href="https://www.w3.org/WAI/WCAG21/Understanding/status-messages.html">success criterion 4.1.3: status messages</a>. We plan to fix this in January 2023.
+      {{_("The JAWS and NVDA screen readers do not announce the ‘copy to clipboard’ button. This fails <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.w3.org/WAI/WCAG21/Understanding/status-messages.html\">success criterion 4.1.3: status messages</a>. We plan to fix this in January 2023.")}}
     </li>
     <li>
-      Some icons do not appear when using high contrast mode on Windows. This fails <a class="govuk-link govuk-link--no-visited-state" href="https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html">success criterion 1.4.8: visual presentation</a>. We plan to fix this in February 2023.
+      {{_("Some icons do not appear when using high contrast mode on Windows. This fails <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html\">success criterion 1.4.8: visual presentation</a>. We plan to fix this in February 2023.")}}
     </li>
   </ol>
 
-  <h3 class="heading-small" id="problems-with-using-the-interface">Problems with using the interface</h3>
+  <h3 class="heading-small" id="problems-with-using-the-interface">{{_('Problems with using the interface')}}</h3>
 
   <ol class="govuk-list govuk-list--number">
     <li>
-      Our validation errors cause problems for screen readers. This means it can be hard to know when an error has occurred or what to do next. We plan to fix this in December 2022.
+      {{_('Our validation errors cause problems for screen readers. This means it can be hard to know when an error has occurred or what to do next. We plan to fix this in December 2022.')}}
     </li>
     <li>
-      The JAWS screen reader announces template folder page headings as multiple sentences. We plan to fix this in January 2023.
+      {{_('The JAWS screen reader announces template folder page headings as multiple sentences. We plan to fix this in January 2023.')}}
     </li>
     <li>
-      Choosing the date and time you want to send a message using a screen reader can be confusing. We plan to fix this in March 2023.
+      {{_('Choosing the date and time you want to send a message using a screen reader can be confusing. We plan to fix this in March 2023.')}}
     </li>
     <li>
-      Expanding and collapsing groups of checkboxes using a screen reader can be confusing. We plan to fix this in April 2023.
+      {{_('Expanding and collapsing groups of checkboxes using a screen reader can be confusing. We plan to fix this in April 2023.')}}
     </li>
   </ol>
 
   <h3 class="heading-small" id="pdfs-documents">
-    PDFs and other documents
+    {{_('PDFs and other documents')}}
   </h3>
 
   <p class="govuk-body">
-    One page links to a PDF document that is not fully accessible. This is not a fail under any WCAG 2.1 success criterion.</p>
+    {{_('One page links to a PDF document that is not fully accessible. This is not a fail under any WCAG 2.1 success criterion.')}}</p>
 
   <p class="govuk-body">
-    We provide a written description of the information in the PDF on an HTML page as an accessible alternative.
+    {{_('We provide a written description of the information in the PDF on an HTML page as an accessible alternative.')}}
   </p>
 
   <h3 class="heading-small" id="emails">
-    Emails
+    {{_('Emails')}}
   </h3>
 
   <p class="govuk-body">
-    The JAWS and NVDA screen readers announce extra spaces in emails when viewed in Microsoft Outlook.
+    {{_('The JAWS and NVDA screen readers announce extra spaces in emails when viewed in Microsoft Outlook.')}}
   </p>
 
   <p class="govuk-body">
-    We’ll continue to investigate the cause of this issue and, if possible, fix it in May 2023.
+    {{_('We’ll continue to investigate the cause of this issue and, if possible, fix it in May 2023.')}}
   </p>
 
   <h3 class="heading-small" id="status-page">
-    Status page
+    {{_('Status page')}}
   </h3>
 
   <p class="govuk-body">
-    The following content on the <a class="govuk-link govuk-link--no-visited-state" href="https://status.notifications.service.gov.uk/">Notify status page</a> is not compliant with the WCAG version 2.1 AA standard:
+    {{_("The following content on the <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://status.notifications.service.gov.uk/\">Notify status page</a> is not compliant with the WCAG version 2.1 AA standard:")}}
   </p>
 
   <ul class="govuk-list govuk-list--bullet">
-    <li>an incorrect heading hierarchy which fails <a class="govuk-link govuk-link--no-visited-state" href="https://www.w3.org/TR/WCAG21/#info-and-relationships">success criterion 1.3.1: info and relationships</a></li>
-    <li>missing level 1 headings (users may not be able to accurately determine the structure of content on the page)</li>
-    <li>our status incident page is missing the main heading and the status home page has an incorrect heading hierarchy – this fails <a class="govuk-link govuk-link--no-visited-state" href="https://www.w3.org/TR/WCAG21/#info-and-relationships">success criterion 1.3.1: info and relationships</a></li>
-    <li>our status page ‘subscribe to updates’ link does not contain programmatically discernible link text – this fails <a class="govuk-link govuk-link--no-visited-state" href="https://www.w3.org/TR/WCAG21/#info-and-relationships">success criterion 1.3.1: info and relationships</a></li>
-    <li>our status page subscribe to updates form fields do not contain an explicit label – this fails <a class="govuk-link govuk-link--no-visited-state" href="https://www.w3.org/TR/WCAG21/#info-and-relationships">success criterion 1.3.1: info and relationships</a></li>
-    <li>our status page subscribe to updates forms do not indicate to users that they are expandable or collapsible – this fails <a class="govuk-link govuk-link--no-visited-state" href="https://www.w3.org/TR/WCAG21/#name-role-value">success criterion 4.1.2: name, role, value</a></li>
-    <li>our status page subscribe to updates forms contain some text that does not meet the minimum colour contrast requirements – this fails <a class="govuk-link govuk-link--no-visited-state" href="https://www.w3.org/TR/WCAG21/#contrast-minimum">success criterion 1.4.3: contrast, minimum</a></li>
-    <li>our status page subscribe to updates form close link (x) is not descriptive enough for some users to determine its function or purpose – this fails <a class="govuk-link govuk-link--no-visited-state" href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context">success criterion 2.4.4: link purpose, in context</a></li>
-    <li>our status page subscribe to updates forms, when submitted with incorrect data, do not inform screen reader users of the error message when it becomes available – this fails <a class="govuk-link govuk-link--no-visited-state" href="https://www.w3.org/TR/WCAG21/#status-messages">success criterion 4.1.3: status messages</a></li>
+    <li>{{_("an incorrect heading hierarchy which fails <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#info-and-relationships\">success criterion 1.3.1: info and relationships</a>")}}</li>
+    <li>{{_('missing level 1 headings (users may not be able to accurately determine the structure of content on the page)')}}</li>
+    <li>{{_("our status incident page is missing the main heading and the status home page has an incorrect heading hierarchy – this fails <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#info-and-relationships\">success criterion 1.3.1: info and relationships</a>")}}</li>
+    <li>{{_("our status page ‘subscribe to updates’ link does not contain programmatically discernible link text – this fails <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#info-and-relationships\">success criterion 1.3.1: info and relationships</a>")}}</li>
+    <li>{{_("our status page subscribe to updates form fields do not contain an explicit label – this fails <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#info-and-relationships\">success criterion 1.3.1: info and relationships</a>")}}</li>
+    <li>{{_("our status page subscribe to updates forms do not indicate to users that they are expandable or collapsible – this fails <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#name-role-value\">success criterion 4.1.2: name, role, value</a>")}}</li>
+    <li>{{_("our status page subscribe to updates forms contain some text that does not meet the minimum colour contrast requirements – this fails <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#contrast-minimum\">success criterion 1.4.3: contrast, minimum</a>")}}</li>
+    <li>{{_("our status page subscribe to updates form close link (x) is not descriptive enough for some users to determine its function or purpose – this fails <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#link-purpose-in-context\">success criterion 2.4.4: link purpose, in context</a>")}}</li>
+    <li>{{_("our status page subscribe to updates forms, when submitted with incorrect data, do not inform screen reader users of the error message when it becomes available – this fails <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#status-messages\">success criterion 4.1.3: status messages</a>")}}</li>
   </ul>
 
   <p class="govuk-body">
-    We plan to have the status page issues addressed by the current supplier or move to an alternative supplier in 2022.
+    {{_('We plan to have the status page issues addressed by the current supplier or move to an alternative supplier in 2022.')}}
   </p>
 
   <h2 class="heading-medium" id="how-we-tested-this-service">
-    How we tested this service
+    {{_('How we tested this service')}}
   </h2>
 
   <p class="govuk-body">
-    The parts of the website used to send text messages, emails and letters were last tested in February 2021. The emails we send out, the web pages users see when they are sent a file by Notify and a sample letter PDF were last tested on 11 March 2019. Both tests were carried out by DAC.
+    {{_('The parts of the website used to send text messages, emails and letters were last tested in February 2021. The emails we send out, the web pages users see when they are sent a file by Notify and a sample letter PDF were last tested on 11 March 2019. Both tests were carried out by DAC.')}}
   </p>
 
   <p class="govuk-body">
-    We decided which pages to test based on the most common tasks that GOV.UK Notify users need to complete. We also tested a sample of pages with common user interface components.
+    {{_('We decided which pages to test based on the most common tasks that GOV.UK Notify users need to complete. We also tested a sample of pages with common user interface components.')}}
   </p>
 {% endblock %}
