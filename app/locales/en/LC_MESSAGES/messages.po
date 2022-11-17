@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 20:37+0800\n"
+"POT-Creation-Date: 2022-11-17 20:40+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -2620,6 +2620,88 @@ msgstr ""
 
 #: templates/views/features/text-messages.html:38
 msgid "Each service you add has an annual allowance of free text messages."
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:9
+#: templates/views/guidance/who-can-use-notify.html:15
+msgid "Who can use Notify"
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:19
+msgid "GOV.UK Notify is available to:"
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:22
+msgid "central government departments"
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:23
+msgid "emergency services"
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:24
+msgid "local authorities"
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:25
+msgid "the armed forces"
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:26
+msgid "the NHS and GP practices"
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:27
+msgid "state-funded schools"
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:30
+#, python-format
+msgid ""
+"If you work for one of these organisations but get an error when you try "
+"to create an account, <a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"%%s\">contact support</a>."
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:33
+msgid "Suppliers"
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:35
+msgid ""
+"If you’re doing work for a public sector organisation you can use "
+"GOV.UK&nbsp;Notify."
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:38
+msgid ""
+"Someone from the public sector organisation you’re working with needs to "
+"set up the account. Then they can invite you as a team member."
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:41
+msgid "Charities"
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:43
+msgid "Notify is not currently available to charities."
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:46
+msgid "Members of the public"
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:48
+msgid ""
+"The GOV.UK Notify service is only for people who work in the government\n"
+"    or other public sector organisations."
+msgstr ""
+
+#: templates/views/guidance/who-can-use-notify.html:52
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://www.gov.uk\">Find government services and information on "
+"GOV.UK</a>."
 msgstr ""
 
 #: templates/views/service-settings/letter-preview.html:6
