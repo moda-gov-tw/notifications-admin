@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 19:54+0800\n"
+"POT-Creation-Date: 2022-11-17 20:02+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -786,7 +786,8 @@ msgid ""
 "href=\"%%s\">performance data</a> page to see how Notify is performing."
 msgstr ""
 
-#: templates/views/features.html:67
+#: templates/views/features.html:67 templates/views/security.html:9
+#: templates/views/security.html:14
 msgid "Security"
 msgstr ""
 
@@ -805,7 +806,7 @@ msgid ""
 "information."
 msgstr ""
 
-#: templates/views/features.html:73
+#: templates/views/features.html:73 templates/views/security.html:53
 msgid "Two-factor authentication"
 msgstr ""
 
@@ -1350,6 +1351,262 @@ msgid ""
 "govuk-link--no-visited-state\" href=\"https://gds.blog.gov.uk/2022/07/20"
 "/how-rewriting-text-messages-can-help-services-to-save-money/\">how "
 "rewriting text messages can help services to save money</a>’."
+msgstr ""
+
+#: templates/views/security.html:15
+msgid ""
+"GOV.UK Notify is built for the needs of government services. It has "
+"processes in place to:"
+msgstr ""
+
+#: templates/views/security.html:17
+msgid "protect user data"
+msgstr ""
+
+#: templates/views/security.html:18
+msgid "keep systems secure"
+msgstr ""
+
+#: templates/views/security.html:19
+msgid "manage risks around information"
+msgstr ""
+
+#: templates/views/security.html:22
+msgid "Data"
+msgstr ""
+
+#: templates/views/security.html:23
+msgid "On Notify, data is encrypted when:"
+msgstr ""
+
+#: templates/views/security.html:25
+msgid "it passes through the service"
+msgstr ""
+
+#: templates/views/security.html:26
+msgid "it’s stored on the service"
+msgstr ""
+
+#: templates/views/security.html:28
+msgid "Any recipient data you upload is only held for 7 days."
+msgstr ""
+
+#: templates/views/security.html:29
+msgid ""
+"If you <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"/features/email#send-files\">send a file by email</a>, the file "
+"will be available for the recipient to download for up to 78 weeks (18 "
+"months)."
+msgstr ""
+
+#: templates/views/security.html:30
+msgid ""
+"The Cabinet Office acts as data processor for Notify. Your organisation "
+"is the data controller."
+msgstr ""
+
+#: templates/views/security.html:31
+msgid "Data Protection Act"
+msgstr ""
+
+#: templates/views/security.html:32
+msgid ""
+"Notify complies with data protection law. To make sure it stays "
+"compliant, there are regular legal reviews of the service’s:"
+msgstr ""
+
+#: templates/views/security.html:34
+msgid "privacy policy"
+msgstr ""
+
+#: templates/views/security.html:35
+msgid "terms of use"
+msgstr ""
+
+#: templates/views/security.html:36
+msgid "approach to data sharing"
+msgstr ""
+
+#: templates/views/security.html:39
+msgid "Technical security"
+msgstr ""
+
+#: templates/views/security.html:40
+msgid "Other technical security controls on Notify include:"
+msgstr ""
+
+#: templates/views/security.html:42
+msgid ""
+"compliance with National Cyber Security Centre (NCSC) Cloud Security "
+"Principles"
+msgstr ""
+
+#: templates/views/security.html:43
+msgid ""
+"protective monitoring to record activity, and raise alerts about any "
+"suspicious activity"
+msgstr ""
+
+#: templates/views/security.html:44
+msgid ""
+"using JSON Web Tokens, to avoid sending API keys when your service talks "
+"to Notify"
+msgstr ""
+
+#: templates/views/security.html:47
+msgid "Protect sensitive information"
+msgstr ""
+
+#: templates/views/security.html:48
+msgid ""
+"Some messages include sensitive information like security codes or "
+"password reset links."
+msgstr ""
+
+#: templates/views/security.html:49
+msgid ""
+"If you’re sending a message with sensitive information, you can choose to"
+" hide those details on the Notify dashboard once the message has been "
+"sent. This means that only the message recipient will be able to see that"
+" information."
+msgstr ""
+
+#: templates/views/security.html:51
+msgid "User permissions and signing in"
+msgstr ""
+
+#: templates/views/security.html:52
+msgid ""
+"You can set different user permissions in Notify. This lets you control "
+"who in your team has access to certain parts of the service."
+msgstr ""
+
+#: templates/views/security.html:54
+msgid "To sign in to Notify, you’ll need to enter:"
+msgstr ""
+
+#: templates/views/security.html:56
+msgid "your email address and password"
+msgstr ""
+
+#: templates/views/security.html:57
+msgid "a text message code that Notify sends to your phone"
+msgstr ""
+
+#: templates/views/security.html:59
+#, python-format
+msgid ""
+"If signing in with a text message is a problem for your team, <a class"
+"=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">contact us</a> "
+"to find out about using an email link instead."
+msgstr ""
+
+#: templates/views/security.html:61
+msgid "Information risk management"
+msgstr ""
+
+#: templates/views/security.html:62
+msgid ""
+"Our approach to information risk management follows NCSC guidance. It "
+"assesses:"
+msgstr ""
+
+#: templates/views/security.html:64
+msgid "how Notify is built"
+msgstr ""
+
+#: templates/views/security.html:65
+msgid "the infrastructure Notify is built upon"
+msgstr ""
+
+#: templates/views/security.html:66
+msgid "support for the Notify service"
+msgstr ""
+
+#: templates/views/security.html:68
+msgid ""
+"This approach also applies to the service providers Notify uses to send "
+"messages."
+msgstr ""
+
+#: templates/views/security.html:70
+msgid "How we manage risks on Notify"
+msgstr ""
+
+#: templates/views/security.html:71
+msgid "Things we do to manage risks on Notify include:"
+msgstr ""
+
+#: templates/views/security.html:73
+msgid ""
+"formal risk assessments based on <a class=\"govuk-link govuk-link--no-"
+"visited-state\" "
+"href=\"http://www.iso.org/iso/catalogue_detail?csnumber=56742\">ISO "
+"27005:2011</a> and National Cyber Security Centre guidance"
+msgstr ""
+
+#: templates/views/security.html:74
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://www.ncsc.gov.uk/information/check-penetration-"
+"testing\">CHECK</a>-based testing, both annually and when any major "
+"changes are made to Notify"
+msgstr ""
+
+#: templates/views/security.html:75
+msgid ""
+"residual risk statement preparation and active management of the risk "
+"treatment plan"
+msgstr ""
+
+#: templates/views/security.html:76
+msgid "regular updates to the Privacy Impact Assessment"
+msgstr ""
+
+#: templates/views/security.html:77
+msgid "security impact assessments"
+msgstr ""
+
+#: templates/views/security.html:80
+msgid "Cabinet Office approval"
+msgstr ""
+
+#: templates/views/security.html:81
+msgid ""
+"Notify has been assessed and approved by the Cabinet Office Senior "
+"Information Risk Officer (SIRO). The SIRO checks this approval once a "
+"year."
+msgstr ""
+
+#: templates/views/security.html:82
+msgid ""
+"Notify also has approval from the Office of the Government’s SIRO to host"
+" data within the EEA."
+msgstr ""
+
+#: templates/views/security.html:84
+msgid "Classifications and security vetting"
+msgstr ""
+
+#: templates/views/security.html:85
+msgid ""
+"You can use Notify to send messages classified as ‘OFFICIAL’ or "
+"‘OFFICIAL-SENSITIVE’ under the <a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"https://www.gov.uk/government/publications"
+"/government-security-classifications\">Government Security "
+"Classifications</a> policy."
+msgstr ""
+
+#: templates/views/security.html:86
+msgid "Notify does not process data classified as ‘SECRET’ or ‘TOP SECRET’."
+msgstr ""
+
+#: templates/views/security.html:87
+msgid ""
+"The Notify team has Security Check (SC) level clearance from <a class"
+"=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://www.gov.uk/government/organisations/united-kingdom-"
+"security-vetting\">United Kingdom Security Vetting</a> (UKSV)."
 msgstr ""
 
 #: templates/views/signedout.html:5
