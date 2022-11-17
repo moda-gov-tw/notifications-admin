@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 20:40+0800\n"
+"POT-Creation-Date: 2022-11-17 20:44+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -2254,7 +2254,7 @@ msgstr ""
 msgid "When using Notify"
 msgstr ""
 
-#: templates/views/terms-of-use.html:21
+#: templates/views/terms-of-use.html:21 templates/views/trial-mode.html:39
 msgid "You must:"
 msgstr ""
 
@@ -2361,6 +2361,86 @@ msgstr ""
 "參閱 \n"
 "      <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">服務與組織列表</a>。"
+
+#: templates/views/trial-mode.html:7 templates/views/trial-mode.html:12
+msgid "Trial mode"
+msgstr ""
+
+#: templates/views/trial-mode.html:14
+msgid ""
+"When you add a new service it will start in trial mode. This lets you try"
+" out GOV.UK Notify, with a few restrictions."
+msgstr ""
+
+#: templates/views/trial-mode.html:15
+msgid "While your service is in trial mode you can only:"
+msgstr ""
+
+#: templates/views/trial-mode.html:17
+msgid "send 50 text messages and emails per day"
+msgstr ""
+
+#: templates/views/trial-mode.html:18
+msgid "send messages to yourself and other people in your team"
+msgstr ""
+
+#: templates/views/trial-mode.html:19
+msgid "create letter templates, but not send them"
+msgstr ""
+
+#: templates/views/trial-mode.html:24
+#, fuzzy, python-format
+msgid ""
+"To remove these restrictions, you can <a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"%%s\">request to go live</a>."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/trial-mode.html:27
+msgid "To remove these restrictions:"
+msgstr ""
+
+#: templates/views/trial-mode.html:30
+msgid "Sign in to Notify"
+msgstr ""
+
+#: templates/views/trial-mode.html:31
+msgid "Go to the <b class=\"govuk-!-font-weight-bold\">Settings</b> page."
+msgstr ""
+
+#: templates/views/trial-mode.html:32
+msgid "Select <b class=\"govuk-!-font-weight-bold\">Request to go live</b>."
+msgstr ""
+
+#: templates/views/trial-mode.html:36
+msgid "When we receive your request we’ll get back to you within one working day."
+msgstr ""
+
+#: templates/views/trial-mode.html:38
+msgid "Before you request to go live"
+msgstr ""
+
+#: templates/views/trial-mode.html:41
+msgid "add examples of the messages you want to send"
+msgstr ""
+
+#: templates/views/trial-mode.html:42
+msgid "update your settings so you’re ready to send and receive messages"
+msgstr ""
+
+#: templates/views/trial-mode.html:43
+msgid "accept our data sharing and financial agreement"
+msgstr ""
+
+#: templates/views/trial-mode.html:44
+#, fuzzy, python-format
+msgid ""
+"accept our <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">terms of use</a>"
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
 
 #: templates/views/using-notify.html:5 templates/views/using-notify.html:12
 #: templates/views/using-notify.html:16
@@ -2798,7 +2878,7 @@ msgid ""
 msgstr ""
 
 #: templates/views/guidance/who-can-use-notify.html:52
-#, fuzzy, python-format
+#, fuzzy
 msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"https://www.gov.uk\">Find government services and information on "
