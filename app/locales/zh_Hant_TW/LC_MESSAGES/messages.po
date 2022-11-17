@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 17:21+0800\n"
+"POT-Creation-Date: 2022-11-17 17:23+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -615,6 +615,25 @@ msgid ""
 "target=\"_blank\" rel=\"noopener\">REST API documentation</a> (this link "
 "opens in a new tab)."
 msgstr ""
+
+#: templates/views/integration-testing.html:5
+#: templates/views/integration-testing.html:12
+msgid "Integration testing"
+msgstr ""
+
+#: templates/views/integration-testing.html:14
+msgid "This information has moved."
+msgstr ""
+
+#: templates/views/integration-testing.html:17
+#, fuzzy, python-format
+msgid ""
+"Refer to the <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">documentation\n"
+"      for the client library you are using."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
 
 #: templates/views/privacy.html:5 templates/views/privacy.html:12
 msgid "Privacy notice: how we use your data"

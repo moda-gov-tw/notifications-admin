@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 17:21+0800\n"
+"POT-Creation-Date: 2022-11-17 17:23+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -608,6 +608,23 @@ msgid ""
 "href=\"https://docs.notifications.service.gov.uk/rest-api.html\" "
 "target=\"_blank\" rel=\"noopener\">REST API documentation</a> (this link "
 "opens in a new tab)."
+msgstr ""
+
+#: templates/views/integration-testing.html:5
+#: templates/views/integration-testing.html:12
+msgid "Integration testing"
+msgstr ""
+
+#: templates/views/integration-testing.html:14
+msgid "This information has moved."
+msgstr ""
+
+#: templates/views/integration-testing.html:17
+#, python-format
+msgid ""
+"Refer to the <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">documentation\n"
+"      for the client library you are using."
 msgstr ""
 
 #: templates/views/privacy.html:5 templates/views/privacy.html:12
