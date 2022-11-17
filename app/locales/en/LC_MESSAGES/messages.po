@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 21:02+0800\n"
+"POT-Creation-Date: 2022-11-17 21:04+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -2450,6 +2450,8 @@ msgid ""
 msgstr ""
 
 #: templates/views/features/emails.html:33
+#: templates/views/guidance/send-files-by-email.html:7
+#: templates/views/guidance/send-files-by-email.html:12
 msgid "Send files by email"
 msgstr ""
 
@@ -3114,6 +3116,17 @@ msgstr ""
 
 #: templates/views/guidance/index.html:36
 msgid "sending text messages securely"
+msgstr ""
+
+#: templates/views/guidance/send-files-by-email.html:14
+#, python-format
+msgid ""
+"To send a file by email, follow the instructions in our <a class=\"govuk-"
+"link govuk-link--no-visited-state\" href=\"%%s\">API documentation</a>."
+msgstr ""
+
+#: templates/views/guidance/send-files-by-email.html:16
+msgid "This is an API-only feature."
 msgstr ""
 
 #: templates/views/guidance/who-can-use-notify.html:9

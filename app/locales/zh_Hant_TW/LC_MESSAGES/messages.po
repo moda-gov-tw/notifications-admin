@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 21:02+0800\n"
+"POT-Creation-Date: 2022-11-17 21:04+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -2533,6 +2533,8 @@ msgstr ""
 "href=\"%%s\">服務與組織列表</a>。"
 
 #: templates/views/features/emails.html:33
+#: templates/views/guidance/send-files-by-email.html:7
+#: templates/views/guidance/send-files-by-email.html:12
 msgid "Send files by email"
 msgstr ""
 
@@ -3218,6 +3220,19 @@ msgstr ""
 
 #: templates/views/guidance/index.html:36
 msgid "sending text messages securely"
+msgstr ""
+
+#: templates/views/guidance/send-files-by-email.html:14
+#, fuzzy, python-format
+msgid ""
+"To send a file by email, follow the instructions in our <a class=\"govuk-"
+"link govuk-link--no-visited-state\" href=\"%%s\">API documentation</a>."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/guidance/send-files-by-email.html:16
+msgid "This is an API-only feature."
 msgstr ""
 
 #: templates/views/guidance/who-can-use-notify.html:9
