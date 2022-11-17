@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 17:23+0800\n"
+"POT-Creation-Date: 2022-11-17 17:33+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -608,6 +608,232 @@ msgid ""
 "href=\"https://docs.notifications.service.gov.uk/rest-api.html\" "
 "target=\"_blank\" rel=\"noopener\">REST API documentation</a> (this link "
 "opens in a new tab)."
+msgstr ""
+
+#: templates/views/features.html:10 templates/views/features.html:15
+msgid "Features"
+msgstr ""
+
+#: templates/views/features.html:16
+msgid ""
+"If you work for central government, a local authority or the NHS, you can"
+" use GOV.UK Notify to keep your users updated."
+msgstr ""
+
+#: templates/views/features.html:17
+msgid "Notify makes it easy to create, customise and send:"
+msgstr ""
+
+#: templates/views/features.html:19
+msgid "emails"
+msgstr ""
+
+#: templates/views/features.html:20
+msgid "text messages"
+msgstr ""
+
+#: templates/views/features.html:21
+msgid "letters"
+msgstr ""
+
+#: templates/views/features.html:23
+msgid "You do not need any technical knowledge to use Notify."
+msgstr ""
+
+#: templates/views/features.html:25
+#, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Create "
+"an account</a> for free and try it yourself."
+msgstr ""
+
+#: templates/views/features.html:28
+msgid "Reusable message templates"
+msgstr ""
+
+#: templates/views/features.html:29
+msgid ""
+"To send an email, text or letter with Notify, you need to create a "
+"reusable message template first."
+msgstr ""
+
+#: templates/views/features.html:30
+msgid ""
+"Templates let you send the same thing to lots of people, as often as you "
+"need to, without writing a new message each time."
+msgstr ""
+
+#: templates/views/features.html:32
+msgid "Personalised content"
+msgstr ""
+
+#: templates/views/features.html:33
+msgid "Notify makes it easy to send personalised messages from a single template."
+msgstr ""
+
+#: templates/views/features.html:34
+#, python-format
+msgid ""
+"See <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">how"
+" to personalise your content</a>."
+msgstr ""
+
+#: templates/views/features.html:36
+msgid "Bulk sendin"
+msgstr ""
+
+#: templates/views/features.html:37
+msgid ""
+"To send a batch of messages at once, upload a list of contact details to "
+"Notify. If you’re sending emails and text messages, you can also schedule"
+" the date and time you want them to be sent."
+msgstr ""
+
+#: templates/views/features.html:39
+msgid "API integration"
+msgstr ""
+
+#: templates/views/features.html:40
+msgid ""
+"You can integrate the Notify API with your web application or back-office"
+" system to send messages automatically."
+msgstr ""
+
+#: templates/views/features.html:41
+#, python-format
+msgid ""
+"Read our <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">API documentation</a> for more information."
+msgstr ""
+
+#: templates/views/features.html:43
+msgid "Reporting"
+msgstr ""
+
+#: templates/views/features.html:44
+msgid ""
+"Notify’s real-time dashboard lets you see the number of messages sent. "
+"You can also check the current status of any message to see when it was "
+"delivered."
+msgstr ""
+
+#: templates/views/features.html:45
+#, python-format
+msgid ""
+"Read more about the <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">delivery status</a> of your messages."
+msgstr ""
+
+#: templates/views/features.html:47
+msgid "Permissions"
+msgstr ""
+
+#: templates/views/features.html:48
+msgid ""
+"Control which members of your team can see, create, edit and send "
+"messages."
+msgstr ""
+
+#: templates/views/features.html:49
+msgid "Notify lets you:"
+msgstr ""
+
+#: templates/views/features.html:51
+msgid "set different permission levels for each team member"
+msgstr ""
+
+#: templates/views/features.html:52
+msgid "invite team members who do not have a government email address"
+msgstr ""
+
+#: templates/views/features.html:53
+msgid "choose who else can manage team members"
+msgstr ""
+
+#: templates/views/features.html:56
+msgid "Performance"
+msgstr ""
+
+#: templates/views/features.html:57
+msgid "Notify commits to:"
+msgstr ""
+
+#: templates/views/features.html:59
+#, python-format
+msgid "sending 95% of emails and text messages within 10 seconds"
+msgstr ""
+
+#: templates/views/features.html:60
+msgid ""
+"printing and posting letters by 3pm the next working day (if you send "
+"them to us before 5:30pm)"
+msgstr ""
+
+#: templates/views/features.html:63
+msgid ""
+"We send messages through several different providers. If one provider "
+"fails, Notify switches to another so that your messages are not affected."
+msgstr ""
+
+#: templates/views/features.html:65
+#, python-format
+msgid ""
+"Visit our <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">performance data</a> page to see how Notify is performing."
+msgstr ""
+
+#: templates/views/features.html:67
+msgid "Security"
+msgstr ""
+
+#: templates/views/features.html:68
+msgid "Notify protects and manages data to meet the needs of government services."
+msgstr ""
+
+#: templates/views/features.html:70
+msgid "Hide sensitive information"
+msgstr ""
+
+#: templates/views/features.html:71
+msgid ""
+"Notify lets you redact personal information from your messages after they"
+" have been sent. This means that only the recipient can see that "
+"information."
+msgstr ""
+
+#: templates/views/features.html:73
+msgid "Two-factor authentication"
+msgstr ""
+
+#: templates/views/features.html:74
+msgid ""
+"Notify uses two-factor authentication (2FA) to keep your account secure. "
+"When you sign in, we’ll send a unique one-time code to your phone and ask"
+" you to enter it before we let you use your account."
+msgstr ""
+
+#: templates/views/features.html:75
+#, python-format
+msgid ""
+"Read more about <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">security"
+msgstr ""
+
+#: templates/views/features.html:77
+msgid "Support"
+msgstr ""
+
+#: templates/views/features.html:78
+msgid ""
+"Notify provides 24-hour online support. If you have an emergency outside "
+"office hours, we’ll reply within 30 minutes."
+msgstr ""
+
+#: templates/views/features.html:79
+#, python-format
+msgid ""
+"Find out more about <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">support</a>."
 msgstr ""
 
 #: templates/views/integration-testing.html:5
