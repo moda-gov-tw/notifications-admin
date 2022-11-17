@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 17:33+0800\n"
+"POT-Creation-Date: 2022-11-17 17:44+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -1161,6 +1161,191 @@ msgid ""
 "    Water Lane<br>\n"
 "    Wilmslow<br>\n"
 "    Cheshire SK9 5AF"
+msgstr ""
+
+#: templates/views/roadmap.html:10 templates/views/roadmap.html:15
+msgid "Roadmap"
+msgstr ""
+
+#: templates/views/roadmap.html:25
+msgid ""
+"The GOV.UK Notify roadmap shows what we’re working on and some of the <a "
+"class=\"govuk-link govuk-link--no-visited-state\" href=\"#things-we-have-"
+"done\">things we’ve done</a>."
+msgstr ""
+
+#: templates/views/roadmap.html:26
+msgid ""
+"The roadmap is only a guide. It does not cover everything we do, and some"
+" things may change."
+msgstr ""
+
+#: templates/views/roadmap.html:27
+#, python-format
+msgid ""
+"You can <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">contact us</a> if you have any questions about the roadmap "
+"or suggestions for new features."
+msgstr ""
+
+#: templates/views/roadmap.html:29
+msgid "Things we’re working on now"
+msgstr ""
+
+#: templates/views/roadmap.html:33
+msgid "Let services upload their own logo for emails and letters"
+msgstr ""
+
+#: templates/views/roadmap.html:34
+msgid ""
+"Start to <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://gds.blog.gov.uk/2022/07/12/why-weve-decided-to-"
+"decommission-gov-uk-paas-platform-as-a-service/\">migrate our database "
+"from GOV.UK PaaS</a> to one hosted using <a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"https://aws.amazon.com/rds/\">Amazon RDS</a>"
+msgstr ""
+
+#: templates/views/roadmap.html:35
+msgid ""
+"Migrate one of our applications from GOV.UK PaaS to <a class=\"govuk-link"
+" govuk-link--no-visited-state\" "
+"href=\"https://aws.amazon.com/ecs/\">Amazon ECS</a>"
+msgstr ""
+
+#: templates/views/roadmap.html:36
+#, python-format
+msgid ""
+"Make it quicker and easier to turn off <a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"%%s\">trial mode restrictions</a>"
+msgstr ""
+
+#: templates/views/roadmap.html:37
+msgid "Let services choose their own two-factor authentication method"
+msgstr ""
+
+#: templates/views/roadmap.html:38
+#, python-format
+msgid ""
+"Let services <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s#receive\">receive text messages</a> without having to contact "
+"the Notify team first"
+msgstr ""
+
+#: templates/views/roadmap.html:39
+msgid "Make it easier to find information and guidance on the Notify website"
+msgstr ""
+
+#: templates/views/roadmap.html:40
+msgid "Design reusable content patterns for text messages"
+msgstr ""
+
+#: templates/views/roadmap.html:41
+msgid ""
+"Update the version of the <a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"https://design-system.service.gov.uk/\">GOV.UK Design "
+"System</a> that we use"
+msgstr ""
+
+#: templates/views/roadmap.html:42
+#, python-format
+msgid ""
+"Improve our front-end code to meet our <a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"%%s\">targets for accessibility</a>"
+msgstr ""
+
+#: templates/views/roadmap.html:46
+msgid "Things we’ll do later"
+msgstr ""
+
+#: templates/views/roadmap.html:48
+msgid "January to March 2023"
+msgstr ""
+
+#: templates/views/roadmap.html:52
+msgid ""
+"Add multilingual letter templates so services can provide information in "
+"several languages"
+msgstr ""
+
+#: templates/views/roadmap.html:53
+msgid "Test reusable content patterns for text messages"
+msgstr ""
+
+#: templates/views/roadmap.html:54
+#, python-format
+msgid ""
+"Review our <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">email formatting options</a>"
+msgstr ""
+
+#: templates/views/roadmap.html:55
+msgid "Migrate a second application from GOV.UK PaaS to Amazon ECS"
+msgstr ""
+
+#: templates/views/roadmap.html:60
+msgid "April 2023 onwards"
+msgstr ""
+
+#: templates/views/roadmap.html:64
+msgid "Improve formatting options for letters"
+msgstr ""
+
+#: templates/views/roadmap.html:65
+msgid "Provide more detailed reporting and usage data"
+msgstr ""
+
+#: templates/views/roadmap.html:66
+msgid "Explore ways to let services send one-off messages"
+msgstr ""
+
+#: templates/views/roadmap.html:70
+msgid "Things we’ve done"
+msgstr ""
+
+#: templates/views/roadmap.html:72
+msgid "Improved email branding"
+msgstr ""
+
+#: templates/views/roadmap.html:74
+msgid "When a service team needs to update their email branding, they can now:"
+msgstr ""
+
+#: templates/views/roadmap.html:78
+msgid "choose new branding from a set of existing options"
+msgstr ""
+
+#: templates/views/roadmap.html:79
+msgid "preview their branding on the Notify website"
+msgstr ""
+
+#: templates/views/roadmap.html:83
+msgid "Made sending files by email more secure"
+msgstr ""
+
+#: templates/views/roadmap.html:85
+msgid "To protect files sent by email, service teams can now:"
+msgstr ""
+
+#: templates/views/roadmap.html:89
+msgid ""
+"ask recipients to enter their email address before they can download a "
+"file"
+msgstr ""
+
+#: templates/views/roadmap.html:90
+msgid "choose the length of time that a file is available to download"
+msgstr ""
+
+#: templates/views/roadmap.html:94
+msgid "Pair writing with service teams"
+msgstr ""
+
+#: templates/views/roadmap.html:96
+msgid ""
+"We wrote a blog post about this work, called ‘<a class=\"govuk-link "
+"govuk-link--no-visited-state\" href=\"https://gds.blog.gov.uk/2022/07/20"
+"/how-rewriting-text-messages-can-help-services-to-save-money/\">how "
+"rewriting text messages can help services to save money</a>’."
 msgstr ""
 
 #: templates/views/signedout.html:5
