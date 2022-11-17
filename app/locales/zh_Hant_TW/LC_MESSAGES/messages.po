@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 20:44+0800\n"
+"POT-Creation-Date: 2022-11-17 20:46+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -2798,6 +2798,61 @@ msgstr ""
 
 #: templates/views/features/text-messages.html:38
 msgid "Each service you add has an annual allowance of free text messages."
+msgstr ""
+
+#: templates/views/guidance/index.html:10
+#: templates/views/guidance/index.html:15
+msgid "Guidance"
+msgstr ""
+
+#: templates/views/guidance/index.html:17
+msgid ""
+"This guidance is for teams using GOV.UK Notify to send emails, text "
+"messages and letters."
+msgstr ""
+
+#: templates/views/guidance/index.html:19
+msgid "It explains how to:"
+msgstr ""
+
+#: templates/views/guidance/index.html:22
+msgid "edit and format messages"
+msgstr ""
+
+#: templates/views/guidance/index.html:23
+msgid "add branding and customisation"
+msgstr ""
+
+#: templates/views/guidance/index.html:24
+msgid "send files by email"
+msgstr ""
+
+#: templates/views/guidance/index.html:25
+msgid "upload a letter"
+msgstr ""
+
+#: templates/views/guidance/index.html:28
+msgid "More information"
+msgstr ""
+
+#: templates/views/guidance/index.html:30
+msgid "The GOV.UK Service Manual has advice on:"
+msgstr ""
+
+#: templates/views/guidance/index.html:33
+msgid "planning and writing text messages and emails"
+msgstr ""
+
+#: templates/views/guidance/index.html:34
+msgid "writing effective letters"
+msgstr ""
+
+#: templates/views/guidance/index.html:35
+msgid "sending emails from your service domain"
+msgstr ""
+
+#: templates/views/guidance/index.html:36
+msgid "sending text messages securely"
 msgstr ""
 
 #: templates/views/guidance/who-can-use-notify.html:9
