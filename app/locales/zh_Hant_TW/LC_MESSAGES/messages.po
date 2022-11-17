@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 17:44+0800\n"
+"POT-Creation-Date: 2022-11-17 17:53+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -275,7 +275,8 @@ msgid ""
 msgstr ""
 
 #: templates/views/accessibility_statement.html:146
-#: templates/views/signedout.html:147
+#: templates/views/features/emails.html:9
+#: templates/views/features/emails.html:14 templates/views/signedout.html:147
 msgid "Emails"
 msgstr ""
 
@@ -617,6 +618,7 @@ msgid ""
 msgstr ""
 
 #: templates/views/features.html:10 templates/views/features.html:15
+#: templates/views/features/emails.html:20
 msgid "Features"
 msgstr ""
 
@@ -710,7 +712,7 @@ msgid ""
 " system to send messages automatically."
 msgstr ""
 
-#: templates/views/features.html:41
+#: templates/views/features.html:41 templates/views/features/emails.html:43
 #, fuzzy, python-format
 msgid ""
 "Read our <a class=\"govuk-link govuk-link--no-visited-state\" "
@@ -1513,7 +1515,7 @@ msgstr ""
 "      <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">服務與組織列表</a>。"
 
-#: templates/views/signedout.html:144
+#: templates/views/features/emails.html:50 templates/views/signedout.html:144
 msgid "Pricing"
 msgstr ""
 
@@ -1577,6 +1579,131 @@ msgid ""
 "A photo of the GOV.UK Notify team gathered around a big screen. One team "
 "member is pointing at a graph on the screen."
 msgstr ""
+
+#: templates/views/features/emails.html:15
+msgid "Send an unlimited number of emails for free with GOV.UK Notify."
+msgstr ""
+
+#: templates/views/features/emails.html:17
+#, fuzzy, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Create "
+"an account</a> and try Notify for yourself."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/features/emails.html:21
+msgid "Notify makes it easy to:"
+msgstr ""
+
+#: templates/views/features/emails.html:23
+msgid "create reusable email templates"
+msgstr ""
+
+#: templates/views/features/emails.html:24
+msgid "personalise the content of your emails"
+msgstr ""
+
+#: templates/views/features/emails.html:25
+msgid "send and schedule bulk messages"
+msgstr ""
+
+#: templates/views/features/emails.html:27
+#, fuzzy, python-format
+msgid ""
+"You can also <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">integrate with our API</a> to send emails automatically."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/features/emails.html:29
+msgid "Email branding"
+msgstr ""
+
+#: templates/views/features/emails.html:30
+msgid "Add your organisa:tion’s logo and brand colour to email templates."
+msgstr ""
+
+#: templates/views/features/emails.html:31
+#, fuzzy, python-format
+msgid ""
+"See <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">how"
+" to change your email branding</a>."
+msgstr ""
+"參閱 \n"
+"      <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">服務與組織列表</a>。"
+
+#: templates/views/features/emails.html:33
+msgid "Send files by email"
+msgstr ""
+
+#: templates/views/features/emails.html:34
+msgid "Notify offers a safe and reliable way to send files by email."
+msgstr ""
+
+#: templates/views/features/emails.html:35
+msgid ""
+"Upload a file using our API, then send your users an email with a link to"
+" download it."
+msgstr ""
+
+#: templates/views/features/emails.html:36
+msgid "Notify uses encrypted links instead of email attachments because:"
+msgstr ""
+
+#: templates/views/features/emails.html:38
+msgid "they’re more secure"
+msgstr ""
+
+#: templates/views/features/emails.html:40
+msgid "email attachments are often marked as spam"
+msgstr ""
+
+#: templates/views/features/emails.html:42
+msgid ""
+"This is an API-only feature. You’ll need a developer on your team to set "
+"it up for you."
+msgstr ""
+
+#: templates/views/features/emails.html:45
+msgid "Add a reply-to address"
+msgstr ""
+
+#: templates/views/features/emails.html:46
+msgid "Notify lets you choose the email address that users reply to."
+msgstr ""
+
+#: templates/views/features/emails.html:47
+msgid ""
+"Emails with a reply-to address seem more trustworthy and are less likely "
+"to be labelled as spam."
+msgstr ""
+
+#: templates/views/features/emails.html:48
+#, fuzzy, python-format
+msgid ""
+"See <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">how"
+" to add a reply-to address</a>."
+msgstr ""
+"參閱 \n"
+"      <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">服務與組織列表</a>。"
+
+#: templates/views/features/emails.html:51
+msgid "It’s free to send emails through Notify."
+msgstr ""
+
+#: templates/views/features/emails.html:52
+#, fuzzy, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">See "
+"pricing</a> for more details."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
 
 #: templates/views/service-settings/letter-preview.html:6
 msgid "Letter preview"
