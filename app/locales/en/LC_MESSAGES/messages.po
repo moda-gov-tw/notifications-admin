@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 20:52+0800\n"
+"POT-Creation-Date: 2022-11-17 20:55+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -2830,6 +2830,45 @@ msgstr ""
 msgid ""
 "Select <b class=\"govuk-!-font-weight-bold\">Change</b> on the <b "
 "class=\"govuk-!-font-weight-bold\">Letter branding</b> row."
+msgstr ""
+
+#: templates/views/guidance/create-and-send-messages.html:9
+#: templates/views/guidance/create-and-send-messages.html:14
+msgid "Send messages"
+msgstr ""
+
+#: templates/views/guidance/create-and-send-messages.html:16
+#, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Create "
+"an account</a> to see a short tutorial explaining how to create and send "
+"messages."
+msgstr ""
+
+#: templates/views/guidance/create-and-send-messages.html:18
+msgid "Bulk sending"
+msgstr ""
+
+#: templates/views/guidance/create-and-send-messages.html:20
+msgid "To send a batch of messages at once:"
+msgstr ""
+
+#: templates/views/guidance/create-and-send-messages.html:22
+#, python-format
+msgid "Go to the %%s page and choose an existing template."
+msgstr ""
+
+#: templates/views/guidance/create-and-send-messages.html:23
+msgid "Select <b class=\"govuk-!-font-weight-bold\">Send</b>."
+msgstr ""
+
+#: templates/views/guidance/create-and-send-messages.html:24
+msgid ""
+"If you’re sending emails, select <b class=\"govuk-!-font-weight-"
+"bold\">Upload a list of email addresses</b>. If you’re sending text "
+"messages, select <b class=\"govuk-!-font-weight-bold\">Upload a list of "
+"phone numbers</b>. If you’re sending letters, select <b class=\"govuk"
+"-!-font-weight-bold\">Upload a list of addresses</b>."
 msgstr ""
 
 #: templates/views/guidance/index.html:10
