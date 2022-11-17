@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 18:07+0800\n"
+"POT-Creation-Date: 2022-11-17 19:54+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -619,6 +619,7 @@ msgstr ""
 
 #: templates/views/features.html:10 templates/views/features.html:15
 #: templates/views/features/emails.html:20
+#: templates/views/features/letters.html:20
 #: templates/views/features/text-messages.html:20
 msgid "Features"
 msgstr ""
@@ -1517,6 +1518,7 @@ msgstr ""
 "href=\"%%s\">服務與組織列表</a>。"
 
 #: templates/views/features/emails.html:50
+#: templates/views/features/letters.html:46
 #: templates/views/features/text-messages.html:37
 #: templates/views/signedout.html:144
 msgid "Pricing"
@@ -1542,7 +1544,8 @@ msgid ""
 "          then %%s pence per message"
 msgstr ""
 
-#: templates/views/signedout.html:158
+#: templates/views/features/letters.html:9
+#: templates/views/features/letters.html:14 templates/views/signedout.html:158
 msgid "Letters"
 msgstr ""
 
@@ -1590,6 +1593,7 @@ msgid "Send an unlimited number of emails for free with GOV.UK Notify."
 msgstr ""
 
 #: templates/views/features/emails.html:17
+#: templates/views/features/letters.html:17
 #: templates/views/features/text-messages.html:17
 #, fuzzy, python-format
 msgid ""
@@ -1600,6 +1604,7 @@ msgstr ""
 "href=\"%%s\">登入</a> 如果之前已經註冊過"
 
 #: templates/views/features/emails.html:21
+#: templates/views/features/letters.html:21
 #: templates/views/features/text-messages.html:21
 msgid "Notify makes it easy to:"
 msgstr ""
@@ -1705,6 +1710,7 @@ msgid "It’s free to send emails through Notify."
 msgstr ""
 
 #: templates/views/features/emails.html:52
+#: templates/views/features/letters.html:55
 #: templates/views/features/text-messages.html:39
 #, fuzzy, python-format
 msgid ""
@@ -1713,6 +1719,131 @@ msgid ""
 msgstr ""
 "或 <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/features/letters.html:15
+msgid "GOV.UK Notify will print, pack and post your letters for you."
+msgstr ""
+
+#: templates/views/features/letters.html:23
+msgid "create reusable letter templates"
+msgstr ""
+
+#: templates/views/features/letters.html:24
+msgid "personalise the content of your letter"
+msgstr ""
+
+#: templates/views/features/letters.html:25
+msgid "send bulk mail"
+msgstr ""
+
+#: templates/views/features/letters.html:27
+#, fuzzy, python-format
+msgid ""
+"You can also <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">integrate with our API</a> to send letters automatically."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/features/letters.html:29
+msgid "Choose your postage"
+msgstr ""
+
+#: templates/views/features/letters.html:30
+msgid "Notify can send UK letters by first or second class post."
+msgstr ""
+
+#: templates/views/features/letters.html:31
+msgid ""
+"First class letters are delivered one day after they’re dispatched. "
+"Second class letters are delivered 2 days after they’re dispatched."
+msgstr ""
+
+#: templates/views/features/letters.html:32
+msgid ""
+"Letters are printed at 5:30pm and dispatched the next working day (Monday"
+" to Friday). Royal Mail delivers from Monday to Saturday, excluding bank "
+"holidays."
+msgstr ""
+
+#: templates/views/features/letters.html:34
+msgid "Branding"
+msgstr ""
+
+#: templates/views/features/letters.html:35
+msgid "Add your organisation’s logo to your letter templates."
+msgstr ""
+
+#: templates/views/features/letters.html:36
+#, fuzzy, python-format
+msgid ""
+"See <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">how"
+" to change your letter branding</a>."
+msgstr ""
+"參閱 \n"
+"      <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">服務與組織列表</a>。"
+
+#: templates/views/features/letters.html:38
+msgid "Upload your own letters"
+msgstr ""
+
+#: templates/views/features/letters.html:39
+msgid ""
+"You can create reusable letter templates in Notify, or upload and send "
+"your own letters with the Notify API."
+msgstr ""
+
+#: templates/views/features/letters.html:40
+#, fuzzy, python-format
+msgid ""
+"Read our <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">documentation</a>."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/features/letters.html:42
+msgid "International letters"
+msgstr ""
+
+#: templates/views/features/letters.html:43
+msgid ""
+"Notify checks for international addresses and will automatically charge "
+"you the correct postage."
+msgstr ""
+
+#: templates/views/features/letters.html:44
+msgid ""
+"Letters to Europe are delivered 3 to 5 days after they’re dispatched. "
+"Letters sent anywhere else in the world take 5 to 7 days to arrive."
+msgstr ""
+
+#: templates/views/features/letters.html:47
+msgid ""
+"It costs between 41 pence and £1.28 (plus VAT) to send a letter. Prices "
+"include:"
+msgstr ""
+
+#: templates/views/features/letters.html:49
+msgid "paper"
+msgstr ""
+
+#: templates/views/features/letters.html:50
+msgid "double-sided colour printing"
+msgstr ""
+
+#: templates/views/features/letters.html:51
+msgid "C5 size envelopes with an address window"
+msgstr ""
+
+#: templates/views/features/letters.html:52
+msgid "first or second class postage"
+msgstr ""
+
+#: templates/views/features/letters.html:54
+msgid "Letters can be up to 10 pages long (5 double-sided sheets of paper)."
+msgstr ""
 
 #: templates/views/features/text-messages.html:15
 msgid ""
