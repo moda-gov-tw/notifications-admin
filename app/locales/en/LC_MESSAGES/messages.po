@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 21:04+0800\n"
+"POT-Creation-Date: 2022-11-17 21:07+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -2906,6 +2906,7 @@ msgstr ""
 #: templates/views/guidance/edit-and-format-messages.html:29
 #: templates/views/guidance/edit-and-format-messages.html:68
 #: templates/views/guidance/edit-and-format-messages.html:88
+#: templates/views/guidance/upload-a-letter.html:22
 #, python-format
 msgid "Go to the %%s page."
 msgstr ""
@@ -3127,6 +3128,42 @@ msgstr ""
 
 #: templates/views/guidance/send-files-by-email.html:16
 msgid "This is an API-only feature."
+msgstr ""
+
+#: templates/views/guidance/upload-a-letter.html:9
+#: templates/views/guidance/upload-a-letter.html:14
+msgid "Upload a letter"
+msgstr ""
+
+#: templates/views/guidance/upload-a-letter.html:16
+msgid ""
+"Upload a one-off letter as a PDF and we’ll print, pack and post it for "
+"you."
+msgstr ""
+
+#: templates/views/guidance/upload-a-letter.html:17
+msgid ""
+"You can use this feature if you send a lot of one-off letters or if our "
+"reusable letter templates do not meet your needs."
+msgstr ""
+
+#: templates/views/guidance/upload-a-letter.html:19
+msgid "To upload and send a letter from a PDF file:"
+msgstr ""
+
+#: templates/views/guidance/upload-a-letter.html:23
+msgid "Select <b class=\"govuk-!-font-weight-bold\">Upload a letter</b>."
+msgstr ""
+
+#: templates/views/guidance/upload-a-letter.html:24
+msgid "Select <b class=\"govuk-!-font-weight-bold\">Choose file</b>."
+msgstr ""
+
+#: templates/views/guidance/upload-a-letter.html:27
+#, python-format
+msgid ""
+"Your file must meet our <a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"%%s\">letter specification</a>."
 msgstr ""
 
 #: templates/views/guidance/who-can-use-notify.html:9
