@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 20:08+0800\n"
+"POT-Creation-Date: 2022-11-17 20:24+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -270,7 +270,8 @@ msgstr ""
 
 #: templates/views/accessibility_statement.html:146
 #: templates/views/features/emails.html:9
-#: templates/views/features/emails.html:14 templates/views/signedout.html:147
+#: templates/views/features/emails.html:14
+#: templates/views/message-status.html:21 templates/views/signedout.html:147
 msgid "Emails"
 msgstr ""
 
@@ -856,6 +857,266 @@ msgid ""
 "Refer to the <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">documentation\n"
 "      for the client library you are using."
+msgstr ""
+
+#: templates/views/message-status.html:9 templates/views/message-status.html:14
+msgid "Delivery status"
+msgstr ""
+
+#: templates/views/message-status.html:16
+msgid ""
+"Notify’s real-time dashboard lets you check the status of any message, to"
+" see when it was delivered."
+msgstr ""
+
+#: templates/views/message-status.html:17
+#, python-format
+msgid ""
+"For <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">security</a>, this information is only available for 7 days "
+"after a message has been sent. You can download a report, including a "
+"list of sent messages, for your own records."
+msgstr ""
+
+#: templates/views/message-status.html:18
+msgid ""
+"This page describes the statuses you’ll see when you’re signed in to "
+"Notify."
+msgstr ""
+
+#: templates/views/message-status.html:19
+#, python-format
+msgid ""
+"If you’re using the Notify API, read our <a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"%%s\">documentation</a> for a list of API "
+"statuses."
+msgstr ""
+
+#: templates/views/message-status.html:24
+msgid "Message statuses – emails"
+msgstr ""
+
+#: templates/views/message-status.html:25
+#: templates/views/message-status.html:54
+#: templates/views/message-status.html:78
+msgid "Status"
+msgstr ""
+
+#: templates/views/message-status.html:25
+#: templates/views/message-status.html:54
+#: templates/views/message-status.html:78
+msgid "Description"
+msgstr ""
+
+#: templates/views/message-status.html:30
+#: templates/views/message-status.html:59
+msgid "Sending"
+msgstr ""
+
+#: templates/views/message-status.html:30
+#: templates/views/message-status.html:59
+msgid ""
+"Notify has sent the message to the provider. The provider will try to "
+"deliver the message to the recipient for up to 72 hours. Notify is "
+"waiting for delivery information."
+msgstr ""
+
+#: templates/views/message-status.html:31
+#: templates/views/message-status.html:61
+msgid "Delivered"
+msgstr ""
+
+#: templates/views/message-status.html:31
+#: templates/views/message-status.html:61
+msgid ""
+"The message was successfully delivered. Notify will not tell you if a "
+"user has opened or read a message."
+msgstr ""
+
+#: templates/views/message-status.html:32
+msgid "Email address does not exist"
+msgstr ""
+
+#: templates/views/message-status.html:32
+msgid ""
+"The provider could not deliver the message because the email address was "
+"wrong. You should remove these email addresses from your database."
+msgstr ""
+
+#: templates/views/message-status.html:33
+msgid "Inbox not accepting messages right now"
+msgstr ""
+
+#: templates/views/message-status.html:33
+msgid ""
+"The provider could not deliver the message. This can happen when the "
+"recipient’s inbox is full or their anti-spam filter rejects your email. "
+"<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://www.gov.uk/service-manual/design/sending-emails-and-text-"
+"messages#protect-your-users-from-spam-and-phishing\">Check your content "
+"does not look like spam</a> before you try to send the message again."
+msgstr ""
+
+#: templates/views/message-status.html:34
+#: templates/views/message-status.html:64
+#: templates/views/message-status.html:86
+msgid "Technical failure"
+msgstr ""
+
+#: templates/views/message-status.html:34
+msgid ""
+"Your message was not sent because there was a problem between Notify and "
+"the provider. You’ll have to try sending your messages again."
+msgstr ""
+
+#: templates/views/message-status.html:44
+msgid "Spam"
+msgstr ""
+
+#: templates/views/message-status.html:45
+msgid ""
+"If an email is marked as spam, Notify receives a ‘complaint’ from the "
+"email provider. We’ll contact you if we receive a complaint about any of "
+"your emails. When this happens you should remove the recipient’s email "
+"address from your list."
+msgstr ""
+
+#: templates/views/message-status.html:47
+msgid "Open rates and click-throughs"
+msgstr ""
+
+#: templates/views/message-status.html:48
+msgid ""
+"Notify cannot tell you if your users open an email or click on the links "
+"in an email. We do not track open rates and click-throughs because there "
+"are privacy issues. Tracking emails without asking permission from users "
+"could breach General Data Protection Regulations (GDPR)."
+msgstr ""
+
+#: templates/views/features/text-messages.html:9
+#: templates/views/features/text-messages.html:14
+#: templates/views/message-status.html:50 templates/views/signedout.html:152
+msgid "Text messages"
+msgstr ""
+
+#: templates/views/message-status.html:53
+msgid "Message statuses – text messages"
+msgstr ""
+
+#: templates/views/message-status.html:60
+msgid "Sent to an international number"
+msgstr ""
+
+#: templates/views/message-status.html:60
+msgid ""
+"The mobile networks in some countries do not provide any more delivery "
+"information."
+msgstr ""
+
+#: templates/views/message-status.html:62
+msgid "Not delivered"
+msgstr ""
+
+#: templates/views/message-status.html:62
+#, python-format
+msgid ""
+"The provider could not deliver the message. This can happen if the phone "
+"number was wrong or if the network operator rejects the message. If "
+"you’re sure that these phone numbers are correct, you should <a class"
+"=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">contact us</a>."
+" If not, you should remove them from your database. You’ll still be "
+"charged for text messages that cannot be delivered."
+msgstr ""
+
+#: templates/views/message-status.html:63
+msgid "Phone not accepting messages right now"
+msgstr ""
+
+#: templates/views/message-status.html:63
+msgid ""
+"The provider could not deliver the message. This can happen when the "
+"recipient’s phone is off, has no signal, or their text message inbox is "
+"full. You can try to send the message again. You’ll still be charged for "
+"text messages to phones that are not accepting messages."
+msgstr ""
+
+#: templates/views/message-status.html:64
+msgid ""
+"Your message was not sent because there was a problem between Notify and "
+"the provider. You’ll have to try sending your messages again. You will "
+"not be charged for text messages that are affected by a technical "
+"failure."
+msgstr ""
+
+#: templates/views/features/letters.html:9
+#: templates/views/features/letters.html:14
+#: templates/views/message-status.html:74 templates/views/signedout.html:158
+msgid "Letters"
+msgstr ""
+
+#: templates/views/message-status.html:77
+msgid "Message statuses – letters"
+msgstr ""
+
+#: templates/views/message-status.html:83
+msgid "Sent"
+msgstr ""
+
+#: templates/views/message-status.html:83
+msgid "Notify has sent the letter to the provider to be printed."
+msgstr ""
+
+#: templates/views/message-status.html:84
+msgid "Printed"
+msgstr ""
+
+#: templates/views/message-status.html:84
+msgid ""
+"The provider has printed the letter. Letters are printed at 5:30pm and "
+"dispatched the next working day."
+msgstr ""
+
+#: templates/views/message-status.html:85
+msgid "Cancelled"
+msgstr ""
+
+#: templates/views/message-status.html:85
+msgid "Sending cancelled. Your letter will not be printed or dispatched."
+msgstr ""
+
+#: templates/views/message-status.html:86
+msgid ""
+"Notify had an unexpected error while sending the letter to our printing "
+"provider."
+msgstr ""
+
+#: templates/views/message-status.html:87
+msgid "Permanent failure"
+msgstr ""
+
+#: templates/views/message-status.html:87
+msgid "The provider cannot print the letter. Your letter will not be dispatched."
+msgstr ""
+
+#: templates/views/message-status.html:97
+msgid "Undelivered letters and returned mail"
+msgstr ""
+
+#: templates/views/message-status.html:99
+msgid ""
+"Every letter we send includes our printer’s address on the back of the "
+"envelope. It’s not possible to customise the return address."
+msgstr ""
+
+#: templates/views/message-status.html:100
+msgid "Returned mail is destroyed by our printer."
+msgstr ""
+
+#: templates/views/message-status.html:101
+msgid ""
+"Each letter has a unique ID. Our printer sends us the ID of every letter "
+"they destroy. We’ll contact you if the IDs match any of your letters. "
+"This is a partly manual process, so it can take a few weeks."
 msgstr ""
 
 #: templates/views/privacy.html:5 templates/views/privacy.html:12
@@ -1740,23 +2001,12 @@ msgid ""
 "          free emails"
 msgstr ""
 
-#: templates/views/features/text-messages.html:9
-#: templates/views/features/text-messages.html:14
-#: templates/views/signedout.html:152
-msgid "Text messages"
-msgstr ""
-
 #: templates/views/signedout.html:153
 #, python-format
 msgid ""
 "<div class=\"product-page-big-number\">Up to 40,000</div>\n"
 "          free text messages a year,<br>\n"
 "          then %%s pence per message"
-msgstr ""
-
-#: templates/views/features/letters.html:9
-#: templates/views/features/letters.html:14 templates/views/signedout.html:158
-msgid "Letters"
 msgstr ""
 
 #: templates/views/signedout.html:159
