@@ -2,28 +2,28 @@
 {% from "components/sub-navigation.html" import sub_navigation %}
 
 {% block per_page_title %}
-  Using Notify
+  {{_('Using Notify')}}
 {% endblock %}
 
 {% block maincolumn_content %}
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-third">
-    {{ sub_navigation(navigation_links, 'Using Notify') }}
+    {{ sub_navigation(navigation_links, _('Using Notify')) }}
   </div>
   <div class="govuk-grid-column-two-thirds">
 
-    <h1 class="heading-large">Using Notify</h1>
+    <h1 class="heading-large">{{_('Using Notify')}}</h1>
 
-    <p class="govuk-body">The information on this page has moved.</p>
+    <p class="govuk-body">{{_('The information on this page has moved.')}}</p>
 
-    <p class="govuk-body">Find out more about:</p>
+    <p class="govuk-body">{{_('Find out more about:')}}</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li><a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.trial_mode_new') }}">trial mode</a></li>
-      <li><a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.message_status') }}">message status types</a></li>
-      <li><a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.features_email') }}">email replies</a></li>
-      <li><a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.features_sms') }}">text message replies</a></li>
-      <li><a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.features_letters') }}">letters</a></li>
+      <li><a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.trial_mode_new') }}">{{_('trial mode')}}</a></li>
+      <li><a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.message_status') }}">{{_('message status types')}}</a></li>
+      <li><a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.features_email') }}">{{_('email replies')}}</a></li>
+      <li><a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.features_sms') }}">{{_('text message replies')}}</a></li>
+      <li><a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.features_letters') }}">{{_('letters')}}</a></li>
     </ul>
 
   </div>

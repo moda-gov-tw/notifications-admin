@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 20:06+0800\n"
+"POT-Creation-Date: 2022-11-17 20:08+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -642,7 +642,7 @@ msgstr ""
 msgid "text messages"
 msgstr ""
 
-#: templates/views/features.html:21
+#: templates/views/features.html:21 templates/views/using-notify.html:26
 msgid "letters"
 msgstr ""
 
@@ -1966,6 +1966,35 @@ msgstr ""
 "參閱 \n"
 "      <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">服務與組織列表</a>。"
+
+#: templates/views/using-notify.html:5 templates/views/using-notify.html:12
+#: templates/views/using-notify.html:16
+msgid "Using Notify"
+msgstr ""
+
+#: templates/views/using-notify.html:18
+msgid "The information on this page has moved."
+msgstr ""
+
+#: templates/views/using-notify.html:20
+msgid "Find out more about:"
+msgstr ""
+
+#: templates/views/using-notify.html:22
+msgid "trial mode"
+msgstr ""
+
+#: templates/views/using-notify.html:23
+msgid "message status types"
+msgstr ""
+
+#: templates/views/using-notify.html:24
+msgid "email replies"
+msgstr ""
+
+#: templates/views/using-notify.html:25
+msgid "text message replies"
+msgstr ""
 
 #: templates/views/features/emails.html:15
 msgid "Send an unlimited number of emails for free with GOV.UK Notify."
