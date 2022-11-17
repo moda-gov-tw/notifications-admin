@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 17:04+0800\n"
+"POT-Creation-Date: 2022-11-17 17:18+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -171,7 +171,7 @@ msgid ""
 msgstr ""
 
 #: templates/views/accessibility_statement.html:87
-#, fuzzy, python-format
+#, fuzzy
 msgid ""
 "Find out how to <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"https://www.notifications.service.gov.uk/support\">contact the "
@@ -1070,6 +1070,10 @@ msgstr ""
 msgid ""
 "A photo of the GOV.UK Notify team gathered around a big screen. One team "
 "member is pointing at a graph on the screen."
+msgstr ""
+
+#: templates/views/service-settings/letter-preview.html:6
+msgid "Letter preview"
 msgstr ""
 
 #~ msgid ""
