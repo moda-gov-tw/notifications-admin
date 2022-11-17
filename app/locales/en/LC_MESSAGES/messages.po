@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 21:07+0800\n"
+"POT-Creation-Date: 2022-11-17 21:11+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -3117,6 +3117,103 @@ msgstr ""
 
 #: templates/views/guidance/index.html:36
 msgid "sending text messages securely"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:10
+#: templates/views/guidance/letter-specification.html:15
+msgid "Letter specification"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:17
+msgid "Page size and layout: A4 portrait (210 × 297 mm)"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:18
+msgid "Maximum file size: 2 MB"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:19
+msgid "Your letter must be 10 pages or less (5 double-sided sheets of paper)."
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:20
+msgid "The content of your letter must appear inside the printable area."
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:22
+#, python-format
+msgid ""
+"To help you set up your letter, you can download our <a class=\"govuk-"
+"link govuk-link--no-visited-state\" href=\"%%s\">letter specification as "
+"a PDF</a>."
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:25
+msgid "Page 1 of 10"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:27
+#: templates/views/guidance/letter-specification.html:49
+msgid "Left margin 15mm"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:28
+#: templates/views/guidance/letter-specification.html:50
+msgid "Right margin 15mm"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:29
+#: templates/views/guidance/letter-specification.html:51
+msgid "Top margin 5mm"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:30
+#: templates/views/guidance/letter-specification.html:52
+msgid "Bottom margin 5mm"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:32
+msgid "Logo block"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:34
+msgid "Position: 15mm from left edge, 5mm from top edge"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:35
+msgid "Size: 200mm wide by 25mm high"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:37
+msgid "Address block"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:39
+msgid "Position: 24.6mm from left edge, 39.5mm from top edge"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:40
+msgid "Size: 95.4mm wide by 26.8mm high"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:42
+msgid "Letter contact block"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:44
+msgid "Position: 125mm from left edge, 30mm from top edge"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:45
+msgid "Size: 65mm wide by 65mm high"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:47
+msgid "Pages 2 to 10"
+msgstr ""
+
+#: templates/views/guidance/letter-specification.html:56
+msgid "See a text version of the letter specification"
 msgstr ""
 
 #: templates/views/guidance/send-files-by-email.html:14
