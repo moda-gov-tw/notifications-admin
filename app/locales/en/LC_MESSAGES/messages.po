@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 20:55+0800\n"
+"POT-Creation-Date: 2022-11-17 21:02+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -2704,6 +2704,7 @@ msgid "Branding and customisation"
 msgstr ""
 
 #: templates/views/guidance/branding-and-customisation.html:16
+#: templates/views/guidance/edit-and-format-messages.html:16
 msgid "This page explains how to:"
 msgstr ""
 
@@ -2869,6 +2870,195 @@ msgid ""
 "messages, select <b class=\"govuk-!-font-weight-bold\">Upload a list of "
 "phone numbers</b>. If you’re sending letters, select <b class=\"govuk"
 "-!-font-weight-bold\">Upload a list of addresses</b>."
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:9
+#: templates/views/guidance/edit-and-format-messages.html:14
+msgid "Edit and format messages"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:18
+msgid "format your content"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:19
+msgid "add links"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:20
+msgid "personalise your content"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:21
+msgid "add optional content"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:24
+msgid "Format your content"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:26
+msgid "You can see a list of formatting instructions on the edit template page:"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:29
+#: templates/views/guidance/edit-and-format-messages.html:68
+#: templates/views/guidance/edit-and-format-messages.html:88
+#, python-format
+msgid "Go to the %%s page."
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:30
+#: templates/views/guidance/edit-and-format-messages.html:69
+#: templates/views/guidance/edit-and-format-messages.html:89
+msgid ""
+"Add a new template or choose an existing template and select <b "
+"class=\"govuk-!-font-weight-bold\">Edit</b>."
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:33
+msgid "Email templates can include:"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:35
+msgid "headings"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:36
+msgid "bullets"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:37
+msgid "inset text"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:38
+msgid "horizontal rules"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:41
+msgid "Letter templates can include headings and bullets."
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:43
+msgid ""
+"Notify does not allow bold, italics, subheadings, underlined text or "
+"different fonts. This is because they can make it harder for users to "
+"read what you’ve written."
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:45
+msgid "Add links"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:47
+msgid ""
+"When composing an email or text message, write URLs in full and Notify "
+"will convert them into links for you."
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:49
+msgid ""
+"You cannot convert text into a link. Research shows that people like to "
+"check a URL looks genuine before clicking the link in an email. This is "
+"hard to do if the URL is hidden behind clickable link text."
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:51
+msgid "We do not recommend using a third-party link shortening service because:"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:54
+msgid "your users cannot see where the link will take them"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:55
+msgid "your link might stop working if there’s a service outage"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:56
+msgid "you can no longer control where the redirect goes"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:59
+msgid "Personalise your content"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:61
+msgid ""
+"To personalise the content of your messages, add a placeholder to the "
+"template."
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:63
+msgid ""
+"Placeholders are filled in with details, like a name or reference number,"
+" each time you send a message."
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:65
+msgid "To add a placeholder to the template:"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:70
+msgid ""
+"Add a placeholder using double brackets. For example: Hello "
+"((first&nbsp;name)), your reference is ((ref&nbsp;number))."
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:71
+#: templates/views/guidance/edit-and-format-messages.html:91
+msgid "Select <b class=\"govuk-!-font-weight-bold\">Save</b>."
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:74
+msgid "When you send a message you can either:"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:77
+msgid "manually fill in the placeholders yourself"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:78
+#: templates/views/guidance/edit-and-format-messages.html:98
+msgid "upload a list of personal details and let Notify do it for you"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:81
+msgid ""
+"If you upload a list, the column names need to match the placeholders in "
+"your template."
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:83
+msgid "Add optional content"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:85
+msgid "To add optional content to your messages:"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:90
+msgid ""
+"Use double brackets and ?? to define optional content. For example, if "
+"you only want to show something to people who are under 18: "
+"((under18??Please get your application signed by a parent or guardian.))"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:94
+msgid ""
+"For each person you send this message to, specify ‘yes’ or ‘no’ to show "
+"or hide this content. You can either:"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:97
+msgid "do this yourself"
+msgstr ""
+
+#: templates/views/guidance/edit-and-format-messages.html:101
+msgid ""
+"If you upload a list, the column names need to match the optional content"
+" in your template."
 msgstr ""
 
 #: templates/views/guidance/index.html:10
