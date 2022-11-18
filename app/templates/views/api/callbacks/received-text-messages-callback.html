@@ -5,7 +5,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Callbacks for received text messages
+  {{_('Callbacks for received text messages')}}
 {% endblock %}
 
 {% block backLink %}
@@ -17,19 +17,19 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-five-sixths">
       <p class="govuk-body">
-        When you receive a text message in Notify, we can forward it to your system.
-        Check the <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.callbacks') }}"> callback documentation </a> for more information.
+        {{_("When you receive a text message in Notify, we can forward it to your system.
+        Check the <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\"> callback documentation </a> for more information.") % url_for('.callbacks')}}
       </p>
 
       {% call form_wrapper() %}
       {{ form.url(param_extensions={
         "classes": "govuk-!-width-full",
-        "hint": {"text": "Must start with https://"}
+        "hint": {"text": _("Must start with https://")}
       }) }}
 
       {{ form.bearer_token(param_extensions={
         "classes": "govuk-!-width-full",
-        "hint": {"text": "At least 10 characters"},
+        "hint": {"text": _("At least 10 characters")},
         "autocomplete": "new-password"
       }) }}
         {{ page_footer('Save') }}

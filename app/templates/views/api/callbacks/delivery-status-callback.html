@@ -5,7 +5,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Callbacks for delivery receipts
+  {{_('Callbacks for delivery receipts')}}
 {% endblock %}
 
 
@@ -17,26 +17,26 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-five-sixths">
 
-      {{ page_header('Callbacks for delivery receipts') }}
+      {{ page_header(_('Callbacks for delivery receipts')) }}
 
       <p class="govuk-body">
-        When you send an email or text message, we can tell you if Notify was able to deliver it.
-        Read the Callbacks section of our <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.documentation') }}">API documentation</a> for more information.
+        {{_("When you send an email or text message, we can tell you if Notify was able to deliver it.
+        Read the Callbacks section of our <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">API documentation</a> for more information.") % url_for('main.documentation')}}
       </p>
 
       {% call form_wrapper() %}
         {{ form.url(param_extensions={
           "classes": "govuk-!-width-full",
-          "hint": {"text": "Must start with https://"}
+          "hint": {"text": _("Must start with https://")}
         }) }}
 
         {{ form.bearer_token(param_extensions={
           "classes": "govuk-!-width-full",
-          "hint": {"text": "At least 10 characters"},
+          "hint": {"text": _("At least 10 characters")},
           "autocomplete": "new-password"
         }) }}
 
-        {{ page_footer('Save') }}
+        {{ page_footer(_('Save')) }}
       {% endcall %}
     </div>
   </div>

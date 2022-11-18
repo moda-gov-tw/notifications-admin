@@ -5,7 +5,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Callbacks
+  {{_('Callbacks')}}
 {% endblock %}
 
 {% block backLink %}
@@ -13,24 +13,24 @@
 {% endblock %}
 
 {% block maincolumn_content %}
-  {{ page_header('Callbacks') }}
+  {{ page_header(_('Callbacks')) }}
   <div class="bottom-gutter-3-2 dashboard-table body-copy-table">
 		{% call mapping_table(
-	    caption='General',
+	    caption=_('General'),
 	    field_headings=['Label', 'Value', 'Action'],
 	    field_headings_visible=False,
 	    caption_visible=False
 	  ) %}
 	    {% call row() %}
-	      {{ text_field('Delivery receipts') }}
+	      {{ text_field(_('Delivery receipts')) }}
 	      {{ optional_text_field(delivery_status_callback, truncate=true) }}
-	      {{ edit_field('Change', url_for('.delivery_status_callback', service_id=current_service.id)) }}
+	      {{ edit_field(_('Change'), url_for('.delivery_status_callback', service_id=current_service.id)) }}
 	    {% endcall %}
 
 	    {% call row() %}
-	      {{ text_field('Received text messages') }}
+	      {{ text_field(_('Received text messages')) }}
           {{ optional_text_field(received_text_messages_callback, truncate=true) }}
-	   	  {{ edit_field('Change', url_for('.received_text_messages_callback', service_id=current_service.id)) }}
+	   	  {{ edit_field(_('Change'), url_for('.received_text_messages_callback', service_id=current_service.id)) }}
 	    {% endcall %}
 	  {% endcall %}
 	</div>

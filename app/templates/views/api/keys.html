@@ -5,7 +5,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  API keys
+  {{_('API keys')}}
 {% endblock %}
 
 {% block backLink %}
@@ -14,17 +14,17 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('API keys') }}
+  {{ page_header(_('API keys')) }}
 
   <div class="body-copy-table">
     {% call(item, row_number) list_table(
       current_service.api_keys,
-      empty_message="You have not created any API keys yet",
-      caption="API keys",
+      empty_message=_("You have not created any API keys yet"),
+      caption=_("API keys"),
       caption_visible=false,
       field_headings=[
-        'API keys',
-        'Action'
+        _('API keys'),
+        _('Action')
       ],
       field_headings_visible=False
     ) %}
@@ -33,23 +33,23 @@
           {{ item.name }}
           <div class="hint">
             {% if item.key_type == 'normal' %}
-              Live – sends to anyone
+              {{_('Live – sends to anyone')}}
             {% elif item.key_type == 'team' %}
-              Team and guest list – limits who you can send to
+              {{_('Team and guest list – limits who you can send to')}}
             {% elif item.key_type == 'test' %}
-              Test – pretends to send messages
+              {{_('Test – pretends to send messages')}}
             {% endif %}
           </div>
         </div>
       {% endcall %}
       {% if item.expiry_date %}
         {% call field(align='right') %}
-          <span class='hint'>Revoked {{ item.expiry_date|format_datetime_short }}</span>
+          <span class='hint'>{{_('Revoked %%s') % item.expiry_date|format_datetime_short}}</span>
         {% endcall %}
       {% else %}
         {% call field(align='right', status='error') %}
           <a class="govuk-link govuk-link--destructive" href='{{ url_for('.revoke_api_key', service_id=current_service.id, key_id=item.id) }}'>
-            Revoke<span class="govuk-visually-hidden"> {{ item.name }}</span>
+            {{_("Revoke <span class=\"govuk-visually-hidden\">%%s</span>") % item.name}}
           </a>
         {% endcall %}
       {% endif %}
@@ -59,7 +59,7 @@
   <div class="js-stick-at-bottom-when-scrolling">
     {{ govukButton({
       "element": "a",
-      "text": "Create an API key",
+      "text": _("Create an API key"),
       "href": url_for('.create_api_key', service_id=current_service.id),
       "classes": "govuk-button--secondary"
     }) }}

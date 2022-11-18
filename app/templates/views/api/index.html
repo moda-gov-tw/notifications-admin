@@ -4,45 +4,45 @@
 {% from "govuk_frontend_jinja/components/details/macro.html" import govukDetails %}
 
 {% block service_page_title %}
-  API integration
+  {{_('API integration')}}
 {% endblock %}
 
 {% block maincolumn_content %}
 
   <h1 class="heading-medium bottom-gutter-3-2">
-    API integration
+    {{_('API integration')}}
   </h1>
 
   <nav class="govuk-grid-row bottom-gutter-1-2">
     <div class="govuk-grid-column-one-third">
-      <a class="govuk-link govuk-link--no-visited-state pill-separate-item" href="{{ url_for('.api_keys', service_id=current_service.id) }}">API keys</a>
+      <a class="govuk-link govuk-link--no-visited-state pill-separate-item" href="{{ url_for('.api_keys', service_id=current_service.id) }}">{{_('API keys')}}</a>
     </div>
     <div class="govuk-grid-column-one-third">
-      <a class="govuk-link govuk-link--no-visited-state pill-separate-item" href="{{ url_for('.guest_list', service_id=current_service.id) }}">Guest list</a>
+      <a class="govuk-link govuk-link--no-visited-state pill-separate-item" href="{{ url_for('.guest_list', service_id=current_service.id) }}">{{_('Guest list')}}</a>
     </div>
     <div class="govuk-grid-column-one-third">
-      <a class="govuk-link govuk-link--no-visited-state pill-separate-item" href="{{ url_for(callbacks_link, service_id=current_service.id) }}">Callbacks</a>
+      <a class="govuk-link govuk-link--no-visited-state pill-separate-item" href="{{ url_for(callbacks_link, service_id=current_service.id) }}">{{_('Callbacks')}}</a>
     </div>
   </nav>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-half">
       <h2 class="heading-small">
-        Message log
+        {{_('Message log')}}
       </h2>
     </div>
     <div class="govuk-grid-column-one-half align-with-heading-copy-right">
-      <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.api_integration', service_id=current_service.id) }}">Refresh</a>
+      <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.api_integration', service_id=current_service.id) }}">{{_('Refresh')}}</a>
     </div>
   </div>
   <div class="api-notifications">
     {% if not api_notifications.notifications %}
       <div class="api-notifications-item">
         <p class="api-notifications-item__meta">
-          When you send messages via the API they’ll appear here.
+          {{_('When you send messages via the API they’ll appear here.')}}
         </p>
         <p class="api-notifications-item__meta">
-          Notify deletes messages after 7 days.
+          {{_('Notify deletes messages after 7 days.')}}
         </p>
       </div>
     {% endif %}
@@ -76,7 +76,7 @@
             {% endif %}
             {% endfor %}
             {% if notification.status not in ('pending-virus-check', 'virus-scan-failed') %}
-            <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.view_notification', service_id=current_service.id, notification_id=notification.id) }}">View {{ 1|message_count_label(notification.template.template_type, suffix='') }}</a>
+            <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.view_notification', service_id=current_service.id, notification_id=notification.id) }}">{{_("View %%s") % (1|message_count_label(notification.template.template_type, suffix=''))}}</a>
             {% endif %}
           </dl>
       {% endset %}
@@ -91,11 +91,11 @@
       <div class="api-notifications-item">
         {% if api_notifications.notifications|length == 50 %}
           <p class="api-notifications-item__meta">
-            Only showing the first 50 messages.
+            {{_('Only showing the first 50 messages.')}}
           </p>
         {% endif %}
         <p class="api-notifications-item__meta">
-          Notify deletes messages after 7 days.
+          {{_('Notify deletes messages after 7 days.')}}
         </p>
       </div>
     {% endif %}

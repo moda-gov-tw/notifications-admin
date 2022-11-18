@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 11:41+0800\n"
+"POT-Creation-Date: 2022-11-18 12:18+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -32,6 +32,38 @@ msgstr ""
 #: templates/views/add-service-local.html:15
 #: templates/views/add-service.html:15
 msgid "About your service"
+msgstr ""
+
+#: main/views/api_keys.py:74 templates/views/api/keys.html:36
+msgid "Live – sends to anyone"
+msgstr ""
+
+#: main/views/api_keys.py:75 templates/views/api/keys.html:38
+msgid "Team and guest list – limits who you can send to"
+msgstr ""
+
+#: main/views/api_keys.py:76 templates/views/api/keys.html:40
+msgid "Test – pretends to send messages"
+msgstr ""
+
+#: main/views/api_keys.py:85
+msgid ""
+"Not available because your service is in <a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"/features/trial-mode\">trial mode</a>"
+msgstr ""
+
+#: main/views/api_keys.py:94
+msgid "Cannot be used to send letters"
+msgstr ""
+
+#: main/views/api_keys.py:117
+msgid ""
+"Are you sure you want to revoke ‘{}’? You will not be able to use this "
+"API key to connect to GOV.UK Notify."
+msgstr ""
+
+#: main/views/api_keys.py:122
+msgid "revoke this API key"
 msgstr ""
 
 #: templates/views/accessibility_statement.html:6
@@ -747,6 +779,7 @@ msgid ""
 " the date and time you want them to be sent."
 msgstr ""
 
+#: templates/views/api/index.html:7 templates/views/api/index.html:13
 #: templates/views/features.html:39
 msgid "API integration"
 msgstr ""
@@ -2458,6 +2491,7 @@ msgid "The version number is on the front page, for example ‘3.6’"
 msgstr ""
 
 #: templates/views/agreement/agreement-accept.html:41
+#: templates/views/api/keys/create.html:23
 msgid "Continue"
 msgstr ""
 
@@ -2484,6 +2518,147 @@ msgstr ""
 
 #: templates/views/agreement/agreement-confirm.html:35
 msgid "Accept this agreement"
+msgstr ""
+
+#: templates/views/api/callbacks.html:8 templates/views/api/callbacks.html:16
+#: templates/views/api/index.html:24
+msgid "Callbacks"
+msgstr ""
+
+#: templates/views/api/callbacks.html:19
+msgid "General"
+msgstr ""
+
+#: templates/views/api/callbacks.html:25
+msgid "Delivery receipts"
+msgstr ""
+
+#: templates/views/api/callbacks.html:27 templates/views/api/callbacks.html:33
+msgid "Change"
+msgstr ""
+
+#: templates/views/api/callbacks.html:31
+msgid "Received text messages"
+msgstr ""
+
+#: templates/views/api/index.html:18 templates/views/api/keys.html:8
+#: templates/views/api/keys.html:17 templates/views/api/keys.html:23
+#: templates/views/api/keys.html:26
+msgid "API keys"
+msgstr ""
+
+#: templates/views/api/index.html:21
+msgid "Guest list"
+msgstr ""
+
+#: templates/views/api/index.html:31
+msgid "Message log"
+msgstr ""
+
+#: templates/views/api/index.html:35
+msgid "Refresh"
+msgstr ""
+
+#: templates/views/api/index.html:42
+msgid "When you send messages via the API they’ll appear here."
+msgstr ""
+
+#: templates/views/api/index.html:45 templates/views/api/index.html:98
+msgid "Notify deletes messages after 7 days."
+msgstr ""
+
+#: templates/views/api/index.html:79
+#, python-format
+msgid "View %%s"
+msgstr ""
+
+#: templates/views/api/index.html:94
+msgid "Only showing the first 50 messages."
+msgstr ""
+
+#: templates/views/api/keys.html:22
+msgid "You have not created any API keys yet"
+msgstr ""
+
+#: templates/views/api/keys.html:27
+msgid "Action"
+msgstr ""
+
+#: templates/views/api/keys.html:47
+#, python-format
+msgid "Revoked %%s"
+msgstr ""
+
+#: templates/views/api/keys.html:52
+#, python-format
+msgid "Revoke <span class=\"govuk-visually-hidden\">%%s</span>"
+msgstr ""
+
+#: templates/views/api/keys.html:62 templates/views/api/keys/create.html:9
+#: templates/views/api/keys/create.html:18
+msgid "Create an API key"
+msgstr ""
+
+#: templates/views/api/callbacks/delivery-status-callback.html:8
+#: templates/views/api/callbacks/delivery-status-callback.html:20
+msgid "Callbacks for delivery receipts"
+msgstr ""
+
+#: templates/views/api/callbacks/delivery-status-callback.html:23
+#, python-format
+msgid ""
+"When you send an email or text message, we can tell you if Notify was "
+"able to deliver it.\n"
+"        Read the Callbacks section of our <a class=\"govuk-link govuk-"
+"link--no-visited-state\" href=\"%%s\">API documentation</a> for more "
+"information."
+msgstr ""
+
+#: templates/views/api/callbacks/delivery-status-callback.html:30
+#: templates/views/api/callbacks/received-text-messages-callback.html:27
+msgid "Must start with https://"
+msgstr ""
+
+#: templates/views/api/callbacks/delivery-status-callback.html:35
+#: templates/views/api/callbacks/received-text-messages-callback.html:32
+msgid "At least 10 characters"
+msgstr ""
+
+#: templates/views/api/callbacks/delivery-status-callback.html:39
+msgid "Save"
+msgstr ""
+
+#: templates/views/api/callbacks/received-text-messages-callback.html:8
+msgid "Callbacks for received text messages"
+msgstr ""
+
+#: templates/views/api/callbacks/received-text-messages-callback.html:20
+#, python-format
+msgid ""
+"When you receive a text message in Notify, we can forward it to your "
+"system.\n"
+"        Check the <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\"> callback documentation </a> for more information."
+msgstr ""
+
+#: templates/views/api/keys/show.html:6 templates/views/api/keys/show.html:13
+msgid "New API key"
+msgstr ""
+
+#: templates/views/api/keys/show.html:17
+msgid "Copy your key to somewhere safe."
+msgstr ""
+
+#: templates/views/api/keys/show.html:20
+msgid "You will not be able to see it again once you leave this page."
+msgstr ""
+
+#: templates/views/api/keys/show.html:27 templates/views/api/keys/show.html:28
+msgid "API key"
+msgstr ""
+
+#: templates/views/api/keys/show.html:33
+msgid "Back to API keys"
 msgstr ""
 
 #: templates/views/features/emails.html:15
@@ -3491,4 +3666,32 @@ msgstr ""
 #~ "<div class=\"product-page-big-number\">%%s</div>\n"
 #~ "          services\n"
 #~ "          <span class=\"govuk-visually-hidden\">using Notify.</span>"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Not available because your service is"
+#~ " in <a class=\"govuk-link govuk-link"
+#~ "--no-visited-state\" href=\"/features/trial-"
+#~ "mode\">trial mode</a>"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Are you sure you want to revoke"
+#~ " ‘{}’? You will not be able to"
+#~ " use this API key to connect to"
+#~ " GOV.UK Notify."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Are you sure you want to revoke"
+#~ " ‘{}’?You will not be able to "
+#~ "use this API key to connect to "
+#~ "GOV.UK Notify."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Not available because your service is"
+#~ " in<a class=\"govuk-link govuk-link--no-"
+#~ "visited-state\" href=\"/features/trial-mode\">trial"
+#~ " mode</a>"
 #~ msgstr ""
