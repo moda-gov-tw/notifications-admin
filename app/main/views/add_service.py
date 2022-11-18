@@ -1,4 +1,5 @@
 from flask import current_app, redirect, render_template, session, url_for
+from flask_babel import _
 from flask_login import current_user
 from notifications_python_client.errors import HTTPError
 
@@ -37,9 +38,9 @@ def _create_service(service_name, organisation_type, email_from, form):
 
 def _create_example_template(service_id):
     example_sms_template = service_api_client.create_service_template(
-        "Example text message template",
+        _("Example text message template"),
         "sms",
-        "Hey ((name)), I’m trying out Notify. Today is ((day of week)) and my favourite colour is ((colour)).",
+        _("Hey ((name)), I’m trying out Notify. Today is ((day of week)) and my favourite colour is ((colour))."),
         service_id,
     )
     return example_sms_template
@@ -87,7 +88,7 @@ def add_service():
 
 
 def _render_add_service_page(form, default_organisation_type):
-    heading = "About your service"
+    heading = _("About your service")
 
     if default_organisation_type == "local":
         return render_template(

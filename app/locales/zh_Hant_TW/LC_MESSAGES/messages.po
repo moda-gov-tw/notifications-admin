@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-17 21:11+0800\n"
+"POT-Creation-Date: 2022-11-18 11:22+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -19,6 +19,16 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
+
+#: main/views/add_service.py:40
+msgid "Example text message template"
+msgstr ""
+
+#: main/views/add_service.py:42
+msgid ""
+"Hey ((name)), I’m trying out Notify. Today is ((day of week)) and my "
+"favourite colour is ((colour))."
+msgstr ""
 
 #: templates/views/accessibility_statement.html:6
 #: templates/views/accessibility_statement.html:11
@@ -402,6 +412,49 @@ msgid ""
 "We decided which pages to test based on the most common tasks that GOV.UK"
 " Notify users need to complete. We also tested a sample of pages with "
 "common user interface components."
+msgstr ""
+
+#: templates/views/add-service-local.html:7
+#: templates/views/add-service-local.html:15
+#: templates/views/add-service.html:15
+msgid "About your service"
+msgstr ""
+
+#: templates/views/add-service-local.html:17
+msgid ""
+"Give your service a name that tells users what your messages are about, "
+"as well as who they’re from. For example:"
+msgstr ""
+
+#: templates/views/add-service-local.html:19
+#, python-format
+msgid "School admissions – %%s"
+msgstr ""
+
+#: templates/views/add-service-local.html:20
+#, python-format
+msgid "Electoral services – %%s"
+msgstr ""
+
+#: templates/views/add-service-local.html:21
+#, python-format
+msgid "Blue Badge – %%s"
+msgstr ""
+
+#: templates/views/add-service-local.html:23
+msgid ""
+"You should only use an acronym or initialism if your users are already "
+"familiar with it."
+msgstr ""
+
+#: templates/views/add-service-local.html:27
+#: templates/views/add-service.html:19
+msgid "You can change this later"
+msgstr ""
+
+#: templates/views/add-service-local.html:29
+#: templates/views/add-service.html:25
+msgid "Add service"
 msgstr ""
 
 #: templates/views/cookies.html:6 templates/views/cookies.html:21

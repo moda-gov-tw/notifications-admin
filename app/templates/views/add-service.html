@@ -12,17 +12,17 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    {{ page_header('About your service') }}
+    {{ page_header(_('About your service')) }}
 
     {% call form_wrapper() %}
 
-      {{ form.name(param_extensions={"hint": {"text": "You can change this later"}}) }}
+      {{ form.name(param_extensions={"hint": {"text": _('You can change this later')}}) }}
 
       {% if not default_organisation_type %}
         {{ form.organisation_type }}
       {% endif %}
 
-      {{ page_footer('Add service') }}
+      {{ page_footer(_('Add service')) }}
 
     {% endcall %}
 
