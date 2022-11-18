@@ -1,12 +1,12 @@
 {% extends "views/platform-admin/_base_template.html" %}
 
 {% block per_page_title %}
-Inbound SMS
+{{_('Inbound SMS')}}
 {% endblock %}
 
 {% set table_headings = {
   'field_headings': [
-    'Number', 'Status', 'Service', 'Created on'
+    _('Number'), _('Status'), _('Service'), _('Created on')
   ],
   'field_headings_visible': True,
   'caption_visible': True
@@ -21,7 +21,7 @@ Inbound SMS
 {% block platform_admin_content %}
 
   <h1 class="heading-medium">
-    Inbound SMS
+    {{_('Inbound SMS')}}
   </h1>
 
   <table class="inbound">
@@ -44,11 +44,11 @@ Inbound SMS
               <td>
 
               {% if value.active %}
-                Active
+                {{_('Active')}}
               {% elif not value.service.name  %}
-                  Not used
+                  {{_('Not used')}}
               {% else %}
-                Inactive
+                {{_('Inactive')}}
               {% endif %}
               </td>
               <td>

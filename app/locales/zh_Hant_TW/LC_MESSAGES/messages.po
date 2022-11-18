@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 16:44+0800\n"
+"POT-Creation-Date: 2022-11-18 16:47+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -1263,6 +1263,42 @@ msgid ""
 "href=\"%%s\">free text message allowance</a>."
 msgstr ""
 
+#: templates/views/inbound-sms-admin.html:4
+#: templates/views/inbound-sms-admin.html:24
+msgid "Inbound SMS"
+msgstr ""
+
+#: templates/views/inbound-sms-admin.html:9
+msgid "Number"
+msgstr ""
+
+#: templates/views/inbound-sms-admin.html:9
+#: templates/views/message-status.html:25
+#: templates/views/message-status.html:54
+#: templates/views/message-status.html:78
+msgid "Status"
+msgstr ""
+
+#: templates/views/inbound-sms-admin.html:9
+msgid "Service"
+msgstr ""
+
+#: templates/views/inbound-sms-admin.html:9
+msgid "Created on"
+msgstr ""
+
+#: templates/views/inbound-sms-admin.html:47
+msgid "Active"
+msgstr ""
+
+#: templates/views/inbound-sms-admin.html:49
+msgid "Not used"
+msgstr ""
+
+#: templates/views/inbound-sms-admin.html:51
+msgid "Inactive"
+msgstr ""
+
 #: templates/views/integration-testing.html:5
 #: templates/views/integration-testing.html:12
 msgid "Integration testing"
@@ -1319,12 +1355,6 @@ msgstr ""
 
 #: templates/views/message-status.html:24
 msgid "Message statuses – emails"
-msgstr ""
-
-#: templates/views/message-status.html:25
-#: templates/views/message-status.html:54
-#: templates/views/message-status.html:78
-msgid "Status"
 msgstr ""
 
 #: templates/views/message-status.html:25
