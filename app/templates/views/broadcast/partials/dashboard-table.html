@@ -24,7 +24,7 @@
         </p>
       {% else %}
         <p class="govuk-body govuk-hint file-list-status">
-          {{_("%(starts_at_format_human)s at %(starts_at)s") % {
+          {{_("%%(starts_at_format_human)s at %%(starts_at)s") % {
             'start_at_format_human': item.starts_at|format_date_human|title,
             'starts_at': item.starts_at|format_time,
           }}}

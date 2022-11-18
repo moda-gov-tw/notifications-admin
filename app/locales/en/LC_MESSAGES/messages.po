@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 14:50+0800\n"
+"POT-Creation-Date: 2022-11-18 14:52+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -3043,7 +3043,7 @@ msgstr ""
 
 #: templates/views/broadcast/partials/dashboard-table.html:27
 #, python-format
-msgid "%(starts_at_format_human)s at %(starts_at)s"
+msgid "%%(starts_at_format_human)s at %%(starts_at)s"
 msgstr ""
 
 #: templates/views/broadcast/tour/1.html:6
@@ -4373,4 +4373,7 @@ msgstr ""
 #~ " in<a class=\"govuk-link govuk-link--no-"
 #~ "visited-state\" href=\"/features/trial-mode\">trial"
 #~ " mode</a>"
+#~ msgstr ""
+
+#~ msgid "%(starts_at_format_human)s at %(starts_at)s"
 #~ msgstr ""

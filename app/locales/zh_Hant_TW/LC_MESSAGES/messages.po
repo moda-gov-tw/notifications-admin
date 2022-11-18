@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 14:50+0800\n"
+"POT-Creation-Date: 2022-11-18 14:52+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -3126,7 +3126,7 @@ msgstr ""
 
 #: templates/views/broadcast/partials/dashboard-table.html:27
 #, python-format
-msgid "%(starts_at_format_human)s at %(starts_at)s"
+msgid "%%(starts_at_format_human)s at %%(starts_at)s"
 msgstr ""
 
 #: templates/views/broadcast/tour/1.html:6
@@ -4476,4 +4476,7 @@ msgstr ""
 #~ " ‘{}’?You will not be able to "
 #~ "use this API key to connect to "
 #~ "GOV.UK Notify."
+#~ msgstr ""
+
+#~ msgid "%(starts_at_format_human)s at %(starts_at)s"
 #~ msgstr ""
