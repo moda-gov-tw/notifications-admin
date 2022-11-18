@@ -6,26 +6,26 @@
 {% from "govuk_frontend_jinja/components/button/macro.html" import govukButton %}
 
 {% block per_page_title %}
-  Summary
+  {{_('Summary')}}
 {% endblock %}
 
 {% block platform_admin_content %}
 
   <h1 class="heading-medium">
-    Summary
+    {{_('Summary')}}
   </h1>
 
   {% set details_content %}
     {% call form_wrapper(method="get") %}
-      {{ form.start_date(param_extensions={"hint": {"text":"Enter start date in format YYYY-MM-DD"}}) }}
-      {{ form.end_date(param_extensions={"hint": {"text":"Enter end date in format YYYY-MM-DD"}}) }}
+      {{ form.start_date(param_extensions={"hint": {"text":_("Enter start date in format YYYY-MM-DD")}}) }}
+      {{ form.end_date(param_extensions={"hint": {"text":_("Enter end date in format YYYY-MM-DD")}}) }}
       </br>
-      {{ govukButton({ "text": "Filter" }) }}
+      {{ govukButton({ "text": _("Filter") }) }}
     {% endcall %}
   {% endset %}
 
   {{ govukDetails({
-    "summaryText": "Apply filters",
+    "summaryText": _("Apply filters"),
     "html": details_content,
     "open": form.errors | convert_to_boolean
   }) }}

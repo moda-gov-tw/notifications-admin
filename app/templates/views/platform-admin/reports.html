@@ -1,31 +1,31 @@
 {% extends "views/platform-admin/_base_template.html" %}
 
 {% block per_page_title %}
-  Reports
+  {{_('Reports')}}
 {% endblock %}
 
 {% block platform_admin_content %}
 
   <h1 class="heading-medium">
-    Reports
+    {{_('Reports')}}
   </h1>
 
 <p class="govuk-body">
-  <a class="govuk-link govuk-link--no-visited-state" target="_blank" href="{{ url_for('main.live_services_csv') }}">Download live services csv report</a>
+  <a class="govuk-link govuk-link--no-visited-state" target="_blank" href="{{ url_for('main.live_services_csv') }}">{{_('Download live services csv report')}}</a>
 </p>
 <p class="govuk-body">
-  <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.notifications_sent_by_service') }}">Monthly notification statuses for live services</a>
+  <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.notifications_sent_by_service') }}">{{_('Monthly notification statuses for live services')}}</a>
 </p>
 <p class="govuk-body">
-  <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.get_billing_report') }}">Billing Report</a>
+  <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.get_billing_report') }}">{{_('Billing Report')}}</a>
 </p>
 <p class="govuk-body">
-  <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.get_volumes_by_service') }}">Volumes by service Report</a>
+  <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.get_volumes_by_service') }}">{{_('Volumes by service Report')}}</a>
 </p>
 <p class="govuk-body">
-  <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.get_daily_volumes') }}">Daily volumes Report</a>
+  <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.get_daily_volumes') }}">{{_('Daily volumes Report')}}</a>
 </p>
 <p class="govuk-body">
-  <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.get_daily_sms_provider_volumes') }}">Daily SMS provider volumes Report</a>
+  <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.get_daily_sms_provider_volumes') }}">{{_('Daily SMS provider volumes Report')}}</a>
 </p>
 {% endblock %}

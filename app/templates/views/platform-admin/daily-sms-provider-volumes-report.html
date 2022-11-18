@@ -3,38 +3,38 @@
 {% from "components/table.html" import mapping_table, row, text_field %}
 
 {% block per_page_title %}
-  Daily SMS provider volumes Report
+  {{_('Daily SMS provider volumes Report')}}
 {% endblock %}
 
 {% block platform_admin_content %}
 
   <h1 class="heading-large">
-    Daily SMS provider volumes Report
+    {{_('Daily SMS provider volumes Report')}}
   </h1>
 
   {% call form_wrapper() %}
-    {{ form.start_date(param_extensions={"hint": {"text": "Use the format YYYY-MM-DD"}}) }}
-    {{ form.end_date(param_extensions={"hint": {"text": "Use the format YYYY-MM-DD"}}) }}
-    {{ page_footer('Download report (CSV)') }}
+    {{ form.start_date(param_extensions={"hint": {"text": _("Use the format YYYY-MM-DD") }}) }}
+    {{ form.end_date(param_extensions={"hint": {"text": _("Use the format YYYY-MM-DD") }}) }}
+    {{ page_footer(_('Download report (CSV)')) }}
   {% endcall %}
 
   <h2 class="heading-medium">
-    Data included in the report
+    {{_('Data included in the report')}}
   </h2>
 <div class="bottom-gutter-3-2">
     {% call mapping_table(
-      caption='Descriptions of daily SMS provider volumes data',
-      field_headings=['Name', 'Description'],
+      caption=_('Descriptions of daily SMS provider volumes data'),
+      field_headings=[_('Name'), _('Description')],
       field_headings_visible=True,
       caption_visible=False
     ) %}
       {% for column_heading, description in [
-        ('day', 'The whole business day in BST'),
-        ('provider', 'The SMS provider'),
-        ('sms totals', 'The number of text messages sent'),
-        ('sms fragments', 'The number of text message fragments sent'),
-        ('sms chargeable units', 'The number of text message fragments sent times the rate multiplier'),
-        ('sms cost', 'The cost to Notify’s users of text messages sent'),
+        ('day', _('The whole business day in BST')),
+        ('provider', _('The SMS provider')),
+        ('sms totals', _('The number of text messages sent')),
+        ('sms fragments', _('The number of text message fragments sent')),
+        ('sms chargeable units', _('The number of text message fragments sent times the rate multiplier')),
+        ('sms cost', _('The cost to Notify’s users of text messages sent')),
       ] %}
         {% call row() %}
           {{ text_field(column_heading) }}

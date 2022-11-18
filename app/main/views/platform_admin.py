@@ -4,6 +4,7 @@ from collections import OrderedDict
 from datetime import datetime
 
 from flask import abort, flash, redirect, render_template, request, url_for
+from flask_babel import _
 from notifications_python_client.errors import HTTPError
 
 from app import (
@@ -100,7 +101,7 @@ def make_columns(global_stats, complaints_number):
                 get_status_box_data(global_stats["email"], "temporary-failure", "temporary failures"),
                 {
                     "number": complaints_number,
-                    "label": "complaints",
+                    "label": _("complaints"),
                     "failing": is_over_threshold(
                         complaints_number, global_stats["email"]["total"], COMPLAINT_THRESHOLD
                     ),
@@ -108,17 +109,17 @@ def make_columns(global_stats, complaints_number):
                     "url": url_for("main.platform_admin_list_complaints"),
                 },
             ],
-            "test_data": {"number": global_stats["email"]["test-key"], "label": "test emails"},
+            "test_data": {"number": global_stats["email"]["test-key"], "label": _("test emails")},
         },
         # sms
         {
             "black_box": {"number": global_stats["sms"]["total"], "notification_type": "sms"},
             "other_data": [
                 get_tech_failure_status_box_data(global_stats["sms"]),
-                get_status_box_data(global_stats["sms"], "permanent-failure", "permanent failures"),
-                get_status_box_data(global_stats["sms"], "temporary-failure", "temporary failures"),
+                get_status_box_data(global_stats["sms"], "permanent-failure", _("permanent failures")),
+                get_status_box_data(global_stats["sms"], "temporary-failure", _("temporary failures")),
             ],
-            "test_data": {"number": global_stats["sms"]["test-key"], "label": "test text messages"},
+            "test_data": {"number": global_stats["sms"]["test-key"], "label": _("test text messages")},
         },
         # letter
         {
@@ -126,10 +127,10 @@ def make_columns(global_stats, complaints_number):
             "other_data": [
                 get_tech_failure_status_box_data(global_stats["letter"]),
                 get_status_box_data(
-                    global_stats["letter"], "virus-scan-failed", "virus scan failures", ZERO_FAILURE_THRESHOLD
+                    global_stats["letter"], "virus-scan-failed", _("virus scan failures"), ZERO_FAILURE_THRESHOLD
                 ),
             ],
-            "test_data": {"number": global_stats["letter"]["test-key"], "label": "test letters"},
+            "test_data": {"number": global_stats["letter"]["test-key"], "label": _("test letters")},
         },
     ]
 
@@ -171,7 +172,7 @@ def platform_admin_services():
         include_from_test_key=include_from_test_key,
         form=form,
         services=list(format_stats_by_service(services)),
-        page_title="{} services".format("Trial mode" if request.endpoint == "main.trial_services" else "Live"),
+        page_title=_("{} services").format(_("Trial mode") if request.endpoint == "main.trial_services" else _("Live")),
         global_stats=create_global_stats(services),
     )
 
@@ -189,22 +190,22 @@ def live_services_csv():
 
     column_names = OrderedDict(
         [
-            ("service_id", "Service ID"),
-            ("organisation_name", "Organisation"),
-            ("organisation_type", "Organisation type"),
-            ("service_name", "Service name"),
-            ("consent_to_research", "Consent to research"),
-            ("contact_name", "Main contact"),
-            ("contact_email", "Contact email"),
-            ("contact_mobile", "Contact mobile"),
-            ("live_date", "Live date"),
-            ("sms_volume_intent", "SMS volume intent"),
-            ("email_volume_intent", "Email volume intent"),
-            ("letter_volume_intent", "Letter volume intent"),
-            ("sms_totals", "SMS sent this year"),
-            ("email_totals", "Emails sent this year"),
-            ("letter_totals", "Letters sent this year"),
-            ("free_sms_fragment_limit", "Free sms allowance"),
+            ("service_id", _("Service ID")),
+            ("organisation_name", _("Organisation")),
+            ("organisation_type", _("Organisation type")),
+            ("service_name", _("Service name")),
+            ("consent_to_research", _("Consent to research")),
+            ("contact_name", _("Main contact")),
+            ("contact_email", _("Contact email")),
+            ("contact_mobile", _("Contact mobile")),
+            ("live_date", _("Live date")),
+            ("sms_volume_intent", _("SMS volume intent")),
+            ("email_volume_intent", _("Email volume intent")),
+            ("letter_volume_intent", _("Letter volume intent")),
+            ("sms_totals", _("SMS sent this year")),
+            ("email_totals", _("Emails sent this year")),
+            ("letter_totals", _("Letters sent this year")),
+            ("free_sms_fragment_limit", _("Free sms allowance")),
         ]
     )
 
@@ -222,7 +223,7 @@ def live_services_csv():
         200,
         {
             "Content-Type": "text/csv; charset=utf-8",
-            "Content-Disposition": 'inline; filename="{} live services report.csv"'.format(
+            "Content-Disposition": _('inline; filename="{} live services report.csv"').format(
                 format_date_numeric(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%fZ")),
             ),
         },
@@ -258,7 +259,7 @@ def notifications_sent_by_service():
             {
                 "Content-Type": "text/csv; charset=utf-8",
                 "Content-Disposition": (
-                    'attachment; filename="{} to {} notification status per service report.csv"'.format(
+                    _('attachment; filename="{} to {} notification status per service report.csv"').format(
                         start_date, end_date
                     )
                 ),
@@ -294,7 +295,7 @@ def get_billing_report():
         try:
             result = billing_api_client.get_data_for_billing_report(start_date, end_date)
         except HTTPError as e:
-            message = "Date must be in a single financial year."
+            message = _("Date must be in a single financial year.")
             if e.status_code == 400 and e.message == message:
                 flash(message)
                 return render_template("views/platform-admin/get-billing-report.html", form=form)
@@ -324,13 +325,13 @@ def get_billing_report():
                 200,
                 {
                     "Content-Type": "text/csv; charset=utf-8",
-                    "Content-Disposition": 'attachment; filename="Billing Report from {} to {}.csv"'.format(
+                    "Content-Disposition": _('attachment; filename="Billing Report from {} to {}.csv"').format(
                         start_date, end_date
                     ),
                 },
             )
         else:
-            flash("No results for dates")
+            flash(_("No results for dates"))
     return render_template("views/platform-admin/get-billing-report.html", form=form)
 
 
@@ -343,17 +344,17 @@ def get_volumes_by_service():
         start_date = form.start_date.data
         end_date = form.end_date.data
         headers = [
-            "organisation id",
-            "organisation name",
-            "service id",
-            "service name",
-            "free allowance",
-            "sms notifications",
-            "sms chargeable units",
-            "email totals",
-            "letter totals",
-            "letter cost",
-            "letter sheet totals",
+            _("organisation id"),
+            _("organisation name"),
+            _("service id"),
+            _("service name"),
+            _("free allowance"),
+            _("sms notifications"),
+            _("sms chargeable units"),
+            _("email totals"),
+            _("letter totals"),
+            _("letter cost"),
+            _("letter sheet totals"),
         ]
         result = billing_api_client.get_data_for_volumes_by_service_report(start_date, end_date)
 
@@ -379,9 +380,9 @@ def get_volumes_by_service():
                 200,
                 {
                     "Content-Type": "text/csv; charset=utf-8",
-                    "Content-Disposition": 'attachment; filename="Volumes by service report from {} to {}.csv"'.format(
-                        start_date, end_date
-                    ),
+                    "Content-Disposition": _(
+                        'attachment; filename="Volumes by service report from {} to {}.csv"'
+                    ).format(start_date, end_date),
                 },
             )
         else:
@@ -398,13 +399,13 @@ def get_daily_volumes():
         start_date = form.start_date.data
         end_date = form.end_date.data
         headers = [
-            "day",
-            "sms totals",
-            "sms fragment totals",
-            "sms chargeable units",
-            "email totals",
-            "letter totals",
-            "letter sheet totals",
+            _("day"),
+            _("sms totals"),
+            _("sms fragment totals"),
+            _("sms chargeable units"),
+            _("email totals"),
+            _("letter totals"),
+            _("letter sheet totals"),
         ]
         result = billing_api_client.get_data_for_daily_volumes_report(start_date, end_date)
 
@@ -426,13 +427,13 @@ def get_daily_volumes():
                 200,
                 {
                     "Content-Type": "text/csv; charset=utf-8",
-                    "Content-Disposition": 'attachment; filename="Daily volumes report from {} to {}.csv"'.format(
+                    "Content-Disposition": _('attachment; filename="Daily volumes report from {} to {}.csv"').format(
                         start_date, end_date
                     ),
                 },
             )
         else:
-            flash("No results for dates")
+            flash(_("No results for dates"))
     return render_template("views/platform-admin/daily-volumes-report.html", form=form)
 
 
@@ -445,12 +446,12 @@ def get_daily_sms_provider_volumes():
         start_date = form.start_date.data
         end_date = form.end_date.data
         headers = [
-            "day",
-            "provider",
-            "sms totals",
-            "sms fragment totals",
-            "sms chargeable units",
-            "sms cost",
+            _("day"),
+            _("provider"),
+            _("sms totals"),
+            _("sms fragment totals"),
+            _("sms chargeable units"),
+            _("sms cost"),
         ]
         result = billing_api_client.get_data_for_daily_sms_provider_volumes_report(start_date, end_date)
 
@@ -472,12 +473,13 @@ def get_daily_sms_provider_volumes():
                 {
                     "Content-Type": "text/csv; charset=utf-8",
                     "Content-Disposition": (
-                        f'attachment; filename="Daily SMS provider volumes report from {start_date} to {end_date}.csv"'
+                        _('attachment; filename="Daily SMS provider volumes report from %%s to %%s.csv"')
+                        % (start_date, end_date)
                     ),
                 },
             )
         else:
-            flash("No results for dates")
+            flash(_("No results for dates"))
     return render_template("views/platform-admin/daily-sms-provider-volumes-report.html", form=form)
 
 
@@ -486,7 +488,7 @@ def get_daily_sms_provider_volumes():
 def platform_admin_list_complaints():
     page = get_page_from_request()
     if page is None:
-        abort(404, "Invalid page argument ({}).".format(request.args.get("page")))
+        abort(404, _("Invalid page argument ({}).").format(request.args.get("page")))
 
     response = complaint_api_client.get_all_complaints(page=page)
 
@@ -527,7 +529,7 @@ def platform_admin_returned_letters():
             else:
                 raise error
         else:
-            flash("Submitted {} letter references".format(len(references)), "default")
+            flash(_("Submitted {} letter references").format(len(references)), "default")
             return redirect(url_for(".platform_admin_returned_letters"))
     return render_template(
         "views/platform-admin/returned-letters.html",
@@ -612,7 +614,11 @@ def clear_cache():
 
         num_deleted = sum(redis_client.delete_by_pattern(pattern) for pattern in patterns)
 
-        msg = f"Removed {num_deleted} objects " f"across {len(patterns)} key formats " f'for {", ".join(group_keys)}'
+        msg = _("Removed %%s objects across %%s key formats for {%%s}") % (
+            num_deleted,
+            len(patterns),
+            ", ".join(group_keys),
+        )
 
         flash(msg, category="default")
 

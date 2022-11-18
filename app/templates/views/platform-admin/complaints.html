@@ -4,22 +4,22 @@
 {% from "components/table.html" import list_table, field, text_field, link_field, right_aligned_field_heading, hidden_field_heading %}
 
 {% block per_page_title %}
-  Email complaints
+  {{_('Email complaints')}}
 {% endblock %}
 
 {% block platform_admin_content %}
 
   <h1 class="heading-medium">
-    Email complaints
+    {{_('Email complaints')}}
   </h1>
 
 
   {% call(item, row_number) list_table(
       complaints,
-      caption="Complaints",
+      caption=_("Complaints"),
       caption_visible=False,
-      empty_message='No complaints',
-      field_headings=['Notification Id', 'Service', 'Complaint type', 'Complaint Date'],
+      empty_message=_('No complaints'),
+      field_headings=[_('Notification Id'), _('Service'), _('Complaint type'), _('Complaint Date')],
       field_headings_visible=True
   ) %}
 

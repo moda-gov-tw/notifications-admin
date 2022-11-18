@@ -1,17 +1,17 @@
 {% extends "views/platform-admin/_base_template.html" %}
 
 {% block per_page_title %}
-  Summary
+  {{_('Summary')}}
 {% endblock %}
 
 {% block platform_admin_content %}
 
   <h1 class="heading-medium">
-    Summary
+    {{_('Summary')}}
   </h1>
 
   <p class="govuk-body">
-    <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.platform_admin') }}">Load summary</a>
+    <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.platform_admin') }}">{{_('Load summary')}}</a>
   </p>
 
 {% endblock %}

@@ -9,10 +9,10 @@
 
 {% block platform_admin_content %}
 
-  <h1 class="heading-medium">Submit returned letters</h1>
+  <h1 class="heading-medium">{{_('Submit returned letters')}}</h1>
   {% call form_wrapper() %}
     {{ textbox(form.references, width='1-1', rows=8, autosize=True) }}
-    {{ sticky_page_footer("Submit") }}
+    {{ sticky_page_footer(_("Submit")) }}
   {% endcall %}
 
 {% endblock %}

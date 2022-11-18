@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 22:45+0800\n"
+"POT-Creation-Date: 2022-11-18 23:09+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -208,7 +208,7 @@ msgstr ""
 msgid "reference"
 msgstr ""
 
-#: main/views/jobs.py:208
+#: main/views/jobs.py:208 main/views/platform_admin.py:490
 msgid "Invalid page argument ({})."
 msgstr ""
 
@@ -263,7 +263,7 @@ msgstr ""
 msgid "Are you sure you want to cancel sending this letter?"
 msgstr ""
 
-#: main/views/organisations.py:183
+#: main/views/organisations.py:183 main/views/platform_admin.py:193
 msgid "Service ID"
 msgstr ""
 
@@ -379,6 +379,216 @@ msgstr ""
 
 #: main/views/performance.py:22
 msgid "No organisation"
+msgstr ""
+
+#: main/views/platform_admin.py:104
+msgid "complaints"
+msgstr ""
+
+#: main/views/platform_admin.py:112
+msgid "test emails"
+msgstr ""
+
+#: main/views/platform_admin.py:119
+msgid "permanent failures"
+msgstr ""
+
+#: main/views/platform_admin.py:120
+msgid "temporary failures"
+msgstr ""
+
+#: main/views/platform_admin.py:122
+msgid "test text messages"
+msgstr ""
+
+#: main/views/platform_admin.py:130
+msgid "virus scan failures"
+msgstr ""
+
+#: main/views/platform_admin.py:175
+msgid "{} services"
+msgstr ""
+
+#: main/views/platform_admin.py:175 templates/views/trial-mode.html:7
+#: templates/views/trial-mode.html:12
+msgid "Trial mode"
+msgstr ""
+
+#: main/views/platform_admin.py:175
+msgid "Live"
+msgstr ""
+
+#: main/views/platform_admin.py:194 templates/views/performance.html:143
+msgid "Organisation"
+msgstr ""
+
+#: main/views/platform_admin.py:195
+msgid "Organisation type"
+msgstr ""
+
+#: main/views/platform_admin.py:196
+msgid "Service name"
+msgstr ""
+
+#: main/views/platform_admin.py:197
+msgid "Consent to research"
+msgstr ""
+
+#: main/views/platform_admin.py:198
+msgid "Main contact"
+msgstr ""
+
+#: main/views/platform_admin.py:199
+msgid "Contact email"
+msgstr ""
+
+#: main/views/platform_admin.py:200
+msgid "Contact mobile"
+msgstr ""
+
+#: main/views/platform_admin.py:201
+msgid "Live date"
+msgstr ""
+
+#: main/views/platform_admin.py:202
+msgid "SMS volume intent"
+msgstr ""
+
+#: main/views/platform_admin.py:203
+msgid "Email volume intent"
+msgstr ""
+
+#: main/views/platform_admin.py:204
+msgid "Letter volume intent"
+msgstr ""
+
+#: main/views/platform_admin.py:205
+msgid "SMS sent this year"
+msgstr ""
+
+#: main/views/platform_admin.py:206
+msgid "Emails sent this year"
+msgstr ""
+
+#: main/views/platform_admin.py:207
+msgid "Letters sent this year"
+msgstr ""
+
+#: main/views/platform_admin.py:208
+msgid "Free sms allowance"
+msgstr ""
+
+#: main/views/platform_admin.py:226
+msgid "inline; filename=\"{} live services report.csv\""
+msgstr ""
+
+#: main/views/platform_admin.py:262
+msgid ""
+"attachment; filename=\"{} to {} notification status per service "
+"report.csv\""
+msgstr ""
+
+#: main/views/platform_admin.py:298
+msgid "Date must be in a single financial year."
+msgstr ""
+
+#: main/views/platform_admin.py:328
+msgid "attachment; filename=\"Billing Report from {} to {}.csv\""
+msgstr ""
+
+#: main/views/platform_admin.py:334 main/views/platform_admin.py:436
+#: main/views/platform_admin.py:481
+msgid "No results for dates"
+msgstr ""
+
+#: main/views/platform_admin.py:347
+msgid "organisation id"
+msgstr ""
+
+#: main/views/platform_admin.py:348
+#: templates/views/organisations/organisation/settings/index.html:23
+msgid "organisation name"
+msgstr ""
+
+#: main/views/platform_admin.py:349
+msgid "service id"
+msgstr ""
+
+#: main/views/platform_admin.py:350
+msgid "service name"
+msgstr ""
+
+#: main/views/platform_admin.py:351
+msgid "free allowance"
+msgstr ""
+
+#: main/views/platform_admin.py:352
+msgid "sms notifications"
+msgstr ""
+
+#: main/views/platform_admin.py:353 main/views/platform_admin.py:405
+#: main/views/platform_admin.py:453
+msgid "sms chargeable units"
+msgstr ""
+
+#: main/views/platform_admin.py:354 main/views/platform_admin.py:406
+msgid "email totals"
+msgstr ""
+
+#: main/views/platform_admin.py:355 main/views/platform_admin.py:407
+msgid "letter totals"
+msgstr ""
+
+#: main/views/platform_admin.py:356
+msgid "letter cost"
+msgstr ""
+
+#: main/views/platform_admin.py:357 main/views/platform_admin.py:408
+msgid "letter sheet totals"
+msgstr ""
+
+#: main/views/platform_admin.py:383
+msgid "attachment; filename=\"Volumes by service report from {} to {}.csv\""
+msgstr ""
+
+#: main/views/platform_admin.py:402 main/views/platform_admin.py:449
+msgid "day"
+msgstr ""
+
+#: main/views/platform_admin.py:403 main/views/platform_admin.py:451
+msgid "sms totals"
+msgstr ""
+
+#: main/views/platform_admin.py:404 main/views/platform_admin.py:452
+msgid "sms fragment totals"
+msgstr ""
+
+#: main/views/platform_admin.py:430
+msgid "attachment; filename=\"Daily volumes report from {} to {}.csv\""
+msgstr ""
+
+#: main/views/platform_admin.py:450
+msgid "provider"
+msgstr ""
+
+#: main/views/platform_admin.py:454
+msgid "sms cost"
+msgstr ""
+
+#: main/views/platform_admin.py:476
+#, python-format
+msgid ""
+"attachment; filename=\"Daily SMS provider volumes report from %%s to "
+"%%s.csv\""
+msgstr ""
+
+#: main/views/platform_admin.py:531
+msgid "Submitted {} letter references"
+msgstr ""
+
+#: main/views/platform_admin.py:616
+#, python-format
+msgid "Removed %%s objects across %%s key formats for {%%s}"
 msgstr ""
 
 #: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:2
@@ -734,7 +944,9 @@ msgstr ""
 #: templates/views/dashboard/monthly.html:34
 #: templates/views/features/emails.html:9
 #: templates/views/features/emails.html:14
-#: templates/views/message-status.html:21 templates/views/signedout.html:147
+#: templates/views/message-status.html:21
+#: templates/views/platform-admin/services.html:14
+#: templates/views/signedout.html:147
 msgid "Emails"
 msgstr ""
 
@@ -978,6 +1190,8 @@ msgid ""
 msgstr ""
 
 #: templates/views/cookies.html:35 templates/views/cookies.html:85
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:27
+#: templates/views/platform-admin/daily-volumes-report.html:27
 msgid "Name"
 msgstr ""
 
@@ -1625,6 +1839,7 @@ msgid "Number"
 msgstr ""
 
 #: templates/views/inbound-sms-admin.html:9
+#: templates/views/platform-admin/complaints.html:22
 msgid "Service"
 msgstr ""
 
@@ -1759,6 +1974,8 @@ msgstr ""
 #: templates/views/message-status.html:25
 #: templates/views/message-status.html:54
 #: templates/views/message-status.html:78
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:27
+#: templates/views/platform-admin/daily-volumes-report.html:27
 msgid "Description"
 msgstr ""
 
@@ -1847,6 +2064,7 @@ msgstr ""
 #: templates/views/features/text-messages.html:14
 #: templates/views/message-status.html:50
 #: templates/views/organisations/organisation/index.html:31
+#: templates/views/platform-admin/services.html:15
 #: templates/views/signedout.html:152
 msgid "Text messages"
 msgstr ""
@@ -1904,6 +2122,7 @@ msgstr ""
 #: templates/views/features/letters.html:14
 #: templates/views/message-status.html:74
 #: templates/views/organisations/organisation/index.html:42
+#: templates/views/platform-admin/services.html:16
 #: templates/views/signedout.html:158
 msgid "Letters"
 msgstr ""
@@ -2075,10 +2294,6 @@ msgid ""
 "      <div class=\"product-page-big-number\">%%s</div>\n"
 "      services\n"
 "      <span class=\"govuk-visually-hidden\">using Notify.</span>"
-msgstr ""
-
-#: templates/views/performance.html:143
-msgid "Organisation"
 msgstr ""
 
 #: templates/views/performance.html:143
@@ -3167,10 +3382,6 @@ msgstr ""
 #: templates/views/verification-not-received.html:12
 #: templates/views/verification-not-received.html:18
 msgid "Resend security code"
-msgstr ""
-
-#: templates/views/trial-mode.html:7 templates/views/trial-mode.html:12
-msgid "Trial mode"
 msgstr ""
 
 #: templates/views/trial-mode.html:14
@@ -5415,10 +5626,6 @@ msgstr ""
 msgid "Value"
 msgstr ""
 
-#: templates/views/organisations/organisation/settings/index.html:23
-msgid "organisation name"
-msgstr ""
-
 #: templates/views/organisations/organisation/settings/index.html:28
 msgid "Sector"
 msgstr ""
@@ -5566,6 +5773,192 @@ msgstr ""
 
 #: templates/views/organisations/organisation/users/invite-org-user.html:33
 msgid "invite other team members"
+msgstr ""
+
+#: templates/views/platform-admin/clear-cache.html:6
+#: templates/views/platform-admin/clear-cache.html:12
+msgid "Clear cache"
+msgstr ""
+
+#: templates/views/platform-admin/clear-cache.html:17
+msgid "Clear"
+msgstr ""
+
+#: templates/views/platform-admin/complaints.html:7
+#: templates/views/platform-admin/complaints.html:13
+msgid "Email complaints"
+msgstr ""
+
+#: templates/views/platform-admin/complaints.html:19
+msgid "Complaints"
+msgstr ""
+
+#: templates/views/platform-admin/complaints.html:21
+msgid "No complaints"
+msgstr ""
+
+#: templates/views/platform-admin/complaints.html:22
+msgid "Notification Id"
+msgstr ""
+
+#: templates/views/platform-admin/complaints.html:22
+msgid "Complaint type"
+msgstr ""
+
+#: templates/views/platform-admin/complaints.html:22
+msgid "Complaint Date"
+msgstr ""
+
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:6
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:12
+#: templates/views/platform-admin/reports.html:29
+msgid "Daily SMS provider volumes Report"
+msgstr ""
+
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:16
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:17
+#: templates/views/platform-admin/daily-volumes-report.html:16
+#: templates/views/platform-admin/daily-volumes-report.html:17
+msgid "Use the format YYYY-MM-DD"
+msgstr ""
+
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:18
+#: templates/views/platform-admin/daily-volumes-report.html:18
+#: templates/views/platform-admin/notifications_by_service.html:17
+msgid "Download report (CSV)"
+msgstr ""
+
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:22
+#: templates/views/platform-admin/daily-volumes-report.html:22
+msgid "Data included in the report"
+msgstr ""
+
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:26
+msgid "Descriptions of daily SMS provider volumes data"
+msgstr ""
+
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:32
+msgid "The whole business day in BST"
+msgstr ""
+
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:33
+msgid "The SMS provider"
+msgstr ""
+
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:34
+#: templates/views/platform-admin/daily-volumes-report.html:33
+msgid "The number of text messages sent"
+msgstr ""
+
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:35
+#: templates/views/platform-admin/daily-volumes-report.html:35
+msgid "The number of text message fragments sent"
+msgstr ""
+
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:36
+#: templates/views/platform-admin/daily-volumes-report.html:34
+msgid "The number of text message fragments sent times the rate multiplier"
+msgstr ""
+
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:37
+msgid "The cost to Notify’s users of text messages sent"
+msgstr ""
+
+#: templates/views/platform-admin/daily-volumes-report.html:6
+msgid "Daily volumes report"
+msgstr ""
+
+#: templates/views/platform-admin/daily-volumes-report.html:12
+#: templates/views/platform-admin/reports.html:26
+msgid "Daily volumes Report"
+msgstr ""
+
+#: templates/views/platform-admin/daily-volumes-report.html:26
+msgid "Descriptions of daily volumes data"
+msgstr ""
+
+#: templates/views/platform-admin/daily-volumes-report.html:32
+msgid "The whole business day in BST."
+msgstr ""
+
+#: templates/views/platform-admin/daily-volumes-report.html:36
+msgid "The number of emails sent"
+msgstr ""
+
+#: templates/views/platform-admin/daily-volumes-report.html:37
+msgid "The number of letters sent"
+msgstr ""
+
+#: templates/views/platform-admin/daily-volumes-report.html:38
+msgid "The number of sheets sent"
+msgstr ""
+
+#: templates/views/platform-admin/index.html:9
+#: templates/views/platform-admin/index.html:15
+#: templates/views/platform-admin/splash-page.html:4
+#: templates/views/platform-admin/splash-page.html:10
+msgid "Summary"
+msgstr ""
+
+#: templates/views/platform-admin/index.html:20
+#: templates/views/platform-admin/notifications_by_service.html:15
+#: templates/views/platform-admin/services.html:68
+msgid "Enter start date in format YYYY-MM-DD"
+msgstr ""
+
+#: templates/views/platform-admin/index.html:21
+#: templates/views/platform-admin/notifications_by_service.html:16
+#: templates/views/platform-admin/services.html:69
+msgid "Enter end date in format YYYY-MM-DD"
+msgstr ""
+
+#: templates/views/platform-admin/index.html:23
+#: templates/views/platform-admin/services.html:71
+msgid "Filter"
+msgstr ""
+
+#: templates/views/platform-admin/index.html:28
+#: templates/views/platform-admin/services.html:76
+msgid "Apply filters"
+msgstr ""
+
+#: templates/views/platform-admin/notifications_by_service.html:5
+#: templates/views/platform-admin/notifications_by_service.html:11
+#: templates/views/platform-admin/reports.html:17
+msgid "Monthly notification statuses for live services"
+msgstr ""
+
+#: templates/views/platform-admin/reports.html:4
+#: templates/views/platform-admin/reports.html:10
+msgid "Reports"
+msgstr ""
+
+#: templates/views/platform-admin/reports.html:14
+msgid "Download live services csv report"
+msgstr ""
+
+#: templates/views/platform-admin/reports.html:20
+msgid "Billing Report"
+msgstr ""
+
+#: templates/views/platform-admin/reports.html:23
+msgid "Volumes by service Report"
+msgstr ""
+
+#: templates/views/platform-admin/returned-letters.html:12
+msgid "Submit returned letters"
+msgstr ""
+
+#: templates/views/platform-admin/returned-letters.html:15
+msgid "Submit"
+msgstr ""
+
+#: templates/views/platform-admin/services.html:29
+msgid "&ensp;Archived"
+msgstr ""
+
+#: templates/views/platform-admin/splash-page.html:14
+msgid "Load summary"
 msgstr ""
 
 #: templates/views/service-settings/letter-preview.html:6
