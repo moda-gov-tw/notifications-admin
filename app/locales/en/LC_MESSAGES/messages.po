@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 17:16+0800\n"
+"POT-Creation-Date: 2022-11-18 17:24+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -225,6 +225,15 @@ msgstr ""
 #: main/views/jobs.py:351
 #, python-format
 msgid "delivered<span class=\"govuk-visually-hidden\">%%s</span>"
+msgstr ""
+
+#: main/views/jobs.py:359
+#, python-format
+msgid "failed<span class=\"govuk-visually-hidden\">%%s</span>"
+msgstr ""
+
+#: main/views/letter_branding.py:97
+msgid "Error saving uploaded file - try uploading again"
 msgstr ""
 
 #: templates/partials/jobs/count-letters.html:17
@@ -3092,6 +3101,7 @@ msgstr ""
 #: templates/views/api/callbacks/delivery-status-callback.html:39
 #: templates/views/email-branding/manage-branding.html:42
 #: templates/views/find-users/auth_type.html:23
+#: templates/views/letter-branding/manage-letter-branding.html:44
 msgid "Save"
 msgstr ""
 
@@ -3610,6 +3620,7 @@ msgid "Logos should be PNG files, 108px high"
 msgstr ""
 
 #: templates/views/email-branding/select-branding.html:30
+#: templates/views/letter-branding/select-letter-branding.html:30
 msgid "New brand"
 msgstr ""
 
@@ -4634,6 +4645,22 @@ msgstr ""
 
 #: templates/views/jobs/job.html:34
 msgid "Cancel sending these letters"
+msgstr ""
+
+#: templates/views/letter-branding/manage-letter-branding.html:10
+#: templates/views/letter-branding/manage-letter-branding.html:23
+msgid "Update letter branding"
+msgstr ""
+
+#: templates/views/letter-branding/manage-letter-branding.html:12
+#: templates/views/letter-branding/manage-letter-branding.html:25
+msgid "Add letter branding"
+msgstr ""
+
+#: templates/views/letter-branding/manage-letter-branding.html:35
+msgid ""
+"Logos should be SVG files, cropped to artwork bounds and with all fonts "
+"outlined."
 msgstr ""
 
 #: templates/views/service-settings/letter-preview.html:6

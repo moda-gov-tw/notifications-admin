@@ -1,5 +1,6 @@
 from botocore.exceptions import ClientError as BotoClientError
 from flask import current_app, redirect, render_template, request, session, url_for
+from flask_babel import _
 from notifications_python_client.errors import HTTPError
 
 from app import letter_branding_client
@@ -93,7 +94,7 @@ def update_letter_branding(branding_id, logo=None):
                 filename=letter_branding.filename,
                 name=letter_branding.name,
             )
-            file_upload_form.file.errors = ["Error saving uploaded file - try uploading again"]
+            file_upload_form.file.errors = [_("Error saving uploaded file - try uploading again")]
 
     return render_template(
         "views/letter-branding/manage-letter-branding.html",

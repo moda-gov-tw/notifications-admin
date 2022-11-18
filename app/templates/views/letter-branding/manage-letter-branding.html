@@ -6,7 +6,11 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block per_page_title %}
-  {{ '{} letter branding'.format('Update' if is_update else 'Add')}}
+  {% if is_update %}
+  {{_('Update letter branding')}}
+  {% else %}
+  {{_('Add letter branding')}}
+  {% endif %}
 {% endblock %}
 
 {% block backLink %}
@@ -15,7 +19,11 @@
 
 {% block platform_admin_content %}
 
-  {{ page_header('{} letter branding'.format('Update' if is_update else 'Add')) }}
+  {% if is_update %}
+  {{page_header(_('Update letter branding'))}}
+  {% else %}
+  {{page_header(_('Add letter branding'))}}
+  {% endif %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters">
       {% if logo %}
@@ -24,7 +32,7 @@
         </div>
       {% endif %}
       <p class="govuk-body">
-        Logos should be SVG files, cropped to artwork bounds and with all fonts outlined.
+        {{_('Logos should be SVG files, cropped to artwork bounds and with all fonts outlined.')}}
       </p>
       {{ file_upload(file_upload_form.file, allowed_file_extensions=['svg'], button_text='{} logo'.format('Update' if is_update else 'Upload')) }}
       {% call form_wrapper() %}
@@ -33,7 +41,7 @@
             "formGroup": {"classes": "govuk-!-margin-top-3"}
           }) }}
           {{ page_footer(
-            'Save',
+            _('Save'),
             button_name='operation',
             button_value='branding-details'
           ) }}
