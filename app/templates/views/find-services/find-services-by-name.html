@@ -4,13 +4,13 @@
 {% from "govuk_frontend_jinja/components/button/macro.html" import govukButton %}
 
 {% block per_page_title %}
-  Find services by name
+  {{_('Find services by name')}}
 {% endblock %}
 
 {% block platform_admin_content %}
 
   <h1 class="heading-medium">
-    Find services by name
+    {{_('Find services by name')}}
   </h1>
 
 
@@ -20,13 +20,13 @@
   ) %}
     <div class="govuk-grid-column-three-quarters">
       {{ form.search(param_extensions={
-        "label": {"text": "Find services by name, partial name, or service ID"}
+        "label": {"text": _("Find services by name, partial name, or service ID")}
       }) }}
     </div>
     <div class="govuk-grid-column-one-quarter">
       <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
       {{ govukButton({
-        "text": "Search",
+        "text": _("Search"),
         "classes": "search-form__button"
       }) }}
     </div>
@@ -48,6 +48,6 @@
     </ul>
   </nav>
   {% elif services_found == [] %}
-    <p class="browse-list-hint">No services found.</p>
+    <p class="browse-list-hint">{{_('No services found.')}}</p>
   {% endif %}
 {% endblock %}

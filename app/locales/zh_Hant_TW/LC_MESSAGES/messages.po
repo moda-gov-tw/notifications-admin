@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 16:27+0800\n"
+"POT-Creation-Date: 2022-11-18 16:30+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -127,15 +127,15 @@ msgstr ""
 msgid "financial year"
 msgstr ""
 
-#: main/views/feedback.py:69
+#: main/views/feedback.py:70
 msgid "Report a problem"
 msgstr ""
 
-#: main/views/feedback.py:70
+#: main/views/feedback.py:71
 msgid "Contact GOV.UK Notify support"
 msgstr ""
 
-#: main/views/feedback.py:118
+#: main/views/feedback.py:119
 msgid "Notify feedback"
 msgstr ""
 
@@ -3766,6 +3766,23 @@ msgstr ""
 
 #: templates/views/features/text-messages.html:38
 msgid "Each service you add has an annual allowance of free text messages."
+msgstr ""
+
+#: templates/views/find-services/find-services-by-name.html:7
+#: templates/views/find-services/find-services-by-name.html:13
+msgid "Find services by name"
+msgstr ""
+
+#: templates/views/find-services/find-services-by-name.html:23
+msgid "Find services by name, partial name, or service ID"
+msgstr ""
+
+#: templates/views/find-services/find-services-by-name.html:29
+msgid "Search"
+msgstr ""
+
+#: templates/views/find-services/find-services-by-name.html:51
+msgid "No services found."
 msgstr ""
 
 #: templates/views/guidance/branding-and-customisation.html:9
