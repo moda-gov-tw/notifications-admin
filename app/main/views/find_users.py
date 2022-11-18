@@ -1,4 +1,5 @@
 from flask import abort, flash, redirect, render_template, request, url_for
+from flask_babel import _
 from flask_login import current_user
 from notifications_python_client.errors import HTTPError
 
@@ -41,8 +42,10 @@ def archive_user(user_id):
         except HTTPError as e:
             if e.status_code == 400 and "manage_settings" in e.message:
                 flash(
-                    "User can’t be removed from a service - "
-                    "check all services have another team member with manage_settings"
+                    _(
+                        "User can’t be removed from a service - "
+                        "check all services have another team member with manage_settings"
+                    )
                 )
                 return redirect(url_for("main.user_information", user_id=user_id))
 
@@ -52,7 +55,7 @@ def archive_user(user_id):
 
         return redirect(url_for(".user_information", user_id=user_id))
     else:
-        flash("There's no way to reverse this! Are you sure you want to archive this user?", "delete")
+        flash(_("There's no way to reverse this! Are you sure you want to archive this user?"), "delete")
         return user_information(user_id)
 
 

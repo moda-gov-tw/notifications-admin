@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 16:30+0800\n"
+"POT-Creation-Date: 2022-11-18 16:39+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -137,6 +137,18 @@ msgstr ""
 
 #: main/views/feedback.py:119
 msgid "Notify feedback"
+msgstr ""
+
+#: main/views/find_users.py:45
+msgid ""
+"User can’t be removed from a service - check all services have another "
+"team member with manage_settings"
+msgstr ""
+
+#: main/views/find_users.py:56
+msgid ""
+"There's no way to reverse this! Are you sure you want to archive this "
+"user?"
 msgstr ""
 
 #: templates/views/accessibility_statement.html:6
@@ -577,10 +589,12 @@ msgstr ""
 
 #: templates/views/choose-account.html:79
 #: templates/views/choose-account.html:86
+#: templates/views/find-users/user-information.html:17
 msgid "Live services"
 msgstr ""
 
 #: templates/views/choose-account.html:94
+#: templates/views/find-users/user-information.html:33
 msgid "Trial mode services"
 msgstr ""
 
@@ -2914,6 +2928,7 @@ msgstr ""
 
 #: templates/views/api/callbacks/delivery-status-callback.html:39
 #: templates/views/email-branding/manage-branding.html:42
+#: templates/views/find-users/auth_type.html:23
 msgid "Save"
 msgstr ""
 
@@ -3778,11 +3793,68 @@ msgid "Find services by name, partial name, or service ID"
 msgstr ""
 
 #: templates/views/find-services/find-services-by-name.html:29
+#: templates/views/find-users/find-users-by-email.html:29
 msgid "Search"
 msgstr ""
 
 #: templates/views/find-services/find-services-by-name.html:51
 msgid "No services found."
+msgstr ""
+
+#: templates/views/find-users/auth_type.html:8
+#: templates/views/find-users/auth_type.html:19
+#, python-format
+msgid "Set auth type for %%(user_name)s"
+msgstr ""
+
+#: templates/views/find-users/find-users-by-email.html:7
+#: templates/views/find-users/find-users-by-email.html:13
+msgid "Find users by email"
+msgstr ""
+
+#: templates/views/find-users/find-users-by-email.html:23
+msgid "Find users by email, or by partial email"
+msgstr ""
+
+#: templates/views/find-users/find-users-by-email.html:52
+msgid "No users found."
+msgstr ""
+
+#: templates/views/find-users/user-information.html:29
+msgid "No live services"
+msgstr ""
+
+#: templates/views/find-users/user-information.html:45
+msgid "No services in trial mode"
+msgstr ""
+
+#: templates/views/find-users/user-information.html:50
+msgid "Authentication"
+msgstr ""
+
+#: templates/views/find-users/user-information.html:54
+msgid "Change authentication for this user"
+msgstr ""
+
+#: templates/views/find-users/user-information.html:58
+msgid "Last login"
+msgstr ""
+
+#: templates/views/find-users/user-information.html:60
+msgid "This person has never logged in"
+msgstr ""
+
+#: templates/views/find-users/user-information.html:62
+msgid "Last logged in"
+msgstr ""
+
+#: templates/views/find-users/user-information.html:70
+#, python-format
+msgid "%%(user_account)s failed login attempts"
+msgstr ""
+
+#: templates/views/find-users/user-information.html:76
+msgid "Archive user"
 msgstr ""
 
 #: templates/views/guidance/branding-and-customisation.html:9

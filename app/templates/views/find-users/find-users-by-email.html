@@ -4,13 +4,13 @@
 {% from "govuk_frontend_jinja/components/button/macro.html" import govukButton %}
 
 {% block per_page_title %}
-  Find users by email
+  {{_('Find users by email')}}
 {% endblock %}
 
 {% block platform_admin_content %}
 
   <h1 class="heading-medium">
-    Find users by email
+    {{_('Find users by email')}}
   </h1>
 
 
@@ -20,13 +20,13 @@
   ) %}
     <div class="govuk-grid-column-three-quarters">
       {{ form.search(param_extensions={
-            "label": {"text": "Find users by email, or by partial email"}
+            "label": {"text": _("Find users by email, or by partial email")}
       }) }}
     </div>
     <div class="govuk-grid-column-one-quarter">
       <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
       {{ govukButton({
-        "text": "Search",
+        "text": _("Search"),
         "classes": "search-form__button"
       }) }}
     </div>
@@ -49,6 +49,6 @@
     </ul>
   </nav>
   {% elif users_found == [] %}
-    <p class="browse-list-hint">No users found.</p>
+    <p class="browse-list-hint">{{_('No users found.')}}</p>
   {% endif %}
 {% endblock %}
