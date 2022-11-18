@@ -7,7 +7,7 @@
 {% from "components/banner.html" import banner_wrapper %}
 
 {% block org_page_title %}
-  Known email domains
+  {{_('Known email domains')}}
 {% endblock %}
 
 {% block backLink %}
@@ -20,7 +20,7 @@
     {% call banner_wrapper(type='dangerous') %}
 
       <h1 class='banner-title'>
-        There is a problem
+        {{_('There is a problem')}}
       </h1>
 
       <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-0">
@@ -38,17 +38,17 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-five-sixths">
       <p class="govuk-body">
-        If a user’s email addresses ends with one of these domains then
-        any services they create will be associated with this organisation.
+        {{_("If a user’s email addresses ends with one of these domains then
+        any services they create will be associated with this organisation.")}}
       </p>
       {% call form_wrapper() %}
         {{ list_entry(
           form.domains,
           item_name='domain',
           autocomplete=False,
-          hint='For example cabinet-office.gov.uk'
+          hint=_('For example cabinet-office.gov.uk')
         ) }}
-        {{ page_footer('Save') }}
+        {{ page_footer(_('Save')) }}
       {% endcall %}
     </div>
   </div>

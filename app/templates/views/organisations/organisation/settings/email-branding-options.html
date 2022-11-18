@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/button/macro.html" import govukButton %}
 {%  from "components/branding-preview.html" import email_branding_preview %}
 
-{% set page_title = "Email branding" %}
+{% set page_title = _("Email branding") %}
 
 {% block per_page_title %}
   {{ page_title }}
@@ -21,7 +21,7 @@
 
     <!-- display default branding and it's preview -->
     <h2 class="govuk-heading-s govuk-!-margin-bottom-2">
-      {{ current_org.email_branding.name }}<span class="hint govuk-!-font-weight-regular">&ensp;(default)</span>
+      {{ current_org.email_branding.name }}<span class="hint govuk-!-font-weight-regular">{{_('&ensp;(default)')}}</span>
     </h2>
 
     {% if show_use_govuk_as_default_link %}
@@ -31,7 +31,7 @@
           class="govuk-link govuk-link--no-visited-state"
           href="{{ url_for('main.organisation_email_branding', org_id=current_org.id) }}?change_default_branding_to_govuk"
         >
-          Use GOV.UK as default instead
+          {{_('Use GOV.UK as default instead')}}
         </a>
       </p>
     {% else %}
@@ -52,7 +52,7 @@
             {{ form.email_branding_id(value=option.id) }}
             {{ govukButton({
               "element": "input",
-              "text": "Make default",
+              "text": _("Make default"),
               "classes": "govuk-button--secondary"
             }) }}
           {% endcall %}
@@ -61,7 +61,7 @@
           <p class="govuk-body govuk-!-text-align-right">
             <a href="{{ url_for('main.organisation_email_branding', org_id=current_org.id) }}?remove_branding_id={{ option.id }}"
              class="govuk-link govuk-link govuk-link--destructive govuk-link--no-visited-state">
-              Remove <span class="govuk-visually-hidden">this branding option</span>
+              {{_("Remove <span class=\"govuk-visually-hidden\">this branding option</span>")}}
             </a>
           </p>
         </div>
@@ -72,7 +72,7 @@
 
     <div class="js-stick-at-bottom-when-scrolling">
       {{ page_footer(
-          button_text='Add branding options',
+          button_text=_('Add branding options'),
           button_url=url_for('.add_organisation_email_branding_options', org_id=current_org.id)
         )
       }}

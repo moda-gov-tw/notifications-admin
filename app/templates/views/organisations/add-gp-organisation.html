@@ -7,7 +7,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block per_page_title %}
-  Accept our data sharing and financial agreement
+  {{_('Accept our data sharing and financial agreement')}}
 {% endblock %}
 
 {% block backLink %}
@@ -15,7 +15,7 @@
 {% endblock %}
 
 {% block maincolumn_content %}
-  {{ page_header('Accept our data sharing and financial agreement') }}
+  {{ page_header(_('Accept our data sharing and financial agreement')) }}
   {% call form_wrapper() %}
     {% call select_wrapper(form.same_as_service_name) %}
       {% for option in form.same_as_service_name %}
@@ -25,6 +25,6 @@
     {% call conditional_radio_panel('custom-organisation-name') %}
       {{ form.name }}
     {% endcall %}
-    {{ page_footer('Continue') }}
+    {{ page_footer(_('Continue')) }}
   {% endcall %}
 {% endblock %}

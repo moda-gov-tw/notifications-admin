@@ -4,14 +4,14 @@
 {% from "components/form.html" import form_wrapper %}
 
 {% block per_page_title %}
-  New organisation
+  {{_('New organisation')}}
 {% endblock %}
 
 {% block main %}
   <div class="govuk-width-container">
     <div class="navigation-service">
-      <a href="{{ url_for('.organisations') }}" class="govuk-link govuk-link--no-visited-state navigation-service-back-to">All organisations</a>
-      <a href="{{ url_for('main.choose_account') }}" class="govuk-link govuk-link--no-visited-state navigation-service-switch">Switch service</a>
+      <a href="{{ url_for('.organisations') }}" class="govuk-link govuk-link--no-visited-state navigation-service-back-to">{{_('All organisations')}}</a>
+      <a href="{{ url_for('main.choose_account') }}" class="govuk-link govuk-link--no-visited-state navigation-service-switch">{{_('Switch service')}}</a>
     </div>
 
     <div class="govuk-grid-row">
@@ -27,7 +27,7 @@
               {{ form.name }}
               {{ form.organisation_type }}
               {{ form.crown_status }}
-              {{ page_footer('Save') }}
+              {{ page_footer(_('Save')) }}
             {% endcall %}
           {% endblock %}
         </main>

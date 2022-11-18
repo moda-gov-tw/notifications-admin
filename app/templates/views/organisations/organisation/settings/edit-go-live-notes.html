@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block org_page_title %}
-  Edit request to go live notes
+  {{_('Edit request to go live notes')}}
 {% endblock %}
 
 {% block backLink %}
@@ -14,16 +14,16 @@
 {% endblock %}
 
 {% block maincolumn_content %}
-  {{ page_header("Edit request to go live notes") }}
+  {{ page_header(_("Edit request to go live notes")) }}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-five-sixths">
       <p class="govuk-body">
-        Text entered here will be displayed in the Zendesk ticket when a service
-        belonging to this organisation requests to go live.
+        {{_("Text entered here will be displayed in the Zendesk ticket when a service
+        belonging to this organisation requests to go live.")}}
       </p>
       {% call form_wrapper() %}
         {{ textbox(form.request_to_go_live_notes, width='1-1', rows=3, autosize=True) }}
-        {{ page_footer('Save') }}
+        {{ page_footer(_('Save')) }}
       {% endcall %}
     </div>
   </div>

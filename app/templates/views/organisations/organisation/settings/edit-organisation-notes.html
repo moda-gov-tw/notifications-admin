@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block org_page_title %}
-  Edit organisation notes
+  {{_('Edit organisation notes')}}
 {% endblock %}
 
 {% block backLink %}
@@ -15,7 +15,7 @@
 
 {% block maincolumn_content %}
 
-    {{ page_header('Edit organisation notes') }}
+    {{ page_header(_('Edit organisation notes')) }}
     {% call form_wrapper() %}
     {{ textbox(
       form.notes,
@@ -24,7 +24,7 @@
       autofocus=True,
       autosize=True,
     ) }}
-      {{ page_footer('Save') }}
+      {{ page_footer(_('Save')) }}
     {% endcall %}
 
 {% endblock %}

@@ -2,15 +2,15 @@
 {% from "components/table.html" import mapping_table, optional_text_field, row, field, text_field, edit_field with context %}
 
 {% block org_page_title %}
-  Settings
+  {{_('Settings')}}
 {% endblock %}
 
 {% block maincolumn_content %}
-  <h1 class="heading-medium">Settings</h1>
+  <h1 class="heading-medium">{{_('Settings')}}</h1>
   <div class="bottom-gutter-3-2 settings-table body-copy-table">
     {% call mapping_table(
-      caption='General',
-      field_headings=['Label', 'Value', 'Action'],
+      caption=_('General'),
+      field_headings=[_('Label'), _('Value'), _('Action')],
       field_headings_visible=False,
       caption_visible=False
     ) %}
@@ -20,59 +20,59 @@
         {{ edit_field(
             'Change',
             url_for('.edit_organisation_name', org_id=current_org.id),
-            suffix='organisation name'
+            suffix=_('organisation name')
           )
         }}
       {% endcall %}
       {% call row() %}
-        {{ text_field('Sector') }}
+        {{ text_field(_('Sector')) }}
         {{ optional_text_field(current_org.organisation_type_label) }}
         {{ edit_field(
-            'Change',
+            _('Change'),
             url_for('.edit_organisation_type', org_id=current_org.id),
-            suffix='sector for the organisation'
+            suffix=_('sector for the organisation')
           )
         }}
       {% endcall %}
       {% call row() %}
-        {{ text_field('Crown organisation') }}
+        {{ text_field(_('Crown organisation')) }}
         {{ optional_text_field(
             {
-              True: 'Yes',
-              False: 'No',
+              True: _('Yes'),
+              False: _('No'),
             }.get(current_org.crown),
-            default='Not sure'
+            default=_('Not sure')
         ) }}
         {{ edit_field(
             'Change',
             url_for('.edit_organisation_crown_status', org_id=current_org.id),
-            suffix='organisation crown status'
+            suffix=_('organisation crown status')
           )
         }}
       {% endcall %}
       {% call row() %}
-        {{ text_field('Data sharing and financial agreement') }}
+        {{ text_field(_('Data sharing and financial agreement')) }}
         {{ text_field(
           {
-            True: 'Signed',
-            False: 'Not signed',
-            None: 'Not signed (but we have some service-specific agreements in place)'
+            True: _('Signed'),
+            False: _('Not signed'),
+            None: _('Not signed (but we have some service-specific agreements in place)')
           }.get(current_org.agreement_signed)
         ) }}
         {{ edit_field(
-            'Change',
+            _('Change'),
             url_for('.edit_organisation_agreement', org_id=current_org.id),
-            suffix='data sharing and financial agreement for the organisation'
+            suffix=_('data sharing and financial agreement for the organisation')
           )
         }}
       {% endcall %}
       {% call row() %}
-        {{ text_field('Request to go live notes') }}
+        {{ text_field(_('Request to go live notes')) }}
         {{ optional_text_field(current_org.request_to_go_live_notes, default='None') }}
         {{ edit_field(
-            'Change',
+            _('Change'),
             url_for('.edit_organisation_go_live_notes', org_id=current_org.id),
-            suffix='go live notes for the organisation'
+            suffix=_('go live notes for the organisation')
           )
         }}
       {% endcall %}
@@ -81,9 +81,9 @@
         {{ text_field('Billing details')}}
         {{ optional_text_field(current_org.billing_details, default="None", wrap=True) }}
         {{ edit_field(
-            'Change',
+            _('Change'),
             url_for('.edit_organisation_billing_details', org_id=current_org.id),
-            suffix='billing details for the organisation'
+            suffix=_('billing details for the organisation')
           )
         }}
       {% endcall %}
@@ -92,9 +92,9 @@
         {{ text_field('Notes')}}
         {{ optional_text_field(current_org.notes, default="None", wrap=True) }}
         {{ edit_field(
-            'Change',
+            _('Change'),
             url_for('.edit_organisation_notes', org_id=current_org.id),
-            suffix='the notes for the organisation'
+            suffix=_('the notes for the organisation')
           )
         }}
       {% endcall %}
@@ -105,7 +105,7 @@
             {{ current_org.email_branding.name }}
             <br>
             <div class="table-field-status-default">
-              Default
+              {{_('Default')}}
             </div>
           </div>
 
@@ -121,42 +121,42 @@
           {{ email_branding_html }}
         {% endcall %}
         {{ edit_field(
-            'Change',
+            _('Change'),
             url_for('.organisation_email_branding', org_id=current_org.id),
-            suffix='email branding options for the organisation'
+            suffix=_('email branding options for the organisation')
           )
         }}
       {% endcall %}
       {% call row() %}
-        {{ text_field('Default letter branding') }}
+        {{ text_field(_('Default letter branding')) }}
         {{ optional_text_field(
           current_org.letter_branding.name if current_org.letter_branding else None,
-          default='No branding'
+          default=_('No branding')
         ) }}
         {{ edit_field(
             'Change',
             url_for('.edit_organisation_letter_branding', org_id=current_org.id),
-            suffix='default letter branding for the organisation'
+            suffix=_('default letter branding for the organisation')
           )
         }}
       {% endcall %}
       {% call row() %}
-        {{ text_field('Letter branding options') }}
-        {{ optional_text_field(letter_branding_pool_names, default="None") }}
+        {{ text_field(_('Letter branding options')) }}
+        {{ optional_text_field(letter_branding_pool_names, default=_("None")) }}
         {{ edit_field(
-            'Change',
+            _('Change'),
             url_for('.organisation_letter_branding', org_id=current_org.id),
-            suffix='letter branding options for the organisation'
+            suffix=_('letter branding options for the organisation')
             )
         }}
       {% endcall %}
       {% call row() %}
-        {{ text_field('Known email domains') }}
-        {{ optional_text_field(current_org.domains or None, default='None') }}
+        {{ text_field(_('Known email domains')) }}
+        {{ optional_text_field(current_org.domains or None, default=_('None')) }}
         {{ edit_field(
             'Change',
             url_for('.edit_organisation_domains', org_id=current_org.id),
-            suffix='known email domains for the organisation'
+            suffix=_('known email domains for the organisation')
           )
         }}
       {% endcall %}
@@ -165,7 +165,7 @@
       <p class="top-gutter-1-2">
         <span class="page-footer-link page-footer-delete-link-without-button">
           <a class="govuk-link govuk-link--destructive" href="{{ url_for('.archive_organisation', org_id=current_org.id) }}">
-            Delete this organisation
+            {{_('Delete this organisation')}}
           </a>
         </span>
       </p>

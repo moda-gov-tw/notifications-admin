@@ -5,7 +5,7 @@
 {%  from "components/branding-preview.html" import letter_branding_preview %}
 
 {% block org_page_title %}
-  Letter branding
+  {{_('Letter branding')}}
 {% endblock %}
 
 {% block backLink %}
@@ -13,10 +13,10 @@
 {%  endblock %}
 
 {% block maincolumn_content %}
-  {{ page_header("Letter branding") }}
+  {{ page_header(_("Letter branding")) }}
 
   <h2 class="govuk-heading-s govuk-!-margin-bottom-2">
-    {{ current_org.letter_branding.name or "No branding" }}<span class="hint govuk-!-font-weight-regular">&ensp;(default)</span>
+    {{ current_org.letter_branding.name or _("No branding") }}<span class="hint govuk-!-font-weight-regular">{{_('&ensp;(default)')}}</span>
   </h2>
 
   {{ letter_branding_preview(current_org.letter_branding_id, classes='govuk-!-margin-bottom-8') }}
@@ -33,7 +33,7 @@
         <p class="govuk-body govuk-!-text-align-right">
           <a href="{{ url_for('main.organisation_letter_branding', org_id=current_org.id) }}?remove_branding_id={{ option.id }}"
            class="govuk-link govuk-link govuk-link--destructive govuk-link--no-visited-state">
-            Remove <span class="govuk-visually-hidden">this branding option</span>
+            {{_("Remove <span class=\"govuk-visually-hidden\">this branding option</span>")}}
           </a>
         </p>
       </div>
@@ -44,7 +44,7 @@
 
   <div class="js-stick-at-bottom-when-scrolling">
     {{ page_footer(
-        button_text='Add branding options',
+        button_text=_('Add branding options'),
         button_url=url_for('.add_organisation_letter_branding_options', org_id=current_org.id)
       )
     }}

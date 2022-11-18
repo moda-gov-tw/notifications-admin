@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 21:44+0800\n"
+"POT-Creation-Date: 2022-11-18 22:35+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -244,7 +244,7 @@ msgstr ""
 msgid "You cannot remove the only user for a service"
 msgstr ""
 
-#: main/views/manage_users.py:281
+#: main/views/manage_users.py:281 main/views/organisations.py:279
 #, python-format
 msgid "Invitation cancelled for %%(mail)s"
 msgstr ""
@@ -261,6 +261,154 @@ msgstr ""
 
 #: main/views/notifications.py:201
 msgid "Are you sure you want to cancel sending this letter?"
+msgstr ""
+
+#: main/views/organisations.py:183
+msgid "Service ID"
+msgstr ""
+
+#: main/views/organisations.py:184
+msgid "Service Name"
+msgstr ""
+
+#: main/views/organisations.py:185
+msgid "Emails sent"
+msgstr ""
+
+#: main/views/organisations.py:186
+msgid "Free text message allowance remaining"
+msgstr ""
+
+#: main/views/organisations.py:191
+msgid "Spent on text messages (£)"
+msgstr ""
+
+#: main/views/organisations.py:191
+msgid "Spent on letters (£)"
+msgstr ""
+
+#: main/views/organisations.py:206
+msgid ""
+"inline;filename=\"{} organisation usage report for year {} - generated on"
+" {}.csv\""
+msgstr ""
+
+#: main/views/organisations.py:302
+msgid "Organisation name already exists"
+msgstr ""
+
+#: main/views/organisations.py:304
+msgid "This organisation name is already in use"
+msgstr ""
+
+#: main/views/organisations.py:403
+#, python-format
+msgid ""
+"Invalid email branding ID %%(remove_branding_id)s for "
+"%%(current_organisation)s"
+msgstr ""
+
+#: main/views/organisations.py:409
+#, python-format
+msgid "Email branding ‘%%(name)s’ removed."
+msgstr ""
+
+#: main/views/organisations.py:455 main/views/organisations.py:506
+msgid "yes, make this email branding the default"
+msgstr ""
+
+#: main/views/organisations.py:473
+#, python-format
+msgid ""
+"Email branding ID %%(id)s is not present in organisation %%(org_name)s's "
+"email branding pool."
+msgstr ""
+
+#: main/views/organisations.py:579
+msgid "1 email branding option added"
+msgstr ""
+
+#: main/views/organisations.py:581
+#, python-format
+msgid "%%(selected_mails)s email branding options added"
+msgstr ""
+
+#: main/views/organisations.py:647
+#, python-format
+msgid ""
+"Invalid letter branding ID %%(remove_branding_id)s for "
+"%%(current_organisation)s"
+msgstr ""
+
+#: main/views/organisations.py:655
+#, python-format
+msgid "Are you sure you want to remove the letter brand ‘%%s’?"
+msgstr ""
+
+#: main/views/organisations.py:658
+#, python-format
+msgid "Letter branding ‘%%s’ removed."
+msgstr ""
+
+#: main/views/organisations.py:682
+msgid "1 letter branding option added"
+msgstr ""
+
+#: main/views/organisations.py:684
+#, python-format
+msgid "%%s letter branding options added"
+msgstr ""
+
+#: main/views/organisations.py:709
+msgid "Domain already exists"
+msgstr ""
+
+#: main/views/organisations.py:711
+msgid "This domain is already in use"
+msgstr ""
+
+#: main/views/organisations.py:810
+#, python-format
+msgid "‘%%s’ was deleted"
+msgstr ""
+
+#: main/views/organisations.py:814
+#, python-format
+msgid "Are you sure you want to delete ‘%%s’? There’s no way to undo this."
+msgstr ""
+
+#: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:2
+#, python-format
+msgid "Are you sure you want to make ‘%%s’ the default email branding?"
+msgstr ""
+
+#: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:6
+#, python-format
+msgid "%%(organisation_name )s services currently using GOV.UK branding:"
+msgstr ""
+
+#: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:10
+msgid "will have their default email branding changed"
+msgstr ""
+
+#: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:11
+msgid "will no longer be able to use the GOV.UK branding"
+msgstr ""
+
+#: templates/partials/flash_messages/email_branding_confirm_change_default_to_govuk.html:2
+msgid "Are you sure you want to make GOV.UK the default email branding?"
+msgstr ""
+
+#: templates/partials/flash_messages/email_branding_confirm_change_default_to_govuk.html:6
+#, python-format
+msgid ""
+"%%(organisation_name )s services currently using the %%(current_brand )s "
+"brand will not be updated."
+msgstr ""
+
+#: templates/partials/flash_messages/email_branding_confirm_remove_brand.html:2
+#, python-format
+msgid "Are you sure you want to remove the email brand ‘%%(name)s’?"
 msgstr ""
 
 #: templates/partials/jobs/count-letters.html:17
@@ -284,6 +432,7 @@ msgstr ""
 
 #: templates/partials/jobs/notifications.html:37
 #: templates/views/notifications.html:69
+#: templates/views/organisations/organisation/index.html:116
 msgid "Download this report (<abbr title=\"Comma separated values\">CSV</abbr>)"
 msgstr ""
 
@@ -782,6 +931,7 @@ msgstr ""
 
 #: templates/views/choose-account.html:94
 #: templates/views/find-users/user-information.html:33
+#: templates/views/organisations/organisation/trial-mode-services.html:11
 msgid "Trial mode services"
 msgstr ""
 
@@ -1008,6 +1158,7 @@ msgid "Are you sure you want to remove {}?"
 msgstr ""
 
 #: templates/views/edit-user-permissions.html:21
+#: templates/views/organisations/organisation/users/index.html:17
 msgid "Yes, remove"
 msgstr ""
 
@@ -1026,6 +1177,16 @@ msgstr ""
 #: templates/views/letter-branding/manage-letter-branding.html:44
 #: templates/views/manage-users/edit-user-email.html:23
 #: templates/views/manage-users/edit-user-mobile.html:24
+#: templates/views/organisations/add-organisation.html:30
+#: templates/views/organisations/organisation/settings/edit-agreement.html:21
+#: templates/views/organisations/organisation/settings/edit-crown-status.html:21
+#: templates/views/organisations/organisation/settings/edit-domains.html:51
+#: templates/views/organisations/organisation/settings/edit-go-live-notes.html:26
+#: templates/views/organisations/organisation/settings/edit-name.html:21
+#: templates/views/organisations/organisation/settings/edit-organisation-billing-details.html:34
+#: templates/views/organisations/organisation/settings/edit-organisation-notes.html:27
+#: templates/views/organisations/organisation/settings/edit-type.html:19
+#: templates/views/organisations/organisation/settings/preview-letter-branding.html:19
 msgid "Save"
 msgstr ""
 
@@ -1497,6 +1658,8 @@ msgid ""
 msgstr ""
 
 #: templates/views/invite-user.html:8 templates/views/manage-users.html:98
+#: templates/views/organisations/organisation/users/invite-org-user.html:9
+#: templates/views/organisations/organisation/users/invite-org-user.html:18
 msgid "Invite a team member"
 msgstr ""
 
@@ -1505,10 +1668,13 @@ msgid "Invite {}"
 msgstr ""
 
 #: templates/views/invite-user.html:36
+#: templates/views/organisations/organisation/users/invite-org-user.html:37
 msgid "Send invitation email"
 msgstr ""
 
 #: templates/views/manage-users.html:7 templates/views/manage-users.html:13
+#: templates/views/organisations/organisation/users/index.html:8
+#: templates/views/organisations/organisation/users/index.html:23
 msgid "Team members"
 msgstr ""
 
@@ -1675,7 +1841,9 @@ msgstr ""
 #: templates/views/dashboard/monthly.html:35
 #: templates/views/features/text-messages.html:9
 #: templates/views/features/text-messages.html:14
-#: templates/views/message-status.html:50 templates/views/signedout.html:152
+#: templates/views/message-status.html:50
+#: templates/views/organisations/organisation/index.html:31
+#: templates/views/signedout.html:152
 msgid "Text messages"
 msgstr ""
 
@@ -1730,7 +1898,9 @@ msgstr ""
 
 #: templates/views/features/letters.html:9
 #: templates/views/features/letters.html:14
-#: templates/views/message-status.html:74 templates/views/signedout.html:158
+#: templates/views/message-status.html:74
+#: templates/views/organisations/organisation/index.html:42
+#: templates/views/signedout.html:158
 msgid "Letters"
 msgstr ""
 
@@ -3096,6 +3266,9 @@ msgstr ""
 
 #: templates/views/agreement/agreement-accept.html:10
 #: templates/views/agreement/agreement-accept.html:22
+#: templates/views/organisations/add-gp-organisation.html:10
+#: templates/views/organisations/add-gp-organisation.html:18
+#: templates/views/organisations/add-nhs-local-organisation.html:8
 msgid "Accept our data sharing and financial agreement"
 msgstr ""
 
@@ -3120,6 +3293,8 @@ msgstr ""
 #: templates/views/broadcast/write-new-broadcast.html:44
 #: templates/views/email-branding/government-identity-options-colour.html:30
 #: templates/views/email-branding/government-identity-options.html:30
+#: templates/views/organisations/add-gp-organisation.html:28
+#: templates/views/organisations/add-nhs-local-organisation.html:32
 #: templates/views/support/index.html:20
 msgid "Continue"
 msgstr ""
@@ -3155,6 +3330,7 @@ msgid "Callbacks"
 msgstr ""
 
 #: templates/views/api/callbacks.html:19
+#: templates/views/organisations/organisation/settings/index.html:12
 msgid "General"
 msgstr ""
 
@@ -3163,6 +3339,13 @@ msgid "Delivery receipts"
 msgstr ""
 
 #: templates/views/api/callbacks.html:27 templates/views/api/callbacks.html:33
+#: templates/views/organisations/organisation/settings/index.html:31
+#: templates/views/organisations/organisation/settings/index.html:63
+#: templates/views/organisations/organisation/settings/index.html:73
+#: templates/views/organisations/organisation/settings/index.html:84
+#: templates/views/organisations/organisation/settings/index.html:95
+#: templates/views/organisations/organisation/settings/index.html:124
+#: templates/views/organisations/organisation/settings/index.html:147
 msgid "Change"
 msgstr ""
 
@@ -3205,6 +3388,7 @@ msgid "You have not created any API keys yet"
 msgstr ""
 
 #: templates/views/api/keys.html:27
+#: templates/views/organisations/organisation/settings/index.html:13
 msgid "Action"
 msgstr ""
 
@@ -3283,6 +3467,9 @@ msgstr ""
 
 #: templates/views/broadcast/areas-with-sub-areas.html:22
 #: templates/views/broadcast/areas.html:24
+#: templates/views/organisations/add-nhs-local-organisation.html:28
+#: templates/views/organisations/organisation/settings/set-letter-branding.html:32
+#: templates/views/organisations/organisation/trial-mode-services.html:13
 msgid "Search by name"
 msgstr ""
 
@@ -3638,6 +3825,7 @@ msgid "sending starts %%s"
 msgstr ""
 
 #: templates/views/dashboard/_usage.html:14
+#: templates/views/organisations/organisation/index.html:84
 msgid "spent on text messages"
 msgstr ""
 
@@ -3646,6 +3834,7 @@ msgid "free text messages left"
 msgstr ""
 
 #: templates/views/dashboard/_usage.html:27
+#: templates/views/organisations/organisation/index.html:99
 msgid "spent on letters"
 msgstr ""
 
@@ -3810,6 +3999,7 @@ msgid ""
 msgstr ""
 
 #: templates/views/features/emails.html:29
+#: templates/views/organisations/organisation/settings/email-branding-options.html:9
 msgid "Email branding"
 msgstr ""
 
@@ -4963,6 +5153,357 @@ msgstr ""
 msgid "See all text messages sent to this phone number"
 msgstr ""
 
+#: templates/views/organisations/add-organisation.html:7
+msgid "New organisation"
+msgstr ""
+
+#: templates/views/organisations/add-organisation.html:13
+msgid "All organisations"
+msgstr ""
+
+#: templates/views/organisations/add-organisation.html:14
+msgid "Switch service"
+msgstr ""
+
+#: templates/views/organisations/organisation/billing.html:5
+msgid "Billing"
+msgstr ""
+
+#: templates/views/organisations/organisation/billing.html:13
+#: templates/views/organisations/organisation/settings/edit-agreement.html:12
+#: templates/views/organisations/organisation/settings/edit-agreement.html:16
+#: templates/views/organisations/organisation/settings/index.html:54
+msgid "Data sharing and financial agreement"
+msgstr ""
+
+#: templates/views/organisations/organisation/billing.html:18
+#, python-format
+msgid ""
+"Your organisation accepted version %%(version)s of the GOV.UK Notify data"
+" sharing\n"
+"          and financial agreement on %%(signed_at)s."
+msgstr ""
+
+#: templates/views/organisations/organisation/billing.html:25
+#, python-format
+msgid "%%(behalf_of_name)s signed the agreement on behalf of %%(name)s."
+msgstr ""
+
+#: templates/views/organisations/organisation/billing.html:32
+#: templates/views/organisations/organisation/billing.html:41
+msgid "Download the current version of the agreement (PDF)"
+msgstr ""
+
+#: templates/views/organisations/organisation/billing.html:37
+#, python-format
+msgid "%%s has accepted the GOV.UK Notify data sharing and financial agreement."
+msgstr ""
+
+#: templates/views/organisations/organisation/billing.html:46
+#, python-format
+msgid ""
+"%%s needs to accept the GOV.UK Notify data sharing and financial "
+"agreement."
+msgstr ""
+
+#: templates/views/organisations/organisation/billing.html:50
+#, python-format
+msgid ""
+"%%s has not accepted the GOV.UK Notify data sharing and financial "
+"agreement, but we have some service-specific agreements in place."
+msgstr ""
+
+#: templates/views/organisations/organisation/index.html:8
+#: templates/views/organisations/organisation/index.html:13
+msgid "Usage"
+msgstr ""
+
+#: templates/views/organisations/organisation/index.html:25
+msgid "sent"
+msgstr ""
+
+#: templates/views/organisations/organisation/index.html:35
+#: templates/views/organisations/organisation/index.html:46
+msgid "spent"
+msgstr ""
+
+#: templates/views/organisations/organisation/index.html:60
+msgid "Search by service"
+msgstr ""
+
+#: templates/views/organisations/organisation/index.html:65
+msgid "By service"
+msgstr ""
+
+#: templates/views/organisations/organisation/index.html:110
+#, python-format
+msgid "%%(name)s has no live services on GOV.UK Notify"
+msgstr ""
+
+#: templates/views/organisations/organisation/trial-mode-services.html:5
+msgid "Services"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/add-email-branding-options.html:9
+#: templates/views/organisations/organisation/settings/add-email-branding-options.html:17
+msgid "Add email branding options"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/add-email-branding-options.html:27
+#: templates/views/organisations/organisation/settings/add-letter-branding-options.html:27
+msgid "Nothing selected"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/add-letter-branding-options.html:9
+#: templates/views/organisations/organisation/settings/add-letter-branding-options.html:17
+msgid "Add letter branding options"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/edit-crown-status.html:8
+#: templates/views/organisations/organisation/settings/index.html:38
+msgid "Crown organisation"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/edit-domains.html:10
+#: templates/views/organisations/organisation/settings/index.html:154
+msgid "Known email domains"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/edit-domains.html:23
+msgid "There is a problem"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/edit-domains.html:41
+msgid ""
+"If a user’s email addresses ends with one of these domains then\n"
+"        any services they create will be associated with this "
+"organisation."
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/edit-domains.html:49
+msgid "For example cabinet-office.gov.uk"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/edit-go-live-notes.html:9
+#: templates/views/organisations/organisation/settings/edit-go-live-notes.html:17
+msgid "Edit request to go live notes"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/edit-go-live-notes.html:21
+msgid ""
+"Text entered here will be displayed in the Zendesk ticket when a service\n"
+"        belonging to this organisation requests to go live."
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/edit-name.html:8
+#: templates/views/organisations/organisation/settings/edit-name.html:17
+msgid "Change organisation name"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/edit-organisation-billing-details.html:9
+#: templates/views/organisations/organisation/settings/edit-organisation-billing-details.html:18
+msgid "Edit organisation billing details"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/edit-organisation-notes.html:9
+#: templates/views/organisations/organisation/settings/edit-organisation-notes.html:18
+msgid "Edit organisation notes"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/edit-type.html:8
+#: templates/views/organisations/organisation/settings/edit-type.html:16
+msgid "Organisation sector"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/email-branding-options.html:24
+#: templates/views/organisations/organisation/settings/letter-branding-options.html:19
+msgid "&ensp;(default)"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/email-branding-options.html:34
+msgid "Use GOV.UK as default instead"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/email-branding-options.html:55
+msgid "Make default"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/email-branding-options.html:64
+#: templates/views/organisations/organisation/settings/letter-branding-options.html:36
+msgid "Remove <span class=\"govuk-visually-hidden\">this branding option</span>"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/email-branding-options.html:75
+#: templates/views/organisations/organisation/settings/letter-branding-options.html:47
+msgid "Add branding options"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:5
+#: templates/views/organisations/organisation/settings/index.html:9
+msgid "Settings"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:13
+msgid "Label"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:13
+msgid "Value"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:23
+msgid "organisation name"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:28
+msgid "Sector"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:33
+msgid "sector for the organisation"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:41
+msgid "Yes"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:42
+msgid "No"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:44
+msgid "Not sure"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:49
+msgid "organisation crown status"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:57
+msgid "Signed"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:58
+msgid "Not signed"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:59
+msgid "Not signed (but we have some service-specific agreements in place)"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:65
+msgid "data sharing and financial agreement for the organisation"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:70
+msgid "Request to go live notes"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:75
+msgid "go live notes for the organisation"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:86
+msgid "billing details for the organisation"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:97
+msgid "the notes for the organisation"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:108
+msgid "Default"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:126
+msgid "email branding options for the organisation"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:131
+#: templates/views/organisations/organisation/settings/set-letter-branding.html:8
+msgid "Default letter branding"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:134
+#: templates/views/organisations/organisation/settings/letter-branding-options.html:19
+msgid "No branding"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:139
+msgid "default letter branding for the organisation"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:144
+msgid "Letter branding options"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:145
+#: templates/views/organisations/organisation/settings/index.html:155
+msgid "None"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:149
+msgid "letter branding options for the organisation"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:159
+msgid "known email domains for the organisation"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:168
+msgid "Delete this organisation"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/letter-branding-options.html:8
+#: templates/views/organisations/organisation/settings/letter-branding-options.html:16
+msgid "Letter branding"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/preview-letter-branding.html:7
+#: templates/views/organisations/organisation/settings/preview-letter-branding.html:12
+msgid "Preview letter branding"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/set-letter-branding.html:39
+msgid "Preview"
+msgstr ""
+
+#: templates/views/organisations/organisation/users/index.html:43
+#, python-format
+msgid "%%(mail)s (invited)"
+msgstr ""
+
+#: templates/views/organisations/organisation/users/index.html:45
+#, python-format
+msgid "%%(mail)s (cancelled invite)"
+msgstr ""
+
+#: templates/views/organisations/organisation/users/index.html:47
+msgid "(you)"
+msgstr ""
+
+#: templates/views/organisations/organisation/users/index.html:56
+#, python-format
+msgid "Cancel invitation<span class=\"govuk-visually-hidden\"> for %%(mail)s"
+msgstr ""
+
+#: templates/views/organisations/organisation/users/index.html:69
+msgid "Invite team member"
+msgstr ""
+
+#: templates/views/organisations/organisation/users/invite-org-user.html:29
+#, python-format
+msgid "%%(name)s team members can:"
+msgstr ""
+
+#: templates/views/organisations/organisation/users/invite-org-user.html:32
+msgid "see usage and team members for each service"
+msgstr ""
+
+#: templates/views/organisations/organisation/users/invite-org-user.html:33
+msgid "invite other team members"
+msgstr ""
+
 #: templates/views/service-settings/letter-preview.html:6
 msgid "Letter preview"
 msgstr ""
@@ -5290,4 +5831,22 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "%(starts_at_format_human)s at %(starts_at)s"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "filename=\"{} organisation usage report for"
+#~ " year {} - generated on {}.csv\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Email branding ID %%(branding_id)s is "
+#~ "not present in organisation "
+#~ "%%(current_organisation_name)s's email branding "
+#~ "pool."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Email branding ID %%(branding_id)s is "
+#~ "not present in organisation %%(org_name)s's"
+#~ " email branding pool."
 #~ msgstr ""

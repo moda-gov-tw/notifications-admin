@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Invite a team member
+  {{_('Invite a team member')}}
 {% endblock %}
 
 {% block backLink %}
@@ -15,7 +15,7 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header("Invite a team member") }}
+  {{ page_header(_("Invite a team member")) }}
   {% call form_wrapper() %}
     {{ form.email_address(
       param_extensions={
@@ -26,15 +26,15 @@
 
     <div class="bottom-gutter">
 		  <p class="form-label">
-		    {{ current_org.name }} team members can:
+		    {{_("%%(name)s team members can:") % {'name': current_org.name}}}
 		  </p>
 		  <ul class="govuk-list govuk-list--bullet">
-		    <li>see usage and team members for each service</li>
-        <li>invite other team members</li>
+		    <li>{{_('see usage and team members for each service')}}</li>
+        <li>{{_('invite other team members')}}</li>
 		  </ul>
 		</div>
 
-    {{ page_footer('Send invitation email') }}
+    {{ page_footer(_('Send invitation email')) }}
   {% endcall %}
 
 {% endblock %}

@@ -13,6 +13,7 @@ from flask import (
     send_file,
     url_for,
 )
+from flask_babel import _
 from flask_login import current_user
 from notifications_python_client.errors import HTTPError
 from werkzeug import Response
@@ -179,15 +180,15 @@ def download_organisation_usage_report(org_id):
 
     unit_column_names = OrderedDict(
         [
-            ("service_id", "Service ID"),
-            ("service_name", "Service Name"),
-            ("emails_sent", "Emails sent"),
-            ("sms_remainder", "Free text message allowance remaining"),
+            ("service_id", _("Service ID")),
+            ("service_name", _("Service Name")),
+            ("emails_sent", _("Emails sent")),
+            ("sms_remainder", _("Free text message allowance remaining")),
         ]
     )
 
     monetary_column_names = OrderedDict(
-        [("sms_cost", "Spent on text messages (£)"), ("letter_cost", "Spent on letters (£)")]
+        [("sms_cost", _("Spent on text messages (£)")), ("letter_cost", _("Spent on letters (£)"))]
     )
 
     org_usage_data = [list(unit_column_names.values()) + list(monetary_column_names.values())] + [
@@ -202,9 +203,7 @@ def download_organisation_usage_report(org_id):
         {
             "Content-Type": "text/csv; charset=utf-8",
             "Content-Disposition": (
-                "inline;"
-                'filename="{} organisation usage report for year {}'
-                ' - generated on {}.csv"'.format(
+                _('inline;filename="{} organisation usage report for year {} - generated on {}.csv"').format(
                     current_organisation.name, selected_year, datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%fZ")
                 )
             ),
@@ -277,7 +276,7 @@ def cancel_invited_org_user(org_id, invited_user_id):
 
     invited_org_user = InvitedOrgUser.by_id_and_org_id(org_id, invited_user_id)
 
-    flash(f"Invitation cancelled for {invited_org_user.email_address}", "default_with_tick")
+    flash(_("Invitation cancelled for %%(mail)s") % {"mail": invited_org_user.email_address}, "default_with_tick")
     return redirect(url_for("main.manage_org_users", org_id=org_id))
 
 
@@ -300,9 +299,9 @@ def edit_organisation_name(org_id):
         try:
             current_organisation.update(name=form.name.data)
         except HTTPError as http_error:
-            error_msg = "Organisation name already exists"
+            error_msg = _("Organisation name already exists")
             if http_error.status_code == 400 and error_msg in http_error.message:
-                form.name.errors.append("This organisation name is already in use")
+                form.name.errors.append(_("This organisation name is already in use"))
             else:
                 raise http_error
         else:
@@ -399,11 +398,15 @@ def _handle_remove_branding(remove_branding_id) -> Optional[Response]:
     try:
         remove_branding = current_organisation.email_branding_pool.get_item_by_id(remove_branding_id)
     except current_organisation.email_branding_pool.NotFound:
-        abort(400, f"Invalid email branding ID {remove_branding_id} for {current_organisation}")
+        abort(
+            400,
+            _("Invalid email branding ID %%(remove_branding_id)s for %%(current_organisation)s")
+            % {"remove_branding_id": remove_branding_id, "current_organisation": current_organisation},
+        )
 
     if request.method == "POST":
         organisations_client.remove_email_branding_from_pool(current_organisation.id, remove_branding_id)
-        confirmation_message = f"Email branding ‘{remove_branding.name}’ removed."
+        confirmation_message = _("Email branding ‘%%(name)s’ removed.") % {"name": remove_branding.name}
         flash(confirmation_message, "default_with_tick")
         return redirect(url_for("main.organisation_email_branding", org_id=current_organisation.id))
 
@@ -449,7 +452,7 @@ def _handle_change_default_branding_to_govuk(is_central_government) -> Optional[
                 current_brand=current_brand,
             )
         )
-        flash(confirmation_question, "yes, make this email branding the default")
+        flash(confirmation_question, _("yes, make this email branding the default"))
 
     return None
 
@@ -467,8 +470,11 @@ def _handle_change_default_branding(form, new_default_branding_id) -> Optional[R
             return current_organisation.email_branding_pool.get_item_by_id(branding_id).name
         except current_organisation.email_branding_pool.NotFound:
             current_app.logger.info(
-                f"Email branding ID {branding_id} is not present in organisation {current_organisation.name}'s "
-                f"email branding pool."
+                _("Email branding ID %%(id)s is not present in organisation %%(org_name)s's email branding pool.")
+                % {
+                    "id": branding_id,
+                    "org_name": current_organisation.name,
+                }
             )
             abort(400)
 
@@ -495,7 +501,7 @@ def _handle_change_default_branding(form, new_default_branding_id) -> Optional[R
         )
         flash(
             confirmation_question,
-            "yes, make this email branding the default",
+            _("yes, make this email branding the default"),
         )
 
     # This form submission handles users pressing `Make default` on a brand. We handle two cases here:
@@ -568,9 +574,11 @@ def add_organisation_email_branding_options(org_id):
         organisations_client.add_brandings_to_email_branding_pool(org_id, selected_email_branding_ids)
 
         if len(selected_email_branding_ids) == 1:
-            msg = "1 email branding option added"
+            msg = _("1 email branding option added")
         else:
-            msg = f"{len(selected_email_branding_ids)} email branding options added"
+            msg = _("%%(selected_mails)s email branding options added") % {
+                "selected_mails": len(selected_email_branding_ids)
+            }
 
         flash(msg, "default_with_tick")
         return redirect(url_for(".organisation_email_branding", org_id=org_id))
@@ -632,13 +640,20 @@ def organisation_letter_branding(org_id):
         try:
             remove_branding = current_organisation.letter_branding_pool.get_item_by_id(remove_branding_id)
         except current_organisation.letter_branding_pool.NotFound:
-            abort(400, f"Invalid letter branding ID {remove_branding_id} for {current_organisation}")
+            abort(
+                400,
+                _("Invalid letter branding ID %%(remove_branding_id)s for %%(current_organisation)s")
+                % {
+                    "remove_branding_id": remove_branding_id,
+                    "current_organisation": current_organisation,
+                },
+            )
 
         if request.method == "GET":
-            flash(f"Are you sure you want to remove the letter brand ‘{remove_branding.name}’?", "delete")
+            flash(_("Are you sure you want to remove the letter brand ‘%%s’?") % remove_branding.name, "delete")
         else:
             organisations_client.remove_letter_branding_from_pool(current_organisation.id, remove_branding_id)
-            flash(f"Letter branding ‘{remove_branding.name}’ removed.", "default_with_tick")
+            flash(_("Letter branding ‘%%s’ removed.") % remove_branding.name, "default_with_tick")
             return redirect(url_for("main.organisation_letter_branding", org_id=current_organisation.id))
 
     return render_template(
@@ -662,9 +677,9 @@ def add_organisation_letter_branding_options(org_id):
         organisations_client.add_brandings_to_letter_branding_pool(org_id, selected_letter_branding_ids)
 
         if len(selected_letter_branding_ids) == 1:
-            msg = "1 letter branding option added"
+            msg = _("1 letter branding option added")
         else:
-            msg = f"{len(selected_letter_branding_ids)} letter branding options added"
+            msg = _("%%s letter branding options added") % len(selected_letter_branding_ids)
 
         flash(msg, "default_with_tick")
         return redirect(url_for(".organisation_letter_branding", org_id=org_id))
@@ -689,9 +704,9 @@ def edit_organisation_domains(org_id):
                 domains=list(OrderedDict.fromkeys(domain.lower() for domain in filter(None, form.domains.data))),
             )
         except HTTPError as e:
-            error_message = "Domain already exists"
+            error_message = _("Domain already exists")
             if e.status_code == 400 and error_message in e.message:
-                flash("This domain is already in use", "error")
+                flash(_("This domain is already in use"), "error")
                 return render_template(
                     "views/organisations/organisation/settings/edit-domains.html",
                     form=form,
@@ -790,11 +805,11 @@ def archive_organisation(org_id):
             else:
                 raise e
 
-        flash(f"‘{current_organisation.name}’ was deleted", "default_with_tick")
+        flash(_("‘%%s’ was deleted") % current_organisation.name, "default_with_tick")
         return redirect(url_for(".choose_account"))
 
     flash(
-        f"Are you sure you want to delete ‘{current_organisation.name}’? There’s no way to undo this.",
+        _("Are you sure you want to delete ‘%%s’? There’s no way to undo this.") % current_organisation.name,
         "delete",
     )
     return organisation_settings(org_id)
