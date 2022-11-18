@@ -5,13 +5,13 @@
 {% extends "withnav_template.html" %}
 
 {% block service_page_title %}
-  Choose a template
+  {{_('Choose a template')}}
 {% endblock %}
 
 {% block maincolumn_content %}
 
 <div class="bottom-gutter-1-2">
-  <h1 class="heading-large">Choose a template</h1>
+  <h1 class="heading-large">{{_('Choose a template')}}</h1>
   {{ folder_path(template_folder_path, current_service.id, template_type, current_user, root_element='h2') }}
 </div>
 
@@ -19,17 +19,17 @@
 
     {% if current_user.has_permissions('manage_templates') %}
        <p class="bottom-gutter">
-         You need a template before you can send text messages.
+         {{_('You need a template before you can send text messages.')}}
        </p>
        {{ govukButton({
         "element": "a",
-        "text": "Add a new template",
+        "text": _("Add a new template"),
         "href": url_for('.choose_template', service_id=current_service.id, initial_state='add-new-template')
       }) }}
     {% else %}
       <p class="govuk-body">
-        You need to ask your service manager to add templates before you
-        can send text messages.
+        {{_("You need to ask your service manager to add templates before you
+        can send text messages.")}}
       </p>
     {% endif %}
 

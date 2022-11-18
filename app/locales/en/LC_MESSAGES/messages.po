@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 13:51+0800\n"
+"POT-Creation-Date: 2022-11-18 13:57+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -3111,6 +3111,27 @@ msgid ""
 "the top right."
 msgstr ""
 
+#: templates/views/conversations/conversation.html:7
+msgid "Received text message"
+msgstr ""
+
+#: templates/views/conversations/conversation.html:27
+msgid "messages"
+msgstr ""
+
+#: templates/views/conversations/conversation.html:32
+msgid "Send a text message to this phone number"
+msgstr ""
+
+#: templates/views/conversations/messages.html:23
+msgid "sending"
+msgstr ""
+
+#: templates/views/conversations/messages.html:27
+#, python-format
+msgid "Failed (sent %%s)"
+msgstr ""
+
 #: templates/views/features/emails.html:15
 msgid "Send an unlimited number of emails for free with GOV.UK Notify."
 msgstr ""
@@ -4063,6 +4084,25 @@ msgstr ""
 
 #: templates/views/service-settings/letter-preview.html:6
 msgid "Letter preview"
+msgstr ""
+
+#: templates/views/templates/choose-reply.html:8
+#: templates/views/templates/choose-reply.html:14
+msgid "Choose a template"
+msgstr ""
+
+#: templates/views/templates/choose-reply.html:22
+msgid "You need a template before you can send text messages."
+msgstr ""
+
+#: templates/views/templates/choose-reply.html:26
+msgid "Add a new template"
+msgstr ""
+
+#: templates/views/templates/choose-reply.html:31
+msgid ""
+"You need to ask your service manager to add templates before you\n"
+"        can send text messages."
 msgstr ""
 
 #~ msgid ""
