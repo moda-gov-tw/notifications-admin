@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 22:35+0800\n"
+"POT-Creation-Date: 2022-11-18 22:45+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -318,7 +318,7 @@ msgstr ""
 msgid "Email branding ‘%%(name)s’ removed."
 msgstr ""
 
-#: main/views/organisations.py:455 main/views/organisations.py:506
+#: main/views/organisations.py:455 main/views/organisations.py:504
 msgid "yes, make this email branding the default"
 msgstr ""
 
@@ -329,57 +329,61 @@ msgid ""
 "email branding pool."
 msgstr ""
 
-#: main/views/organisations.py:579
+#: main/views/organisations.py:577
 msgid "1 email branding option added"
 msgstr ""
 
-#: main/views/organisations.py:581
+#: main/views/organisations.py:579
 #, python-format
 msgid "%%(selected_mails)s email branding options added"
 msgstr ""
 
-#: main/views/organisations.py:647
+#: main/views/organisations.py:645
 #, python-format
 msgid ""
 "Invalid letter branding ID %%(remove_branding_id)s for "
 "%%(current_organisation)s"
 msgstr ""
 
-#: main/views/organisations.py:655
+#: main/views/organisations.py:653
 #, python-format
 msgid "Are you sure you want to remove the letter brand ‘%%s’?"
 msgstr ""
 
-#: main/views/organisations.py:658
+#: main/views/organisations.py:656
 #, python-format
 msgid "Letter branding ‘%%s’ removed."
 msgstr ""
 
-#: main/views/organisations.py:682
+#: main/views/organisations.py:680
 msgid "1 letter branding option added"
 msgstr ""
 
-#: main/views/organisations.py:684
+#: main/views/organisations.py:682
 #, python-format
 msgid "%%s letter branding options added"
 msgstr ""
 
-#: main/views/organisations.py:709
+#: main/views/organisations.py:707
 msgid "Domain already exists"
 msgstr ""
 
-#: main/views/organisations.py:711
+#: main/views/organisations.py:709
 msgid "This domain is already in use"
 msgstr ""
 
-#: main/views/organisations.py:810
+#: main/views/organisations.py:808
 #, python-format
 msgid "‘%%s’ was deleted"
 msgstr ""
 
-#: main/views/organisations.py:814
+#: main/views/organisations.py:812
 #, python-format
 msgid "Are you sure you want to delete ‘%%s’? There’s no way to undo this."
+msgstr ""
+
+#: main/views/performance.py:22
+msgid "No organisation"
 msgstr ""
 
 #: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:2
@@ -2066,6 +2070,66 @@ msgstr ""
 
 #: templates/views/password-reset-sent.html:13
 msgid "Click the link in the email to reset your password."
+msgstr ""
+
+#: templates/views/performance.html:7 templates/views/performance.html:14
+msgid "Performance data"
+msgstr ""
+
+#: templates/views/performance.html:19 templates/views/performance.html:57
+msgid "Messages sent since May 2016"
+msgstr ""
+
+#: templates/views/performance.html:65 templates/views/performance.html:104
+#: templates/views/performance.html:145
+msgid "No data to show"
+msgstr ""
+
+#: templates/views/performance.html:81 templates/views/performance.html:114
+#, python-format
+msgid "Only showing the last %%s days"
+msgstr ""
+
+#: templates/views/performance.html:86 templates/views/performance.html:99
+msgid "Messages sent within 10 seconds"
+msgstr ""
+
+#: templates/views/performance.html:92
+msgid "on average"
+msgstr ""
+
+#: templates/views/performance.html:102
+msgid "Date"
+msgstr ""
+
+#: templates/views/performance.html:102
+msgid "Percentage"
+msgstr ""
+
+#: templates/views/performance.html:119 templates/views/performance.html:140
+msgid "Organisations using Notify"
+msgstr ""
+
+#: templates/views/performance.html:123
+#, python-format
+msgid ""
+"<span class=\"govuk-visually-hidden\">There are</span>\n"
+"      <div class=\"product-page-big-number\">%%s</div>\n"
+"      organisations\n"
+"    </div>\n"
+"    <div class=\"govuk-grid-column-one-half\">\n"
+"      <span class=\"govuk-visually-hidden\">and</span>\n"
+"      <div class=\"product-page-big-number\">%%s</div>\n"
+"      services\n"
+"      <span class=\"govuk-visually-hidden\">using Notify.</span>"
+msgstr ""
+
+#: templates/views/performance.html:143
+msgid "Organisation"
+msgstr ""
+
+#: templates/views/performance.html:143
+msgid "Number of live services"
 msgstr ""
 
 #: templates/views/privacy.html:5 templates/views/privacy.html:12
