@@ -3,20 +3,20 @@
 {% from "components/form.html" import form_wrapper %}
 
 {% block per_page_title %}
-Check your mobile number
+{{_('Check your mobile number')}}
 {% endblock %}
 
 {% block maincolumn_content %}
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="heading-large">Check your mobile number</h1>
+    <h1 class="heading-large">{{_('Check your mobile number')}}</h1>
 
-    <p class="govuk-body">Check your mobile phone number is correct and then resend the security code.</p>
+    <p class="govuk-body">{{_('Check your mobile phone number is correct and then resend the security code.')}}</p>
 
       {% call form_wrapper() %}
         {{ form.mobile_number }}
-        {{ page_footer("Resend security code") }}
+        {{ page_footer(_("Resend security code")) }}
       {% endcall %}
   </div>
 </div>

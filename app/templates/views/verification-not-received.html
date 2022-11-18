@@ -2,30 +2,30 @@
 {% from "govuk_frontend_jinja/components/button/macro.html" import govukButton %}
 
 {% block per_page_title %}
-  Resend security code
+  {{_('Resend security code')}}
 {% endblock %}
 
 {% block maincolumn_content %}
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="heading-large">Resend security code</h1>
+    <h1 class="heading-large">{{_('Resend security code')}}</h1>
 
-    <p class="govuk-body">Text messages sometimes take a few minutes to arrive. If you do not receive a security code, Notify can send you a new one.</p>
+    <p class="govuk-body">{{_('Text messages sometimes take a few minutes to arrive. If you do not receive a security code, Notify can send you a new one.')}}</p>
     <p class="govuk-body">
       {{ govukButton({
         "element": "a",
-        "text": "Resend security code",
+        "text": _("Resend security code"),
         "href": url_for('main.check_and_resend_verification_code', next=redirect_url)
       }) }}
     </p>
 
-    <h2 class="heading-medium">If your mobile number has changed</h2>
-    <p class="govuk-body">You’ll need to:</p>
+    <h2 class="heading-medium">{{_('If your mobile number has changed')}}</h2>
+    <p class="govuk-body">{{_('You’ll need to:')}}</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>find a member of your team who has permission to manage settings, team and usage</li>
-      <li>ask them to change the mobile number for your account</li>
-      <li>select <span class="govuk-body govuk-!-font-weight-bold">Resend security code</span></li>
+      <li>{{_('find a member of your team who has permission to manage settings, team and usage')}}</li>
+      <li>{{_('ask them to change the mobile number for your account')}}</li>
+      <li>{{_("select <span class=\"govuk-body govuk-!-font-weight-bold\">Resend security code</span>")}}</li>
     </ul>
   </div>
 </div>

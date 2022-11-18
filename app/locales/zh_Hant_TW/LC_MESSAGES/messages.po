@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 13:45+0800\n"
+"POT-Creation-Date: 2022-11-18 13:51+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -771,6 +771,44 @@ msgid ""
 "href=\"https://docs.notifications.service.gov.uk/rest-api.html\" "
 "target=\"_blank\" rel=\"noopener\">REST API documentation</a> (this link "
 "opens in a new tab)."
+msgstr ""
+
+#: templates/views/email-not-received.html:5
+#: templates/views/email-not-received.html:12
+#: templates/views/email-not-received.html:18
+msgid "Resend email link"
+msgstr ""
+
+#: templates/views/email-not-received.html:14
+msgid ""
+"Emails sometimes take a few minutes to arrive. If you do not receive an "
+"email link, Notify can send you a new one."
+msgstr ""
+
+#: templates/views/email-not-received.html:23
+msgid "If your email address has changed"
+msgstr ""
+
+#: templates/views/email-not-received.html:24
+#: templates/views/verification-not-received.html:24
+msgid "You’ll need to:"
+msgstr ""
+
+#: templates/views/email-not-received.html:26
+#: templates/views/verification-not-received.html:26
+msgid ""
+"find a member of your team who has permission to manage settings, team "
+"and usage"
+msgstr ""
+
+#: templates/views/email-not-received.html:27
+msgid "ask them to change the email address for your account"
+msgstr ""
+
+#: templates/views/email-not-received.html:28
+msgid ""
+"select <span class=\"govuk-body govuk-!-font-weight-bold\">Resend email "
+"link</span>"
 msgstr ""
 
 #: templates/views/features.html:10 templates/views/features.html:15
@@ -1757,6 +1795,20 @@ msgid ""
 "    Cheshire SK9 5AF"
 msgstr ""
 
+#: templates/views/resend-email-verification.html:5
+#: templates/views/resend-email-verification.html:10
+msgid "Check your email"
+msgstr ""
+
+#: templates/views/resend-email-verification.html:11
+#, python-format
+msgid "A new confirmation email has been sent to %%s"
+msgstr ""
+
+#: templates/views/resend-email-verification.html:12
+msgid "Click the link in the email to continue your registration."
+msgstr ""
+
 #: templates/views/roadmap.html:10 templates/views/roadmap.html:15
 msgid "Roadmap"
 msgstr ""
@@ -2518,6 +2570,24 @@ msgstr ""
 "      <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">服務與組織列表</a>。"
 
+#: templates/views/text-not-received.html:6
+#: templates/views/text-not-received.html:13
+msgid "Check your mobile number"
+msgstr ""
+
+#: templates/views/text-not-received.html:15
+msgid ""
+"Check your mobile phone number is correct and then resend the security "
+"code."
+msgstr ""
+
+#: templates/views/text-not-received.html:19
+#: templates/views/verification-not-received.html:5
+#: templates/views/verification-not-received.html:12
+#: templates/views/verification-not-received.html:18
+msgid "Resend security code"
+msgstr ""
+
 #: templates/views/trial-mode.html:7 templates/views/trial-mode.html:12
 msgid "Trial mode"
 msgstr ""
@@ -2625,6 +2695,26 @@ msgstr ""
 
 #: templates/views/using-notify.html:25
 msgid "text message replies"
+msgstr ""
+
+#: templates/views/verification-not-received.html:14
+msgid ""
+"Text messages sometimes take a few minutes to arrive. If you do not "
+"receive a security code, Notify can send you a new one."
+msgstr ""
+
+#: templates/views/verification-not-received.html:23
+msgid "If your mobile number has changed"
+msgstr ""
+
+#: templates/views/verification-not-received.html:27
+msgid "ask them to change the mobile number for your account"
+msgstr ""
+
+#: templates/views/verification-not-received.html:28
+msgid ""
+"select <span class=\"govuk-body govuk-!-font-weight-bold\">Resend "
+"security code</span>"
 msgstr ""
 
 #: templates/views/agreement/agreement-accept.html:10
