@@ -17,6 +17,7 @@ from flask import (
     stream_with_context,
     url_for,
 )
+from flask_babel import _
 from notifications_python_client.errors import APIError, HTTPError
 from notifications_utils import LETTER_MAX_PAGE_COUNT
 from notifications_utils.letter_timings import (
@@ -197,7 +198,7 @@ def cancel_letter(service_id, notification_id):
                 raise e
         return redirect(url_for("main.view_notification", service_id=service_id, notification_id=notification_id))
 
-    flash("Are you sure you want to cancel sending this letter?", "cancel")
+    flash(_("Are you sure you want to cancel sending this letter?"), "cancel")
     return view_notification(service_id, notification_id)
 
 
