@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 14:52+0800\n"
+"POT-Creation-Date: 2022-11-18 16:17+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -2761,6 +2761,8 @@ msgstr ""
 #: templates/views/broadcast/tour/live/1.html:27
 #: templates/views/broadcast/tour/live/2.html:24
 #: templates/views/broadcast/write-new-broadcast.html:44
+#: templates/views/email-branding/government-identity-options-colour.html:30
+#: templates/views/email-branding/government-identity-options.html:30
 msgid "Continue"
 msgstr ""
 
@@ -2897,6 +2899,7 @@ msgid "At least 10 characters"
 msgstr ""
 
 #: templates/views/api/callbacks/delivery-status-callback.html:39
+#: templates/views/email-branding/manage-branding.html:42
 msgid "Save"
 msgstr ""
 
@@ -3402,6 +3405,22 @@ msgstr ""
 
 #: templates/views/dashboard/write-first-messages.html:8
 msgid "Write an email or text message"
+msgstr ""
+
+#: templates/views/email-branding/manage-branding.html:10
+msgid "Update email branding"
+msgstr ""
+
+#: templates/views/email-branding/manage-branding.html:12
+msgid "Add email branding"
+msgstr ""
+
+#: templates/views/email-branding/manage-branding.html:32
+msgid "Logos should be PNG files, 108px high"
+msgstr ""
+
+#: templates/views/email-branding/select-branding.html:30
+msgid "New brand"
 msgstr ""
 
 #: templates/views/features/emails.html:15

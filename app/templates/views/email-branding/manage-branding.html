@@ -6,7 +6,11 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block per_page_title %}
-  {{ '{} email branding'.format('Update' if email_branding else 'Add')}}
+  {% if email_branding %}
+  {{_('Update email branding')}}
+  {% else %}
+  {{_('Add email branding')}}
+  {% endif %}
 {% endblock %}
 
 
@@ -25,7 +29,7 @@
         </div>
       {% endif %}
       <p class="govuk-body">
-        Logos should be PNG files, 108px high
+        {{_('Logos should be PNG files, 108px high')}}
       </p>
       {{ file_upload(form.file, allowed_file_extensions=['png'], button_text='{} logo'.format('Update' if email_branding else 'Upload')) }}
       {% call form_wrapper() %}
@@ -35,7 +39,7 @@
           {{ form.colour }}
           {{ form.brand_type }}
           {{ page_footer(
-            'Save',
+            _('Save'),
             button_name='operation',
             button_value='email-branding-details'
           ) }}
