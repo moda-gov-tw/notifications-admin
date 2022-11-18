@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 16:51+0800\n"
+"POT-Creation-Date: 2022-11-18 17:16+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -166,6 +166,129 @@ msgid ""
 "href={}>Sign out</a>\n"
 "            and click the link again to accept this invite.\n"
 "            "
+msgstr ""
+
+#: main/views/jobs.py:69
+msgid "Your {} been sent. Printing starts {} at 5:30pm."
+msgstr ""
+
+#: main/views/jobs.py:131
+msgid "We are still processing these letters, please try again in a minute."
+msgstr ""
+
+#: main/views/jobs.py:139
+msgid "Cancelled {} letters from {}"
+msgstr ""
+
+#: main/views/jobs.py:144
+msgid "Are you sure you want to cancel sending these letters?"
+msgstr ""
+
+#: main/views/jobs.py:172
+msgid "email address"
+msgstr ""
+
+#: main/views/jobs.py:173
+msgid "phone number"
+msgstr ""
+
+#: main/views/jobs.py:174
+msgid "postal address"
+msgstr ""
+
+#: main/views/jobs.py:174
+msgid "file name"
+msgstr ""
+
+#: main/views/jobs.py:177
+msgid "recipient"
+msgstr ""
+
+#: main/views/jobs.py:180
+msgid "reference"
+msgstr ""
+
+#: main/views/jobs.py:208
+msgid "Invalid page argument ({})."
+msgstr ""
+
+#: main/views/jobs.py:335
+#, python-format
+msgid "total<span class=\"govuk-visually-hidden\">%%s</span>"
+msgstr ""
+
+#: main/views/jobs.py:343
+#, python-format
+msgid "sending<span class=\"govuk-visually-hidden\">%%s</span>"
+msgstr ""
+
+#: main/views/jobs.py:351
+#, python-format
+msgid "delivered<span class=\"govuk-visually-hidden\">%%s</span>"
+msgstr ""
+
+#: templates/partials/jobs/count-letters.html:17
+msgid "Estimated delivery date"
+msgstr ""
+
+#: templates/partials/jobs/notifications.html:9
+#: templates/views/message-status.html:30
+#: templates/views/message-status.html:59
+msgid "Sending"
+msgstr ""
+
+#: templates/partials/jobs/notifications.html:16
+msgid "Cancel sending"
+msgstr ""
+
+#: templates/partials/jobs/notifications.html:33
+#, python-format
+msgid "Report is %%(rate)s complete…"
+msgstr ""
+
+#: templates/partials/jobs/notifications.html:37
+#: templates/views/notifications.html:69
+msgid "Download this report (<abbr title=\"Comma separated values\">CSV</abbr>)"
+msgstr ""
+
+#: templates/partials/jobs/notifications.html:50
+msgid "No messages to show yet…"
+msgstr ""
+
+#: templates/partials/jobs/notifications.html:50
+msgid ""
+"These messages have been deleted because they were sent more than {} days"
+" ago"
+msgstr ""
+
+#: templates/partials/jobs/notifications.html:52
+msgid "Recipient"
+msgstr ""
+
+#: templates/partials/jobs/notifications.html:53
+#: templates/views/inbound-sms-admin.html:9
+#: templates/views/message-status.html:25
+#: templates/views/message-status.html:54
+#: templates/views/message-status.html:78
+msgid "Status"
+msgstr ""
+
+#: templates/partials/jobs/notifications.html:68
+msgid "Only showing the first 50 rows"
+msgstr ""
+
+#: templates/partials/jobs/status.html:25
+#, python-format
+msgid ""
+"Notify cannot send these messages because you have reached your daily "
+"limit. You can only send %%s messages per day."
+msgstr ""
+
+#: templates/partials/jobs/status.html:28
+msgid ""
+"Upload this spreadsheet again tomorrow or <a class=\"govuk-link\" "
+"href=\"https://www.notifications.service.gov.uk/support\">contact the "
+"GOV.UK Notify team</a> to raise the limit."
 msgstr ""
 
 #: templates/views/accessibility_statement.html:6
@@ -1271,13 +1394,6 @@ msgid "Number"
 msgstr ""
 
 #: templates/views/inbound-sms-admin.html:9
-#: templates/views/message-status.html:25
-#: templates/views/message-status.html:54
-#: templates/views/message-status.html:78
-msgid "Status"
-msgstr ""
-
-#: templates/views/inbound-sms-admin.html:9
 msgid "Service"
 msgstr ""
 
@@ -1355,11 +1471,6 @@ msgstr ""
 #: templates/views/message-status.html:54
 #: templates/views/message-status.html:78
 msgid "Description"
-msgstr ""
-
-#: templates/views/message-status.html:30
-#: templates/views/message-status.html:59
-msgid "Sending"
 msgstr ""
 
 #: templates/views/message-status.html:30
@@ -1567,6 +1678,29 @@ msgid ""
 "Each letter has a unique ID. Our printer sends us the ID of every letter "
 "they destroy. We’ll contact you if the IDs match any of your letters. "
 "This is a partly manual process, so it can take a few weeks."
+msgstr ""
+
+#: templates/views/notifications.html:9
+msgid "Failed "
+msgstr ""
+
+#: templates/views/notifications.html:16
+msgid "Sent messages"
+msgstr ""
+
+#: templates/views/notifications.html:47 templates/views/notifications.html:48
+msgid "Search by"
+msgstr ""
+
+#: templates/views/find-services/find-services-by-name.html:29
+#: templates/views/find-users/find-users-by-email.html:29
+#: templates/views/notifications.html:56
+msgid "Search"
+msgstr ""
+
+#: templates/views/notifications.html:71
+#, python-format
+msgid "Data available for %%s days"
 msgstr ""
 
 #: templates/views/password-reset-sent.html:4
@@ -2789,6 +2923,18 @@ msgid ""
 "security code</span>"
 msgstr ""
 
+#: templates/views/activity/notifications.html:14
+msgid "No messages found &thinsp;(messages are kept for {} days)"
+msgstr ""
+
+#: templates/views/activity/notifications.html:20
+msgid "Checking"
+msgstr ""
+
+#: templates/views/activity/notifications.html:40
+msgid "Only showing the first 50 messages"
+msgstr ""
+
 #: templates/views/agreement/agreement-accept.html:10
 #: templates/views/agreement/agreement-accept.html:22
 msgid "Accept our data sharing and financial agreement"
@@ -3781,11 +3927,6 @@ msgstr ""
 msgid "Find services by name, partial name, or service ID"
 msgstr ""
 
-#: templates/views/find-services/find-services-by-name.html:29
-#: templates/views/find-users/find-users-by-email.html:29
-msgid "Search"
-msgstr ""
-
 #: templates/views/find-services/find-services-by-name.html:51
 msgid "No services found."
 msgstr ""
@@ -4489,6 +4630,10 @@ msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"https://www.gov.uk\">Find government services and information on "
 "GOV.UK</a>."
+msgstr ""
+
+#: templates/views/jobs/job.html:34
+msgid "Cancel sending these letters"
 msgstr ""
 
 #: templates/views/service-settings/letter-preview.html:6

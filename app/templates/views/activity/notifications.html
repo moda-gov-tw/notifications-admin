@@ -11,13 +11,13 @@
       notifications,
       caption="Recent activity",
       caption_visible=False,
-      empty_message='No messages found &thinsp;(messages are kept for {} days)'.format(limit_days)|safe,
+      empty_message=_('No messages found &thinsp;(messages are kept for {} days)').format(limit_days)|safe,
       field_headings=['Recipient', 'Status'],
       field_headings_visible=False
     ) %}
       {% call row_heading() %}
         {% if item.status in ('pending-virus-check', 'virus-scan-failed') %}
-          <span class="file-list-filename loading-indicator">Checking</span>
+          <span class="file-list-filename loading-indicator">{{_('Checking')}}</span>
         {% else %}
           <a class="govuk-link govuk-link--no-visited-state file-list-filename" href="{{ single_notification_url(notification_id=item.id) }}">{{ item.to.splitlines()|join(', ') if item.to else '' }}</a>
         {% endif %}
@@ -37,7 +37,7 @@
     {{ previous_next_navigation(prev_page, next_page) }}
   {% elif next_page %}
     <p class="table-show-more-link">
-      Only showing the first 50 messages
+      {{_('Only showing the first 50 messages')}}
     </p>
   {% endif %}
 

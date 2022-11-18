@@ -14,6 +14,7 @@ from flask import (
     stream_with_context,
     url_for,
 )
+from flask_babel import _
 from flask_login import current_user
 from notifications_python_client.errors import HTTPError
 from notifications_utils.template import (
@@ -65,7 +66,7 @@ def view_job(service_id, job_id):
     filter_args = parse_filter_args(request.args)
     filter_args["status"] = set_status_filters(filter_args)
 
-    just_sent_message = "Your {} been sent. Printing starts {} at 5:30pm.".format(
+    just_sent_message = _("Your {} been sent. Printing starts {} at 5:30pm.").format(
         "letter has" if job.notification_count == 1 else "letters have", printing_today_or_tomorrow(job.created_at)
     )
 
@@ -127,7 +128,7 @@ def cancel_letter_job(service_id, job_id):
         job = Job.from_id(job_id, service_id=service_id)
 
         if job.status != "finished" or job.notifications_created < job.notification_count:
-            flash("We are still processing these letters, please try again in a minute.", "try again")
+            flash(_("We are still processing these letters, please try again in a minute."), "try again")
             return view_job(service_id, job_id)
         try:
             number_of_letters = job.cancel()
@@ -135,12 +136,12 @@ def cancel_letter_job(service_id, job_id):
             flash(e.message, "dangerous")
             return redirect(url_for("main.view_job", service_id=service_id, job_id=job_id))
         flash(
-            "Cancelled {} letters from {}".format(format_thousands(number_of_letters), job.original_file_name),
+            _("Cancelled {} letters from {}").format(format_thousands(number_of_letters), job.original_file_name),
             "default_with_tick",
         )
         return redirect(url_for("main.service_dashboard", service_id=service_id))
 
-    flash("Are you sure you want to cancel sending these letters?", "cancel")
+    flash(_("Are you sure you want to cancel sending these letters?"), "cancel")
     return view_job(service_id, job_id)
 
 
@@ -168,15 +169,15 @@ def view_notifications(service_id, message_type=None):
             to=request.form.get("to"),
         ),
         things_you_can_search_by={
-            "email": ["email address"],
-            "sms": ["phone number"],
-            "letter": ["postal address", "file name"],
+            "email": [_("email address")],
+            "sms": [_("phone number")],
+            "letter": [_("postal address"), _("file name")],
             # We say recipient here because combining all 3 types, plus
             # reference gets too long for the hint text
-            None: ["recipient"],
+            None: [_("recipient")],
         }.get(message_type)
         + {
-            True: ["reference"],
+            True: [_("reference")],
             False: [],
         }.get(bool(current_service.api_keys)),
         download_link=url_for(
@@ -204,7 +205,7 @@ def get_notifications(service_id, message_type, status_override=None):
     # TODO get the api to return count of pages as well.
     page = get_page_from_request()
     if page is None:
-        abort(404, "Invalid page argument ({}).".format(request.args.get("page")))
+        abort(404, _("Invalid page argument ({}).").format(request.args.get("page")))
     filter_args = parse_filter_args(request.args)
     filter_args["status"] = set_status_filters(filter_args)
     service_data_retention_days = None
@@ -331,32 +332,32 @@ def _get_job_counts(job):
         for label, query_param, count in [
             [
                 Markup(
-                    f"""total<span class="govuk-visually-hidden">
-                    {"text message" if job_type == "sms" else job_type}s</span>"""
+                    _("""total<span class="govuk-visually-hidden">%%s</span>""")
+                    % ("text message" if job_type == "sms" else job_type)
                 ),
                 "",
                 job.notification_count,
             ],
             [
                 Markup(
-                    f"""sending<span class="govuk-visually-hidden">
-                    {message_count_noun(job.notifications_sending, job_type)}</span>"""
+                    _("""sending<span class="govuk-visually-hidden">%%s</span>""")
+                    % message_count_noun(job.notifications_sending, job_type)
                 ),
                 "sending",
                 job.notifications_sending,
             ],
             [
                 Markup(
-                    f"""delivered<span class="govuk-visually-hidden">
-                    {message_count_noun(job.notifications_delivered, job_type)}</span>"""
+                    _("""delivered<span class="govuk-visually-hidden">%%s</span>""")
+                    % message_count_noun(job.notifications_delivered, job_type)
                 ),
                 "delivered",
                 job.notifications_delivered,
             ],
             [
                 Markup(
-                    f"""failed<span class="govuk-visually-hidden">
-                    {message_count_noun(job.notifications_failed, job_type)}</span>"""
+                    _("""failed<span class="govuk-visually-hidden">%%s</span>""")
+                    % message_count_noun(job.notifications_failed, job_type)
                 ),
                 "failed",
                 job.notifications_failed,
