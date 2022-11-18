@@ -5,12 +5,12 @@
 {% extends "withnav_template.html" %}
 
 {% block service_page_title %}
-  Templates used
+  {{_('Templates used')}}
 {% endblock %}
 
 {% block maincolumn_content %}
 
-  {{ page_header("Templates used") }}
+  {{ page_header(_("Templates used")) }}
 
   <div class="bottom-gutter-3-2">
     {{ pill(
@@ -25,7 +25,7 @@
       <h2>{{ month.name }}</h2>
       {% if not month.templates_used %}
         <p class="table-no-data">
-          No messages sent
+          {{_('No messages sent')}}
         </p>
       {% else %}
         <div class='template-statistics-table'>

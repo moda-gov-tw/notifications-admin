@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 13:57+0800\n"
+"POT-Creation-Date: 2022-11-18 14:50+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -104,6 +104,22 @@ msgstr ""
 #: main/views/broadcast.py:317 main/views/broadcast.py:329
 #, python-format
 msgid "Choose an area of %s"
+msgstr ""
+
+#: main/views/dashboard.py:184
+msgid "Phone number"
+msgstr ""
+
+#: main/views/dashboard.py:185
+msgid "Message"
+msgstr ""
+
+#: main/views/dashboard.py:186
+msgid "Received"
+msgstr ""
+
+#: main/views/dashboard.py:460
+msgid "financial year"
 msgstr ""
 
 #: templates/views/accessibility_statement.html:6
@@ -357,6 +373,7 @@ msgid ""
 msgstr ""
 
 #: templates/views/accessibility_statement.html:146
+#: templates/views/dashboard/monthly.html:34
 #: templates/views/features/emails.html:9
 #: templates/views/features/emails.html:14
 #: templates/views/message-status.html:21 templates/views/signedout.html:147
@@ -827,7 +844,8 @@ msgstr ""
 msgid "text messages"
 msgstr ""
 
-#: templates/views/features.html:21 templates/views/using-notify.html:26
+#: templates/views/dashboard/monthly.html:36 templates/views/features.html:21
+#: templates/views/using-notify.html:26
 msgid "letters"
 msgstr ""
 
@@ -1033,6 +1051,7 @@ msgid ""
 "href=\"%%s\">support</a>."
 msgstr ""
 
+#: templates/views/dashboard/write-first-messages.html:1
 #: templates/views/get-started.html:7 templates/views/get-started.html:15
 msgid "Get started"
 msgstr ""
@@ -1316,6 +1335,7 @@ msgid ""
 "could breach General Data Protection Regulations (GDPR)."
 msgstr ""
 
+#: templates/views/dashboard/monthly.html:35
 #: templates/views/features/text-messages.html:9
 #: templates/views/features/text-messages.html:14
 #: templates/views/message-status.html:50 templates/views/signedout.html:152
@@ -2707,7 +2727,8 @@ msgstr ""
 msgid "Change"
 msgstr ""
 
-#: templates/views/api/callbacks.html:31
+#: templates/views/api/callbacks.html:31 templates/views/dashboard/inbox.html:7
+#: templates/views/dashboard/inbox.html:17
 msgid "Received text messages"
 msgstr ""
 
@@ -3116,6 +3137,7 @@ msgid "Received text message"
 msgstr ""
 
 #: templates/views/conversations/conversation.html:27
+#: templates/views/dashboard/inbox.html:22
 msgid "messages"
 msgstr ""
 
@@ -3130,6 +3152,173 @@ msgstr ""
 #: templates/views/conversations/messages.html:27
 #, python-format
 msgid "Failed (sent %%s)"
+msgstr ""
+
+#: templates/views/dashboard/_inbox.html:12
+#, python-format
+msgid "latest message %%s"
+msgstr ""
+
+#: templates/views/dashboard/_inbox.html:23
+#, python-format
+msgid "returned %%s"
+msgstr ""
+
+#: templates/views/dashboard/_inbox.html:26
+#, python-format
+msgid "latest report %%s"
+msgstr ""
+
+#: templates/views/dashboard/_inbox_messages.html:7
+msgid "Download all messages"
+msgstr ""
+
+#: templates/views/dashboard/_inbox_messages.html:12
+msgid "Inbox"
+msgstr ""
+
+#: templates/views/dashboard/_inbox_messages.html:14
+msgid ""
+"When users text your service’s phone number ({}) you’ll see the messages "
+"here"
+msgstr ""
+
+#: templates/views/dashboard/_inbox_messages.html:16
+msgid "From"
+msgstr ""
+
+#: templates/views/dashboard/_inbox_messages.html:17
+msgid "First two lines of message"
+msgstr ""
+
+#: templates/views/dashboard/_upcoming.html:7
+msgid "In the next few days"
+msgstr ""
+
+#: templates/views/dashboard/_upcoming.html:15
+msgid "file waiting to send"
+msgstr ""
+
+#: templates/views/dashboard/_upcoming.html:17
+msgid "files waiting to send"
+msgstr ""
+
+#: templates/views/dashboard/_upcoming.html:21
+#, python-format
+msgid "sending starts %%s"
+msgstr ""
+
+#: templates/views/dashboard/_usage.html:14
+msgid "spent on text messages"
+msgstr ""
+
+#: templates/views/dashboard/_usage.html:19
+msgid "free text messages left"
+msgstr ""
+
+#: templates/views/dashboard/_usage.html:27
+msgid "spent on letters"
+msgstr ""
+
+#: templates/views/dashboard/all-template-statistics.html:8
+#: templates/views/dashboard/all-template-statistics.html:13
+msgid "Templates used"
+msgstr ""
+
+#: templates/views/dashboard/all-template-statistics.html:28
+msgid "No messages sent"
+msgstr ""
+
+#: templates/views/dashboard/dashboard.html:8
+#: templates/views/dashboard/dashboard.html:15
+msgid "Dashboard"
+msgstr ""
+
+#: templates/views/dashboard/dashboard.html:20
+msgid "upcoming"
+msgstr ""
+
+#: templates/views/dashboard/dashboard.html:23
+msgid "In the last 7 days"
+msgstr ""
+
+#: templates/views/dashboard/dashboard.html:26
+msgid "inbox"
+msgstr ""
+
+#: templates/views/dashboard/dashboard.html:28
+msgid "totals"
+msgstr ""
+
+#: templates/views/dashboard/dashboard.html:31
+msgid "See messages sent per month"
+msgstr ""
+
+#: templates/views/dashboard/dashboard.html:37
+msgid "This year"
+msgstr ""
+
+#: templates/views/dashboard/dashboard.html:41
+msgid "See usage"
+msgstr ""
+
+#: templates/views/dashboard/monthly.html:9
+#, python-format
+msgid ""
+"Messages sent, %%(selected_year)s to %%(selected_year_plus_one)s "
+"financial year"
+msgstr ""
+
+#: templates/views/dashboard/monthly.html:29
+msgid "Total spend"
+msgstr ""
+
+#: templates/views/dashboard/monthly.html:33
+msgid "Month"
+msgstr ""
+
+#: templates/views/dashboard/monthly.html:46
+msgid "email"
+msgstr ""
+
+#: templates/views/dashboard/monthly.html:47
+msgid "sms"
+msgstr ""
+
+#: templates/views/dashboard/monthly.html:48
+msgid "letter"
+msgstr ""
+
+#: templates/views/dashboard/monthly.html:71
+msgid "Financial year ends 31 March."
+msgstr ""
+
+#: templates/views/dashboard/template-statistics.html:15
+msgid "Template"
+msgstr ""
+
+#: templates/views/dashboard/template-statistics.html:16
+msgid "Messages sent"
+msgstr ""
+
+#: templates/views/dashboard/template-statistics.html:24
+msgid "Provided as PDF"
+msgstr ""
+
+#: templates/views/dashboard/template-statistics.html:27
+msgid "Letter"
+msgstr ""
+
+#: templates/views/dashboard/template-statistics.html:41
+msgid "See templates used by month"
+msgstr ""
+
+#: templates/views/dashboard/write-first-messages.html:6
+msgid "Write an email, text message or letter"
+msgstr ""
+
+#: templates/views/dashboard/write-first-messages.html:8
+msgid "Write an email or text message"
 msgstr ""
 
 #: templates/views/features/emails.html:15

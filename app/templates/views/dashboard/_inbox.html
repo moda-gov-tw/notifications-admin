@@ -9,7 +9,7 @@
       </span>
       {% if current_service.inbound_sms_summary.most_recent %}
         <span class="banner-dashboard-meta">
-          latest message {{ current_service.inbound_sms_summary.most_recent | format_delta }}
+          {{_("latest message %%s") % current_service.inbound_sms_summary.most_recent | format_delta}}
         </span>
       {% endif %}
     </a>
@@ -20,10 +20,10 @@
         {{ current_service.count_of_returned_letters_in_last_7_days|format_thousands }}
       </span>
       <span class="banner-dashboard-count-label">
-        returned {{ current_service.count_of_returned_letters_in_last_7_days|message_count_label('letter', suffix='') }}
+        {{_("returned %%s") % current_service.count_of_returned_letters_in_last_7_days|message_count_label('letter', suffix='')}}
       </span>
       <span class="banner-dashboard-meta">
-        latest report {{ current_service.date_of_most_recent_returned_letter_report|format_delta_days }}
+        {{_("latest report %%s") % current_service.date_of_most_recent_returned_letter_report|format_delta_days}}
       </span>
     </a>
   {% endif %}

@@ -11,12 +11,12 @@
       {% if sms_cost %}
         {{ big_number(
           sms_cost,
-          'spent on text messages',
+          _('spent on text messages'),
           currency="£",
           smaller=True
         ) }}
       {% else %}
-        {{ big_number(sms_allowance_remaining, 'free text messages left', smaller=True) }}
+        {{ big_number(sms_allowance_remaining, _('free text messages left'), smaller=True) }}
       {% endif %}
     </div>
   </div>
@@ -24,7 +24,7 @@
     <div class="keyline-block">
       {{ big_number(
         letter_cost,
-        'spent on letters',
+        _('spent on letters'),
         currency="£",
         smaller=True
       ) }}

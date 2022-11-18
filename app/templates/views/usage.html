@@ -6,12 +6,12 @@
 {% extends "withnav_template.html" %}
 
 {% block service_page_title %}
-  Usage
+  {{_('Usage')}}
 {% endblock %}
 
 {% block maincolumn_content %}
 
-    {{ page_header('Usage', size='medium') }}
+    {{ page_header(_('Usage'), size='medium') }}
 
     <div class="bottom-gutter">
       {{ pill(years, selected_year, big_number_args={'smallest': True}) }}
@@ -19,25 +19,25 @@
     <div id='pill-selected-item'>
       <div class='govuk-grid-row'>
         <div class='govuk-grid-column-one-third'>
-          <h2 class='heading-small'>Emails</h2>
+          <h2 class='heading-small'>{{_('Emails')}}</h2>
           <div class="keyline-block">
             {{ big_number(emails_sent, 'sent', smaller=True) }}
             {{ big_number("Unlimited", 'free allowance', smaller=True) }}
           </div>
         </div>
         <div class='govuk-grid-column-one-third'>
-          <h2 class='heading-small'>Text messages</h2>
+          <h2 class='heading-small'>{{_('Text messages')}}</h2>
           <div class="keyline-block">
-            {{ big_number(sms_sent, 'sent', smaller=True) }}
-            {{ big_number(sms_free_allowance, 'free allowance', smaller=True) }}
+            {{ big_number(sms_sent, _('sent'), smaller=True) }}
+            {{ big_number(sms_free_allowance, _('free allowance'), smaller=True) }}
             {% if sms_free_allowance > 0 %}
-              {{ big_number(sms_allowance_remaining, 'free allowance remaining', smaller=True) }}
+              {{ big_number(sms_allowance_remaining, _('free allowance remaining'), smaller=True) }}
             {% endif %}
             {% for row in sms_breakdown %}
               {% if row.charged_units > 0 %}
                 {{ big_number(
                   row.charged_units,
-                  'at {:.2f} pence per message'.format(row.rate * 100),
+                  _('at {:.2f} pence per message').format(row.rate * 100),
                   smaller=True
                 ) }}
               {% endif %}
@@ -45,9 +45,9 @@
           </div>
         </div>
         <div class='govuk-grid-column-one-third'>
-          <h2 class='heading-small'>Letters</h2>
+          <h2 class='heading-small'>{{_('Letters')}}</h2>
           <div class="keyline-block">
-            {{ big_number(letter_sent, 'sent', smaller=True) }}
+            {{ big_number(letter_sent, _('sent'), smaller=True) }}
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@
           <div class="keyline-block">
             {{ big_number(
               sms_cost,
-              'spent',
+              _('spent'),
               currency="£",
               smaller=True
             ) }}
@@ -72,7 +72,7 @@
           <div class="keyline-block">
             {{ big_number(
                 letter_cost,
-                'spent',
+                _('spent'),
                 currency="£",
                 smaller=True
               ) }}
@@ -85,11 +85,11 @@
         <div class="dashboard-table usage-table body-copy-table">
           {% call(item, row_index) list_table(
             months,
-            caption="Total spend",
+            caption=_("Total spend"),
             caption_visible=False,
             empty_message='',
             field_headings=[
-              'By month',
+              _('By month'),
               hidden_field_heading('Cost'),
             ],
             field_headings_visible=True
@@ -105,16 +105,24 @@
               ) }}
               <ul class="govuk-list">
               {% if item.sms_free_allowance_used %}
-                <li class="tabular-numbers">{{ item.sms_free_allowance_used|format_thousands }} free {{ item.sms_free_count|message_count_label('sms', suffix='') }}</li>
+                <li class="tabular-numbers">{{_("%%(sms_free_allowance_used)s free %%(sms_free_count)s") % {
+                  'sms_free_allowance_used': item.sms_free_allowance_used|format_thousands),
+                  'sms_free_count': item.sms_free_count|message_count_label('sms', suffix=''),
+                }}}</li>
               {% endif %}
               {% for sms in item.sms_breakdown %}
-                  <li class="tabular-numbers">{{ sms.charged_units|message_count('sms') }} at
-                  {{- ' {:.2f}p'.format(sms.rate * 100) }}</li>
+                  <li class="tabular-numbers">{{_("%%(charged_units)s at %%(charged_units_rate)s") % {
+                    'charged_units': sms.charged_units|message_count('sms'),
+                    'charged_units_rate': ' {:.2f}p'.format(sms.rate * 100),
+                    }}}</li>
               {% endfor %}
               {% for letter in item.letter_breakdown %}
                 {% if letter.sent %}
-                  <li class="tabular-numbers">{{ "{:,} {}".format(letter.sent, letter.postage_description) }} {{ letter.sent|message_count_label('letter', suffix='') }} at
-                  {{ letter.rate | format_number_in_pounds_as_currency }}</li>
+                  <li class="tabular-numbers">{{_("%%(letter_sent)s %%(letter_count)s at %%(letter_rate)s") % {
+                    'letter_sent': "{:,} {}".format(letter.sent, letter.postage_description),
+                    'letter_count': letter.sent|message_count_label('letter', suffix=''),
+                    'letter_rate': letter.rate | format_number_in_pounds_as_currency,
+                    }}}</li>
                 {% endif %}
               {% endfor %}
               {% if not (item.sms_free_allowance_used or item.sms_cost or item.letter_breakdown) %}
@@ -130,13 +138,13 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third">
         <p class="align-with-heading-copy">
-          Financial year ends 31&nbsp;March
+          {{_('Financial year ends 31&nbsp;March')}}
         </p>
       </div>
       <div class="govuk-grid-column-two-thirds">
         <p class="align-with-heading-copy">
-          What counts as 1 text message?<br />
-          See <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.pricing') }}">pricing</a>.
+          {{_("What counts as 1 text message?<br />
+          See <a class=\"govuk-link govuk-link--no-visited-state\" href=\"{{ url_for('.pricing') }}\">pricing</a>.")}}
         </p>
       </div>
     </div>

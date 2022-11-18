@@ -4,6 +4,7 @@ from functools import partial
 from itertools import groupby
 
 from flask import Response, abort, jsonify, render_template, request, session, url_for
+from flask_babel import _
 from flask_login import current_user
 from notifications_utils.recipients import format_phone_number_human_readable
 from werkzeug.utils import redirect
@@ -180,9 +181,9 @@ def inbox_download(service_id):
         Spreadsheet.from_rows(
             [
                 [
-                    "Phone number",
-                    "Message",
-                    "Received",
+                    _("Phone number"),
+                    _("Message"),
+                    _("Received"),
                 ]
             ]
             + [
@@ -456,7 +457,7 @@ def get_tuples_of_financial_years(
 ):
     return (
         (
-            "financial year",
+            _("financial year"),
             year,
             partial_url(year=year),
             "{} to {}".format(year, year + 1),
