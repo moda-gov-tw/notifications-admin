@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 16:39+0800\n"
+"POT-Creation-Date: 2022-11-18 16:41+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -145,7 +145,7 @@ msgid ""
 "team member with manage_settings"
 msgstr ""
 
-#: main/views/find_users.py:56
+#: main/views/find_users.py:58
 msgid ""
 "There's no way to reverse this! Are you sure you want to archive this "
 "user?"
@@ -1102,6 +1102,19 @@ msgstr ""
 "或 <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">登入</a> 如果之前已經註冊過"
 
+#: templates/views/forgot-password.html:6
+#: templates/views/forgot-password.html:13
+msgid "Forgotten your password?"
+msgstr ""
+
+#: templates/views/forgot-password.html:15
+msgid "We’ll send you an email to create a new password."
+msgstr ""
+
+#: templates/views/forgot-password.html:19
+msgid "Send email"
+msgstr ""
+
 #: templates/views/dashboard/write-first-messages.html:1
 #: templates/views/get-started.html:7 templates/views/get-started.html:15
 msgid "Get started"
@@ -1532,6 +1545,17 @@ msgid ""
 "This is a partly manual process, so it can take a few weeks."
 msgstr ""
 
+#: templates/views/password-reset-sent.html:4
+#: templates/views/password-reset-sent.html:11
+#: templates/views/resend-email-verification.html:5
+#: templates/views/resend-email-verification.html:10
+msgid "Check your email"
+msgstr ""
+
+#: templates/views/password-reset-sent.html:13
+msgid "Click the link in the email to reset your password."
+msgstr ""
+
 #: templates/views/privacy.html:5 templates/views/privacy.html:12
 msgid "Privacy notice: how we use your data"
 msgstr ""
@@ -1840,11 +1864,6 @@ msgid ""
 "    Water Lane<br>\n"
 "    Wilmslow<br>\n"
 "    Cheshire SK9 5AF"
-msgstr ""
-
-#: templates/views/resend-email-verification.html:5
-#: templates/views/resend-email-verification.html:10
-msgid "Check your email"
 msgstr ""
 
 #: templates/views/resend-email-verification.html:11
