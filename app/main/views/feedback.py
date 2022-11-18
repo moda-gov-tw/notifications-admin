@@ -2,6 +2,7 @@ from datetime import datetime
 
 import pytz
 from flask import redirect, render_template, request, session, url_for
+from flask_babel import _
 from flask_login import current_user
 from govuk_bank_holidays.bank_holidays import BankHolidays
 from notifications_utils.clients.zendesk.zendesk_client import NotifySupportTicket
@@ -66,8 +67,8 @@ def triage(ticket_type=PROBLEM_TICKET_TYPE):
         "views/support/triage.html",
         form=form,
         page_title={
-            PROBLEM_TICKET_TYPE: "Report a problem",
-            GENERAL_TICKET_TYPE: "Contact GOV.UK Notify support",
+            PROBLEM_TICKET_TYPE: _("Report a problem"),
+            GENERAL_TICKET_TYPE: _("Contact GOV.UK Notify support"),
         }.get(ticket_type),
     )
 
@@ -115,7 +116,7 @@ def feedback(ticket_type):
         )
 
         ticket = NotifySupportTicket(
-            subject="Notify feedback",
+            subject=_("Notify feedback"),
             message=feedback_msg,
             ticket_type=get_zendesk_ticket_type(ticket_type),
             p1=out_of_hours_emergency,
@@ -180,9 +181,7 @@ def in_business_hours():
 
 
 def london_time_today_as_utc(hour, minute):
-    return (
-        pytz.timezone("Europe/London").localize(datetime.now().replace(hour=hour, minute=minute)).astimezone(pytz.utc)
-    )
+    return pytz.timezone("Asia/Taipai").localize(datetime.now().replace(hour=hour, minute=minute)).astimezone(pytz.utc)
 
 
 def is_weekend(time):

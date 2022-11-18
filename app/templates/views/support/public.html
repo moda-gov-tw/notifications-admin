@@ -4,7 +4,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block per_page_title %}
-  The GOV.UK Notify service is for people who work in the government
+  {{_('The GOV.UK Notify service is for people who work in the government')}}
 {% endblock %}
 
 {% block backLink %}
@@ -16,33 +16,33 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    {{ page_header('The GOV.UK Notify service is for people who work in the government') }}
+    {{ page_header(_('The GOV.UK Notify service is for people who work in the government')) }}
 
     <p class="govuk-body">
-      We cannot give advice to the public. We do not have access to information about you held by government departments.
+      {{_('We cannot give advice to the public. We do not have access to information about you held by government departments.')}}
     </p>
 
     <p class="govuk-body">
-      There are other pages on GOV.UK where you can get help:
+      {{_('There are other pages on GOV.UK where you can get help:')}}
     </p>
 
     <h2 class="govuk-heading-m govuk-!-margin-bottom-1">
-      <a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/coronavirus">Coronavirus (COVID-19)</a>
+      <a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/coronavirus">{{_('Coronavirus (COVID-19)')}}</a>
     </h2>
     <p class="govuk-body">
-      Find guidance and support.
+      {{_('Find guidance and support.')}}
     </p>
     <h2 class="govuk-heading-m govuk-!-margin-bottom-1">
-      <a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/contact">Contact the government</a>
+      <a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/contact">{{_('Contact the government')}}</a>
     </h2>
     <p class="govuk-body">
-      Ask about benefits, driving, transport, tax, and more.
+      {{_('Ask about benefits, driving, transport, tax, and more.')}}
     </p>
     <h2 class="govuk-heading-m govuk-!-margin-bottom-1">
-      <a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/report-suspicious-emails-websites-phishing">Report internet scams and phishing</a>
+      <a class="govuk-link govuk-link--no-visited-state" href="https://www.gov.uk/report-suspicious-emails-websites-phishing">{{_('Report internet scams and phishing')}}</a>
     </h2>
     <p class="govuk-body">
-      Advice on suspicious emails and text messages.
+      {{_('Advice on suspicious emails and text messages.')}}
     </p>
   </div>
 </div>

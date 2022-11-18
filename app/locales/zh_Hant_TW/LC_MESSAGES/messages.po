@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 16:17+0800\n"
+"POT-Creation-Date: 2022-11-18 16:27+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -125,6 +125,18 @@ msgstr ""
 
 #: main/views/dashboard.py:460
 msgid "financial year"
+msgstr ""
+
+#: main/views/feedback.py:69
+msgid "Report a problem"
+msgstr ""
+
+#: main/views/feedback.py:70
+msgid "Contact GOV.UK Notify support"
+msgstr ""
+
+#: main/views/feedback.py:118
+msgid "Notify feedback"
 msgstr ""
 
 #: templates/views/accessibility_statement.html:6
@@ -1056,7 +1068,8 @@ msgstr ""
 "或 <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">登入</a> 如果之前已經註冊過"
 
-#: templates/views/features.html:77
+#: templates/views/features.html:77 templates/views/support/index.html:6
+#: templates/views/support/index.html:11
 msgid "Support"
 msgstr ""
 
@@ -2763,6 +2776,7 @@ msgstr ""
 #: templates/views/broadcast/write-new-broadcast.html:44
 #: templates/views/email-branding/government-identity-options-colour.html:30
 #: templates/views/email-branding/government-identity-options.html:30
+#: templates/views/support/index.html:20
 msgid "Continue"
 msgstr ""
 
@@ -4415,6 +4429,234 @@ msgstr ""
 
 #: templates/views/service-settings/letter-preview.html:6
 msgid "Letter preview"
+msgstr ""
+
+#: templates/views/support/bat-phone.html:7
+msgid "Out of hours emergencies"
+msgstr ""
+
+#: templates/views/support/bat-phone.html:20
+msgid ""
+"First, check the\n"
+"          <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://status.notifications.service.gov.uk\">system status "
+"page</a>.\n"
+"          You do not need to contact us if\n"
+"          the problem you’re having is listed on that page."
+msgstr ""
+
+#: templates/views/support/bat-phone.html:26
+msgid ""
+"Otherwise, contact us using the emergency email address we\n"
+"          gave you or your service manager when we made your service live."
+msgstr ""
+
+#: templates/views/support/bat-phone.html:30
+msgid ""
+"We’ll reply within 30 minutes and give you hourly updates\n"
+"          until the problem’s fixed."
+msgstr ""
+
+#: templates/views/support/bat-phone.html:34
+msgid ""
+"We do not offer out of hours support if your service is in\n"
+"          trial mode."
+msgstr ""
+
+#: templates/views/support/bat-phone.html:37
+msgid "Any other problems"
+msgstr ""
+
+#: templates/views/support/bat-phone.html:39
+#, fuzzy, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Fill in"
+" this form</a>\n"
+"          and we’ll get back to you by the next working day."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/support/form.html:24
+msgid ""
+"Check our <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://status.notifications.service.gov.uk\">system status</a>\n"
+"              page to see if there are any known issues with GOV.UK "
+"Notify."
+msgstr ""
+
+#: templates/views/support/index.html:12
+msgid "GOV.UK Notify provides 24-hour online support."
+msgstr ""
+
+#: templates/views/support/index.html:23
+#, fuzzy
+msgid ""
+"You can also <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://ukgovernmentdigital.slack.com/messages/C0E1ADVPC\">contact"
+" us on Slack</a>."
+msgstr ""
+"參閱 \n"
+"      <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">服務與組織列表</a>。"
+
+#: templates/views/support/index.html:27
+msgid "Office hours"
+msgstr ""
+
+#: templates/views/support/index.html:28
+msgid "Our office hours are 9:30am to 5:30pm, Monday to Friday."
+msgstr ""
+
+#: templates/views/support/index.html:29
+msgid ""
+"When you report a problem in office hours, we’ll aim to read it within 30"
+" minutes and reply within one working day."
+msgstr ""
+
+#: templates/views/support/index.html:31
+msgid "Out-of-hours"
+msgstr ""
+
+#: templates/views/support/index.html:32
+msgid ""
+"Outside office hours, response times depend on whether you’re reporting "
+"an emergency."
+msgstr ""
+
+#: templates/views/support/index.html:33
+msgid ""
+"If it’s an emergency, we’ll reply within 30 minutes and update you every "
+"hour until the problem’s fixed."
+msgstr ""
+
+#: templates/views/support/index.html:34
+msgid "If your problem is not an emergency, we’ll reply within one working day."
+msgstr ""
+
+#: templates/views/support/index.html:35
+msgid "A problem is only classed as an emergency if you have a live service and:"
+msgstr ""
+
+#: templates/views/support/index.html:37
+msgid "nobody on your team can sign in"
+msgstr ""
+
+#: templates/views/support/index.html:38
+msgid "a ‘technical difficulties’ error appears when you try to upload a file"
+msgstr ""
+
+#: templates/views/support/index.html:39
+msgid "a 500 response code appears when you try to send messages using the API"
+msgstr ""
+
+#: templates/views/support/public.html:7 templates/views/support/public.html:19
+msgid "The GOV.UK Notify service is for people who work in the government"
+msgstr ""
+
+#: templates/views/support/public.html:22
+msgid ""
+"We cannot give advice to the public. We do not have access to information"
+" about you held by government departments."
+msgstr ""
+
+#: templates/views/support/public.html:26
+msgid "There are other pages on GOV.UK where you can get help:"
+msgstr ""
+
+#: templates/views/support/public.html:30
+msgid "Coronavirus (COVID-19)"
+msgstr ""
+
+#: templates/views/support/public.html:33
+msgid "Find guidance and support."
+msgstr ""
+
+#: templates/views/support/public.html:36
+msgid "Contact the government"
+msgstr ""
+
+#: templates/views/support/public.html:39
+msgid "Ask about benefits, driving, transport, tax, and more."
+msgstr ""
+
+#: templates/views/support/public.html:42
+msgid "Report internet scams and phishing"
+msgstr ""
+
+#: templates/views/support/public.html:45
+msgid "Advice on suspicious emails and text messages."
+msgstr ""
+
+#: templates/views/support/thanks.html:7
+msgid "Thanks for contacting us"
+msgstr ""
+
+#: templates/views/support/thanks.html:19
+msgid "We’ll reply in the next 30 minutes."
+msgstr ""
+
+#: templates/views/support/thanks.html:23
+msgid "We’ll reply within one working day."
+msgstr ""
+
+#: templates/views/support/thanks.html:25
+msgid ""
+"We’ll aim to read your message in the next 30 minutes and we’ll reply "
+"within one\n"
+"            working day."
+msgstr ""
+
+#: templates/views/support/thanks.html:30
+msgid "We’ll read your message when we’re back in the office."
+msgstr ""
+
+#: templates/views/support/thanks.html:32
+msgid "We’ll aim to read your message in the next 30 minutes."
+msgstr ""
+
+#: templates/views/support/triage.html:25
+msgid "It’s only an emergency if:"
+msgstr ""
+
+#: templates/views/support/triage.html:29
+msgid "no one in your team can log in"
+msgstr ""
+
+#: templates/views/support/triage.html:32
+msgid ""
+"you get a ‘technical difficulties’ error message when you try\n"
+"          to upload a file"
+msgstr ""
+
+#: templates/views/support/triage.html:36
+msgid ""
+"you get a 500 response code when you try to send messages\n"
+"          using the API"
+msgstr ""
+
+#: templates/views/support/triage.html:41
+msgid "It’s not an emergency if:"
+msgstr ""
+
+#: templates/views/support/triage.html:45
+msgid "all your messages stay in ‘sending’ for a few hours"
+msgstr ""
+
+#: templates/views/support/triage.html:48
+msgid "you send the wrong message by accident"
+msgstr ""
+
+#: templates/views/support/triage.html:51
+msgid ""
+"a team member uses GOV.UK Notify to send an\n"
+"          inappropriate message"
+msgstr ""
+
+#: templates/views/support/triage.html:55
+msgid ""
+"your system is telling the GOV.UK Notify API to send the wrong\n"
+"          message"
 msgstr ""
 
 #: templates/views/templates/choose-reply.html:8
