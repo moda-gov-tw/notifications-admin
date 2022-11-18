@@ -4,12 +4,12 @@
 {% extends "withnav_template.html" %}
 
 {% block service_page_title %}
-  Current alerts
+  {{_('Current alerts')}}
 {% endblock %}
 
 {% block maincolumn_content %}
 
-  <h1 class="heading-medium">Current alerts</h1>
+  <h1 class="heading-medium">{{_('Current alerts')}}</h1>
 
   {{ ajax_block(
     partials,
@@ -21,7 +21,7 @@
     <div class="js-stick-at-bottom-when-scrolling">
       {{ govukButton({
         "element": "a",
-        "text": "New alert",
+        "text": _("New alert"),
         "href": url_for('.new_broadcast', service_id=current_service.id),
         "classes": "govuk-button--secondary"
       }) }}

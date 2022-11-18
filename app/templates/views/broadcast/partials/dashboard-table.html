@@ -12,7 +12,7 @@
       </span>
       {% if item.status == 'pending-approval' %}
         <p class="govuk-body govuk-hint file-list-status">
-          Waiting for approval
+          {{_('Waiting for approval')}}
         </p>
       {% elif item.status == 'rejected' %}
         <p class="govuk-body govuk-hint file-list-status">
@@ -20,11 +20,14 @@
         </p>
       {% elif item.status == 'broadcasting' %}
         <p class="govuk-body live-broadcast file-list-status">
-          Live since {{ item.starts_at|format_datetime_relative }}
+          {{_("Live since %%s") % item.starts_at|format_datetime_relative}}
         </p>
       {% else %}
         <p class="govuk-body govuk-hint file-list-status">
-          {{ item.starts_at|format_date_human|title }} at {{ item.starts_at|format_time }}
+          {{_("%(starts_at_format_human)s at %(starts_at)s") % {
+            'start_at_format_human': item.starts_at|format_date_human|title,
+            'starts_at': item.starts_at|format_time,
+          }}}
         </p>
       {% endif %}
       <ul class="area-list">

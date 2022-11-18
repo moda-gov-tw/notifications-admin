@@ -21,13 +21,13 @@
       target_selector='.govuk-checkboxes__item',
       show=show_search_form,
       form=search_form,
-      label='Search by name',
+      label=_('Search by name'),
       autofocus=True)
   }}
 
   {% call form_wrapper() %}
     {{ form.areas }}
-    {{ sticky_page_footer('Continue') }}
+    {{ sticky_page_footer(_('Continue')) }}
   {% endcall %}
 
 {% endblock %}

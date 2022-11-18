@@ -7,7 +7,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Preview message
+  {{_('Preview message')}}
 {% endblock %}
 
 {% block backLink %}
@@ -31,7 +31,7 @@
   </div>
 
   {% call form_wrapper() %}
-    {{ page_footer('Submit for approval') }}
+    {{ page_footer(_('Submit for approval')) }}
   {% endcall %}
 
 {% endblock %}

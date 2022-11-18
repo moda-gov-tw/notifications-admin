@@ -48,53 +48,53 @@
       and current_user.has_permissions('create_broadcasts', 'approve_broadcasts', restrict_admin_usage=True) %}
       <div class="banner govuk-!-margin-bottom-6">
         <h1 class="govuk-heading-m govuk-!-margin-bottom-3">
-          {{ broadcast_message.template.name }} is waiting for approval
+          {{_("%%s is waiting for approval") % broadcast_message.template.name}}
         </h1>
         {% if current_service.live %}
           <p class="govuk-body">
-            You need another member of your team to approve your alert.
+            {{_('You need another member of your team to approve your alert.')}}
           </p>
           {{ page_footer(
             delete_link=url_for('main.reject_broadcast_message', service_id=current_service.id, broadcast_message_id=broadcast_message.id),
-            delete_link_text='Discard this alert'
+            delete_link_text=_('Discard this alert')
           ) }}
         {% elif current_user.has_permissions('approve_broadcasts', restrict_admin_usage=True) %}
           <p class="govuk-body govuk-!-margin-bottom-3">
-            When you use a live account you’ll need another member of
-            your team to approve your alert.
+            {{_("When you use a live account you’ll need another member of
+            your team to approve your alert.")}}
           </p>
           {% set approve_details %}
             {% call form_wrapper() %}
             <p class="govuk-body govuk-!-margin-top-2 govuk-!-margin-bottom-3">
-              Because you’re in training mode you can approve
-              your own alerts, to see how it works.
+              {{_("Because you’re in training mode you can approve
+              your own alerts, to see how it works.")}}
             </p>
             <p class="govuk-body govuk-!-margin-top-0 govuk-!-margin-bottom-3">
-              No real alerts will be broadcast to anyone’s phone.
+              {{_('No real alerts will be broadcast to anyone’s phone.')}}
             </p>
             {{ page_footer(
               "Start broadcasting now",
               delete_link=url_for('main.reject_broadcast_message', service_id=current_service.id, broadcast_message_id=broadcast_message.id),
-              delete_link_text='Reject this alert'
+              delete_link_text=_('Reject this alert')
             ) }}
             {% endcall %}
           {% endset %}
 
           {{ govukDetails({
             "classes": "govuk-!-margin-bottom-0",
-            "summaryText": "Approve your own alert",
+            "summaryText": _("Approve your own alert"),
             "html": approve_details
           }) }}
         {% elif current_user.has_permissions('create_broadcasts', restrict_admin_usage=True) %}
           <p class="govuk-body">
-            You need another member of your team to approve this alert.
+            {{_('You need another member of your team to approve this alert.')}}
           </p>
           <p class="govuk-body">
-            This service is in training mode. No real alerts will be sent.
+            {{_('This service is in training mode. No real alerts will be sent.')}}
           </p>
           {{ page_footer(
             delete_link=url_for('main.reject_broadcast_message', service_id=current_service.id, broadcast_message_id=broadcast_message.id),
-            delete_link_text='Discard this alert'
+            delete_link_text=_('Discard this alert')
           ) }}
         {% endif %}
       </div>
@@ -102,12 +102,10 @@
       {% call form_wrapper(class="banner govuk-!-margin-bottom-6") %}
         <h1 class="govuk-heading-m govuk-!-margin-top-0 govuk-!-margin-bottom-3">
           {% if broadcast_message.created_by %}
-            {{ broadcast_message.created_by.name }}
+            {{_("%%s wants to broadcast %%s") % (broadcast_message.created_by.name, broadcast_message.template.name)}}
           {% else %}
-            An API call
+            {{_("An API call wants to broadcast %%s") % broadcast_message.template.name}}
           {% endif %}
-          wants to broadcast
-          {{ broadcast_message.template.name }}
         </h1>
         {% if current_service.live %}
           {{ form.confirm(param_extensions={
@@ -117,36 +115,36 @@
           }) }}
         {% else %}
           <p class="govuk-body govuk-!-margin-bottom-3">
-            No phones will get this alert.
+            {{_('No phones will get this alert.')}}
           </p>
         {% endif %}
         {{ page_footer(
           "Start broadcasting now",
           delete_link=url_for('main.reject_broadcast_message', service_id=current_service.id, broadcast_message_id=broadcast_message.id),
-          delete_link_text='Reject this alert'
+          delete_link_text=_('Reject this alert')
         ) }}
       {% endcall %}
     {% elif current_user.has_permissions('create_broadcasts', restrict_admin_usage=True) %}
       <div class="banner govuk-!-margin-bottom-6">
         <h1 class="govuk-heading-m govuk-!-margin-bottom-3">This alert is waiting for approval</h1>
         <p class="govuk-body">
-          Another member of your team needs to approve this alert.
+          {{_('Another member of your team needs to approve this alert.')}}
         </p>
         {% if not current_service.live %}
           <p class="govuk-body">
-            This service is in training mode. No real alerts will be sent.
+            {{_('This service is in training mode. No real alerts will be sent.')}}
           </p>
         {% endif %}
         {{ page_footer(
           delete_link=url_for('main.reject_broadcast_message', service_id=current_service.id, broadcast_message_id=broadcast_message.id),
-          delete_link_text='Reject this alert'
+          delete_link_text=_('Reject this alert')
           ) }}
       </div>
     {% else %}
       <div class="banner govuk-!-margin-bottom-6">
-        <h1 class="govuk-heading-m govuk-!-margin-bottom-3">This alert is waiting for approval</h1>
+        <h1 class="govuk-heading-m govuk-!-margin-bottom-3">{{_('This alert is waiting for approval')}}</h1>
         <p class="govuk-body">
-          You don’t have permission to approve alerts.
+          {{_('You don’t have permission to approve alerts.')}}
         </p>
       </div>
     {% endif %}
@@ -157,18 +155,16 @@
       <p class="govuk-body govuk-!-margin-bottom-2 live-broadcast live-broadcast--left">
         Live since {{ broadcast_message.starts_at|format_datetime_relative }}&ensp;
         {%- if not hide_stop_link %}
-          <a href="{{ url_for('.cancel_broadcast_message', service_id=current_service.id, broadcast_message_id=broadcast_message.id) }}" class="destructive-link destructive-link--no-visited-state">Stop sending</a>
+          <a href="{{ url_for('.cancel_broadcast_message', service_id=current_service.id, broadcast_message_id=broadcast_message.id) }}" class="destructive-link destructive-link--no-visited-state">{{_('Stop sending')}}</a>
         {% endif %}
       </p>
     {% elif broadcast_message.status == 'rejected' %}
       <p class="govuk-body govuk-!-margin-bottom-4">
-        Rejected
-        {{ broadcast_message.updated_at|format_datetime_human }}.
+        {{_("Rejected %%s.") % broadcast_message.updated_at|format_datetime_human}}
       </p>
     {% else %}
       <p class="govuk-body govuk-!-margin-bottom-4">
-        Sent
-        {{ broadcast_message.starts_at|format_datetime_human }}.
+        {{_("Sent %%s.") % broadcast_message.starts_at|format_datetime_human}}
       </p>
     {% endif %}
 
@@ -190,7 +186,7 @@
 
   <div class="area-list-map-details">
     {{ govukDetails({
-      "summaryText": "Show map of areas",
+      "summaryText": _("Show map of areas"),
       "html": map(broadcast_message)
     }) }}
   </div>
@@ -198,12 +194,12 @@
   {% if broadcast_message.status != 'pending-approval' %}
     <p class="govuk-body govuk-!-margin-bottom-3">
       {% if broadcast_message.created_by %}
-        Created by {{ broadcast_message.created_by.name }}
+        {{_("Created by %%s") % broadcast_message.created_by.name}}
       {%- else %}
-        Created from an API call
+        {{_('Created from an API call')}}
       {%- endif %}
       {%- if broadcast_message.approved_by %}
-        and approved by {{ broadcast_message.approved_by.name }}
+        {{_("and approved by %%s") % broadcast_message.approved_by.name}}
       {%- endif %}
       {{- '.' }}
     </p>
@@ -211,16 +207,15 @@
 
   {% if broadcast_message.status == 'broadcasting' %}
     <p class="govuk-body">
-      Broadcasting stops {{ broadcast_message.finishes_at|format_datetime_human }}.
+      {{_("Broadcasting stops %%s.") % broadcast_message.finishes_at|format_datetime_human}}
     </p>
   {% elif broadcast_message.status == 'cancelled' %}
     <p class="govuk-body">
-      Stopped by {{ broadcast_message.cancelled_by }}
-      {{ broadcast_message.cancelled_at|format_datetime_human }}.
+      {{_("Stopped by %%s %%s.") % (broadcast_message.cancelled_by, broadcast_message.cancelled_at|format_datetime_human)}}
     </p>
   {% elif broadcast_message.status == 'completed' %}
     <p class="govuk-body">
-      Finished broadcasting {{ broadcast_message.finishes_at|format_datetime_human }}.
+      {{_("Finished broadcasting %%s.") % broadcast_message.finishes_at|format_datetime_human}}
     </p>
   {% endif %}
 

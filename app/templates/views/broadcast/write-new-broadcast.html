@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  New alert
+  {{_('New alert')}}
 {% endblock %}
 
 
@@ -16,15 +16,15 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('New alert')}}
+  {{ page_header(_('New alert'))}}
 
   {% call form_wrapper() %}
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         {{ form.name(param_extensions={
           "classes": "govuk-!-width-full",
-          "hint": {"text": "Your recipients will not see this"},
-          "label": {"text": "Reference"}
+          "hint": {"text": _("Your recipients will not see this")},
+          "label": {"text": _("Reference")}
         }) }}
         {{ textbox(
           form.template_content,
@@ -41,7 +41,7 @@
             &nbsp;
           </div>
         </div>
-        {{ page_footer('Continue') }}
+        {{ page_footer(_('Continue')) }}
       </div>
     </div>
   {% endcall %}

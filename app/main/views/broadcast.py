@@ -1,4 +1,5 @@
 from flask import abort, flash, jsonify, redirect, render_template, request, url_for
+from flask_babel import _
 
 from app import current_service
 from app.main import main
@@ -62,8 +63,8 @@ def broadcast_dashboard_previous(service_id):
             "cancelled",
             "completed",
         ),
-        page_title="Past alerts",
-        empty_message="You do not have any past alerts",
+        page_title=_("Past alerts"),
+        empty_message=_("You do not have any past alerts"),
         view_broadcast_endpoint=".view_previous_broadcast",
     )
 
@@ -77,8 +78,8 @@ def broadcast_dashboard_rejected(service_id):
         broadcasts=BroadcastMessages(service_id).with_status(
             "rejected",
         ),
-        page_title="Rejected alerts",
-        empty_message="You do not have any rejected alerts",
+        page_title=_("Rejected alerts"),
+        empty_message=_("You do not have any rejected alerts"),
         view_broadcast_endpoint=".view_rejected_broadcast",
     )
 
@@ -96,7 +97,7 @@ def get_broadcast_dashboard_partials(service_id):
         current_broadcasts=render_template(
             "views/broadcast/partials/dashboard-table.html",
             broadcasts=broadcast_messages.with_status("pending-approval", "broadcasting"),
-            empty_message="You do not have any current alerts",
+            empty_message=_("You do not have any current alerts"),
             view_broadcast_endpoint=".view_current_broadcast",
         ),
     )
@@ -231,7 +232,7 @@ def choose_broadcast_area(service_id, broadcast_message_id, library_slug):
             search_form=SearchByNameForm(),
             show_search_form=(len(library) > 7),
             library=library,
-            page_title=f"Choose a {library.name_singular.lower()}",
+            page_title=_("Choose a %s") % library.name_singular.lower(),
             broadcast_message=broadcast_message,
         )
 
@@ -250,7 +251,7 @@ def choose_broadcast_area(service_id, broadcast_message_id, library_slug):
         form=form,
         search_form=SearchByNameForm(),
         show_search_form=(len(form.areas.choices) > 7),
-        page_title=f"Choose {library.name[0].lower()}{library.name[1:]}",
+        page_title=_("Choose %s") % (library.name[0].lower() + library.name[1:]),
         broadcast_message=broadcast_message,
     )
 
@@ -293,7 +294,7 @@ def choose_broadcast_sub_area(service_id, broadcast_message_id, library_slug, ar
 
     form = BroadcastAreaFormWithSelectAll.from_library(
         [] if is_county else area.sub_areas,
-        select_all_choice=(area.id, f"All of {area.name}"),
+        select_all_choice=(area.id, _("All of %s") % area.name),
     )
     if form.validate_on_submit():
         broadcast_message.add_areas(*form.selected_areas)
@@ -313,7 +314,7 @@ def choose_broadcast_sub_area(service_id, broadcast_message_id, library_slug, ar
             search_form=SearchByNameForm(),
             show_search_form=(len(area.sub_areas) > 7),
             library_slug=library_slug,
-            page_title=f"Choose an area of {area.name}",
+            page_title=_("Choose an area of %s") % area.name,
             broadcast_message=broadcast_message,
             county=area,
             back_link=back_link,
@@ -325,7 +326,7 @@ def choose_broadcast_sub_area(service_id, broadcast_message_id, library_slug, ar
         search_form=SearchByNameForm(),
         show_search_form=(len(form.areas.choices) > 7),
         library_slug=library_slug,
-        page_title=f"Choose an area of {area.name}",
+        page_title=_("Choose an area of %s") % area.name,
         broadcast_message=broadcast_message,
         back_link=back_link,
     )
