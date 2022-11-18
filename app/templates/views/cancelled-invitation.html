@@ -1,16 +1,16 @@
 {% extends "withoutnav_template.html" %}
-{% block per_page_title %}The invitation you were sent has been cancelled{% endblock %}
+{% block per_page_title %}{{_('The invitation you were sent has been cancelled')}}{% endblock %}
 {% block maincolumn_content %}
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <h1 class="heading-large">
-          The invitation you were sent has been cancelled
+          {{_('The invitation you were sent has been cancelled')}}
         </h1>
         <p class="govuk-body">
-          {{ from_user }} decided to cancel this invitation.
+          {{_("%%(from_user)s decided to cancel this invitation.") % {'from_user': from_user} }}
         </p>
         <p class="govuk-body">
-          If you need access to {{ service_name or organisation_name }}, you’ll have to ask them to invite you again.
+          {{_("If you need access to %%s, you’ll have to ask them to invite you again.") % (service_name or organisation_name) }}
         </p>
       </div>
     </div>

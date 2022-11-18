@@ -1,4 +1,5 @@
 from flask import abort, flash, redirect, render_template, session, url_for
+from flask_babel import _
 from flask_login import current_user
 from markupsafe import Markup
 
@@ -14,14 +15,14 @@ def accept_invite(token):
 
     if not current_user.is_anonymous and current_user.email_address.lower() != invited_user.email_address.lower():
         message = Markup(
-            """
+            _(
+                """
             You’re signed in as {}.
             This invite is for another email address.
             <a href={} class="govuk-link govuk-link--no-visited-state">Sign out</a>
             and click the link again to accept this invite.
-            """.format(
-                current_user.email_address, url_for("main.sign_out")
-            )
+            """
+            ).format(current_user.email_address, url_for("main.sign_out"))
         )
 
         flash(message=message)
@@ -87,14 +88,14 @@ def accept_org_invite(token):
 
     if not current_user.is_anonymous and current_user.email_address.lower() != invited_org_user.email_address.lower():
         message = Markup(
-            """
+            _(
+                """
             You’re signed in as {}.
             This invite is for another email address.
             <a class="govuk-link govuk-link--no-visited-state" href={}>Sign out</a>
             and click the link again to accept this invite.
-            """.format(
-                current_user.email_address, url_for("main.sign_out")
-            )
+            """
+            ).format(current_user.email_address, url_for("main.sign_out"))
         )
 
         flash(message=message)

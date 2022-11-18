@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 16:47+0800\n"
+"POT-Creation-Date: 2022-11-18 16:51+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -149,6 +149,28 @@ msgstr ""
 msgid ""
 "There's no way to reverse this! Are you sure you want to archive this "
 "user?"
+msgstr ""
+
+#: main/views/invites.py:18
+msgid ""
+"\n"
+"            You’re signed in as {}.\n"
+"            This invite is for another email address.\n"
+"            <a href={} class=\"govuk-link govuk-link--no-visited-"
+"state\">Sign out</a>\n"
+"            and click the link again to accept this invite.\n"
+"            "
+msgstr ""
+
+#: main/views/invites.py:91
+msgid ""
+"\n"
+"            You’re signed in as {}.\n"
+"            This invite is for another email address.\n"
+"            <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href={}>Sign out</a>\n"
+"            and click the link again to accept this invite.\n"
+"            "
 msgstr ""
 
 #: templates/views/accessibility_statement.html:6
@@ -571,6 +593,21 @@ msgstr ""
 #: templates/views/add-service-local.html:29
 #: templates/views/add-service.html:25
 msgid "Add service"
+msgstr ""
+
+#: templates/views/cancelled-invitation.html:2
+#: templates/views/cancelled-invitation.html:7
+msgid "The invitation you were sent has been cancelled"
+msgstr ""
+
+#: templates/views/cancelled-invitation.html:10
+#, python-format
+msgid "%%(from_user)s decided to cancel this invitation."
+msgstr ""
+
+#: templates/views/cancelled-invitation.html:13
+#, python-format
+msgid "If you need access to %%s, you’ll have to ask them to invite you again."
 msgstr ""
 
 #: templates/views/choose-account.html:47
