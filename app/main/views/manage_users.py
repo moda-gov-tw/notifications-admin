@@ -1,4 +1,5 @@
 from flask import abort, flash, redirect, render_template, request, session, url_for
+from flask_babel import _
 from flask_login import current_user
 from notifications_python_client.errors import HTTPError
 
@@ -91,7 +92,7 @@ def invite_user(service_id, user_id=None):
             form.folder_permissions.data,
         )
 
-        flash("Invite sent to {}".format(invited_user.email_address), "default_with_tick")
+        flash(_("Invite sent to {}").format(invited_user.email_address), "default_with_tick")
         return redirect(url_for(".manage_users", service_id=service_id))
 
     return render_template(
@@ -156,7 +157,7 @@ def remove_user_from_service(service_id, user_id):
     try:
         service_api_client.remove_user_from_service(service_id, user_id)
     except HTTPError as e:
-        msg = "You cannot remove the only user for a service"
+        msg = _("You cannot remove the only user for a service")
         if e.status_code == 400 and msg in e.message:
             flash(msg, "info")
             return redirect(url_for(".manage_users", service_id=service_id))
@@ -277,5 +278,5 @@ def cancel_invited_user(service_id, invited_user_id):
 
     invited_user = InvitedUser.by_id_and_service_id(service_id, invited_user_id)
 
-    flash(f"Invitation cancelled for {invited_user.email_address}", "default_with_tick")
+    flash(_("Invitation cancelled for %%(mail)s") % {"mail": invited_user.email_address}, "default_with_tick")
     return redirect(url_for("main.manage_users", service_id=service_id))

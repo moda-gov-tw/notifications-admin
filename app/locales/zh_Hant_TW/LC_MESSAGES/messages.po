@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 17:24+0800\n"
+"POT-Creation-Date: 2022-11-18 17:45+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -239,6 +239,19 @@ msgstr ""
 
 #: main/views/letter_branding.py:97
 msgid "Error saving uploaded file - try uploading again"
+msgstr ""
+
+#: main/views/manage_users.py:95
+msgid "Invite sent to {}"
+msgstr ""
+
+#: main/views/manage_users.py:160
+msgid "You cannot remove the only user for a service"
+msgstr ""
+
+#: main/views/manage_users.py:281
+#, python-format
+msgid "Invitation cancelled for %%(mail)s"
 msgstr ""
 
 #: templates/partials/jobs/count-letters.html:17
@@ -989,6 +1002,36 @@ msgid ""
 "opens in a new tab)."
 msgstr ""
 
+#: templates/views/edit-user-permissions.html:19
+msgid "Are you sure you want to remove {}?"
+msgstr ""
+
+#: templates/views/edit-user-permissions.html:21
+msgid "Yes, remove"
+msgstr ""
+
+#: templates/views/edit-user-permissions.html:31
+msgid "Change<span class=\"govuk-visually-hidden\"> email address</span>"
+msgstr ""
+
+#: templates/views/edit-user-permissions.html:38
+msgid "Change<span class=\"govuk-visually-hidden\"> mobile number</span>"
+msgstr ""
+
+#: templates/views/api/callbacks/delivery-status-callback.html:39
+#: templates/views/edit-user-permissions.html:47
+#: templates/views/email-branding/manage-branding.html:42
+#: templates/views/find-users/auth_type.html:23
+#: templates/views/letter-branding/manage-letter-branding.html:44
+#: templates/views/manage-users/edit-user-email.html:23
+#: templates/views/manage-users/edit-user-mobile.html:24
+msgid "Save"
+msgstr ""
+
+#: templates/views/edit-user-permissions.html:49
+msgid "Remove this team member"
+msgstr ""
+
 #: templates/views/email-not-received.html:5
 #: templates/views/email-not-received.html:12
 #: templates/views/email-not-received.html:18
@@ -1483,6 +1526,59 @@ msgid ""
 msgstr ""
 "或 <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/invite-user.html:8 templates/views/manage-users.html:98
+msgid "Invite a team member"
+msgstr ""
+
+#: templates/views/invite-user.html:17
+msgid "Invite {}"
+msgstr ""
+
+#: templates/views/invite-user.html:36
+msgid "Send invitation email"
+msgstr ""
+
+#: templates/views/manage-users.html:7 templates/views/manage-users.html:13
+msgid "Team members"
+msgstr ""
+
+#: templates/views/manage-users.html:57
+msgid "Cannot see any folders"
+msgstr ""
+
+#: templates/views/manage-users.html:60
+#, python-format
+msgid "Can see %%(folder_count)s folders"
+msgstr ""
+
+#: templates/views/manage-users.html:62
+#, python-format
+msgid "Can see %%(folder_count)s folder"
+msgstr ""
+
+#: templates/views/manage-users.html:65
+msgid "Can see all folders"
+msgstr ""
+
+#: templates/views/manage-users.html:71
+#, python-format
+msgid "Signs in with %%(auth_type)s"
+msgstr ""
+
+#: templates/views/manage-users.html:80
+#, python-format
+msgid ""
+"Cancel invitation<span class=\"govuk-visually-hidden\"> for "
+"%%(user_mail)s</span>"
+msgstr ""
+
+#: templates/views/manage-users.html:84
+#, python-format
+msgid ""
+"Change details<span class=\"govuk-visually-hidden\"> for %%(user_name)s "
+"%%(user_mail)s</span>"
+msgstr ""
 
 #: templates/views/message-status.html:9 templates/views/message-status.html:14
 msgid "Delivery status"
@@ -2966,6 +3062,28 @@ msgstr ""
 "或 <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">登入</a> 如果之前已經註冊過"
 
+#: templates/views/user-already-invited.html:6
+#: templates/views/user-already-invited.html:15
+msgid "This person has already received an invite"
+msgstr ""
+
+#: templates/views/user-already-invited.html:18
+#, python-format
+msgid ""
+"%%(user_name)s has not accepted their invitation to\n"
+"    ‘%%(service_name)s yet. You do not need to do anything."
+msgstr ""
+
+#: templates/views/user-already-team-member.html:6
+#: templates/views/user-already-team-member.html:15
+msgid "This person is already a team member"
+msgstr ""
+
+#: templates/views/user-already-team-member.html:18
+#, python-format
+msgid "%%(user_name)s is already member of ‘%%(service_name)s’."
+msgstr ""
+
 #: templates/views/using-notify.html:5 templates/views/using-notify.html:12
 #: templates/views/using-notify.html:16
 msgid "Using Notify"
@@ -3181,13 +3299,6 @@ msgstr ""
 #: templates/views/api/callbacks/delivery-status-callback.html:35
 #: templates/views/api/callbacks/received-text-messages-callback.html:32
 msgid "At least 10 characters"
-msgstr ""
-
-#: templates/views/api/callbacks/delivery-status-callback.html:39
-#: templates/views/email-branding/manage-branding.html:42
-#: templates/views/find-users/auth_type.html:23
-#: templates/views/letter-branding/manage-letter-branding.html:44
-msgid "Save"
 msgstr ""
 
 #: templates/views/api/callbacks/received-text-messages-callback.html:8
@@ -4788,6 +4899,73 @@ msgstr ""
 msgid ""
 "Logos should be SVG files, cropped to artwork bounds and with all fonts "
 "outlined."
+msgstr ""
+
+#: templates/views/manage-users/confirm-edit-user-email.html:8
+#: templates/views/manage-users/confirm-edit-user-email.html:18
+msgid "Confirm change of email address"
+msgstr ""
+
+#: templates/views/manage-users/confirm-edit-user-email.html:23
+msgid "New email address:"
+msgstr ""
+
+#: templates/views/manage-users/confirm-edit-user-email.html:27
+#, python-format
+msgid "We will send %%(user_name)s an email to tell them about the change."
+msgstr ""
+
+#: templates/views/manage-users/confirm-edit-user-email.html:28
+#: templates/views/manage-users/confirm-edit-user-mobile-number.html:27
+msgid "Confirm"
+msgstr ""
+
+#: templates/views/manage-users/confirm-edit-user-mobile-number.html:8
+#: templates/views/manage-users/confirm-edit-user-mobile-number.html:17
+msgid "Confirm change of mobile number"
+msgstr ""
+
+#: templates/views/manage-users/confirm-edit-user-mobile-number.html:22
+msgid "New mobile number:"
+msgstr ""
+
+#: templates/views/manage-users/confirm-edit-user-mobile-number.html:26
+#, python-format
+msgid "We will send %%(user_name)s a text message to tell them about the change."
+msgstr ""
+
+#: templates/views/manage-users/edit-user-email.html:8
+#: templates/views/manage-users/edit-user-email.html:18
+msgid "Change team member’s email address"
+msgstr ""
+
+#: templates/views/manage-users/edit-user-email.html:20
+#, python-format
+msgid "This will change the email address for %%s."
+msgstr ""
+
+#: templates/views/manage-users/edit-user-mobile.html:8
+#: templates/views/manage-users/edit-user-mobile.html:17
+msgid "Change team member’s mobile number"
+msgstr ""
+
+#: templates/views/manage-users/edit-user-mobile.html:19
+#, python-format
+msgid "This will change the mobile number for %%(user_name)s."
+msgstr ""
+
+#: templates/views/manage-users/permissions.html:9
+msgid "Platform admin users can access all template folders."
+msgstr ""
+
+#: templates/views/manage-users/permissions.html:16
+msgid "This user will login with a security key."
+msgstr ""
+
+#: templates/views/manage-users/permissions.html:22
+msgid ""
+"Not available because this team member has not added a phone&nbsp;number "
+"to their profile"
 msgstr ""
 
 #: templates/views/service-settings/letter-preview.html:6

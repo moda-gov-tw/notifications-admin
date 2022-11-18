@@ -5,7 +5,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block per_page_title %}
-  Confirm change of email address
+  {{_('Confirm change of email address')}}
 {% endblock %}
 
 
@@ -15,17 +15,17 @@
 
 {% block maincolumn_content %}
 
-{{ page_header('Confirm change of email address') }}
+{{ page_header(_('Confirm change of email address')) }}
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
   {% call form_wrapper() %}
-    <p class="govuk-body">New email address:</p>
+    <p class="govuk-body">{{_('New email address:')}}</p>
     <div class="govuk-inset-text govuk-!-margin-top-0">
       <p class="govuk-body">{{ new_email }}</p>
     </div>
-    <p class="govuk-body">We will send {{ user.name }} an email to tell them about the change.</p>
-    {{ page_footer('Confirm') }}
+    <p class="govuk-body">{{_("We will send %%(user_name)s an email to tell them about the change.") % {'user_name': user.name}}}</p>
+    {{ page_footer(_('Confirm')) }}
   {% endcall %}
   </div>
 </div>

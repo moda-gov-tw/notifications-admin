@@ -4,13 +4,13 @@
 {% from "govuk_frontend_jinja/components/button/macro.html" import govukButton %}
 
 {% block service_page_title %}
-  Team members
+  {{_('Team members')}}
 {% endblock %}
 
 {% block maincolumn_content %}
 
   <h1 class="heading-medium">
-    Team members
+    {{_('Team members')}}
   </h1>
 
   {% if show_search_box %}
@@ -54,27 +54,35 @@
                 {% set folder_count = user.template_folders_for_service(current_service) | length %}
 
                 {% if folder_count == 0 %}
-                  Cannot see any folders
+                  {{_('Cannot see any folders')}}
                 {% elif folder_count != current_service.all_template_folders | length %}
-                  Can see {{ folder_count }} folder{% if folder_count > 1 %}s{% endif %}
+                  {% if folder_count > 1 %}
+                  {{_("Can see %%(folder_count)s folders") % folder_count}}
+                  {% else %}
+                  {{_("Can see %%(folder_count)s folder") % folder_count}}
+                  {% endif %}
                 {% else %}
-                  Can see all folders
+                  {{_('Can see all folders')}}
                 {% endif%}
               </p>
             {% endif %}
             {% if current_service.has_permission('email_auth') %}
               <p class="govuk-body tick-cross-list-hint">
-                Signs in with
-                {{ user.auth_type | format_auth_type(with_indefinite_article=True) }}
+                {{_("Signs in with %%(auth_type)s")
+                % {'auth_type': user.auth_type | format_auth_type(with_indefinite_article=True)} }}
               </p>
             {% endif %}
             </div>
             <div class="govuk-grid-column-one-quarter">
               {% if current_user.has_permissions('manage_service') %}
                 {% if user.status == 'pending' %}
-                  <a class="user-list-edit-link govuk-link govuk-link--no-visited-state" href="{{ url_for('.cancel_invited_user', service_id=current_service.id, invited_user_id=user.id)}}">Cancel invitation<span class="govuk-visually-hidden"> for {{ user.email_address }}</span></a>
+                  <a class="user-list-edit-link govuk-link govuk-link--no-visited-state" href="{{ url_for('.cancel_invited_user', service_id=current_service.id, invited_user_id=user.id)}}">
+                    {{_("Cancel invitation<span class=\"govuk-visually-hidden\"> for %%(user_mail)s</span>") % {'user_mail': user.email_address}}}
+                  </a>
                 {% elif user.is_editable_by(current_user) %}
-                  <a class="user-list-edit-link govuk-link govuk-link--no-visited-state" href="{{ url_for('.edit_user_permissions', service_id=current_service.id, user_id=user.id)}}">Change details<span class="govuk-visually-hidden"> for {{ user.name }} {{ user.email_address }}</span></a>
+                  <a class="user-list-edit-link govuk-link govuk-link--no-visited-state" href="{{ url_for('.edit_user_permissions', service_id=current_service.id, user_id=user.id)}}">
+                    {{_("Change details<span class=\"govuk-visually-hidden\"> for %%(user_name)s %%(user_mail)s</span>") % {'user_name': user.name, 'user_mail': user.email_address}}}
+                  </a>
                 {% endif %}
               {% endif %}
             </div>
@@ -87,7 +95,7 @@
     <div class="js-stick-at-bottom-when-scrolling">
       {{ govukButton({
         "element": "a",
-        "text": "Invite a team member",
+        "text": _("Invite a team member"),
         "href": url_for('.invite_user', service_id=current_service.id),
         "classes": "govuk-button--secondary"
       }) }}

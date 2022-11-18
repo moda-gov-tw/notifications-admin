@@ -3,7 +3,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  This person is already a team member
+  {{_('This person is already a team member')}}
 {% endblock %}
 
 {% block backLink %}
@@ -12,10 +12,10 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('This person is already a team member') }}
+  {{ page_header(_('This person is already a team member')) }}
 
   <p class="govuk-body">
-    {{ user_to_invite.name }} is already member of ‘{{ current_service.name }}’.
+    {{_("%%(user_name)s is already member of ‘%%(service_name)s’.") % {'user_name': user_to_invite.name, 'service_name': current_service.name}}}
   </p>
 
 {% endblock %}

@@ -5,7 +5,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Invite a team member
+  {{_('Invite a team member')}}
 {% endblock %}
 
 {% block backLink %}
@@ -14,7 +14,7 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('Invite {}'.format(user_to_invite.name if user_to_invite else 'a team member')) }}
+  {{ page_header(_('Invite {}').format(user_to_invite.name if user_to_invite else 'a team member')) }}
 
   {% call form_wrapper() %}
 
@@ -33,7 +33,7 @@
 
     {% include 'views/manage-users/permissions.html' %}
 
-    {{ page_footer('Send invitation email') }}
+    {{ page_footer(_('Send invitation email')) }}
 
   {% endcall %}
 

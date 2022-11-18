@@ -3,7 +3,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  This person has already received an invite
+  {{_('This person has already received an invite')}}
 {% endblock %}
 
 {% block backLink %}
@@ -12,11 +12,14 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('This person has already received an invite') }}
+  {{ page_header(_('This person has already received an invite')) }}
 
   <p class="govuk-body">
-    {{ user_to_invite.name }} has not accepted their invitation to
-    ‘{{ current_service.name }}’ yet. You do not need to do anything.
+    {{_("%%(user_name)s has not accepted their invitation to
+    ‘%%(service_name)s yet. You do not need to do anything.")}} % {
+      'user_name': user_to_invite.name,
+      'service_name': current_service.name,
+    }
   </p>
 
 {% endblock %}
