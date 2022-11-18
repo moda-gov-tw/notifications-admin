@@ -4,20 +4,20 @@
 {% from "components/pill.html" import pill %}
 
 {% block service_page_title %}
-  Audit events
+  {{_('Audit events')}}
 {% endblock %}
 
 {% block maincolumn_content %}
 
-  {{ page_header("Audit events") }}
+  {{ page_header(_("Audit events")) }}
 
   {% if show_navigation %}
     <div class="bottom-gutter">
       {{ pill(
         [
-          ('All', None, url_for('main.history', service_id=current_service.id), None),
-          ('Service settings', 'service', url_for('main.history', service_id=current_service.id, selected='service'), None),
-          ('API keys', 'api', url_for('main.history', service_id=current_service.id, selected='api'), None),
+          (_('All'), None, url_for('main.history', service_id=current_service.id), None),
+          (_('Service settings'), 'service', url_for('main.history', service_id=current_service.id, selected='service'), None),
+          (_('API keys'), 'api', url_for('main.history', service_id=current_service.id, selected='api'), None),
         ],
         request.args.get('selected'),
         show_count=False

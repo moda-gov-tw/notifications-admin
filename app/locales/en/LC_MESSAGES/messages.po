@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 16:41+0800\n"
+"POT-Creation-Date: 2022-11-18 16:44+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -2447,6 +2447,24 @@ msgid ""
 "member is pointing at a graph on the screen."
 msgstr ""
 
+#: templates/views/temp-history.html:7 templates/views/temp-history.html:12
+msgid "Audit events"
+msgstr ""
+
+#: templates/views/temp-history.html:18
+msgid "All"
+msgstr ""
+
+#: templates/views/temp-history.html:19
+msgid "Service settings"
+msgstr ""
+
+#: templates/views/api/index.html:18 templates/views/api/keys.html:8
+#: templates/views/api/keys.html:17 templates/views/api/keys.html:23
+#: templates/views/api/keys.html:26 templates/views/temp-history.html:20
+msgid "API keys"
+msgstr ""
+
 #: templates/views/terms-of-use.html:9 templates/views/terms-of-use.html:14
 msgid "Terms of use"
 msgstr ""
@@ -2779,12 +2797,6 @@ msgstr ""
 #: templates/views/api/callbacks.html:31 templates/views/dashboard/inbox.html:7
 #: templates/views/dashboard/inbox.html:17
 msgid "Received text messages"
-msgstr ""
-
-#: templates/views/api/index.html:18 templates/views/api/keys.html:8
-#: templates/views/api/keys.html:17 templates/views/api/keys.html:23
-#: templates/views/api/keys.html:26
-msgid "API keys"
 msgstr ""
 
 #: templates/views/api/index.html:21
