@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 17:45+0800\n"
+"POT-Creation-Date: 2022-11-18 17:49+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -1830,6 +1830,24 @@ msgid ""
 "Each letter has a unique ID. Our printer sends us the ID of every letter "
 "they destroy. We’ll contact you if the IDs match any of your letters. "
 "This is a partly manual process, so it can take a few weeks."
+msgstr ""
+
+#: templates/views/new-password.html:6 templates/views/new-password.html:15
+msgid "Create a new password"
+msgstr ""
+
+#: templates/views/new-password.html:18
+msgid "You can now create a new password for your account."
+msgstr ""
+
+#: templates/views/new-password.html:21
+msgid "At least 8 characters"
+msgstr ""
+
+#: templates/views/new-password.html:26
+msgid ""
+"Message about email address does not exist. Some one needs to figure out "
+"the words here."
 msgstr ""
 
 #: templates/views/notifications.html:9
