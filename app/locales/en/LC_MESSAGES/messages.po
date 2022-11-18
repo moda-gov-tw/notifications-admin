@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 13:40+0800\n"
+"POT-Creation-Date: 2022-11-18 13:45+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -66,42 +66,42 @@ msgstr ""
 msgid "revoke this API key"
 msgstr ""
 
-#: main/views/broadcast.py:65
+#: main/views/broadcast.py:66
 msgid "Past alerts"
 msgstr ""
 
-#: main/views/broadcast.py:66
+#: main/views/broadcast.py:67
 msgid "You do not have any past alerts"
 msgstr ""
 
-#: main/views/broadcast.py:80
+#: main/views/broadcast.py:81
 msgid "Rejected alerts"
 msgstr ""
 
-#: main/views/broadcast.py:81
+#: main/views/broadcast.py:82
 msgid "You do not have any rejected alerts"
 msgstr ""
 
-#: main/views/broadcast.py:99
+#: main/views/broadcast.py:100
 msgid "You do not have any current alerts"
 msgstr ""
 
-#: main/views/broadcast.py:234
+#: main/views/broadcast.py:235
 #, python-format
 msgid "Choose a %s"
 msgstr ""
 
-#: main/views/broadcast.py:253
+#: main/views/broadcast.py:254
 #, python-format
 msgid "Choose %s"
 msgstr ""
 
-#: main/views/broadcast.py:296
+#: main/views/broadcast.py:297
 #, python-format
 msgid "All of %s"
 msgstr ""
 
-#: main/views/broadcast.py:316 main/views/broadcast.py:328
+#: main/views/broadcast.py:317 main/views/broadcast.py:329
 #, python-format
 msgid "Choose an area of %s"
 msgstr ""
@@ -521,6 +521,33 @@ msgstr ""
 #: templates/views/add-service-local.html:29
 #: templates/views/add-service.html:25
 msgid "Add service"
+msgstr ""
+
+#: templates/views/choose-account.html:47
+#: templates/views/choose-account.html:53
+msgid "Choose service"
+msgstr ""
+
+#: templates/views/choose-account.html:62
+msgid "Platform admin"
+msgstr ""
+
+#: templates/views/choose-account.html:69
+#, python-format
+msgid "%%s organisations, %%s live services"
+msgstr ""
+
+#: templates/views/choose-account.html:79
+#: templates/views/choose-account.html:86
+msgid "Live services"
+msgstr ""
+
+#: templates/views/choose-account.html:94
+msgid "Trial mode services"
+msgstr ""
+
+#: templates/views/choose-account.html:113
+msgid "Add a new service"
 msgstr ""
 
 #: templates/views/cookies.html:6 templates/views/cookies.html:21

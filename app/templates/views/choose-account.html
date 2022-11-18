@@ -44,13 +44,13 @@
 {% endmacro %}
 
 {% block per_page_title %}
-  Choose service
+  {{_('Choose service')}}
 {% endblock %}
 
 {% block maincolumn_content %}
 
   <h1 class="heading-large {% if current_user.has_access_to_live_and_trial_mode_services %}govuk-visually-hidden{% endif %}">
-    Choose service
+    {{_('Choose service')}}
   </h1>
 
   <nav class="browse-list {% if current_user.has_access_to_live_and_trial_mode_services %}top-gutter-2-3{% endif %}">
@@ -59,14 +59,14 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-quarter">
           <h2>
-            Platform admin
+            {{_('Platform admin')}}
           </h2>
         </div>
         <ul class="govuk-grid-column-three-quarters">
           <li class="browse-list-item">
             <a href="{{ url_for('.organisations') }}" class="govuk-link govuk-link--no-visited-state">All organisations</a>
             <p class="browse-list-hint">
-              {{ org_count|format_thousands }} organisations, {{ live_service_count|format_thousands }} live services
+              {{_("%%s organisations, %%s live services") % (org_count|format_thousands, live_service_count|format_thousands)}}
             </p>
           </li>
         </ul>
@@ -76,14 +76,14 @@
 
     {% if current_user.organisations %}
       {{ service_list(
-        heading='Live services',
+        heading=_('Live services'),
         show_heading=current_user.trial_mode_services or current_user.platform_admin,
         organisations=current_user.organisations,
         services=current_user.live_services
       ) }}
     {% else %}
       {{ service_list(
-        heading='Live services',
+        heading=_('Live services'),
         show_heading=(current_user.trial_mode_services and current_user.live_services) or current_user.platform_admin,
         services=current_user.live_services
       ) }}
@@ -91,7 +91,7 @@
 
     {% if current_user.trial_mode_services %}
       {{ service_list(
-        heading='Trial mode services',
+        heading=_('Trial mode services'),
         show_heading=(current_user.organisations or current_user.live_services or current_user.platform_admin),
         services=current_user.trial_mode_services
       ) }}
@@ -110,7 +110,7 @@
       {% endif %}
       {{ govukButton({
         "element": "a",
-        "text": "Add a new service",
+        "text": _("Add a new service"),
         "href": url_for('.add_service'),
         "classes": "govuk-button--secondary"
       }) }}
