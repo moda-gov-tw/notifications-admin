@@ -5,7 +5,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block per_page_title %}
-  Confirm that you accept the agreement
+  {{_('Confirm that you accept the agreement')}}
 {% endblock %}
 
 
@@ -18,21 +18,21 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-five-sixths">
 
-    {{ page_header('Confirm that you accept the agreement') }}
+    {{ page_header(_('Confirm that you accept the agreement')) }}
 
     {% call form_wrapper(class='top-gutter') %}
 
       {% if current_service.organisation.agreement_signed_on_behalf_of_name and current_service.organisation.agreement_signed_on_behalf_of_email_address %}
         <p class="govuk-body">
-          I confirm that I have the legal authority to accept the GOV.UK Notify data sharing and financial agreement (version {{ current_service.organisation.agreement_signed_version }}) on behalf of {{ current_service.organisation.agreement_signed_on_behalf_of_name }} ({{ current_service.organisation.agreement_signed_on_behalf_of_email_address }}) and that {{ current_service.organisation.name }} will be bound by it.
+          {{_("I confirm that I have the legal authority to accept the GOV.UK Notify data sharing and financial agreement (version %%s) on behalf of %%s (%%s) and that %%s will be bound by it.") % (current_service.organisation.agreement_signed_version, current_service.organisation.agreement_signed_on_behalf_of_name, current_service.organisation.agreement_signed_on_behalf_of_email_address,current_service.organisation.name)}}
         </p>
       {% else %}
         <p class="govuk-body">
-          I confirm that I have the legal authority to accept the GOV.UK Notify data sharing and financial agreement (version {{ current_service.organisation.agreement_signed_version }}) and that {{ current_service.organisation.name }} will be bound by it.
+          {{_("I confirm that I have the legal authority to accept the GOV.UK Notify data sharing and financial agreement (version %%s) and that %%s will be bound by it.") % (current_service.organisation.agreement_signed_version, current_service.organisation.name)}}
         </p>
       {% endif %}
 
-      {{ page_footer('Accept this agreement') }}
+      {{ page_footer(_('Accept this agreement')) }}
 
     {% endcall %}
 

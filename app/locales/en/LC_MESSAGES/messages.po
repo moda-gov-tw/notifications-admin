@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 11:22+0800\n"
+"POT-Creation-Date: 2022-11-18 11:41+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -18,14 +18,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
 
-#: main/views/add_service.py:40
+#: main/views/add_service.py:41
 msgid "Example text message template"
 msgstr ""
 
-#: main/views/add_service.py:42
+#: main/views/add_service.py:43
 msgid ""
 "Hey ((name)), I’m trying out Notify. Today is ((day of week)) and my "
 "favourite colour is ((colour))."
+msgstr ""
+
+#: main/views/add_service.py:91 templates/views/add-service-local.html:7
+#: templates/views/add-service-local.html:15
+#: templates/views/add-service.html:15
+msgid "About your service"
 msgstr ""
 
 #: templates/views/accessibility_statement.html:6
@@ -406,12 +412,6 @@ msgid ""
 "We decided which pages to test based on the most common tasks that GOV.UK"
 " Notify users need to complete. We also tested a sample of pages with "
 "common user interface components."
-msgstr ""
-
-#: templates/views/add-service-local.html:7
-#: templates/views/add-service-local.html:15
-#: templates/views/add-service.html:15
-msgid "About your service"
 msgstr ""
 
 #: templates/views/add-service-local.html:17
@@ -2446,6 +2446,44 @@ msgstr ""
 
 #: templates/views/using-notify.html:25
 msgid "text message replies"
+msgstr ""
+
+#: templates/views/agreement/agreement-accept.html:10
+#: templates/views/agreement/agreement-accept.html:22
+msgid "Accept our data sharing and financial agreement"
+msgstr ""
+
+#: templates/views/agreement/agreement-accept.html:37
+msgid "The version number is on the front page, for example ‘3.6’"
+msgstr ""
+
+#: templates/views/agreement/agreement-accept.html:41
+msgid "Continue"
+msgstr ""
+
+#: templates/views/agreement/agreement-confirm.html:8
+#: templates/views/agreement/agreement-confirm.html:21
+msgid "Confirm that you accept the agreement"
+msgstr ""
+
+#: templates/views/agreement/agreement-confirm.html:27
+#, python-format
+msgid ""
+"I confirm that I have the legal authority to accept the GOV.UK Notify "
+"data sharing and financial agreement (version %%s) on behalf of %%s (%%s)"
+" and that %%s will be bound by it."
+msgstr ""
+
+#: templates/views/agreement/agreement-confirm.html:31
+#, python-format
+msgid ""
+"I confirm that I have the legal authority to accept the GOV.UK Notify "
+"data sharing and financial agreement (version %%s) and that %%s will be "
+"bound by it."
+msgstr ""
+
+#: templates/views/agreement/agreement-confirm.html:35
+msgid "Accept this agreement"
 msgstr ""
 
 #: templates/views/features/emails.html:15

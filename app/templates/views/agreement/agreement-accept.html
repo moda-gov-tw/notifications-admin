@@ -7,7 +7,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block per_page_title %}
-  Accept our data sharing and financial agreement
+  {{_('Accept our data sharing and financial agreement')}}
 {% endblock %}
 
 {% block backLink %}
@@ -19,7 +19,7 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-five-sixths">
 
-    {{ page_header('Accept our data sharing and financial agreement') }}
+    {{ page_header(_('Accept our data sharing and financial agreement')) }}
 
     {% call form_wrapper(class='top-gutter') %}
 
@@ -34,11 +34,11 @@
       {% endcall %}
       {{ form.version(
         param_extensions={
-          "hint": {"text": "The version number is on the front page, for example ‘3.6’"},
+          "hint": {"text": _("The version number is on the front page, for example ‘3.6’")},
           "classes": "govuk-!-width-one-third"}
       ) }}
 
-      {{ page_footer('Continue') }}
+      {{ page_footer(_('Continue')) }}
 
     {% endcall %}
 
