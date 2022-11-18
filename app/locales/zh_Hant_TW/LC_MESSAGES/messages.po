@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 17:49+0800\n"
+"POT-Creation-Date: 2022-11-18 21:33+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -252,6 +252,16 @@ msgstr ""
 #: main/views/manage_users.py:281
 #, python-format
 msgid "Invitation cancelled for %%(mail)s"
+msgstr ""
+
+#: main/views/new_password.py:32
+msgid ""
+"The link in the email we sent you has expired. Enter your email address "
+"to resend."
+msgstr ""
+
+#: main/views/new_password.py:38
+msgid "The link in the email has already been used"
 msgstr ""
 
 #: templates/partials/jobs/count-letters.html:17
