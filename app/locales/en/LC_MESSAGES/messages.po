@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-19 14:43+0800\n"
+"POT-Creation-Date: 2022-11-19 15:23+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -649,7 +649,7 @@ msgid ""
 "file as CSV."
 msgstr ""
 
-#: main/views/send.py:216
+#: main/views/send.py:216 main/views/templates.py:817
 msgid "(Default)"
 msgstr ""
 
@@ -814,6 +814,116 @@ msgstr ""
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
 "href=\"%%s\" class='govuk-link'>Forgotten your password?</a>"
+msgstr ""
+
+#: main/views/templates.py:133
+msgid "Select at least one template or folder"
+msgstr ""
+
+#: main/views/templates.py:183 templates/views/temp-history.html:18
+msgid "All"
+msgstr ""
+
+#: main/views/templates.py:184
+msgid "Text message"
+msgstr ""
+
+#: main/views/templates.py:185 templates/views/providers/providers.html:43
+#: templates/views/register-from-invite.html:25
+msgid "Email"
+msgstr ""
+
+#: main/views/templates.py:186
+#: templates/views/dashboard/template-statistics.html:27
+#: templates/views/notifications/invalid_precompiled_letter.html:4
+#: templates/views/notifications/invalid_precompiled_letter.html:9
+msgid "Letter"
+msgstr ""
+
+#: main/views/templates.py:187
+msgid "Broadcast"
+msgstr ""
+
+#: main/views/templates.py:223
+msgid "An example letter"
+msgstr ""
+
+#: main/views/templates.py:224
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing and typesetting "
+"industry.\n"
+"\n"
+"Lorem Ipsum has been the industry’s standard dummy text ever since the "
+"1500s, when an unknown printer took a galley of type and scrambled it to "
+"make a type specimen book.\n"
+"\n"
+"# History\n"
+"\n"
+"It has survived not only\n"
+"\n"
+"* five centuries\n"
+"* but also the leap into electronic typesetting\n"
+"\n"
+"It was popularised in the 1960s with the release of Letraset sheets "
+"containing Lorem Ipsum passages, and more recently with desktop "
+"publishing software like Aldus PageMaker including versions of Lorem "
+"Ipsum.\n"
+"\n"
+"The point of using Lorem Ipsum is that it has a more-or-less normal "
+"distribution of letters, as opposed to using ‘Content here, content "
+"here’, making it look like readable English."
+msgstr ""
+
+#: main/views/templates.py:470 main/views/templates.py:488
+msgid "You must empty this folder before you can delete it"
+msgstr ""
+
+#: main/views/templates.py:486
+msgid "Folder is not empty"
+msgstr ""
+
+#: main/views/templates.py:500
+msgid "Are you sure you want to delete the ‘{}’ folder?"
+msgstr ""
+
+#: main/views/templates.py:635 templates/views/templates/_template.html:54
+msgid "Edit"
+msgstr ""
+
+#: main/views/templates.py:675 main/views/templates.py:686
+#, python-format
+msgid "You have %%s too many"
+msgstr ""
+
+#: main/views/templates.py:679
+#, python-format
+msgid "Will be charged as %%s (not including personalisation)"
+msgstr ""
+
+#: main/views/templates.py:681
+#, python-format
+msgid "Will be charged as %%s"
+msgstr ""
+
+#: main/views/templates.py:690
+#, python-format
+msgid "You have %%s remaining"
+msgstr ""
+
+#: main/views/templates.py:712
+msgid "This template has never been used."
+msgstr ""
+
+#: main/views/templates.py:714
+msgid "This template was last used {}."
+msgstr ""
+
+#: main/views/templates.py:723
+msgid "Are you sure you want to delete ‘{}’?"
+msgstr ""
+
+#: main/views/templates.py:770
+msgid "Personalised content will be hidden for messages sent with this template"
 msgstr ""
 
 #: templates/partials/check/letter-too-long.html:2
@@ -999,6 +1109,191 @@ msgid ""
 "Upload this spreadsheet again tomorrow or <a class=\"govuk-link\" "
 "href=\"https://www.notifications.service.gov.uk/support\">contact the "
 "GOV.UK Notify team</a> to raise the limit."
+msgstr ""
+
+#: templates/partials/templates/guidance-character-count.html:1
+#: templates/views/pricing/index.html:75 templates/views/pricing/index.html:177
+msgid "Message length"
+msgstr ""
+
+#: templates/partials/templates/guidance-character-count.html:3
+msgid ""
+"If your message is long then it will\n"
+"  cost more."
+msgstr ""
+
+#: templates/partials/templates/guidance-character-count.html:7
+#, python-format
+msgid ""
+"See <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">pricing</a> for details."
+msgstr ""
+
+#: templates/partials/templates/guidance-formatting-letters.html:3
+msgid "Formatting"
+msgstr ""
+
+#: templates/partials/templates/guidance-formatting-letters.html:5
+msgid "To put a heading in your template, use a hash:"
+msgstr ""
+
+#: templates/partials/templates/guidance-formatting-letters.html:8
+msgid "# This is a heading"
+msgstr ""
+
+#: templates/partials/templates/guidance-formatting-letters.html:12
+#: templates/partials/templates/guidance-formatting.html:11
+msgid "To make bullet points, use asterisks:"
+msgstr ""
+
+#: templates/partials/templates/guidance-formatting-letters.html:15
+msgid ""
+"* point 1<br/>\n"
+"            * point 2<br/>\n"
+"            * point 3<br/>"
+msgstr ""
+
+#: templates/partials/templates/guidance-formatting-letters.html:21
+msgid "To insert a page break, use three asterisks:"
+msgstr ""
+
+#: templates/partials/templates/guidance-formatting-letters.html:24
+msgid ""
+"Content on page 1<br/>\n"
+"            <br/>\n"
+"            ***<br/>\n"
+"            <br/>\n"
+"            Content on page 2<br/>"
+msgstr ""
+
+#: templates/partials/templates/guidance-formatting.html:5
+msgid "To put a title in your template, use a hash:"
+msgstr ""
+
+#: templates/partials/templates/guidance-formatting.html:15
+msgid ""
+"* point 1<br/>\n"
+"             * point 2<br/>\n"
+"             * point 3<br/>"
+msgstr ""
+
+#: templates/partials/templates/guidance-formatting.html:22
+msgid "To add inset text, use a caret:"
+msgstr ""
+
+#: templates/partials/templates/guidance-formatting.html:25
+msgid "^ You must tell us if your circumstances change"
+msgstr ""
+
+#: templates/partials/templates/guidance-formatting.html:28
+msgid "To add a horizontal line, use three dashes:"
+msgstr ""
+
+#: templates/partials/templates/guidance-formatting.html:31
+msgid ""
+"<p class=\"govuk-body\">First paragraph</p>\n"
+"            <p class=\"govuk-body\" style=\"letter-spacing: "
+"1px;\">---</p>\n"
+"            <p class=\"govuk-body\">Second paragraph</p>"
+msgstr ""
+
+#: templates/partials/templates/guidance-links.html:3
+msgid "Links and URLs"
+msgstr ""
+
+#: templates/partials/templates/guidance-links.html:5
+msgid "Always use full URLs, starting with https://"
+msgstr ""
+
+#: templates/partials/templates/guidance-links.html:8
+msgid "Apply now at https://www.gov.uk/example"
+msgstr ""
+
+#: templates/partials/templates/guidance-optional-content.html:4
+msgid "Optional content"
+msgstr ""
+
+#: templates/partials/templates/guidance-optional-content.html:7
+msgid "Use double brackets and ‘??’ to define optional content."
+msgstr ""
+
+#: templates/partials/templates/guidance-optional-content.html:10
+msgid ""
+"For example if you only want to show something to people who are under\n"
+"  18:"
+msgstr ""
+
+#: templates/partials/templates/guidance-optional-content.html:14
+msgid ""
+"((under18??Please get your application signed by a parent or\n"
+"  guardian.))"
+msgstr ""
+
+#: templates/partials/templates/guidance-optional-content.html:19
+msgid ""
+"For each person you send this message to, specify ‘yes’ or ‘no’ to\n"
+"  show or hide this content."
+msgstr ""
+
+#: templates/partials/templates/guidance-personalisation.html:4
+msgid "Personalisation"
+msgstr ""
+
+#: templates/partials/templates/guidance-personalisation.html:7
+msgid "Use double brackets to personalise your message:"
+msgstr ""
+
+#: templates/partials/templates/guidance-personalisation.html:10
+msgid "Hello ((first name)), your reference is ((ref number))"
+msgstr ""
+
+#: templates/partials/templates/guidance-postage.html:2
+msgid "Delivery times"
+msgstr ""
+
+#: templates/partials/templates/guidance-postage.html:5
+msgid ""
+"Letters sent before 5:30pm are dispatched the next working day (Monday to"
+" Friday)."
+msgstr ""
+
+#: templates/partials/templates/guidance-postage.html:8
+msgid ""
+"First class letters are delivered one day after they're dispatched. "
+"Second class letters are delivered 2 days after they're dispatched."
+msgstr ""
+
+#: templates/partials/templates/guidance-postage.html:11
+msgid "Royal Mail delivers from Monday to Saturday, excluding bank holidays."
+msgstr ""
+
+#: templates/partials/templates/guidance-postage.html:14
+#, python-format
+msgid ""
+"See a list of <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">postage prices</a>."
+msgstr ""
+
+#: templates/partials/templates/guidance-send-a-document.html:4
+msgid "Send a document by email"
+msgstr ""
+
+#: templates/partials/templates/guidance-send-a-document.html:7
+msgid ""
+"Use double brackets to add a placeholder field to your template. This "
+"will contain a secure link to download the document."
+msgstr ""
+
+#: templates/partials/templates/guidance-send-a-document.html:10
+msgid "Download your document at: ((link_to_file))"
+msgstr ""
+
+#: templates/partials/templates/guidance-send-a-document.html:14
+#, python-format
+msgid ""
+"Next, use the API to upload your document. Follow the instructions to "
+"send a document by email in the <a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"%%s\">API documentation</a>."
 msgstr ""
 
 #: templates/views/accessibility_statement.html:6
@@ -1684,24 +1979,13 @@ msgid ""
 "opens in a new tab)."
 msgstr ""
 
-#: templates/views/edit-user-permissions.html:19
-msgid "Are you sure you want to remove {}?"
-msgstr ""
-
-#: templates/views/edit-user-permissions.html:21
-#: templates/views/organisations/organisation/users/index.html:17
-msgid "Yes, remove"
-msgstr ""
-
-#: templates/views/edit-user-permissions.html:31
-msgid "Change<span class=\"govuk-visually-hidden\"> email address</span>"
-msgstr ""
-
-#: templates/views/edit-user-permissions.html:38
-msgid "Change<span class=\"govuk-visually-hidden\"> mobile number</span>"
+#: templates/views/edit-broadcast-template.html:9
+#, python-format
+msgid "%%s template"
 msgstr ""
 
 #: templates/views/api/callbacks/delivery-status-callback.html:39
+#: templates/views/edit-broadcast-template.html:44
 #: templates/views/edit-user-permissions.html:47
 #: templates/views/email-branding/manage-branding.html:42
 #: templates/views/find-users/auth_type.html:23
@@ -1746,7 +2030,53 @@ msgstr ""
 #: templates/views/service-settings/sms-sender/edit.html:37
 #: templates/views/service-settings/sms-sender/edit.html:41
 #: templates/views/service-settings/sms-sender/edit.html:44
+#: templates/views/templates/edit-template-postage.html:22
+#: templates/views/templates/manage-template-folder.html:33
 msgid "Save"
+msgstr ""
+
+#: templates/views/edit-email-template.html:9
+#, python-format
+msgid "%%s email template"
+msgstr ""
+
+#: templates/views/broadcast/write-new-broadcast.html:26
+#: templates/views/edit-email-template.html:27
+#: templates/views/edit-letter-template.html:27
+#: templates/views/edit-sms-template.html:31
+msgid "Your recipients will not see this"
+msgstr ""
+
+#: templates/views/edit-letter-template.html:9
+#, python-format
+msgid "%%s letter template"
+msgstr ""
+
+#: templates/views/edit-sms-template.html:9
+#: templates/views/edit-sms-template.html:20
+#, python-format
+msgid "%%s text message template"
+msgstr ""
+
+#: templates/views/edit-sms-template.html:23
+msgid "Your message will start with your service name"
+msgstr ""
+
+#: templates/views/edit-user-permissions.html:19
+msgid "Are you sure you want to remove {}?"
+msgstr ""
+
+#: templates/views/edit-user-permissions.html:21
+#: templates/views/organisations/organisation/users/index.html:17
+msgid "Yes, remove"
+msgstr ""
+
+#: templates/views/edit-user-permissions.html:31
+msgid "Change<span class=\"govuk-visually-hidden\"> email address</span>"
+msgstr ""
+
+#: templates/views/edit-user-permissions.html:38
+msgid "Change<span class=\"govuk-visually-hidden\"> mobile number</span>"
 msgstr ""
 
 #: templates/views/edit-user-permissions.html:49
@@ -2971,11 +3301,6 @@ msgstr ""
 msgid "Your account will be created with this email address:"
 msgstr ""
 
-#: templates/views/providers/providers.html:43
-#: templates/views/register-from-invite.html:25
-msgid "Email"
-msgstr ""
-
 #: templates/views/register-from-invite.html:33
 #: templates/views/register-from-org-invite.html:20
 #: templates/views/register.html:26
@@ -3017,6 +3342,7 @@ msgstr ""
 #: templates/views/service-settings/set-email-branding-add-to-branding-pool-step.html:23
 #: templates/views/signin.html:40 templates/views/support/index.html:20
 #: templates/views/templates/set-sender.html:29
+#: templates/views/templates/set-template-sender.html:31
 msgid "Continue"
 msgstr ""
 
@@ -4228,10 +4554,6 @@ msgstr ""
 msgid "Audit events"
 msgstr ""
 
-#: templates/views/temp-history.html:18
-msgid "All"
-msgstr ""
-
 #: templates/views/temp-history.html:19
 msgid "Service settings"
 msgstr ""
@@ -4859,10 +5181,6 @@ msgstr ""
 msgid "Finished broadcasting %%s."
 msgstr ""
 
-#: templates/views/broadcast/write-new-broadcast.html:26
-msgid "Your recipients will not see this"
-msgstr ""
-
 #: templates/views/broadcast/partials/dashboard-table.html:15
 msgid "Waiting for approval"
 msgstr ""
@@ -5323,12 +5641,6 @@ msgstr ""
 
 #: templates/views/dashboard/template-statistics.html:16
 msgid "Messages sent"
-msgstr ""
-
-#: templates/views/dashboard/template-statistics.html:27
-#: templates/views/notifications/invalid_precompiled_letter.html:4
-#: templates/views/notifications/invalid_precompiled_letter.html:9
-msgid "Letter"
 msgstr ""
 
 #: templates/views/dashboard/template-statistics.html:41
@@ -6653,6 +6965,7 @@ msgstr ""
 
 #: templates/views/organisations/organisation/settings/add-email-branding-options.html:27
 #: templates/views/organisations/organisation/settings/add-letter-branding-options.html:27
+#: templates/views/templates/_move_to.html:38
 msgid "Nothing selected"
 msgstr ""
 
@@ -7403,10 +7716,6 @@ msgstr ""
 
 #: templates/views/pricing/index.html:74
 msgid "Text message pricing"
-msgstr ""
-
-#: templates/views/pricing/index.html:75 templates/views/pricing/index.html:177
-msgid "Message length"
 msgstr ""
 
 #: templates/views/pricing/index.html:75 templates/views/pricing/index.html:177
@@ -8846,6 +9155,102 @@ msgid ""
 "          message"
 msgstr ""
 
+#: templates/views/templates/_template.html:6
+#, python-format
+msgid "This template was deleted %%s."
+msgstr ""
+
+#: templates/views/templates/_template.html:10
+#, python-format
+msgid "If you need to send this %%s or edit this template, contact your manager."
+msgstr ""
+
+#: templates/views/templates/_template.html:24
+#: templates/views/templates/_template.html:47
+msgid ""
+"Get ready to send<span class=\"govuk-visually-hidden\"> a message using "
+"this template</span>"
+msgstr ""
+
+#: templates/views/templates/_template.html:32
+msgid "Get ready to send"
+msgstr ""
+
+#: templates/views/templates/_template.html:39
+msgid "Edit<span class=\"govuk-visually-hidden\"> this template</span>"
+msgstr ""
+
+#: templates/views/templates/_template.html:66
+msgid "Add logo"
+msgstr ""
+
+#: templates/views/templates/_template.html:68
+msgid "Change<span class=\"govuk-visually-hidden\"> postage</span>"
+msgstr ""
+
+#: templates/views/templates/_template.html:69
+msgid "Edit<span class=\"govuk-visually-hidden\"> letter template</span>"
+msgstr ""
+
+#: templates/views/templates/_template.html:71
+#: templates/views/templates/_template.html:73
+msgid "Edit<span class=\"govuk-visually-hidden\"> letter contact block</span>"
+msgstr ""
+
+#: templates/views/templates/_template_history.html:5
+msgid "Edit made"
+msgstr ""
+
+#: templates/views/templates/_template_history.html:7
+msgid "Created"
+msgstr ""
+
+#: templates/views/templates/_template_history.html:10
+#, python-format
+msgid "by %%s"
+msgstr ""
+
+#: templates/views/templates/action_blocked.html:7
+#: templates/views/templates/action_blocked.html:18
+msgid "{} are disabled"
+msgstr ""
+
+#: templates/views/templates/action_blocked.html:20
+#, python-format
+msgid "Sending %%s has been disabled for your service."
+msgstr ""
+
+#: templates/views/templates/action_blocked.html:23
+#, python-format
+msgid ""
+"If you need to send %%s\n"
+"        <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">get in touch with the GOV.UK Notify team</a>."
+msgstr ""
+
+#: templates/views/templates/breaking-change.html:10
+msgid "Confirm changes"
+msgstr ""
+
+#: templates/views/templates/breaking-change.html:24
+#, python-format
+msgid "You removed %%s"
+msgstr ""
+
+#: templates/views/templates/breaking-change.html:28
+#, python-format
+msgid "You added %%s"
+msgstr ""
+
+#: templates/views/templates/breaking-change.html:31
+#, python-format
+msgid "Before you send any messages, make sure your API calls include %%s."
+msgstr ""
+
+#: templates/views/templates/breaking-change.html:43
+msgid "Save changes to template"
+msgstr ""
+
 #: templates/views/templates/choose-reply.html:8
 #: templates/views/templates/choose-reply.html:14
 msgid "Choose a template"
@@ -8863,6 +9268,96 @@ msgstr ""
 msgid ""
 "You need to ask your service manager to add templates before you\n"
 "        can send text messages."
+msgstr ""
+
+#: templates/views/templates/choose.html:10
+msgid "Templates"
+msgstr ""
+
+#: templates/views/templates/choose.html:24
+msgid "You haven’t added any templates yet."
+msgstr ""
+
+#: templates/views/templates/choose.html:27
+msgid "You need a template before you can send emails, text messages or letters."
+msgstr ""
+
+#: templates/views/templates/choose.html:29
+msgid ""
+"You need to ask your service manager to add templates before you can send"
+" emails, text messages or letters."
+msgstr ""
+
+#: templates/views/templates/choose.html:47
+msgid "Manage<span class=\"govuk-visually-hidden\"> this folder</span>"
+msgstr ""
+
+#: templates/views/templates/choose_history.html:4
+#: templates/views/templates/choose_history.html:8
+msgid "Previous versions"
+msgstr ""
+
+#: templates/views/templates/choose_history.html:17
+msgid "Back to current templates"
+msgstr ""
+
+#: templates/views/templates/copy.html:5
+msgid "Copy an existing template"
+msgstr ""
+
+#: templates/views/templates/copy.html:19
+msgid "This folder is empty"
+msgstr ""
+
+#: templates/views/templates/edit-template-postage.html:8
+#: templates/views/templates/edit-template-postage.html:17
+msgid "Change postage"
+msgstr ""
+
+#: templates/views/templates/manage-template-folder.html:39
+msgid "Delete this folder"
+msgstr ""
+
+#: templates/views/templates/set-template-sender.html:6
+msgid "Set letter contact block"
+msgstr ""
+
+#: templates/views/templates/set-template-sender.html:32
+msgid "Add new sender"
+msgstr ""
+
+#: templates/views/templates/template.html:19
+msgid ""
+"You will not be able to see personalised content in Notify for this "
+"template"
+msgstr ""
+
+#: templates/views/templates/template.html:22
+msgid "You cannot undo this"
+msgstr ""
+
+#: templates/views/templates/template.html:57
+msgid "Last edited"
+msgstr ""
+
+#: templates/views/templates/template.html:64
+msgid "See previous versions"
+msgstr ""
+
+#: templates/views/templates/template.html:71
+msgid "Delete this template"
+msgstr ""
+
+#: templates/views/templates/template.html:78
+msgid "Hide personalisation after sending"
+msgstr ""
+
+#: templates/views/templates/template.html:81
+msgid "Personalisation is hidden after sending"
+msgstr ""
+
+#: templates/views/templates/template_history.html:21
+msgid "See all versions of this template"
 msgstr ""
 
 #: utils/templates.py:37

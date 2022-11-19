@@ -1,30 +1,30 @@
 {% from "govuk_frontend_jinja/components/inset-text/macro.html" import govukInsetText %}
 
-<h2 class="heading-medium">Formatting</h2>
+<h2 class="heading-medium">{{_('Formatting')}}</h2>
 <p class="govuk-body">
-  To put a heading in your template, use a hash:
+  {{_('To put a heading in your template, use a hash:')}}
 </p>
 {{ govukInsetText({
-  "text": "# This is a heading",
+  "text": _("# This is a heading"),
   "classes": "govuk-!-margin-top-0 govuk-!-margin-bottom-3"})
 }}
 <p class="govuk-body">
-  To make bullet points, use asterisks:
+  {{_('To make bullet points, use asterisks:')}}
 </p>
 {{ govukInsetText({
-  "html": "* point 1<br/>
+  "html": _("* point 1<br/>
             * point 2<br/>
-            * point 3<br/>",
+            * point 3<br/>"),
   "classes": "govuk-!-margin-top-0 govuk-!-margin-bottom-3"})
 }}
 <p class="govuk-body">
-  To insert a page break, use three asterisks:
+  {{_('To insert a page break, use three asterisks:')}}
 </p>
 {{ govukInsetText({
-  "html": "Content on page 1<br/>
+  "html": _("Content on page 1<br/>
             <br/>
             ***<br/>
             <br/>
-            Content on page 2<br/>",
+            Content on page 2<br/>"),
   "classes": "govuk-!-margin-top-0 govuk-!-margin-bottom-3"})
 }}

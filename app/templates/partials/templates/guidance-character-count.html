@@ -1,8 +1,8 @@
-<h2 class="heading-medium">Message length</h2>
+<h2 class="heading-medium">{{_('Message length')}}</h2>
 <p class="govuk-body">
-  If your message is long then it will
-  cost more.
+  {{_("If your message is long then it will
+  cost more.")}}
 </p>
 <p class="govuk-body">
-  See <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.pricing') }}">pricing</a> for details.
+  {{_("See <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">pricing</a> for details.") % url_for('.pricing')}}
 </p>

@@ -4,7 +4,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  {{ notification_type.capitalize() }} are disabled
+  {{_('{} are disabled').format(notification_type.capitalize())}}
 {% endblock %}
 
 {% block backLink %}
@@ -15,13 +15,16 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-five-sixths">
-      {{ page_header('{} are disabled'.format(notification_type.capitalize())) }}
+      {{ page_header(_('{} are disabled').format(notification_type.capitalize())) }}
       <p class="govuk-body">
-        Sending {{ 999|message_count_label(notification_type, suffix='') }} has been disabled for your service.
+        {{_('Sending %%s has been disabled for your service.') % (999|message_count_label(notification_type, suffix='')) }}
       </p>
       <p class="govuk-body">
-        If you need to send {{ 999|message_count_label(notification_type, suffix='') }}
-        <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.support') }}">get in touch with the GOV.UK Notify team</a>.
+        {{_("If you need to send %%s
+        <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">get in touch with the GOV.UK Notify team</a>.") % (
+          999|message_count_label(notification_type, suffix=''),
+          url_for('.support'),
+        )}}
       </p>
 
     </div>

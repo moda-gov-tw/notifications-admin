@@ -2,7 +2,7 @@
 {% from "components/live-search.html" import live_search %}
 
 {% extends "withnav_template.html" %}
-{% set page_title = "Copy an existing template" %}
+{% set page_title = _("Copy an existing template") %}
 
 {% block service_page_title %}
   {{ page_title }}
@@ -16,7 +16,7 @@
     </div>
     {% if not services_templates_and_folders.templates_to_show %}
       <p class="template-list-empty">
-        This folder is empty
+        {{_('This folder is empty')}}
       </p>
     {% else %}
       {{ live_search(

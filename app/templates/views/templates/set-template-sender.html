@@ -3,7 +3,7 @@
 {% from "components/form.html" import form_wrapper %}
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
-{% set page_title = 'Set letter contact block' %}
+{% set page_title = _('Set letter contact block') %}
 
 {% block service_page_title %}
   {{ page_title }}
@@ -28,8 +28,8 @@
         'classes': 'govuk-grid-column-three-quarters'
       }) }}
       <div class="govuk-grid-column-three-quarters">
-        {{ page_footer('Continue') }}
-        <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.service_add_letter_contact', service_id=current_service.id, from_template=template_id) }}">Add new sender</a>
+        {{ page_footer(_('Continue')) }}
+        <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.service_add_letter_contact', service_id=current_service.id, from_template=template_id) }}">{{_('Add new sender')}}</a>
     </div>
     {% endcall %}
   </div>

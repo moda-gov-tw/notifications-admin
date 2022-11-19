@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  {{ heading_action }} template
+  {{_('%%s template') % heading_action }}
 {% endblock %}
 
 {% block backLink %}
@@ -41,7 +41,7 @@
             &nbsp;
           </div>
         </div>
-        {{ page_footer('Save') }}
+        {{ page_footer(_('Save')) }}
       </div>
     </div>
   {% endcall %}

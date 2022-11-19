@@ -7,7 +7,7 @@
 
 {% extends "withnav_template.html" %}
 
-{% set page_title = 'Templates' %}
+{% set page_title = _('Templates') %}
 
 {% block service_page_title %}
   {{ page_title_folder_path(template_folder_path) }}
@@ -21,14 +21,13 @@
 
      <p class="govuk-body">
        {% if current_service.has_permission('broadcast') %}
-          You haven’t added any templates yet.
+          {{_('You haven’t added any templates yet.')}}
        {% else %}
          {% if current_user.has_permissions('manage_templates') %}
-           You need a template before you can
+           {{_('You need a template before you can send emails, text messages or letters.')}}
          {% else %}
-           You need to ask your service manager to add templates before you can
+           {{_('You need to ask your service manager to add templates before you can send emails, text messages or letters.')}}
          {% endif %}
-         send emails, text messages or letters.
        {% endif %}
      </p>
 
@@ -45,7 +44,7 @@
       </div>
       {% if current_user.has_permissions('manage_templates') and current_template_folder_id and user_has_template_folder_permission %}
         <div class="govuk-grid-column-one-sixth">
-          <a href="{{ url_for('.manage_template_folder', service_id=current_service.id, template_folder_id=current_template_folder_id) }}" class="govuk-link govuk-link--no-visited-state folder-heading-manage-link">Manage<span class="govuk-visually-hidden"> this folder</span></a>
+          <a href="{{ url_for('.manage_template_folder', service_id=current_service.id, template_folder_id=current_template_folder_id) }}" class="govuk-link govuk-link--no-visited-state folder-heading-manage-link">{{_("Manage<span class=\"govuk-visually-hidden\"> this folder</span>")}}</a>
         </div>
       {% endif %}
     </div>

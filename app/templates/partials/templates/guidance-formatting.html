@@ -2,34 +2,34 @@
 
 <h2 class="heading-medium">Formatting</h2>
 <p class="bottom-gutter-1-3">
-  To put a title in your template, use a hash:
+  {{_('To put a title in your template, use a hash:')}}
 </p>
 <div class="govuk-!-margin-bottom-6">
   {{ govukInsetText({"text": "# This is a title", "classes": "govuk-!-margin-top-0"})}}
 </div>
 <p class="bottom-gutter-1-3">
-  To make bullet points, use asterisks:
+  {{_('To make bullet points, use asterisks:')}}
 </p>
 <div class="govuk-!-margin-bottom-6">
   {{ govukInsetText({
-    "html": "* point 1<br/>
+    "html": _("* point 1<br/>
              * point 2<br/>
-             * point 3<br/>",
+             * point 3<br/>"),
     "classes": "govuk-!-margin-top-0"})
   }}
 </div>
 <p class="bottom-gutter-1-3">
-  To add inset text, use a caret:
+  {{_('To add inset text, use a caret:')}}
 </p>
 <div class="govuk-!-margin-bottom-6">
-  {{ govukInsetText({"text": "^ You must tell us if your circumstances change", "classes": "govuk-!-margin-top-0"})}}
+  {{ govukInsetText({"text": _("^ You must tell us if your circumstances change"), "classes": "govuk-!-margin-top-0"})}}
 </div>
 <p class="bottom-gutter-1-3">
-  To add a horizontal line, use three dashes:
+  {{_('To add a horizontal line, use three dashes:')}}
 </p>
 {{ govukInsetText({
-  "html": '<p class="govuk-body">First paragraph</p>
+  "html": _('<p class="govuk-body">First paragraph</p>
             <p class="govuk-body" style="letter-spacing: 1px;">---</p>
-            <p class="govuk-body">Second paragraph</p>',
+            <p class="govuk-body">Second paragraph</p>'),
   "classes": "govuk-!-margin-top-0"})
 }}

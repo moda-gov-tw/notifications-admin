@@ -1,6 +1,7 @@
 from functools import partial
 
 from flask import abort, flash, jsonify, redirect, render_template, request, url_for
+from flask_babel import _
 from flask_login import current_user
 from notifications_python_client.errors import HTTPError
 from notifications_utils import LETTER_MAX_PAGE_COUNT, SMS_CHAR_COUNT_LIMIT
@@ -129,7 +130,7 @@ def choose_template(service_id, template_type="all", template_folder_id=None):
         )
 
     if "templates_and_folders" in templates_and_folders_form.errors:
-        flash("Select at least one template or folder")
+        flash(_("Select at least one template or folder"))
 
     initial_state = request.args.get("initial_state")
     if request.method == "GET" and initial_state:
@@ -179,11 +180,11 @@ def process_folder_management_form(form, current_folder_id):
 
 def get_template_nav_label(value):
     return {
-        "all": "All",
-        "sms": "Text message",
-        "email": "Email",
-        "letter": "Letter",
-        "broadcast": "Broadcast",
+        "all": _("All"),
+        "sms": _("Text message"),
+        "email": _("Email"),
+        "letter": _("Letter"),
+        "broadcast": _("Broadcast"),
     }[value]
 
 
@@ -219,8 +220,8 @@ def view_letter_template_preview(service_id, template_id, filetype):
 @user_is_platform_admin
 def letter_branding_preview_image(filename):
     template = {
-        "subject": "An example letter",
-        "content": (
+        "subject": _("An example letter"),
+        "content": _(
             "Lorem Ipsum is simply dummy text of the printing and typesetting "
             "industry.\n\nLorem Ipsum has been the industry’s standard dummy "
             "text ever since the 1500s, when an unknown printer took a galley "
@@ -466,7 +467,7 @@ def delete_template_folder(service_id, template_folder_id):
     template_list = TemplateList(service=current_service, template_folder_id=template_folder_id)
 
     if not template_list.folder_is_empty:
-        flash("You must empty this folder before you can delete it", "info")
+        flash(_("You must empty this folder before you can delete it"), "info")
         return redirect(
             url_for(
                 ".choose_template", service_id=service_id, template_type="all", template_folder_id=template_folder_id
@@ -482,9 +483,9 @@ def delete_template_folder(service_id, template_folder_id):
                 url_for(".choose_template", service_id=service_id, template_folder_id=template_folder["parent_id"])
             )
         except HTTPError as e:
-            msg = "Folder is not empty"
+            msg = _("Folder is not empty")
             if e.status_code == 400 and msg in e.message:
-                flash("You must empty this folder before you can delete it", "info")
+                flash(_("You must empty this folder before you can delete it"), "info")
                 return redirect(
                     url_for(
                         ".choose_template",
@@ -496,7 +497,7 @@ def delete_template_folder(service_id, template_folder_id):
             else:
                 abort(500, e)
     else:
-        flash("Are you sure you want to delete the ‘{}’ folder?".format(template_folder["name"]), "delete")
+        flash(_("Are you sure you want to delete the ‘{}’ folder?").format(template_folder["name"]), "delete")
         return manage_template_folder(service_id, template_folder_id)
 
 
@@ -631,7 +632,7 @@ def edit_service_template(service_id, template_id):
             "views/edit-{}-template.html".format(template["template_type"]),
             form=form,
             template=template,
-            heading_action="Edit",
+            heading_action=_("Edit"),
             back_link=url_for("main.view_template", service_id=current_service.id, template_id=template["id"]),
         )
 
@@ -671,29 +672,26 @@ def _get_content_count_error_and_message_for_template(template):
     if template.template_type == "sms":
         if template.is_message_too_long():
             return True, (
-                f"You have "
-                f"{character_count(template.content_count_without_prefix - SMS_CHAR_COUNT_LIMIT)} "
-                f"too many"
+                _("You have %%s too many")
+                % character_count(template.content_count_without_prefix - SMS_CHAR_COUNT_LIMIT)
             )
         if template.placeholders:
             return False, (
-                f"Will be charged as {message_count(template.fragment_count, template.template_type)} "
-                f"(not including personalisation)"
+                _("Will be charged as %%s (not including personalisation)")
+                % message_count(template.fragment_count, template.template_type)
             )
-        return False, (f"Will be charged as {message_count(template.fragment_count, template.template_type)} ")
+        return False, (_("Will be charged as %%s") % message_count(template.fragment_count, template.template_type))
 
     if template.template_type == "broadcast":
         if template.content_too_long:
             return True, (
-                f"You have "
-                f"{character_count(template.encoded_content_count - template.max_content_count)} "
-                f"too many"
+                _("You have %%s too many")
+                % character_count(template.encoded_content_count - template.max_content_count)
             )
         else:
             return False, (
-                f"You have "
-                f"{character_count(template.max_content_count - template.encoded_content_count)} "
-                f"remaining"
+                _("You have %%s remaining")
+                % character_count(template.max_content_count - template.encoded_content_count)
             )
 
 
@@ -715,9 +713,9 @@ def delete_service_template(service_id, template_id):
     try:
         last_used_notification = template_statistics_client.get_last_used_date_for_template(service_id, template["id"])
         message = (
-            "This template has never been used."
+            _("This template has never been used.")
             if not last_used_notification
-            else "This template was last used {}.".format(format_delta(last_used_notification))
+            else _("This template was last used {}.").format(format_delta(last_used_notification))
         )
 
     except HTTPError as e:
@@ -726,7 +724,7 @@ def delete_service_template(service_id, template_id):
         else:
             raise e
 
-    flash(["Are you sure you want to delete ‘{}’?".format(template["name"]), message, template["name"]], "delete")
+    flash([_("Are you sure you want to delete ‘{}’?").format(template["name"]), message, template["name"]], "delete")
     return render_template(
         "views/templates/template.html",
         template=get_template(
@@ -773,7 +771,7 @@ def redact_template(service_id, template_id):
 
     service_api_client.redact_service_template(service_id, template_id)
 
-    flash("Personalised content will be hidden for messages sent with this template", "default_with_tick")
+    flash(_("Personalised content will be hidden for messages sent with this template"), "default_with_tick")
 
     return redirect(
         url_for(
@@ -820,7 +818,7 @@ def set_template_sender(service_id, template_id):
     form.sender.param_extensions = {"items": []}
     for item_value, _item_label in sender_details["value_and_label"]:
         if item_value == sender_details["default_sender"]:
-            extensions = {"hint": {"text": "(Default)"}}
+            extensions = {"hint": {"text": _("(Default)")}}
         else:
             extensions = {}  # if no extensions needed, send an empty dict to preserve order of items
 

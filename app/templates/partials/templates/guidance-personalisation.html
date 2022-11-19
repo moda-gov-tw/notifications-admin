@@ -1,12 +1,12 @@
 {% from "govuk_frontend_jinja/components/inset-text/macro.html" import govukInsetText %}
 
 <h2 class="heading-medium">
-  Personalisation
+  {{_('Personalisation')}}
 </h2>
 <p class="bottom-gutter-1-3">
-  Use double brackets to personalise your message:
+  {{_('Use double brackets to personalise your message:')}}
 </p>
 {{ govukInsetText({
-  "text": "Hello ((first name)), your reference is ((ref number))",
+  "text": _("Hello ((first name)), your reference is ((ref number))"),
   "classes": "govuk-!-margin-top-0"})
 }}

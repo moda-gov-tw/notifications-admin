@@ -7,7 +7,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Confirm changes
+  {{_('Confirm changes')}}
 {% endblock %}
 
 {% block backLink %}
@@ -21,14 +21,14 @@
     <div class="govuk-grid-column-five-sixths">
       {% if template_change.placeholders_removed %}
         <p class="govuk-body">
-          You removed {{ list_of_placeholders(template_change.placeholders_removed) }}
+          {{_('You removed %%s') % list_of_placeholders(template_change.placeholders_removed)}}
         </p>
       {% endif %}
       <p class="govuk-body">
-        You added {{ list_of_placeholders(template_change.placeholders_added) }}
+        {{_('You added %%s') % list_of_placeholders(template_change.placeholders_added)}}
       </p>
       <p class="govuk-body">
-        Before you send any messages, make sure your API calls include {{ list_of_code_snippets(template_change.placeholders_added) }}.
+        {{_('Before you send any messages, make sure your API calls include %%s.') % list_of_code_snippets(template_change.placeholders_added)}}
       </p>
     </div>
   </div>
@@ -40,7 +40,7 @@
     <input type="hidden" name="template_id" value="{{ new_template.id }}" />
 
     <input type="hidden" name="confirm" value="true" />
-    {{ page_footer('Save changes to template') }}
+    {{ page_footer(_('Save changes to template')) }}
   {% endcall %}
 
 {% endblock %}
