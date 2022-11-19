@@ -4,9 +4,9 @@
 
 {% block per_page_title %}
   {% if again %}
-    You need to sign in again
+    {{_('You need to sign in again')}}
   {% else %}
-    Sign in
+    {{_('Sign in')}}
   {% endif %}
 {% endblock %}
 
@@ -16,28 +16,28 @@
   <div class="govuk-grid-column-two-thirds">
 
     {% if again %}
-      <h1 class="heading-large">You need to sign in again</h1>
+      <h1 class="heading-large">{{_('You need to sign in again')}}</h1>
       {% if other_device %}
         <p class="govuk-body">
-          We signed you out because you logged in to Notify on another device.
+          {{_('We signed you out because you logged in to Notify on another device.')}}
         </p>
       {% else %}
         <p class="govuk-body">
-          We signed you out because you have not used Notify for a while.
+          {{_('We signed you out because you have not used Notify for a while.')}}
         </p>
       {% endif %}
     {% else %}
-      <h1 class="heading-large">Sign in</h1>
+      <h1 class="heading-large">{{_('Sign in')}}</h1>
       <p class="govuk-body">
-        If you do not have an account, you can
-        <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.register') }}">create one now</a>.
+        {{_("If you do not have an account, you can
+        <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">create one now</a>.") % url_for('.register')}}
       </p>
     {% endif %}
 
     {% call form_wrapper(autocomplete=True) %}
       {{ form.email_address(param_extensions={"autocomplete": "email"}) }}
       {{ form.password(param_extensions={"autocomplete": "current-password"}) }}
-      {{ page_footer("Continue", secondary_link=password_reset_url, secondary_link_text="Forgotten your password?") }}
+      {{ page_footer(_("Continue"), secondary_link=password_reset_url, secondary_link_text=_("Forgotten your password?")) }}
     {% endcall %}
   </div>
 </div>

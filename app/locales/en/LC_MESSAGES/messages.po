@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-19 14:34+0800\n"
+"POT-Creation-Date: 2022-11-19 14:41+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -697,112 +697,123 @@ msgstr ""
 msgid "Service {} could not send notification: \"{}\""
 msgstr ""
 
-#: main/views/service_settings.py:88
+#: main/views/service_settings.py:90
 msgid "Receive inbound SMS"
 msgstr ""
 
-#: main/views/service_settings.py:89
+#: main/views/service_settings.py:92
 msgid "Email authentication"
 msgstr ""
 
-#: main/views/service_settings.py:90 templates/views/service-settings.html:223
+#: main/views/service_settings.py:93 templates/views/service-settings.html:223
 #: templates/views/service-settings/set-international-letters.html:8
 msgid "Send international letters"
 msgstr ""
 
-#: main/views/service_settings.py:94
+#: main/views/service_settings.py:97
 msgid ""
 "Thanks for your branding request. We’ll get back to you within one "
 "working day."
 msgstr ""
 
-#: main/views/service_settings.py:191
+#: main/views/service_settings.py:196
 #, python-format
 msgid "Request to go live - %%s"
 msgstr ""
 
-#: main/views/service_settings.py:205
+#: main/views/service_settings.py:210
 msgid ""
 "Thanks for your request to go live. We’ll get back to you within one "
 "working day."
 msgstr ""
 
-#: main/views/service_settings.py:212 main/views/service_settings.py:220
+#: main/views/service_settings.py:217 main/views/service_settings.py:225
 msgid "Make service live"
 msgstr ""
 
-#: main/views/service_settings.py:230 main/views/service_settings.py:242
+#: main/views/service_settings.py:235 main/views/service_settings.py:247
 #: templates/views/service-settings.html:333
 msgid "Count in list of live services"
 msgstr ""
 
-#: main/views/service_settings.py:232
+#: main/views/service_settings.py:237
 #: templates/views/organisations/organisation/settings/index.html:41
 msgid "Yes"
 msgstr ""
 
-#: main/views/service_settings.py:233
+#: main/views/service_settings.py:238
 #: templates/views/organisations/organisation/settings/index.html:42
 msgid "No"
 msgstr ""
 
-#: main/views/service_settings.py:382
+#: main/views/service_settings.py:387
 msgid "‘{}’ was deleted"
 msgstr ""
 
-#: main/views/service_settings.py:388
+#: main/views/service_settings.py:393
 msgid "Are you sure you want to delete ‘{}’? There’s no way to undo this."
 msgstr ""
 
-#: main/views/service_settings.py:595
+#: main/views/service_settings.py:600
 msgid "Are you sure you want to delete this reply-to email address?"
 msgstr ""
 
-#: main/views/service_settings.py:647
+#: main/views/service_settings.py:652
 msgid "Start all text messages with ‘{}:’"
 msgstr ""
 
-#: main/views/service_settings.py:660
+#: main/views/service_settings.py:665
 msgid "Send text messages to international phone numbers"
 msgstr ""
 
-#: main/views/service_settings.py:665
+#: main/views/service_settings.py:670
 msgid "international_sms"
 msgstr ""
 
-#: main/views/service_settings.py:894
+#: main/views/service_settings.py:899
 msgid "Are you sure you want to delete this text message sender?"
 msgstr ""
 
-#: main/views/service_settings.py:1006
+#: main/views/service_settings.py:1011
 #, python-format
 msgid "The email branding has been set to %%s"
 msgstr ""
 
-#: main/views/service_settings.py:1014
+#: main/views/service_settings.py:1018
 #, python-format
 msgid ""
 "The email branding has been set to %%s and it has been added to %%s's "
 "email branding pool"
 msgstr ""
 
-#: main/views/service_settings.py:1139 main/views/service_settings.py:1318
+#: main/views/service_settings.py:1143 main/views/service_settings.py:1322
 #, python-format
 msgid "Email branding request - %%s"
 msgstr ""
 
-#: main/views/service_settings.py:1192
+#: main/views/service_settings.py:1196
 msgid "No branding found for this id."
 msgstr ""
 
-#: main/views/service_settings.py:1198 main/views/service_settings.py:1222
-#: main/views/service_settings.py:1250
+#: main/views/service_settings.py:1202 main/views/service_settings.py:1226
+#: main/views/service_settings.py:1254
 msgid "You’ve updated your email branding"
 msgstr ""
 
-#: main/views/service_settings.py:1416
+#: main/views/service_settings.py:1420
 #, python-format
 msgid "Letter branding request - %%s"
+msgstr ""
+
+#: main/views/sign_in.py:49
+msgid "You cannot accept an invite for another person."
+msgstr ""
+
+#: main/views/sign_in.py:68
+#, python-format
+msgid ""
+"The email address or password you entered is incorrect.&ensp;<a "
+"href=\"%%s\" class='govuk-link'>Forgotten your password?</a>"
 msgstr ""
 
 #: templates/partials/check/letter-too-long.html:2
@@ -2014,7 +2025,7 @@ msgid ""
 msgstr ""
 
 #: templates/views/forgot-password.html:6
-#: templates/views/forgot-password.html:13
+#: templates/views/forgot-password.html:13 templates/views/signin.html:40
 msgid "Forgotten your password?"
 msgstr ""
 
@@ -3004,7 +3015,7 @@ msgstr ""
 #: templates/views/service-settings/service-set-broadcast-channel.html:28
 #: templates/views/service-settings/service-set-broadcast-network.html:33
 #: templates/views/service-settings/set-email-branding-add-to-branding-pool-step.html:23
-#: templates/views/support/index.html:20
+#: templates/views/signin.html:40 templates/views/support/index.html:20
 #: templates/views/templates/set-sender.html:29
 msgid "Continue"
 msgstr ""
@@ -4187,6 +4198,30 @@ msgstr ""
 msgid ""
 "A photo of the GOV.UK Notify team gathered around a big screen. One team "
 "member is pointing at a graph on the screen."
+msgstr ""
+
+#: templates/views/signin.html:7 templates/views/signin.html:19
+msgid "You need to sign in again"
+msgstr ""
+
+#: templates/views/signin.html:9 templates/views/signin.html:30
+msgid "Sign in"
+msgstr ""
+
+#: templates/views/signin.html:22
+msgid "We signed you out because you logged in to Notify on another device."
+msgstr ""
+
+#: templates/views/signin.html:26
+msgid "We signed you out because you have not used Notify for a while."
+msgstr ""
+
+#: templates/views/signin.html:32
+#, python-format
+msgid ""
+"If you do not have an account, you can\n"
+"        <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">create one now</a>."
 msgstr ""
 
 #: templates/views/temp-history.html:7 templates/views/temp-history.html:12

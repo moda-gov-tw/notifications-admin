@@ -8,6 +8,7 @@ from flask import (
     session,
     url_for,
 )
+from flask_babel import _
 from flask_login import current_user
 
 from app import login_manager
@@ -45,7 +46,7 @@ def sign_in():
                 if session.get("invited_user_id"):
                     invited_user = InvitedUser.from_session()
                     if user.email_address.lower() != invited_user.email_address.lower():
-                        flash("You cannot accept an invite for another person.")
+                        flash(_("You cannot accept an invite for another person."))
                         session.pop("invited_user_id", None)
                         abort(403)
                     else:
@@ -64,8 +65,11 @@ def sign_in():
         flash(
             Markup(
                 (
-                    f"The email address or password you entered is incorrect."
-                    f"&ensp;<a href={password_reset_url} class='govuk-link'>Forgotten your password?</a>"
+                    _(
+                        "The email address or password you entered is incorrect."
+                        "&ensp;<a href=\"%%s\" class='govuk-link'>Forgotten your password?</a>"
+                    )
+                    % password_reset_url
                 )
             )
         )
