@@ -20,14 +20,14 @@
   {{ page_header(contact_list.original_file_name) }}
 
   <p class="govuk-body">
-    Uploaded by {{ contact_list.created_by }} {{ contact_list.created_at|format_datetime_human }}.
+    {{_("Uploaded by %%s %%s.") % (contact_list.created_by, contact_list.created_at|format_datetime_human) }}
   </p>
 
   {% if jobs %}
     <p class="govuk-body">
-      Used {{ jobs|length|iteration_count }}
-      in the last {{ current_service.get_days_of_retention(contact_list.template_type) }}
-      days.
+      {{_("Used %%s in the last %%s days.") % (
+         jobs|length|iteration_count, current_service.get_days_of_retention(contact_list.template_type)
+      )}}
     </p>
     <div class='dashboard-table ajax-block-container'>
       {% call(item, row_number) list_table(
@@ -36,8 +36,8 @@
         caption_visible=False,
         empty_message='',
         field_headings=[
-          'Template',
-          'Status'
+          _('Template'),
+          _('Status')
         ],
         field_headings_visible=False
       ) %}
@@ -46,15 +46,11 @@
             <a class="file-list-filename-large govuk-link govuk-link--no-visited-state" href="{{ url_for('.view_job', service_id=current_service.id, job_id=item.id) }}">{{ item.template_name }}</a>
             {% if item.scheduled %}
               <span class="file-list-hint-large">
-                Sending {{
-                  item.scheduled_for|format_datetime_relative
-                }}
+                {{_('Sending %%s') % item.scheduled_for|format_datetime_relative}}
               </span>
             {% else %}
               <span class="file-list-hint-large">
-                Sent {{
-                  (item.scheduled_for or item.created_at)|format_datetime_relative
-                }}
+                {{_('Sent %%s') % (item.scheduled_for or item.created_at)|format_datetime_relative}}
               </span>
             {% endif %}
 
@@ -67,7 +63,7 @@
               smallest=True,
               label=item.notification_count|message_count_label(
                 item.template_type,
-                suffix='waiting to send'
+                suffix=_('waiting to send')
               )
             ) }}
           {% else %}
@@ -76,7 +72,7 @@
                 {{ big_number(
                   item.notifications_sending,
                   smallest=True,
-                  label='sending',
+                  label=_('sending'),
                 ) }}
               </div>
               <div class="govuk-grid-column-one-third">
@@ -93,15 +89,18 @@
   {% else %}
     <p class="govuk-body">
       {% if contact_list.has_jobs %}
-        Not used in the last {{ current_service.get_days_of_retention(contact_list.template_type) }} days.
+        {{_('Not used in the last %%s days.') % current_service.get_days_of_retention(contact_list.template_type)}}
       {% else %}
-        Not used yet.
+        {{_('Not used yet.')}}
       {% endif %}
     </p>
   {% endif %}
 
   <h2 class="govuk-heading-m govuk-!-margin-bottom-2">
-    {{ contact_list.recipients|length|format_thousands }} saved {{ contact_list.recipients|length|recipient_count_label(contact_list.template_type) }}
+    {{_('%%(lists)s saved %%(type)s') % {
+      'lists': contact_list.recipients|length|format_thousands,
+      'type': contact_list.recipients|length|recipient_count_label(contact_list.template_type),
+    }}}
   </h2>
 
   {% set recipient_column = contact_list.recipients.column_headers[0] %}
@@ -121,7 +120,7 @@
 
     {% if contact_list.recipients.displayed_rows|list|length < contact_list.recipients|length %}
       <p class="table-show-more-link">
-        Only showing the first {{ contact_list.recipients.displayed_rows|list|length }} rows
+        {{_('Only showing the first %%s rows') % contact_list.recipients.displayed_rows|list|length}}
       </p>
     {% endif %}
   </div>
@@ -131,10 +130,10 @@
     <div class="page-footer">
       {% if not confirm_delete_banner %}
         <span class="page-footer-link page-footer-delete-link-without-button">
-          <a class="govuk-link govuk-link--destructive" href="{{ url_for('main.delete_contact_list', service_id=current_service.id, contact_list_id=contact_list.id) }}">Delete this contact list</a>
+          <a class="govuk-link govuk-link--destructive" href="{{ url_for('main.delete_contact_list', service_id=current_service.id, contact_list_id=contact_list.id) }}">{{_('Delete this contact list')}}</a>
         </span>
       {% endif %}
-      <a class="govuk-link govuk-link--no-visited-state page-footer-right-aligned-link-without-button" download href="{{ url_for('main.download_contact_list', service_id=current_service.id, contact_list_id=contact_list.id) }}">Download this contact list (<abbr title="Comma separated values">CSV</abbr>)</a>
+      <a class="govuk-link govuk-link--no-visited-state page-footer-right-aligned-link-without-button" download href="{{ url_for('main.download_contact_list', service_id=current_service.id, contact_list_id=contact_list.id) }}">{{_('Download this contact list (<abbr title="Comma separated values">CSV</abbr>)')}}</a>
     </div>
   </div>
 

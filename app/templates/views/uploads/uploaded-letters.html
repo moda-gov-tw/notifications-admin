@@ -3,7 +3,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Uploaded letters
+  {{_('Uploaded letters')}}
 {% endblock %}
 
 {% block backLink %}
@@ -12,7 +12,7 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('Uploaded letters') }}
+  {{ page_header(_('Uploaded letters')) }}
 
   {% if notifications %}
 

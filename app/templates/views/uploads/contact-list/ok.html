@@ -19,7 +19,7 @@
   {{ page_header(original_file_name) }}
 
   <p class="govuk-body">
-    {{ recipients|length|recipient_count(recipients.template_type) }} found
+    {{_('%%s found') % recipients|length|recipient_count(recipients.template_type)}}
   </p>
 
   <div class="bottom-gutter-3-2">
@@ -30,34 +30,34 @@
   </div>
 
   <h2 class="govuk-heading-m">
-    File preview
+    {{_('File preview')}}
   </h2>
   {% call(item, row_number) list_table(
     recipients.displayed_rows,
     caption=original_file_name,
     caption_visible=False,
     field_headings=[
-      '<span class="govuk-visually-hidden">Row in file</span> <span aria-hidden="true">1</span>'|safe
+      _('<span class="govuk-visually-hidden">Row in file</span> <span aria-hidden="true">1</span>')|safe
     ] + recipients.column_headers
   ) %}
     {{ index_field(item.index + 2) }}
     {% for column in recipients.column_headers %}
       {% if item[column].ignore %}
-        {{ text_field(item[column].data or '', status='default') }}
+        {{ text_field(item[column].data or '', status=_('default')) }}
       {% else %}
         {{ text_field(item[column].data or '') }}
       {% endif %}
     {% endfor %}
     {% if item[None].data %}
       {% for column in item[None].data %}
-        {{ text_field(column, status='default') }}
+        {{ text_field(column, status=_('default')) }}
       {% endfor %}
     {% endif %}
   {% endcall %}
 
   {% if recipients.displayed_rows|list|length < recipients|length %}
     <p class="table-show-more-link">
-      Only showing the first {{ recipients.displayed_rows|list|length }} rows
+      {{_("Only showing the first %%s rows") % recipients.displayed_rows|list|length}}
     </p>
   {% endif %}
 

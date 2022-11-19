@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-19 15:47+0800\n"
+"POT-Creation-Date: 2022-11-19 16:19+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -185,10 +185,12 @@ msgid "Are you sure you want to cancel sending these letters?"
 msgstr ""
 
 #: main/views/jobs.py:172 templates/views/notifications/check.html:33
+#: templates/views/uploads/contact-list/upload.html:63
 msgid "email address"
 msgstr ""
 
 #: main/views/jobs.py:173 templates/views/notifications/check.html:33
+#: templates/views/uploads/contact-list/upload.html:81
 msgid "phone number"
 msgstr ""
 
@@ -209,6 +211,7 @@ msgid "reference"
 msgstr ""
 
 #: main/views/jobs.py:208 main/views/platform_admin.py:491
+#: main/views/uploads.py:97
 msgid "Invalid page argument ({})."
 msgstr ""
 
@@ -637,7 +640,7 @@ msgstr ""
 msgid "Uploaded letter file name"
 msgstr ""
 
-#: main/views/send.py:147
+#: main/views/send.py:147 main/views/uploads.py:405
 msgid "Could not read {}. Try using a different file format."
 msgstr ""
 
@@ -943,6 +946,41 @@ msgstr ""
 msgid "Check your email"
 msgstr ""
 
+#: main/views/uploads.py:158
+msgid "Your file contains a virus"
+msgstr ""
+
+#: main/views/uploads.py:161
+msgid "Your file is too big"
+msgstr ""
+
+#: main/views/uploads.py:161
+msgid "Files must be smaller than 2MB."
+msgstr ""
+
+#: main/views/uploads.py:167
+msgid "Invalid PDF uploaded for service_id: {}"
+msgstr ""
+
+#: main/views/uploads.py:169
+msgid "There’s a problem with your file"
+msgstr ""
+
+#: main/views/uploads.py:246
+msgid "Wrong file type"
+msgstr ""
+
+#: main/views/uploads.py:408
+msgid ""
+"{} contains numbers or dates that Notify cannot understand. Try "
+"formatting all columns as ‘text’ or export your file as CSV."
+msgstr ""
+
+#: main/views/uploads.py:559
+#, python-format
+msgid "Are you sure you want to delete ‘%%s’?"
+msgstr ""
+
 #: templates/partials/check/letter-too-long.html:2
 msgid "Your letter is too long"
 msgstr ""
@@ -1102,11 +1140,13 @@ msgid "Recipient"
 msgstr ""
 
 #: templates/partials/jobs/notifications.html:53
+#: templates/views/dashboard/_jobs.html:14
 #: templates/views/inbound-sms-admin.html:9
 #: templates/views/message-status.html:25
 #: templates/views/message-status.html:54
 #: templates/views/message-status.html:78
 #: templates/views/send-contact-list.html:44
+#: templates/views/uploads/contact-list/contact-list.html:40
 msgid "Status"
 msgstr ""
 
@@ -3483,7 +3523,9 @@ msgstr ""
 msgid "No reference provided"
 msgstr ""
 
+#: templates/views/dashboard/_jobs.html:48
 #: templates/views/returned-letters.html:47
+#: templates/views/uploads/contact-list/contact-list.html:53
 #, python-format
 msgid "Sent %%s"
 msgstr ""
@@ -3960,6 +4002,7 @@ msgstr ""
 msgid "You have not saved any contact lists yet."
 msgstr ""
 
+#: templates/views/dashboard/_jobs.html:13
 #: templates/views/send-contact-list.html:43
 msgid "File"
 msgstr ""
@@ -5379,10 +5422,14 @@ msgstr ""
 #: templates/views/check/column-errors.html:9
 #: templates/views/check/row-errors.html:9
 #: templates/views/notifications/check.html:8
+#: templates/views/uploads/contact-list/column-errors.html:9
+#: templates/views/uploads/contact-list/row-errors.html:9
+#: templates/views/uploads/contact-list/too-many-columns.html:9
 msgid "Error"
 msgstr ""
 
 #: templates/views/check/column-errors.html:24
+#: templates/views/uploads/contact-list/column-errors.html:24
 msgid "Your file has too many rows"
 msgstr ""
 
@@ -5395,6 +5442,7 @@ msgid ""
 msgstr ""
 
 #: templates/views/check/column-errors.html:38
+#: templates/views/uploads/contact-list/too-many-columns.html:24
 msgid "Your file is missing some rows"
 msgstr ""
 
@@ -5404,6 +5452,7 @@ msgid "It needs at least one row of data, and %%s."
 msgstr ""
 
 #: templates/views/check/column-errors.html:49
+#: templates/views/uploads/contact-list/too-many-columns.html:28
 msgid "It needs at least one row of data."
 msgstr ""
 
@@ -5449,11 +5498,20 @@ msgstr ""
 
 #: templates/views/check/column-errors.html:146
 #: templates/views/check/row-errors.html:49
+#: templates/views/uploads/choose-file.html:38
+#: templates/views/uploads/contact-list/column-errors.html:53
+#: templates/views/uploads/contact-list/row-errors.html:49
+#: templates/views/uploads/contact-list/too-many-columns.html:69
+#: templates/views/uploads/preview.html:27
 msgid "Upload your file again"
 msgstr ""
 
 #: templates/views/check/column-errors.html:150
 #: templates/views/check/row-errors.html:52
+#: templates/views/uploads/contact-list/column-errors.html:56
+#: templates/views/uploads/contact-list/row-errors.html:52
+#: templates/views/uploads/contact-list/too-many-columns.html:72
+#: templates/views/uploads/preview.html:30
 msgid "Back to top"
 msgstr ""
 
@@ -5467,18 +5525,24 @@ msgstr ""
 #: templates/views/check/column-errors.html:207
 #: templates/views/check/column-errors.html:214
 #: templates/views/check/ok.html:106 templates/views/check/row-errors.html:132
+#: templates/views/uploads/contact-list/column-errors.html:77
+#: templates/views/uploads/contact-list/contact-list.html:123
+#: templates/views/uploads/contact-list/ok.html:60
+#: templates/views/uploads/contact-list/too-many-columns.html:106
 #, python-format
 msgid "Only showing the first %%s rows"
 msgstr ""
 
 #: templates/views/check/column-errors.html:212
 #: templates/views/check/row-errors.html:130
+#: templates/views/uploads/contact-list/row-errors.html:92
 #, python-format
 msgid "Only showing the first %%s rows with errors"
 msgstr ""
 
 #: templates/views/check/column-errors.html:219
 #: templates/views/check/row-errors.html:137
+#: templates/views/uploads/contact-list/row-errors.html:96
 msgid "Only showing rows with errors"
 msgstr ""
 
@@ -5506,21 +5570,25 @@ msgid "Download as a PDF"
 msgstr ""
 
 #: templates/views/check/row-errors.html:22
+#: templates/views/uploads/contact-list/row-errors.html:22
 #, python-format
 msgid "There’s a problem with %%s"
 msgstr ""
 
 #: templates/views/check/row-errors.html:25
+#: templates/views/uploads/contact-list/row-errors.html:25
 #, python-format
 msgid "You need to %%s."
 msgstr ""
 
 #: templates/views/check/row-errors.html:29
+#: templates/views/uploads/contact-list/row-errors.html:29
 #, python-format
 msgid "There are some problems with %%s"
 msgstr ""
 
 #: templates/views/check/row-errors.html:32
+#: templates/views/uploads/contact-list/row-errors.html:32
 msgid "You need to:"
 msgstr ""
 
@@ -5585,6 +5653,8 @@ msgid "Send a text message to this phone number"
 msgstr ""
 
 #: templates/views/conversations/messages.html:23
+#: templates/views/dashboard/_jobs.html:93
+#: templates/views/uploads/contact-list/contact-list.html:75
 msgid "sending"
 msgstr ""
 
@@ -5628,6 +5698,34 @@ msgstr ""
 
 #: templates/views/dashboard/_inbox_messages.html:17
 msgid "First two lines of message"
+msgstr ""
+
+#: templates/views/dashboard/_jobs.html:31
+#, python-format
+msgid "Sending %ss"
+msgstr ""
+
+#: templates/views/dashboard/_jobs.html:36
+#, python-format
+msgid "Used %%s in the last %%s days"
+msgstr ""
+
+#: templates/views/dashboard/_jobs.html:38
+#, python-format
+msgid "Not used in the last %%s days"
+msgstr ""
+
+#: templates/views/dashboard/_jobs.html:40
+msgid "Not used yet"
+msgstr ""
+
+#: templates/views/dashboard/_jobs.html:61
+#: templates/views/uploads/contact-list/contact-list.html:66
+msgid "waiting to send"
+msgstr ""
+
+#: templates/views/dashboard/_jobs.html:77
+msgid "saved {}"
 msgstr ""
 
 #: templates/views/dashboard/_upcoming.html:7
@@ -5731,6 +5829,7 @@ msgid "Financial year ends 31 March."
 msgstr ""
 
 #: templates/views/dashboard/template-statistics.html:15
+#: templates/views/uploads/contact-list/contact-list.html:39
 msgid "Template"
 msgstr ""
 
@@ -6664,6 +6763,7 @@ msgstr ""
 
 #: templates/views/guidance/upload-a-letter.html:9
 #: templates/views/guidance/upload-a-letter.html:14
+#: templates/views/jobs/jobs.html:30 templates/views/uploads/choose-file.html:8
 msgid "Upload a letter"
 msgstr ""
 
@@ -6674,6 +6774,7 @@ msgid ""
 msgstr ""
 
 #: templates/views/guidance/upload-a-letter.html:17
+#: templates/views/uploads/choose-file.html:30
 msgid ""
 "You can use this feature if you send a lot of one-off letters or if our "
 "reusable letter templates do not meet your needs."
@@ -6692,6 +6793,7 @@ msgid "Select <b class=\"govuk-!-font-weight-bold\">Choose file</b>."
 msgstr ""
 
 #: templates/views/guidance/upload-a-letter.html:27
+#: templates/views/uploads/choose-file.html:43
 #, python-format
 msgid ""
 "Your file must meet our <a class=\"govuk-link govuk-link--no-visited-"
@@ -6783,6 +6885,23 @@ msgstr ""
 
 #: templates/views/jobs/job.html:34
 msgid "Cancel sending these letters"
+msgstr ""
+
+#: templates/views/jobs/jobs.html:6 templates/views/jobs/jobs.html:10
+msgid "Uploads"
+msgstr ""
+
+#: templates/views/jobs/jobs.html:16
+msgid "You have not uploaded any files recently."
+msgstr ""
+
+#: templates/views/jobs/jobs.html:20
+msgid "Upload a letter and Notify will print, pack and post it for you."
+msgstr ""
+
+#: templates/views/jobs/jobs.html:37
+#: templates/views/uploads/contact-list/upload.html:9
+msgid "Upload an emergency contact list"
 msgstr ""
 
 #: templates/views/letter-branding/manage-letter-branding.html:10
@@ -9453,6 +9572,187 @@ msgstr ""
 
 #: templates/views/templates/template_history.html:21
 msgid "See all versions of this template"
+msgstr ""
+
+#: templates/views/uploads/choose-file.html:29
+msgid "Upload a single letter as a PDF and we’ll print, pack and post it for you."
+msgstr ""
+
+#: templates/views/uploads/choose-file.html:38
+#: templates/views/uploads/contact-list/upload.html:43
+msgid "Choose file"
+msgstr ""
+
+#: templates/views/uploads/preview.html:54
+#, python-format
+msgid "Recipient: %%s"
+msgstr ""
+
+#: templates/views/uploads/preview.html:60
+msgid "Postage: international"
+msgstr ""
+
+#: templates/views/uploads/preview.html:81
+msgid "Send 1 letter"
+msgstr ""
+
+#: templates/views/uploads/uploaded-letters.html:6
+#: templates/views/uploads/uploaded-letters.html:15
+msgid "Uploaded letters"
+msgstr ""
+
+#: templates/views/uploads/contact-list/column-errors.html:27
+#, python-format
+msgid "Notify can store files up to %%s rows in size. Your file has %%s rows."
+msgstr ""
+
+#: templates/views/uploads/contact-list/column-errors.html:35
+#, python-format
+msgid "You cannot save these %%s"
+msgstr ""
+
+#: templates/views/uploads/contact-list/column-errors.html:38
+#, python-format
+msgid ""
+"In <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">trial mode</a> you can only\n"
+"          send to yourself and members of your team"
+msgstr ""
+
+#: templates/views/uploads/contact-list/column-errors.html:66
+#: templates/views/uploads/contact-list/ok.html:40
+#: templates/views/uploads/contact-list/too-many-columns.html:85
+msgid ""
+"<span class=\"govuk-visually-hidden\">Row in file</span> <span aria-"
+"hidden=\"true\">1</span>"
+msgstr ""
+
+#: templates/views/uploads/contact-list/contact-list.html:23
+#, python-format
+msgid "Uploaded by %%s %%s."
+msgstr ""
+
+#: templates/views/uploads/contact-list/contact-list.html:28
+#, python-format
+msgid "Used %%s in the last %%s days."
+msgstr ""
+
+#: templates/views/uploads/contact-list/contact-list.html:49
+#, python-format
+msgid "Sending %%s"
+msgstr ""
+
+#: templates/views/uploads/contact-list/contact-list.html:92
+#, python-format
+msgid "Not used in the last %%s days."
+msgstr ""
+
+#: templates/views/uploads/contact-list/contact-list.html:94
+msgid "Not used yet."
+msgstr ""
+
+#: templates/views/uploads/contact-list/contact-list.html:100
+#, python-format
+msgid "%%(lists)s saved %%(type)s"
+msgstr ""
+
+#: templates/views/uploads/contact-list/contact-list.html:133
+msgid "Delete this contact list"
+msgstr ""
+
+#: templates/views/uploads/contact-list/contact-list.html:136
+msgid ""
+"Download this contact list (<abbr title=\"Comma separated "
+"values\">CSV</abbr>)"
+msgstr ""
+
+#: templates/views/uploads/contact-list/ok.html:22
+#, python-format
+msgid "%%s found"
+msgstr ""
+
+#: templates/views/uploads/contact-list/ok.html:33
+msgid "File preview"
+msgstr ""
+
+#: templates/views/uploads/contact-list/ok.html:46
+#: templates/views/uploads/contact-list/ok.html:53
+#: templates/views/uploads/contact-list/row-errors.html:77
+#: templates/views/uploads/contact-list/row-errors.html:84
+#: templates/views/uploads/contact-list/too-many-columns.html:91
+#: templates/views/uploads/contact-list/too-many-columns.html:98
+msgid "default"
+msgstr ""
+
+#: templates/views/uploads/contact-list/row-errors.html:60
+msgid ""
+"<span class=\"govuk-visually-hidden\">Row in file</span> <span aria-"
+"hidden=\"true\" class=\"table-field-invisible-error\">1</span>"
+msgstr ""
+
+#: templates/views/uploads/contact-list/too-many-columns.html:30
+msgid ""
+"It needs at least one row of data, in a column called ‘email address’ or "
+"‘phone number’."
+msgstr ""
+
+#: templates/views/uploads/contact-list/too-many-columns.html:37
+msgid "Your file needs a column called ‘email address’ or ‘phone number’."
+msgstr ""
+
+#: templates/views/uploads/contact-list/too-many-columns.html:40
+#, python-format
+msgid "Right now it has 1 column called ‘%%s’."
+msgstr ""
+
+#: templates/views/uploads/contact-list/too-many-columns.html:46
+msgid "Your file has too many columns"
+msgstr ""
+
+#: templates/views/uploads/contact-list/too-many-columns.html:49
+msgid "It needs to have 1 column, called ‘email address’ or ‘phone number’."
+msgstr ""
+
+#: templates/views/uploads/contact-list/too-many-columns.html:52
+#, python-format
+msgid "Right now it has %%(herder_length)s columns called %%(headers)s."
+msgstr ""
+
+#: templates/views/uploads/contact-list/upload.html:29
+msgid "Save a list of staff email addresses or phone numbers in Notify."
+msgstr ""
+
+#: templates/views/uploads/contact-list/upload.html:32
+msgid "In an emergency, you can send a message to everyone on the list."
+msgstr ""
+
+#: templates/views/uploads/contact-list/upload.html:35
+msgid "Do not include contact details for members of the public."
+msgstr ""
+
+#: templates/views/uploads/contact-list/upload.html:48
+msgid "Your file needs to look like one of these examples"
+msgstr ""
+
+#: templates/views/uploads/contact-list/upload.html:51
+msgid ""
+"Save your file as a\n"
+"  <acronym title=\"Comma Separated Values\">CSV</acronym>,\n"
+"  <acronym title=\"Tab Separated Values\">TSV</acronym>,\n"
+"  <acronym title=\"Open Document Spreadsheet\">ODS</acronym>,\n"
+"  or Microsoft Excel spreadsheet"
+msgstr ""
+
+#: templates/views/uploads/contact-list/upload.html:64
+msgid "test@example.gov.uk"
+msgstr ""
+
+#: templates/views/uploads/contact-list/upload.html:82
+msgid "07700 900123"
+msgstr ""
+
+#: templates/views/uploads/contact-list/upload.html:84
+msgid "Example"
 msgstr ""
 
 #: utils/templates.py:37

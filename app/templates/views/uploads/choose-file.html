@@ -5,7 +5,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Upload a letter
+  {{_('Upload a letter')}}
 {% endblock %}
 
 {% block backLink %}
@@ -26,8 +26,8 @@
       {% endcall %}
     {% else %}
       {{ page_header('Upload a letter') }}
-    <p class="govuk-body">Upload a single letter as a PDF and we’ll print, pack and post it for you.</p>
-    <p class="govuk-body">You can use this feature if you send a lot of one-off letters or if our reusable letter templates do not meet your needs.</p>
+    <p class="govuk-body">{{_('Upload a single letter as a PDF and we’ll print, pack and post it for you.')}}</p>
+    <p class="govuk-body">{{_('You can use this feature if you send a lot of one-off letters or if our reusable letter templates do not meet your needs.')}}</p>
     {% endif %}
 
   <p class="govuk-body">
@@ -35,12 +35,12 @@
       form.file,
       allowed_file_extensions=['pdf'],
       action=url_for('main.upload_letter', service_id=current_service.id),
-      button_text='Upload your file again' if error else 'Choose file',
+      button_text=_('Upload your file again') if error else _('Choose file'),
       show_errors=False
     )}}
   </p>
 
-    <p class="govuk-body">Your file must meet our <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.letter_specification') }}">letter specification</a>.</p>
+    <p class="govuk-body">{{_("Your file must meet our <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">letter specification</a>.") % url_for('main.letter_specification')}}</p>
   </div>
 </div>
 {% endblock %}

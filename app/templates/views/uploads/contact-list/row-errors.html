@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Error
+  {{_('Error')}}
 {% endblock %}
 
 {% block backLink %}
@@ -19,17 +19,17 @@
     {% call banner_wrapper(type='dangerous') %}
       {% if row_errors|length == 1 %}
         <h1 class='banner-title' data-notify-module="track-error" data-error-type="Bad rows" data-error-label="{{ upload_id }}">
-          There’s a problem with {{ original_file_name }}
+          {{_("There’s a problem with %%s") % original_file_name }}
         </h1>
         <p class="govuk-body">
-          You need to {{ row_errors[0] }}.
+          {{_('You need to %%s.') % row_errors[0]}}
         </p>
       {% else %}
         <h1 class='banner-title' data-notify-module="track-error" data-error-type="Bad rows" data-error-label="{{ upload_id }}">
-          There are some problems with {{ original_file_name }}
+          {{_('There are some problems with %%s') % original_file_name}}
         </h1>
         <p class="govuk-body">
-          You need to:
+          {{_('You need to:')}}
         </p>
         <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-0">
           {% for error in row_errors %}
@@ -46,10 +46,10 @@
         form.file,
         allowed_file_extensions=allowed_file_extensions,
         action=url_for('.upload_contact_list', service_id=current_service.id),
-        button_text='Upload your file again'
+        button_text=_('Upload your file again')
       ) }}
     </div>
-    <a href="#content" class="govuk-link govuk-link--no-visited-state back-to-top-link">Back to top</a>
+    <a href="#content" class="govuk-link govuk-link--no-visited-state back-to-top-link">{{_('Back to top')}}</a>
   </div>
 
   {% call(item, row_number) list_table(
@@ -57,7 +57,7 @@
     caption=original_file_name,
     caption_visible=False,
     field_headings=[
-      '<span class="govuk-visually-hidden">Row in file</span> <span aria-hidden="true" class="table-field-invisible-error">1</span>'|safe
+      _('<span class="govuk-visually-hidden">Row in file</span> <span aria-hidden="true" class="table-field-invisible-error">1</span>')|safe
     ] + recipients.column_headers
   ) %}
     {% call index_field() %}
@@ -74,14 +74,14 @@
           </span>
         {% endcall %}
       {% elif item[column].ignore %}
-        {{ text_field(item[column].data or '', status='default') }}
+        {{ text_field(item[column].data or '', status=_('default')) }}
       {% else %}
         {{ text_field(item[column].data or '') }}
       {% endif %}
     {% endfor %}
     {% if item[None].data %}
       {% for column in item[None].data %}
-        {{ text_field(column, status='default') }}
+        {{ text_field(column, status=_('default')) }}
       {% endfor %}
     {% endif %}
   {% endcall %}
@@ -89,11 +89,11 @@
   {% if recipients.displayed_rows|list|length < recipients|length %}
     {% if recipients.displayed_rows|list|length < recipients.rows_with_errors|list|length %}
       <p class="table-show-more-link">
-        Only showing the first {{ recipients.displayed_rows|list|length }} rows with errors
+        {{_('Only showing the first %%s rows with errors') % recipients.displayed_rows|list|length}}
       </p>
     {% else %}
       <p class="table-show-more-link">
-        Only showing rows with errors
+        {{_('Only showing rows with errors')}}
       </p>
     {% endif %}
   {% endif %}

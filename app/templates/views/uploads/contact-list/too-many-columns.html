@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Error
+  {{_('Error')}}
 {% endblock %}
 
 {% block backLink %}
@@ -21,32 +21,38 @@
       {% if not recipients|length %}
 
         <h1 class='banner-title' data-notify-module="track-error" data-error-type="No rows" data-error-label="{{ upload_id }}">
-          Your file is missing some rows
+          {{_('Your file is missing some rows')}}
         </h1>
         <p class="govuk-body">
-          It needs at least one row of data
-          {%- if template_type %}.{% else %}, in a column called ‘email address’ or ‘phone number’.{% endif %}
+          {%- if template_type %}
+          {{_('It needs at least one row of data.')}}
+          {% else %}
+          {{_('It needs at least one row of data, in a column called ‘email address’ or ‘phone number’.')}}
+          {% endif %}
         </p>
 
       {% elif recipients.column_headers|length == 1 %}
 
         <h1 class='banner-title' data-notify-module="track-error" data-error-type="Too many rows" data-error-label="{{ upload_id }}">
-          Your file needs a column called ‘email address’ or ‘phone number’.
+          {{_('Your file needs a column called ‘email address’ or ‘phone number’.')}}
         </h1>
         <p class="govuk-body">
-          Right now it has 1 column called ‘{{ recipients._raw_column_headers[0] }}’.
+          {{_("Right now it has 1 column called ‘%%s’.") % recipients._raw_column_headers[0]}}
         </p>
 
       {% else %}
 
         <h1 class='banner-title' data-notify-module="track-error" data-error-type="Too many rows" data-error-label="{{ upload_id }}">
-          Your file has too many columns
+          {{_('Your file has too many columns')}}
         </h1>
         <p class="govuk-body">
-          It needs to have 1 column, called ‘email address’ or ‘phone number’.
+          {{_('It needs to have 1 column, called ‘email address’ or ‘phone number’.')}}
         </p>
         <p class="govuk-body">
-          Right now it has {{ recipients._raw_column_headers|length }} columns called {{ recipients._raw_column_headers | formatted_list }}.
+          {{_("Right now it has %%(herder_length)s columns called %%(headers)s.") % {
+            'herder_length': recipients._raw_column_headers|length,
+            'herders': recipients._raw_column_headers | formatted_list,
+          }}}
         </p>
 
       {% endif %}
@@ -60,10 +66,10 @@
         form.file,
         allowed_file_extensions=allowed_file_extensions,
         action=url_for('.upload_contact_list', service_id=current_service.id),
-        button_text='Upload your file again'
+        button_text=_('Upload your file again')
       ) }}
     </div>
-    <a href="#content" class="govuk-link govuk-link--no-visited-state back-to-top-link">Back to top</a>
+    <a href="#content" class="govuk-link govuk-link--no-visited-state back-to-top-link">{{_('Back to top')}}</a>
   </div>
 
     {% set column_headers = recipients._raw_column_headers if recipients.duplicate_recipient_column_headers else recipients.column_headers %}
@@ -76,20 +82,20 @@
         caption=original_file_name,
         caption_visible=False,
         field_headings=[
-          '<span class="govuk-visually-hidden">Row in file</span> <span aria-hidden="true">1</span>'|safe
+          _('<span class="govuk-visually-hidden">Row in file</span> <span aria-hidden="true">1</span>')|safe
         ] + recipients._raw_column_headers
       ) %}
         {{ index_field(item.index + 2) }}
         {% for column in column_headers %}
           {% if item[column].ignore %}
-            {{ text_field(item[column].data or '', status='default') }}
+            {{ text_field(item[column].data or '', status=_('default')) }}
           {% else %}
             {{ text_field(item[column].data or '') }}
           {% endif %}
         {% endfor %}
         {% if item[None].data %}
           {% for column in item[None].data %}
-            {{ text_field(column, status='default') }}
+            {{ text_field(column, status=_('default')) }}
           {% endfor %}
         {% endif %}
       {% endcall %}
@@ -97,7 +103,7 @@
 
   {% if recipients.displayed_rows|list|length < recipients|length %}
     <p class="table-show-more-link">
-      Only showing the first {{ recipients.displayed_rows|list|length }} rows
+      {{_('Only showing the first %%s rows') % recipients.displayed_rows|list|length}}
     </p>
   {% endif %}
 

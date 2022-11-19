@@ -17,6 +17,7 @@ from flask import (
     send_file,
     url_for,
 )
+from flask_babel import _
 from notifications_utils.insensitive_dict import InsensitiveDict
 from notifications_utils.pdf import pdf_page_count
 from notifications_utils.postal_address import PostalAddress
@@ -93,7 +94,7 @@ def uploads(service_id):
 def uploaded_letters(service_id, letter_print_day):
     page = get_page_from_request()
     if page is None:
-        abort(404, "Invalid page argument ({}).".format(request.args.get("page")))
+        abort(404, _("Invalid page argument ({}).").format(request.args.get("page")))
     uploaded_letters = upload_api_client.get_letters_by_service_and_print_day(
         current_service.id,
         letter_print_day=letter_print_day,
@@ -154,19 +155,21 @@ def upload_letter(service_id):
         if current_app.config["ANTIVIRUS_ENABLED"]:
             virus_free = antivirus_client.scan(BytesIO(pdf_file_bytes))
             if not virus_free:
-                return invalid_upload_error("Your file contains a virus")
+                return invalid_upload_error(_("Your file contains a virus"))
 
         if len(pdf_file_bytes) > MAX_FILE_UPLOAD_SIZE:
-            return invalid_upload_error("Your file is too big", "Files must be smaller than 2MB.")
+            return invalid_upload_error(_("Your file is too big"), _("Files must be smaller than 2MB."))
 
         try:
             # TODO: get page count from the sanitise response once template preview handles malformed files nicely
             page_count = pdf_page_count(BytesIO(pdf_file_bytes))
         except PdfReadError:
-            current_app.logger.info("Invalid PDF uploaded for service_id: {}".format(service_id))
+            current_app.logger.info(_("Invalid PDF uploaded for service_id: {}").format(service_id))
             return invalid_upload_error(
-                "There’s a problem with your file",
-                "Notify cannot read this PDF.<br>Save a new copy of your file and try again.",
+                _(
+                    "There’s a problem with your file",
+                    "Notify cannot read this PDF.<br>Save a new copy of your file and try again.",
+                ),
             )
 
         upload_id = uuid.uuid4()
@@ -242,7 +245,7 @@ def invalid_upload_error(error_title, error_detail=None):
 def _get_error_from_upload_form(form_errors):
     error = {}
     if "PDF" in form_errors:
-        error["title"] = "Wrong file type"
+        error["title"] = _("Wrong file type")
         error["detail"] = form_errors
     else:  # No file was uploaded error
         error["title"] = form_errors
@@ -401,10 +404,10 @@ def upload_contact_list(service_id):
                 )
             )
         except (UnicodeDecodeError, BadZipFile, XLRDError):
-            flash("Could not read {}. Try using a different file format.".format(form.file.data.filename))
+            flash(_("Could not read {}. Try using a different file format.").format(form.file.data.filename))
         except (XLDateError):
             flash(
-                (
+                _(
                     "{} contains numbers or dates that Notify cannot understand. "
                     "Try formatting all columns as ‘text’ or export your file as CSV."
                 ).format(form.file.data.filename)
@@ -555,7 +558,7 @@ def delete_contact_list(service_id, contact_list_id):
 
     flash(
         [
-            f"Are you sure you want to delete ‘{contact_list.original_file_name}’?",
+            _("Are you sure you want to delete ‘%%s’?") % contact_list.original_file_name,
         ],
         "delete",
     )
