@@ -4,15 +4,15 @@
 {% from "components/form.html" import form_wrapper %}
 
 {% block per_page_title %}
-  Edit SMS provider priorities
+  {{_('Edit SMS provider priorities')}}
 {% endblock %}
 
 {% block platform_admin_content %}
 
-  {{ page_header('Edit SMS provider priorities') }}
+  {{ page_header(_('Edit SMS provider priorities')) }}
 
   <p class="govuk-body">
-    If you change one priority you will need to change the others so they add up to 100%.
+    {{_('If you change one priority you will need to change the others so they add up to 100%.')}}
   </p>
 
   {% call form_wrapper() %}
@@ -20,6 +20,6 @@
       {{ field }}
     {% endfor %}
 
-    {{ page_footer('Save') }}
+    {{ page_footer(_('Save')) }}
   {% endcall %}
 {% endblock %}

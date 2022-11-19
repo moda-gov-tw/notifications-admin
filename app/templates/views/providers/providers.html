@@ -3,29 +3,29 @@
 {% from "components/show-more.html" import show_more %}
 
 {% block per_page_title %}
-Providers
+{{_('Providers')}}
 {% endblock %}
 
 {% block platform_admin_content %}
 
-  <h1 class="heading-medium">Providers</h1>
+  <h1 class="heading-medium">{{_('Providers')}}</h1>
 
-  <h2 class="heading-medium">SMS</h2>
+  <h2 class="heading-medium">{{_('SMS')}}</h2>
 
-  <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.edit_sms_provider_ratio') }}">Change priority</a>
+  <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.edit_sms_provider_ratio') }}">{{_('Change priority')}}</a>
 
   {% call(item, row_number) list_table(
       domestic_sms_providers,
-      caption="Domestic SMS providers",
+      caption=_("Domestic SMS providers"),
       caption_visible=False,
-      empty_message='No domestic sms providers',
-      field_headings=['Provider', 'Priority', '% monthly traffic', 'Active', 'Last Updated', 'Updated By'],
+      empty_message=_('No domestic sms providers'),
+      field_headings=[_('Provider'), _('Priority'), _('% monthly traffic'), _('Active'), _('Last Updated'), _('Updated By')],
       field_headings_visible=True
   ) %}
 
       {{ link_field(item.display_name, url_for('main.view_provider', provider_id=item.id)) }}
 
-      {{ optional_text_field(item.priority if item.active, default='None') }}
+      {{ optional_text_field(item.priority if item.active, default=_('None')) }}
 
       {{ text_field(item.monthly_traffic) }}
 
@@ -33,21 +33,21 @@ Providers
 
       {{ optional_text_field(
           item.updated_at|format_datetime_short if item.updated_at,
-          default='None'
+          default=_('None')
       ) }}
 
-      {{ optional_text_field(item.created_by_name, default='None') }}
+      {{ optional_text_field(item.created_by_name, default=_('None')) }}
 
   {% endcall %}
 
-  <h2 class="heading-medium">Email</h2>
+  <h2 class="heading-medium">{{_('Email')}}</h2>
 
   {% call(item, row_number) list_table(
       email_providers,
-      caption="Email providers",
+      caption=_("Email providers"),
       caption_visible=False,
       empty_message='No email providers',
-      field_headings=['Provider', 'Active', 'Last Updated', 'Updated By'],
+      field_headings=[_('Provider'), _('Active'), _('Last Updated'), _('Updated By')],
       field_headings_visible=True
   ) %}
 
@@ -63,14 +63,14 @@ Providers
       {{ optional_text_field(item.created_by_name, default='None') }}
   {% endcall %}
 
-  <h2 class="heading-medium">International SMS Providers</h2>
+  <h2 class="heading-medium">{{_('International SMS Providers')}}</h2>
 
   {% call(item, row_number) list_table(
       intl_sms_providers,
-      caption="International SMS providers",
+      caption=_("International SMS providers"),
       caption_visible=False,
-      empty_message='No international sms providers',
-      field_headings=['Provider', 'Active', 'Last Updated', 'Updated By'],
+      empty_message=_('No international sms providers'),
+      field_headings=[_('Provider'), _('Active'), _('Last Updated'), _('Updated By')],
       field_headings_visible=True
   ) %}
 
@@ -80,10 +80,10 @@ Providers
 
       {{ optional_text_field(
         item.updated_at|format_datetime_short if item.updated_at,
-        default='None'
+        default=_('None')
       ) }}
 
-      {{ optional_text_field(item.created_by_name, default='None') }}
+      {{ optional_text_field(item.created_by_name, default=_('None')) }}
 
   {% endcall %}
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-19 10:39+0800\n"
+"POT-Creation-Date: 2022-11-19 10:45+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -1422,6 +1422,7 @@ msgstr ""
 #: templates/views/organisations/organisation/settings/edit-organisation-notes.html:27
 #: templates/views/organisations/organisation/settings/edit-type.html:19
 #: templates/views/organisations/organisation/settings/preview-letter-branding.html:19
+#: templates/views/providers/edit-sms-provider-ratio.html:23
 msgid "Save"
 msgstr ""
 
@@ -1895,6 +1896,10 @@ msgid "Created on"
 msgstr ""
 
 #: templates/views/inbound-sms-admin.html:47
+#: templates/views/providers/provider.html:31
+#: templates/views/providers/providers.html:22
+#: templates/views/providers/providers.html:50
+#: templates/views/providers/providers.html:73
 msgid "Active"
 msgstr ""
 
@@ -5847,6 +5852,13 @@ msgstr ""
 
 #: templates/views/organisations/organisation/settings/index.html:145
 #: templates/views/organisations/organisation/settings/index.html:155
+#: templates/views/providers/provider.html:40
+#: templates/views/providers/provider.html:46
+#: templates/views/providers/providers.html:28
+#: templates/views/providers/providers.html:36
+#: templates/views/providers/providers.html:39
+#: templates/views/providers/providers.html:83
+#: templates/views/providers/providers.html:86
 msgid "None"
 msgstr ""
 
@@ -6870,6 +6882,99 @@ msgstr ""
 
 #: templates/views/pricing/index.html:257
 msgid "5 sheets"
+msgstr ""
+
+#: templates/views/providers/edit-sms-provider-ratio.html:7
+#: templates/views/providers/edit-sms-provider-ratio.html:12
+msgid "Edit SMS provider priorities"
+msgstr ""
+
+#: templates/views/providers/edit-sms-provider-ratio.html:15
+msgid ""
+"If you change one priority you will need to change the others so they add"
+" up to 100%."
+msgstr ""
+
+#: templates/views/providers/provider.html:23
+msgid "Only showing the latest 100 versions."
+msgstr ""
+
+#: templates/views/providers/provider.html:30
+msgid "No history for this provider"
+msgstr ""
+
+#: templates/views/providers/provider.html:31
+msgid "Version"
+msgstr ""
+
+#: templates/views/providers/provider.html:31
+#: templates/views/providers/providers.html:22
+#: templates/views/providers/providers.html:50
+#: templates/views/providers/providers.html:73
+msgid "Last Updated"
+msgstr ""
+
+#: templates/views/providers/provider.html:31
+#: templates/views/providers/providers.html:22
+#: templates/views/providers/providers.html:50
+#: templates/views/providers/providers.html:73
+msgid "Updated By"
+msgstr ""
+
+#: templates/views/providers/provider.html:31
+#: templates/views/providers/providers.html:22
+msgid "Priority"
+msgstr ""
+
+#: templates/views/providers/providers.html:6
+#: templates/views/providers/providers.html:11
+msgid "Providers"
+msgstr ""
+
+#: templates/views/providers/providers.html:13
+msgid "SMS"
+msgstr ""
+
+#: templates/views/providers/providers.html:15
+msgid "Change priority"
+msgstr ""
+
+#: templates/views/providers/providers.html:19
+msgid "Domestic SMS providers"
+msgstr ""
+
+#: templates/views/providers/providers.html:21
+msgid "No domestic sms providers"
+msgstr ""
+
+#: templates/views/providers/providers.html:22
+#: templates/views/providers/providers.html:50
+#: templates/views/providers/providers.html:73
+msgid "Provider"
+msgstr ""
+
+#: templates/views/providers/providers.html:22
+msgid "% monthly traffic"
+msgstr ""
+
+#: templates/views/providers/providers.html:43
+msgid "Email"
+msgstr ""
+
+#: templates/views/providers/providers.html:47
+msgid "Email providers"
+msgstr ""
+
+#: templates/views/providers/providers.html:66
+msgid "International SMS Providers"
+msgstr ""
+
+#: templates/views/providers/providers.html:70
+msgid "International SMS providers"
+msgstr ""
+
+#: templates/views/providers/providers.html:72
+msgid "No international sms providers"
 msgstr ""
 
 #: templates/views/service-settings/letter-preview.html:6
