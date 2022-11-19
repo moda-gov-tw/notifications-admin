@@ -1,4 +1,5 @@
 from flask import current_app
+from flask_babel import _
 from notifications_utils.template import (
     BroadcastPreviewTemplate,
     EmailPreviewTemplate,
@@ -33,7 +34,7 @@ def get_template(
         return EmailPreviewTemplate(
             template,
             from_name=service.name,
-            from_address="{}@notifications.service.gov.uk".format(service.email_from),
+            from_address=_("{}@notifications.service.gov.uk").format(service.email_from),
             show_recipient=show_recipient,
             redact_missing_personalisation=redact_missing_personalisation,
             reply_to=email_reply_to,
