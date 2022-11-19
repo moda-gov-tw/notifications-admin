@@ -1,4 +1,5 @@
 from flask import abort, redirect, render_template, session
+from flask_babel import _
 
 from app import current_service, current_user, service_api_client, url_for
 from app.main import main
@@ -91,7 +92,7 @@ def tour_step(service_id, template_id, step_index):
 
     return render_template(
         "views/send-test.html",
-        page_title="Example text message",
+        page_title=_("Example text message"),
         template=template,
         form=form,
         back_link=back_link,

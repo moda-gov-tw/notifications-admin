@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-19 15:23+0800\n"
+"POT-Creation-Date: 2022-11-19 15:37+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -654,7 +654,7 @@ msgid ""
 "file as CSV."
 msgstr ""
 
-#: main/views/send.py:216 main/views/templates.py:817
+#: main/views/send.py:216 main/views/templates.py:821
 msgid "(Default)"
 msgstr ""
 
@@ -895,40 +895,44 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: main/views/templates.py:675 main/views/templates.py:686
+#: main/views/templates.py:675 main/views/templates.py:688
 #, python-format
 msgid "You have %%s too many"
 msgstr ""
 
-#: main/views/templates.py:679
+#: main/views/templates.py:680
 #, python-format
 msgid "Will be charged as %%s (not including personalisation)"
 msgstr ""
 
-#: main/views/templates.py:681
+#: main/views/templates.py:683
 #, python-format
 msgid "Will be charged as %%s"
 msgstr ""
 
-#: main/views/templates.py:690
+#: main/views/templates.py:693
 #, python-format
 msgid "You have %%s remaining"
 msgstr ""
 
-#: main/views/templates.py:712
+#: main/views/templates.py:716
 msgid "This template has never been used."
 msgstr ""
 
-#: main/views/templates.py:714
+#: main/views/templates.py:718
 msgid "This template was last used {}."
 msgstr ""
 
-#: main/views/templates.py:723
+#: main/views/templates.py:727
 msgid "Are you sure you want to delete ‘{}’?"
 msgstr ""
 
-#: main/views/templates.py:770
+#: main/views/templates.py:774
 msgid "Personalised content will be hidden for messages sent with this template"
+msgstr ""
+
+#: main/views/tour.py:95
+msgid "Example text message"
 msgstr ""
 
 #: templates/partials/check/letter-too-long.html:2
@@ -3404,6 +3408,7 @@ msgstr ""
 #: templates/views/signin.html:40 templates/views/support/index.html:20
 #: templates/views/templates/set-sender.html:29
 #: templates/views/templates/set-template-sender.html:31
+#: templates/views/templates/start-tour.html:18
 msgid "Continue"
 msgstr ""
 
