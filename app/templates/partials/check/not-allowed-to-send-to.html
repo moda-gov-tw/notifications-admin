@@ -1,5 +1,5 @@
 <h1 class='banner-title' data-notify-module="track-error" data-error-type="Trial mode: bad recipients" data-error-label="{{ upload_id }}">
-  You cannot send to
+  {{_('You cannot send to')}}
   {{ 'this' if count_of_recipients == 1 else 'these' }}
   {{ template_type_label }}
   {%- if count_of_recipients != 1 -%}
@@ -7,6 +7,6 @@
   {%- endif %}
 </h1>
 <p class="govuk-body">
-  In <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.trial_mode_new') }}">trial mode</a> you can only
-  send to yourself and members of your team
+  {{_("In <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">trial mode</a> you can only
+  send to yourself and members of your team") % url_for('.trial_mode_new')}}
 </p>

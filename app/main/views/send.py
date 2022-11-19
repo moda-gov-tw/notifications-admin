@@ -12,6 +12,7 @@ from flask import (
     session,
     url_for,
 )
+from flask_babel import _
 from flask_login import current_user
 from notifications_python_client.errors import HTTPError
 from notifications_utils import LETTER_MAX_PAGE_COUNT, SMS_CHAR_COUNT_LIMIT
@@ -143,13 +144,14 @@ def send_messages(service_id, template_id):
                 )
             )
         except (UnicodeDecodeError, BadZipFile, XLRDError):
-            flash("Could not read {}. Try using a different file format.".format(form.file.data.filename))
+            flash(_("Could not read {}. Try using a different file format.").format(form.file.data.filename))
         except (XLDateError):
             flash(
-                (
-                    "{} contains numbers or dates that Notify cannot understand. "
-                    "Try formatting all columns as ‘text’ or export your file as CSV."
-                ).format(form.file.data.filename)
+                _(
+                    """%%s contains numbers or dates that Notify cannot understand.
+                    Try formatting all columns as ‘text’ or export your file as CSV."""
+                )
+                % form.file.data.filename
             )
     elif form.errors:
         # just show the first error, as we don't expect the form to have more
@@ -211,11 +213,11 @@ def set_sender(service_id, template_id):
         sender_choices=sender_context["value_and_label"],
         sender_label=sender_context["description"],
     )
-    option_hints = {sender_context["default_id"]: "(Default)"}
+    option_hints = {sender_context["default_id"]: _("(Default)")}
     if sender_context.get("receives_text_message", None):
-        option_hints.update({sender_context["receives_text_message"]: "(Receives replies)"})
+        option_hints.update({sender_context["receives_text_message"]: _("(Receives replies)")})
     if sender_context.get("default_and_receives", None):
-        option_hints = {sender_context["default_and_receives"]: "(Default and receives replies)"}
+        option_hints = {sender_context["default_and_receives"]: _("(Default and receives replies)")}
 
     # extend all radios that need hint text
     form.sender.param_extensions = {"items": []}
@@ -242,18 +244,18 @@ def set_sender(service_id, template_id):
 def get_sender_context(sender_details, template_type):
     context = {
         "email": {
-            "title": "Where should replies come back to?",
-            "description": "Where should replies come back to?",
-            "field_name": "email_address",
+            "title": _("Where should replies come back to?"),
+            "description": _("Where should replies come back to?"),
+            "field_name": _("email_address"),
         },
         "letter": {
-            "title": "Send to one recipient",
-            "description": "What should appear in the top right of the letter?",
+            "title": _("Send to one recipient"),
+            "description": _("What should appear in the top right of the letter?"),
             "field_name": "contact_block",
         },
         "sms": {
-            "title": "Who should the message come from?",
-            "description": "Who should the message come from?",
+            "title": _("Who should the message come from?"),
+            "description": _("Who should the message come from?"),
             "field_name": "sms_sender",
         },
     }[template_type]
@@ -839,8 +841,8 @@ def all_placeholders_in_session(placeholders):
 
 def get_send_test_page_title(template_type, entering_recipient, name=None):
     if entering_recipient:
-        return "Send ‘{}’".format(name)
-    return "Personalise this message"
+        return _("Send ‘{}’").format(name)
+    return _("Personalise this message")
 
 
 def get_back_link(service_id, template, step_index, placeholders=None):
@@ -887,7 +889,7 @@ def get_skip_link(step_index, template):
         and current_user.has_permissions("manage_templates", "manage_service")
     ):
         return (
-            "Use my {}".format(first_column_headings[template.template_type][0]),
+            _("Use my {}").format(first_column_headings[template.template_type][0]),
             url_for(".send_one_off_to_myself", service_id=current_service.id, template_id=template.id),
         )
 
@@ -1021,7 +1023,7 @@ def send_notification(service_id, template_id):
         )
     except HTTPError as exception:
         current_app.logger.info(
-            'Service {} could not send notification: "{}"'.format(current_service.id, exception.message)
+            _('Service {} could not send notification: "{}"').format(current_service.id, exception.message)
         )
         return render_template(
             "views/notifications/check.html",

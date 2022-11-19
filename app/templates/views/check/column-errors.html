@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Error
+  {{_('Error')}}
 {% endblock %}
 
 {% block backLink %}
@@ -21,83 +21,86 @@
       {% if recipients.too_many_rows %}
 
         <h1 class='banner-title' data-notify-module="track-error" data-error-type="Too many rows" data-error-label="{{ upload_id }}">
-          Your file has too many rows
+          {{_('Your file has too many rows')}}
         </h1>
         <p class="govuk-body">
-          Notify can process up to
-          {{ "{:,}".format(recipients.max_rows) }} rows at once. Your
-          file has {{ "{:,}".format(recipients|length) }} rows.
+          {{_("Notify can process up to
+          %%s rows at once. Your
+          file has %%s rows.") % (
+            "{:,}".format(recipients.max_rows),
+            "{:,}".format(recipients|length),
+          )}}
         </p>
 
       {% elif not count_of_recipients %}
 
         <h1 class='banner-title' data-notify-module="track-error" data-error-type="No rows" data-error-label="{{ upload_id }}">
-          Your file is missing some rows
+          {{_('Your file is missing some rows')}}
         </h1>
         {% if recipients.missing_column_headers %}
           <p class="govuk-body">
-            It needs at least one row of data, and {{ recipients.missing_column_headers | sort() | formatted_list(
+            {{_('It needs at least one row of data, and %%s.') % recipients.missing_column_headers | sort() | formatted_list(
               prefix='a column called',
               prefix_plural='columns called'
-            ) }}.
+            ) }}
           </p>
         {% else %}
           <p class="govuk-body">
-            It needs at least one row of data.
+            {{_('It needs at least one row of data.')}}
           </p>
         {% endif %}
 
       {% elif not recipients.has_recipient_columns %}
 
         <h1 class='banner-title' data-notify-module="track-error" data-error-type="Missing recipient columns" data-error-label="{{ upload_id }}">
-          There’s a problem with your column names
+          {{_('There’s a problem with your column names')}}
         </h1>
         {% if template.template_type == 'letter' %}
           <p class="govuk-body">
-            Your file needs at least 3 address columns, for example ‘address line 1’,
-            ‘address line 2’ and ‘address line 3’.
+            {{_("Your file needs at least 3 address columns, for example ‘address line 1’,
+            ‘address line 2’ and ‘address line 3’.")}}
           </p>
         {% else %}
           <p class="govuk-body">
-            Your file needs a column called ‘{{ first_recipient_column }}’.
+            {{_('Your file needs a column called ‘%%s’.') % first_recipient_column}}
           </p>
         {% endif %}
           <p class="govuk-body">
-            Right now it has {{ recipients.column_headers | formatted_list(
+            {{_('Right now it has %%s.') % (recipients.column_headers | formatted_list(
               prefix='one column, called ',
               prefix_plural='columns called '
-            ) }}.
+            )) }}
           </p>
 
       {% elif recipients.duplicate_recipient_column_headers %}
 
         <h1 class='banner-title' data-notify-module="track-error" data-error-type="Duplicate recipient columns" data-error-label="{{ upload_id }}">
-          There’s a problem with your column names
+          {{_('There’s a problem with your column names')}}
         </h1>
            <p class="govuk-body">
-            We found more than one column called {{ (
+            {{_('We found more than one column called %%s.') % (
             recipients.duplicate_recipient_column_headers
             ) | formatted_list(
               conjunction='or',
               prefix='',
               prefix_plural=''
-            ) }}.
+            ) }}
           </p>
         <p class="govuk-body">
-          Delete or rename one of these columns and try again.
+          {{_('Delete or rename one of these columns and try again.')}}
         </p>
 
       {% elif recipients.missing_column_headers %}
 
         <h1 class='banner-title' data-notify-module="track-error" data-error-type="Missing placeholder columns" data-error-label="{{ upload_id }}">
-          Your column names need to match the double brackets in your template
+          {{_('Your column names need to match the double brackets in your template')}}
         </h1>
           <p class="govuk-body">
-            Your file is missing {{ recipients.missing_column_headers | formatted_list(
+            {{_('Your file is missing %%s.') % (recipients.missing_column_headers | formatted_list(
               conjunction='and',
               prefix='a column called ',
               prefix_plural='columns called '
-            ) }}.
+            )) }}
           </p>
 
       {% elif sent_previously %}
@@ -140,11 +143,11 @@
           form.file,
           allowed_file_extensions=allowed_file_extensions,
           action=url_for('.send_messages', service_id=current_service.id, template_id=template.id),
-          button_text='Upload your file again'
+          button_text=_('Upload your file again')
         ) }}
       {% endif %}
     </div>
-    <a href="#content" class="govuk-link govuk-link--no-visited-state back-to-top-link">Back to top</a>
+    <a href="#content" class="govuk-link govuk-link--no-visited-state back-to-top-link">{{_('Back to top')}}</a>
   </div>
 
   {% if not request.args.from_test %}
@@ -159,7 +162,7 @@
         caption=original_file_name,
         caption_visible=False,
         field_headings=[
-          '<span class="govuk-visually-hidden">Row in file</span><span aria-hidden="true">1</span>'|safe
+          _('<span class="govuk-visually-hidden">Row in file</span><span aria-hidden="true">1</span>')|safe
         ] + column_headers
       ) %}
         {% call index_field() %}
@@ -201,23 +204,23 @@
 
   {% if recipients.too_many_rows %}
     <p class="table-show-more-link">
-        Only showing the first {{ count_of_displayed_recipients }} rows
+        {{_('Only showing the first %%s rows') % count_of_displayed_recipients }}
     </p>
   {% elif count_of_displayed_recipients < count_of_recipients %}
     <p class="table-show-more-link">
       {% if row_errors and not recipients.missing_column_headers %}
-        Only showing the first {{ count_of_displayed_recipients }} rows with errors
+        {{_('Only showing the first %%s rows with errors') % count_of_displayed_recipients }}
       {% else %}
-        Only showing the first {{ count_of_displayed_recipients }} rows
+        {{_('Only showing the first %%s rows') % count_of_displayed_recipients }}
       {% endif %}
     </p>
   {% elif row_errors and not recipients.missing_column_headers %}
     <p class="table-show-more-link">
-      Only showing rows with errors
+      {{_('Only showing rows with errors')}}
     </p>
   {% endif %}
 
-  <h2 class="heading-medium">Preview of {{ template.name }}</h2>
+  <h2 class="heading-medium">{{_('Preview of %%s') % template.name}}</h2>
   {{ template|string }}
 
 {% endblock %}

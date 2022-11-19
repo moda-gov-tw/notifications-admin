@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Error
+  {{_('Error')}}
 {% endblock %}
 
 {% block backLink %}
@@ -19,17 +19,17 @@
     {% call banner_wrapper(type='dangerous') %}
       {% if row_errors|length == 1 %}
         <h1 class='banner-title' data-notify-module="track-error" data-error-type="Bad rows" data-error-label="{{ upload_id }}">
-          There’s a problem with {{ original_file_name }}
+          {{_('There’s a problem with %%s') % original_file_name }}
         </h1>
         <p class="govuk-body">
-          You need to {{ row_errors[0] }}.
+          {{_('You need to %%s.') % row_errors[0]}}
         </p>
       {% else %}
         <h1 class='banner-title' data-notify-module="track-error" data-error-type="Bad rows" data-error-label="{{ upload_id }}">
-          There are some problems with {{ original_file_name }}
+          {{_('There are some problems with %%s') % original_file_name }}
         </h1>
         <p class="govuk-body">
-          You need to:
+          {{_('You need to:')}}
         </p>
         <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-0">
           {% for error in row_errors %}
@@ -46,18 +46,18 @@
         form.file,
         allowed_file_extensions=allowed_file_extensions,
         action=url_for('.send_messages', service_id=current_service.id, template_id=template.id),
-        button_text='Upload your file again'
+        button_text=_('Upload your file again')
       ) }}
     </div>
-    <a href="#content" class="govuk-link govuk-link--no-visited-state back-to-top-link">Back to top</a>
+    <a href="#content" class="govuk-link govuk-link--no-visited-state back-to-top-link">{{_('Back to top')}}</a>
   </div>
 
   <div class="fullscreen-content" data-notify-module="fullscreen-table">
     {% call(item, row_number) mapping_table(
-      caption="Errors in " + original_file_name,
+      caption=_("Errors in %%s") % original_file_name,
       caption_visible=False,
       field_headings=[
-        '<span class="govuk-visually-hidden">Row in file</span><span aria-hidden="true" class="table-field-invisible-error">1</span>'|safe
+        _('<span class="govuk-visually-hidden">Row in file</span><span aria-hidden="true" class="table-field-invisible-error">1</span>')|safe
       ] + recipients.column_headers
     ) %}
       {% for item in recipients.displayed_rows %}
@@ -71,23 +71,23 @@
             {% call field(colspan=recipients.column_headers|length) %}
               <span class="table-field-error-label">
                 {% if item.message_empty %}
-                  No content for this message
+                  {{_('No content for this message')}}
                 {% elif item.message_too_long %}
-                  Message is too long
+                  {{_('Message is too long')}}
                 {% elif not item.as_postal_address.has_enough_lines %}
-                  Address must be at least {{ letter_min_address_lines }} lines long
+                  {{_('Address must be at least %%s lines long') % letter_min_address_lines }}
                 {% elif item.as_postal_address.has_too_many_lines %}
-                  Address must be no more than {{ letter_max_address_lines }} lines long
+                  {{_('Address must be no more than %%s lines long') % letter_max_address_lines }}
                 {% elif not item.as_postal_address.has_valid_last_line %}
                   {% if item.as_postal_address.allow_international_letters %}
-                    Last line of the address must be a UK postcode or another country
+                    {{_('Last line of the address must be a UK postcode or another country')}}
                   {% elif item.as_postal_address.international %}
-                    You do not have permission to send letters to other countries
+                    {{_('You do not have permission to send letters to other countries')}}
                   {% else %}
-                    Last line of the address must be a real UK postcode
+                    {{_('Last line of the address must be a real UK postcode')}}
                   {% endif %}
                 {% elif item.as_postal_address.has_invalid_characters %}
-                  Address lines must not start with any of the following characters: @ ( ) = [ ] ” \ / , < > ~
+                  {{_('Address lines must not start with any of the following characters: @ ( ) = [ ] ” \ / , < > ~')}}
                 {% endif %}
               </span>
             {% endcall %}
@@ -127,14 +127,14 @@
   {% if count_of_displayed_recipients < count_of_recipients %}
     <p class="table-show-more-link">
       {% if row_errors and not recipients.missing_column_headers %}
-        Only showing the first {{ count_of_displayed_recipients }} rows with errors
+        {{_('Only showing the first %%s rows with errors') % count_of_displayed_recipients }}
       {% else %}
-        Only showing the first {{ count_of_displayed_recipients }} rows
+        {{_('Only showing the first %%s rows') % count_of_displayed_recipients }}
       {% endif %}
     </p>
   {% elif row_errors and not recipients.missing_column_headers %}
     <p class="table-show-more-link">
-      Only showing rows with errors
+      {{_('Only showing rows with errors')}}
     </p>
   {% endif %}
 

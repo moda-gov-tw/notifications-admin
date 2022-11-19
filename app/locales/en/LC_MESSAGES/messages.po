@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-19 10:59+0800\n"
+"POT-Creation-Date: 2022-11-19 11:40+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -184,11 +184,11 @@ msgstr ""
 msgid "Are you sure you want to cancel sending these letters?"
 msgstr ""
 
-#: main/views/jobs.py:172
+#: main/views/jobs.py:172 templates/views/notifications/check.html:33
 msgid "email address"
 msgstr ""
 
-#: main/views/jobs.py:173
+#: main/views/jobs.py:173 templates/views/notifications/check.html:33
 msgid "phone number"
 msgstr ""
 
@@ -636,6 +636,142 @@ msgstr ""
 msgid "Uploaded letter file name"
 msgstr ""
 
+#: main/views/send.py:147
+msgid "Could not read {}. Try using a different file format."
+msgstr ""
+
+#: main/views/send.py:215
+msgid "(Default)"
+msgstr ""
+
+#: main/views/send.py:217
+msgid "(Receives replies)"
+msgstr ""
+
+#: main/views/send.py:219
+msgid "(Default and receives replies)"
+msgstr ""
+
+#: main/views/send.py:246 main/views/send.py:247
+msgid "Where should replies come back to?"
+msgstr ""
+
+#: main/views/send.py:248
+msgid "email_address"
+msgstr ""
+
+#: main/views/send.py:251
+msgid "Send to one recipient"
+msgstr ""
+
+#: main/views/send.py:252
+msgid "What should appear in the top right of the letter?"
+msgstr ""
+
+#: main/views/send.py:256 main/views/send.py:257
+msgid "Who should the message come from?"
+msgstr ""
+
+#: main/views/send.py:843
+msgid "Send ‘{}’"
+msgstr ""
+
+#: main/views/send.py:844
+msgid "Personalise this message"
+msgstr ""
+
+#: main/views/send.py:891
+msgid "Use my {}"
+msgstr ""
+
+#: main/views/send.py:1025
+msgid "Service {} could not send notification: \"{}\""
+msgstr ""
+
+#: templates/partials/check/letter-too-long.html:2
+msgid "Your letter is too long"
+msgstr ""
+
+#: templates/partials/check/letter-too-long.html:5
+#, python-format
+msgid ""
+"Letters must be %%s pages or less (%%s double-sided sheets of "
+"paper).<br>Your letter is %%s pages long."
+msgstr ""
+
+#: templates/partials/check/message-too-long.html:2
+msgid "Message too long"
+msgstr ""
+
+#: templates/partials/check/message-too-long.html:5
+#, python-format
+msgid ""
+"Text messages cannot be longer than %%s characters. Your message is %%s "
+"characters."
+msgstr ""
+
+#: templates/partials/check/not-allowed-to-send-to.html:2
+msgid "You cannot send to"
+msgstr ""
+
+#: templates/partials/check/not-allowed-to-send-to.html:10
+#, python-format
+msgid ""
+"In <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">trial mode</a> you can only\n"
+"  send to yourself and members of your team"
+msgstr ""
+
+#: templates/partials/check/sent-previously.html:2
+msgid "These messages have already been sent today"
+msgstr ""
+
+#: templates/partials/check/sent-previously.html:5
+msgid "If you need to resend them, rename the file and upload it again."
+msgstr ""
+
+#: templates/partials/check/too-many-messages.html:3
+msgid "Too many recipients"
+msgstr ""
+
+#: templates/partials/check/too-many-messages.html:5
+msgid "Daily limit reached"
+msgstr ""
+
+#: templates/partials/check/too-many-messages.html:9
+#, python-format
+msgid "You can only send %%s messages per day"
+msgstr ""
+
+#: templates/partials/check/too-many-messages.html:11
+#, python-format
+msgid ""
+"in <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">trial mode</a>"
+msgstr ""
+
+#: templates/partials/check/too-many-messages.html:18
+#, python-format
+msgid "You can still send %%s messages today, but"
+msgstr ""
+
+#: templates/partials/check/too-many-messages.html:20
+#, python-format
+msgid "‘%%s’ contains %%s."
+msgstr ""
+
+#: templates/partials/check/trying-to-send-letters-in-trial-mode.html:2
+msgid "You cannot send"
+msgstr ""
+
+#: templates/partials/check/trying-to-send-letters-in-trial-mode.html:6
+#, python-format
+msgid ""
+"In <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">trial mode</a> you\n"
+"  can only preview how your letters will look"
+msgstr ""
+
 #: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:2
 #, python-format
 msgid "Are you sure you want to make ‘%%s’ the default email branding?"
@@ -715,6 +851,7 @@ msgstr ""
 #: templates/views/message-status.html:25
 #: templates/views/message-status.html:54
 #: templates/views/message-status.html:78
+#: templates/views/send-contact-list.html:44
 msgid "Status"
 msgstr ""
 
@@ -2709,7 +2846,10 @@ msgstr ""
 #: templates/views/organisations/add-nhs-local-organisation.html:32
 #: templates/views/register-from-invite.html:42
 #: templates/views/register-from-org-invite.html:28
-#: templates/views/register.html:32 templates/views/support/index.html:20
+#: templates/views/register.html:32
+#: templates/views/send-one-off-letter-address.html:41
+#: templates/views/send-test.html:47 templates/views/support/index.html:20
+#: templates/views/templates/set-sender.html:29
 msgid "Continue"
 msgstr ""
 
@@ -3246,6 +3386,63 @@ msgid ""
 "=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"https://www.gov.uk/government/organisations/united-kingdom-"
 "security-vetting\">United Kingdom Security Vetting</a> (UKSV)."
+msgstr ""
+
+#: templates/views/send-contact-list.html:9
+#: templates/views/send-contact-list.html:18
+msgid "Choose an emergency contact list"
+msgstr ""
+
+#: templates/views/send-contact-list.html:24
+#, python-format
+msgid ""
+"You cannot use an emergency contact list with this template because it\n"
+"          is personalised with %%s."
+msgstr ""
+
+#: templates/views/send-contact-list.html:28
+msgid ""
+"Emergency contact lists can only include email addresses or phone\n"
+"          numbers."
+msgstr ""
+
+#: templates/views/send-contact-list.html:37
+msgid "Emergency contact lists"
+msgstr ""
+
+#: templates/views/send-contact-list.html:40
+msgid "You have not saved any contact lists yet."
+msgstr ""
+
+#: templates/views/send-contact-list.html:43
+msgid "File"
+msgstr ""
+
+#: templates/views/send-contact-list.html:52
+#, python-format
+msgid "Uploaded %%s"
+msgstr ""
+
+#: templates/views/send-contact-list.html:69
+#, python-format
+msgid "You have not saved any lists of %%s yet."
+msgstr ""
+
+#: templates/views/send-contact-list.html:72
+#, python-format
+msgid ""
+"To upload and save an emergency contact list, go to the <a class=\"govuk-"
+"link govuk-link--no-visited-state\" href=\"%%s\">uploads</a> page."
+msgstr ""
+
+#: templates/views/send-one-off-letter-address.html:38
+#: templates/views/send-test.html:31
+#, python-format
+msgid "Upload a list of %%s"
+msgstr ""
+
+#: templates/views/send-test.html:33
+msgid "Use an emergency list"
 msgstr ""
 
 #: templates/views/signedout.html:5
@@ -4183,6 +4380,201 @@ msgstr ""
 msgid ""
 "You can always go back to training mode by clicking ‘Switch service’ in "
 "the top right."
+msgstr ""
+
+#: templates/views/check/column-errors.html:9
+#: templates/views/check/row-errors.html:9
+#: templates/views/notifications/check.html:8
+msgid "Error"
+msgstr ""
+
+#: templates/views/check/column-errors.html:24
+msgid "Your file has too many rows"
+msgstr ""
+
+#: templates/views/check/column-errors.html:27
+#, python-format
+msgid ""
+"Notify can process up to\n"
+"          %%s rows at once. Your\n"
+"          file has %%s rows."
+msgstr ""
+
+#: templates/views/check/column-errors.html:38
+msgid "Your file is missing some rows"
+msgstr ""
+
+#: templates/views/check/column-errors.html:42
+#, python-format
+msgid "It needs at least one row of data, and %%s."
+msgstr ""
+
+#: templates/views/check/column-errors.html:49
+msgid "It needs at least one row of data."
+msgstr ""
+
+#: templates/views/check/column-errors.html:56
+#: templates/views/check/column-errors.html:78
+msgid "There’s a problem with your column names"
+msgstr ""
+
+#: templates/views/check/column-errors.html:60
+msgid ""
+"Your file needs at least 3 address columns, for example ‘address line 1’,"
+"\n"
+"            ‘address line 2’ and ‘address line 3’."
+msgstr ""
+
+#: templates/views/check/column-errors.html:65
+#, python-format
+msgid "Your file needs a column called ‘%%s’."
+msgstr ""
+
+#: templates/views/check/column-errors.html:69
+#, python-format
+msgid "Right now it has %%s."
+msgstr ""
+
+#: templates/views/check/column-errors.html:81
+#, python-format
+msgid "We found more than one column called %%s."
+msgstr ""
+
+#: templates/views/check/column-errors.html:90
+msgid "Delete or rename one of these columns and try again."
+msgstr ""
+
+#: templates/views/check/column-errors.html:96
+msgid "Your column names need to match the double brackets in your template"
+msgstr ""
+
+#: templates/views/check/column-errors.html:99
+#, python-format
+msgid "Your file is missing %%s."
+msgstr ""
+
+#: templates/views/check/column-errors.html:146
+#: templates/views/check/row-errors.html:49
+msgid "Upload your file again"
+msgstr ""
+
+#: templates/views/check/column-errors.html:150
+#: templates/views/check/row-errors.html:52
+msgid "Back to top"
+msgstr ""
+
+#: templates/views/check/column-errors.html:165
+#: templates/views/check/ok.html:75
+msgid ""
+"<span class=\"govuk-visually-hidden\">Row in file</span><span aria-"
+"hidden=\"true\">1</span>"
+msgstr ""
+
+#: templates/views/check/column-errors.html:207
+#: templates/views/check/column-errors.html:214
+#: templates/views/check/ok.html:106 templates/views/check/row-errors.html:132
+#, python-format
+msgid "Only showing the first %%s rows"
+msgstr ""
+
+#: templates/views/check/column-errors.html:212
+#: templates/views/check/row-errors.html:130
+#, python-format
+msgid "Only showing the first %%s rows with errors"
+msgstr ""
+
+#: templates/views/check/column-errors.html:219
+#: templates/views/check/row-errors.html:137
+msgid "Only showing rows with errors"
+msgstr ""
+
+#: templates/views/check/column-errors.html:223
+#, python-format
+msgid "Preview of %%s"
+msgstr ""
+
+#: templates/views/check/ok.html:12 templates/views/check/ok.html:22
+msgid "Preview of {}"
+msgstr ""
+
+#: templates/views/check/ok.html:31
+msgid "Skip to file contents"
+msgstr ""
+
+#: templates/views/check/ok.html:52
+#, python-format
+msgid "Send %%s"
+msgstr ""
+
+#: templates/views/check/ok.html:58 templates/views/notifications/check.html:79
+#: templates/views/notifications/notification.html:106
+msgid "Download as a PDF"
+msgstr ""
+
+#: templates/views/check/row-errors.html:22
+#, python-format
+msgid "There’s a problem with %%s"
+msgstr ""
+
+#: templates/views/check/row-errors.html:25
+#, python-format
+msgid "You need to %%s."
+msgstr ""
+
+#: templates/views/check/row-errors.html:29
+#, python-format
+msgid "There are some problems with %%s"
+msgstr ""
+
+#: templates/views/check/row-errors.html:32
+msgid "You need to:"
+msgstr ""
+
+#: templates/views/check/row-errors.html:57
+#, python-format
+msgid "Errors in %%s"
+msgstr ""
+
+#: templates/views/check/row-errors.html:60
+msgid ""
+"<span class=\"govuk-visually-hidden\">Row in file</span><span aria-"
+"hidden=\"true\" class=\"table-field-invisible-error\">1</span>"
+msgstr ""
+
+#: templates/views/check/row-errors.html:74
+msgid "No content for this message"
+msgstr ""
+
+#: templates/views/check/row-errors.html:76
+msgid "Message is too long"
+msgstr ""
+
+#: templates/views/check/row-errors.html:78
+#, python-format
+msgid "Address must be at least %%s lines long"
+msgstr ""
+
+#: templates/views/check/row-errors.html:80
+#, python-format
+msgid "Address must be no more than %%s lines long"
+msgstr ""
+
+#: templates/views/check/row-errors.html:83
+msgid "Last line of the address must be a UK postcode or another country"
+msgstr ""
+
+#: templates/views/check/row-errors.html:85
+msgid "You do not have permission to send letters to other countries"
+msgstr ""
+
+#: templates/views/check/row-errors.html:87
+msgid "Last line of the address must be a real UK postcode"
+msgstr ""
+
+#: templates/views/check/row-errors.html:90
+msgid ""
+"Address lines must not start with any of the following characters: @ ( ) "
+"= [ ] ” \\ / , < > ~"
 msgstr ""
 
 #: templates/views/conversations/conversation.html:7
@@ -5498,6 +5890,15 @@ msgid ""
 "to their profile"
 msgstr ""
 
+#: templates/views/notifications/check.html:8
+#: templates/views/notifications/check.html:61
+msgid "Preview of ‘{}’"
+msgstr ""
+
+#: templates/views/notifications/check.html:75
+msgid "Send 1 message"
+msgstr ""
+
 #: templates/views/notifications/invalid_precompiled_letter.html:12
 #, python-format
 msgid "Provided as PDF on %%(date)s"
@@ -5575,10 +5976,6 @@ msgstr ""
 
 #: templates/views/notifications/notification.html:101
 msgid "Cancel sending this letter"
-msgstr ""
-
-#: templates/views/notifications/notification.html:106
-msgid "Download as a PDF"
 msgstr ""
 
 #: templates/views/notifications/notification.html:119
