@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-19 22:20+0800\n"
+"POT-Creation-Date: 2022-11-19 22:23+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -1025,6 +1025,26 @@ msgstr ""
 
 #: main/views/verify.py:53
 msgid "That verification link has expired."
+msgstr ""
+
+#: main/views/webauthn_credentials.py:42
+msgid "No registration in progress"
+msgstr ""
+
+#: main/views/webauthn_credentials.py:50
+#, python-format
+msgid "User %%s could not register a new webauthn token - %%s"
+msgstr ""
+
+#: main/views/webauthn_credentials.py:57
+msgid ""
+"Registration complete. Next time you sign in to Notify you’ll be asked to"
+" use your security key."
+msgstr ""
+
+#: main/views/webauthn_credentials.py:133
+#, python-format
+msgid "User %%s could not sign in using their webauthn token - %%s"
 msgstr ""
 
 #: templates/partials/check/letter-too-long.html:2
