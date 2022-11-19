@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-19 22:17+0800\n"
+"POT-Creation-Date: 2022-11-19 22:20+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -1022,6 +1022,14 @@ msgstr ""
 
 #: main/views/user_profile.py:291
 msgid "You cannot delete your last security key."
+msgstr ""
+
+#: main/views/verify.py:43
+msgid "The link in the email we sent you has expired. We've sent you a new one."
+msgstr ""
+
+#: main/views/verify.py:53
+msgid "That verification link has expired."
 msgstr ""
 
 #: templates/partials/check/letter-too-long.html:2
