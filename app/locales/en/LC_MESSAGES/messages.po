@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-19 10:45+0800\n"
+"POT-Creation-Date: 2022-11-19 10:49+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -1726,7 +1726,13 @@ msgid ""
 "href=\"%%s\">whether your organisation can use Notify</a>."
 msgstr ""
 
-#: templates/views/get-started.html:27 templates/views/signedout.html:37
+#: templates/views/get-started.html:27
+#: templates/views/register-from-invite.html:6
+#: templates/views/register-from-invite.html:13
+#: templates/views/register-from-org-invite.html:6
+#: templates/views/register-from-org-invite.html:13
+#: templates/views/register.html:6 templates/views/register.html:13
+#: templates/views/signedout.html:37
 msgid "Create an account"
 msgstr ""
 
@@ -2211,6 +2217,9 @@ msgid "You can now create a new password for your account."
 msgstr ""
 
 #: templates/views/new-password.html:21
+#: templates/views/register-from-invite.html:39
+#: templates/views/register-from-org-invite.html:25
+#: templates/views/register.html:30
 msgid "At least 8 characters"
 msgstr ""
 
@@ -2245,6 +2254,8 @@ msgstr ""
 
 #: templates/views/password-reset-sent.html:4
 #: templates/views/password-reset-sent.html:11
+#: templates/views/registration-continue.html:4
+#: templates/views/registration-continue.html:9
 #: templates/views/resend-email-verification.html:5
 #: templates/views/resend-email-verification.html:10
 msgid "Check your email"
@@ -2620,13 +2631,67 @@ msgid ""
 "    Cheshire SK9 5AF"
 msgstr ""
 
+#: templates/views/register-from-invite.html:15
+msgid "Your account will be created with this email address:"
+msgstr ""
+
+#: templates/views/providers/providers.html:43
+#: templates/views/register-from-invite.html:25
+msgid "Email"
+msgstr ""
+
+#: templates/views/register-from-invite.html:33
+#: templates/views/register-from-org-invite.html:20
+#: templates/views/register.html:26
+msgid "We’ll send you a security code by text message"
+msgstr ""
+
+#: templates/views/agreement/agreement-accept.html:41
+#: templates/views/api/keys/create.html:23
+#: templates/views/broadcast/areas.html:30
+#: templates/views/broadcast/counties.html:40
+#: templates/views/broadcast/new-broadcast.html:28
+#: templates/views/broadcast/sub-areas.html:33
+#: templates/views/broadcast/tour/1.html:25
+#: templates/views/broadcast/tour/2.html:23
+#: templates/views/broadcast/tour/3.html:21
+#: templates/views/broadcast/tour/4.html:25
+#: templates/views/broadcast/tour/5.html:35
+#: templates/views/broadcast/tour/6.html:26
+#: templates/views/broadcast/tour/live/1.html:27
+#: templates/views/broadcast/tour/live/2.html:24
+#: templates/views/broadcast/write-new-broadcast.html:44
+#: templates/views/email-branding/government-identity-options-colour.html:30
+#: templates/views/email-branding/government-identity-options.html:30
+#: templates/views/organisations/add-gp-organisation.html:28
+#: templates/views/organisations/add-nhs-local-organisation.html:32
+#: templates/views/register-from-invite.html:42
+#: templates/views/register-from-org-invite.html:28
+#: templates/views/register.html:32 templates/views/support/index.html:20
+msgid "Continue"
+msgstr ""
+
+#: templates/views/register-from-org-invite.html:14
+msgid "Your account will be created with this email:"
+msgstr ""
+
+#: templates/views/register.html:18
+msgid "Must be from a public sector organisation"
+msgstr ""
+
+#: templates/views/registration-continue.html:10
+#, python-format
+msgid "An email has been sent to %%s."
+msgstr ""
+
+#: templates/views/registration-continue.html:11
+#: templates/views/resend-email-verification.html:12
+msgid "Click the link in the email to continue your registration."
+msgstr ""
+
 #: templates/views/resend-email-verification.html:11
 #, python-format
 msgid "A new confirmation email has been sent to %%s"
-msgstr ""
-
-#: templates/views/resend-email-verification.html:12
-msgid "Click the link in the email to continue your registration."
 msgstr ""
 
 #: templates/views/roadmap.html:10 templates/views/roadmap.html:15
@@ -3560,29 +3625,6 @@ msgstr ""
 
 #: templates/views/agreement/agreement-accept.html:37
 msgid "The version number is on the front page, for example ‘3.6’"
-msgstr ""
-
-#: templates/views/agreement/agreement-accept.html:41
-#: templates/views/api/keys/create.html:23
-#: templates/views/broadcast/areas.html:30
-#: templates/views/broadcast/counties.html:40
-#: templates/views/broadcast/new-broadcast.html:28
-#: templates/views/broadcast/sub-areas.html:33
-#: templates/views/broadcast/tour/1.html:25
-#: templates/views/broadcast/tour/2.html:23
-#: templates/views/broadcast/tour/3.html:21
-#: templates/views/broadcast/tour/4.html:25
-#: templates/views/broadcast/tour/5.html:35
-#: templates/views/broadcast/tour/6.html:26
-#: templates/views/broadcast/tour/live/1.html:27
-#: templates/views/broadcast/tour/live/2.html:24
-#: templates/views/broadcast/write-new-broadcast.html:44
-#: templates/views/email-branding/government-identity-options-colour.html:30
-#: templates/views/email-branding/government-identity-options.html:30
-#: templates/views/organisations/add-gp-organisation.html:28
-#: templates/views/organisations/add-nhs-local-organisation.html:32
-#: templates/views/support/index.html:20
-msgid "Continue"
 msgstr ""
 
 #: templates/views/agreement/agreement-confirm.html:8
@@ -6794,10 +6836,6 @@ msgstr ""
 
 #: templates/views/providers/providers.html:22
 msgid "% monthly traffic"
-msgstr ""
-
-#: templates/views/providers/providers.html:43
-msgid "Email"
 msgstr ""
 
 #: templates/views/providers/providers.html:47
