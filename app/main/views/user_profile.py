@@ -10,6 +10,7 @@ from flask import (
     session,
     url_for,
 )
+from flask_babel import _
 from flask_login import current_user
 from notifications_python_client.errors import HTTPError
 from notifications_utils.url_safe_token import check_token
@@ -53,7 +54,7 @@ def user_profile_name():
         current_user.update(name=form.new_name.data)
         return redirect(url_for(".user_profile"))
 
-    return render_template("views/user-profile/change.html", thing="name", form_field=form.new_name)
+    return render_template("views/user-profile/change.html", thing=_("name"), form_field=form.new_name)
 
 
 @main.route("/user-profile/email", methods=["GET", "POST"])
@@ -66,7 +67,7 @@ def user_profile_email():
     if form.validate_on_submit():
         session[NEW_EMAIL] = form.email_address.data
         return redirect(url_for(".user_profile_email_authenticate"))
-    return render_template("views/user-profile/change.html", thing="email address", form_field=form.email_address)
+    return render_template("views/user-profile/change.html", thing=_("email address"), form_field=form.email_address)
 
 
 @main.route("/user-profile/email/authenticate", methods=["GET", "POST"])
@@ -87,7 +88,7 @@ def user_profile_email_authenticate():
 
     return render_template(
         "views/user-profile/authenticate.html",
-        thing="email address",
+        thing=_("email address"),
         form=form,
         back_link=url_for(".user_profile_email"),
     )
@@ -123,7 +124,7 @@ def user_profile_mobile_number():
         return redirect(url_for(".user_profile_mobile_number_authenticate"))
 
     if request.endpoint == "main.user_profile_confirm_delete_mobile_number":
-        flash("Are you sure you want to delete your mobile number from Notify?", "delete")
+        flash(_("Are you sure you want to delete your mobile number from Notify?"), "delete")
 
     return render_template(
         "views/user-profile/change.html", thing="mobile number", form_field=form.mobile_number, user_auth=user.auth_type
@@ -161,7 +162,7 @@ def user_profile_mobile_number_authenticate():
 
     return render_template(
         "views/user-profile/authenticate.html",
-        thing="mobile number",
+        thing=_("mobile number"),
         form=form,
         back_link=url_for(".user_profile_mobile_number_confirm"),
     )
@@ -215,13 +216,13 @@ def user_profile_disable_platform_admin_view():
         abort(403)
 
     form = ServiceOnOffSettingForm(
-        name="Use platform admin view",
+        name=_("Use platform admin view"),
         enabled=not session.get("disable_platform_admin_view"),
         truthy="Yes",
         falsey="No",
     )
 
-    form.enabled.param_extensions = {"hint": {"text": "Signing in again clears this setting"}}
+    form.enabled.param_extensions = {"hint": {"text": _("Signing in again clears this setting")}}
 
     if form.validate_on_submit():
         session["disable_platform_admin_view"] = not form.enabled.data
@@ -271,7 +272,7 @@ def user_profile_manage_security_key(key_id):
         return redirect(url_for(".user_profile_security_keys"))
 
     if request.endpoint == "main.user_profile_confirm_delete_security_key":
-        flash("Are you sure you want to delete this security key?", "delete")
+        flash(_("Are you sure you want to delete this security key?"), "delete")
 
     return render_template("views/user-profile/manage-security-key.html", security_key=security_key, form=form)
 
@@ -285,9 +286,9 @@ def user_profile_delete_security_key(key_id):
     try:
         user_api_client.delete_webauthn_credential_for_user(user_id=current_user.id, credential_id=key_id)
     except HTTPError as e:
-        message = "Cannot delete last remaining webauthn credential for user"
+        message = _("Cannot delete last remaining webauthn credential for user")
         if e.message == message:
-            flash("You cannot delete your last security key.")
+            flash(_("You cannot delete your last security key."))
             return redirect(url_for(".user_profile_manage_security_key", key_id=key_id))
         else:
             raise e

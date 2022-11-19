@@ -14,7 +14,7 @@
       {
         "key": {
           "classes": "notify-summary-list__key notify-summary-list__key--one-quarter",
-          "text": "Email address"
+          "text": _("Email address")
         },
         "value": {
           "text": current_user.email_address
@@ -22,8 +22,8 @@
         "actions": {
           "items": [{
             "href": url_for('.user_profile_email'),
-            "text": "Change",
-            "visuallyHiddenText": "email address",
+            "text": _("Change"),
+            "visuallyHiddenText": _("email address"),
             "classes": "govuk-link--no-visited-state"
           }]
         }
@@ -35,7 +35,7 @@
         "classes": "govuk-summary-list__row--no-actions",
         "key": {
           "classes": "notify-summary-list__key notify-summary-list__key--one-quarter",
-          "text": "Email address"
+          "text": _("Email address")
         },
         "value": {
           "text": current_user.email_address
@@ -48,7 +48,7 @@
     {
       "key": {
         "classes": "notify-summary-list__key notify-summary-list__key--one-quarter",
-        "text": "Name"
+        "text": _("Name")
       },
       "value": {
         "text": current_user.name
@@ -57,8 +57,8 @@
         "items": [
           {
             "href": url_for('.user_profile_name'),
-            "text": "Change",
-            "visuallyHiddenText": "name",
+            "text": _("Change"),
+            "visuallyHiddenText": _("name"),
             "classes": "govuk-link--no-visited-state"
           }
         ]
@@ -68,7 +68,7 @@
     {
       "key": {
         "classes": "notify-summary-list__key notify-summary-list__key--one-quarter",
-        "text": "Mobile number"
+        "text": _("Mobile number")
       },
       "value": {
         "text": current_user.mobile_number or "Not set",
@@ -78,8 +78,8 @@
         "items": [
         {
           "href": url_for('.user_profile_mobile_number'),
-          "text": "Change",
-          "visuallyHiddenText": "mobile number",
+          "text": _("Change"),
+          "visuallyHiddenText": _("mobile number"),
           "classes": "govuk-link--no-visited-state"
         }
 
@@ -89,17 +89,17 @@
     {
       "key": {
         "classes": "notify-summary-list__key notify-summary-list__key--one-quarter",
-        "text": "Password"
+        "text": _("Password")
       },
       "value": {
-        "text": ('Last changed ' + current_user.password_changed_at|format_delta)
+        "text": _('Last changed %%s') % current_user.password_changed_at|format_delta
       },
       "actions": {
         "items": [
           {
             "href": url_for('.user_profile_password'),
-            "text": "Change",
-            "visuallyHiddenText": "password",
+            "text": _("Change"),
+            "visuallyHiddenText": _("password"),
             "classes": "govuk-link--no-visited-state"
           }
         ]
@@ -112,18 +112,18 @@
     {
       "key": {
         "classes": "notify-summary-list__key notify-summary-list__key--one-quarter",
-        "text": "Security keys"
+        "text": _("Security keys")
       },
       "value": {
-        "text": ('{} registered'.format(current_user.webauthn_credentials|length)) if current_user.webauthn_credentials else "None registered",
+        "text": (_('{} registered').format(current_user.webauthn_credentials|length)) if current_user.webauthn_credentials else _("None registered"),
         "classes": "" if current_user.webauthn_credentials else "table-field-status-default"
       },
       "actions": {
         "items": [
           {
             "href": url_for('.user_profile_security_keys'),
-            "text": "Change",
-            "visuallyHiddenText": "security keys",
+            "text": _("Change"),
+            "visuallyHiddenText": _("security keys"),
             "classes": "govuk-link--no-visited-state"
           }
         ]
@@ -137,7 +137,7 @@
     {
       "key": {
         "classes": "notify-summary-list__key notify-summary-list__key--one-quarter",
-        "text": "Use platform admin view"
+        "text": _("Use platform admin view")
       },
       "value": {
         "text": (not session.get('disable_platform_admin_view'))|format_yes_no
@@ -146,8 +146,8 @@
         "items": [
           {
             "href": url_for('.user_profile_disable_platform_admin_view'),
-            "text": "Change",
-            "visuallyHiddenText": "whether to use platform admin view",
+            "text": _("Change"),
+            "visuallyHiddenText": _("whether to use platform admin view"),
             "classes": "govuk-link--no-visited-state"
           }
         ]

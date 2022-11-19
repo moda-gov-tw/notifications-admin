@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-19 16:19+0800\n"
+"POT-Creation-Date: 2022-11-19 22:17+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -184,8 +184,10 @@ msgstr ""
 msgid "Are you sure you want to cancel sending these letters?"
 msgstr ""
 
-#: main/views/jobs.py:172 templates/views/notifications/check.html:33
+#: main/views/jobs.py:172 main/views/user_profile.py:70
+#: main/views/user_profile.py:91 templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:63
+#: templates/views/user-profile.html:26
 msgid "email address"
 msgstr ""
 
@@ -640,7 +642,7 @@ msgstr ""
 msgid "Uploaded letter file name"
 msgstr ""
 
-#: main/views/send.py:147 main/views/uploads.py:405
+#: main/views/send.py:147 main/views/uploads.py:407
 msgid "Could not read {}. Try using a different file format."
 msgstr ""
 
@@ -937,7 +939,9 @@ msgstr ""
 msgid "Email resent"
 msgstr ""
 
-#: main/views/two_factor.py:31 templates/views/password-reset-sent.html:4
+#: main/views/two_factor.py:31 templates/views/change-email-continue.html:4
+#: templates/views/change-email-continue.html:9
+#: templates/views/password-reset-sent.html:4
 #: templates/views/password-reset-sent.html:11
 #: templates/views/registration-continue.html:4
 #: templates/views/registration-continue.html:9
@@ -966,19 +970,53 @@ msgstr ""
 msgid "There’s a problem with your file"
 msgstr ""
 
-#: main/views/uploads.py:246
+#: main/views/uploads.py:248
 msgid "Wrong file type"
 msgstr ""
 
-#: main/views/uploads.py:408
+#: main/views/uploads.py:410
 msgid ""
 "{} contains numbers or dates that Notify cannot understand. Try "
 "formatting all columns as ‘text’ or export your file as CSV."
 msgstr ""
 
-#: main/views/uploads.py:559
+#: main/views/uploads.py:561
 #, python-format
 msgid "Are you sure you want to delete ‘%%s’?"
+msgstr ""
+
+#: main/views/user_profile.py:57 templates/views/user-profile.html:61
+msgid "name"
+msgstr ""
+
+#: main/views/user_profile.py:127
+msgid "Are you sure you want to delete your mobile number from Notify?"
+msgstr ""
+
+#: main/views/user_profile.py:165 templates/views/user-profile.html:82
+msgid "mobile number"
+msgstr ""
+
+#: main/views/user_profile.py:219 templates/views/user-profile.html:140
+#: templates/views/user-profile/disable-platform-admin-view.html:6
+msgid "Use platform admin view"
+msgstr ""
+
+#: main/views/user_profile.py:225
+#: templates/views/user-profile/disable-platform-admin-view.html:30
+msgid "Signing in again clears this setting"
+msgstr ""
+
+#: main/views/user_profile.py:275
+msgid "Are you sure you want to delete this security key?"
+msgstr ""
+
+#: main/views/user_profile.py:289
+msgid "Cannot delete last remaining webauthn credential for user"
+msgstr ""
+
+#: main/views/user_profile.py:291
+msgid "You cannot delete your last security key."
 msgstr ""
 
 #: templates/partials/check/letter-too-long.html:2
@@ -1790,6 +1828,16 @@ msgstr ""
 msgid "If you need access to %%s, you’ll have to ask them to invite you again."
 msgstr ""
 
+#: templates/views/change-email-continue.html:10
+#: templates/views/registration-continue.html:10
+#, python-format
+msgid "An email has been sent to %%s."
+msgstr ""
+
+#: templates/views/change-email-continue.html:11
+msgid "Click the link in the email to confirm the change to your email address."
+msgstr ""
+
 #: templates/views/choose-account.html:47
 #: templates/views/choose-account.html:53
 msgid "Choose service"
@@ -1857,6 +1905,7 @@ msgstr ""
 #: templates/views/cookies.html:35 templates/views/cookies.html:85
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:27
 #: templates/views/platform-admin/daily-volumes-report.html:27
+#: templates/views/user-profile.html:51
 msgid "Name"
 msgstr ""
 
@@ -2089,6 +2138,10 @@ msgstr ""
 #: templates/views/service-settings/sms-sender/edit.html:44
 #: templates/views/templates/edit-template-postage.html:22
 #: templates/views/templates/manage-template-folder.html:33
+#: templates/views/user-profile/change-password.html:24
+#: templates/views/user-profile/change.html:25
+#: templates/views/user-profile/change.html:34
+#: templates/views/user-profile/disable-platform-admin-view.html:33
 msgid "Save"
 msgstr ""
 
@@ -3447,11 +3500,6 @@ msgstr ""
 msgid "Must be from a public sector organisation"
 msgstr ""
 
-#: templates/views/registration-continue.html:10
-#, python-format
-msgid "An email has been sent to %%s."
-msgstr ""
-
 #: templates/views/registration-continue.html:11
 #: templates/views/resend-email-verification.html:12
 msgid "Click the link in the email to continue your registration."
@@ -4073,6 +4121,7 @@ msgstr ""
 #: templates/views/service-settings.html:123
 #: templates/views/service-settings.html:315
 #: templates/views/service-settings/data-retention.html:40
+#: templates/views/user-profile/security-keys.html:71
 msgid "Action"
 msgstr ""
 
@@ -4116,6 +4165,9 @@ msgstr ""
 #: templates/views/service-settings.html:423
 #: templates/views/service-settings.html:445
 #: templates/views/service-settings/data-retention.html:48
+#: templates/views/user-profile.html:25 templates/views/user-profile.html:60
+#: templates/views/user-profile.html:81 templates/views/user-profile.html:101
+#: templates/views/user-profile.html:125 templates/views/user-profile.html:149
 msgid "Change"
 msgstr ""
 
@@ -4147,6 +4199,7 @@ msgstr ""
 #: templates/views/service-settings.html:87
 #: templates/views/service-settings.html:112
 #: templates/views/service-settings.html:154
+#: templates/views/user-profile/security-keys.html:81
 msgid "Manage"
 msgstr ""
 
@@ -4889,12 +4942,14 @@ msgid "Check security key"
 msgstr ""
 
 #: templates/views/two-factor-webauthn.html:59
+#: templates/views/user-profile/security-keys.html:39
 msgid ""
 "Your browser does not support security keys. Try signing in to Notify "
 "using a different browser."
 msgstr ""
 
 #: templates/views/two-factor-webauthn.html:64
+#: templates/views/user-profile/security-keys.html:44
 msgid ""
 "JavaScript is not available for this page. Security keys need JavaScript "
 "to work."
@@ -4920,6 +4975,48 @@ msgstr ""
 #: templates/views/user-already-team-member.html:18
 #, python-format
 msgid "%%(user_name)s is already member of ‘%%(service_name)s’."
+msgstr ""
+
+#: templates/views/user-profile.html:17 templates/views/user-profile.html:38
+msgid "Email address"
+msgstr ""
+
+#: templates/views/user-profile.html:71
+msgid "Mobile number"
+msgstr ""
+
+#: templates/views/user-profile.html:92
+msgid "Password"
+msgstr ""
+
+#: templates/views/user-profile.html:95
+#, python-format
+msgid "Last changed %%s"
+msgstr ""
+
+#: templates/views/user-profile.html:102
+msgid "password"
+msgstr ""
+
+#: templates/views/user-profile.html:115
+#: templates/views/user-profile/security-keys.html:9
+msgid "Security keys"
+msgstr ""
+
+#: templates/views/user-profile.html:118
+msgid "{} registered"
+msgstr ""
+
+#: templates/views/user-profile.html:118
+msgid "None registered"
+msgstr ""
+
+#: templates/views/user-profile.html:126
+msgid "security keys"
+msgstr ""
+
+#: templates/views/user-profile.html:150
+msgid "whether to use platform admin view"
 msgstr ""
 
 #: templates/views/using-notify.html:5 templates/views/using-notify.html:12
@@ -6937,6 +7034,7 @@ msgstr ""
 #: templates/views/manage-users/confirm-edit-user-email.html:28
 #: templates/views/manage-users/confirm-edit-user-mobile-number.html:27
 #: templates/views/service-settings/service-confirm-broadcast-account-type.html:52
+#: templates/views/user-profile/authenticate.html:24
 msgid "Confirm"
 msgstr ""
 
@@ -9100,6 +9198,7 @@ msgstr ""
 #: templates/views/service-settings/email-reply-to/edit.html:36
 #: templates/views/service-settings/letter-contact/edit.html:43
 #: templates/views/service-settings/sms-sender/edit.html:46
+#: templates/views/user-profile/manage-security-key.html:28
 msgid "Delete"
 msgstr ""
 
@@ -9753,6 +9852,53 @@ msgstr ""
 
 #: templates/views/uploads/contact-list/upload.html:84
 msgid "Example"
+msgstr ""
+
+#: templates/views/user-profile/authenticate.html:8
+#: templates/views/user-profile/authenticate.html:17
+#: templates/views/user-profile/change.html:8
+#: templates/views/user-profile/change.html:17
+#, python-format
+msgid "Change your %%s"
+msgstr ""
+
+#: templates/views/user-profile/change-password.html:8
+#: templates/views/user-profile/change-password.html:17
+msgid "Change your password"
+msgstr ""
+
+#: templates/views/user-profile/change.html:30
+msgid "Delete your number"
+msgstr ""
+
+#: templates/views/user-profile/manage-security-key.html:7
+#, python-format
+msgid "Manage ‘%%s‘"
+msgstr ""
+
+#: templates/views/user-profile/security-keys.html:29
+msgid "Register a key"
+msgstr ""
+
+#: templates/views/user-profile/security-keys.html:71
+msgid "Security key details"
+msgstr ""
+
+#: templates/views/user-profile/security-keys.html:79
+#, python-format
+msgid "Registered %%(date)s"
+msgstr ""
+
+#: templates/views/user-profile/security-keys.html:92
+msgid ""
+"Security keys are an alternative way of signing in to Notify,\n"
+"          instead of getting a code in a text message"
+msgstr ""
+
+#: templates/views/user-profile/security-keys.html:96
+msgid ""
+"You can buy any key that’s compatible with the WebAuthn\n"
+"          standard."
 msgstr ""
 
 #: utils/templates.py:37

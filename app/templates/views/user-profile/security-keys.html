@@ -6,7 +6,7 @@
 {% from "components/webauthn-api-check.html" import webauthn_api_check %}
 {% from "govuk_frontend_jinja/components/error-message/macro.html" import govukErrorMessage %}
 
-{% set page_title = 'Security keys' %}
+{% set page_title = _('Security keys') %}
 {% set credentials = current_user.webauthn_credentials %}
 
 {% block extra_javascripts_before_body %}
@@ -26,7 +26,7 @@
 {% set webauthn_button %}
   {{ govukButton({
     "element": "button",
-    "text": "Register a key",
+    "text": _("Register a key"),
     "classes": "govuk-button--secondary webauthn__api-required",
     "attributes": {
       "data-notify-module": "register-security-key",
@@ -36,12 +36,12 @@
 
   {{ govukErrorMessage({
     "classes": "webauthn__api-missing",
-    "text": "Your browser does not support security keys. Try signing in to Notify using a different browser."
+    "text": _("Your browser does not support security keys. Try signing in to Notify using a different browser.")
   }) }}
 
   {{ govukErrorMessage({
     "classes": "webauthn__no-js",
-    "text": "JavaScript is not available for this page. Security keys need JavaScript to work."
+    "text": _("JavaScript is not available for this page. Security keys need JavaScript to work.")
   }) }}
 {% endset %}
 
@@ -49,13 +49,13 @@
 
     {{ govukErrorMessage({
       "classes": "banner-dangerous govuk-!-display-none",
-      "html": (
+      "html": _(
         'There’s a problem with your security key' +
         '<p class="govuk-body">Check you have the right key and try again. ' +
         'If this does not work, ' +
-        '<a class="govuk-link govuk-link--no-visited-state" href=' + url_for('main.support') + ">contact us</a>." +
+        '<a class="govuk-link govuk-link--no-visited-state" href="%%s">contact us</a>.' +
         '</p>'
-      ),
+      ) % url_for('main.support'),
       "attributes": {
         "aria-live": "polite",
         "tabindex": '-1'
@@ -68,7 +68,7 @@
         <div class="body-copy-table">
           {% call mapping_table(
             caption=page_title,
-            field_headings=['Security key details', 'Action'],
+            field_headings=[_('Security key details'), _('Action')],
             field_headings_visible=False,
             caption_visible=False,
           ) %}
@@ -76,9 +76,9 @@
               {% call row() %}
                 {% call field() %}
                   <div class="govuk-body">{{ credential.name }}</div>
-                  <div class="govuk-body hint">Registered {{ credential.created_at|format_delta }}</div>
+                  <div class="govuk-body hint">{{_("Registered %%(date)s") % {'date': credential.created_at|format_delta}}}</div>
                 {% endcall %}
-                {{ edit_field('Manage', url_for('.user_profile_manage_security_key', key_id=credential.id)) }}
+                {{ edit_field(_('Manage'), url_for('.user_profile_manage_security_key', key_id=credential.id)) }}
               {% endcall %}
             {% endfor %}
           {% endcall %}
@@ -89,12 +89,12 @@
       <div class="govuk-grid-column-one-half">
         {{ page_header(page_title) }}
         <p class="govuk-body">
-          Security keys are an alternative way of signing in to Notify,
-          instead of getting a code in a text message
+          {{_("Security keys are an alternative way of signing in to Notify,
+          instead of getting a code in a text message")}}
         </p>
         <p class="govuk-body">
-          You can buy any key that’s compatible with the WebAuthn
-          standard.
+          {{_("You can buy any key that’s compatible with the WebAuthn
+          standard.")}}
         </p>
         {{ webauthn_button }}
       </div>

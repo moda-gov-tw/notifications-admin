@@ -4,7 +4,7 @@
 {% from "components/form.html" import form_wrapper %}
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
-{% set page_title = 'Manage ' + '‘' + security_key.name + '’' %}
+{% set page_title = _('Manage ‘%%s‘') % security_key.name %}
 
 {% block per_page_title %}
   {{ page_title }}
@@ -25,7 +25,7 @@
           'Save',
           delete_link=url_for(
             '.user_profile_confirm_delete_security_key', key_id=security_key.id),
-          delete_link_text='Delete'
+          delete_link_text=_('Delete')
         ) }}
       {% endcall %}
     </div>

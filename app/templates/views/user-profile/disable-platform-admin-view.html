@@ -3,7 +3,7 @@
 {% from "components/page-footer.html" import page_footer %}
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
-{% set page_title = 'Use platform admin view' %}
+{% set page_title = _('Use platform admin view') %}
 
 {% block per_page_title %}
   {{ page_title }}
@@ -27,10 +27,10 @@
             }
           },
           'hint': {
-            'text': 'Signing in again clears this setting'
+            'text': _('Signing in again clears this setting')
           }
         }) }}
-        {{ page_footer('Save') }}
+        {{ page_footer(_('Save')) }}
       {% endcall %}
     </div>
   </div>
