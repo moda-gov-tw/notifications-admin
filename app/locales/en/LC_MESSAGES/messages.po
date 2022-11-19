@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-19 15:37+0800\n"
+"POT-Creation-Date: 2022-11-19 15:47+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -928,6 +928,19 @@ msgstr ""
 
 #: main/views/tour.py:95
 msgid "Example text message"
+msgstr ""
+
+#: main/views/two_factor.py:31
+msgid "Email resent"
+msgstr ""
+
+#: main/views/two_factor.py:31 templates/views/password-reset-sent.html:4
+#: templates/views/password-reset-sent.html:11
+#: templates/views/registration-continue.html:4
+#: templates/views/registration-continue.html:9
+#: templates/views/resend-email-verification.html:5
+#: templates/views/resend-email-verification.html:10
+msgid "Check your email"
 msgstr ""
 
 #: templates/partials/check/letter-too-long.html:2
@@ -2087,6 +2100,32 @@ msgstr ""
 msgid "Remove this team member"
 msgstr ""
 
+#: templates/views/email-link-interstitial.html:6
+#: templates/views/email-link-interstitial.html:13
+#: templates/views/signin.html:9 templates/views/signin.html:30
+msgid "Sign in"
+msgstr ""
+
+#: templates/views/email-link-interstitial.html:16
+msgid "Continue to dashboard"
+msgstr ""
+
+#: templates/views/email-link-invalid.html:5
+msgid "Invalid email link"
+msgstr ""
+
+#: templates/views/email-link-invalid.html:12
+msgid "The link has expired"
+msgstr ""
+
+#: templates/views/email-link-invalid.html:15
+#, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">\n"
+"        Sign in again\n"
+"      </a> to get a new link."
+msgstr ""
+
 #: templates/views/email-not-received.html:5
 #: templates/views/email-not-received.html:12
 #: templates/views/email-not-received.html:18
@@ -2922,15 +2961,6 @@ msgstr ""
 msgid "Data available for %%s days"
 msgstr ""
 
-#: templates/views/password-reset-sent.html:4
-#: templates/views/password-reset-sent.html:11
-#: templates/views/registration-continue.html:4
-#: templates/views/registration-continue.html:9
-#: templates/views/resend-email-verification.html:5
-#: templates/views/resend-email-verification.html:10
-msgid "Check your email"
-msgstr ""
-
 #: templates/views/password-reset-sent.html:13
 msgid "Click the link in the email to reset your password."
 msgstr ""
@@ -3301,6 +3331,23 @@ msgid ""
 "    Cheshire SK9 5AF"
 msgstr ""
 
+#: templates/views/re-validate-email-sent.html:13
+msgid ""
+"For security, we need to check if you still have access to your email "
+"address."
+msgstr ""
+
+#: templates/views/re-validate-email-sent.html:14
+msgid ""
+"We’ve sent you a link to sign in to Notify. The link will open in a new "
+"browser window, so you can close this one."
+msgstr ""
+
+#: templates/views/re-validate-email-sent.html:18
+#: templates/views/two-factor-email.html:17
+msgid "Not received an email?"
+msgstr ""
+
 #: templates/views/register-from-invite.html:15
 msgid "Your account will be created with this email address:"
 msgstr ""
@@ -3348,6 +3395,7 @@ msgstr ""
 #: templates/views/templates/set-sender.html:29
 #: templates/views/templates/set-template-sender.html:31
 #: templates/views/templates/start-tour.html:18
+#: templates/views/two-factor-sms.html:23
 msgid "Continue"
 msgstr ""
 
@@ -4535,10 +4583,6 @@ msgstr ""
 msgid "You need to sign in again"
 msgstr ""
 
-#: templates/views/signin.html:9 templates/views/signin.html:30
-msgid "Sign in"
-msgstr ""
-
 #: templates/views/signin.html:22
 msgid "We signed you out because you logged in to Notify on another device."
 msgstr ""
@@ -4765,6 +4809,52 @@ msgstr ""
 msgid ""
 "accept our <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">terms of use</a>"
+msgstr ""
+
+#: templates/views/two-factor-email.html:13
+msgid "We’ve emailed you a link to sign in to Notify."
+msgstr ""
+
+#: templates/views/two-factor-email.html:14
+msgid ""
+"Clicking the link will open Notify in a new browser window, so you can "
+"close this one."
+msgstr ""
+
+#: templates/views/two-factor-sms.html:6 templates/views/two-factor-sms.html:13
+msgid "Check your phone"
+msgstr ""
+
+#: templates/views/two-factor-sms.html:15
+msgid "We’ve sent you a text message with a security code."
+msgstr ""
+
+#: templates/views/two-factor-sms.html:25
+msgid "Not received a text message?"
+msgstr ""
+
+#: templates/views/two-factor-webauthn.html:8
+msgid "Get your security key"
+msgstr ""
+
+#: templates/views/two-factor-webauthn.html:44
+msgid "You need to have your security key to sign in."
+msgstr ""
+
+#: templates/views/two-factor-webauthn.html:49
+msgid "Check security key"
+msgstr ""
+
+#: templates/views/two-factor-webauthn.html:59
+msgid ""
+"Your browser does not support security keys. Try signing in to Notify "
+"using a different browser."
+msgstr ""
+
+#: templates/views/two-factor-webauthn.html:64
+msgid ""
+"JavaScript is not available for this page. Security keys need JavaScript "
+"to work."
 msgstr ""
 
 #: templates/views/user-already-invited.html:6

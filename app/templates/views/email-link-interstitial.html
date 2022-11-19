@@ -3,17 +3,17 @@
 {% from "components/page-footer.html" import page_footer %}
 
 {% block per_page_title %}
-  Sign in
+  {{_('Sign in')}}
 {% endblock %}
 
 {% block maincolumn_content %}
 
 <div class="js-hidden">
 
-  {{ page_header('Sign in') }}
+  {{ page_header(_('Sign in')) }}
 
   <form method="post" id="use-email-auth">
-    {{ page_footer('Continue to dashboard') }}
+    {{ page_footer(_('Continue to dashboard')) }}
   </form>
 
 </div>

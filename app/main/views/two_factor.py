@@ -9,6 +9,7 @@ from flask import (
     session,
     url_for,
 )
+from flask_babel import _
 from flask_login import current_user
 from itsdangerous import SignatureExpired
 from notifications_utils.url_safe_token import check_token
@@ -27,7 +28,7 @@ from app.utils.login import (
 
 @main.route("/two-factor-email-sent", methods=["GET"])
 def two_factor_email_sent():
-    title = "Email resent" if request.args.get("email_resent") else "Check your email"
+    title = _("Email resent") if request.args.get("email_resent") else _("Check your email")
     return render_template("views/two-factor-email.html", title=title, redirect_url=request.args.get("next"))
 
 
