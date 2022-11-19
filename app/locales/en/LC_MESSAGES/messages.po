@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-18 23:09+0800\n"
+"POT-Creation-Date: 2022-11-19 10:39+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -208,7 +208,7 @@ msgstr ""
 msgid "reference"
 msgstr ""
 
-#: main/views/jobs.py:208 main/views/platform_admin.py:490
+#: main/views/jobs.py:208 main/views/platform_admin.py:491
 msgid "Invalid page argument ({})."
 msgstr ""
 
@@ -405,6 +405,10 @@ msgstr ""
 msgid "virus scan failures"
 msgstr ""
 
+#: main/views/platform_admin.py:133
+msgid "test letters"
+msgstr ""
+
 #: main/views/platform_admin.py:175
 msgid "{} services"
 msgstr ""
@@ -497,7 +501,7 @@ msgid "attachment; filename=\"Billing Report from {} to {}.csv\""
 msgstr ""
 
 #: main/views/platform_admin.py:334 main/views/platform_admin.py:436
-#: main/views/platform_admin.py:481
+#: main/views/platform_admin.py:482
 msgid "No results for dates"
 msgstr ""
 
@@ -582,11 +586,11 @@ msgid ""
 "%%s.csv\""
 msgstr ""
 
-#: main/views/platform_admin.py:531
+#: main/views/platform_admin.py:532
 msgid "Submitted {} letter references"
 msgstr ""
 
-#: main/views/platform_admin.py:616
+#: main/views/platform_admin.py:617
 #, python-format
 msgid "Removed %%s objects across %%s key formats for {%%s}"
 msgstr ""
@@ -946,7 +950,7 @@ msgstr ""
 #: templates/views/features/emails.html:14
 #: templates/views/message-status.html:21
 #: templates/views/platform-admin/services.html:14
-#: templates/views/signedout.html:147
+#: templates/views/pricing/index.html:43 templates/views/signedout.html:147
 msgid "Emails"
 msgstr ""
 
@@ -1976,6 +1980,7 @@ msgstr ""
 #: templates/views/message-status.html:78
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:27
 #: templates/views/platform-admin/daily-volumes-report.html:27
+#: templates/views/pricing/index.html:112
 msgid "Description"
 msgstr ""
 
@@ -2065,7 +2070,7 @@ msgstr ""
 #: templates/views/message-status.html:50
 #: templates/views/organisations/organisation/index.html:31
 #: templates/views/platform-admin/services.html:15
-#: templates/views/signedout.html:152
+#: templates/views/pricing/index.html:46 templates/views/signedout.html:152
 msgid "Text messages"
 msgstr ""
 
@@ -2123,7 +2128,7 @@ msgstr ""
 #: templates/views/message-status.html:74
 #: templates/views/organisations/organisation/index.html:42
 #: templates/views/platform-admin/services.html:16
-#: templates/views/signedout.html:158
+#: templates/views/pricing/index.html:234 templates/views/signedout.html:158
 msgid "Letters"
 msgstr ""
 
@@ -3177,6 +3182,7 @@ msgstr ""
 #: templates/views/features/emails.html:50
 #: templates/views/features/letters.html:46
 #: templates/views/features/text-messages.html:37
+#: templates/views/pricing/index.html:12 templates/views/pricing/index.html:17
 #: templates/views/signedout.html:144
 msgid "Pricing"
 msgstr ""
@@ -4345,6 +4351,7 @@ msgid ""
 msgstr ""
 
 #: templates/views/features/emails.html:51
+#: templates/views/pricing/index.html:44
 msgid "It’s free to send emails through Notify."
 msgstr ""
 
@@ -4456,14 +4463,17 @@ msgid ""
 msgstr ""
 
 #: templates/views/features/letters.html:49
+#: templates/views/pricing/index.html:239
 msgid "paper"
 msgstr ""
 
 #: templates/views/features/letters.html:50
+#: templates/views/pricing/index.html:241
 msgid "double-sided colour printing"
 msgstr ""
 
 #: templates/views/features/letters.html:51
+#: templates/views/pricing/index.html:242
 msgid "C5 size envelopes with an address window"
 msgstr ""
 
@@ -5959,6 +5969,746 @@ msgstr ""
 
 #: templates/views/platform-admin/splash-page.html:14
 msgid "Load summary"
+msgstr ""
+
+#: templates/views/pricing/billing-details-signed-out.html:9
+#: templates/views/pricing/billing-details-signed-out.html:14
+#: templates/views/pricing/billing-details.html:10
+#: templates/views/pricing/billing-details.html:15
+msgid "Billing details"
+msgstr ""
+
+#: templates/views/pricing/billing-details-signed-out.html:17
+#, python-format
+msgid "<a class=\"govuk-link\" href=\"%%s\">Sign in</a> to see our:"
+msgstr ""
+
+#: templates/views/pricing/billing-details-signed-out.html:21
+msgid "supplier details"
+msgstr ""
+
+#: templates/views/pricing/billing-details-signed-out.html:22
+msgid "bank details"
+msgstr ""
+
+#: templates/views/pricing/billing-details-signed-out.html:23
+msgid "invoice address"
+msgstr ""
+
+#: templates/views/pricing/billing-details-signed-out.html:27
+msgid ""
+"You can use this information to add the Cabinet Office as a supplier. "
+"Your organisation may need to do this before you can raise a purchase "
+"order."
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:18
+msgid ""
+"You can use the information on this page to add the Cabinet Office as a "
+"supplier. Your organisation may need to do this before you can raise a "
+"purchase order (PO)."
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:22
+#, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
+" us</a> if you need any other details."
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:26
+msgid "Supplier details"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:30
+#: templates/views/pricing/billing-details.html:81
+msgid "Cabinet Office"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:34
+msgid ""
+"The White Chapel Building <br>\n"
+"      10 Whitechapel High Street <br>\n"
+"      London <br>\n"
+"      E1 8QS"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:41
+msgid "Email addresses"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:53
+#: templates/views/pricing/billing-details.html:59
+msgid "<abbr title=\"Value Added Tax\">VAT</abbr> number"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:58
+msgid "GB 88 88 010 80"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:64
+msgid "Bank details"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:68
+msgid ""
+"National Westminster Bank PLC (part of RBS group) <br>\n"
+"      Government Banking Services Branch <br>\n"
+"      2nd Floor <br>\n"
+"      280 Bishopsgate <br>\n"
+"      London <br>\n"
+"      EC2M 4RB"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:77
+msgid "Account name"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:85
+msgid "Account number"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:91
+msgid "account number"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:96
+msgid "Sort code"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:102
+msgid "sort code"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:108
+msgid "<abbr title=\"International Bank Account Number\">IBAN</abbr>"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:113
+msgid "IBAN"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:118
+#: templates/views/pricing/billing-details.html:124
+msgid "Swift code"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:129
+msgid "Invoice address"
+msgstr ""
+
+#: templates/views/pricing/billing-details.html:133
+msgid ""
+"SSCL – Accounts Receivable <br>\n"
+"      PO Box 221 <br>\n"
+"      Thornton-Cleveleys <br>\n"
+"      Blackpool <br>\n"
+"      Lancashire <br>\n"
+"      FY1 9JN"
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:9
+#: templates/views/pricing/how-to-pay.html:14
+msgid "How to pay"
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:17
+msgid ""
+"If you use GOV.UK Notify to send text messages or letters, you may need "
+"to send us a <a class=\"govuk-link govuk-link--no-visited-state\" href"
+"=\"#purchase-orders\">purchase order</a>."
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:21
+msgid "Invoices"
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:25
+msgid ""
+"Notify is run by the Government Digital Service (GDS), part of the "
+"Cabinet Office."
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:29
+msgid ""
+"The Cabinet Office will send your organisation an invoice each quarter if"
+" you:"
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:33
+#, python-format
+msgid ""
+"exceed the <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">free text message allowance</a>"
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:34
+msgid "send letters"
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:38
+msgid ""
+"If your organisation has more than one Notify service, you’ll see a "
+"breakdown of each service on your invoice."
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:42
+msgid ""
+"If the value of an invoice is less than £250 (before <abbr title=\"Value "
+"Added Tax\">VAT</abbr>), it will be added to the total for the next "
+"quarter to save time and effort."
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:46
+msgid "You can pay by BACS, debit card, or credit card."
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:50
+msgid "Please start your payment reference with the invoice number."
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:54
+msgid "Purchase orders"
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:58
+msgid ""
+"If your organisation’s total estimated spend is more than £500 per "
+"quarter (before <abbr title=\"Value Added Tax\">VAT</abbr>), you need to "
+"raise a purchase order (PO)."
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:62
+msgid ""
+"Your organisation should raise a single <abbr title=\"purchase "
+"order\">PO</abbr> for the estimated cost of all its services. You can "
+"update the <abbr title=\"purchase order\">PO</abbr> any time if your "
+"usage increases."
+msgstr ""
+
+#: templates/views/pricing/how-to-pay.html:66
+#, python-format
+msgid ""
+"Your organisation may need to <a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"%%s\">add the Cabinet Office as a supplier</a> "
+"before you can raise a <abbr title=\"purchase order\">PO</abbr>."
+msgstr ""
+
+#: templates/views/pricing/index.html:21
+msgid "Last updated"
+msgstr ""
+
+#: templates/views/pricing/index.html:21
+msgid "1 May 2022"
+msgstr ""
+
+#: templates/views/pricing/index.html:27
+msgid ""
+"exceed your <a class=\"govuk-link govuk-link--no-visited-state\" href"
+"=\"#text-messages\">free text message allowance</a>"
+msgstr ""
+
+#: templates/views/pricing/index.html:28
+msgid ""
+"send <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"#letters\">letters</a>"
+msgstr ""
+
+#: templates/views/pricing/index.html:31
+msgid ""
+"You’ll only pay for the additional text messages or letters that you "
+"send. There’s no monthly charge, no setup fee and no procurement cost."
+msgstr ""
+
+#: templates/views/pricing/index.html:35
+#, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Create "
+"an account</a> then add as many unique services as you need to.</p>"
+msgstr ""
+
+#: templates/views/pricing/index.html:37
+msgid "You can add as many unique services as you need to."
+msgstr ""
+
+#: templates/views/pricing/index.html:41
+#, python-format
+msgid ""
+"When you add a new service it will start in <a class=\"govuk-link govuk-"
+"link--no-visited-state\" href=\"%%s\">trial mode</a>."
+msgstr ""
+
+#: templates/views/pricing/index.html:47
+msgid "Each unique service you add has an annual allowance of free text messages."
+msgstr ""
+
+#: templates/views/pricing/index.html:48
+#, python-format
+msgid ""
+"When a service has used its annual allowance, it costs %%s pence (plus "
+"VAT) for each text message you send."
+msgstr ""
+
+#: templates/views/pricing/index.html:49
+msgid ""
+"You’ll use more free messages, or pay more for each message, if you send "
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"#long-text-"
+"messages\">text messages longer than 160 characters</a>."
+msgstr ""
+
+#: templates/views/pricing/index.html:50
+msgid "You may also use more free messages, or pay more for each message, if you:"
+msgstr ""
+
+#: templates/views/pricing/index.html:52
+msgid ""
+"use certain <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"#symbols\">signs and symbols</a>"
+msgstr ""
+
+#: templates/views/pricing/index.html:53
+msgid ""
+"use <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"#accents\">accents and accented letters</a>"
+msgstr ""
+
+#: templates/views/pricing/index.html:54
+msgid ""
+"send text messages to <a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"#international-numbers\">international numbers</a>"
+msgstr ""
+
+#: templates/views/pricing/index.html:57
+#, python-format
+msgid ""
+"See <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">how"
+" to pay</a>."
+msgstr ""
+
+#: templates/views/pricing/index.html:59
+msgid "Free text message allowance"
+msgstr ""
+
+#: templates/views/pricing/index.html:61
+msgid "The current allowance is:"
+msgstr ""
+
+#: templates/views/pricing/index.html:63
+msgid "40,000 free text messages for national services"
+msgstr ""
+
+#: templates/views/pricing/index.html:64
+msgid "20,000 free text messages for regional services"
+msgstr ""
+
+#: templates/views/pricing/index.html:65
+msgid "10,000 free text messages for state-funded schools and GP practices"
+msgstr ""
+
+#: templates/views/pricing/index.html:67
+msgid "Each unique service you add has a separate allowance."
+msgstr ""
+
+#: templates/views/pricing/index.html:69
+msgid "Long text messages"
+msgstr ""
+
+#: templates/views/pricing/index.html:70
+msgid ""
+"If a text message is longer than 160 characters (including spaces), it "
+"counts as more than one message."
+msgstr ""
+
+#: templates/views/pricing/index.html:74
+msgid "Text message pricing"
+msgstr ""
+
+#: templates/views/pricing/index.html:75 templates/views/pricing/index.html:177
+msgid "Message length"
+msgstr ""
+
+#: templates/views/pricing/index.html:75 templates/views/pricing/index.html:177
+msgid "Charge"
+msgstr ""
+
+#: templates/views/pricing/index.html:80
+msgid "Up to 160 characters"
+msgstr ""
+
+#: templates/views/pricing/index.html:80 templates/views/pricing/index.html:182
+msgid "1 text message"
+msgstr ""
+
+#: templates/views/pricing/index.html:81
+msgid "Up to 306 characters"
+msgstr ""
+
+#: templates/views/pricing/index.html:81 templates/views/pricing/index.html:183
+msgid "2 text messages"
+msgstr ""
+
+#: templates/views/pricing/index.html:82
+msgid "Up to 459 characters"
+msgstr ""
+
+#: templates/views/pricing/index.html:82 templates/views/pricing/index.html:184
+msgid "3 text messages"
+msgstr ""
+
+#: templates/views/pricing/index.html:83
+msgid "Up to 612 characters"
+msgstr ""
+
+#: templates/views/pricing/index.html:83 templates/views/pricing/index.html:185
+msgid "4 text messages"
+msgstr ""
+
+#: templates/views/pricing/index.html:84
+msgid "Up to 765 characters"
+msgstr ""
+
+#: templates/views/pricing/index.html:84
+msgid "5 text messages"
+msgstr ""
+
+#: templates/views/pricing/index.html:85
+msgid "Up to 918 characters"
+msgstr ""
+
+#: templates/views/pricing/index.html:85
+msgid "6 text messages"
+msgstr ""
+
+#: templates/views/pricing/index.html:95
+msgid "Signs and symbols"
+msgstr ""
+
+#: templates/views/pricing/index.html:98
+msgid "The following signs and symbols count as 2 characters each:"
+msgstr ""
+
+#: templates/views/pricing/index.html:102
+msgid "Using them can increase the cost of sending text messages."
+msgstr ""
+
+#: templates/views/pricing/index.html:104
+msgid "Accents and accented characters"
+msgstr ""
+
+#: templates/views/pricing/index.html:105
+msgid "Some languages, such as Welsh, use accented characters."
+msgstr ""
+
+#: templates/views/pricing/index.html:106
+msgid ""
+"The following accented characters do not affect the cost of sending text "
+"messages: Ä, É, Ö, Ü, à, ä, é, è, ì, ò, ö, ù, ü."
+msgstr ""
+
+#: templates/views/pricing/index.html:107
+msgid ""
+"Using other accented characters can increase the cost of sending text "
+"messages."
+msgstr ""
+
+#: templates/views/pricing/index.html:111
+#: templates/views/pricing/index.html:170
+msgid "Accented characters that affect text message charges"
+msgstr ""
+
+#: templates/views/pricing/index.html:112
+msgid "Character"
+msgstr ""
+
+#: templates/views/pricing/index.html:117
+msgid "Capital letter A with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:118
+msgid "Capital letter A with acute"
+msgstr ""
+
+#: templates/views/pricing/index.html:119
+msgid "Capital letter A with grave"
+msgstr ""
+
+#: templates/views/pricing/index.html:120
+msgid "Capital letter E with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:121
+msgid "Capital letter E with grave"
+msgstr ""
+
+#: templates/views/pricing/index.html:122
+msgid "Capital letter E with dieresis"
+msgstr ""
+
+#: templates/views/pricing/index.html:123
+msgid "Capital letter I with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:124
+msgid "Capital letter I with acute"
+msgstr ""
+
+#: templates/views/pricing/index.html:125
+msgid "Capital letter I with grave"
+msgstr ""
+
+#: templates/views/pricing/index.html:126
+msgid "Capital letter I with dieresis"
+msgstr ""
+
+#: templates/views/pricing/index.html:127
+msgid "Capital letter O with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:128
+msgid "Capital letter O with acute"
+msgstr ""
+
+#: templates/views/pricing/index.html:129
+msgid "Capital letter O with grave"
+msgstr ""
+
+#: templates/views/pricing/index.html:130
+msgid "Capital letter U with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:131
+msgid "Capital letter U with acute"
+msgstr ""
+
+#: templates/views/pricing/index.html:132
+msgid "Capital letter U with grave"
+msgstr ""
+
+#: templates/views/pricing/index.html:133
+msgid "Capital letter W with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:134
+msgid "Capital letter W with acute"
+msgstr ""
+
+#: templates/views/pricing/index.html:135
+msgid "Capital letter W with grave"
+msgstr ""
+
+#: templates/views/pricing/index.html:136
+msgid "Capital letter W with dieresis"
+msgstr ""
+
+#: templates/views/pricing/index.html:137
+msgid "Capital letter Y with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:138
+msgid "Capital letter Y with acute"
+msgstr ""
+
+#: templates/views/pricing/index.html:139
+msgid "Capital letter Y with grave"
+msgstr ""
+
+#: templates/views/pricing/index.html:140
+msgid "Capital letter Y with dieresis"
+msgstr ""
+
+#: templates/views/pricing/index.html:141
+msgid "Lower case letter a with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:142
+msgid "Lower case letter a with acute"
+msgstr ""
+
+#: templates/views/pricing/index.html:143
+msgid "Lower case letter e with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:144
+msgid "Lower case letter e with dieresis"
+msgstr ""
+
+#: templates/views/pricing/index.html:145
+msgid "Lower case letter i with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:146
+msgid "Lower case letter i with acute"
+msgstr ""
+
+#: templates/views/pricing/index.html:147
+msgid "Lower case letter i with dieresis"
+msgstr ""
+
+#: templates/views/pricing/index.html:148
+msgid "Lower case letter o with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:149
+msgid "Lower case letter o with acute"
+msgstr ""
+
+#: templates/views/pricing/index.html:150
+msgid "Lower case letter u with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:151
+msgid "Lower case letter u with acute"
+msgstr ""
+
+#: templates/views/pricing/index.html:152
+msgid "Lower case letter w with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:153
+msgid "Lower case letter w with acute"
+msgstr ""
+
+#: templates/views/pricing/index.html:154
+msgid "Lower case letter w with grave"
+msgstr ""
+
+#: templates/views/pricing/index.html:155
+msgid "Lower case letter w with dieresis"
+msgstr ""
+
+#: templates/views/pricing/index.html:156
+msgid "Lower case letter y with circumflex"
+msgstr ""
+
+#: templates/views/pricing/index.html:157
+msgid "Lower case letter y with acute"
+msgstr ""
+
+#: templates/views/pricing/index.html:158
+msgid "Lower case letter y with grave"
+msgstr ""
+
+#: templates/views/pricing/index.html:159
+msgid "Lower case letter y with dieresis"
+msgstr ""
+
+#: templates/views/pricing/index.html:176
+msgid ""
+"Pricing for text messages containing accented characters that affect the "
+"charges"
+msgstr ""
+
+#: templates/views/pricing/index.html:182
+msgid "Up to 70 characters"
+msgstr ""
+
+#: templates/views/pricing/index.html:183
+msgid "Up to 134 characters"
+msgstr ""
+
+#: templates/views/pricing/index.html:184
+msgid "Up to 201 characters"
+msgstr ""
+
+#: templates/views/pricing/index.html:185
+msgid "Up to 268 characters"
+msgstr ""
+
+#: templates/views/pricing/index.html:186
+msgid "Each additional 67 characters"
+msgstr ""
+
+#: templates/views/pricing/index.html:186
+msgid "1 additional text message"
+msgstr ""
+
+#: templates/views/pricing/index.html:196
+msgid "Sending text messages to international numbers"
+msgstr ""
+
+#: templates/views/pricing/index.html:197
+msgid ""
+"It might cost more to send text messages to international numbers than UK"
+" ones, depending on the country."
+msgstr ""
+
+#: templates/views/pricing/index.html:199
+msgid "Search by country name or code"
+msgstr ""
+
+#: templates/views/pricing/index.html:203
+#: templates/views/pricing/index.html:230
+msgid "International text message rates"
+msgstr ""
+
+#: templates/views/pricing/index.html:204
+msgid "Country code"
+msgstr ""
+
+#: templates/views/pricing/index.html:204
+msgid "Country"
+msgstr ""
+
+#: templates/views/pricing/index.html:204
+msgid "Cost multiplier"
+msgstr ""
+
+#: templates/views/pricing/index.html:223
+msgid "Not supported"
+msgstr ""
+
+#: templates/views/pricing/index.html:235
+msgid ""
+"The cost of sending a letter depends on the postage you choose and how "
+"many sheets of paper you need."
+msgstr ""
+
+#: templates/views/pricing/index.html:237
+msgid "Prices include:"
+msgstr ""
+
+#: templates/views/pricing/index.html:240
+msgid "postage"
+msgstr ""
+
+#: templates/views/pricing/index.html:247
+msgid "Letter pricing"
+msgstr ""
+
+#: templates/views/pricing/index.html:248
+msgid "Paper"
+msgstr ""
+
+#: templates/views/pricing/index.html:248
+msgid "Second class"
+msgstr ""
+
+#: templates/views/pricing/index.html:248
+msgid "First class"
+msgstr ""
+
+#: templates/views/pricing/index.html:248
+msgid "International"
+msgstr ""
+
+#: templates/views/pricing/index.html:253
+msgid "1 sheet"
+msgstr ""
+
+#: templates/views/pricing/index.html:254
+msgid "2 sheets"
+msgstr ""
+
+#: templates/views/pricing/index.html:255
+msgid "3 sheets"
+msgstr ""
+
+#: templates/views/pricing/index.html:256
+msgid "4 sheets"
+msgstr ""
+
+#: templates/views/pricing/index.html:257
+msgid "5 sheets"
 msgstr ""
 
 #: templates/views/service-settings/letter-preview.html:6

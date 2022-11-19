@@ -7,38 +7,38 @@
 {% set navigation_label_prefix = 'Pricing information' %}
 
 {% block per_page_title %}
-  Billing details
+  {{_('Billing details')}}
 {% endblock %}
 
 {% block content_column_content %}
 
-    {{ page_header('Billing details') }}
+    {{ page_header(_('Billing details')) }}
 
     <p class="govuk-body">
-      You can use the information on this page to add the Cabinet Office as a supplier. Your organisation may need to do this before you can raise a purchase order (PO).
+      {{_("You can use the information on this page to add the Cabinet Office as a supplier. Your organisation may need to do this before you can raise a purchase order (PO).")}}
     </p>
 
     <p class="govuk-body">
-      <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.support') }}">Contact us</a> if you need any other details.
+      {{_("<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact us</a> if you need any other details.") % url_for('main.support')}}
     </p>
 
     <h2 class="heading-medium govuk-!-margin-top-7" id="supplier-details">
-      Supplier details
+      {{_('Supplier details')}}
     </h2>
 
     <p class="govuk-body">
-      Cabinet Office
+      {{_('Cabinet Office')}}
     </p>
 
     <p class="govuk-body">
-      The White Chapel Building <br>
+      {{_("The White Chapel Building <br>
       10 Whitechapel High Street <br>
       London <br>
-      E1 8QS
+      E1 8QS")}}
     </p>
 
     <h3 class="heading-small" id="email-addresses">
-      Email addresses
+      {{_('Email addresses')}}
     </h3>
 
     <ul class="govuk-list govuk-list--bullet">
@@ -50,92 +50,92 @@
     </ul>
 
     <h3 class="heading-small" id="vat-number">
-      <abbr title="Value Added Tax">VAT</abbr> number
+      {{_("<abbr title=\"Value Added Tax\">VAT</abbr> number")}}
     </h3>
 
     <div class="govuk-!-margin-bottom-4">
     {{ copy_to_clipboard(
-        'GB 88 88 010 80',
-        thing='<abbr title="Value Added Tax">VAT</abbr> number',
+        _('GB 88 88 010 80'),
+        thing=_('<abbr title="Value Added Tax">VAT</abbr> number'),
     ) }}
     </div>
 
     <h2 class="heading-medium govuk-!-margin-top-7" id="bank-details">
-      Bank details
+      {{_('Bank details')}}
     </h2>
 
     <p class="govuk-body">
-      National Westminster Bank PLC (part of RBS group) <br>
+      {{_("National Westminster Bank PLC (part of RBS group) <br>
       Government Banking Services Branch <br>
       2nd Floor <br>
       280 Bishopsgate <br>
       London <br>
-      EC2M 4RB
+      EC2M 4RB")}}
     </p>
 
     <h3 class="heading-small" id="account-name">
-      Account name
+      {{_('Account name')}}
     </h3>
 
     <p class="govuk-body">
-      Cabinet Office
+      {{_('Cabinet Office')}}
     </p>
 
     <h3 class="heading-small" id="account-number">
-      Account number
+      {{_('Account number')}}
     </h3>
 
     <div class="govuk-!-margin-bottom-4">
     {{ copy_to_clipboard(
         billing_details['account_number'],
-        thing='account number',
+        thing=_('account number'),
       ) }}
     </div>
 
     <h3 class="heading-small" id="sort-code">
-      Sort code
+      {{_('Sort code')}}
     </h3>
 
     <div class="govuk-!-margin-bottom-4">
     {{ copy_to_clipboard(
         billing_details['sort_code'],
-        thing='sort code',
+        thing=_('sort code'),
       ) }}
     </div>
 
 
     <h3 class="heading-small" id="iban">
-      <abbr title="International Bank Account Number">IBAN</abbr>
+      {{_("<abbr title=\"International Bank Account Number\">IBAN</abbr>")}}
     </h3>
     <div class="govuk-!-margin-bottom-4">
     {{ copy_to_clipboard(
         billing_details['IBAN'],
-        thing='IBAN',
+        thing=_('IBAN'),
       ) }}
     </div>
 
     <h3 class="heading-small" id="swift-code">
-      Swift code
+      {{_('Swift code')}}
     </h3>
 
     <div class="govuk-!-margin-bottom-4">
     {{ copy_to_clipboard(
         billing_details['swift'],
-        thing='Swift code',
+        thing=_('Swift code'),
       ) }}
     </div>
 
     <h2 class="heading-medium govuk-!-margin-top-7" id="invoice-address">
-      Invoice address
+      {{_('Invoice address')}}
     </h2>
 
     <p class="govuk-body">
-      SSCL – Accounts Receivable <br>
+      {{_("SSCL – Accounts Receivable <br>
       PO Box 221 <br>
       Thornton-Cleveleys <br>
       Blackpool <br>
       Lancashire <br>
-      FY1 9JN
+      FY1 9JN")}}
     </p>
 
 {% endblock %}
