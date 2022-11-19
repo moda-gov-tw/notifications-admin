@@ -5,7 +5,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Free text message allowance
+  {{_('Free text message allowance')}}
 {% endblock %}
 
 {% block backLink %}
@@ -15,9 +15,9 @@
 {% block maincolumn_content %}
 
   {% call form_wrapper() %}
-    {{ page_header('Free text message allowance') }}
+    {{ page_header(_('Free text message allowance')) }}
     {{ form.free_sms_allowance }}
-    {{ page_footer('Save') }}
+    {{ page_footer(_('Save')) }}
   {% endcall %}
 
 {% endblock %}

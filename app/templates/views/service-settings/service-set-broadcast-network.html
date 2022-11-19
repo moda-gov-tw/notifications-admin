@@ -7,7 +7,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Choose a mobile network
+  {{_('Choose a mobile network')}}
 {% endblock %}
 
 {% block backLink %}
@@ -18,7 +18,7 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-five-sixths">
-      {{ page_header('Choose a mobile network') }}
+      {{ page_header(_('Choose a mobile network')) }}
       {% call form_wrapper() %}
         {% call select_wrapper(form.all_networks, hide_legend=True) %}
           {% for option in form.all_networks %}
@@ -30,7 +30,7 @@
               param_extensions={'fieldset': {'legend': {'classes': 'govuk-visually-hidden'}}}
             ) }}
         {% endcall %}
-        {{ page_footer('Continue') }}
+        {{ page_footer(_('Continue')) }}
       {% endcall %}
     </div>
   </div>

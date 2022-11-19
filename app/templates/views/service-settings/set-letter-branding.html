@@ -5,7 +5,7 @@
 {% from "components/form.html" import form_wrapper %}
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
-{% set page_title = "Set letter branding" %}
+{% set page_title = _("Set letter branding") %}
 
 {% block service_page_title %}
   {{ page_title }}
@@ -29,14 +29,14 @@
           target_selector='.govuk-radios__item',
           show=True,
           form=search_form,
-          label='Search by name',
+          label=_('Search by name'),
           autofocus=True
         ) }}
         {{ form.branding_style }}
       </div>
     </div>
     <div class="js-stick-at-bottom-when-scrolling">
-      {{ page_footer('Preview') }}
+      {{ page_footer(_('Preview')) }}
     </div>
   {% endcall %}
 

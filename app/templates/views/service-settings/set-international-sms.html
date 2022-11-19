@@ -5,7 +5,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Send international text messages
+  {{_('Send international text messages')}}
 {% endblock %}
 
 {% block backLink %}
@@ -16,17 +16,17 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-five-sixths">
-      {{ page_header('Send international text messages') }}
+      {{ page_header(_('Send international text messages')) }}
       <p class="govuk-body">
-        Messages to international mobile numbers are charged at 1, 2, or
-        3 times the cost of messages to UK mobile numbers.</p>
+        {{_("Messages to international mobile numbers are charged at 1, 2, or
+        3 times the cost of messages to UK mobile numbers.")}}</p>
       <p class="govuk-body">
-        See <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for(".pricing") }}">pricing</a> for the list
-        of rates.
+        {{_("See <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">pricing</a> for the list
+        of rates.") % url_for(".pricing") }}
       </p>
       {% call form_wrapper() %}
         {{ form.enabled }}
-        {{ page_footer('Save') }}
+        {{ page_footer(_('Save')) }}
       {% endcall %}
     </div>
   </div>

@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Add a new address
+  {{_('Add a new address')}}
 {% endblock %}
 
 {% block backLink %}
@@ -21,8 +21,8 @@
       {% call form_wrapper() %}
         {{ textbox(
             form.letter_contact_block,
-            label='This will appear as the sender address on your letters.'|safe,
-            hint='10 lines maximum',
+            label=_('This will appear as the sender address on your letters.')|safe,
+            hint=_('10 lines maximum'),
             width='1-2',
             rows=10,
             highlight_placeholders=True
@@ -30,7 +30,7 @@
         {% if not first_contact_block %}
           {{ form.is_default }}
         {% endif %}
-        {{ page_footer('Add') }}
+        {{ page_footer(_('Add')) }}
       {% endcall %}
     </div>
   </div>

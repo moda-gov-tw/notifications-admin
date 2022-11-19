@@ -8,7 +8,7 @@
 {% from "components/branding-preview.html" import email_branding_preview %}
 
 {% block service_page_title %}
-  Change email branding
+  {{_('Change email branding')}}
 {% endblock %}
 
 {% block backLink %}
@@ -19,10 +19,10 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('Change email branding') }}
+  {{ page_header(_('Change email branding')) }}
 
   <p class="govuk-body">
-    Your emails currently have {{ current_service.email_branding.name }} branding.
+    {{_("Your emails currently have %%s branding.") % current_service.email_branding.name}}
   </p>
 
   {{ email_branding_preview(
@@ -31,7 +31,7 @@
 
   {% if current_service.needs_to_change_email_branding %}
     <p class="govuk-body">
-      You should be using your own branding instead.
+      {{_('You should be using your own branding instead.')}}
     </p>
   {% endif %}
 
@@ -41,7 +41,7 @@
           {{ radio(option) }}
         {% endfor %}
       {% endcall %}
-    {{ page_footer('Continue') }}
+    {{ page_footer(_('Continue')) }}
   {% endcall %}
 
 {% endblock %}

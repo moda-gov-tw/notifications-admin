@@ -8,7 +8,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Change letter branding
+  {{_('Change letter branding')}}
 {% endblock %}
 
 {% block backLink %}
@@ -19,17 +19,17 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('Change letter branding') }}
+  {{ page_header(_('Change letter branding')) }}
 
   <p class="govuk-body">
-    Your letters currently have {{ current_service.letter_branding.name or 'no' }} branding.
+    {{_("Your letters currently have %%s branding.") % current_service.letter_branding.name or 'no'}}
   </p>
 
   {% call form_wrapper() %}
     {% if form.something_else_is_only_option %}
       {{ textbox(
         form.something_else,
-        hint='Include links to your brand guidelines or examples of how to use your branding.',
+        hint=_('Include links to your brand guidelines or examples of how to use your branding.'),
         width='1-1',
       ) }}
     {% else %}
@@ -41,17 +41,17 @@
       {% call conditional_radio_panel('panel-something-else') %}
         {{ textbox(
           form.something_else,
-          hint='Include links to your brand guidelines or examples of how to use your branding.',
+          hint=_('Include links to your brand guidelines or examples of how to use your branding.'),
           width='1-1',
           autosize=True,
         ) }}
       {% endcall %}
     {% endif %}
     <p class="form-group">
-      We’ll email you once your branding’s ready to use, or if we need any
-      more information.
+      {{_("We’ll email you once your branding’s ready to use, or if we need any
+      more information.")}}
     </p>
-    {{ page_footer('Request new branding') }}
+    {{ page_footer(_('Request new branding')) }}
   {% endcall %}
 
 {% endblock %}

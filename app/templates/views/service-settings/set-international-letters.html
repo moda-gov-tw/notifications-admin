@@ -5,7 +5,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Send international letters
+  {{_('Send international letters')}}
 {% endblock %}
 
 {% block backLink %}
@@ -18,15 +18,15 @@
     <div class="govuk-grid-column-five-sixths">
       {{ page_header('Send international letters') }}
       <p class="govuk-body">
-        It costs more to send a letter to an international address.
+        {{_('It costs more to send a letter to an international address.')}}
       </p>
       <p class="govuk-body">
-        See <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for(".pricing") }}">pricing</a> for the list
-        of rates.
+        {{_("See <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">pricing</a> for the list
+        of rates.") % url_for(".pricing")}}
       </p>
       {% call form_wrapper() %}
         {{ form.enabled }}
-        {{ page_footer('Save') }}
+        {{ page_footer(_('Save')) }}
       {% endcall %}
     </div>
   </div>

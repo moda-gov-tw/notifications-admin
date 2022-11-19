@@ -5,7 +5,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Add text message sender
+  {{_('Add text message sender')}}
 {% endblock %}
 
 {% block backLink %}
@@ -14,17 +14,17 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('Add text message sender') }}
+  {{ page_header(_('Add text message sender')) }}
 
   {% call form_wrapper() %}
     {{ form.sms_sender(param_extensions={
       "classes": "govuk-!-width-one-quarter",
-      "hint": {"text": "Up to 11 characters, letters, numbers and spaces only"}
+      "hint": {"text": _("Up to 11 characters, letters, numbers and spaces only")}
     }) }}
     {% if not first_sms_sender %}
       {{ form.is_default }}
     {% endif %}
-    {{ page_footer('Save') }}
+    {{ page_footer(_('Save')) }}
   {% endcall %}
 
 {% endblock %}

@@ -6,7 +6,7 @@
 {% from "components/branding-preview.html" import email_branding_preview %}
 
 {% block service_page_title %}
-  Check your new branding
+  {{_('Check your new branding')}}
 {% endblock %}
 
 {% block backLink %}
@@ -17,27 +17,27 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('Check your new branding') }}
+  {{ page_header(_('Check your new branding')) }}
 
   <p class="govuk-body">
-    Emails from {{ current_service.name }} will look like this.
+    {{_("Emails from %%s will look like this.") % current_service.name}}
   </p>
 
   {{ email_branding_preview('__NONE__') }}
 
-  <h2 class="heading-medium">Before you continue</h2>
+  <h2 class="heading-medium">{{_('Before you continue')}}</h2>
 
-  <p class="govuk-body">You can only use GOV.UK branding if people go to GOV.UK to access your service.</p>
+  <p class="govuk-body">{{_('You can only use GOV.UK branding if people go to GOV.UK to access your service.')}}</p>
 
   <p class="govuk-body">
-    You cannot use GOV.UK branding if your organisation is
-    <a class="govuk-link govuk-link--no-visited-state"
-      href="https://www.gov.uk/government/publications/govuk-proposition/govuk-proposition#organisations-independent-from-government">independent
-      from government</a>.
+    {{_("You cannot use GOV.UK branding if your organisation is
+    <a class=\"govuk-link govuk-link--no-visited-state\"
+      href=\"https://www.gov.uk/government/publications/govuk-proposition/govuk-proposition#organisations-independent-from-government\">independent
+      from government</a>.")}}
   </p>
 
   {% call form_wrapper() %}
-    {{ page_footer('Use this branding') }}
+    {{ page_footer(_('Use this branding')) }}
   {% endcall %}
 
 {% endblock %}

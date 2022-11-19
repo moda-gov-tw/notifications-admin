@@ -7,7 +7,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Send files by email
+  {{_('Send files by email')}}
 {% endblock %}
 
 {% block backLink %}
@@ -17,16 +17,16 @@
 {% block maincolumn_content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-five-sixths">
-      {{ page_header('Send files by email') }}
+      {{ page_header(_('Send files by email')) }}
       <p class="govuk-body">
-        This is an API-only feature.
+        {{_('This is an API-only feature.')}}
       </p>
       <p class="govuk-body">
-        To send a file by email, follow the instructions in our <a class="govuk-link govuk-link--no-visited-state" href={{ url_for('main.documentation') }}>API documentation</a>.
+        {{_("To send a file by email, follow the instructions in our <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">API documentation</a>.") % url_for('main.documentation')}}
       </p>
-      <h2 class="heading-medium">{% if contact_details %}Change contact details for{% else %}Add contact details to{% endif %} the file download page</h2>
+      <h2 class="heading-medium">{% if contact_details %}{{_('Change contact details for the file download page')}}{% else %}{{_('Add contact details to the file download page')}}{% endif %}</h2>
       <p class="govuk-body">
-        You need to include contact details for your service so your users can get in touch if there’s a problem. For example, if the link to download the file you sent them has expired.
+        {{_('You need to include contact details for your service so your users can get in touch if there’s a problem. For example, if the link to download the file you sent them has expired.')}}
       </p>
       {% call form_wrapper() %}
 
@@ -38,7 +38,7 @@
           ]
         }) }}
 
-        {{ page_footer('Save') }}
+        {{ page_footer(_('Save')) }}
       {% endcall %}
     </div>
   </div>

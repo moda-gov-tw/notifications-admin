@@ -4,12 +4,12 @@
 {% from "components/branding-preview.html" import letter_branding_preview %}
 
 {% block per_page_title %}
-  Preview letter branding
+  {{_('Preview letter branding')}}
 {% endblock %}
 
 {% block platform_admin_content %}
 
-  <h1 class="heading-large">Preview letter branding</h1>
+  <h1 class="heading-large">{{_('Preview letter branding')}}</h1>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       {{ letter_branding_preview(form.branding_style.data) }}
@@ -17,8 +17,8 @@
         <div class="form-group">
           {{ form.hidden_tag() }}
           <div class="page-footer">
-            {{ govukButton({ "text": "Save", "classes": "govuk-!-margin-right-2" }) }}
-            <a class="govuk-link govuk-link--no-visited-state page-footer-back-link" href="{{ url_for('main.service_settings', service_id=service_id) }}">Back to service settings</a>
+            {{ govukButton({ "text": _("Save"), "classes": "govuk-!-margin-right-2" }) }}
+            <a class="govuk-link govuk-link--no-visited-state page-footer-back-link" href="{{ url_for('main.service_settings', service_id=service_id) }}">{{_('Back to service settings')}}</a>
           </div>
         </div>
       {% endcall %}

@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Change sender address
+  {{_('Change sender address')}}
 {% endblock %}
 
 {% block backLink %}
@@ -17,12 +17,12 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('Change sender address') }}
+  {{ page_header(_('Change sender address')) }}
   {% call form_wrapper() %}
     {{ textbox(
       form.letter_contact_block,
-      label='This will appear as the sender address on your letters.'|safe,
-      hint='10 lines maximum',
+      label=_('This will appear as the sender address on your letters.')|safe,
+      hint=_('10 lines maximum'),
       width='1-2',
       rows=10,
       highlight_placeholders=True
@@ -31,16 +31,16 @@
 
     {% if form.is_default.data %}
       <p class="form-group">
-        This is currently your default address for {{ current_service.name }}.
+        {{_("This is currently your default address for %%s.") % current_service.name}}
       </p>
     {% else %}
       {{ form.is_default }}
     {% endif %}
 
     {{ page_footer(
-      'Save',
+      _('Save'),
       delete_link=url_for('.service_confirm_delete_letter_contact', service_id=current_service.id, letter_contact_id=letter_contact_id),
-      delete_link_text='Delete'
+      delete_link_text=_('Delete')
     ) }}
 
   {% endcall %}

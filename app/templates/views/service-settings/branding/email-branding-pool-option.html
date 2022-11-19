@@ -6,7 +6,7 @@
 {% from "components/branding-preview.html" import email_branding_preview %}
 
 {% block service_page_title %}
-  Change email branding
+  {{_('Change email branding')}}
 {% endblock %}
 
 {% block backLink %}
@@ -17,17 +17,17 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('Change email branding') }}
+  {{ page_header(_('Change email branding')) }}
 
   <p class="govuk-body">
-    If you confirm, your emails will come with {{ chosen_branding.name }} branding.
+    {{_("If you confirm, your emails will come with %%s branding.") % chosen_branding.name}}
   </p>
 
   {{ email_branding_preview(chosen_branding.id) }}
 
 
   {% call form_wrapper() %}
-    {{ page_footer('Change email branding') }}
+    {{ page_footer(_('Change email branding')) }}
   {% endcall %}
 
 {% endblock %}

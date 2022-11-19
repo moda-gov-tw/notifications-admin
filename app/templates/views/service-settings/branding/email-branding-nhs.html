@@ -6,7 +6,7 @@
 {% from "components/branding-preview.html" import email_branding_preview %}
 
 {% block service_page_title %}
-  Check your new branding
+  {{_('Check your new branding')}}
 {% endblock %}
 
 {% block backLink %}
@@ -17,23 +17,23 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('Check your new branding') }}
+  {{ page_header(_('Check your new branding')) }}
 
   <p class="govuk-body">
-    Emails from {{ current_service.name }} will look like this.
+    {{_("Emails from %%s will look like this.") % current_service.name}}
   </p>
   {{ email_branding_preview(nhs_branding_id) }}
 
-  <h2 class="heading-medium">Before you continue</h2>
+  <h2 class="heading-medium">{{_('Before you continue')}}</h2>
 
-  <p class="govuk-body">Make sure you’re allowed to use NHS branding.</p>
+  <p class="govuk-body">{{_('Make sure you’re allowed to use NHS branding.')}}</p>
 
   <p class="govuk-body">
-    If you’re not sure, <a class="govuk-link govuk-link--no-visited-state" href="https://www.england.nhs.uk/nhsidentity/identity-guidelines/who-can-use-the-nhs-identity/">check the guidance on the NHS website</a>.
+    {{_("If you’re not sure, <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.england.nhs.uk/nhsidentity/identity-guidelines/who-can-use-the-nhs-identity/\">check the guidance on the NHS website</a>.")}}
   </p>
 
   {% call form_wrapper() %}
-    {{ page_footer('Use this branding') }}
+    {{ page_footer(_('Use this branding')) }}
   {% endcall %}
 
 {% endblock %}

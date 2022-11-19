@@ -4,7 +4,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Receive text messages
+  {{_('Receive text messages')}}
 {% endblock %}
 
 {% block backLink %}
@@ -18,38 +18,38 @@
       {{ page_header('Receive text messages') }}
       {% if 'inbound_sms' in current_service.permissions %}
         <p class="govuk-body">
-          Your service can receive text messages sent to {{ current_service.inbound_number }}.
+          {{_("Your service can receive text messages sent to %%s.") % current_service.inbound_number}}
         </p>
         <p class="govuk-body">
-          You can still send text messages from a sender name if you need to, but users will not be able to reply to those messages.
+          {{_('You can still send text messages from a sender name if you need to, but users will not be able to reply to those messages.')}}
         </p>
         <p class="govuk-body">
-          <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.support') }}">Contact us</a> if you want to switch this feature off.
+          {{_("<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact us</a> if you want to switch this feature off.") % url_for('.support')}}
         </p>
         {% if current_user.has_permissions('manage_api_keys') %}
           <p class="govuk-body">
-            You can set up callbacks for received text messages on the
-            <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.api_callbacks', service_id=current_service.id) }}">API integration page</a>.
+            {{_("You can set up callbacks for received text messages on the
+            <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">API integration page</a>.") % url_for('.api_callbacks', service_id=current_service.id)}}
           </p>
         {% endif %}
       {% else %}
         <p class="govuk-body">
-          <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.support') }}">Contact us</a> if you want to be able to receive text messages from your users.
+          {{_("<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact us</a> if you want to be able to receive text messages from your users.") % url_for('.support')}}
         </p>
         <p class="govuk-body">
-          We’ll create a unique phone number for your service that they can reply to.
+          {{_('We’ll create a unique phone number for your service that they can reply to.')}}
         </p>
         <p class="govuk-body">
-          Text messages you send will come from this phone number instead of your sender name (currently {{ current_service.default_sms_sender }}).
+          {{_("Text messages you send will come from this phone number instead of your sender name (currently %%s).") % current_service.default_sms_sender}}
         </p>
         <p class="govuk-body">
-          You can still send text messages from a sender name if you need to, but users will not be able to reply to those messages.
+          {{_('You can still send text messages from a sender name if you need to, but users will not be able to reply to those messages.')}}
         </p>
         <p class="govuk-body">
-          You can see and reply to the messages you receive when you sign in to Notify, or get them using the API.
+          {{_('You can see and reply to the messages you receive when you sign in to Notify, or get them using the API.')}}
         </p>
         <p class="govuk-body">
-          It does not cost you anything to receive text messages. Users will pay their standard text message rate.
+          {{_('It does not cost you anything to receive text messages. Users will pay their standard text message rate.')}}
         </p>
       {% endif %}
     </div>

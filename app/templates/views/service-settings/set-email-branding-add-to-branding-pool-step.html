@@ -4,7 +4,7 @@
 {% from "components/form.html" import form_wrapper %}
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
-{% set page_title = "Apply ‘{}’ branding".format(email_branding_name) %}
+{% set page_title = _("Apply ‘{}’ branding").format(email_branding_name) %}
 
 {% block backLink %}
   {{ govukBackLink({ "href": url_for('.service_set_email_branding', service_id=current_service.id) }) }}
@@ -20,7 +20,7 @@
 
     {% call form_wrapper() %}
       {{ form.add_to_pool }}
-      {{ page_footer('Continue') }}
+      {{ page_footer(_('Continue')) }}
     {% endcall %}
 
 {% endblock %}

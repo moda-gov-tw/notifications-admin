@@ -5,7 +5,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Daily message limit
+  {{_('Daily message limit')}}
 {% endblock %}
 
 {% block backLink %}
@@ -15,9 +15,9 @@
 {% block maincolumn_content %}
 
   {% call form_wrapper() %}
-    {{ page_header('Daily message limit') }}
+    {{ page_header(_('Daily message limit')) }}
     {{ form.message_limit }}
-    {{ page_footer('Save') }}
+    {{ page_footer(_('Save')) }}
   {% endcall %}
 
 {% endblock %}

@@ -4,7 +4,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Emergency alerts settings
+  {{_('Emergency alerts settings')}}
 {% endblock %}
 
 {% block backLink %}
@@ -25,7 +25,7 @@
             }
           }
         }) }}
-        {{ page_footer('Continue') }}
+        {{ page_footer(_('Continue')) }}
       {% endcall %}
     </div>
   </div>

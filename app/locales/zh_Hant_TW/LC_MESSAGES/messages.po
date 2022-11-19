@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-19 11:40+0800\n"
+"POT-Creation-Date: 2022-11-19 14:34+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -423,11 +423,12 @@ msgstr ""
 msgid "Trial mode"
 msgstr ""
 
-#: main/views/platform_admin.py:175
+#: main/views/platform_admin.py:175 templates/views/service-settings.html:322
 msgid "Live"
 msgstr ""
 
 #: main/views/platform_admin.py:194 templates/views/performance.html:143
+#: templates/views/service-settings.html:352
 msgid "Organisation"
 msgstr ""
 
@@ -435,7 +436,7 @@ msgstr ""
 msgid "Organisation type"
 msgstr ""
 
-#: main/views/platform_admin.py:196
+#: main/views/platform_admin.py:196 templates/views/service-settings.html:24
 msgid "Service name"
 msgstr ""
 
@@ -523,7 +524,7 @@ msgstr ""
 msgid "service id"
 msgstr ""
 
-#: main/views/platform_admin.py:350
+#: main/views/platform_admin.py:350 templates/views/service-settings.html:30
 msgid "service name"
 msgstr ""
 
@@ -645,52 +646,168 @@ msgstr ""
 msgid "Could not read {}. Try using a different file format."
 msgstr ""
 
-#: main/views/send.py:215
+#: main/views/send.py:150
+#, python-format
+msgid ""
+"%%s contains numbers or dates that Notify cannot understand.\n"
+"                    Try formatting all columns as ‘text’ or export your "
+"file as CSV."
+msgstr ""
+
+#: main/views/send.py:216
 msgid "(Default)"
 msgstr ""
 
-#: main/views/send.py:217
+#: main/views/send.py:218
 msgid "(Receives replies)"
 msgstr ""
 
-#: main/views/send.py:219
+#: main/views/send.py:220
 msgid "(Default and receives replies)"
 msgstr ""
 
-#: main/views/send.py:246 main/views/send.py:247
+#: main/views/send.py:247 main/views/send.py:248
 msgid "Where should replies come back to?"
 msgstr ""
 
-#: main/views/send.py:248
+#: main/views/send.py:249
 msgid "email_address"
 msgstr ""
 
-#: main/views/send.py:251
+#: main/views/send.py:252
 msgid "Send to one recipient"
 msgstr ""
 
-#: main/views/send.py:252
+#: main/views/send.py:253
 msgid "What should appear in the top right of the letter?"
 msgstr ""
 
-#: main/views/send.py:256 main/views/send.py:257
+#: main/views/send.py:257 main/views/send.py:258
 msgid "Who should the message come from?"
 msgstr ""
 
-#: main/views/send.py:843
+#: main/views/send.py:844
 msgid "Send ‘{}’"
 msgstr ""
 
-#: main/views/send.py:844
+#: main/views/send.py:845
 msgid "Personalise this message"
 msgstr ""
 
-#: main/views/send.py:891
+#: main/views/send.py:892
 msgid "Use my {}"
 msgstr ""
 
-#: main/views/send.py:1025
+#: main/views/send.py:1026
 msgid "Service {} could not send notification: \"{}\""
+msgstr ""
+
+#: main/views/service_settings.py:88
+msgid "Receive inbound SMS"
+msgstr ""
+
+#: main/views/service_settings.py:89
+msgid "Email authentication"
+msgstr ""
+
+#: main/views/service_settings.py:90 templates/views/service-settings.html:223
+#: templates/views/service-settings/set-international-letters.html:8
+msgid "Send international letters"
+msgstr ""
+
+#: main/views/service_settings.py:94
+msgid ""
+"Thanks for your branding request. We’ll get back to you within one "
+"working day."
+msgstr ""
+
+#: main/views/service_settings.py:191
+#, python-format
+msgid "Request to go live - %%s"
+msgstr ""
+
+#: main/views/service_settings.py:205
+msgid ""
+"Thanks for your request to go live. We’ll get back to you within one "
+"working day."
+msgstr ""
+
+#: main/views/service_settings.py:212 main/views/service_settings.py:220
+msgid "Make service live"
+msgstr ""
+
+#: main/views/service_settings.py:230 main/views/service_settings.py:242
+#: templates/views/service-settings.html:333
+msgid "Count in list of live services"
+msgstr ""
+
+#: main/views/service_settings.py:232
+#: templates/views/organisations/organisation/settings/index.html:41
+msgid "Yes"
+msgstr ""
+
+#: main/views/service_settings.py:233
+#: templates/views/organisations/organisation/settings/index.html:42
+msgid "No"
+msgstr ""
+
+#: main/views/service_settings.py:382
+msgid "‘{}’ was deleted"
+msgstr ""
+
+#: main/views/service_settings.py:388
+msgid "Are you sure you want to delete ‘{}’? There’s no way to undo this."
+msgstr ""
+
+#: main/views/service_settings.py:595
+msgid "Are you sure you want to delete this reply-to email address?"
+msgstr ""
+
+#: main/views/service_settings.py:647
+msgid "Start all text messages with ‘{}:’"
+msgstr ""
+
+#: main/views/service_settings.py:660
+msgid "Send text messages to international phone numbers"
+msgstr ""
+
+#: main/views/service_settings.py:665
+msgid "international_sms"
+msgstr ""
+
+#: main/views/service_settings.py:894
+msgid "Are you sure you want to delete this text message sender?"
+msgstr ""
+
+#: main/views/service_settings.py:1006
+#, python-format
+msgid "The email branding has been set to %%s"
+msgstr ""
+
+#: main/views/service_settings.py:1014
+#, python-format
+msgid ""
+"The email branding has been set to %%s and it has been added to %%s's "
+"email branding pool"
+msgstr ""
+
+#: main/views/service_settings.py:1139 main/views/service_settings.py:1318
+#, python-format
+msgid "Email branding request - %%s"
+msgstr ""
+
+#: main/views/service_settings.py:1192
+msgid "No branding found for this id."
+msgstr ""
+
+#: main/views/service_settings.py:1198 main/views/service_settings.py:1222
+#: main/views/service_settings.py:1250
+msgid "You’ve updated your email branding"
+msgstr ""
+
+#: main/views/service_settings.py:1416
+#, python-format
+msgid "Letter branding request - %%s"
 msgstr ""
 
 #: templates/partials/check/letter-too-long.html:2
@@ -1298,6 +1415,8 @@ msgid "Blue Badge – %%s"
 msgstr ""
 
 #: templates/views/add-service-local.html:23
+#: templates/views/service-settings/name-local.html:26
+#: templates/views/service-settings/name.html:23
 msgid ""
 "You should only use an acronym or initialism if your users are already "
 "familiar with it."
@@ -1609,6 +1728,33 @@ msgstr ""
 #: templates/views/organisations/organisation/settings/edit-type.html:19
 #: templates/views/organisations/organisation/settings/preview-letter-branding.html:19
 #: templates/views/providers/edit-sms-provider-ratio.html:23
+#: templates/views/service-settings/data-retention/edit.html:21
+#: templates/views/service-settings/edit-service-billing-details.html:36
+#: templates/views/service-settings/edit-service-notes.html:27
+#: templates/views/service-settings/email-reply-to/edit.html:30
+#: templates/views/service-settings/email-reply-to/edit.html:34
+#: templates/views/service-settings/letter-contact/edit.html:41
+#: templates/views/service-settings/link-service-to-organisation.html:30
+#: templates/views/service-settings/name-local.html:42
+#: templates/views/service-settings/name.html:39
+#: templates/views/service-settings/preview-email-branding.html:20
+#: templates/views/service-settings/preview-letter-branding.html:20
+#: templates/views/service-settings/send-files-by-email.html:41
+#: templates/views/service-settings/set-email.html:25
+#: templates/views/service-settings/set-free-sms-allowance.html:20
+#: templates/views/service-settings/set-inbound-number.html:35
+#: templates/views/service-settings/set-international-letters.html:29
+#: templates/views/service-settings/set-international-sms.html:29
+#: templates/views/service-settings/set-letter.html:29
+#: templates/views/service-settings/set-message-limit.html:20
+#: templates/views/service-settings/set-rate-limit.html:20
+#: templates/views/service-settings/set-service-setting.html:28
+#: templates/views/service-settings/set-sms.html:32
+#: templates/views/service-settings/sms-prefix.html:21
+#: templates/views/service-settings/sms-sender/add.html:27
+#: templates/views/service-settings/sms-sender/edit.html:37
+#: templates/views/service-settings/sms-sender/edit.html:41
+#: templates/views/service-settings/sms-sender/edit.html:44
 msgid "Save"
 msgstr ""
 
@@ -2902,7 +3048,17 @@ msgstr ""
 #: templates/views/register-from-org-invite.html:28
 #: templates/views/register.html:32
 #: templates/views/send-one-off-letter-address.html:41
-#: templates/views/send-test.html:47 templates/views/support/index.html:20
+#: templates/views/send-test.html:47
+#: templates/views/service-settings/branding/add-new-branding/email-branding-choose-banner.html:25
+#: templates/views/service-settings/branding/add-new-branding/government-branding-or-own-logo.html:52
+#: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:47
+#: templates/views/service-settings/branding/email-branding-options.html:44
+#: templates/views/service-settings/email-reply-to/_verify-updates.html:23
+#: templates/views/service-settings/estimate-usage.html:44
+#: templates/views/service-settings/service-set-broadcast-channel.html:28
+#: templates/views/service-settings/service-set-broadcast-network.html:33
+#: templates/views/service-settings/set-email-branding-add-to-branding-pool-step.html:23
+#: templates/views/support/index.html:20
 #: templates/views/templates/set-sender.html:29
 msgid "Continue"
 msgstr ""
@@ -3520,6 +3676,423 @@ msgstr ""
 msgid "Use an emergency list"
 msgstr ""
 
+#: templates/views/organisations/organisation/settings/index.html:5
+#: templates/views/organisations/organisation/settings/index.html:9
+#: templates/views/service-settings.html:7
+#: templates/views/service-settings.html:12
+#: templates/views/service-settings.html:314
+msgid "Settings"
+msgstr ""
+
+#: templates/views/api/callbacks.html:19
+#: templates/views/organisations/organisation/settings/index.html:12
+#: templates/views/service-settings.html:17
+msgid "General"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:13
+#: templates/views/service-settings.html:18
+#: templates/views/service-settings.html:56
+#: templates/views/service-settings.html:123
+#: templates/views/service-settings.html:315
+#: templates/views/service-settings/data-retention.html:40
+msgid "Label"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:13
+#: templates/views/service-settings.html:18
+#: templates/views/service-settings.html:56
+#: templates/views/service-settings.html:123
+#: templates/views/service-settings.html:315
+#: templates/views/service-settings/data-retention.html:40
+msgid "Value"
+msgstr ""
+
+#: templates/views/api/keys.html:27
+#: templates/views/organisations/organisation/settings/index.html:13
+#: templates/views/service-settings.html:18
+#: templates/views/service-settings.html:56
+#: templates/views/service-settings.html:123
+#: templates/views/service-settings.html:315
+#: templates/views/service-settings/data-retention.html:40
+msgid "Action"
+msgstr ""
+
+#: templates/views/service-settings.html:38
+#: templates/views/service-settings/set-auth-type.html:21
+msgid "Email link or text message code"
+msgstr ""
+
+#: templates/views/service-settings.html:40
+#: templates/views/service-settings/set-auth-type.html:32
+msgid "Text message code"
+msgstr ""
+
+#: templates/views/api/callbacks.html:27 templates/views/api/callbacks.html:33
+#: templates/views/organisations/organisation/settings/index.html:31
+#: templates/views/organisations/organisation/settings/index.html:63
+#: templates/views/organisations/organisation/settings/index.html:73
+#: templates/views/organisations/organisation/settings/index.html:84
+#: templates/views/organisations/organisation/settings/index.html:95
+#: templates/views/organisations/organisation/settings/index.html:124
+#: templates/views/organisations/organisation/settings/index.html:147
+#: templates/views/service-settings.html:43
+#: templates/views/service-settings.html:65
+#: templates/views/service-settings.html:132
+#: templates/views/service-settings.html:178
+#: templates/views/service-settings.html:190
+#: templates/views/service-settings.html:211
+#: templates/views/service-settings.html:226
+#: templates/views/service-settings.html:261
+#: templates/views/service-settings.html:328
+#: templates/views/service-settings.html:335
+#: templates/views/service-settings.html:340
+#: templates/views/service-settings.html:347
+#: templates/views/service-settings.html:367
+#: templates/views/service-settings.html:373
+#: templates/views/service-settings.html:378
+#: templates/views/service-settings.html:383
+#: templates/views/service-settings.html:388
+#: templates/views/service-settings.html:393
+#: templates/views/service-settings.html:413
+#: templates/views/service-settings.html:423
+#: templates/views/service-settings.html:445
+#: templates/views/service-settings/data-retention.html:48
+msgid "Change"
+msgstr ""
+
+#: templates/views/service-settings.html:46
+msgid "sign-in method"
+msgstr ""
+
+#: templates/views/service-settings.html:55
+msgid "Email settings"
+msgstr ""
+
+#: templates/views/service-settings.html:62
+#: templates/views/service-settings/set-email.html:8
+#: templates/views/service-settings/set-email.html:19
+msgid "Send emails"
+msgstr ""
+
+#: templates/views/service-settings.html:72
+msgid "your settings for sending emails"
+msgstr ""
+
+#: templates/views/service-settings.html:82
+#: templates/views/service-settings.html:149
+#: templates/views/service-settings.html:244
+#, python-format
+msgid "…and %%d more"
+msgstr ""
+
+#: templates/views/service-settings.html:87
+#: templates/views/service-settings.html:112
+#: templates/views/service-settings.html:154
+msgid "Manage"
+msgstr ""
+
+#: templates/views/service-settings.html:90
+msgid "reply-to email addresses"
+msgstr ""
+
+#: templates/views/features/emails.html:29
+#: templates/views/organisations/organisation/settings/email-branding-options.html:9
+#: templates/views/service-settings.html:98
+#: templates/views/service-settings.html:386
+msgid "Email branding"
+msgstr ""
+
+#: templates/views/service-settings.html:104
+msgid "email branding"
+msgstr ""
+
+#: templates/views/features/emails.html:33
+#: templates/views/guidance/send-files-by-email.html:7
+#: templates/views/guidance/send-files-by-email.html:12
+#: templates/views/service-settings.html:109
+#: templates/views/service-settings/send-files-by-email.html:10
+#: templates/views/service-settings/send-files-by-email.html:20
+msgid "Send files by email"
+msgstr ""
+
+#: templates/views/service-settings.html:115
+msgid "sending files by email"
+msgstr ""
+
+#: templates/views/service-settings.html:122
+msgid "Text message settings"
+msgstr ""
+
+#: templates/views/service-settings.html:129
+#: templates/views/service-settings/set-sms.html:8
+msgid "Send text messages"
+msgstr ""
+
+#: templates/views/service-settings.html:139
+msgid "your settings for sending text messages"
+msgstr ""
+
+#: templates/views/service-settings.html:144
+#: templates/views/service-settings/sms-senders.html:9
+#: templates/views/service-settings/sms-senders.html:18
+msgid "Text message senders"
+msgstr ""
+
+#: templates/views/service-settings.html:157
+msgid "text message senders"
+msgstr ""
+
+#: templates/views/service-settings.html:163
+#: templates/views/service-settings/sms-prefix.html:8
+#: templates/views/service-settings/sms-prefix.html:17
+msgid "Start text messages with service name"
+msgstr ""
+
+#: templates/views/service-settings.html:169
+msgid "your settings for starting text messages with service name"
+msgstr ""
+
+#: templates/views/service-settings.html:181
+msgid "your settings for sending international text messages"
+msgstr ""
+
+#: templates/views/features/text-messages.html:28
+#: templates/views/service-settings.html:187
+#: templates/views/service-settings/set-inbound-sms.html:7
+msgid "Receive text messages"
+msgstr ""
+
+#: templates/views/service-settings.html:193
+msgid "your settings for receiving text messages"
+msgstr ""
+
+#: templates/views/service-settings.html:208
+#: templates/views/service-settings/set-letter.html:8
+#: templates/views/service-settings/set-letter.html:19
+msgid "Send letters"
+msgstr ""
+
+#: templates/views/service-settings.html:218
+msgid "your settings for sending letters"
+msgstr ""
+
+#: templates/views/service-settings.html:233
+#: templates/views/service-settings/letter-contact-details.html:9
+#: templates/views/service-settings/letter-contact-details.html:19
+msgid "Sender addresses"
+msgstr ""
+
+#: templates/views/service-settings.html:252
+msgid "sender addresses"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/letter-branding-options.html:8
+#: templates/views/organisations/organisation/settings/letter-branding-options.html:16
+#: templates/views/service-settings.html:258
+#: templates/views/service-settings.html:391
+msgid "Letter branding"
+msgstr ""
+
+#: templates/views/service-settings.html:264
+msgid "letter branding"
+msgstr ""
+
+#: templates/views/service-settings.html:274
+msgid "Your service is in trial mode"
+msgstr ""
+
+#: templates/views/service-settings.html:276
+msgid "You can only:"
+msgstr ""
+
+#: templates/views/service-settings.html:279
+#, python-format
+msgid "send %%(limit)s text messages and emails per day"
+msgstr ""
+
+#: templates/views/service-settings.html:280 templates/views/trial-mode.html:18
+msgid "send messages to yourself and other people in your team"
+msgstr ""
+
+#: templates/views/service-settings.html:281 templates/views/trial-mode.html:19
+msgid "create letter templates, but not send them"
+msgstr ""
+
+#: templates/views/service-settings.html:286
+#, fuzzy, python-format
+msgid ""
+"To remove these restrictions, you can send us a\n"
+"            <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">request to go live</a>."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/service-settings.html:289
+msgid "Your service manager can ask to have these restrictions removed."
+msgstr ""
+
+#: templates/views/service-settings.html:294
+msgid "Your service is live"
+msgstr ""
+
+#: templates/views/service-settings.html:297
+#, python-format
+msgid "You can send up to %%(limit)s messages per day."
+msgstr ""
+
+#: templates/views/service-settings.html:300
+#, fuzzy, python-format
+msgid ""
+"Problems or comments?\n"
+"          <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">Give feedback</a>."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/service-settings.html:311
+msgid "Platform admin settings"
+msgstr ""
+
+#: templates/views/service-settings.html:324
+msgid "No (organisation must be set first)"
+msgstr ""
+
+#: templates/views/service-settings.html:328
+msgid "service status"
+msgstr ""
+
+#: templates/views/service-settings.html:335
+msgid "if service is counted in list of live services"
+msgstr ""
+
+#: templates/views/pricing/billing-details-signed-out.html:9
+#: templates/views/pricing/billing-details-signed-out.html:14
+#: templates/views/pricing/billing-details.html:10
+#: templates/views/pricing/billing-details.html:15
+#: templates/views/service-settings.html:338
+msgid "Billing details"
+msgstr ""
+
+#: templates/views/service-settings.html:340
+msgid "billing details for service"
+msgstr ""
+
+#: templates/views/service-settings.html:345
+msgid "Notes"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:145
+#: templates/views/organisations/organisation/settings/index.html:155
+#: templates/views/providers/provider.html:40
+#: templates/views/providers/provider.html:46
+#: templates/views/providers/providers.html:28
+#: templates/views/providers/providers.html:36
+#: templates/views/providers/providers.html:39
+#: templates/views/providers/providers.html:83
+#: templates/views/providers/providers.html:86
+#: templates/views/service-settings.html:346
+msgid "None"
+msgstr ""
+
+#: templates/views/service-settings.html:347
+msgid "the notes for the service"
+msgstr ""
+
+#: templates/views/service-settings.html:359
+#: templates/views/service-settings.html:410
+msgid "Not set"
+msgstr ""
+
+#: templates/views/service-settings.html:367
+msgid "organisation for service"
+msgstr ""
+
+#: templates/views/service-settings.html:371
+#: templates/views/service-settings/set-rate-limit.html:8
+#: templates/views/service-settings/set-rate-limit.html:18
+msgid "Rate limit"
+msgstr ""
+
+#: templates/views/service-settings.html:372
+msgid "{:,} per minute"
+msgstr ""
+
+#: templates/views/service-settings.html:373
+msgid "rate limit"
+msgstr ""
+
+#: templates/views/service-settings.html:376
+msgid "Message limit"
+msgstr ""
+
+#: templates/views/service-settings.html:377
+msgid "{:,} per day"
+msgstr ""
+
+#: templates/views/service-settings.html:378
+msgid "daily message limit"
+msgstr ""
+
+#: templates/views/pricing/index.html:59
+#: templates/views/service-settings.html:381
+#: templates/views/service-settings/set-free-sms-allowance.html:8
+#: templates/views/service-settings/set-free-sms-allowance.html:18
+msgid "Free text message allowance"
+msgstr ""
+
+#: templates/views/service-settings.html:382
+msgid "{:,} per year"
+msgstr ""
+
+#: templates/views/service-settings.html:383
+msgid "free text message allowance"
+msgstr ""
+
+#: templates/views/service-settings.html:388
+msgid "email branding (admin view)"
+msgstr ""
+
+#: templates/views/service-settings.html:393
+msgid "letter branding (admin view)"
+msgstr ""
+
+#: templates/views/service-settings.html:396
+msgid "Custom data retention"
+msgstr ""
+
+#: templates/views/service-settings.html:402
+#, python-format
+msgid "%%(type)s – %%(days)s days"
+msgstr ""
+
+#: templates/views/service-settings.html:413
+msgid "data retention"
+msgstr ""
+
+#: templates/views/service-settings.html:429
+#, python-format
+msgid "your settings for %%s"
+msgstr ""
+
+#: templates/views/service-settings.html:436
+msgid "Emergency alerts"
+msgstr ""
+
+#: templates/views/service-settings.html:447
+msgid "your settings for emergency alerts"
+msgstr ""
+
+#: templates/views/service-settings.html:462
+msgid "Delete this service"
+msgstr ""
+
+#: templates/views/service-settings.html:469
+msgid "Service history"
+msgstr ""
+
 #: templates/views/signedout.html:5
 msgid ""
 "GOV.UK Notify lets you send emails, text messages and letters to your "
@@ -3873,14 +4446,6 @@ msgstr ""
 msgid "send 50 text messages and emails per day"
 msgstr ""
 
-#: templates/views/trial-mode.html:18
-msgid "send messages to yourself and other people in your team"
-msgstr ""
-
-#: templates/views/trial-mode.html:19
-msgid "create letter templates, but not send them"
-msgstr ""
-
 #: templates/views/trial-mode.html:24
 #, fuzzy, python-format
 msgid ""
@@ -3906,10 +4471,12 @@ msgstr ""
 msgid "Select <b class=\"govuk-!-font-weight-bold\">Request to go live</b>."
 msgstr ""
 
+#: templates/views/service-settings/request-to-go-live.html:71
 #: templates/views/trial-mode.html:36
 msgid "When we receive your request we’ll get back to you within one working day."
 msgstr ""
 
+#: templates/views/service-settings/request-to-go-live.html:9
 #: templates/views/trial-mode.html:38
 msgid "Before you request to go live"
 msgstr ""
@@ -4023,6 +4590,7 @@ msgstr ""
 #: templates/views/organisations/add-gp-organisation.html:10
 #: templates/views/organisations/add-gp-organisation.html:18
 #: templates/views/organisations/add-nhs-local-organisation.html:8
+#: templates/views/service-settings/request-to-go-live.html:56
 msgid "Accept our data sharing and financial agreement"
 msgstr ""
 
@@ -4060,24 +4628,8 @@ msgstr ""
 msgid "Callbacks"
 msgstr ""
 
-#: templates/views/api/callbacks.html:19
-#: templates/views/organisations/organisation/settings/index.html:12
-msgid "General"
-msgstr ""
-
 #: templates/views/api/callbacks.html:25
 msgid "Delivery receipts"
-msgstr ""
-
-#: templates/views/api/callbacks.html:27 templates/views/api/callbacks.html:33
-#: templates/views/organisations/organisation/settings/index.html:31
-#: templates/views/organisations/organisation/settings/index.html:63
-#: templates/views/organisations/organisation/settings/index.html:73
-#: templates/views/organisations/organisation/settings/index.html:84
-#: templates/views/organisations/organisation/settings/index.html:95
-#: templates/views/organisations/organisation/settings/index.html:124
-#: templates/views/organisations/organisation/settings/index.html:147
-msgid "Change"
 msgstr ""
 
 #: templates/views/api/callbacks.html:31 templates/views/dashboard/inbox.html:7
@@ -4094,6 +4646,7 @@ msgid "Message log"
 msgstr ""
 
 #: templates/views/api/index.html:35
+#: templates/views/service-settings/email-reply-to/_verify-updates.html:16
 msgid "Refresh"
 msgstr ""
 
@@ -4116,11 +4669,6 @@ msgstr ""
 
 #: templates/views/api/keys.html:22
 msgid "You have not created any API keys yet"
-msgstr ""
-
-#: templates/views/api/keys.html:27
-#: templates/views/organisations/organisation/settings/index.html:13
-msgid "Action"
 msgstr ""
 
 #: templates/views/api/keys.html:47
@@ -4205,6 +4753,8 @@ msgstr ""
 #: templates/views/organisations/add-nhs-local-organisation.html:28
 #: templates/views/organisations/organisation/settings/set-letter-branding.html:32
 #: templates/views/organisations/organisation/trial-mode-services.html:13
+#: templates/views/service-settings/link-service-to-organisation.html:24
+#: templates/views/service-settings/set-letter-branding.html:32
 msgid "Search by name"
 msgstr ""
 
@@ -4919,11 +5469,6 @@ msgstr ""
 "或 <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">登入</a> 如果之前已經註冊過"
 
-#: templates/views/features/emails.html:29
-#: templates/views/organisations/organisation/settings/email-branding-options.html:9
-msgid "Email branding"
-msgstr ""
-
 #: templates/views/features/emails.html:30
 msgid "Add your organisa:tion’s logo and brand colour to email templates."
 msgstr ""
@@ -4937,12 +5482,6 @@ msgstr ""
 "參閱 \n"
 "      <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">服務與組織列表</a>。"
-
-#: templates/views/features/emails.html:33
-#: templates/views/guidance/send-files-by-email.html:7
-#: templates/views/guidance/send-files-by-email.html:12
-msgid "Send files by email"
-msgstr ""
 
 #: templates/views/features/emails.html:34
 msgid "Notify offers a safe and reliable way to send files by email."
@@ -5164,10 +5703,6 @@ msgstr ""
 "或 <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">登入</a> 如果之前已經註冊過"
 
-#: templates/views/features/text-messages.html:28
-msgid "Receive text messages"
-msgstr ""
-
 #: templates/views/features/text-messages.html:29
 msgid "Let people send messages to your service or reply to your texts."
 msgstr ""
@@ -5334,6 +5869,7 @@ msgid ""
 msgstr ""
 
 #: templates/views/guidance/branding-and-customisation.html:36
+#: templates/views/service-settings/request-to-go-live.html:39
 msgid "Add a reply-to email address"
 msgstr ""
 
@@ -5365,6 +5901,7 @@ msgid "Change the text message sender"
 msgstr ""
 
 #: templates/views/guidance/branding-and-customisation.html:50
+#: templates/views/service-settings/sms-senders.html:67
 msgid "The text message sender tells your users who the message is from."
 msgstr ""
 
@@ -5802,6 +6339,7 @@ msgid "See a text version of the letter specification"
 msgstr ""
 
 #: templates/views/guidance/send-files-by-email.html:14
+#: templates/views/service-settings/send-files-by-email.html:25
 #, fuzzy, python-format
 msgid ""
 "To send a file by email, follow the instructions in our <a class=\"govuk-"
@@ -5811,6 +6349,7 @@ msgstr ""
 "href=\"%%s\">登入</a> 如果之前已經註冊過"
 
 #: templates/views/guidance/send-files-by-email.html:16
+#: templates/views/service-settings/send-files-by-email.html:22
 msgid "This is an API-only feature."
 msgstr ""
 
@@ -5920,6 +6459,7 @@ msgid "Notify is not currently available to charities."
 msgstr ""
 
 #: templates/views/guidance/who-can-use-notify.html:46
+#: templates/views/service-settings/service-confirm-broadcast-account-type.html:35
 msgid "Members of the public"
 msgstr ""
 
@@ -5976,6 +6516,7 @@ msgstr ""
 
 #: templates/views/manage-users/confirm-edit-user-email.html:28
 #: templates/views/manage-users/confirm-edit-user-mobile-number.html:27
+#: templates/views/service-settings/service-confirm-broadcast-account-type.html:52
 msgid "Confirm"
 msgstr ""
 
@@ -6128,6 +6669,7 @@ msgid "All organisations"
 msgstr ""
 
 #: templates/views/organisations/add-organisation.html:14
+#: templates/views/service-settings/service-already-live.html:25
 msgid "Switch service"
 msgstr ""
 
@@ -6236,6 +6778,8 @@ msgid "Known email domains"
 msgstr ""
 
 #: templates/views/organisations/organisation/settings/edit-domains.html:23
+#: templates/views/service-settings/branding/add-new-branding/email-branding-choose-banner.html:19
+#: templates/views/service-settings/branding/add-new-branding/government-branding-or-own-logo.html:28
 msgid "There is a problem"
 msgstr ""
 
@@ -6291,6 +6835,7 @@ msgid "Use GOV.UK as default instead"
 msgstr ""
 
 #: templates/views/organisations/organisation/settings/email-branding-options.html:55
+#: templates/views/service-settings/letter-contact-details.html:35
 msgid "Make default"
 msgstr ""
 
@@ -6304,33 +6849,12 @@ msgstr ""
 msgid "Add branding options"
 msgstr ""
 
-#: templates/views/organisations/organisation/settings/index.html:5
-#: templates/views/organisations/organisation/settings/index.html:9
-msgid "Settings"
-msgstr ""
-
-#: templates/views/organisations/organisation/settings/index.html:13
-msgid "Label"
-msgstr ""
-
-#: templates/views/organisations/organisation/settings/index.html:13
-msgid "Value"
-msgstr ""
-
 #: templates/views/organisations/organisation/settings/index.html:28
 msgid "Sector"
 msgstr ""
 
 #: templates/views/organisations/organisation/settings/index.html:33
 msgid "sector for the organisation"
-msgstr ""
-
-#: templates/views/organisations/organisation/settings/index.html:41
-msgid "Yes"
-msgstr ""
-
-#: templates/views/organisations/organisation/settings/index.html:42
-msgid "No"
 msgstr ""
 
 #: templates/views/organisations/organisation/settings/index.html:44
@@ -6399,18 +6923,6 @@ msgstr ""
 msgid "Letter branding options"
 msgstr ""
 
-#: templates/views/organisations/organisation/settings/index.html:145
-#: templates/views/organisations/organisation/settings/index.html:155
-#: templates/views/providers/provider.html:40
-#: templates/views/providers/provider.html:46
-#: templates/views/providers/providers.html:28
-#: templates/views/providers/providers.html:36
-#: templates/views/providers/providers.html:39
-#: templates/views/providers/providers.html:83
-#: templates/views/providers/providers.html:86
-msgid "None"
-msgstr ""
-
 #: templates/views/organisations/organisation/settings/index.html:149
 msgid "letter branding options for the organisation"
 msgstr ""
@@ -6423,17 +6935,16 @@ msgstr ""
 msgid "Delete this organisation"
 msgstr ""
 
-#: templates/views/organisations/organisation/settings/letter-branding-options.html:8
-#: templates/views/organisations/organisation/settings/letter-branding-options.html:16
-msgid "Letter branding"
-msgstr ""
-
 #: templates/views/organisations/organisation/settings/preview-letter-branding.html:7
 #: templates/views/organisations/organisation/settings/preview-letter-branding.html:12
+#: templates/views/service-settings/preview-letter-branding.html:7
+#: templates/views/service-settings/preview-letter-branding.html:12
 msgid "Preview letter branding"
 msgstr ""
 
 #: templates/views/organisations/organisation/settings/set-letter-branding.html:39
+#: templates/views/service-settings/set-email-branding.html:38
+#: templates/views/service-settings/set-letter-branding.html:39
 msgid "Preview"
 msgstr ""
 
@@ -6657,13 +7168,6 @@ msgstr ""
 
 #: templates/views/platform-admin/splash-page.html:14
 msgid "Load summary"
-msgstr ""
-
-#: templates/views/pricing/billing-details-signed-out.html:9
-#: templates/views/pricing/billing-details-signed-out.html:14
-#: templates/views/pricing/billing-details.html:10
-#: templates/views/pricing/billing-details.html:15
-msgid "Billing details"
 msgstr ""
 
 #: templates/views/pricing/billing-details-signed-out.html:17
@@ -7006,10 +7510,6 @@ msgstr ""
 "參閱 \n"
 "      <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">服務與組織列表</a>。"
-
-#: templates/views/pricing/index.html:59
-msgid "Free text message allowance"
-msgstr ""
 
 #: templates/views/pricing/index.html:61
 msgid "The current allowance is:"
@@ -7522,8 +8022,763 @@ msgstr ""
 msgid "No international sms providers"
 msgstr ""
 
+#: templates/views/service-settings/data-retention.html:6
+#: templates/views/service-settings/data-retention.html:14
+#: templates/views/service-settings/data-retention.html:39
+msgid "Data retention"
+msgstr ""
+
+#: templates/views/service-settings/data-retention.html:20
+msgid "Add data retention"
+msgstr ""
+
+#: templates/views/service-settings/data-retention.html:28
+msgid "By default data is kept for 7 days"
+msgstr ""
+
+#: templates/views/service-settings/data-retention.html:34
+msgid "You have not added any data retention"
+msgstr ""
+
+#: templates/views/service-settings/data-retention.html:47
+#, python-format
+msgid "%%s days"
+msgstr ""
+
+#: templates/views/service-settings/edit-service-billing-details.html:10
+#: templates/views/service-settings/edit-service-billing-details.html:20
+msgid "Change billing details"
+msgstr ""
+
+#: templates/views/service-settings/edit-service-notes.html:9
+#: templates/views/service-settings/edit-service-notes.html:18
+msgid "Edit service notes"
+msgstr ""
+
+#: templates/views/service-settings/email_reply_to.html:9
+#: templates/views/service-settings/email_reply_to.html:18
+msgid "Reply-to email addresses"
+msgstr ""
+
+#: templates/views/service-settings/email_reply_to.html:23
+msgid "You have not added any reply-to email addresses yet"
+msgstr ""
+
+#: templates/views/service-settings/email_reply_to.html:33
+msgid "(default)"
+msgstr ""
+
+#: templates/views/service-settings/email_reply_to.html:41
+msgid ""
+"Change<span class=\"govuk-visually-hidden\"> {{ item.email_address "
+"}}</span>"
+msgstr ""
+
+#: templates/views/service-settings/email-reply-to/add.html:8
+#: templates/views/service-settings/email-reply-to/add.html:17
+#: templates/views/service-settings/email_reply_to.html:62
+msgid "Add reply-to email address"
+msgstr ""
+
+#: templates/views/service-settings/email_reply_to.html:70
+msgid ""
+"You need to add at least one reply-to address so recipients can reply to "
+"your messages."
+msgstr ""
+
+#: templates/views/service-settings/email_reply_to.html:73
+msgid "Emails with a reply-to address:"
+msgstr ""
+
+#: templates/views/service-settings/email_reply_to.html:76
+msgid "are less likely to be labelled as spam"
+msgstr ""
+
+#: templates/views/service-settings/email_reply_to.html:77
+msgid "appear more trustworthy"
+msgstr ""
+
+#: templates/views/service-settings/estimate-usage.html:9
+#: templates/views/service-settings/estimate-usage.html:26
+#: templates/views/service-settings/request-to-go-live.html:23
+msgid "Tell us how many messages you expect to send"
+msgstr ""
+
+#: templates/views/service-settings/estimate-usage.html:22
+msgid "Enter the number of messages you expect to send in the next year"
+msgstr ""
+
+#: templates/views/service-settings/estimate-usage.html:32
+#: templates/views/service-settings/estimate-usage.html:36
+#: templates/views/service-settings/estimate-usage.html:40
+msgid "For example, 50,000"
+msgstr ""
+
+#: templates/views/service-settings/letter-contact-details.html:27
+msgid "Blank (default"
+msgstr ""
+
+#: templates/views/service-settings/letter-contact-details.html:29
+msgid "Blank"
+msgstr ""
+
+#: templates/views/service-settings/letter-contact-details.html:56
+#: templates/views/service-settings/sms-senders.html:43
+#, python-format
+msgid "Change<span class=\"govuk-visually-hidden\"> %%s</span>"
+msgstr ""
+
+#: templates/views/service-settings/letter-contact-details.html:74
+#: templates/views/service-settings/letter-contact/add.html:9
+msgid "Add a new address"
+msgstr ""
+
 #: templates/views/service-settings/letter-preview.html:6
 msgid "Letter preview"
+msgstr ""
+
+#: templates/views/service-settings/link-service-to-organisation.html:8
+msgid "Link service to organisation"
+msgstr ""
+
+#: templates/views/service-settings/link-service-to-organisation.html:32
+msgid "No organisations"
+msgstr ""
+
+#: templates/views/service-settings/name-local.html:9
+#: templates/views/service-settings/name-local.html:17
+#: templates/views/service-settings/name.html:9
+#: templates/views/service-settings/name.html:19
+msgid "Change your service name"
+msgstr ""
+
+#: templates/views/service-settings/name-local.html:21
+#, python-format
+msgid "School admissions - %%s"
+msgstr ""
+
+#: templates/views/service-settings/name-local.html:22
+#, python-format
+msgid "Electoral services - %%s"
+msgstr ""
+
+#: templates/views/service-settings/name-local.html:23
+#, python-format
+msgid "Blue Badge - %%s"
+msgstr ""
+
+#: templates/views/service-settings/name-local.html:30
+#: templates/views/service-settings/name.html:27
+msgid "Users will see your service name:"
+msgstr ""
+
+#: templates/views/service-settings/name-local.html:32
+#: templates/views/service-settings/name.html:29
+msgid "at the start of every text message"
+msgstr ""
+
+#: templates/views/service-settings/name-local.html:33
+#: templates/views/service-settings/name.html:30
+msgid "as your email sender name"
+msgstr ""
+
+#: templates/views/service-settings/name-local.html:36
+#: templates/views/service-settings/name.html:33
+msgid "Users will see your service name as your email sender name."
+msgstr ""
+
+#: templates/views/service-settings/name.html:21
+msgid ""
+"Your service name should tell users what the message is about as well as "
+"who it’s from."
+msgstr ""
+
+#: templates/views/service-settings/preview-email-branding.html:7
+#: templates/views/service-settings/preview-email-branding.html:12
+msgid "Preview email branding"
+msgstr ""
+
+#: templates/views/service-settings/preview-letter-branding.html:21
+msgid "Back to service settings"
+msgstr ""
+
+#: templates/views/service-settings/request-to-go-live.html:28
+msgid "Add a team member who can manage settings, team and usage"
+msgstr ""
+
+#: templates/views/service-settings/request-to-go-live.html:33
+msgid "Add templates with examples of the content you plan to send"
+msgstr ""
+
+#: templates/views/service-settings/request-to-go-live.html:49
+msgid "Change your text message sender name"
+msgstr ""
+
+#: templates/views/service-settings/request-to-go-live.html:63
+msgid "Only team members with a government email address can request to go live."
+msgstr ""
+
+#: templates/views/service-settings/request-to-go-live.html:67
+msgid "You must complete these steps before you can request to go live."
+msgstr ""
+
+#: templates/views/service-settings/request-to-go-live.html:74
+#, fuzzy, python-format
+msgid ""
+"By requesting to go live you’re agreeing to our <a class=\"govuk-link "
+"govuk-link--no-visited-state\" href=\"%%s\">terms of use</a>."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/service-settings/request-to-go-live.html:77
+msgid "Request to go live"
+msgstr ""
+
+#: templates/views/service-settings/send-files-by-email.html:27
+msgid "Change contact details for the file download page"
+msgstr ""
+
+#: templates/views/service-settings/send-files-by-email.html:27
+msgid "Add contact details to the file download page"
+msgstr ""
+
+#: templates/views/service-settings/send-files-by-email.html:29
+msgid ""
+"You need to include contact details for your service so your users can "
+"get in touch if there’s a problem. For example, if the link to download "
+"the file you sent them has expired."
+msgstr ""
+
+#: templates/views/service-settings/service-already-live.html:5
+#: templates/views/service-settings/service-already-live.html:11
+msgid "Your service is already live"
+msgstr ""
+
+#: templates/views/service-settings/service-already-live.html:15
+#, python-format
+msgid "‘%%s’ went live on %%s."
+msgstr ""
+
+#: templates/views/service-settings/service-already-live.html:20
+#, python-format
+msgid "‘%%s’ is already live."
+msgstr ""
+
+#: templates/views/service-settings/service-already-live.html:26
+msgid "if you want to make a different service live."
+msgstr ""
+
+#: templates/views/service-settings/service-confirm-broadcast-account-type.html:9
+#: templates/views/service-settings/service-confirm-broadcast-account-type.html:20
+msgid "Confirm emergency alert settings"
+msgstr ""
+
+#: templates/views/service-settings/service-confirm-broadcast-account-type.html:31
+msgid "No phones will receive alerts sent from this service."
+msgstr ""
+
+#: templates/views/service-settings/service-confirm-broadcast-account-type.html:37
+#, python-format
+msgid "who have switched on the %%s channel on their phones"
+msgstr ""
+
+#: templates/views/service-settings/service-confirm-broadcast-account-type.html:40
+msgid "will receive alerts sent from this service, even if they’ve opted out."
+msgstr ""
+
+#: templates/views/service-settings/service-confirm-broadcast-account-type.html:42
+msgid "will receive alerts sent from this service."
+msgstr ""
+
+#: templates/views/service-settings/service-confirm-broadcast-account-type.html:48
+msgid "All team member permissions will be removed."
+msgstr ""
+
+#: templates/views/service-settings/service-set-broadcast-channel.html:7
+msgid "Emergency alerts settings"
+msgstr ""
+
+#: templates/views/service-settings/service-set-broadcast-network.html:10
+#: templates/views/service-settings/service-set-broadcast-network.html:21
+msgid "Choose a mobile network"
+msgstr ""
+
+#: templates/views/service-settings/set-auth-type.html:7
+#: templates/views/service-settings/set-auth-type.html:18
+msgid "Sign-in method"
+msgstr ""
+
+#: templates/views/service-settings/set-auth-type.html:24
+msgid ""
+"Your team members can sign in with either a text message code\n"
+"          or an email link."
+msgstr ""
+
+#: templates/views/service-settings/set-auth-type.html:28
+#, fuzzy, python-format
+msgid ""
+"You can <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">set the sign-in method for individual team members</a>."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/service-settings/set-auth-type.html:35
+msgid "Your team members sign in with a text message code."
+msgstr ""
+
+#: templates/views/service-settings/set-auth-type.html:38
+#, fuzzy, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
+" us</a> if signing in with a text message is a problem for your team."
+msgstr ""
+"參閱 \n"
+"      <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">服務與組織列表</a>。"
+
+#: templates/views/service-settings/set-email-branding-add-to-branding-pool-step.html:7
+msgid "Apply ‘{}’ branding"
+msgstr ""
+
+#: templates/views/service-settings/set-email-branding.html:8
+msgid "Set email branding"
+msgstr ""
+
+#: templates/views/service-settings/set-email-branding.html:32
+msgid "Search branding styles by name"
+msgstr ""
+
+#: templates/views/service-settings/set-email.html:21
+msgid "It’s free to send emails through GOV.UK Notify."
+msgstr ""
+
+#: templates/views/service-settings/set-inbound-number.html:7
+msgid "Set inbound number"
+msgstr ""
+
+#: templates/views/service-settings/set-inbound-number.html:22
+msgid "This service already has an inbound number"
+msgstr ""
+
+#: templates/views/service-settings/set-inbound-number.html:24
+msgid "No available inbound numbers"
+msgstr ""
+
+#: templates/views/service-settings/set-inbound-sms.html:21
+#, python-format
+msgid "Your service can receive text messages sent to %%s."
+msgstr ""
+
+#: templates/views/service-settings/set-inbound-sms.html:24
+#: templates/views/service-settings/set-inbound-sms.html:46
+msgid ""
+"You can still send text messages from a sender name if you need to, but "
+"users will not be able to reply to those messages."
+msgstr ""
+
+#: templates/views/service-settings/set-inbound-sms.html:27
+#, fuzzy, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
+" us</a> if you want to switch this feature off."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/service-settings/set-inbound-sms.html:31
+#, fuzzy, python-format
+msgid ""
+"You can set up callbacks for received text messages on the\n"
+"            <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">API integration page</a>."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/service-settings/set-inbound-sms.html:37
+#, fuzzy, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
+" us</a> if you want to be able to receive text messages from your users."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/service-settings/set-inbound-sms.html:40
+msgid ""
+"We’ll create a unique phone number for your service that they can reply "
+"to."
+msgstr ""
+
+#: templates/views/service-settings/set-inbound-sms.html:43
+#, python-format
+msgid ""
+"Text messages you send will come from this phone number instead of your "
+"sender name (currently %%s)."
+msgstr ""
+
+#: templates/views/service-settings/set-inbound-sms.html:49
+msgid ""
+"You can see and reply to the messages you receive when you sign in to "
+"Notify, or get them using the API."
+msgstr ""
+
+#: templates/views/service-settings/set-inbound-sms.html:52
+msgid ""
+"It does not cost you anything to receive text messages. Users will pay "
+"their standard text message rate."
+msgstr ""
+
+#: templates/views/service-settings/set-international-letters.html:21
+msgid "It costs more to send a letter to an international address."
+msgstr ""
+
+#: templates/views/service-settings/set-international-letters.html:24
+#: templates/views/service-settings/set-international-sms.html:24
+#: templates/views/service-settings/set-letter.html:24
+#, fuzzy, python-format
+msgid ""
+"See <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">pricing</a> for the list\n"
+"        of rates."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/service-settings/set-international-sms.html:8
+#: templates/views/service-settings/set-international-sms.html:19
+msgid "Send international text messages"
+msgstr ""
+
+#: templates/views/service-settings/set-international-sms.html:21
+msgid ""
+"Messages to international mobile numbers are charged at 1, 2, or\n"
+"        3 times the cost of messages to UK mobile numbers."
+msgstr ""
+
+#: templates/views/service-settings/set-letter-branding.html:8
+msgid "Set letter branding"
+msgstr ""
+
+#: templates/views/service-settings/set-letter.html:21
+msgid "It costs between 41 pence and £1.28 to send a letter using Notify."
+msgstr ""
+
+#: templates/views/service-settings/set-message-limit.html:8
+#: templates/views/service-settings/set-message-limit.html:18
+msgid "Daily message limit"
+msgstr ""
+
+#: templates/views/service-settings/set-sms.html:21
+#, python-format
+msgid "You have a free allowance of %%s text messages each financial year."
+msgstr ""
+
+#: templates/views/service-settings/set-sms.html:24
+#, python-format
+msgid ""
+"It costs %%s pence (plus VAT) for each text message you send\n"
+"        after your free allowance."
+msgstr ""
+
+#: templates/views/service-settings/set-sms.html:28
+#, fuzzy, python-format
+msgid ""
+"See <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">pricing</a> for more details."
+msgstr ""
+"或 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">登入</a> 如果之前已經註冊過"
+
+#: templates/views/service-settings/sms-senders.html:23
+msgid "You have not added any text message senders yet"
+msgstr ""
+
+#: templates/views/service-settings/sms-sender/add.html:8
+#: templates/views/service-settings/sms-sender/add.html:17
+#: templates/views/service-settings/sms-senders.html:60
+msgid "Add text message sender"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:10
+#: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:19
+msgid "Create a government identity logo"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:26
+msgid "A government identity logo is made up of:"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:30
+msgid "a coloured line"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:31
+msgid "a symbol, for example the Royal Coat of Arms"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:32
+msgid "text, usually the organisation name"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:36
+msgid "You will need to enter the text that will appear in the logo."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:39
+msgid "We will select the appropriate symbol and coloured line for you."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:42
+msgid "It can take up to 1 working day for us to create a new logo."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-govuk-org.html:8
+msgid "Before you request new branding"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-govuk-org.html:21
+#: templates/views/service-settings/branding/email-branding-govuk.html:30
+msgid ""
+"You can only use GOV.UK branding if people go to GOV.UK to access your "
+"service."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-govuk-org.html:24
+#: templates/views/service-settings/branding/email-branding-govuk.html:33
+msgid ""
+"You cannot use GOV.UK branding if your organisation is\n"
+"    <a class=\"govuk-link govuk-link--no-visited-state\"\n"
+"      href=\"https://www.gov.uk/government/publications/govuk-proposition"
+"/govuk-proposition#organisations-independent-from-"
+"government\">independent\n"
+"      from government</a>."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-govuk-org.html:30
+msgid ""
+"We’ll email you once your branding’s ready to use, or if we need any more"
+" information."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-govuk-org.html:33
+#: templates/views/service-settings/branding/email-branding-organisation.html:28
+#: templates/views/service-settings/branding/email-branding-something-else.html:26
+#: templates/views/service-settings/branding/letter-branding-options.html:54
+msgid "Request new branding"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-govuk.html:9
+#: templates/views/service-settings/branding/email-branding-govuk.html:20
+#: templates/views/service-settings/branding/email-branding-nhs.html:9
+#: templates/views/service-settings/branding/email-branding-nhs.html:20
+msgid "Check your new branding"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-govuk.html:23
+#: templates/views/service-settings/branding/email-branding-nhs.html:23
+#, python-format
+msgid "Emails from %%s will look like this."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-govuk.html:28
+#: templates/views/service-settings/branding/email-branding-nhs.html:27
+msgid "Before you continue"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-govuk.html:40
+#: templates/views/service-settings/branding/email-branding-nhs.html:36
+msgid "Use this branding"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-nhs.html:29
+msgid "Make sure you’re allowed to use NHS branding."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-nhs.html:32
+msgid ""
+"If you’re not sure, <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://www.england.nhs.uk/nhsidentity/identity-guidelines/who-"
+"can-use-the-nhs-identity/\">check the guidance on the NHS website</a>."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-options.html:11
+#: templates/views/service-settings/branding/email-branding-options.html:22
+#: templates/views/service-settings/branding/email-branding-pool-option.html:9
+#: templates/views/service-settings/branding/email-branding-pool-option.html:20
+#: templates/views/service-settings/branding/email-branding-pool-option.html:30
+msgid "Change email branding"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-options.html:25
+#, python-format
+msgid "Your emails currently have %%s branding."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-options.html:34
+msgid "You should be using your own branding instead."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-organisation.html:8
+#: templates/views/service-settings/branding/email-branding-organisation.html:19
+msgid "When you request new branding"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-organisation.html:21
+#, python-format
+msgid "We’ll check if we already have the %%s logo."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-organisation.html:23
+msgid "If we do, we’ll let you know when your new branding is ready to use."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-organisation.html:25
+msgid "If we don’t, we’ll email you to ask for more information."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-pool-option.html:23
+#, python-format
+msgid "If you confirm, your emails will come with %%s branding."
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-something-else.html:8
+msgid "Describe the branding you want"
+msgstr ""
+
+#: templates/views/service-settings/branding/email-branding-something-else.html:25
+msgid ""
+"We’ll email you when your branding is ready, or if we need any more "
+"information."
+msgstr ""
+
+#: templates/views/service-settings/branding/letter-branding-options.html:11
+#: templates/views/service-settings/branding/letter-branding-options.html:22
+msgid "Change letter branding"
+msgstr ""
+
+#: templates/views/service-settings/branding/letter-branding-options.html:25
+#, python-format
+msgid "Your letters currently have %%s branding."
+msgstr ""
+
+#: templates/views/service-settings/branding/letter-branding-options.html:32
+#: templates/views/service-settings/branding/letter-branding-options.html:44
+msgid ""
+"Include links to your brand guidelines or examples of how to use your "
+"branding."
+msgstr ""
+
+#: templates/views/service-settings/branding/letter-branding-options.html:51
+msgid ""
+"We’ll email you once your branding’s ready to use, or if we need any\n"
+"      more information."
+msgstr ""
+
+#: templates/views/service-settings/data-retention/edit.html:8
+#: templates/views/service-settings/data-retention/edit.html:17
+msgid "Set data retention"
+msgstr ""
+
+#: templates/views/service-settings/email-reply-to/_verify-updates.html:9
+#, python-format
+msgid "We’re checking that ‘%%s’ is a real email address."
+msgstr ""
+
+#: templates/views/service-settings/email-reply-to/_verify-updates.html:12
+msgid "This can take a minute"
+msgstr ""
+
+#: templates/views/service-settings/email-reply-to/_verify-updates.html:31
+msgid "There’s a problem with your reply-to address"
+msgstr ""
+
+#: templates/views/service-settings/email-reply-to/_verify-updates.html:34
+#, python-format
+msgid "We sent an email to ‘%%s’ but it could not be delivered."
+msgstr ""
+
+#: templates/views/service-settings/email-reply-to/_verify-updates.html:37
+msgid "You can try again, or use a different address."
+msgstr ""
+
+#: templates/views/service-settings/email-reply-to/_verify-updates.html:51
+#: templates/views/service-settings/email-reply-to/add.html:22
+#: templates/views/service-settings/email-reply-to/edit.html:21
+msgid ""
+"This should be a shared inbox managed by your team, not your own email "
+"address"
+msgstr ""
+
+#: templates/views/service-settings/email-reply-to/_verify-updates.html:59
+msgid "Try again"
+msgstr ""
+
+#: templates/views/service-settings/email-reply-to/add.html:30
+#: templates/views/service-settings/letter-contact/add.html:33
+msgid "Add"
+msgstr ""
+
+#: templates/views/service-settings/email-reply-to/edit.html:9
+#: templates/views/service-settings/email-reply-to/edit.html:17
+msgid "Change reply-to email address"
+msgstr ""
+
+#: templates/views/service-settings/email-reply-to/edit.html:28
+#, python-format
+msgid "This is the default reply-to address for %%s emails"
+msgstr ""
+
+#: templates/views/service-settings/email-reply-to/edit.html:36
+#: templates/views/service-settings/letter-contact/edit.html:43
+#: templates/views/service-settings/sms-sender/edit.html:46
+msgid "Delete"
+msgstr ""
+
+#: templates/views/service-settings/email-reply-to/verify.html:9
+#: templates/views/service-settings/email-reply-to/verify.html:23
+#, python-format
+msgid "%%s email reply-to address"
+msgstr ""
+
+#: templates/views/service-settings/letter-contact/add.html:24
+#: templates/views/service-settings/letter-contact/edit.html:24
+msgid "This will appear as the sender address on your letters."
+msgstr ""
+
+#: templates/views/service-settings/letter-contact/add.html:25
+#: templates/views/service-settings/letter-contact/edit.html:25
+msgid "10 lines maximum"
+msgstr ""
+
+#: templates/views/service-settings/letter-contact/edit.html:9
+#: templates/views/service-settings/letter-contact/edit.html:20
+msgid "Change sender address"
+msgstr ""
+
+#: templates/views/service-settings/letter-contact/edit.html:34
+#, python-format
+msgid "This is currently your default address for %%s."
+msgstr ""
+
+#: templates/views/service-settings/sms-sender/add.html:22
+#: templates/views/service-settings/sms-sender/edit.html:30
+msgid "Up to 11 characters, letters, numbers and spaces only"
+msgstr ""
+
+#: templates/views/service-settings/sms-sender/edit.html:9
+#: templates/views/service-settings/sms-sender/edit.html:20
+msgid "Change text message sender"
+msgstr ""
+
+#: templates/views/service-settings/sms-sender/edit.html:25
+msgid "This phone number receives replies and cannot be changed"
+msgstr ""
+
+#: templates/views/service-settings/sms-sender/edit.html:35
+msgid "This is the default text message sender."
 msgstr ""
 
 #: templates/views/support/bat-phone.html:7

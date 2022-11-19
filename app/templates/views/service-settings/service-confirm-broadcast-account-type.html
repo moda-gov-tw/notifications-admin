@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Confirm emergency alert settings
+  {{_('Confirm emergency alert settings')}}
 {% endblock %}
 
 {% block backLink %}
@@ -17,7 +17,7 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-five-sixths">
-      {{ page_header('Confirm emergency alert settings') }}
+      {{ page_header(_('Confirm emergency alert settings')) }}
       <p class="govuk-body">
         {{ broadcast_service_name_tag(
           form.account_type.service_mode == 'training',
@@ -28,27 +28,28 @@
       </p>
       {% if form.account_type.service_mode == 'training' %}
         <p class="govuk-body">
-          No phones will receive alerts sent from this service.
+          {{_('No phones will receive alerts sent from this service.')}}
         </p>
       {% else %}
         <p class="govuk-body">
-          Members of the public
+          {{_('Members of the public')}}
           {% if form.account_type.broadcast_channel in ['test', 'operator'] %}
-            who have switched on the {{ form.account_type.broadcast_channel }} channel on their phones
+            {{_("who have switched on the %%s channel on their phones") % form.account_type.broadcast_channel}}
           {% endif %}
-          will receive alerts sent from this service
           {%- if form.account_type.broadcast_channel == 'government' -%}
-            , even if they’ve opted out
-          {%- endif %}.
+            {{_('will receive alerts sent from this service, even if they’ve opted out.')}}
+          {% else %}
+            {{_('will receive alerts sent from this service.')}}
+          {%- endif %}
         </p>
       {% endif %}
 
       <p class="govuk-body">
-        All team member permissions will be removed.
+        {{_('All team member permissions will be removed.')}}
       </p>
 
       {% call form_wrapper() %}
-        {{ page_footer('Confirm') }}
+        {{ page_footer(_('Confirm')) }}
       {% endcall %}
     </div>
   </div>

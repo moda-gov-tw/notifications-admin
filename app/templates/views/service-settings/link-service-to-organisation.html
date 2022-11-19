@@ -5,7 +5,7 @@
 {% from "components/form.html" import form_wrapper %}
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
-{% set page_title = "Link service to organisation" %}
+{% set page_title = _("Link service to organisation") %}
 
 {% block service_page_title %}
   {{ page_title }}
@@ -21,15 +21,15 @@
   {{ live_search(
     target_selector='.govuk-radios__item',
     show=True, form=search_form,
-    label='Search by name',
+    label=_('Search by name'),
     autofocus=True
   ) }}
   {% call form_wrapper() %}
     {% if has_organisations %}
       {{ form.organisations }}
-      {{ sticky_page_footer('Save') }}
+      {{ sticky_page_footer(_('Save')) }}
     {% else %}
-      <p class="hint"> No organisations </p>
+      <p class="hint"> {{_('No organisations')}} </p>
     {% endif %}
   {% endcall %}
 {% endblock %}

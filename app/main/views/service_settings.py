@@ -11,6 +11,7 @@ from flask import (
     request,
     url_for,
 )
+from flask_babel import _
 from flask_login import current_user
 from notifications_python_client.errors import HTTPError
 from notifications_utils.clients.zendesk.zendesk_client import NotifySupportTicket
@@ -84,13 +85,18 @@ from app.utils.user import (
 
 PLATFORM_ADMIN_SERVICE_PERMISSIONS = OrderedDict(
     [
-        ("inbound_sms", {"title": "Receive inbound SMS", "requires": "sms", "endpoint": ".service_set_inbound_number"}),
-        ("email_auth", {"title": "Email authentication"}),
-        ("international_letters", {"title": "Send international letters", "requires": "letter"}),
+        (
+            "inbound_sms",
+            {"title": _("Receive inbound SMS"), "requires": "sms", "endpoint": ".service_set_inbound_number"},
+        ),
+        ("email_auth", {"title": _("Email authentication")}),
+        ("international_letters", {"title": _("Send international letters"), "requires": "letter"}),
     ]
 )
 
-THANKS_FOR_BRANDING_REQUEST_MESSAGE = "Thanks for your branding request. We’ll get back to you within one working day."
+THANKS_FOR_BRANDING_REQUEST_MESSAGE = _(
+    "Thanks for your branding request. We’ll get back to you within one working day."
+)
 
 
 @main.route("/services/<uuid:service_id>/service-settings")
@@ -187,7 +193,7 @@ def submit_request_to_go_live(service_id):
     ticket_message = render_template("support-tickets/go-live-request.txt") + "\n"
 
     ticket = NotifySupportTicket(
-        subject=f"Request to go live - {current_service.name}",
+        subject=_("Request to go live - %%s") % current_service.name,
         message=ticket_message,
         ticket_type=NotifySupportTicket.TYPE_QUESTION,
         user_name=current_user.name,
@@ -201,14 +207,14 @@ def submit_request_to_go_live(service_id):
 
     current_service.update(go_live_user=current_user.id)
 
-    flash("Thanks for your request to go live. We’ll get back to you within one working day.", "default")
+    flash(_("Thanks for your request to go live. We’ll get back to you within one working day."), "default")
     return redirect(url_for(".service_settings", service_id=service_id))
 
 
 @main.route("/services/<uuid:service_id>/service-settings/switch-live", methods=["GET", "POST"])
 @user_is_platform_admin
 def service_switch_live(service_id):
-    form = ServiceOnOffSettingForm(name="Make service live", enabled=not current_service.trial_mode)
+    form = ServiceOnOffSettingForm(name=_("Make service live"), enabled=not current_service.trial_mode)
 
     if form.validate_on_submit():
         current_service.update_status(live=form.enabled.data)
@@ -216,7 +222,7 @@ def service_switch_live(service_id):
 
     return render_template(
         "views/service-settings/set-service-setting.html",
-        title="Make service live",
+        title=_("Make service live"),
         form=form,
     )
 
@@ -226,10 +232,10 @@ def service_switch_live(service_id):
 def service_switch_count_as_live(service_id):
 
     form = ServiceOnOffSettingForm(
-        name="Count in list of live services",
+        name=_("Count in list of live services"),
         enabled=current_service.count_as_live,
-        truthy="Yes",
-        falsey="No",
+        truthy=_("Yes"),
+        falsey=_("No"),
     )
 
     if form.validate_on_submit():
@@ -238,7 +244,7 @@ def service_switch_count_as_live(service_id):
 
     return render_template(
         "views/service-settings/set-service-setting.html",
-        title="Count in list of live services",
+        title=_("Count in list of live services"),
         form=form,
     )
 
@@ -378,13 +384,13 @@ def archive_service(service_id):
         create_archive_service_event(service_id=service_id, archived_by_id=current_user.id)
 
         flash(
-            "‘{}’ was deleted".format(current_service.name),
+            _("‘{}’ was deleted").format(current_service.name),
             "default_with_tick",
         )
         return redirect(url_for(".choose_account"))
     else:
         flash(
-            "Are you sure you want to delete ‘{}’? There’s no way to undo this.".format(current_service.name),
+            _("Are you sure you want to delete ‘{}’? There’s no way to undo this.").format(current_service.name),
             "delete",
         )
         return service_settings(service_id)
@@ -591,7 +597,7 @@ def service_edit_email_reply_to(service_id, reply_to_email_id):
         )
 
     if request.endpoint == "main.service_confirm_delete_email_reply_to":
-        flash("Are you sure you want to delete this reply-to email address?", "delete")
+        flash(_("Are you sure you want to delete this reply-to email address?"), "delete")
     return render_template(
         "views/service-settings/email-reply-to/edit.html",
         form=form,
@@ -643,7 +649,7 @@ def service_set_sms_prefix(service_id):
 
     form = SMSPrefixForm(enabled=current_service.prefix_sms)
 
-    form.enabled.label.text = "Start all text messages with ‘{}:’".format(current_service.name)
+    form.enabled.label.text = _("Start all text messages with ‘{}:’").format(current_service.name)
 
     if form.validate_on_submit():
         current_service.update(prefix_sms=form.enabled.data)
@@ -656,12 +662,12 @@ def service_set_sms_prefix(service_id):
 @user_has_permissions("manage_service")
 def service_set_international_sms(service_id):
     form = ServiceOnOffSettingForm(
-        "Send text messages to international phone numbers",
+        _("Send text messages to international phone numbers"),
         enabled=current_service.has_permission("international_sms"),
     )
     if form.validate_on_submit():
         current_service.force_permission(
-            "international_sms",
+            _("international_sms"),
             on=form.enabled.data,
         )
         return redirect(url_for(".service_settings", service_id=service_id))
@@ -890,7 +896,7 @@ def service_edit_sms_sender(service_id, sms_sender_id):
 
     form.is_default.data = sms_sender["is_default"]
     if request.endpoint == "main.service_confirm_delete_sms_sender":
-        flash("Are you sure you want to delete this text message sender?", "delete")
+        flash(_("Are you sure you want to delete this text message sender?"), "delete")
     return render_template(
         "views/service-settings/sms-sender/edit.html",
         form=form,
@@ -1002,16 +1008,16 @@ def service_set_email_branding_add_to_branding_pool_step(service_id):
     if form.validate_on_submit():
         # The service’s branding gets updated either way
         current_service.update(email_branding=email_branding_id)
-        message = f"The email branding has been set to {email_branding_name}"
+        message = _("The email branding has been set to %%s") % email_branding_name
 
         # If the platform admin chose "yes" the branding is added to the organisation's
         # branding pool
         if form.add_to_pool.data == "yes":
             email_branding_ids = [email_branding_id]
             organisations_client.add_brandings_to_email_branding_pool(org_id, email_branding_ids)
-            message = (
-                f"The email branding has been set to {email_branding_name} and it has been "
-                f"added to {current_service.organisation.name}'s email branding pool"
+            message = _("The email branding has been set to %%s and it has been added to %%s's email branding pool") % (
+                email_branding_name,
+                current_service.organisation.name,
             )
 
         flash(message, "default_with_tick")
@@ -1134,7 +1140,7 @@ def create_email_branding_zendesk_ticket(form_option_selected, detail=None):
         detail=detail,
     )
     ticket = NotifySupportTicket(
-        subject=f"Email branding request - {current_service.name}",
+        subject=_("Email branding request - %%s") % current_service.name,
         message=ticket_message,
         ticket_type=NotifySupportTicket.TYPE_QUESTION,
         user_name=current_user.name,
@@ -1187,13 +1193,13 @@ def email_branding_pool_option(service_id):
     try:
         chosen_branding = current_service.email_branding_pool.get_item_by_id(request.args.get("branding_option"))
     except current_service.email_branding_pool.NotFound:
-        flash("No branding found for this id.")
+        flash(_("No branding found for this id."))
         return redirect(url_for(".email_branding_request", service_id=current_service.id))
 
     if request.method == "POST":
         current_service.update(email_branding=chosen_branding.id)
 
-        flash("You’ve updated your email branding", "default")
+        flash(_("You’ve updated your email branding"), "default")
         return redirect(url_for(".service_settings", service_id=current_service.id))
 
     return render_template(
@@ -1217,7 +1223,7 @@ def email_branding_govuk(service_id):
     if request.method == "POST":
         current_service.update(email_branding=None)
 
-        flash("You’ve updated your email branding", "default")
+        flash(_("You’ve updated your email branding"), "default")
         return redirect(url_for(".service_settings", service_id=current_service.id))
 
     return render_template("views/service-settings/branding/email-branding-govuk.html")
@@ -1245,7 +1251,7 @@ def email_branding_nhs(service_id):
     if request.method == "POST":
         current_service.update(email_branding=EmailBranding.NHS_ID)
 
-        flash("You’ve updated your email branding", "default")
+        flash(_("You’ve updated your email branding"), "default")
         return redirect(url_for(".service_settings", service_id=current_service.id))
 
     return render_template(
@@ -1313,7 +1319,7 @@ def email_branding_enter_government_identity_logo_text(service_id):
             logo_text=form.logo_text.data,
         )
         ticket = NotifySupportTicket(
-            subject=f"Email branding request - {current_service.name}",
+            subject=_("Email branding request - %%s") % current_service.name,
             message=ticket_message,
             ticket_type=NotifySupportTicket.TYPE_TASK,
             user_name=current_user.name,
@@ -1411,7 +1417,7 @@ def letter_branding_request(service_id):
             detail=form.something_else.data,
         )
         ticket = NotifySupportTicket(
-            subject=f"Letter branding request - {current_service.name}",
+            subject=_("Letter branding request - %%s") % current_service.name,
             message=ticket_message,
             ticket_type=NotifySupportTicket.TYPE_QUESTION,
             user_name=current_user.name,

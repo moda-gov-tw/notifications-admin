@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Before you request to go live
+  {{_('Before you request to go live')}}
 {% endblock %}
 
 {% block backLink %}
@@ -20,23 +20,23 @@
       {% call task_list_wrapper() %}
         {{ task_list_item(
           current_service.has_estimated_usage,
-          'Tell us how many messages you expect to send',
+          _('Tell us how many messages you expect to send'),
           url_for('main.estimate_usage', service_id=current_service.id),
         ) }}
         {{ task_list_item(
           current_service.has_team_members,
-          'Add a team member who can manage settings, team and usage',
+          _('Add a team member who can manage settings, team and usage'),
           url_for('main.manage_users', service_id=current_service.id),
         ) }}
         {{ task_list_item(
           current_service.has_templates,
-          'Add templates with examples of the content you plan to send',
+          _('Add templates with examples of the content you plan to send'),
           url_for('main.choose_template', service_id=current_service.id),
         ) }}
         {% if current_service.intending_to_send_email %}
           {{ task_list_item(
             current_service.has_email_reply_to_address,
-            'Add a reply-to email address',
+            _('Add a reply-to email address'),
             url_for('main.service_email_reply_to', service_id=current_service.id),
           ) }}
         {% endif %}
@@ -46,35 +46,35 @@
         ) %}
           {{ task_list_item(
             not current_service.sms_sender_is_govuk,
-            'Change your text message sender name',
+            _('Change your text message sender name'),
             url_for('main.service_sms_senders', service_id=current_service.id),
           ) }}
         {% endif %}
         {% if current_service.able_to_accept_agreement %}
           {{ task_list_item(
             current_service.organisation.agreement_signed,
-            'Accept our data sharing and financial agreement',
+            _('Accept our data sharing and financial agreement'),
             url_for('main.service_agreement', service_id=current_service.id),
           ) }}
         {% endif %}
       {% endcall %}
       {% if not current_user.is_gov_user %}
         <p class="govuk-body">
-          Only team members with a government email address can request to go live.
+          {{_('Only team members with a government email address can request to go live.')}}
         </p>
       {% elif (not current_service.go_live_checklist_completed) or (current_service.able_to_accept_agreement and not current_service.organisation.agreement_signed) %}
         <p class="govuk-body">
-          You must complete these steps before you can request to go live.
+          {{_('You must complete these steps before you can request to go live.')}}
         </p>
       {% else %}
         <p class="govuk-body">
-          When we receive your request we’ll get back to you within one working day.
+          {{_('When we receive your request we’ll get back to you within one working day.')}}
         </p>
         <p class="bottom-gutter">
-          By requesting to go live you’re agreeing to our <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.terms') }}">terms of use</a>.
+          {{_("By requesting to go live you’re agreeing to our <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">terms of use</a>.") % url_for('.terms')}}
         </p>
         {% call form_wrapper() %}
-          {{ page_footer('Request to go live') }}
+          {{ page_footer(_('Request to go live')) }}
         {% endcall %}
       {% endif %}
     </div>

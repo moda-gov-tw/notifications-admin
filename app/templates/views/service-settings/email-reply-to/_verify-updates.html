@@ -6,21 +6,21 @@
 <div class="ajax-block-container">
   {% if verification_status == "pending" %}
     <p class="govuk-body">
-      We’re checking that ‘{{ reply_to_email_address }}’ is a real email address.
+      {{_("We’re checking that ‘%%s’ is a real email address.") % reply_to_email_address }}
     </p>
     <p class="govuk-body">
-      <span class='loading-indicator'>This can take a minute</span>
+      <span class='loading-indicator'>{{_('This can take a minute')}}</span>
     </p>
 
     <p class="js-hidden govuk-body">
-      <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.service_verify_reply_to_address', service_id=service_id, notification_id=notification_id, is_default=is_default, replace=replace) }}">Refresh</a>
+      <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.service_verify_reply_to_address', service_id=service_id, notification_id=notification_id, is_default=is_default, replace=replace) }}">{{_('Refresh')}}</a>
     </p>
   {% elif verification_status == "success" %}
     {{ banner("‘{}’ is ready to use".format(reply_to_email_address), type='default', with_tick=True) }}
     <div class="js-stick-at-bottom-when-scrolling">
       {{ govukButton({
         "element": "a",
-        "text": "Continue",
+        "text": _("Continue"),
         "href": url_for('.service_email_reply_to', service_id=service_id)
       }) }}
     </div>
@@ -28,13 +28,13 @@
     <div class="bottom-gutter">
       {% call banner_wrapper(type='dangerous') %}
         <h2 class='banner-title' data-notify-module="track-error" data-error-type="reply-to-email-not-working" data-error-label="{{ upload_id }}">
-          There’s a problem with your reply-to address
+          {{_('There’s a problem with your reply-to address')}}
         </h2>
         <p class="govuk-body">
-          We sent an email to ‘{{ reply_to_email_address }}’ but it could not be delivered.
+          {{_('We sent an email to ‘%%s’ but it could not be delivered.') % reply_to_email_address }}
         </p>
         <p class="govuk-body">
-          You can try again, or use a different address.
+          {{_('You can try again, or use a different address.')}}
         </p>
       {% endcall %}
     </div>
@@ -48,7 +48,7 @@
     ) %}
       {{ form.email_address(
           param_extensions={
-            "hint": {"text": "This should be a shared inbox managed by your team, not your own email address"},
+            "hint": {"text": _("This should be a shared inbox managed by your team, not your own email address")},
             "classes": "govuk-!-width-full"
           },
           error_message_with_html=True
@@ -56,7 +56,7 @@
       {% if not first_email_address and not existing_is_default %}
         {{ form.is_default }}
       {% endif %}
-      {{ page_footer('Try again') }}
+      {{ page_footer(_('Try again')) }}
     {% endcall %}
   {% endif %}
 </div>

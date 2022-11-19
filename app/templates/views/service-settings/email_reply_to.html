@@ -6,7 +6,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Reply-to email addresses
+  {{_('Reply-to email addresses')}}
 {% endblock %}
 
 {% block backLink %}
@@ -15,12 +15,12 @@
 
 {% block maincolumn_content %}
 
-  {{ page_header('Reply-to email addresses') }}
+  {{ page_header(_('Reply-to email addresses')) }}
 
   <div class="user-list">
     {% if not current_service.email_reply_to_addresses %}
       <div class="user-list-item">
-        <p class="govuk-body user-list-item-blank hint">You have not added any reply-to email addresses yet</p>
+        <p class="govuk-body user-list-item-blank hint">{{_('You have not added any reply-to email addresses yet')}}</p>
       </div>
     {% endif %}
     {% for item in current_service.email_reply_to_addresses %}
@@ -30,7 +30,7 @@
             <h2 class="user-list-item-heading">
               <span class="heading-small">{{ item.email_address }}</span>&ensp;<span class="hint">
                 {%- if item.is_default -%}
-                  (default)
+                  {{_('(default)')}}
                 {% endif %}
               </span>
             </h2>
@@ -38,7 +38,7 @@
           <div class="govuk-grid-column-one-quarter">
             {% if current_user.has_permissions('manage_service') %}
               <a class="govuk-link govuk-link--no-visited-state user-list-edit-link"href="{{ url_for('.service_edit_email_reply_to', service_id =current_service.id, reply_to_email_id = item.id) }}">
-                Change<span class="govuk-visually-hidden"> {{ item.email_address }}</span>
+                {{_("Change<span class=\"govuk-visually-hidden\"> {{ item.email_address }}</span>")}}
               </a>
             {% endif %}
           </div>
@@ -59,7 +59,7 @@
         <div class="js-stick-at-bottom-when-scrolling">
           {{ govukButton({
             "element": "a",
-            "text": "Add reply-to email address",
+            "text": _("Add reply-to email address"),
             "href": url_for('.service_add_email_reply_to', service_id=current_service.id),
           }) }}
         </div>
@@ -67,14 +67,14 @@
     </div>
     <div class="govuk-grid-column-five-sixths">
       <p class="govuk-body">
-        You need to add at least one reply-to address so recipients can reply to your messages.
+        {{_('You need to add at least one reply-to address so recipients can reply to your messages.')}}
       </p>
       <p class="govuk-body">
-        Emails with a reply-to address:
+        {{_('Emails with a reply-to address:')}}
       </p>
       <ul class="govuk-list govuk-list--bullet">
-        <li>are less likely to be labelled as spam</li>
-        <li>appear more trustworthy</li>
+        <li>{{_('are less likely to be labelled as spam')}}</li>
+        <li>{{_('appear more trustworthy')}}</li>
       </ul>
     </div>
   </div>
