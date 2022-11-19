@@ -1,6 +1,7 @@
 from collections import OrderedDict
 
 from flask import render_template
+from flask_babel import _
 
 from app import current_service, service_api_client
 from app.main import main
@@ -41,16 +42,16 @@ def returned_letters_report(service_id, reported_at):
     returned_letters = service_api_client.get_returned_letters(service_id, reported_at)
     column_names = OrderedDict(
         [
-            ("notification_id", "Notification ID"),
-            ("client_reference", "Reference"),
-            ("created_at", "Date sent"),
-            ("email_address", "Sent by"),
-            ("template_name", "Template name"),
-            ("template_id", "Template ID"),
-            ("template_version", "Template version"),
-            ("original_file_name", "Spreadsheet file name"),
-            ("job_row_number", "Spreadsheet row number"),
-            ("uploaded_letter_file_name", "Uploaded letter file name"),
+            ("notification_id", _("Notification ID")),
+            ("client_reference", _("Reference")),
+            ("created_at", _("Date sent")),
+            ("email_address", _("Sent by")),
+            ("template_name", _("Template name")),
+            ("template_id", _("Template ID")),
+            ("template_version", _("Template version")),
+            ("original_file_name", _("Spreadsheet file name")),
+            ("job_row_number", _("Spreadsheet row number")),
+            ("uploaded_letter_file_name", _("Uploaded letter file name")),
         ]
     )
 

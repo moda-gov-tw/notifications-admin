@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-19 10:49+0800\n"
+"POT-Creation-Date: 2022-11-19 10:59+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -595,6 +595,47 @@ msgstr ""
 msgid "Removed %%s objects across %%s key formats for {%%s}"
 msgstr ""
 
+#: main/views/returned_letters.py:45
+msgid "Notification ID"
+msgstr ""
+
+#: main/views/returned_letters.py:46
+#: templates/views/broadcast/write-new-broadcast.html:27
+msgid "Reference"
+msgstr ""
+
+#: main/views/returned_letters.py:47
+msgid "Date sent"
+msgstr ""
+
+#: main/views/returned_letters.py:48
+msgid "Sent by"
+msgstr ""
+
+#: main/views/returned_letters.py:49 templates/views/returned-letters.html:29
+msgid "Template name"
+msgstr ""
+
+#: main/views/returned_letters.py:50
+msgid "Template ID"
+msgstr ""
+
+#: main/views/returned_letters.py:51
+msgid "Template version"
+msgstr ""
+
+#: main/views/returned_letters.py:52
+msgid "Spreadsheet file name"
+msgstr ""
+
+#: main/views/returned_letters.py:53
+msgid "Spreadsheet row number"
+msgstr ""
+
+#: main/views/returned_letters.py:54
+msgid "Uploaded letter file name"
+msgstr ""
+
 #: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:2
 #, python-format
 msgid "Are you sure you want to make ‘%%s’ the default email branding?"
@@ -651,6 +692,7 @@ msgstr ""
 #: templates/partials/jobs/notifications.html:37
 #: templates/views/notifications.html:69
 #: templates/views/organisations/organisation/index.html:116
+#: templates/views/returned-letters.html:20
 msgid "Download this report (<abbr title=\"Comma separated values\">CSV</abbr>)"
 msgstr ""
 
@@ -2694,6 +2736,77 @@ msgstr ""
 msgid "A new confirmation email has been sent to %%s"
 msgstr ""
 
+#: templates/views/returned-letter-summary.html:7
+msgid "Returned letters"
+msgstr ""
+
+#: templates/views/returned-letter-summary.html:20
+msgid "Reports are published once a month."
+msgstr ""
+
+#: templates/views/returned-letter-summary.html:23
+msgid "You’ll only get a report if one or more of your letters is returned."
+msgstr ""
+
+#: templates/views/returned-letter-summary.html:30
+msgid "Returned letters report"
+msgstr ""
+
+#: templates/views/returned-letter-summary.html:32
+#: templates/views/returned-letters.html:28
+msgid "If you have returned letter reports they will be listed here"
+msgstr ""
+
+#: templates/views/returned-letter-summary.html:33
+msgid "Report"
+msgstr ""
+
+#: templates/views/dashboard/monthly.html:48
+#: templates/views/returned-letter-summary.html:40
+msgid "letter"
+msgstr ""
+
+#: templates/views/returned-letters.html:7
+#: templates/views/returned-letters.html:17
+#: templates/views/returned-letters.html:26
+#, python-format
+msgid "Returned letters for %%s"
+msgstr ""
+
+#: templates/views/returned-letters.html:29
+msgid "Originally sent"
+msgstr ""
+
+#: templates/views/dashboard/template-statistics.html:24
+#: templates/views/notifications/notification.html:28
+#: templates/views/returned-letters.html:33
+msgid "Provided as PDF"
+msgstr ""
+
+#: templates/views/returned-letters.html:36
+#, python-format
+msgid "Reference %%s"
+msgstr ""
+
+#: templates/views/returned-letters.html:38
+#, python-format
+msgid "Sent from %%s"
+msgstr ""
+
+#: templates/views/returned-letters.html:40
+msgid "No reference provided"
+msgstr ""
+
+#: templates/views/returned-letters.html:47
+#, python-format
+msgid "Sent %%s"
+msgstr ""
+
+#: templates/views/returned-letters.html:54
+#, python-format
+msgid "Only showing the first %%(page_size)s of %%(count)s rows"
+msgstr ""
+
 #: templates/views/roadmap.html:10 templates/views/roadmap.html:15
 msgid "Roadmap"
 msgstr ""
@@ -3972,10 +4085,6 @@ msgstr ""
 msgid "Your recipients will not see this"
 msgstr ""
 
-#: templates/views/broadcast/write-new-broadcast.html:27
-msgid "Reference"
-msgstr ""
-
 #: templates/views/broadcast/partials/dashboard-table.html:15
 msgid "Waiting for approval"
 msgstr ""
@@ -4231,10 +4340,6 @@ msgstr ""
 msgid "sms"
 msgstr ""
 
-#: templates/views/dashboard/monthly.html:48
-msgid "letter"
-msgstr ""
-
 #: templates/views/dashboard/monthly.html:71
 msgid "Financial year ends 31 March."
 msgstr ""
@@ -4245,11 +4350,6 @@ msgstr ""
 
 #: templates/views/dashboard/template-statistics.html:16
 msgid "Messages sent"
-msgstr ""
-
-#: templates/views/dashboard/template-statistics.html:24
-#: templates/views/notifications/notification.html:28
-msgid "Provided as PDF"
 msgstr ""
 
 #: templates/views/dashboard/template-statistics.html:27
