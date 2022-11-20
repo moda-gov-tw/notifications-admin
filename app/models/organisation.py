@@ -1,6 +1,7 @@
 from collections import OrderedDict
 
 from flask import abort
+from flask_babel import _
 from werkzeug.utils import cached_property
 
 from app.models import JSONModel, ModelList, SerialisedModelCollection
@@ -32,14 +33,14 @@ class Organisation(JSONModel):
 
     TYPE_LABELS = OrderedDict(
         [
-            (TYPE_CENTRAL, "Central government"),
-            (TYPE_LOCAL, "Local government"),
-            (TYPE_NHS_CENTRAL, "NHS – central government agency or public body"),
-            (TYPE_NHS_LOCAL, "NHS Trust or Clinical Commissioning Group"),
-            (TYPE_NHS_GP, "GP practice"),
-            (TYPE_EMERGENCY_SERVICE, "Emergency service"),
-            (TYPE_SCHOOL_OR_COLLEGE, "School or college"),
-            (TYPE_OTHER, "Other"),
+            (TYPE_CENTRAL, _("Central government")),
+            (TYPE_LOCAL, _("Local government")),
+            (TYPE_NHS_CENTRAL, _("NHS – central government agency or public body")),
+            (TYPE_NHS_LOCAL, _("NHS Trust or Clinical Commissioning Group")),
+            (TYPE_NHS_GP, _("GP practice")),
+            (TYPE_EMERGENCY_SERVICE, _("Emergency service")),
+            (TYPE_SCHOOL_OR_COLLEGE, _("School or college")),
+            (TYPE_OTHER, _("Other")),
         ]
     )
 

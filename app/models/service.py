@@ -1,4 +1,5 @@
 from flask import abort, current_app
+from flask_babel import _
 from notifications_utils.serialised_model import SerialisedModelCollection
 from werkzeug.utils import cached_property
 
@@ -128,7 +129,7 @@ class Service(JSONModel):
 
     def has_permission(self, permission):
         if permission not in self.ALL_PERMISSIONS:
-            raise KeyError(f"{permission} is not a service permission")
+            raise KeyError(_("%%s is not a service permission") % permission)
         return permission in self.permissions
 
     def get_page_of_jobs(self, page):
@@ -510,7 +511,7 @@ class Service(JSONModel):
         if folder_id is None:
             return {
                 "id": None,
-                "name": "Templates",
+                "name": _("Templates"),
                 "parent_id": None,
             }
         return self._get_by_id(self.all_template_folders, folder_id)

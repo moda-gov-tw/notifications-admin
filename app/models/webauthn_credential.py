@@ -8,6 +8,7 @@ from fido2.webauthn import (
     CollectedClientData,
 )
 from flask import current_app
+from flask_babel import _
 
 from app.models import JSONModel, ModelList
 from app.notify_client.user_api_client import user_api_client
@@ -43,11 +44,11 @@ class WebAuthnCredential(JSONModel):
             raise RegistrationError(e)
 
         if isinstance(auth_data.credential_data.public_key, UnsupportedKey):
-            raise RegistrationError("Encryption algorithm not supported")
+            raise RegistrationError(_("Encryption algorithm not supported"))
 
         return cls(
             {
-                "name": "Unnamed key",
+                "name": _("Unnamed key"),
                 "credential_data": base64.b64encode(
                     cbor.encode(auth_data.credential_data),
                 ).decode("utf-8"),

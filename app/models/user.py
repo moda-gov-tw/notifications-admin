@@ -1,6 +1,7 @@
 from datetime import datetime
 
 from flask import abort, request, session
+from flask_babel import _
 from flask_login import AnonymousUserMixin, UserMixin, login_user, logout_user
 from notifications_python_client.errors import HTTPError
 from notifications_utils.timezones import utc_string_to_aware_gmt_datetime
@@ -210,7 +211,7 @@ class User(BaseUser, UserMixin):
     def has_permissions(self, *permissions, restrict_admin_usage=False, allow_org_user=False):
         unknown_permissions = set(permissions) - all_ui_permissions
         if unknown_permissions:
-            raise TypeError("{} are not valid permissions".format(list(unknown_permissions)))
+            raise TypeError(_("{} are not valid permissions").format(list(unknown_permissions)))
 
         # Service id is always set on the request for service specific views.
         service_id = _get_service_id_from_view_args()

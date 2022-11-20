@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-20 16:01+0800\n"
+"POT-Creation-Date: 2022-11-20 17:23+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -19,6 +19,331 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
+
+#: formatters.py:77 utils/letters.py:26
+msgid "tomorrow"
+msgstr ""
+
+#: formatters.py:79 formatters.py:157 utils/letters.py:24
+msgid "today"
+msgstr ""
+
+#: formatters.py:81 formatters.py:159
+msgid "yesterday"
+msgstr ""
+
+#: formatters.py:96
+msgid "Midnight"
+msgstr ""
+
+#: formatters.py:96
+msgid "Midday"
+msgstr ""
+
+#: formatters.py:147
+msgid "just now"
+msgstr ""
+
+#: formatters.py:149
+msgid "in the last minute"
+msgstr ""
+
+#: formatters.py:172 main/forms.py:2251 main/forms.py:2355
+#: main/views/templates.py:185 templates/views/providers/providers.html:43
+#: templates/views/register-from-invite.html:25
+msgid "Email"
+msgstr ""
+
+#: formatters.py:172 main/forms.py:2356 main/views/templates.py:184
+msgid "Text message"
+msgstr ""
+
+#: formatters.py:172 main/forms.py:2253 main/forms.py:2357
+#: main/views/templates.py:186
+#: templates/views/dashboard/template-statistics.html:27
+#: templates/views/notifications/invalid_precompiled_letter.html:4
+#: templates/views/notifications/invalid_precompiled_letter.html:9
+msgid "Letter"
+msgstr ""
+
+#: formatters.py:178 formatters.py:188
+msgid "Failed"
+msgstr ""
+
+#: formatters.py:179 formatters.py:189 formatters.py:200
+#: templates/views/message-status.html:34
+#: templates/views/message-status.html:64
+#: templates/views/message-status.html:86
+msgid "Technical failure"
+msgstr ""
+
+#: formatters.py:180 templates/views/message-status.html:33
+msgid "Inbox not accepting messages right now"
+msgstr ""
+
+#: formatters.py:181 templates/views/message-status.html:32
+msgid "Email address does not exist"
+msgstr ""
+
+#: formatters.py:182 formatters.py:185 formatters.py:192
+#: templates/views/message-status.html:31
+#: templates/views/message-status.html:61
+msgid "Delivered"
+msgstr ""
+
+#: formatters.py:183 formatters.py:184 formatters.py:193 formatters.py:194
+#: formatters.py:195 templates/partials/jobs/notifications.html:9
+#: templates/views/message-status.html:30
+#: templates/views/message-status.html:59
+msgid "Sending"
+msgstr ""
+
+#: formatters.py:190 templates/views/message-status.html:63
+msgid "Phone not accepting messages right now"
+msgstr ""
+
+#: formatters.py:191 templates/views/message-status.html:62
+msgid "Not delivered"
+msgstr ""
+
+#: formatters.py:196 templates/views/message-status.html:60
+msgid "Sent to an international number"
+msgstr ""
+
+#: formatters.py:202 templates/views/message-status.html:87
+msgid "Permanent failure"
+msgstr ""
+
+#: formatters.py:210
+msgid "Virus detected"
+msgstr ""
+
+#: formatters.py:213 utils/letters.py:189
+msgid "Validation failed"
+msgstr ""
+
+#: formatters.py:219
+msgid " since {}"
+msgstr ""
+
+#: formatters.py:350
+msgid "Data available for {}"
+msgstr ""
+
+#: formatters.py:351
+msgid "Data no longer available"
+msgstr ""
+
+#: formatters.py:399
+msgid "message"
+msgstr ""
+
+#: formatters.py:401 templates/views/conversations/conversation.html:27
+#: templates/views/dashboard/inbox.html:22
+msgid "messages"
+msgstr ""
+
+#: formatters.py:405
+msgid "text message"
+msgstr ""
+
+#: formatters.py:407 main/forms.py:1623 main/forms.py:1788
+#: main/validators.py:121 templates/views/features.html:20
+msgid "text messages"
+msgstr ""
+
+#: formatters.py:411 templates/views/dashboard/monthly.html:46
+msgid "email"
+msgstr ""
+
+#: formatters.py:413 main/forms.py:1618 main/forms.py:1787
+#: templates/views/features.html:19
+msgid "emails"
+msgstr ""
+
+#: formatters.py:417 templates/views/dashboard/monthly.html:48
+#: templates/views/returned-letter-summary.html:40
+msgid "letter"
+msgstr ""
+
+#: formatters.py:419 main/forms.py:1628 main/forms.py:1789
+#: templates/views/dashboard/monthly.html:36 templates/views/features.html:21
+#: templates/views/using-notify.html:26
+msgid "letters"
+msgstr ""
+
+#: formatters.py:423
+msgid "broadcast"
+msgstr ""
+
+#: formatters.py:425
+msgid "broadcasts"
+msgstr ""
+
+#: formatters.py:436 main/views/jobs.py:177
+msgid "recipient"
+msgstr ""
+
+#: formatters.py:438
+msgid "recipients"
+msgstr ""
+
+#: formatters.py:442 main/views/jobs.py:173
+#: templates/views/notifications/check.html:33
+#: templates/views/uploads/contact-list/upload.html:81
+msgid "phone number"
+msgstr ""
+
+#: formatters.py:444
+msgid "phone numbers"
+msgstr ""
+
+#: formatters.py:448 main/views/jobs.py:172 main/views/user_profile.py:70
+#: main/views/user_profile.py:91 templates/views/notifications/check.html:33
+#: templates/views/uploads/contact-list/upload.html:63
+#: templates/views/user-profile.html:26
+msgid "email address"
+msgstr ""
+
+#: formatters.py:450
+msgid "email addresses"
+msgstr ""
+
+#: formatters.py:454
+msgid "address"
+msgstr ""
+
+#: formatters.py:456
+msgid "addresses"
+msgstr ""
+
+#: formatters.py:465
+msgid "once"
+msgstr ""
+
+#: formatters.py:467
+msgid "twice"
+msgstr ""
+
+#: formatters.py:469
+#, python-format
+msgid "%%s times"
+msgstr ""
+
+#: formatters.py:474
+msgid "1 character"
+msgstr ""
+
+#: formatters.py:475
+#, python-format
+msgid "%%s characters"
+msgstr ""
+
+#: formatters.py:500 main/forms.py:1031
+msgid "Email link"
+msgstr ""
+
+#: formatters.py:501 main/forms.py:1030 main/forms.py:1119
+#: templates/views/service-settings.html:40
+#: templates/views/service-settings/set-auth-type.html:32
+msgid "Text message code"
+msgstr ""
+
+#: formatters.py:502
+msgid "Security key"
+msgstr ""
+
+#: templates/views/signedout.html:9 templates/views/signedout.html:22
+#: webauthn_server.py:18
+msgid "GOV.UK Notify"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:45
+msgid "Unknown type: {}"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:68
+#, python-format
+msgid "%% Polygon %%s/%%s is valid"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:78
+#, python-format
+msgid "%%s Polygon %%s/%%s has 0 area, skipping"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:81
+#, python-format
+msgid "%%s Polygon %%s/%%s needs fixing..."
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:105
+#, python-format
+msgid "%%s Polygon %%s/%%s fixed!"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:126
+msgid "Polygon of 0 size found"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:129
+#, python-format
+msgid "    Original:%%s points    Smoothed:%%s points    Simplified:%%s points"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:137
+msgid ""
+"Too many points (adjust Polygons.perimeter_to_simplification_ratio or "
+"Polygons.perimeter_to_buffer_ratio)"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:163
+msgid "    Population:   N/A"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:173
+#, python-format
+msgid "No population data for %%s"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:279
+msgid "Countries"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:280
+msgid "country"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:314
+msgid "Police forces in England and Wales"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:315
+msgid "police force"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:360
+msgid "London (Metropolitan & City of London)"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:374
+msgid "Local authorities"
+msgstr ""
+
+#: broadcast_areas/create-broadcast-areas-db.py:507
+#, python-format
+msgid ""
+"\n"
+"DONE\n"
+"    Processed %%s polygons.\n"
+"    Cleaned up %%s polygons.\n"
+"    Highest point counts once simplifed: %%s\n"
+msgstr ""
+
+#: broadcast_areas/populations.py:127
+#, python-format
+msgid "    Population:%%s    Phones:%%s"
+msgstr ""
 
 #: main/forms.py:152
 msgid "Tomorrow"
@@ -101,16 +426,6 @@ msgstr ""
 
 #: main/forms.py:1024
 msgid "Folders this team member can see"
-msgstr ""
-
-#: main/forms.py:1030 main/forms.py:1119
-#: templates/views/service-settings.html:40
-#: templates/views/service-settings/set-auth-type.html:32
-msgid "Text message code"
-msgstr ""
-
-#: main/forms.py:1031
-msgid "Email link"
 msgstr ""
 
 #: main/forms.py:1033
@@ -333,6 +648,7 @@ msgid "Last line of the address must be a real UK postcode"
 msgstr ""
 
 #: main/forms.py:1431 templates/views/check/row-errors.html:90
+#: utils/letters.py:165
 msgid ""
 "Address lines must not start with any of the following characters: @ ( ) "
 "= [ ] ” \\ / , < > ~"
@@ -460,10 +776,6 @@ msgstr ""
 msgid "How many emails do you expect to send in the next year?"
 msgstr ""
 
-#: main/forms.py:1618 main/forms.py:1787 templates/views/features.html:19
-msgid "emails"
-msgstr ""
-
 #: main/forms.py:1619 main/forms.py:1624 main/forms.py:1629
 msgid "you expect to send"
 msgstr ""
@@ -472,19 +784,8 @@ msgstr ""
 msgid "How many text messages do you expect to send in the next year?"
 msgstr ""
 
-#: main/forms.py:1623 main/forms.py:1788 main/validators.py:121
-#: templates/views/features.html:20
-msgid "text messages"
-msgstr ""
-
 #: main/forms.py:1627
 msgid "How many letters do you expect to send in the next year?"
-msgstr ""
-
-#: main/forms.py:1628 main/forms.py:1789
-#: templates/views/dashboard/monthly.html:36 templates/views/features.html:21
-#: templates/views/using-notify.html:26
-msgid "letters"
 msgstr ""
 
 #: main/forms.py:1632
@@ -552,7 +853,7 @@ msgid "Contact names"
 msgstr ""
 
 #: main/forms.py:1754 main/views/returned_letters.py:46
-#: templates/views/broadcast/write-new-broadcast.html:27
+#: templates/views/broadcast/write-new-broadcast.html:27 utils/csv.py:76
 msgid "Reference"
 msgstr ""
 
@@ -576,7 +877,7 @@ msgstr ""
 msgid "a branding style"
 msgstr ""
 
-#: main/forms.py:1803
+#: main/forms.py:1803 utils/branding.py:8
 msgid "GOV.UK"
 msgstr ""
 
@@ -866,21 +1167,8 @@ msgstr ""
 msgid "What notification type?"
 msgstr ""
 
-#: main/forms.py:2251 main/forms.py:2355 main/views/templates.py:185
-#: templates/views/providers/providers.html:43
-#: templates/views/register-from-invite.html:25
-msgid "Email"
-msgstr ""
-
 #: main/forms.py:2252 templates/views/providers/providers.html:13
 msgid "SMS"
-msgstr ""
-
-#: main/forms.py:2253 main/forms.py:2357 main/views/templates.py:186
-#: templates/views/dashboard/template-statistics.html:27
-#: templates/views/notifications/invalid_precompiled_letter.html:4
-#: templates/views/notifications/invalid_precompiled_letter.html:9
-msgid "Letter"
 msgstr ""
 
 #: main/forms.py:2255
@@ -911,12 +1199,9 @@ msgstr ""
 msgid "Must be empty"
 msgstr ""
 
-#: main/forms.py:2323 templates/views/templates/choose.html:10
+#: main/forms.py:2323 models/service.py:514
+#: templates/views/templates/choose.html:10
 msgid "Templates"
-msgstr ""
-
-#: main/forms.py:2356 main/views/templates.py:184
-msgid "Text message"
 msgstr ""
 
 #: main/forms.py:2358 main/views/templates.py:187
@@ -1299,28 +1584,12 @@ msgstr ""
 msgid "Are you sure you want to cancel sending these letters?"
 msgstr ""
 
-#: main/views/jobs.py:172 main/views/user_profile.py:70
-#: main/views/user_profile.py:91 templates/views/notifications/check.html:33
-#: templates/views/uploads/contact-list/upload.html:63
-#: templates/views/user-profile.html:26
-msgid "email address"
-msgstr ""
-
-#: main/views/jobs.py:173 templates/views/notifications/check.html:33
-#: templates/views/uploads/contact-list/upload.html:81
-msgid "phone number"
-msgstr ""
-
 #: main/views/jobs.py:174
 msgid "postal address"
 msgstr ""
 
 #: main/views/jobs.py:174
 msgid "file name"
-msgstr ""
-
-#: main/views/jobs.py:177
-msgid "recipient"
 msgstr ""
 
 #: main/views/jobs.py:180
@@ -1534,7 +1803,7 @@ msgid "{} services"
 msgstr ""
 
 #: main/views/platform_admin.py:175
-#: main/views/sub_navigation_dictionaries.py:64
+#: main/views/sub_navigation_dictionaries.py:67
 #: templates/views/trial-mode.html:7 templates/views/trial-mode.html:12
 msgid "Trial mode"
 msgstr ""
@@ -1725,7 +1994,7 @@ msgstr ""
 msgid "Date sent"
 msgstr ""
 
-#: main/views/returned_letters.py:48
+#: main/views/returned_letters.py:48 utils/csv.py:79
 msgid "Sent by"
 msgstr ""
 
@@ -1918,14 +2187,14 @@ msgid ""
 "href=\"%%s\" class='govuk-link'>Forgotten your password?</a>"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:4 templates/views/features.html:10
+#: main/views/sub_navigation_dictionaries.py:7 templates/views/features.html:10
 #: templates/views/features.html:15 templates/views/features/emails.html:20
 #: templates/views/features/letters.html:20
 #: templates/views/features/text-messages.html:20
 msgid "Features"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:8
+#: main/views/sub_navigation_dictionaries.py:11
 #: templates/views/accessibility_statement.html:146
 #: templates/views/dashboard/monthly.html:34
 #: templates/views/features/emails.html:9
@@ -1936,7 +2205,7 @@ msgstr ""
 msgid "Emails"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:12
+#: main/views/sub_navigation_dictionaries.py:15
 #: templates/views/dashboard/monthly.html:35
 #: templates/views/features/text-messages.html:9
 #: templates/views/features/text-messages.html:14
@@ -1947,7 +2216,7 @@ msgstr ""
 msgid "Text messages"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:16
+#: main/views/sub_navigation_dictionaries.py:19
 #: templates/views/features/letters.html:9
 #: templates/views/features/letters.html:14
 #: templates/views/message-status.html:74
@@ -1957,29 +2226,29 @@ msgstr ""
 msgid "Letters"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:22 templates/views/roadmap.html:10
+#: main/views/sub_navigation_dictionaries.py:25 templates/views/roadmap.html:10
 #: templates/views/roadmap.html:15
 msgid "Roadmap"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:26
+#: main/views/sub_navigation_dictionaries.py:29
 #: templates/views/guidance/who-can-use-notify.html:9
 #: templates/views/guidance/who-can-use-notify.html:15
 msgid "Who can use Notify"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:30
+#: main/views/sub_navigation_dictionaries.py:33
 #: templates/views/features.html:67 templates/views/security.html:9
 #: templates/views/security.html:14
 msgid "Security"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:34
+#: main/views/sub_navigation_dictionaries.py:37
 #: templates/views/terms-of-use.html:9 templates/views/terms-of-use.html:14
 msgid "Terms of use"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:43
+#: main/views/sub_navigation_dictionaries.py:46
 #: templates/views/features/emails.html:50
 #: templates/views/features/letters.html:46
 #: templates/views/features/text-messages.html:37
@@ -1988,13 +2257,13 @@ msgstr ""
 msgid "Pricing"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:47
+#: main/views/sub_navigation_dictionaries.py:50
 #: templates/views/pricing/how-to-pay.html:9
 #: templates/views/pricing/how-to-pay.html:14
 msgid "How to pay"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:51
+#: main/views/sub_navigation_dictionaries.py:54
 #: templates/views/pricing/billing-details-signed-out.html:9
 #: templates/views/pricing/billing-details-signed-out.html:14
 #: templates/views/pricing/billing-details.html:10
@@ -2003,34 +2272,34 @@ msgstr ""
 msgid "Billing details"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:60
+#: main/views/sub_navigation_dictionaries.py:63
 #: templates/views/dashboard/write-first-messages.html:1
 #: templates/views/get-started.html:7 templates/views/get-started.html:15
 msgid "Get started"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:68
+#: main/views/sub_navigation_dictionaries.py:71
 #: templates/views/message-status.html:9 templates/views/message-status.html:14
 msgid "Delivery status"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:72
+#: main/views/sub_navigation_dictionaries.py:75
 #: templates/views/guidance/index.html:10
 #: templates/views/guidance/index.html:15
 msgid "Guidance"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:76
+#: main/views/sub_navigation_dictionaries.py:79
 #: templates/partials/templates/guidance-formatting-letters.html:3
 msgid "Formatting"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:80
+#: main/views/sub_navigation_dictionaries.py:83
 #: templates/views/features/letters.html:34
 msgid "Branding"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:84
+#: main/views/sub_navigation_dictionaries.py:87
 #: templates/views/features/emails.html:33
 #: templates/views/guidance/send-files-by-email.html:7
 #: templates/views/guidance/send-files-by-email.html:12
@@ -2040,20 +2309,20 @@ msgstr ""
 msgid "Send files by email"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:88
+#: main/views/sub_navigation_dictionaries.py:91
 #: templates/views/guidance/upload-a-letter.html:9
 #: templates/views/guidance/upload-a-letter.html:14
 #: templates/views/jobs/jobs.html:30 templates/views/uploads/choose-file.html:8
 msgid "Upload a letter"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:92
+#: main/views/sub_navigation_dictionaries.py:95
 #: templates/views/guidance/letter-specification.html:10
 #: templates/views/guidance/letter-specification.html:15
 msgid "Letter specification"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:98
+#: main/views/sub_navigation_dictionaries.py:101
 msgid "API documentation"
 msgstr ""
 
@@ -2182,7 +2451,7 @@ msgstr ""
 msgid "Invalid PDF uploaded for service_id: {}"
 msgstr ""
 
-#: main/views/uploads.py:169
+#: main/views/uploads.py:169 utils/letters.py:107
 msgid "There’s a problem with your file"
 msgstr ""
 
@@ -2261,6 +2530,187 @@ msgstr ""
 #: main/views/webauthn_credentials.py:133
 #, python-format
 msgid "User %%s could not sign in using their webauthn token - %%s"
+msgstr ""
+
+#: models/event.py:41
+msgid "Created this service and called it ‘{}’"
+msgstr ""
+
+#: models/event.py:58
+msgid "Made this service live"
+msgstr ""
+
+#: models/event.py:60
+msgid "Put this service back into trial mode"
+msgstr ""
+
+#: models/event.py:64
+msgid "Deleted this service"
+msgstr ""
+
+#: models/event.py:66
+msgid "Unsuspended this service"
+msgstr ""
+
+#: models/event.py:69
+msgid "Set the contact details for this service to ‘{}’"
+msgstr ""
+
+#: models/event.py:72
+msgid "Updated this service’s email branding"
+msgstr ""
+
+#: models/event.py:75
+msgid "Updated the callback for received text messages"
+msgstr ""
+
+#: models/event.py:79
+msgid "Removed the logo from this service’s letters"
+msgstr ""
+
+#: models/event.py:80
+msgid "Updated the logo on this service’s letters"
+msgstr ""
+
+#: models/event.py:83
+msgid "Updated the default letter contact block for this service"
+msgstr ""
+
+#: models/event.py:86
+msgid "{} this service’s daily message limit from {} to {}"
+msgstr ""
+
+#: models/event.py:87
+msgid "Reduced"
+msgstr ""
+
+#: models/event.py:87
+msgid "Increased"
+msgstr ""
+
+#: models/event.py:93
+msgid "Renamed this service from ‘{}’ to ‘{}’"
+msgstr ""
+
+#: models/event.py:99
+msgid "Removed {} from this service’s permissions, added {}"
+msgstr ""
+
+#: models/event.py:104
+msgid "Added {} to this service’s permissions"
+msgstr ""
+
+#: models/event.py:106
+msgid "Removed {} from this service’s permissions"
+msgstr ""
+
+#: models/event.py:110
+msgid "Set text messages to start with the name of this service"
+msgstr ""
+
+#: models/event.py:112
+msgid "Set text messages to not start with the name of this service"
+msgstr ""
+
+#: models/event.py:116
+msgid "Put this service into research mode"
+msgstr ""
+
+#: models/event.py:118
+msgid "Took this service out of research mode"
+msgstr ""
+
+#: models/event.py:121
+msgid "Updated the callback for delivery receipts"
+msgstr ""
+
+#: models/event.py:124
+msgid "Requested for this service to go live"
+msgstr ""
+
+#: models/event.py:133
+msgid "Revoked the ‘{}’ API key"
+msgstr ""
+
+#: models/event.py:135
+msgid "Created an API key called ‘{}’"
+msgstr ""
+
+#: models/job.py:153 models/job.py:164
+msgid "created"
+msgstr ""
+
+#: models/organisation.py:36
+msgid "Central government"
+msgstr ""
+
+#: models/organisation.py:37
+msgid "Local government"
+msgstr ""
+
+#: models/organisation.py:38
+msgid "NHS – central government agency or public body"
+msgstr ""
+
+#: models/organisation.py:39
+msgid "NHS Trust or Clinical Commissioning Group"
+msgstr ""
+
+#: models/organisation.py:40
+msgid "GP practice"
+msgstr ""
+
+#: models/organisation.py:41
+msgid "Emergency service"
+msgstr ""
+
+#: models/organisation.py:42
+msgid "School or college"
+msgstr ""
+
+#: models/organisation.py:43
+msgid "Other"
+msgstr ""
+
+#: models/service.py:132
+#, python-format
+msgid "%%s is not a service permission"
+msgstr ""
+
+#: models/spreadsheet.py:19
+msgid "Spreadsheet must be created from either rows or CSV data"
+msgstr ""
+
+#: models/template_list.py:333
+msgid "Empty"
+msgstr ""
+
+#: models/template_list.py:336
+msgid "1 template"
+msgstr ""
+
+#: models/template_list.py:338
+msgid "{} templates"
+msgstr ""
+
+#: models/template_list.py:341
+msgid "1 folder"
+msgstr ""
+
+#: models/template_list.py:343
+msgid "{} folders"
+msgstr ""
+
+#: models/user.py:214
+msgid "{} are not valid permissions"
+msgstr ""
+
+#: models/webauthn_credential.py:47
+msgid "Encryption algorithm not supported"
+msgstr ""
+
+#: models/webauthn_credential.py:51
+msgid "Unnamed key"
 msgstr ""
 
 #: templates/partials/check/letter-too-long.html:2
@@ -2385,12 +2835,6 @@ msgstr ""
 msgid "Estimated delivery date"
 msgstr ""
 
-#: templates/partials/jobs/notifications.html:9
-#: templates/views/message-status.html:30
-#: templates/views/message-status.html:59
-msgid "Sending"
-msgstr ""
-
 #: templates/partials/jobs/notifications.html:16
 msgid "Cancel sending"
 msgstr ""
@@ -2417,7 +2861,7 @@ msgid ""
 " ago"
 msgstr ""
 
-#: templates/partials/jobs/notifications.html:52
+#: templates/partials/jobs/notifications.html:52 utils/csv.py:75
 msgid "Recipient"
 msgstr ""
 
@@ -2428,7 +2872,8 @@ msgstr ""
 #: templates/views/message-status.html:54
 #: templates/views/message-status.html:78
 #: templates/views/send-contact-list.html:44
-#: templates/views/uploads/contact-list/contact-list.html:40
+#: templates/views/uploads/contact-list/contact-list.html:40 utils/csv.py:71
+#: utils/csv.py:82
 msgid "Status"
 msgstr ""
 
@@ -4008,28 +4453,15 @@ msgstr ""
 
 #: templates/views/message-status.html:31
 #: templates/views/message-status.html:61
-msgid "Delivered"
-msgstr ""
-
-#: templates/views/message-status.html:31
-#: templates/views/message-status.html:61
 msgid ""
 "The message was successfully delivered. Notify will not tell you if a "
 "user has opened or read a message."
 msgstr ""
 
 #: templates/views/message-status.html:32
-msgid "Email address does not exist"
-msgstr ""
-
-#: templates/views/message-status.html:32
 msgid ""
 "The provider could not deliver the message because the email address was "
 "wrong. You should remove these email addresses from your database."
-msgstr ""
-
-#: templates/views/message-status.html:33
-msgid "Inbox not accepting messages right now"
 msgstr ""
 
 #: templates/views/message-status.html:33
@@ -4040,12 +4472,6 @@ msgid ""
 "href=\"https://www.gov.uk/service-manual/design/sending-emails-and-text-"
 "messages#protect-your-users-from-spam-and-phishing\">Check your content "
 "does not look like spam</a> before you try to send the message again."
-msgstr ""
-
-#: templates/views/message-status.html:34
-#: templates/views/message-status.html:64
-#: templates/views/message-status.html:86
-msgid "Technical failure"
 msgstr ""
 
 #: templates/views/message-status.html:34
@@ -4083,17 +4509,9 @@ msgid "Message statuses – text messages"
 msgstr ""
 
 #: templates/views/message-status.html:60
-msgid "Sent to an international number"
-msgstr ""
-
-#: templates/views/message-status.html:60
 msgid ""
 "The mobile networks in some countries do not provide any more delivery "
 "information."
-msgstr ""
-
-#: templates/views/message-status.html:62
-msgid "Not delivered"
 msgstr ""
 
 #: templates/views/message-status.html:62
@@ -4105,10 +4523,6 @@ msgid ""
 "=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">contact us</a>."
 " If not, you should remove them from your database. You’ll still be "
 "charged for text messages that cannot be delivered."
-msgstr ""
-
-#: templates/views/message-status.html:63
-msgid "Phone not accepting messages right now"
 msgstr ""
 
 #: templates/views/message-status.html:63
@@ -4139,7 +4553,7 @@ msgstr ""
 msgid "Notify has sent the letter to the provider to be printed."
 msgstr ""
 
-#: templates/views/message-status.html:84
+#: templates/views/message-status.html:84 utils/letters.py:42
 msgid "Printed"
 msgstr ""
 
@@ -4161,10 +4575,6 @@ msgstr ""
 msgid ""
 "Notify had an unexpected error while sending the letter to our printing "
 "provider."
-msgstr ""
-
-#: templates/views/message-status.html:87
-msgid "Permanent failure"
 msgstr ""
 
 #: templates/views/message-status.html:87
@@ -4716,11 +5126,6 @@ msgstr ""
 
 #: templates/views/returned-letter-summary.html:33
 msgid "Report"
-msgstr ""
-
-#: templates/views/dashboard/monthly.html:48
-#: templates/views/returned-letter-summary.html:40
-msgid "letter"
 msgstr ""
 
 #: templates/views/returned-letters.html:7
@@ -5663,10 +6068,6 @@ msgid ""
 "GOV.UK Notify lets you send emails, text messages and letters to your "
 "users. Try it now if you work in central government, a local authority, "
 "or the NHS."
-msgstr ""
-
-#: templates/views/signedout.html:9 templates/views/signedout.html:22
-msgid "GOV.UK Notify"
 msgstr ""
 
 #: templates/views/signedout.html:19
@@ -6940,11 +7341,6 @@ msgstr ""
 msgid "Received text message"
 msgstr ""
 
-#: templates/views/conversations/conversation.html:27
-#: templates/views/dashboard/inbox.html:22
-msgid "messages"
-msgstr ""
-
 #: templates/views/conversations/conversation.html:32
 msgid "Send a text message to this phone number"
 msgstr ""
@@ -7113,10 +7509,6 @@ msgstr ""
 msgid "Month"
 msgstr ""
 
-#: templates/views/dashboard/monthly.html:46
-msgid "email"
-msgstr ""
-
 #: templates/views/dashboard/monthly.html:47
 msgid "sms"
 msgstr ""
@@ -7126,7 +7518,8 @@ msgid "Financial year ends 31 March."
 msgstr ""
 
 #: templates/views/dashboard/template-statistics.html:15
-#: templates/views/uploads/contact-list/contact-list.html:39
+#: templates/views/uploads/contact-list/contact-list.html:39 utils/csv.py:71
+#: utils/csv.py:77
 msgid "Template"
 msgstr ""
 
@@ -7668,6 +8061,7 @@ msgstr ""
 
 #: templates/views/guidance/create-and-send-messages.html:9
 #: templates/views/guidance/create-and-send-messages.html:14
+#: utils/user_permissions.py:20
 msgid "Send messages"
 msgstr ""
 
@@ -11013,8 +11407,309 @@ msgid ""
 "          standard."
 msgstr ""
 
+#: utils/branding.py:22
+#, python-format
+msgid "GOV.UK and %%s"
+msgstr ""
+
+#: utils/csv.py:16
+msgid "fix 1 phone number"
+msgstr ""
+
+#: utils/csv.py:18
+msgid "fix {} phone numbers"
+msgstr ""
+
+#: utils/csv.py:21
+msgid "fix 1 email address"
+msgstr ""
+
+#: utils/csv.py:23
+msgid "fix {} email addresses"
+msgstr ""
+
+#: utils/csv.py:26
+msgid "fix 1 address"
+msgstr ""
+
+#: utils/csv.py:28
+msgid "fix {} addresses"
+msgstr ""
+
+#: utils/csv.py:33
+msgid "enter missing data in 1 row"
+msgstr ""
+
+#: utils/csv.py:35
+msgid "enter missing data in {} rows"
+msgstr ""
+
+#: utils/csv.py:40
+msgid "shorten the message in 1 row"
+msgstr ""
+
+#: utils/csv.py:42
+msgid "shorten the messages in {} rows"
+msgstr ""
+
+#: utils/csv.py:47
+msgid "check you have content for the empty message in 1 row"
+msgstr ""
+
+#: utils/csv.py:50
+msgid "check you have content for the empty messages in {} rows"
+msgstr ""
+
+#: utils/csv.py:71
+msgid "Row number"
+msgstr ""
+
+#: utils/csv.py:71 utils/csv.py:78
+msgid "Type"
+msgstr ""
+
+#: utils/csv.py:71 utils/csv.py:81
+msgid "Job"
+msgstr ""
+
+#: utils/csv.py:71 utils/csv.py:83
+msgid "Time"
+msgstr ""
+
+#: utils/csv.py:80
+msgid "Sent by email"
+msgstr ""
+
+#: utils/csv.py:127
+msgid "Should never reach here"
+msgstr ""
+
+#: utils/letters.py:32
+msgid "Printing starts"
+msgstr ""
+
+#: utils/letters.py:32
+msgid "Printing"
+msgstr ""
+
+#: utils/letters.py:33 utils/letters.py:44
+#, python-format
+msgid "%%s %%s at 5:30pm"
+msgstr ""
+
+#: utils/letters.py:37
+msgid "Printed today at 5:30pm"
+msgstr ""
+
+#: utils/letters.py:39
+msgid "Printed yesterday at 5:30pm"
+msgstr ""
+
+#: utils/letters.py:42
+msgid "Printed on"
+msgstr ""
+
+#: utils/letters.py:49
+msgid "Your letter is not A4 portrait size"
+msgstr ""
+
+#: utils/letters.py:51
+msgid ""
+"You need to change the size or orientation of {invalid_pages}. <br>Files "
+"must meet our <a class=\"govuk-link govuk-link--destructive\" "
+"href=\"{letter_spec_guidance}\" target=\"_blank\">letter "
+"specification</a>."
+msgstr ""
+
+#: utils/letters.py:60
+msgid ""
+"Validation failed because {invalid_pages} {invalid_pages_are_or_is} not "
+"A4 portrait size.<br>Files must meet our <a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"{letter_spec_guidance}\">letter "
+"specification</a>."
+msgstr ""
+
+#: utils/letters.py:72
+msgid ""
+"You need to edit {invalid_pages}.<br>Files must meet our <a class"
+"=\"govuk-link govuk-link--destructive\" "
+"href=\"{letter_spec_guidance}\">letter specification</a>."
+msgstr ""
+
+#: utils/letters.py:81
+msgid ""
+"Validation failed because content is outside the printable area on "
+"{invalid_pages}.<br>Files must meet our <a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"{letter_spec_guidance}\" "
+"target=\"_blank\">letter specification</a>."
+msgstr ""
+
+#: utils/letters.py:93
+msgid ""
+"Letters must be 10 pages or less (5 double-sided sheets of paper). "
+"<br>Your letter is {page_count} pages long."
+msgstr ""
+
+#: utils/letters.py:99
+msgid ""
+"Validation failed because this letter is {page_count} pages "
+"long.<br>Letters must be 10 pages or less (5 double-sided sheets of "
+"paper)."
+msgstr ""
+
+#: utils/letters.py:105
+msgid "Sanitise failed - No encoded string"
+msgstr ""
+
+#: utils/letters.py:108
+msgid ""
+"Notify cannot read this PDF. <br>Save a new copy of your file and try "
+"again."
+msgstr ""
+
+#: utils/letters.py:109
+msgid ""
+"Validation failed because Notify cannot read this PDF.<br> Save a new "
+"copy of your file and try again."
+msgstr ""
+
+#: utils/letters.py:116
+msgid ""
+"You need to add a recipient address.<br>Files must meet our <a class"
+"=\"govuk-link govuk-link--destructive\" href=\"{letter_spec_guidance}\" "
+"target=\"_blank\">letter specification</a>."
+msgstr ""
+
+#: utils/letters.py:125
+msgid ""
+"Validation failed because the address block is empty.<br>Files must meet "
+"our <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"{letter_spec_guidance}\" target=\"_blank\">letter "
+"specification</a>."
+msgstr ""
+
+#: utils/letters.py:135 utils/letters.py:140 utils/letters.py:145
+#: utils/letters.py:150 utils/letters.py:157 utils/letters.py:164
+msgid "There’s a problem with the address for this letter"
+msgstr ""
+
+#: utils/letters.py:136
+msgid "The last line of the address must be a real UK postcode."
+msgstr ""
+
+#: utils/letters.py:137
+msgid ""
+"Validation failed because the last line of the address is not a real UK "
+"postcode."
+msgstr ""
+
+#: utils/letters.py:141
+msgid "You do not have permission to send letters to other countries."
+msgstr ""
+
+#: utils/letters.py:142
+msgid ""
+"Validation failed because your service cannot send letters to other "
+"countries."
+msgstr ""
+
+#: utils/letters.py:146
+msgid "The last line of the address must be a UK postcode or another country."
+msgstr ""
+
+#: utils/letters.py:147
+msgid ""
+"Validation failed because the last line of the address is not a UK "
+"postcode or another country."
+msgstr ""
+
+#: utils/letters.py:151
+#, python-format
+msgid "The address must be at least %%s lines long."
+msgstr ""
+
+#: utils/letters.py:153
+#, python-format
+msgid "Validation failed because the address must be at least %%s lines long."
+msgstr ""
+
+#: utils/letters.py:158
+msgid "The address must be no more than lines long."
+msgstr ""
+
+#: utils/letters.py:160
+#, python-format
+msgid "Validation failed because the address must be no more than %%s lines long."
+msgstr ""
+
+#: utils/letters.py:167
+msgid ""
+"Validation failed because address lines must not start with any of the "
+"following characters: @ ( ) = [ ] ” \\ / , < > ~"
+msgstr ""
+
+#: utils/letters.py:174
+msgid "There’s a problem with your letter"
+msgstr ""
+
+#: utils/letters.py:176
+msgid ""
+"Your file includes a letter you’ve downloaded from Notify.<br> You need "
+"to edit {invalid_pages}."
+msgstr ""
+
+#: utils/letters.py:179
+msgid ""
+"Validation failed because your file includes a letter you’ve downloaded "
+"from Notify on {invalid_pages}."
+msgstr ""
+
+#: utils/letters.py:191
+msgid "is"
+msgstr ""
+
+#: utils/letters.py:191
+msgid "are"
+msgstr ""
+
+#: utils/pagination.py:16
+msgid "Previous page"
+msgstr ""
+
+#: utils/pagination.py:20
+msgid "Next page"
+msgstr ""
+
+#: utils/pagination.py:27
+msgid "page {}"
+msgstr ""
+
 #: utils/templates.py:37
 msgid "{}@notifications.service.gov.uk"
+msgstr ""
+
+#: utils/user_permissions.py:19
+msgid "See dashboard"
+msgstr ""
+
+#: utils/user_permissions.py:21 utils/user_permissions.py:27
+msgid "Add and edit templates"
+msgstr ""
+
+#: utils/user_permissions.py:22
+msgid "Manage settings, team and usage"
+msgstr ""
+
+#: utils/user_permissions.py:23
+msgid "Manage API integration"
+msgstr ""
+
+#: utils/user_permissions.py:28
+msgid "Create new alerts"
+msgstr ""
+
+#: utils/user_permissions.py:29
+msgid "Approve alerts"
 msgstr ""
 
 #~ msgid ""
@@ -19112,4 +19807,82 @@ msgstr ""
 #~ msgid ""
 #~ "This is usually the full name of"
 #~ " your organisation.<br/><br/>For example, %%s"
+#~ msgstr ""
+
+#~ msgid "Test areas"
+#~ msgstr ""
+
+#~ msgid "test area"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need to change the size or "
+#~ "orientation of %%s. <br>Files must meet"
+#~ " our <a class=\"govuk-link govuk-link"
+#~ "--destructive\" href=\"%%s\" target=\"_blank\">letter"
+#~ " specification</a>."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Validation failed because %%s %%s not"
+#~ " A4 portrait size.<br>Files must meet "
+#~ "our <a class=\"govuk-link govuk-link"
+#~ "--no-visited-state\" href=\"%%s\">letter "
+#~ "specification</a>."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need to edit %%s.<br>Files must "
+#~ "meet our <a class=\"govuk-link govuk-"
+#~ "link--destructive\" href=\"%%s\">letter "
+#~ "specification</a>."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Validation failed because content is "
+#~ "outside the printable area on "
+#~ "%%s.<br>Files must meet our <a class"
+#~ "=\"govuk-link govuk-link--no-visited-"
+#~ "state\" href=\"%%s\" target=\"_blank\">letter "
+#~ "specification</a>."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Letters must be 10 pages or less"
+#~ " (5 double-sided sheets of paper)."
+#~ " <br>Your letter is %%s pages long."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Validation failed because this letter is"
+#~ " %%s pages long.<br>Letters must be "
+#~ "10 pages or less (5 double-sided"
+#~ " sheets of paper)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You need to add a recipient "
+#~ "address.<br>Files must meet our <a class"
+#~ "=\"govuk-link govuk-link--destructive\" "
+#~ "href=\"%%s\" target=\"_blank\">letter specification</a>."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Validation failed because the address "
+#~ "block is empty.<br>Files must meet our"
+#~ " <a class=\"govuk-link govuk-link--no-"
+#~ "visited-state\" href=\"%%s\" "
+#~ "target=\"_blank\">letter specification</a>."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Your file includes a letter you’ve "
+#~ "downloaded from Notify.<br> You need to"
+#~ " edit %%s."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Validation failed because your file "
+#~ "includes a letter you’ve downloaded from"
+#~ " Notify on %%s."
 #~ msgstr ""

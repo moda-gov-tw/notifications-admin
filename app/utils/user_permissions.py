@@ -1,5 +1,7 @@
 from itertools import chain
 
+from flask_babel import _
+
 permission_mappings = {
     "send_messages": ["send_texts", "send_emails", "send_letters"],
     "manage_templates": ["manage_templates"],
@@ -14,17 +16,17 @@ all_ui_permissions = set(permission_mappings.keys())
 all_db_permissions = set(chain(*permission_mappings.values()))
 
 permission_options = (
-    ("view_activity", "See dashboard"),
-    ("send_messages", "Send messages"),
-    ("manage_templates", "Add and edit templates"),
-    ("manage_service", "Manage settings, team and usage"),
-    ("manage_api_keys", "Manage API integration"),
+    ("view_activity", _("See dashboard")),
+    ("send_messages", _("Send messages")),
+    ("manage_templates", _("Add and edit templates")),
+    ("manage_service", _("Manage settings, team and usage")),
+    ("manage_api_keys", _("Manage API integration")),
 )
 
 broadcast_permission_options = (
-    ("manage_templates", "Add and edit templates"),
-    ("create_broadcasts", "Create new alerts"),
-    ("approve_broadcasts", "Approve alerts"),
+    ("manage_templates", _("Add and edit templates")),
+    ("create_broadcasts", _("Create new alerts")),
+    ("approve_broadcasts", _("Approve alerts")),
 )
 
 

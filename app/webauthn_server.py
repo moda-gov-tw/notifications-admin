@@ -2,6 +2,7 @@ from urllib.parse import urlparse
 
 from fido2.server import Fido2Server
 from fido2.webauthn import PublicKeyCredentialRpEntity
+from flask_babel import _
 
 
 def init_app(app):
@@ -14,7 +15,7 @@ def init_app(app):
 
     relying_party = PublicKeyCredentialRpEntity(
         id=base_url.hostname,
-        name="GOV.UK Notify",
+        name=_("GOV.UK Notify"),
     )
 
     app.webauthn_server = Fido2Server(

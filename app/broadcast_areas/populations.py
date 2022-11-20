@@ -1,5 +1,7 @@
 import math
 
+from flask_babel import _
+
 SMARTPHONE_OWNERSHIP_BY_AGE_RANGE = {
     # If no children have a phone when they’re born but 100% of
     # children have a phone by age 16 then 50% is a rough
@@ -121,6 +123,8 @@ def estimate_number_of_smartphones_for_population(population):
     total_population = sum(dict(population).values())
     total_phones = sum(smartphone_ownership_for_area_by_age_range.values())
 
-    print(f"    Population:{total_population: 11,.0f}" f"    Phones:{total_phones: 11,.0f}")  # noqa: T201
+    print(
+        _("    Population:%%s    Phones:%%s") % (f"{total_population: 11,.0f}", f"{total_phones: 11,.0f}")
+    )  # noqa: T201
 
     return total_phones

@@ -4,6 +4,7 @@ from os import path
 
 import pyexcel
 import pyexcel_xlsx
+from flask_babel import _
 
 
 class Spreadsheet:
@@ -15,7 +16,7 @@ class Spreadsheet:
         self.filename = filename
 
         if csv_data and rows:
-            raise TypeError("Spreadsheet must be created from either rows or CSV data")
+            raise TypeError(_("Spreadsheet must be created from either rows or CSV data"))
 
         self._csv_data = csv_data or ""
         self._rows = rows or []

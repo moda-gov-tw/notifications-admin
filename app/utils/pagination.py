@@ -1,4 +1,5 @@
 from flask import request, url_for
+from flask_babel import _
 
 
 def get_page_from_request():
@@ -12,16 +13,16 @@ def get_page_from_request():
 
 
 def generate_previous_dict(view, service_id, page, url_args=None):
-    return generate_previous_next_dict(view, service_id, page - 1, "Previous page", url_args or {})
+    return generate_previous_next_dict(view, service_id, page - 1, _("Previous page"), url_args or {})
 
 
 def generate_next_dict(view, service_id, page, url_args=None):
-    return generate_previous_next_dict(view, service_id, page + 1, "Next page", url_args or {})
+    return generate_previous_next_dict(view, service_id, page + 1, _("Next page"), url_args or {})
 
 
 def generate_previous_next_dict(view, service_id, page, title, url_args):
     return {
         "url": url_for(view, service_id=service_id, page=page, **url_args),
         "title": title,
-        "label": "page {}".format(page),
+        "label": _("page {}").format(page),
     }

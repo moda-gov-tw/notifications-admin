@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+from flask_babel import _
 from notifications_utils.formatters import formatted_list
 
 from app.formatters import format_thousands
@@ -37,7 +38,7 @@ class ServiceCreationEvent(Event):
     relevant = True
 
     def __str__(self):
-        return "Created this service and called it ‘{}’".format(self.item["name"])
+        return _("Created this service and called it ‘{}’").format(self.item["name"])
 
 
 class ServiceEvent(Event):
@@ -54,73 +55,73 @@ class ServiceEvent(Event):
 
     def format_restricted(self):
         if self.value_to is False:
-            return "Made this service live"
+            return _("Made this service live")
         if self.value_to is True:
-            return "Put this service back into trial mode"
+            return _("Put this service back into trial mode")
 
     def format_active(self):
         if self.value_to is False:
-            return "Deleted this service"
+            return _("Deleted this service")
         if self.value_to is True:
-            return "Unsuspended this service"
+            return _("Unsuspended this service")
 
     def format_contact_link(self):
-        return "Set the contact details for this service to ‘{}’".format(self.value_to)
+        return _("Set the contact details for this service to ‘{}’").format(self.value_to)
 
     def format_email_branding(self):
-        return "Updated this service’s email branding"
+        return _("Updated this service’s email branding")
 
     def format_inbound_api(self):
-        return "Updated the callback for received text messages"
+        return _("Updated the callback for received text messages")
 
     def format_letter_branding(self):
         if self.value_to is None:
-            return "Removed the logo from this service’s letters"
-        return "Updated the logo on this service’s letters"
+            return _("Removed the logo from this service’s letters")
+        return _("Updated the logo on this service’s letters")
 
     def format_letter_contact_block(self):
-        return "Updated the default letter contact block for this service"
+        return _("Updated the default letter contact block for this service")
 
     def format_message_limit(self):
-        return ("{} this service’s daily message limit from {} to {}").format(
-            "Reduced" if self.value_from > self.value_to else "Increased",
+        return (_("{} this service’s daily message limit from {} to {}")).format(
+            _("Reduced") if self.value_from > self.value_to else _("Increased"),
             format_thousands(self.value_from),
             format_thousands(self.value_to),
         )
 
     def format_name(self):
-        return ("Renamed this service from ‘{}’ to ‘{}’").format(self.value_from, self.value_to)
+        return (_("Renamed this service from ‘{}’ to ‘{}’")).format(self.value_from, self.value_to)
 
     def format_permissions(self):
         added = list(sorted(set(self.value_to) - set(self.value_from)))
         removed = list(sorted(set(self.value_from) - set(self.value_to)))
         if removed and added:
-            return "Removed {} from this service’s permissions, added {}".format(
+            return _("Removed {} from this service’s permissions, added {}").format(
                 formatted_list(removed),
                 formatted_list(added),
             )
         if added:
-            return "Added {} to this service’s permissions".format(formatted_list(added))
+            return _("Added {} to this service’s permissions").format(formatted_list(added))
         if removed:
-            return "Removed {} from this service’s permissions".format(formatted_list(removed))
+            return _("Removed {} from this service’s permissions").format(formatted_list(removed))
 
     def format_prefix_sms(self):
         if self.value_to is True:
-            return "Set text messages to start with the name of this service"
+            return _("Set text messages to start with the name of this service")
         else:
-            return "Set text messages to not start with the name of this service"
+            return _("Set text messages to not start with the name of this service")
 
     def format_research_mode(self):
         if self.value_to is True:
-            return "Put this service into research mode"
+            return _("Put this service into research mode")
         else:
-            return "Took this service out of research mode"
+            return _("Took this service out of research mode")
 
     def format_service_callback_api(self):
-        return "Updated the callback for delivery receipts"
+        return _("Updated the callback for delivery receipts")
 
     def format_go_live_user(self):
-        return "Requested for this service to go live"
+        return _("Requested for this service to go live")
 
 
 class APIKeyEvent(Event):
@@ -129,9 +130,9 @@ class APIKeyEvent(Event):
 
     def __str__(self):
         if self.item["updated_at"]:
-            return ("Revoked the ‘{}’ API key").format(self.item["name"])
+            return (_("Revoked the ‘{}’ API key")).format(self.item["name"])
         else:
-            return ("Created an API key called ‘{}’").format(self.item["name"])
+            return (_("Created an API key called ‘{}’")).format(self.item["name"])
 
 
 class APIKeyEvents(ModelList):

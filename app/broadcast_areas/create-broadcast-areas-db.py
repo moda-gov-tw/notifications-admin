@@ -7,6 +7,7 @@ from math import isclose
 from pathlib import Path
 
 import geojson
+from flask_babel import _
 from notifications_utils.formatters import formatted_list
 from notifications_utils.polygons import Polygons
 from populations import (
@@ -41,7 +42,7 @@ def simplify_geometry(feature):
     elif feature["type"] == "MultiPolygon":
         return [polygon for polygon, *_holes in feature["coordinates"]]
     else:
-        raise Exception("Unknown type: {}".format(feature["type"]))
+        raise Exception(_("Unknown type: {}").format(feature["type"]))
 
 
 def clean_up_invalid_polygons(polygons, indent="    "):
@@ -64,7 +65,7 @@ def clean_up_invalid_polygons(polygons, indent="    "):
         ).simplify(0)
 
         if simplified_polygon.is_valid:
-            print(f"{indent}Polygon {index + 1}/{len(polygons)} is valid")  # noqa: T201
+            print(_("%% Polygon %%s/%%s is valid") % (indent, index + 1, len(polygons)))  # noqa: T201
             yield simplified_polygon
 
         else:
@@ -74,10 +75,10 @@ def clean_up_invalid_polygons(polygons, indent="    "):
             # don’t have an area. They wouldn’t contribute to a broadcast
             # so we can ignore them.
             if simplified_polygon.area == 0:
-                print(f"{indent}Polygon {index + 1}/{len(polygons)} has 0 area, skipping")  # noqa: T201
+                print(_("%%s Polygon %%s/%%s has 0 area, skipping") % (indent, index + 1, len(polygons)))  # noqa: T201
                 continue
 
-            print(f"{indent}Polygon {index + 1}/{len(polygons)} needs fixing...")  # noqa: T201
+            print(_("%%s Polygon %%s/%%s needs fixing...") % (indent, index + 1, len(polygons)))  # noqa: T201
 
             # Buffering with a size of 0 is a trick to make valid
             # geometries from polygons that self intersect
@@ -101,7 +102,7 @@ def clean_up_invalid_polygons(polygons, indent="    "):
             assert fixed_polygon.is_valid
             assert isclose(fixed_polygon.area, shapely_polygon.area, rel_tol=0.001)
 
-            print(f"{indent}Polygon {index + 1}/{len(polygons)} fixed!")  # noqa: T201
+            print(_("%%s Polygon %%s/%%s fixed!") % (indent, index + 1, len(polygons)))  # noqa: T201
 
             yield fixed_polygon
 
@@ -122,21 +123,22 @@ def polygons_and_simplified_polygons(feature):
     simplified = smoothed.simplify
 
     if not (len(full_resolution) or len(simplified)):
-        raise RuntimeError("Polygon of 0 size found")
+        raise RuntimeError(_("Polygon of 0 size found"))
 
     print(  # noqa: T201
-        f"    Original:{full_resolution.point_count: >5} points"
-        f"    Smoothed:{smoothed.point_count: >5} points"
-        f"    Simplified:{simplified.point_count: >4} points"
+        _("    Original:%%s points" "    Smoothed:%%s points" "    Simplified:%%s points")
+        % (f"{full_resolution.point_count: >5}", f"{smoothed.point_count: >5}", f"{simplified.point_count: >4}")
     )
 
     point_counts.append(simplified.point_count)
 
     if simplified.point_count >= MAX_NUMBER_OF_POINTS_PER_POLYGON:
         raise RuntimeError(
-            "Too many points "
-            "(adjust Polygons.perimeter_to_simplification_ratio or "
-            "Polygons.perimeter_to_buffer_ratio)"
+            _(
+                "Too many points "
+                "(adjust Polygons.perimeter_to_simplification_ratio or "
+                "Polygons.perimeter_to_buffer_ratio)"
+            )
         )
 
     output = [
@@ -158,7 +160,7 @@ def estimate_number_of_smartphones_in_area(country_or_ward_code):
         # We don’t have population figures for wards of the City of
         # London. We’ll leave it empty here and estimate on the fly
         # later based on physical area.
-        print("    Population:   N/A")  # noqa: T201
+        print(_("    Population:   N/A"))  # noqa: T201
         return None
 
     # For some reason Bryher is the only ward missing population data, so we
@@ -168,7 +170,7 @@ def estimate_number_of_smartphones_in_area(country_or_ward_code):
         return BRYHER.POPULATION * SMARTPHONE_OWNERSHIP_BY_AGE_RANGE[MEDIAN_AGE_RANGE_UK]
 
     if country_or_ward_code not in area_to_population_mapping:
-        raise ValueError(f"No population data for {country_or_ward_code}")
+        raise ValueError(_("No population data for %%s") % country_or_ward_code)
 
     return estimate_number_of_smartphones_for_population(area_to_population_mapping[country_or_ward_code])
 
@@ -274,8 +276,8 @@ def add_countries():
     dataset_geojson = geojson.loads(ctry19_filepath.read_text())
     repo.insert_broadcast_area_library(
         "ctry19",
-        name="Countries",
-        name_singular="country",
+        name=_("Countries"),
+        name_singular=_("country"),
         is_group=False,
     )
 
@@ -309,8 +311,8 @@ def add_police_force_areas():
     dataset_geojson = geojson.loads(pfa20_filepath.read_text())
     repo.insert_broadcast_area_library(
         dataset_id,
-        name="Police forces in England and Wales",
-        name_singular="police force",
+        name=_("Police forces in England and Wales"),
+        name_singular=_("police force"),
         is_group=False,
     )
 
@@ -355,7 +357,7 @@ def add_police_force_areas():
     areas_to_add.append(
         [
             "pfa20-LONDON",
-            "London (Metropolitan & City of London)",
+            _("London (Metropolitan & City of London)"),
             dataset_id,
             None,
             feature,
@@ -369,7 +371,7 @@ def add_police_force_areas():
 
 
 def add_wards_local_authorities_and_counties():
-    dataset_name = "Local authorities"
+    dataset_name = _("Local authorities")
     dataset_name_singular = "local authority"
     dataset_id = "wd21-lad21-ctyua21"
     repo.insert_broadcast_area_library(
@@ -502,9 +504,12 @@ most_detailed_polygons = formatted_list(
 )
 
 print(  # noqa: T201
-    "\n"
-    "DONE\n"
-    f"    Processed {len(point_counts):,} polygons.\n"
-    f"    Cleaned up {len(invalid_polygons):,} polygons.\n"
-    f"    Highest point counts once simplifed: {most_detailed_polygons}\n"
+    _(
+        "\n"
+        "DONE\n"
+        "    Processed %%s polygons.\n"
+        "    Cleaned up %%s polygons.\n"
+        "    Highest point counts once simplifed: %%s\n"
+    )
+    % (f"{len(point_counts):,}", f"{len(invalid_polygons):,}", f"{most_detailed_polygons}")
 )

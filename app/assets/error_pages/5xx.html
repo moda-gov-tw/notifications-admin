@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>
-       Sorry, there is a problem with the service – GOV.UK Notify
+       {{_('Sorry, there is a problem with the service – GOV.UK Notify')}}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c" />
@@ -25,7 +25,7 @@
     <meta property="og:image" content="/static/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
-    <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    <a href="#main-content" class="govuk-skip-link">{{_('Skip to main content')}}</a>
     <header class="govuk-header " role="banner" data-module="header">
       <div class="govuk-header__container govuk-width-container">
 
@@ -50,12 +50,12 @@
                 <image src="/assets/images/govuk-logotype-crown.png" xlink:href="" class="govuk-header__logotype-crown-fallback-image" width="36" height="32"></image>
               </svg>
               <span class="govuk-header__logotype-text">
-                GOV.UK
+                {{_('GOV.UK')}}
               </span>
             </span>
 
             <span class="govuk-header__product-name">
-              Notify
+              {{_('Notify')}}
             </span>
 
           </a>
@@ -69,13 +69,13 @@
         <div class="govuk-grid-row">
           <div class="govuk-grid-column-full">
             <h1 class="govuk-heading-l govuk-!-padding-top-7">
-              Sorry, there is a problem with the service
+              {{_('Sorry, there is a problem with the service')}}
             </h1>
             <p class="govuk-body">
-              Try again later.
+              {{_('Try again later.')}}
             </p>
             <p class="govuk-body">
-              You can check our <a class="govuk-link govuk-link--no-visited-state" href="https://status.notifications.service.gov.uk/">system status</a> page to see if there are any known issues.<br/>To report a problem, email <a href="mailto:gov-uk-notify-support@digital.cabinet-office.gov.uk">gov-uk-notify-support@digital.cabinet-office.gov.uk</a>
+              {{_("You can check our <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://status.notifications.service.gov.uk/\">system status</a> page to see if there are any known issues.<br/>To report a problem, email <a href=\"mailto:gov-uk-notify-support@digital.cabinet-office.gov.uk\">gov-uk-notify-support@digital.cabinet-office.gov.uk</a>")}}
           </div>
         </div>
       </main>
@@ -86,9 +86,9 @@
         <div class="govuk-footer__meta">
           <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
 
-            <h2 class="govuk-visually-hidden">Support links</h2>
+            <h2 class="govuk-visually-hidden">{{_('Support links')}}</h2>
             <div class="govuk-footer__meta-custom">
-              Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service" class="govuk-footer__link">Government Digital Service</a>
+              {{_("Built by the <a href=\"https://www.gov.uk/government/organisations/government-digital-service\" class=\"govuk-footer__link\">Government Digital Service</a>")}}
             </div>
 
             <svg
@@ -106,19 +106,19 @@
               />
             </svg>
             <span class="govuk-footer__licence-description">
-              All content is available under the
+              _("""All content is available under the
               <a
                 class="govuk-footer__link"
                 href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
                 rel="license"
-              >Open Government Licence v3.0</a>, except where otherwise stated
+              >Open Government Licence v3.0</a>, except where otherwise stated""")
             </span>
           </div>
           <div class="govuk-footer__meta-item">
             <a
               class="govuk-footer__link govuk-footer__copyright-logo"
               href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
-            >© Crown copyright</a>
+            >{{_('© Crown copyright')}}</a>
           </div>
         </div>
       </div>

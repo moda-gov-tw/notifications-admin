@@ -1,6 +1,7 @@
 from datetime import timedelta
 
 import pytz
+from flask_babel import _
 from notifications_utils.letter_timings import (
     CANCELLABLE_JOB_LETTER_STATUSES,
     get_letter_timings,
@@ -149,7 +150,7 @@ class Job(JSONModel):
             return False
 
         if not letter_can_be_cancelled(
-            "created", utc_string_to_aware_gmt_datetime(self.created_at).replace(tzinfo=None)
+            _("created"), utc_string_to_aware_gmt_datetime(self.created_at).replace(tzinfo=None)
         ):
             return False
 
@@ -160,7 +161,7 @@ class Job(JSONModel):
         if self.upload_type != "letter_day":
             raise TypeError()
         return get_letter_printing_statement(
-            "created",
+            _("created"),
             # We have to make the time just before 5:30pm because a
             # letter uploaded at 5:30pm will be printed the next day
             (utc_string_to_aware_gmt_datetime(self.created_at) - timedelta(minutes=1)).astimezone(pytz.utc).isoformat(),

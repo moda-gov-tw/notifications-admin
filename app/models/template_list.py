@@ -1,3 +1,4 @@
+from flask_babel import _
 from werkzeug.utils import cached_property
 
 from app import format_notification_type
@@ -329,17 +330,17 @@ class TemplateListFolder(TemplateListItem):
     def _hint_parts(self):
 
         if self.number_of_folders == self.number_of_templates == 0:
-            yield "Empty"
+            yield _("Empty")
 
         if self.number_of_templates == 1:
-            yield "1 template"
+            yield _("1 template")
         elif self.number_of_templates > 1:
-            yield "{} templates".format(self.number_of_templates)
+            yield _("{} templates").format(self.number_of_templates)
 
         if self.number_of_folders == 1:
-            yield "1 folder"
+            yield _("1 folder")
         elif self.number_of_folders > 1:
-            yield "{} folders".format(self.number_of_folders)
+            yield _("{} folders").format(self.number_of_folders)
 
     @property
     def hint(self):

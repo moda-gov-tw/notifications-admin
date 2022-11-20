@@ -10,6 +10,7 @@ import ago
 import dateutil
 import humanize
 from flask import Markup, url_for
+from flask_babel import _
 from notifications_utils.field import Field
 from notifications_utils.formatters import make_quotes_smart
 from notifications_utils.formatters import nl2br as utils_nl2br
@@ -73,11 +74,11 @@ def get_human_day(time, date_prefix=""):
     now = datetime.utcnow()
 
     if date == (now + timedelta(days=1)).date():
-        return "tomorrow"
+        return _("tomorrow")
     if date == now.date():
-        return "today"
+        return _("today")
     if date == (now - timedelta(days=1)).date():
-        return "yesterday"
+        return _("yesterday")
     if date.strftime("%Y") != now.strftime("%Y"):
         return "{} {} {}".format(
             date_prefix,
@@ -92,7 +93,7 @@ def get_human_day(time, date_prefix=""):
 
 def format_time(date):
     return (
-        {"12:00AM": "Midnight", "12:00PM": "Midday"}
+        {"12:00AM": _("Midnight"), "12:00PM": _("Midday")}
         .get(
             utc_string_to_aware_gmt_datetime(date).strftime("%-I:%M%p"),
             utc_string_to_aware_gmt_datetime(date).strftime("%-I:%M%p"),
@@ -143,9 +144,9 @@ def naturaltime_without_indefinite_article(date):
 def format_delta(date):
     delta = (datetime.now(timezone.utc)) - (utc_string_to_aware_gmt_datetime(date))
     if delta < timedelta(seconds=30):
-        return "just now"
+        return _("just now")
     if delta < timedelta(seconds=60):
-        return "in the last minute"
+        return _("in the last minute")
     return naturaltime_without_indefinite_article(delta)
 
 
@@ -153,9 +154,9 @@ def format_delta_days(date):
     now = datetime.now(timezone.utc)
     date = utc_string_to_aware_gmt_datetime(date)
     if date.strftime("%Y-%m-%d") == now.strftime("%Y-%m-%d"):
-        return "today"
+        return _("today")
     if date.strftime("%Y-%m-%d") == (now - timedelta(days=1)).strftime("%Y-%m-%d"):
-        return "yesterday"
+        return _("yesterday")
     return naturaltime_without_indefinite_article(now - date)
 
 
@@ -168,37 +169,37 @@ def valid_phone_number(phone_number):
 
 
 def format_notification_type(notification_type):
-    return {"email": "Email", "sms": "Text message", "letter": "Letter"}[notification_type]
+    return {"email": _("Email"), "sms": _("Text message"), "letter": _("Letter")}[notification_type]
 
 
 def format_notification_status(status, template_type):
     return {
         "email": {
-            "failed": "Failed",
-            "technical-failure": "Technical failure",
-            "temporary-failure": "Inbox not accepting messages right now",
-            "permanent-failure": "Email address does not exist",
-            "delivered": "Delivered",
-            "sending": "Sending",
-            "created": "Sending",
-            "sent": "Delivered",
+            "failed": _("Failed"),
+            "technical-failure": _("Technical failure"),
+            "temporary-failure": _("Inbox not accepting messages right now"),
+            "permanent-failure": _("Email address does not exist"),
+            "delivered": _("Delivered"),
+            "sending": _("Sending"),
+            "created": _("Sending"),
+            "sent": _("Delivered"),
         },
         "sms": {
-            "failed": "Failed",
-            "technical-failure": "Technical failure",
-            "temporary-failure": "Phone not accepting messages right now",
-            "permanent-failure": "Not delivered",
-            "delivered": "Delivered",
-            "sending": "Sending",
-            "created": "Sending",
-            "pending": "Sending",
-            "sent": "Sent to an international number",
+            "failed": _("Failed"),
+            "technical-failure": _("Technical failure"),
+            "temporary-failure": _("Phone not accepting messages right now"),
+            "permanent-failure": _("Not delivered"),
+            "delivered": _("Delivered"),
+            "sending": _("Sending"),
+            "created": _("Sending"),
+            "pending": _("Sending"),
+            "sent": _("Sent to an international number"),
         },
         "letter": {
             "failed": "",
-            "technical-failure": "Technical failure",
+            "technical-failure": _("Technical failure"),
             "temporary-failure": "",
-            "permanent-failure": "Permanent failure",
+            "permanent-failure": _("Permanent failure"),
             "delivered": "",
             "received": "",
             "accepted": "",
@@ -206,16 +207,16 @@ def format_notification_status(status, template_type):
             "created": "",
             "sent": "",
             "pending-virus-check": "",
-            "virus-scan-failed": "Virus detected",
+            "virus-scan-failed": _("Virus detected"),
             "returned-letter": "",
             "cancelled": "",
-            "validation-failed": "Validation failed",
+            "validation-failed": _("Validation failed"),
         },
     }[template_type].get(status, status)
 
 
 def format_notification_status_as_time(status, created, updated):
-    return dict.fromkeys({"created", "pending", "sending"}, " since {}".format(created)).get(status, updated)
+    return dict.fromkeys({"created", "pending", "sending"}, _(" since {}").format(created)).get(status, updated)
 
 
 def format_notification_status_as_field_status(status, notification_type):
@@ -346,8 +347,8 @@ def get_time_left(created_at, service_data_retention_days=7):
             dateutil.parser.parse(created_at).replace(hour=0, minute=0, second=0)
             + timedelta(days=service_data_retention_days + 1)
         ),
-        future_tense="Data available for {}",
-        past_tense="Data no longer available",  # No-one should ever see this
+        future_tense=_("Data available for {}"),
+        past_tense=_("Data no longer available"),  # No-one should ever see this
         precision=1,
     )
 
@@ -395,33 +396,33 @@ def message_count_label(count, template_type, suffix="sent"):
 def message_count_noun(count, template_type):
     if template_type is None:
         if count == 1:
-            return "message"
+            return _("message")
         else:
-            return "messages"
+            return _("messages")
 
     if template_type == "sms":
         if count == 1:
-            return "text message"
+            return _("text message")
         else:
-            return "text messages"
+            return _("text messages")
 
     elif template_type == "email":
         if count == 1:
-            return "email"
+            return _("email")
         else:
-            return "emails"
+            return _("emails")
 
     elif template_type == "letter":
         if count == 1:
-            return "letter"
+            return _("letter")
         else:
-            return "letters"
+            return _("letters")
 
     elif template_type == "broadcast":
         if count == 1:
-            return "broadcast"
+            return _("broadcast")
         else:
-            return "broadcasts"
+            return _("broadcasts")
 
 
 def message_count(count, template_type):
@@ -432,27 +433,27 @@ def recipient_count_label(count, template_type):
 
     if template_type is None:
         if count == 1:
-            return "recipient"
+            return _("recipient")
         else:
-            return "recipients"
+            return _("recipients")
 
     if template_type == "sms":
         if count == 1:
-            return "phone number"
+            return _("phone number")
         else:
-            return "phone numbers"
+            return _("phone numbers")
 
     elif template_type == "email":
         if count == 1:
-            return "email address"
+            return _("email address")
         else:
-            return "email addresses"
+            return _("email addresses")
 
     elif template_type == "letter":
         if count == 1:
-            return "address"
+            return _("address")
         else:
-            return "addresses"
+            return _("addresses")
 
 
 def recipient_count(count, template_type):
@@ -461,17 +462,17 @@ def recipient_count(count, template_type):
 
 def iteration_count(count):
     if count == 1:
-        return "once"
+        return _("once")
     elif count == 2:
-        return "twice"
+        return _("twice")
     else:
-        return f"{count} times"
+        return _("%%s times") % count
 
 
 def character_count(count):
     if count == 1:
-        return "1 character"
-    return f"{format_thousands(count)} characters"
+        return _("1 character")
+    return _("%%s characters") % format_thousands(count)
 
 
 def format_mobile_network(network):
@@ -496,9 +497,9 @@ def square_metres_to_square_miles(area):
 
 def format_auth_type(auth_type, with_indefinite_article=False):
     indefinite_article, auth_type = {
-        "email_auth": ("an", "Email link"),
-        "sms_auth": ("a", "Text message code"),
-        "webauthn_auth": ("a", "Security key"),
+        "email_auth": ("an", _("Email link")),
+        "sms_auth": ("a", _("Text message code")),
+        "webauthn_auth": ("a", _("Security key")),
     }[auth_type]
 
     if with_indefinite_article:
