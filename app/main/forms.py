@@ -6,6 +6,7 @@ from numbers import Number
 
 import pytz
 from flask import Markup, render_template_string, request
+from flask_babel import lazy_gettext as _
 from flask_login import current_user
 from flask_wtf import FlaskForm as Form
 from flask_wtf.file import FileAllowed
@@ -148,7 +149,7 @@ def get_human_day(time, prefix_today_with="T"):
     if time == datetime.utcnow().strftime("%A"):
         return "{}oday".format(prefix_today_with)
     if time == (datetime.utcnow() + timedelta(days=1)).strftime("%A"):
-        return "Tomorrow"
+        return _("Tomorrow")
     return time
 
 
@@ -183,10 +184,10 @@ class RadioField(WTFormsRadioField):
     def pre_validate(self, form):
         super().pre_validate(form)
         if self.data not in dict(self.choices).keys():
-            raise ValidationError(f"Select {self.thing}")
+            raise ValidationError(_("Select %%s") % self.thing)
 
 
-def email_address(label="Email address", gov_user=True, required=True):
+def email_address(label=_("Email address"), gov_user=True, required=True):
 
     validators = [
         ValidEmail(),
@@ -196,7 +197,7 @@ def email_address(label="Email address", gov_user=True, required=True):
         validators.append(ValidGovEmail())
 
     if required:
-        validators.append(DataRequired(message="Cannot be empty"))
+        validators.append(DataRequired(message=_("Cannot be empty")))
 
     return GovukEmailField(label, validators)
 
@@ -240,21 +241,21 @@ class InternationalPhoneNumber(TelField):
             raise ValidationError(str(e))
 
 
-def uk_mobile_number(label="Mobile number"):
-    return UKMobileNumber(label, validators=[DataRequired(message="Cannot be empty")])
+def uk_mobile_number(label=_("Mobile number")):
+    return UKMobileNumber(label, validators=[DataRequired(message=_("Cannot be empty"))])
 
 
-def international_phone_number(label="Mobile number"):
-    return InternationalPhoneNumber(label, validators=[DataRequired(message="Cannot be empty")])
+def international_phone_number(label=_("Mobile number")):
+    return InternationalPhoneNumber(label, validators=[DataRequired(message=_("Cannot be empty"))])
 
 
-def password(label="Password"):
+def password(label=_("Password")):
     return GovukPasswordField(
         label,
         validators=[
-            DataRequired(message="Cannot be empty"),
-            Length(8, 255, message="Must be at least 8 characters"),
-            CommonlyUsedPassword(message="Choose a password that’s harder to guess"),
+            DataRequired(message=_("Cannot be empty")),
+            Length(8, 255, message=_("Must be at least 8 characters")),
+            CommonlyUsedPassword(message=_("Choose a password that’s harder to guess")),
         ],
     )
 
@@ -385,10 +386,10 @@ class GovukIntegerField(IntegerField):
 
 class SMSCode(GovukTextInputField):
     validators = [
-        DataRequired(message="Cannot be empty"),
-        Regexp(regex=r"^\d+$", message="Numbers only"),
-        Length(min=5, message="Not enough numbers"),
-        Length(max=5, message="Too many numbers"),
+        DataRequired(message=_("Cannot be empty")),
+        Regexp(regex=r"^\d+$", message=_("Numbers only")),
+        Length(min=5, message=_("Not enough numbers")),
+        Length(max=5, message=_("Too many numbers")),
     ]
 
     def __call__(self, **kwargs):
@@ -435,12 +436,12 @@ class ForgivingIntegerField(GovukTextInputField):
             error = None
             try:
                 if int(self.data) > self.POSTGRES_MAX_INT:
-                    error = "Number of {} must be {} or less".format(
+                    error = _("Number of {} must be {} or less").format(
                         self.things,
                         format_thousands(self.POSTGRES_MAX_INT),
                     )
             except ValueError:
-                error = "Enter the number of {} {}".format(
+                error = _("Enter the number of {} {}").format(
                     self.things,
                     self.format_error_suffix,
                 )
@@ -556,7 +557,7 @@ class HiddenFieldWithNoneOption(FieldWithNoneOption, HiddenField):
 
 
 class RadioFieldWithRequiredMessage(RadioField):
-    def __init__(self, *args, required_message="Not a valid choice", **kwargs):
+    def __init__(self, *args, required_message=_("Not a valid choice"), **kwargs):
         self.required_message = required_message
         super().__init__(*args, **kwargs)
 
@@ -604,13 +605,13 @@ class PostalAddressField(TextAreaField):
 
 class LoginForm(StripWhitespaceForm):
     email_address = GovukEmailField(
-        "Email address", validators=[Length(min=5, max=255), DataRequired(message="Cannot be empty"), ValidEmail()]
+        "Email address", validators=[Length(min=5, max=255), DataRequired(message=_("Cannot be empty")), ValidEmail()]
     )
-    password = GovukPasswordField("Password", validators=[DataRequired(message="Enter your password")])
+    password = GovukPasswordField(_("Password"), validators=[DataRequired(message=_("Enter your password"))])
 
 
 class RegisterUserForm(StripWhitespaceForm):
-    name = GovukTextInputField("Full name", validators=[DataRequired(message="Cannot be empty")])
+    name = GovukTextInputField(_("Full name"), validators=[DataRequired(message=_("Cannot be empty"))])
     email_address = email_address()
     mobile_number = international_phone_number()
     password = password()
@@ -627,14 +628,14 @@ class RegisterUserFromInviteForm(RegisterUserForm):
             name=guess_name_from_email_address(invited_user.email_address),
         )
 
-    mobile_number = InternationalPhoneNumber("Mobile number", validators=[])
+    mobile_number = InternationalPhoneNumber(_("Mobile number"), validators=[])
     service = HiddenField("service")
     email_address = HiddenField("email_address")
     auth_type = HiddenField("auth_type", validators=[DataRequired()])
 
     def validate_mobile_number(self, field):
         if self.auth_type.data == "sms_auth" and not field.data:
-            raise ValidationError("Cannot be empty")
+            raise ValidationError(_("Cannot be empty"))
 
 
 class RegisterUserFromOrgInviteForm(StripWhitespaceForm):
@@ -644,9 +645,11 @@ class RegisterUserFromOrgInviteForm(StripWhitespaceForm):
             email_address=invited_org_user.email_address,
         )
 
-    name = GovukTextInputField("Full name", validators=[DataRequired(message="Cannot be empty")])
+    name = GovukTextInputField(_("Full name"), validators=[DataRequired(message=_("Cannot be empty"))])
 
-    mobile_number = InternationalPhoneNumber("Mobile number", validators=[DataRequired(message="Cannot be empty")])
+    mobile_number = InternationalPhoneNumber(
+        _("Mobile number"), validators=[DataRequired(message=_("Cannot be empty"))]
+    )
     password = password()
     organisation = HiddenField("organisation")
     email_address = HiddenField("email_address")
@@ -954,7 +957,7 @@ class GovukRadiosFieldWithNoneOption(FieldWithNoneOption, GovukRadiosField):
 class GovukRadiosWithImagesField(GovukRadiosField):
     def __init__(self, label="", validators=None, param_extensions=None, image_data=None, **kwargs):
         if image_data is None:
-            raise RuntimeError("Must provide `image_data` to initialiser")
+            raise RuntimeError(_("Must provide `image_data` to initialiser"))
 
         super(GovukRadiosField, self).__init__(label, validators, **kwargs)
 
@@ -1017,15 +1020,17 @@ class BasePermissionsForm(StripWhitespaceForm):
                 (item["id"], item["name"]) for item in ([{"name": "Templates", "id": None}] + all_template_folders)
             ]
 
-    folder_permissions = GovukCollapsibleNestedCheckboxesField("Folders this team member can see", field_label="folder")
+    folder_permissions = GovukCollapsibleNestedCheckboxesField(
+        _("Folders this team member can see"), field_label="folder"
+    )
 
     login_authentication = GovukRadiosField(
         "Sign in using",
         choices=[
-            ("sms_auth", "Text message code"),
-            ("email_auth", "Email link"),
+            ("sms_auth", _("Text message code")),
+            ("email_auth", _("Email link")),
         ],
-        thing="how this team member should sign in",
+        thing=_("how this team member should sign in"),
         validators=[DataRequired()],
     )
 
@@ -1033,7 +1038,7 @@ class BasePermissionsForm(StripWhitespaceForm):
         "Permissions",
         filters=[filter_by_permissions],
         choices=[(value, label) for value, label in permission_options],
-        param_extensions={"hint": {"text": "All team members can see sent messages."}},
+        param_extensions={"hint": {"text": _("All team members can see sent messages.")}},
     )
 
     @property
@@ -1064,7 +1069,7 @@ class BroadcastPermissionsForm(BasePermissionsForm):
         "Permissions",
         choices=[(value, label) for value, label in broadcast_permission_options],
         filters=[filter_by_broadcast_permissions],
-        param_extensions={"hint": {"text": "Team members who can create or approve alerts can also reject them."}},
+        param_extensions={"hint": {"text": _("Team members who can create or approve alerts can also reject them.")}},
     )
 
     @property
@@ -1083,7 +1088,7 @@ class BaseInviteUserForm:
         if current_user.platform_admin:
             return
         if field.data.lower() == self.inviter_email_address.lower():
-            raise ValidationError("You cannot send an invitation to yourself")
+            raise ValidationError(_("You cannot send an invitation to yourself"))
 
 
 class InviteUserForm(BaseInviteUserForm, PermissionsForm):
@@ -1095,7 +1100,7 @@ class BroadcastInviteUserForm(BaseInviteUserForm, BroadcastPermissionsForm):
 
     def validate_email_address(self, field):
         if not distinct_email_addresses(field.data, self.inviter_email_address):
-            raise ValidationError("You cannot send an invitation to yourself")
+            raise ValidationError(_("You cannot send an invitation to yourself"))
 
 
 class InviteOrgUserForm(BaseInviteUserForm, StripWhitespaceForm):
@@ -1111,7 +1116,7 @@ class TwoFactorForm(StripWhitespaceForm):
         self.validate_code_func = validate_code_func
         super(TwoFactorForm, self).__init__(*args, **kwargs)
 
-    sms_code = SMSCode("Text message code")
+    sms_code = SMSCode(_("Text message code"))
 
     def validate(self):
 
@@ -1137,7 +1142,7 @@ class RenameServiceForm(StripWhitespaceForm):
         validators=[
             DataRequired(message="Cannot be empty"),
             MustContainAlphanumericCharacters(),
-            Length(max=255, message="Service name must be 255 characters or fewer"),
+            Length(max=255, message=_("Service name must be 255 characters or fewer")),
         ],
     )
 
@@ -1146,9 +1151,9 @@ class RenameOrganisationForm(StripWhitespaceForm):
     name = GovukTextInputField(
         "Organisation name",
         validators=[
-            DataRequired(message="Cannot be empty"),
+            DataRequired(message=_("Cannot be empty")),
             MustContainAlphanumericCharacters(),
-            Length(max=255, message="Organisation name must be 255 characters or fewer"),
+            Length(max=255, message=_("Organisation name must be 255 characters or fewer")),
         ],
     )
 
@@ -1156,7 +1161,7 @@ class RenameOrganisationForm(StripWhitespaceForm):
 class AddGPOrganisationForm(StripWhitespaceForm):
     def __init__(self, *args, service_name="unknown", **kwargs):
         super().__init__(*args, **kwargs)
-        self.same_as_service_name.label.text = "Is your GP practice called ‘{}’?".format(service_name)
+        self.same_as_service_name.label.text = _("Is your GP practice called ‘{}’?").format(service_name)
         self.service_name = service_name
 
     def get_organisation_name(self):
@@ -1165,15 +1170,15 @@ class AddGPOrganisationForm(StripWhitespaceForm):
         return self.name.data
 
     same_as_service_name = OnOffField(
-        "Is your GP practice called the same name as your service?",
+        _("Is your GP practice called the same name as your service?"),
         choices=(
-            (True, "Yes"),
-            (False, "No"),
+            (True, _("Yes")),
+            (False, _("No")),
         ),
     )
 
     name = GovukTextInputField(
-        "What’s your practice called?",
+        _("What’s your practice called?"),
     )
 
     def validate_name(self, field):
@@ -1190,41 +1195,41 @@ class AddNHSLocalOrganisationForm(StripWhitespaceForm):
         self.organisations.choices = organisation_choices
 
     organisations = GovukRadiosField(
-        "Which NHS Trust or Clinical Commissioning Group do you work for?",
-        thing="an NHS Trust or Clinical Commissioning Group",
+        _("Which NHS Trust or Clinical Commissioning Group do you work for?"),
+        thing=_("an NHS Trust or Clinical Commissioning Group"),
     )
 
 
 class OrganisationOrganisationTypeForm(StripWhitespaceForm):
-    organisation_type = OrganisationTypeField("What type of organisation is this?")
+    organisation_type = OrganisationTypeField(_("What type of organisation is this?"))
 
 
 class OrganisationCrownStatusForm(StripWhitespaceForm):
     crown_status = GovukRadiosField(
-        "Is this organisation a crown body?",
+        _("Is this organisation a crown body?"),
         choices=[
-            ("crown", "Yes"),
-            ("non-crown", "No"),
-            ("unknown", "Not sure"),
+            ("crown", _("Yes")),
+            ("non-crown", _("No")),
+            ("unknown", _("Not sure")),
         ],
-        thing="whether this organisation is a crown body",
+        thing=_("whether this organisation is a crown body"),
     )
 
 
 class OrganisationAgreementSignedForm(StripWhitespaceForm):
     agreement_signed = GovukRadiosField(
-        "Has this organisation signed the agreement?",
+        _("Has this organisation signed the agreement?"),
         choices=[
-            ("yes", "Yes"),
-            ("no", "No"),
-            ("unknown", "No (but we have some service-specific agreements in place)"),
+            ("yes", _("Yes")),
+            ("no", _("No")),
+            ("unknown", _("No (but we have some service-specific agreements in place)")),
         ],
         thing="whether this organisation has signed the agreement",
         param_extensions={
             "items": [
-                {"hint": {"html": "Users will be told their organisation has already signed the agreement"}},
-                {"hint": {"html": "Users will be prompted to sign the agreement before they can go live"}},
-                {"hint": {"html": "Users will not be prompted to sign the agreement"}},
+                {"hint": {"html": _("Users will be told their organisation has already signed the agreement")}},
+                {"hint": {"html": _("Users will be prompted to sign the agreement before they can go live")}},
+                {"hint": {"html": _("Users will not be prompted to sign the agreement")}},
             ]
         },
     )
@@ -1246,25 +1251,25 @@ class AdminOrganisationDomainsForm(StripWhitespaceForm):
         ),
         min_entries=20,
         max_entries=20,
-        label="Domain names",
+        label=_("Domain names"),
     )
 
 
 class CreateServiceForm(StripWhitespaceForm):
     name = GovukTextInputField(
-        "What’s your service called?",
+        _("What’s your service called?"),
         validators=[
-            DataRequired(message="Cannot be empty"),
+            DataRequired(message=_("Cannot be empty")),
             MustContainAlphanumericCharacters(),
-            Length(max=255, message="Service name must be 255 characters or fewer"),
+            Length(max=255, message=_("Service name must be 255 characters or fewer")),
         ],
     )
-    organisation_type = OrganisationTypeField("Who runs this service?")
+    organisation_type = OrganisationTypeField(_("Who runs this service?"))
 
 
 class CreateNhsServiceForm(CreateServiceForm):
     organisation_type = OrganisationTypeField(
-        "Who runs this service?",
+        _("Who runs this service?"),
         include_only={"nhs_central", "nhs_local", "nhs_gp"},
     )
 
@@ -1282,21 +1287,21 @@ class AdminNewOrganisationForm(
 
 class AdminServiceSMSAllowanceForm(StripWhitespaceForm):
     free_sms_allowance = GovukIntegerField(
-        "Numbers of text message fragments per year", validators=[InputRequired(message="Cannot be empty")]
+        _("Numbers of text message fragments per year"), validators=[InputRequired(message="Cannot be empty")]
     )
 
 
 class AdminServiceMessageLimitForm(StripWhitespaceForm):
     message_limit = GovukIntegerField(
-        "Number of messages the service is allowed to send each day",
-        validators=[DataRequired(message="Cannot be empty")],
+        _("Number of messages the service is allowed to send each day"),
+        validators=[DataRequired(message=_("Cannot be empty"))],
     )
 
 
 class AdminServiceRateLimitForm(StripWhitespaceForm):
     rate_limit = GovukIntegerField(
-        "Number of messages the service can send in a rolling 60 second window",
-        validators=[DataRequired(message="Cannot be empty")],
+        _("Number of messages the service can send in a rolling 60 second window"),
+        validators=[DataRequired(message=_("Cannot be empty"))],
     )
 
 
@@ -1305,19 +1310,19 @@ class ConfirmPasswordForm(StripWhitespaceForm):
         self.validate_password_func = validate_password_func
         super(ConfirmPasswordForm, self).__init__(*args, **kwargs)
 
-    password = GovukPasswordField("Enter password")
+    password = GovukPasswordField(_("Enter password"))
 
     def validate_password(self, field):
         if not self.validate_password_func(field.data):
-            raise ValidationError("Invalid password")
+            raise ValidationError(_("Invalid password"))
 
 
 class NewBroadcastForm(StripWhitespaceForm):
     content = GovukRadiosField(
         "New alert",
         choices=[
-            ("freeform", "Write your own message"),
-            ("template", "Use a template"),
+            ("freeform", _("Write your own message")),
+            ("template", _("Use a template")),
         ],
         param_extensions={"fieldset": {"legend": {"classes": "govuk-visually-hidden"}}},
     )
@@ -1334,44 +1339,45 @@ class ConfirmBroadcastForm(StripWhitespaceForm):
         self.confirm.label.text = self.generate_label(channel, max_phones)
 
         if service_is_live:
-            self.confirm.validators += (DataRequired("You need to confirm that you understand"),)
+            self.confirm.validators += (DataRequired(_("You need to confirm that you understand")),)
 
-    confirm = GovukCheckboxField("Confirm")
+    confirm = GovukCheckboxField(_("Confirm"))
 
     @staticmethod
     def generate_label(channel, max_phones):
         if channel in {"test", "operator"}:
-            return f"I understand this will alert anyone who has switched " f"on the {channel} channel"
+            return _("I understand this will alert anyone who has switched on the %%s channel") % channel
         if channel == "severe":
-            return f"I understand this will alert {ConfirmBroadcastForm.format_number_generic(max_phones)} " "of people"
-        if channel == "government":
-            return (
-                f"I understand this will alert {ConfirmBroadcastForm.format_number_generic(max_phones)} "
-                "of people, even if they’ve opted out"
+            return _("I understand this will alert %%s of people") % ConfirmBroadcastForm.format_number_generic(
+                max_phones
             )
+        if channel == "government":
+            return _(
+                "I understand this will alert %%s of people, even if they’ve opted out"
+            ) % ConfirmBroadcastForm.format_number_generic(max_phones)
 
     @staticmethod
     def format_number_generic(count):
         for threshold, message in (
-            (1_000_000, "millions"),
-            (100_000, "hundreds of thousands"),
-            (10_000, "tens of thousands"),
-            (1_000, "thousands"),
-            (100, "hundreds"),
-            (-math.inf, "an unknown number"),
+            (1_000_000, _("millions")),
+            (100_000, _("hundreds of thousands")),
+            (10_000, _("tens of thousands")),
+            (1_000, _("thousands")),
+            (100, _("hundreds")),
+            (-math.inf, _("an unknown number")),
         ):
             if count >= threshold:
                 return message
 
 
 class BaseTemplateForm(StripWhitespaceForm):
-    name = GovukTextInputField("Template name", validators=[DataRequired(message="Cannot be empty")])
+    name = GovukTextInputField(_("Template name"), validators=[DataRequired(message=_("Cannot be empty"))])
 
     template_content = TextAreaField(
-        "Message", validators=[DataRequired(message="Cannot be empty"), NoCommasInPlaceHolders()]
+        "Message", validators=[DataRequired(message=_("Cannot be empty")), NoCommasInPlaceHolders()]
     )
     process_type = GovukRadiosField(
-        "Use priority queue?",
+        _("Use priority queue?"),
         choices=[
             ("priority", "Yes"),
             ("normal", "No"),
@@ -1398,7 +1404,7 @@ class LetterAddressForm(StripWhitespaceForm):
         self.allow_international_letters = allow_international_letters
         super().__init__(*args, **kwargs)
 
-    address = PostalAddressField("Address", validators=[DataRequired(message="Cannot be empty")])
+    address = PostalAddressField(_("Address"), validators=[DataRequired(message=_("Cannot be empty"))])
 
     def validate_address(self, field):
 
@@ -1408,44 +1414,44 @@ class LetterAddressForm(StripWhitespaceForm):
         )
 
         if not address.has_enough_lines:
-            raise ValidationError(f"Address must be at least {PostalAddress.MIN_LINES} lines long")
+            raise ValidationError(_("Address must be at least %%s lines long") % PostalAddress.MIN_LINES)
 
         if address.has_too_many_lines:
-            raise ValidationError(f"Address must be no more than {PostalAddress.MAX_LINES} lines long")
+            raise ValidationError(_("Address must be no more than %%s lines long") % PostalAddress.MAX_LINES)
 
         if not address.has_valid_last_line:
             if self.allow_international_letters:
-                raise ValidationError("Last line of the address must be a UK postcode or another country")
+                raise ValidationError(_("Last line of the address must be a UK postcode or another country"))
             if address.international:
-                raise ValidationError("You do not have permission to send letters to other countries")
-            raise ValidationError("Last line of the address must be a real UK postcode")
+                raise ValidationError(_("You do not have permission to send letters to other countries"))
+            raise ValidationError(_("Last line of the address must be a real UK postcode"))
 
         if address.has_invalid_characters:
             raise ValidationError(
-                "Address lines must not start with any of the following characters: @ ( ) = [ ] ” \\ / , < > ~"
+                _("Address lines must not start with any of the following characters: @ ( ) = [ ] ” \\ / , < > ~")
             )
 
 
 class EmailTemplateForm(BaseTemplateForm):
-    subject = TextAreaField("Subject", validators=[DataRequired(message="Cannot be empty")])
+    subject = TextAreaField("Subject", validators=[DataRequired(message=_("Cannot be empty"))])
 
 
 class LetterTemplateForm(EmailTemplateForm):
-    subject = TextAreaField("Main heading", validators=[DataRequired(message="Cannot be empty")])
+    subject = TextAreaField("Main heading", validators=[DataRequired(message=_("Cannot be empty"))])
 
     template_content = TextAreaField(
-        "Body", validators=[DataRequired(message="Cannot be empty"), NoCommasInPlaceHolders()]
+        "Body", validators=[DataRequired(message=_("Cannot be empty")), NoCommasInPlaceHolders()]
     )
 
 
 class LetterTemplatePostageForm(StripWhitespaceForm):
     postage = GovukRadiosField(
-        "Choose the postage for this letter template",
+        _("Choose the postage for this letter template"),
         choices=[
-            ("first", "First class"),
-            ("second", "Second class"),
+            ("first", _("First class")),
+            ("second", _("Second class")),
         ],
-        thing="first class or second class",
+        thing=_("first class or second class"),
         validators=[DataRequired()],
     )
 
@@ -1463,10 +1469,10 @@ class LetterUploadPostageForm(StripWhitespaceForm):
         return len(self.postage.choices) > 1
 
     postage = GovukRadiosField(
-        "Choose the postage for this letter",
+        _("Choose the postage for this letter"),
         choices=[
-            ("first", "First class post"),
-            ("second", "Second class post"),
+            ("first", _("First class post")),
+            ("second", _("Second class post")),
         ],
         default="second",
         validators=[DataRequired()],
@@ -1486,27 +1492,27 @@ class ChangePasswordForm(StripWhitespaceForm):
         self.validate_password_func = validate_password_func
         super(ChangePasswordForm, self).__init__(*args, **kwargs)
 
-    old_password = password("Current password")
-    new_password = password("New password")
+    old_password = password(_("Current password"))
+    new_password = password(_("New password"))
 
     def validate_old_password(self, field):
         if not self.validate_password_func(field.data):
-            raise ValidationError("Invalid password")
+            raise ValidationError(_("Invalid password"))
 
 
 class CsvUploadForm(StripWhitespaceForm):
     file = FileField(
-        "Add recipients",
+        _("Add recipients"),
         validators=[
-            DataRequired(message="Please pick a file"),
+            DataRequired(message=_("Please pick a file")),
             CsvFileValidator(),
-            FileSize(max_size=10e6, message="File must be smaller than 10Mb"),  # 10Mb
+            FileSize(max_size=10e6, message=_("File must be smaller than 10Mb")),  # 10Mb
         ],
     )
 
 
 class ChangeNameForm(StripWhitespaceForm):
-    new_name = GovukTextInputField("Your name")
+    new_name = GovukTextInputField(_("Your name"))
 
 
 class ChangeEmailForm(StripWhitespaceForm):
@@ -1525,7 +1531,7 @@ class ChangeEmailForm(StripWhitespaceForm):
 
         is_valid = self.validate_email_func(field.data)
         if is_valid:
-            raise ValidationError("The email address is already in use")
+            raise ValidationError(_("The email address is already in use"))
 
 
 class ChangeNonGovEmailForm(ChangeEmailForm):
@@ -1545,7 +1551,7 @@ class ChooseTimeForm(StripWhitespaceForm):
         self.scheduled_for.categories = get_next_days_until(get_furthest_possible_scheduled_time())
 
     scheduled_for = GovukRadiosField(
-        "When should Notify send these messages?",
+        _("When should Notify send these messages?"),
         default="",
     )
 
@@ -1556,80 +1562,80 @@ class CreateKeyForm(StripWhitespaceForm):
         super().__init__(*args, **kwargs)
 
     key_type = GovukRadiosField(
-        "Type of key",
-        thing="the type of key",
+        _("Type of key"),
+        thing=_("the type of key"),
     )
 
     key_name = GovukTextInputField(
-        "Name for this key", validators=[DataRequired(message="You need to give the key a name")]
+        "Name for this key", validators=[DataRequired(message=_("You need to give the key a name"))]
     )
 
     def validate_key_name(self, key_name):
         if key_name.data.lower() in self.existing_key_names:
-            raise ValidationError("A key with this name already exists")
+            raise ValidationError(_("A key with this name already exists"))
 
 
 class SupportType(StripWhitespaceForm):
     support_type = GovukRadiosField(
-        "How can we help you?",
+        _("How can we help you?"),
         choices=[
-            (PROBLEM_TICKET_TYPE, "Report a problem"),
-            (QUESTION_TICKET_TYPE, "Ask a question or give feedback"),
+            (PROBLEM_TICKET_TYPE, _("Report a problem")),
+            (QUESTION_TICKET_TYPE, _("Ask a question or give feedback")),
         ],
     )
 
 
 class SupportRedirect(StripWhitespaceForm):
     who = GovukRadiosField(
-        "What do you need help with?",
+        _("What do you need help with?"),
         choices=[
-            ("public-sector", "I work in the public sector and need to send emails, text messages or letters"),
-            ("public", "I’m a member of the public with a question for the government"),
+            ("public-sector", _("I work in the public sector and need to send emails, text messages or letters")),
+            ("public", _("I’m a member of the public with a question for the government")),
         ],
     )
 
 
 class FeedbackOrProblem(StripWhitespaceForm):
-    name = GovukTextInputField("Name (optional)")
-    email_address = email_address(label="Email address", gov_user=False, required=True)
-    feedback = TextAreaField("Your message", validators=[DataRequired(message="Cannot be empty")])
+    name = GovukTextInputField(_("Name (optional)"))
+    email_address = email_address(label=_("Email address"), gov_user=False, required=True)
+    feedback = TextAreaField(_("Your message"), validators=[DataRequired(message=_("Cannot be empty"))])
 
 
 class Triage(StripWhitespaceForm):
     severe = GovukRadiosField(
-        "Is it an emergency?",
+        _("Is it an emergency?"),
         choices=[
-            ("yes", "Yes"),
-            ("no", "No"),
+            ("yes", _("Yes")),
+            ("no", _("No")),
         ],
-        thing="yes or no",
+        thing=_("yes or no"),
     )
 
 
 class EstimateUsageForm(StripWhitespaceForm):
     volume_email = ForgivingIntegerField(
-        "How many emails do you expect to send in the next year?",
-        things="emails",
-        format_error_suffix="you expect to send",
+        _("How many emails do you expect to send in the next year?"),
+        things=_("emails"),
+        format_error_suffix=_("you expect to send"),
     )
     volume_sms = ForgivingIntegerField(
-        "How many text messages do you expect to send in the next year?",
-        things="text messages",
-        format_error_suffix="you expect to send",
+        _("How many text messages do you expect to send in the next year?"),
+        things=_("text messages"),
+        format_error_suffix=_("you expect to send"),
     )
     volume_letter = ForgivingIntegerField(
-        "How many letters do you expect to send in the next year?",
-        things="letters",
-        format_error_suffix="you expect to send",
+        _("How many letters do you expect to send in the next year?"),
+        things=_("letters"),
+        format_error_suffix=_("you expect to send"),
     )
     consent_to_research = GovukRadiosField(
-        "Can we contact you when we’re doing user research?",
+        _("Can we contact you when we’re doing user research?"),
         choices=[
-            ("yes", "Yes"),
-            ("no", "No"),
+            ("yes", _("Yes")),
+            ("no", _("No")),
         ],
-        thing="yes or no",
-        param_extensions={"hint": {"text": "You do not have to take part and you can unsubscribe at any time"}},
+        thing=_("yes or no"),
+        param_extensions={"hint": {"text": _("You do not have to take part and you can unsubscribe at any time")}},
     )
 
     at_least_one_volume_filled = True
@@ -1652,7 +1658,7 @@ class AdminProviderRatioForm(Form):
                 provider["identifier"],
                 GovukIntegerField(
                     f"{provider['display_name']} (%)",
-                    validators=[validators.NumberRange(min=0, max=100, message="Must be between 0 and 100")],
+                    validators=[validators.NumberRange(min=0, max=100, message=_("Must be between 0 and 100"))],
                     param_extensions={
                         "classes": "govuk-input--width-3",
                     },
@@ -1673,7 +1679,7 @@ class AdminProviderRatioForm(Form):
             return True
 
         for provider in self._providers:
-            getattr(self, provider["identifier"]).errors += ["Must add up to 100%"]
+            getattr(self, provider["identifier"]).errors += [_("Must add up to 100%")]
 
         return False
 
@@ -1682,21 +1688,21 @@ class ServiceContactDetailsForm(StripWhitespaceForm):
     contact_details_type = GovukRadiosField(
         "Type of contact details",
         choices=[
-            ("url", "Link"),
-            ("email_address", "Email address"),
-            ("phone_number", "Phone number"),
+            ("url", _("Link")),
+            ("email_address", _("Email address")),
+            ("phone_number", _("Phone number")),
         ],
     )
 
-    url = GovukTextInputField("URL")
-    email_address = GovukEmailField("Email address")
+    url = GovukTextInputField(_("URL"))
+    email_address = GovukEmailField(_("Email address"))
     # This is a text field because the number provided by the user can also be a short code
-    phone_number = GovukTextInputField("Phone number")
+    phone_number = GovukTextInputField(_("Phone number"))
 
     def validate(self):
 
         if self.contact_details_type.data == "url":
-            self.url.validators = [DataRequired(), URL(message="Must be a valid URL")]
+            self.url.validators = [DataRequired(), URL(message=_("Must be a valid URL"))]
 
         elif self.contact_details_type.data == "email_address":
             self.email_address.validators = [DataRequired(), Length(min=5, max=255), ValidEmail()]
@@ -1708,7 +1714,7 @@ class ServiceContactDetailsForm(StripWhitespaceForm):
                     normalise_phone_number(num.data)
                     return True
                 except InvalidPhoneError:
-                    raise ValidationError("Must be a valid phone number")
+                    raise ValidationError(_("Must be a valid phone number"))
 
             self.phone_number.validators = [DataRequired(), Length(min=5, max=20), valid_phone_number]
 
@@ -1717,25 +1723,25 @@ class ServiceContactDetailsForm(StripWhitespaceForm):
 
 class ServiceReplyToEmailForm(StripWhitespaceForm):
     email_address = email_address(label="Reply-to email address", gov_user=False)
-    is_default = GovukCheckboxField("Make this email address the default")
+    is_default = GovukCheckboxField(_("Make this email address the default"))
 
 
 class ServiceSmsSenderForm(StripWhitespaceForm):
     sms_sender = GovukTextInputField(
-        "Text message sender",
+        _("Text message sender"),
         validators=[
-            DataRequired(message="Cannot be empty"),
-            Length(max=11, message="Enter 11 characters or fewer"),
-            Length(min=3, message="Enter 3 characters or more"),
+            DataRequired(message=_("Cannot be empty")),
+            Length(max=11, message=_("Enter 11 characters or fewer")),
+            Length(min=3, message=_("Enter 3 characters or more")),
             LettersNumbersSingleQuotesFullStopsAndUnderscoresOnly(),
             DoesNotStartWithDoubleZero(),
         ],
     )
-    is_default = GovukCheckboxField("Make this text message sender the default")
+    is_default = GovukCheckboxField(_("Make this text message sender the default"))
 
 
 class ServiceEditInboundNumberForm(StripWhitespaceForm):
-    is_default = GovukCheckboxField("Make this text message sender the default")
+    is_default = GovukCheckboxField(_("Make this text message sender the default"))
 
 
 class AdminNotesForm(StripWhitespaceForm):
@@ -1743,21 +1749,23 @@ class AdminNotesForm(StripWhitespaceForm):
 
 
 class AdminBillingDetailsForm(StripWhitespaceForm):
-    billing_contact_email_addresses = GovukTextInputField("Contact email addresses")
-    billing_contact_names = GovukTextInputField("Contact names")
-    billing_reference = GovukTextInputField("Reference")
-    purchase_order_number = GovukTextInputField("Purchase order number")
+    billing_contact_email_addresses = GovukTextInputField(_("Contact email addresses"))
+    billing_contact_names = GovukTextInputField(_("Contact names"))
+    billing_reference = GovukTextInputField(_("Reference"))
+    purchase_order_number = GovukTextInputField(_("Purchase order number"))
     notes = TextAreaField(validators=[])
 
 
 class ServiceLetterContactBlockForm(StripWhitespaceForm):
-    letter_contact_block = TextAreaField(validators=[DataRequired(message="Cannot be empty"), NoCommasInPlaceHolders()])
-    is_default = GovukCheckboxField("Set as your default address")
+    letter_contact_block = TextAreaField(
+        validators=[DataRequired(message=_("Cannot be empty")), NoCommasInPlaceHolders()]
+    )
+    is_default = GovukCheckboxField(_("Set as your default address"))
 
     def validate_letter_contact_block(self, field):
         line_count = field.data.strip().count("\n")
         if line_count >= 10:
-            raise ValidationError("Contains {} lines, maximum is 10".format(line_count + 1))
+            raise ValidationError(_("Contains {} lines, maximum is 10").format(line_count + 1))
 
 
 class ServiceOnOffSettingForm(StripWhitespaceForm):
@@ -1769,16 +1777,16 @@ class ServiceOnOffSettingForm(StripWhitespaceForm):
             (False, falsey),
         ]
 
-    enabled = OnOffField("Choices")
+    enabled = OnOffField(_("Choices"))
 
 
 class ServiceSwitchChannelForm(ServiceOnOffSettingForm):
     def __init__(self, channel, *args, **kwargs):
         name = "Send {}".format(
             {
-                "email": "emails",
-                "sms": "text messages",
-                "letter": "letters",
+                "email": _("emails"),
+                "sms": _("text messages"),
+                "letter": _("letters"),
             }.get(channel)
         )
 
@@ -1789,10 +1797,10 @@ class AdminSetEmailBrandingForm(StripWhitespaceForm):
     branding_style = GovukRadiosFieldWithNoneOption(
         "Branding style",
         param_extensions={"fieldset": {"legend": {"classes": "govuk-visually-hidden"}}},
-        thing="a branding style",
+        thing=_("a branding style"),
     )
 
-    DEFAULT = (FieldWithNoneOption.NONE_OPTION_VALUE, "GOV.UK")
+    DEFAULT = (FieldWithNoneOption.NONE_OPTION_VALUE, _("GOV.UK"))
 
     def __init__(self, all_branding_options, current_branding):
         super().__init__(branding_style=current_branding)
@@ -1817,50 +1825,50 @@ class AdminPreviewBrandingForm(StripWhitespaceForm):
 
 
 class AdminEditEmailBrandingForm(StripWhitespaceForm):
-    name = GovukTextInputField("Name of brand")
-    text = GovukTextInputField("Text")
+    name = GovukTextInputField(_("Name of brand"))
+    text = GovukTextInputField(_("Text"))
     colour = GovukTextInputField(
-        "Colour",
+        _("Colour"),
         validators=[
-            Regexp(regex="^$|^#(?:[0-9a-fA-F]{3}){1,2}$", message="Must be a valid color hex code (starting with #)")
+            Regexp(regex="^$|^#(?:[0-9a-fA-F]{3}){1,2}$", message=_("Must be a valid color hex code (starting with #)"))
         ],
         param_extensions={"classes": "govuk-input--width-6", "attributes": {"data-notify-module": "colour-preview"}},
     )
-    file = FileField_wtf("Upload a PNG logo", validators=[FileAllowed(["png"], "PNG Images only!")])
+    file = FileField_wtf(_("Upload a PNG logo"), validators=[FileAllowed(["png"], _("PNG Images only!"))])
     brand_type = GovukRadiosField(
-        "Brand type",
+        _("Brand type"),
         choices=[
-            ("both", "GOV.UK and branding"),
-            ("org", "Branding only"),
-            ("org_banner", "Branding banner"),
+            ("both", _("GOV.UK and branding")),
+            ("org", _("Branding only")),
+            ("org_banner", _("Branding banner")),
         ],
     )
 
     def validate_name(self, name):
         op = request.form.get("operation")
         if op == "email-branding-details" and not self.name.data:
-            raise ValidationError("This field is required")
+            raise ValidationError(_("This field is required"))
 
 
 class AdminChangeOrganisationDefaultEmailBrandingForm(StripWhitespaceForm):
     email_branding_id = HiddenField(
-        "Email branding id",
+        _("Email branding id"),
         validators=[DataRequired()],
     )
 
 
 class AddEmailBrandingOptionsForm(StripWhitespaceForm):
     branding_field = GovukCheckboxesField(
-        "Branding options",
-        validators=[DataRequired(message="Select at least 1 email branding option")],
+        _("Branding options"),
+        validators=[DataRequired(message=_("Select at least 1 email branding option"))],
         param_extensions={"fieldset": {"legend": {"classes": "govuk-visually-hidden"}}},
     )
 
 
 class AddLetterBrandingOptionsForm(StripWhitespaceForm):
     branding_field = GovukCheckboxesField(
-        "Branding options",
-        validators=[DataRequired(message="Select at least 1 letter branding option")],
+        _("Branding options"),
+        validators=[DataRequired(message=_("Select at least 1 letter branding option"))],
         param_extensions={"fieldset": {"legend": {"classes": "govuk-visually-hidden"}}},
     )
 
@@ -1868,7 +1876,7 @@ class AddLetterBrandingOptionsForm(StripWhitespaceForm):
 class AdminSetEmailBrandingAddToBrandingPoolStepForm(StripWhitespaceForm):
     def __init__(self, *args, org_name, service_name, **kwargs):
         super().__init__(*args, **kwargs)
-        self.add_to_pool.label.text = f"Should other teams in {org_name} have the option to use " f"this branding?"
+        self.add_to_pool.label.text = _("Should other teams in %%s have the option to use this branding?") % org_name
 
         self.add_to_pool.param_extensions = {
             "fieldset": {
@@ -1884,19 +1892,25 @@ class AdminSetEmailBrandingAddToBrandingPoolStepForm(StripWhitespaceForm):
             ],
         }
         self.add_to_pool.param_extensions["items"][0]["hint"]["html"] = Markup(
-            f"""
+            _(
+                """
             <ul class="govuk-list govuk-hint govuk-!-margin-bottom-0">
-                <li>Apply this branding to ‘{service_name}’</li>
-                <li class="govuk-!-margin-bottom-0">Let other {org_name} teams apply this branding themselves</li>
+                <li>Apply this branding to ‘%%(service_name)s’</li>
+                <li class="govuk-!-margin-bottom-0">Let other %%(org_name)s teams apply this branding themselves</li>
             </ul>
         """
+            )
+            % {"service_name": service_name, "org_name": org_name}
         )
         self.add_to_pool.param_extensions["items"][1]["hint"]["html"] = Markup(
-            f"""
+            _(
+                """
             <ul class="govuk-list govuk-hint govuk-!-margin-bottom-0">
-                <li class="govuk-!-margin-bottom-0">Only apply this branding to ‘{service_name}’</li>
+                <li class="govuk-!-margin-bottom-0">Only apply this branding to ‘%%s’</li>
             </ul>
         """
+            )
+            % service_name
         )
 
     add_to_pool = GovukRadiosField(
@@ -1911,10 +1925,10 @@ class AdminEditLetterBrandingForm(StripWhitespaceForm):
 
 class SVGFileUpload(StripWhitespaceForm):
     file = FileField_wtf(
-        "Upload an SVG logo",
+        _("Upload an SVG logo"),
         validators=[
-            FileAllowed(["svg"], "SVG Images only!"),
-            DataRequired(message="You need to upload a file to submit"),
+            FileAllowed(["svg"], _("SVG Images only!")),
+            DataRequired(message=_("You need to upload a file to submit")),
             NoEmbeddedImagesInSVG(),
             NoTextInSVG(),
         ],
@@ -1923,10 +1937,10 @@ class SVGFileUpload(StripWhitespaceForm):
 
 class PDFUploadForm(StripWhitespaceForm):
     file = FileField_wtf(
-        "Upload a letter in PDF format",
+        _("Upload a letter in PDF format"),
         validators=[
-            FileAllowed(["pdf"], "Save your letter as a PDF and try again."),
-            DataRequired(message="You need to choose a file to upload"),
+            FileAllowed(["pdf"], _("Save your letter as a PDF and try again.")),
+            DataRequired(message=_("You need to choose a file to upload")),
         ],
     )
 
@@ -1952,64 +1966,64 @@ class GuestList(StripWhitespaceForm):
         EmailFieldInGuestList("", validators=[Optional(), ValidEmail()], default=""),
         min_entries=5,
         max_entries=5,
-        label="Email addresses",
+        label=_("Email addresses"),
     )
 
     phone_numbers = FieldList(
         InternationalPhoneNumberInGuestList("", validators=[Optional()], default=""),
         min_entries=5,
         max_entries=5,
-        label="Mobile numbers",
+        label=_("Mobile numbers"),
     )
 
 
 class DateFilterForm(StripWhitespaceForm):
-    start_date = GovukDateField("Start Date", [validators.optional()])
-    end_date = GovukDateField("End Date", [validators.optional()])
-    include_from_test_key = GovukCheckboxField("Include test keys")
+    start_date = GovukDateField(_("Start Date"), [validators.optional()])
+    end_date = GovukDateField(_("End Date"), [validators.optional()])
+    include_from_test_key = GovukCheckboxField(_("Include test keys"))
 
 
 class RequiredDateFilterForm(StripWhitespaceForm):
-    start_date = GovukDateField("Start Date")
-    end_date = GovukDateField("End Date")
+    start_date = GovukDateField(_("Start Date"))
+    end_date = GovukDateField(_("End Date"))
 
 
 class BillingReportDateFilterForm(StripWhitespaceForm):
-    start_date = GovukDateField("First day covered by report")
-    end_date = GovukDateField("Last day covered by report")
+    start_date = GovukDateField(_("First day covered by report"))
+    end_date = GovukDateField(_("Last day covered by report"))
 
 
 class SearchByNameForm(StripWhitespaceForm):
     search = GovukSearchField(
         "Search by name",
-        validators=[DataRequired("You need to enter full or partial name to search by.")],
+        validators=[DataRequired(_("You need to enter full or partial name to search by."))],
     )
 
 
 class AdminSearchUsersByEmailForm(StripWhitespaceForm):
     search = GovukSearchField(
-        "Search by name or email address",
-        validators=[DataRequired("You need to enter full or partial email address to search by.")],
+        _("Search by name or email address"),
+        validators=[DataRequired(_("You need to enter full or partial email address to search by."))],
     )
 
 
 class SearchUsersForm(StripWhitespaceForm):
-    search = GovukSearchField("Search by name or email address")
+    search = GovukSearchField(_("Search by name or email address"))
 
 
 class SearchNotificationsForm(StripWhitespaceForm):
     to = GovukSearchField()
 
     labels = {
-        "email": "Search by email address",
-        "sms": "Search by phone number",
+        "email": _("Search by email address"),
+        "sms": _("Search by phone number"),
     }
 
     def __init__(self, message_type, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.to.label.text = self.labels.get(
             message_type,
-            "Search by phone number or email address",
+            _("Search by phone number or email address"),
         )
 
 
@@ -2018,7 +2032,7 @@ class SearchTemplatesForm(StripWhitespaceForm):
 
     def __init__(self, api_keys, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.search.label.text = "Search by name or ID" if api_keys else "Search by name"
+        self.search.label.text = _("Search by name or ID") if api_keys else _("Search by name")
 
 
 class PlaceholderForm(StripWhitespaceForm):
@@ -2031,22 +2045,25 @@ class AdminServiceInboundNumberForm(StripWhitespaceForm):
         self.inbound_number.choices = kwargs["inbound_number_choices"]
 
     inbound_number = GovukRadiosField(
-        "Set inbound number",
-        thing="an inbound number",
+        _("Set inbound number"),
+        thing=_("an inbound number"),
     )
 
 
 class CallbackForm(StripWhitespaceForm):
     url = GovukTextInputField(
-        "URL",
+        _("URL"),
         validators=[
-            DataRequired(message="Cannot be empty"),
-            Regexp(regex="^https.*", message="Must be a valid https URL"),
+            DataRequired(message=_("Cannot be empty")),
+            Regexp(regex="^https.*", message=_("Must be a valid https URL")),
         ],
     )
     bearer_token = GovukPasswordField(
-        "Bearer token",
-        validators=[DataRequired(message="Cannot be empty"), Length(min=10, message="Must be at least 10 characters")],
+        _("Bearer token"),
+        validators=[
+            DataRequired(message=_("Cannot be empty")),
+            Length(min=10, message=_("Must be at least 10 characters")),
+        ],
     )
 
     def validate(self):
@@ -2071,7 +2088,7 @@ def get_placeholder_form_instance(
         else:
             field = uk_mobile_number(label=placeholder_name)
     else:
-        field = GovukTextInputField(placeholder_name, validators=[DataRequired(message="Cannot be empty")])
+        field = GovukTextInputField(placeholder_name, validators=[DataRequired(message=_("Cannot be empty"))])
 
     PlaceholderForm.placeholder_value = field
 
@@ -2091,7 +2108,7 @@ class SetTemplateSenderForm(StripWhitespaceForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.sender.choices = kwargs["sender_choices"]
-        self.sender.label.text = "Select your sender"
+        self.sender.label.text = _("Select your sender")
 
     sender = GovukRadiosField()
 
@@ -2101,12 +2118,12 @@ class AdminSetOrganisationForm(StripWhitespaceForm):
         super().__init__(*args, **kwargs)
         self.organisations.choices = kwargs["choices"]
 
-    organisations = GovukRadiosField("Select an organisation", validators=[DataRequired()])
+    organisations = GovukRadiosField(_("Select an organisation"), validators=[DataRequired()])
 
 
 class ChooseBrandingForm(StripWhitespaceForm):
     FALLBACK_OPTION_VALUE = "something_else"
-    FALLBACK_OPTION = (FALLBACK_OPTION_VALUE, "Something else")
+    FALLBACK_OPTION = (FALLBACK_OPTION_VALUE, _("Something else"))
 
     @property
     def something_else_is_only_option(self):
@@ -2114,7 +2131,7 @@ class ChooseBrandingForm(StripWhitespaceForm):
 
 
 class ChooseEmailBrandingForm(ChooseBrandingForm):
-    options = RadioField("Choose your new email branding")
+    options = RadioField(_("Choose your new email branding"))
 
     def __init__(self, service):
         super().__init__()
@@ -2122,8 +2139,8 @@ class ChooseEmailBrandingForm(ChooseBrandingForm):
 
 
 class ChooseLetterBrandingForm(ChooseBrandingForm):
-    options = RadioField("Choose your new letter branding")
-    something_else = TextAreaField("Describe the branding you want")
+    options = RadioField(_("Choose your new letter branding"))
+    something_else = TextAreaField(_("Describe the branding you want"))
 
     def __init__(self, service):
         super().__init__()
@@ -2135,7 +2152,7 @@ class ChooseLetterBrandingForm(ChooseBrandingForm):
 
     def validate_something_else(self, field):
         if (self.something_else_is_only_option or self.options.data == self.FALLBACK_OPTION_VALUE) and not field.data:
-            raise ValidationError("Cannot be empty")
+            raise ValidationError(_("Cannot be empty"))
 
         if self.options.data != self.FALLBACK_OPTION_VALUE:
             field.data = ""
@@ -2143,22 +2160,22 @@ class ChooseLetterBrandingForm(ChooseBrandingForm):
 
 class SomethingElseBrandingForm(StripWhitespaceForm):
     something_else = GovukTextareaField(
-        "Describe the branding you want",
-        validators=[DataRequired("Cannot be empty")],
+        _("Describe the branding you want"),
+        validators=[DataRequired(_("Cannot be empty"))],
         param_extensions={
             "label": {
                 "isPageHeading": True,
                 "classes": "govuk-label--l",
             },
-            "hint": {"text": "Include links to your brand guidelines or examples of how to use your branding."},
+            "hint": {"text": _("Include links to your brand guidelines or examples of how to use your branding.")},
         },
     )
 
 
 class GovernmentIdentityLogoForm(StripWhitespaceForm):
     logo_text = GovukTextInputField(
-        "Enter the text that will appear in your logo",
-        validators=[DataRequired("Cannot be empty")],
+        _("Enter the text that will appear in your logo"),
+        validators=[DataRequired(_("Cannot be empty"))],
         param_extensions={
             "label": {
                 "isPageHeading": True,
@@ -2166,7 +2183,7 @@ class GovernmentIdentityLogoForm(StripWhitespaceForm):
             },
             "hint": {
                 "html": (
-                    "This is usually the full name of your organisation.<br/><br/>For example, {organisation_name}"
+                    _("This is usually the full name of your organisation.<br/><br/>For example, {organisation_name}")
                 )
             },
         },
@@ -2175,7 +2192,7 @@ class GovernmentIdentityLogoForm(StripWhitespaceForm):
     def __init__(self, organisation=None, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        organisation_name = organisation.name if organisation else "Department of Education"
+        organisation_name = organisation.name if organisation else _("Department of Education")
         self.logo_text.param_extensions["hint"]["html"] = self.logo_text.param_extensions["hint"]["html"].format(
             organisation_name=organisation_name
         )
@@ -2183,12 +2200,12 @@ class GovernmentIdentityLogoForm(StripWhitespaceForm):
 
 class GovBrandingOrOwnLogoForm(StripWhitespaceForm):
     branding_options = (
-        ("single_identity", "Create a government identity logo"),
-        ("org", "Upload a logo"),
+        ("single_identity", _("Create a government identity logo")),
+        ("org", _("Upload a logo")),
     )
 
     options = GovukRadiosField(
-        "Choose a logo for your emails",
+        _("Choose a logo for your emails"),
         choices=branding_options,
         validators=[DataRequired()],
     )
@@ -2197,25 +2214,27 @@ class GovBrandingOrOwnLogoForm(StripWhitespaceForm):
 class EmailBrandingChooseBanner(Form):
     BANNER_CHOICES_DATA = {
         "org": {
-            "label": "No banner",
+            "label": _("No banner"),
             "image": {
                 "url": asset_fingerprinter.get_url("images/branding/org.png"),
-                "alt_text": 'An example of an email with the heading "Your logo" in blue text on a white background.',
+                "alt_text": _(
+                    'An example of an email with the heading "Your logo" in blue text on a white background.'
+                ),
                 "dimensions": {"width": 404, "height": 454},
             },
         },
         "org_banner": {
-            "label": "Coloured banner",
+            "label": _("Coloured banner"),
             "image": {
                 "url": asset_fingerprinter.get_url("images/branding/org_banner.png"),
-                "alt_text": "An example of an email with a logo on a blue banner.",
+                "alt_text": _("An example of an email with a logo on a blue banner."),
                 "dimensions": {"width": 404, "height": 454},
             },
         },
     }
 
     banner = GovukRadiosWithImagesField(
-        "Add a banner to your logo",
+        _("Add a banner to your logo"),
         choices=tuple((key, value["label"]) for key, value in BANNER_CHOICES_DATA.items()),
         image_data={key: value["image"] for key, value in BANNER_CHOICES_DATA.items()},
         param_extensions={
@@ -2227,32 +2246,32 @@ class EmailBrandingChooseBanner(Form):
 
 class AdminServiceAddDataRetentionForm(StripWhitespaceForm):
     notification_type = GovukRadiosField(
-        "What notification type?",
+        _("What notification type?"),
         choices=[
-            ("email", "Email"),
-            ("sms", "SMS"),
-            ("letter", "Letter"),
+            ("email", _("Email")),
+            ("sms", _("SMS")),
+            ("letter", _("Letter")),
         ],
-        thing="notification type",
+        thing=_("notification type"),
     )
     days_of_retention = GovukIntegerField(
-        label="Days of retention",
-        validators=[validators.NumberRange(min=3, max=90, message="Must be between 3 and 90")],
+        label=_("Days of retention"),
+        validators=[validators.NumberRange(min=3, max=90, message=_("Must be between 3 and 90"))],
     )
 
 
 class AdminServiceEditDataRetentionForm(StripWhitespaceForm):
     days_of_retention = GovukIntegerField(
-        label="Days of retention",
-        validators=[validators.NumberRange(min=3, max=90, message="Must be between 3 and 90")],
+        label=_("Days of retention"),
+        validators=[validators.NumberRange(min=3, max=90, message=_("Must be between 3 and 90"))],
     )
 
 
 class AdminReturnedLettersForm(StripWhitespaceForm):
     references = TextAreaField(
-        "Letter references",
+        _("Letter references"),
         validators=[
-            DataRequired(message="Cannot be empty"),
+            DataRequired(message=_("Cannot be empty")),
         ],
     )
 
@@ -2265,9 +2284,9 @@ class TemplateFolderForm(StripWhitespaceForm):
             self.users_with_permission.choices = [(item.id, item.name) for item in all_service_users]
 
     users_with_permission = GovukCollapsibleCheckboxesField(
-        "Team members who can see this folder", field_label="team member"
+        _("Team members who can see this folder"), field_label="team member"
     )
-    name = GovukTextInputField("Folder name", validators=[DataRequired(message="Cannot be empty")])
+    name = GovukTextInputField(_("Folder name"), validators=[DataRequired(message=_("Cannot be empty"))])
 
 
 def required_for_ops(*operations):
@@ -2276,9 +2295,9 @@ def required_for_ops(*operations):
     def validate(form, field):
         if form.op not in operations and any(field.raw_data):
             # super weird
-            raise validators.StopValidation("Must be empty")
+            raise validators.StopValidation(_("Must be empty"))
         if form.op in operations and not any(field.raw_data):
-            raise validators.StopValidation("Cannot be empty")
+            raise validators.StopValidation(_("Cannot be empty"))
 
     return validate
 
@@ -2301,7 +2320,7 @@ class TemplateAndFoldersSelectionForm(Form):
     """
 
     ALL_TEMPLATES_FOLDER = {
-        "name": "Templates",
+        "name": _("Templates"),
         "id": RadioFieldWithNoneOption.NONE_OPTION_VALUE,
     }
 
@@ -2333,11 +2352,11 @@ class TemplateAndFoldersSelectionForm(Form):
             filter(
                 None,
                 [
-                    ("email", "Email") if "email" in available_template_types else None,
-                    ("sms", "Text message") if "sms" in available_template_types else None,
-                    ("letter", "Letter") if "letter" in available_template_types else None,
-                    ("broadcast", "Broadcast") if "broadcast" in available_template_types else None,
-                    ("copy-existing", "Copy an existing template") if allow_adding_copy_of_template else None,
+                    ("email", _("Email")) if "email" in available_template_types else None,
+                    ("sms", _("Text message")) if "sms" in available_template_types else None,
+                    ("letter", _("Letter")) if "letter" in available_template_types else None,
+                    ("broadcast", _("Broadcast")) if "broadcast" in available_template_types else None,
+                    ("copy-existing", _("Copy an existing template")) if allow_adding_copy_of_template else None,
                 ],
             )
         )
@@ -2384,34 +2403,34 @@ class TemplateAndFoldersSelectionForm(Form):
     # this means '__NONE__' (self.ALL_TEMPLATES option) is selected when no form data has been submitted
     # set default to empty string so process_data method doesn't perform any transformation
     move_to = NestedRadioField(
-        "Choose a folder", default="", validators=[required_for_ops("move-to-existing-folder"), Optional()]
+        _("Choose a folder"), default="", validators=[required_for_ops("move-to-existing-folder"), Optional()]
     )
     add_new_folder_name = GovukTextInputField("Folder name", validators=[required_for_ops("add-new-folder")])
     move_to_new_folder_name = GovukTextInputField("Folder name", validators=[required_for_ops("move-to-new-folder")])
 
     add_template_by_template_type = RadioFieldWithRequiredMessage(
-        "New template",
+        _("New template"),
         validators=[
             required_for_ops("add-new-template"),
             Optional(),
         ],
-        required_message="Select the type of template you want to add",
+        required_message=_("Select the type of template you want to add"),
     )
 
 
 class AdminClearCacheForm(StripWhitespaceForm):
     model_type = GovukCheckboxesField(
-        "What do you want to clear today",
+        _("What do you want to clear today"),
     )
 
     def validate_model_type(self, field):
         if not field.data:
-            raise ValidationError("Select at least one option")
+            raise ValidationError(_("Select at least one option"))
 
 
 class AdminOrganisationGoLiveNotesForm(StripWhitespaceForm):
     request_to_go_live_notes = TextAreaField(
-        "Go live notes",
+        _("Go live notes"),
         filters=[lambda x: x or None],
     )
 
@@ -2430,14 +2449,14 @@ class ServiceBroadcastAccountTypeField(GovukRadiosField):
 
 class ServiceBroadcastChannelForm(StripWhitespaceForm):
     channel = GovukRadiosField(
-        "Emergency alerts settings",
-        thing="mode or channel",
+        _("Emergency alerts settings"),
+        thing=_("mode or channel"),
         choices=[
-            ("training", "Training mode"),
-            ("operator", "Operator channel"),
-            ("test", "Test channel"),
-            ("severe", "Live channel"),
-            ("government", "Government channel"),
+            ("training", _("Training mode")),
+            ("operator", _("Operator channel")),
+            ("test", _("Test channel")),
+            ("severe", _("Live channel")),
+            ("government", _("Government channel")),
         ],
     )
 
@@ -2448,11 +2467,11 @@ class ServiceBroadcastNetworkForm(StripWhitespaceForm):
         self.broadcast_channel = broadcast_channel
 
     all_networks = OnOffField(
-        "Choose a mobile network",
-        choices=((True, "All networks"), (False, "A single network")),
+        _("Choose a mobile network"),
+        choices=((True, _("All networks")), (False, _("A single network"))),
     )
     network = OptionalGovukRadiosField(
-        "Choose a mobile network",
+        _("Choose a mobile network"),
         thing="a mobile network",
         choices=(
             ("ee", "EE"),
@@ -2473,13 +2492,13 @@ class ServiceBroadcastNetworkForm(StripWhitespaceForm):
 
     def validate_network(self, field):
         if not self.all_networks.data and not field.data:
-            raise ValidationError("Select a mobile network")
+            raise ValidationError(_("Select a mobile network"))
 
 
 class ServiceBroadcastAccountTypeForm(StripWhitespaceForm):
     account_type = ServiceBroadcastAccountTypeField(
-        "Change cell broadcast service type",
-        thing="which type of account this cell broadcast service is",
+        _("Change cell broadcast service type"),
+        thing=_("which type of account this cell broadcast service is"),
         choices=[("training-test-all", "")]
         + [
             (f"live-{broadcast_channel}-{provider}", "")
@@ -2508,14 +2527,14 @@ class AcceptAgreementForm(StripWhitespaceForm):
             on_behalf_of_email=org.agreement_signed_on_behalf_of_email_address,
         )
 
-    version = GovukTextInputField("Which version of the agreement do you want to accept?")
+    version = GovukTextInputField(_("Which version of the agreement do you want to accept?"))
 
     who = RadioField(
-        "Who are you accepting the agreement for?",
+        _("Who are you accepting the agreement for?"),
         choices=(
             (
-                "me",
-                "Yourself",
+                _("me"),
+                _("Yourself"),
             ),
             (
                 "someone-else",
@@ -2524,10 +2543,10 @@ class AcceptAgreementForm(StripWhitespaceForm):
         ),
     )
 
-    on_behalf_of_name = GovukTextInputField("What’s their name?")
+    on_behalf_of_name = GovukTextInputField(_("What’s their name?"))
 
     on_behalf_of_email = email_address(
-        "What’s their email address?",
+        _("What’s their email address?"),
         required=False,
         gov_user=False,
     )
@@ -2535,7 +2554,7 @@ class AcceptAgreementForm(StripWhitespaceForm):
     def __validate_if_nominating(self, field):
         if self.who.data == "someone-else":
             if not field.data:
-                raise ValidationError("Cannot be empty")
+                raise ValidationError(_("Cannot be empty"))
         else:
             field.data = ""
 
@@ -2546,11 +2565,11 @@ class AcceptAgreementForm(StripWhitespaceForm):
         try:
             float(field.data)
         except (TypeError, ValueError):
-            raise ValidationError("Must be a number")
+            raise ValidationError(_("Must be a number"))
 
 
 class BroadcastAreaForm(StripWhitespaceForm):
-    areas = GovukCheckboxesField("Choose areas to broadcast to")
+    areas = GovukCheckboxesField(_("Choose areas to broadcast to"))
 
     def __init__(self, choices, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -2564,7 +2583,7 @@ class BroadcastAreaForm(StripWhitespaceForm):
 
 
 class BroadcastAreaFormWithSelectAll(BroadcastAreaForm):
-    select_all = GovukCheckboxField("Select all")
+    select_all = GovukCheckboxField(_("Select all"))
 
     @classmethod
     def from_library(cls, library, select_all_choice):
@@ -2584,11 +2603,11 @@ class BroadcastAreaFormWithSelectAll(BroadcastAreaForm):
 
 class ChangeSecurityKeyNameForm(StripWhitespaceForm):
     security_key_name = GovukTextInputField(
-        "Name of key",
+        _("Name of key"),
         validators=[
-            DataRequired(message="Cannot be empty"),
+            DataRequired(message=_("Cannot be empty")),
             MustContainAlphanumericCharacters(),
-            Length(max=255, message="Name of key must be 255 characters or fewer"),
+            Length(max=255, message=_("Name of key must be 255 characters or fewer")),
         ],
     )
 
@@ -2619,7 +2638,7 @@ def markup_for_coloured_stripe(colour):
 class GovernmentIdentityCoatOfArmsOrInsignia(StripWhitespaceForm):
 
     coat_of_arms_or_insignia = GovukRadiosField(
-        "Coat of arms or insignia",
+        _("Coat of arms or insignia"),
         choices=[
             (name, markup_for_crest_or_insignia(f"{name}.png") + name)
             for name in sorted(GOVERNMENT_IDENTITY_SYSTEM_CRESTS_OR_INSIGNIA)
@@ -2644,6 +2663,6 @@ class GovernmentIdentityColour(StripWhitespaceForm):
         ]
 
     colour = GovukRadiosField(
-        "Colour for stripe",
-        thing="a colour for the stripe",
+        _("Colour for stripe"),
+        thing=_("a colour for the stripe"),
     )
