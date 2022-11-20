@@ -20,7 +20,7 @@
 
 {% block platform_admin_content %}
 
-  {{ page_header('{} email branding'.format('Update' if email_branding else 'Add')) }}
+  {{ page_header(_('Update email branding') if email_branding else _('Add email branding')) }}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters">
       {% if logo %}

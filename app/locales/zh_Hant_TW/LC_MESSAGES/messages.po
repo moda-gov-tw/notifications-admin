@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-20 15:50+0800\n"
+"POT-Creation-Date: 2022-11-20 15:55+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -5299,6 +5299,7 @@ msgstr ""
 msgid "reply-to email addresses"
 msgstr ""
 
+#: templates/views/email-branding/select-branding.html:6
 #: templates/views/features/emails.html:29
 #: templates/views/organisations/organisation/settings/email-branding-options.html:9
 #: templates/views/service-settings.html:98
@@ -7093,15 +7094,21 @@ msgid "Write an email or text message"
 msgstr ""
 
 #: templates/views/email-branding/manage-branding.html:10
+#: templates/views/email-branding/manage-branding.html:23
 msgid "Update email branding"
 msgstr ""
 
 #: templates/views/email-branding/manage-branding.html:12
+#: templates/views/email-branding/manage-branding.html:23
 msgid "Add email branding"
 msgstr ""
 
 #: templates/views/email-branding/manage-branding.html:32
 msgid "Logos should be PNG files, 108px high"
+msgstr ""
+
+#: templates/views/email-branding/select-branding.html:21
+msgid "Unnamed"
 msgstr ""
 
 #: templates/views/email-branding/select-branding.html:30

@@ -3,7 +3,7 @@
 {% from "components/live-search.html" import live_search %}
 {% from "govuk_frontend_jinja/components/button/macro.html" import govukButton %}
 
-{% set page_title = "Email branding" %}
+{% set page_title = _("Email branding") %}
 
 {% block per_page_title %}
   {{ page_title }}
@@ -18,7 +18,7 @@
       <div class="email-brand">
         <div class="message-name">
           <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('.update_email_branding', branding_id=brand.id) }}">
-            {{ brand.name or 'Unnamed' }}
+            {{ brand.name or _('Unnamed') }}
           </a>
         </div>
       </div>
