@@ -1,37 +1,40 @@
+from flask_babel import _
+
+
 def features_nav():
     return [
         {
-            "name": "Features",
+            "name": _("Features"),
             "link": "main.features",
             "sub_navigation_items": [
                 {
-                    "name": "Emails",
+                    "name": _("Emails"),
                     "link": "main.features_email",
                 },
                 {
-                    "name": "Text messages",
+                    "name": _("Text messages"),
                     "link": "main.features_sms",
                 },
                 {
-                    "name": "Letters",
+                    "name": _("Letters"),
                     "link": "main.features_letters",
                 },
             ],
         },
         {
-            "name": "Roadmap",
+            "name": _("Roadmap"),
             "link": "main.roadmap",
         },
         {
-            "name": "Who can use Notify",
+            "name": _("Who can use Notify"),
             "link": "main.who_can_use_notify",
         },
         {
-            "name": "Security",
+            "name": _("Security"),
             "link": "main.security",
         },
         {
-            "name": "Terms of use",
+            "name": _("Terms of use"),
             "link": "main.terms",
         },
     ]
@@ -40,15 +43,15 @@ def features_nav():
 def pricing_nav():
     return [
         {
-            "name": "Pricing",
+            "name": _("Pricing"),
             "link": "main.pricing",
         },
         {
-            "name": "How to pay",
+            "name": _("How to pay"),
             "link": "main.how_to_pay",
         },
         {
-            "name": "Billing details",
+            "name": _("Billing details"),
             "link": "main.billing_details",
         },
     ]
@@ -57,45 +60,45 @@ def pricing_nav():
 def using_notify_nav():
     return [
         {
-            "name": "Get started",
+            "name": _("Get started"),
             "link": "main.get_started",
         },
         {
-            "name": "Trial mode",
+            "name": _("Trial mode"),
             "link": "main.trial_mode_new",
         },
         {
-            "name": "Delivery status",
+            "name": _("Delivery status"),
             "link": "main.message_status",
         },
         {
-            "name": "Guidance",
+            "name": _("Guidance"),
             "link": "main.guidance_index",
             "sub_navigation_items": [
                 {
-                    "name": "Formatting",
+                    "name": _("Formatting"),
                     "link": "main.edit_and_format_messages",
                 },
                 {
-                    "name": "Branding",
+                    "name": _("Branding"),
                     "link": "main.branding_and_customisation",
                 },
                 {
-                    "name": "Send files by email",
+                    "name": _("Send files by email"),
                     "link": "main.send_files_by_email",
                 },
                 {
-                    "name": "Upload a letter",
+                    "name": _("Upload a letter"),
                     "link": "main.upload_a_letter",
                 },
                 {
-                    "name": "Letter specification",
+                    "name": _("Letter specification"),
                     "link": "main.letter_specification",
                 },
             ],
         },
         {
-            "name": "API documentation",
+            "name": _("API documentation"),
             "link": "main.documentation",
         },
     ]

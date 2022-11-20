@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-20 15:55+0800\n"
+"POT-Creation-Date: 2022-11-20 16:01+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -1531,8 +1531,9 @@ msgstr ""
 msgid "{} services"
 msgstr ""
 
-#: main/views/platform_admin.py:175 templates/views/trial-mode.html:7
-#: templates/views/trial-mode.html:12
+#: main/views/platform_admin.py:175
+#: main/views/sub_navigation_dictionaries.py:64
+#: templates/views/trial-mode.html:7 templates/views/trial-mode.html:12
 msgid "Trial mode"
 msgstr ""
 
@@ -1913,6 +1914,145 @@ msgstr ""
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
 "href=\"%%s\" class='govuk-link'>Forgotten your password?</a>"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:4 templates/views/features.html:10
+#: templates/views/features.html:15 templates/views/features/emails.html:20
+#: templates/views/features/letters.html:20
+#: templates/views/features/text-messages.html:20
+msgid "Features"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:8
+#: templates/views/accessibility_statement.html:146
+#: templates/views/dashboard/monthly.html:34
+#: templates/views/features/emails.html:9
+#: templates/views/features/emails.html:14
+#: templates/views/message-status.html:21
+#: templates/views/platform-admin/services.html:14
+#: templates/views/pricing/index.html:43 templates/views/signedout.html:147
+msgid "Emails"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:12
+#: templates/views/dashboard/monthly.html:35
+#: templates/views/features/text-messages.html:9
+#: templates/views/features/text-messages.html:14
+#: templates/views/message-status.html:50
+#: templates/views/organisations/organisation/index.html:31
+#: templates/views/platform-admin/services.html:15
+#: templates/views/pricing/index.html:46 templates/views/signedout.html:152
+msgid "Text messages"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:16
+#: templates/views/features/letters.html:9
+#: templates/views/features/letters.html:14
+#: templates/views/message-status.html:74
+#: templates/views/organisations/organisation/index.html:42
+#: templates/views/platform-admin/services.html:16
+#: templates/views/pricing/index.html:234 templates/views/signedout.html:158
+msgid "Letters"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:22 templates/views/roadmap.html:10
+#: templates/views/roadmap.html:15
+msgid "Roadmap"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:26
+#: templates/views/guidance/who-can-use-notify.html:9
+#: templates/views/guidance/who-can-use-notify.html:15
+msgid "Who can use Notify"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:30
+#: templates/views/features.html:67 templates/views/security.html:9
+#: templates/views/security.html:14
+msgid "Security"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:34
+#: templates/views/terms-of-use.html:9 templates/views/terms-of-use.html:14
+msgid "Terms of use"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:43
+#: templates/views/features/emails.html:50
+#: templates/views/features/letters.html:46
+#: templates/views/features/text-messages.html:37
+#: templates/views/pricing/index.html:12 templates/views/pricing/index.html:17
+#: templates/views/signedout.html:144
+msgid "Pricing"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:47
+#: templates/views/pricing/how-to-pay.html:9
+#: templates/views/pricing/how-to-pay.html:14
+msgid "How to pay"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:51
+#: templates/views/pricing/billing-details-signed-out.html:9
+#: templates/views/pricing/billing-details-signed-out.html:14
+#: templates/views/pricing/billing-details.html:10
+#: templates/views/pricing/billing-details.html:15
+#: templates/views/service-settings.html:338
+msgid "Billing details"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:60
+#: templates/views/dashboard/write-first-messages.html:1
+#: templates/views/get-started.html:7 templates/views/get-started.html:15
+msgid "Get started"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:68
+#: templates/views/message-status.html:9 templates/views/message-status.html:14
+msgid "Delivery status"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:72
+#: templates/views/guidance/index.html:10
+#: templates/views/guidance/index.html:15
+msgid "Guidance"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:76
+#: templates/partials/templates/guidance-formatting-letters.html:3
+msgid "Formatting"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:80
+#: templates/views/features/letters.html:34
+msgid "Branding"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:84
+#: templates/views/features/emails.html:33
+#: templates/views/guidance/send-files-by-email.html:7
+#: templates/views/guidance/send-files-by-email.html:12
+#: templates/views/service-settings.html:109
+#: templates/views/service-settings/send-files-by-email.html:10
+#: templates/views/service-settings/send-files-by-email.html:20
+msgid "Send files by email"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:88
+#: templates/views/guidance/upload-a-letter.html:9
+#: templates/views/guidance/upload-a-letter.html:14
+#: templates/views/jobs/jobs.html:30 templates/views/uploads/choose-file.html:8
+msgid "Upload a letter"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:92
+#: templates/views/guidance/letter-specification.html:10
+#: templates/views/guidance/letter-specification.html:15
+msgid "Letter specification"
+msgstr ""
+
+#: main/views/sub_navigation_dictionaries.py:98
+msgid "API documentation"
 msgstr ""
 
 #: main/views/templates.py:133
@@ -2326,10 +2466,6 @@ msgid ""
 "href=\"%%s\">pricing</a> for details."
 msgstr ""
 
-#: templates/partials/templates/guidance-formatting-letters.html:3
-msgid "Formatting"
-msgstr ""
-
 #: templates/partials/templates/guidance-formatting-letters.html:5
 msgid "To put a heading in your template, use a hash:"
 msgstr ""
@@ -2741,16 +2877,6 @@ msgstr ""
 msgid ""
 "We provide a written description of the information in the PDF on an HTML"
 " page as an accessible alternative."
-msgstr ""
-
-#: templates/views/accessibility_statement.html:146
-#: templates/views/dashboard/monthly.html:34
-#: templates/views/features/emails.html:9
-#: templates/views/features/emails.html:14
-#: templates/views/message-status.html:21
-#: templates/views/platform-admin/services.html:14
-#: templates/views/pricing/index.html:43 templates/views/signedout.html:147
-msgid "Emails"
 msgstr ""
 
 #: templates/views/accessibility_statement.html:150
@@ -3364,13 +3490,6 @@ msgid ""
 "link</span>"
 msgstr ""
 
-#: templates/views/features.html:10 templates/views/features.html:15
-#: templates/views/features/emails.html:20
-#: templates/views/features/letters.html:20
-#: templates/views/features/text-messages.html:20
-msgid "Features"
-msgstr ""
-
 #: templates/views/features.html:16
 msgid ""
 "If you work for central government, a local authority or the NHS, you can"
@@ -3528,11 +3647,6 @@ msgid ""
 "href=\"%%s\">performance data</a> page to see how Notify is performing."
 msgstr ""
 
-#: templates/views/features.html:67 templates/views/security.html:9
-#: templates/views/security.html:14
-msgid "Security"
-msgstr ""
-
 #: templates/views/features.html:68
 msgid "Notify protects and manages data to meet the needs of government services."
 msgstr ""
@@ -3595,11 +3709,6 @@ msgstr ""
 
 #: templates/views/forgot-password.html:19
 msgid "Send email"
-msgstr ""
-
-#: templates/views/dashboard/write-first-messages.html:1
-#: templates/views/get-started.html:7 templates/views/get-started.html:15
-msgid "Get started"
 msgstr ""
 
 #: templates/views/get-started.html:19
@@ -3845,10 +3954,6 @@ msgid ""
 "%%(user_mail)s</span>"
 msgstr ""
 
-#: templates/views/message-status.html:9 templates/views/message-status.html:14
-msgid "Delivery status"
-msgstr ""
-
 #: templates/views/message-status.html:16
 msgid ""
 "Notify’s real-time dashboard lets you check the status of any message, to"
@@ -3971,16 +4076,6 @@ msgid ""
 "could breach General Data Protection Regulations (GDPR)."
 msgstr ""
 
-#: templates/views/dashboard/monthly.html:35
-#: templates/views/features/text-messages.html:9
-#: templates/views/features/text-messages.html:14
-#: templates/views/message-status.html:50
-#: templates/views/organisations/organisation/index.html:31
-#: templates/views/platform-admin/services.html:15
-#: templates/views/pricing/index.html:46 templates/views/signedout.html:152
-msgid "Text messages"
-msgstr ""
-
 #: templates/views/message-status.html:53
 msgid "Message statuses – text messages"
 msgstr ""
@@ -4028,15 +4123,6 @@ msgid ""
 "the provider. You’ll have to try sending your messages again. You will "
 "not be charged for text messages that are affected by a technical "
 "failure."
-msgstr ""
-
-#: templates/views/features/letters.html:9
-#: templates/views/features/letters.html:14
-#: templates/views/message-status.html:74
-#: templates/views/organisations/organisation/index.html:42
-#: templates/views/platform-admin/services.html:16
-#: templates/views/pricing/index.html:234 templates/views/signedout.html:158
-msgid "Letters"
 msgstr ""
 
 #: templates/views/message-status.html:77
@@ -4678,10 +4764,6 @@ msgstr ""
 msgid "Only showing the first %%(page_size)s of %%(count)s rows"
 msgstr ""
 
-#: templates/views/roadmap.html:10 templates/views/roadmap.html:15
-msgid "Roadmap"
-msgstr ""
-
 #: templates/views/roadmap.html:25
 msgid ""
 "The GOV.UK Notify roadmap shows what we’re working on and some of the <a "
@@ -5309,15 +5391,6 @@ msgstr ""
 msgid "email branding"
 msgstr ""
 
-#: templates/views/features/emails.html:33
-#: templates/views/guidance/send-files-by-email.html:7
-#: templates/views/guidance/send-files-by-email.html:12
-#: templates/views/service-settings.html:109
-#: templates/views/service-settings/send-files-by-email.html:10
-#: templates/views/service-settings/send-files-by-email.html:20
-msgid "Send files by email"
-msgstr ""
-
 #: templates/views/service-settings.html:115
 msgid "sending files by email"
 msgstr ""
@@ -5464,14 +5537,6 @@ msgstr ""
 
 #: templates/views/service-settings.html:335
 msgid "if service is counted in list of live services"
-msgstr ""
-
-#: templates/views/pricing/billing-details-signed-out.html:9
-#: templates/views/pricing/billing-details-signed-out.html:14
-#: templates/views/pricing/billing-details.html:10
-#: templates/views/pricing/billing-details.html:15
-#: templates/views/service-settings.html:338
-msgid "Billing details"
 msgstr ""
 
 #: templates/views/service-settings.html:340
@@ -5705,14 +5770,6 @@ msgid ""
 "href=\"%%s\">list of services and organisations</a>."
 msgstr ""
 
-#: templates/views/features/emails.html:50
-#: templates/views/features/letters.html:46
-#: templates/views/features/text-messages.html:37
-#: templates/views/pricing/index.html:12 templates/views/pricing/index.html:17
-#: templates/views/signedout.html:144
-msgid "Pricing"
-msgstr ""
-
 #: templates/views/signedout.html:148
 msgid ""
 "<div class=\"product-page-big-number\">Unlimited</div>\n"
@@ -5798,10 +5855,6 @@ msgstr ""
 #: templates/views/api/keys.html:17 templates/views/api/keys.html:23
 #: templates/views/api/keys.html:26 templates/views/temp-history.html:20
 msgid "API keys"
-msgstr ""
-
-#: templates/views/terms-of-use.html:9 templates/views/terms-of-use.html:14
-msgid "Terms of use"
 msgstr ""
 
 #: templates/views/terms-of-use.html:17
@@ -7271,10 +7324,6 @@ msgid ""
 "holidays."
 msgstr ""
 
-#: templates/views/features/letters.html:34
-msgid "Branding"
-msgstr ""
-
 #: templates/views/features/letters.html:35
 msgid "Add your organisation’s logo to your letter templates."
 msgstr ""
@@ -7844,11 +7893,6 @@ msgid ""
 " in your template."
 msgstr ""
 
-#: templates/views/guidance/index.html:10
-#: templates/views/guidance/index.html:15
-msgid "Guidance"
-msgstr ""
-
 #: templates/views/guidance/index.html:17
 msgid ""
 "This guidance is for teams using GOV.UK Notify to send emails, text "
@@ -7897,11 +7941,6 @@ msgstr ""
 
 #: templates/views/guidance/index.html:36
 msgid "sending text messages securely"
-msgstr ""
-
-#: templates/views/guidance/letter-specification.html:10
-#: templates/views/guidance/letter-specification.html:15
-msgid "Letter specification"
 msgstr ""
 
 #: templates/views/guidance/letter-specification.html:17
@@ -8009,12 +8048,6 @@ msgstr ""
 msgid "This is an API-only feature."
 msgstr ""
 
-#: templates/views/guidance/upload-a-letter.html:9
-#: templates/views/guidance/upload-a-letter.html:14
-#: templates/views/jobs/jobs.html:30 templates/views/uploads/choose-file.html:8
-msgid "Upload a letter"
-msgstr ""
-
 #: templates/views/guidance/upload-a-letter.html:16
 msgid ""
 "Upload a one-off letter as a PDF and we’ll print, pack and post it for "
@@ -8046,11 +8079,6 @@ msgstr ""
 msgid ""
 "Your file must meet our <a class=\"govuk-link govuk-link--no-visited-"
 "state\" href=\"%%s\">letter specification</a>."
-msgstr ""
-
-#: templates/views/guidance/who-can-use-notify.html:9
-#: templates/views/guidance/who-can-use-notify.html:15
-msgid "Who can use Notify"
 msgstr ""
 
 #: templates/views/guidance/who-can-use-notify.html:19
@@ -8952,11 +8980,6 @@ msgid ""
 "      Blackpool <br>\n"
 "      Lancashire <br>\n"
 "      FY1 9JN"
-msgstr ""
-
-#: templates/views/pricing/how-to-pay.html:9
-#: templates/views/pricing/how-to-pay.html:14
-msgid "How to pay"
 msgstr ""
 
 #: templates/views/pricing/how-to-pay.html:17
