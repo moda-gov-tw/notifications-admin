@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-20 15:47+0800\n"
+"POT-Creation-Date: 2022-11-20 15:50+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -2942,33 +2942,38 @@ msgstr ""
 msgid "Click the link in the email to confirm the change to your email address."
 msgstr ""
 
-#: templates/views/choose-account.html:47
-#: templates/views/choose-account.html:53
+#: templates/views/choose-account.html:26
+#, python-format
+msgid "%%s live service"
+msgstr ""
+
+#: templates/views/choose-account.html:46
+#: templates/views/choose-account.html:52
 msgid "Choose service"
 msgstr ""
 
-#: templates/views/choose-account.html:62
+#: templates/views/choose-account.html:61
 msgid "Platform admin"
 msgstr ""
 
-#: templates/views/choose-account.html:69
+#: templates/views/choose-account.html:68
 #, python-format
 msgid "%%s organisations, %%s live services"
 msgstr ""
 
-#: templates/views/choose-account.html:79
-#: templates/views/choose-account.html:86
+#: templates/views/choose-account.html:78
+#: templates/views/choose-account.html:85
 #: templates/views/find-users/user-information.html:17
 msgid "Live services"
 msgstr ""
 
-#: templates/views/choose-account.html:94
+#: templates/views/choose-account.html:93
 #: templates/views/find-users/user-information.html:33
 #: templates/views/organisations/organisation/trial-mode-services.html:11
 msgid "Trial mode services"
 msgstr ""
 
-#: templates/views/choose-account.html:113
+#: templates/views/choose-account.html:112
 msgid "Add a new service"
 msgstr ""
 

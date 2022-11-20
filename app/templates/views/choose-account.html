@@ -23,8 +23,7 @@
     <li class="browse-list-item">
       <a href="{{ url_for('.organisation_dashboard', org_id=org.id) }}" class="govuk-link govuk-link--no-visited-state">{{ org.name }}</a>
       <p class="browse-list-hint">
-        {{ org.count_of_live_services }}
-        live service{% if org.count_of_live_services != 1 %}s{% endif %}
+        {{_("%%s live service") % org.count_of_live_services}}
       </p>
     </li>
   {% endfor %}
