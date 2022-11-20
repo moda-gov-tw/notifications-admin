@@ -3,10 +3,10 @@
   {% if messages %}
     {% for category, message in messages %}
       {% if category in ['cancel', 'delete', 'suspend', 'resume', 'remove', 'revoke this API key', 'stop broadcasting'] %}
-        {% set delete_button_text = "Yes, {}".format(category) %}
+        {% set delete_button_text = _("Yes, {}").format(category) %}
       {% elif category == 'try again' %}
         {% set delete_button_text = category|capitalize %}
-      {% elif category == 'yes, make this email branding the default' %}
+      {% elif category == _('yes, make this email branding the default') %}
         {% set delete_button_text = category|capitalize %}
       {% else %}
         {% set delete_button_text = None %}

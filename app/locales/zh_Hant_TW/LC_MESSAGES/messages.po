@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-20 17:23+0800\n"
+"POT-Creation-Date: 2022-11-20 19:56+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -189,6 +189,7 @@ msgid "recipients"
 msgstr ""
 
 #: formatters.py:442 main/views/jobs.py:173
+#: templates/views/api/guest-list.html:64
 #: templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:81
 msgid "phone number"
@@ -199,7 +200,8 @@ msgid "phone numbers"
 msgstr ""
 
 #: formatters.py:448 main/views/jobs.py:172 main/views/user_profile.py:70
-#: main/views/user_profile.py:91 templates/views/notifications/check.html:33
+#: main/views/user_profile.py:91 templates/views/api/guest-list.html:58
+#: templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:63
 #: templates/views/user-profile.html:26
 msgid "email address"
@@ -1199,7 +1201,7 @@ msgstr ""
 msgid "Must be empty"
 msgstr ""
 
-#: main/forms.py:2323 models/service.py:514
+#: main/forms.py:2323 models/service.py:514 templates/main_nav.html:14
 #: templates/views/templates/choose.html:10
 msgid "Templates"
 msgstr ""
@@ -1474,7 +1476,7 @@ msgstr ""
 msgid "revoke this API key"
 msgstr ""
 
-#: main/views/broadcast.py:66
+#: main/views/broadcast.py:66 templates/main_nav.html:9
 msgid "Past alerts"
 msgstr ""
 
@@ -1482,7 +1484,7 @@ msgstr ""
 msgid "You do not have any past alerts"
 msgstr ""
 
-#: main/views/broadcast.py:81
+#: main/views/broadcast.py:81 templates/main_nav.html:10
 msgid "Rejected alerts"
 msgstr ""
 
@@ -1703,6 +1705,7 @@ msgid "Email branding ‘%%(name)s’ removed."
 msgstr ""
 
 #: main/views/organisations.py:455 main/views/organisations.py:504
+#: templates/flash_messages.html:9
 msgid "yes, make this email branding the default"
 msgstr ""
 
@@ -1804,11 +1807,13 @@ msgstr ""
 
 #: main/views/platform_admin.py:175
 #: main/views/sub_navigation_dictionaries.py:67
-#: templates/views/trial-mode.html:7 templates/views/trial-mode.html:12
+#: templates/admin_template.html:245 templates/views/trial-mode.html:7
+#: templates/views/trial-mode.html:12
 msgid "Trial mode"
 msgstr ""
 
-#: main/views/platform_admin.py:175 templates/views/service-settings.html:322
+#: main/views/platform_admin.py:175 templates/service_navigation.html:22
+#: templates/views/service-settings.html:322
 msgid "Live"
 msgstr ""
 
@@ -2187,8 +2192,10 @@ msgid ""
 "href=\"%%s\" class='govuk-link'>Forgotten your password?</a>"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:7 templates/views/features.html:10
-#: templates/views/features.html:15 templates/views/features/emails.html:20
+#: main/views/sub_navigation_dictionaries.py:7
+#: templates/admin_template.html:110 templates/admin_template.html:193
+#: templates/views/features.html:10 templates/views/features.html:15
+#: templates/views/features/emails.html:20
 #: templates/views/features/letters.html:20
 #: templates/views/features/text-messages.html:20
 msgid "Features"
@@ -2226,29 +2233,33 @@ msgstr ""
 msgid "Letters"
 msgstr ""
 
-#: main/views/sub_navigation_dictionaries.py:25 templates/views/roadmap.html:10
+#: main/views/sub_navigation_dictionaries.py:25
+#: templates/admin_template.html:197 templates/views/roadmap.html:10
 #: templates/views/roadmap.html:15
 msgid "Roadmap"
 msgstr ""
 
 #: main/views/sub_navigation_dictionaries.py:29
+#: templates/admin_template.html:201
 #: templates/views/guidance/who-can-use-notify.html:9
 #: templates/views/guidance/who-can-use-notify.html:15
 msgid "Who can use Notify"
 msgstr ""
 
 #: main/views/sub_navigation_dictionaries.py:33
-#: templates/views/features.html:67 templates/views/security.html:9
-#: templates/views/security.html:14
+#: templates/admin_template.html:205 templates/views/features.html:67
+#: templates/views/security.html:9 templates/views/security.html:14
 msgid "Security"
 msgstr ""
 
 #: main/views/sub_navigation_dictionaries.py:37
-#: templates/views/terms-of-use.html:9 templates/views/terms-of-use.html:14
+#: templates/admin_template.html:209 templates/views/terms-of-use.html:9
+#: templates/views/terms-of-use.html:14
 msgid "Terms of use"
 msgstr ""
 
 #: main/views/sub_navigation_dictionaries.py:46
+#: templates/admin_template.html:115 templates/admin_template.html:223
 #: templates/views/features/emails.html:50
 #: templates/views/features/letters.html:46
 #: templates/views/features/text-messages.html:37
@@ -2258,12 +2269,13 @@ msgid "Pricing"
 msgstr ""
 
 #: main/views/sub_navigation_dictionaries.py:50
-#: templates/views/pricing/how-to-pay.html:9
+#: templates/admin_template.html:227 templates/views/pricing/how-to-pay.html:9
 #: templates/views/pricing/how-to-pay.html:14
 msgid "How to pay"
 msgstr ""
 
 #: main/views/sub_navigation_dictionaries.py:54
+#: templates/admin_template.html:231
 #: templates/views/pricing/billing-details-signed-out.html:9
 #: templates/views/pricing/billing-details-signed-out.html:14
 #: templates/views/pricing/billing-details.html:10
@@ -2273,18 +2285,20 @@ msgid "Billing details"
 msgstr ""
 
 #: main/views/sub_navigation_dictionaries.py:63
+#: templates/admin_template.html:241
 #: templates/views/dashboard/write-first-messages.html:1
 #: templates/views/get-started.html:7 templates/views/get-started.html:15
 msgid "Get started"
 msgstr ""
 
 #: main/views/sub_navigation_dictionaries.py:71
-#: templates/views/message-status.html:9 templates/views/message-status.html:14
+#: templates/admin_template.html:249 templates/views/message-status.html:9
+#: templates/views/message-status.html:14
 msgid "Delivery status"
 msgstr ""
 
 #: main/views/sub_navigation_dictionaries.py:75
-#: templates/views/guidance/index.html:10
+#: templates/admin_template.html:253 templates/views/guidance/index.html:10
 #: templates/views/guidance/index.html:15
 msgid "Guidance"
 msgstr ""
@@ -2323,6 +2337,7 @@ msgid "Letter specification"
 msgstr ""
 
 #: main/views/sub_navigation_dictionaries.py:101
+#: templates/admin_template.html:257
 msgid "API documentation"
 msgstr ""
 
@@ -2713,6 +2728,298 @@ msgstr ""
 msgid "Unnamed key"
 msgstr ""
 
+#: templates/admin_template.html:37
+msgid "– GOV.UK Notify"
+msgstr ""
+
+#: templates/admin_template.html:55 templates/admin_template.html:82
+#: templates/admin_template.html:105 templates/admin_template.html:166
+#: templates/views/features.html:77 templates/views/support/index.html:6
+#: templates/views/support/index.html:11
+msgid "Support"
+msgstr ""
+
+#: templates/admin_template.html:60 templates/admin_template.html:87
+#: templates/admin_template.html:120 templates/views/documentation.html:7
+#: templates/views/documentation.html:12
+msgid "Documentation"
+msgstr ""
+
+#: templates/admin_template.html:70 templates/views/choose-account.html:61
+msgid "Platform admin"
+msgstr ""
+
+#: templates/admin_template.html:75 templates/admin_template.html:97
+msgid "Sign out"
+msgstr ""
+
+#: templates/admin_template.html:125
+#: templates/views/email-link-interstitial.html:6
+#: templates/views/email-link-interstitial.html:13
+#: templates/views/signin.html:9 templates/views/signin.html:30
+msgid "Sign in"
+msgstr ""
+
+#: templates/admin_template.html:133
+msgid "Notify"
+msgstr ""
+
+#: templates/admin_template.html:144
+msgid "Privacy"
+msgstr ""
+
+#: templates/admin_template.html:148 templates/views/cookies.html:6
+#: templates/views/cookies.html:21
+msgid "Cookies"
+msgstr ""
+
+#: templates/admin_template.html:152
+#: templates/views/accessibility_statement.html:6
+#: templates/views/accessibility_statement.html:11
+msgid "Accessibility statement"
+msgstr ""
+
+#: templates/admin_template.html:157
+msgid ""
+"Built by the <a href=\"https://www.gov.uk/government/organisations"
+"/government-digital-service\" class=\"govuk-footer__link\">Government "
+"Digital Service</a><span id=\"research-mode\" class=\"research-"
+"mode\">research mode</span>"
+msgstr ""
+
+#: templates/admin_template.html:159
+msgid ""
+"Built by the <a href=\"https://www.gov.uk/government/organisations"
+"/government-digital-service\" class=\"govuk-footer__link\">Government "
+"Digital Service</a>"
+msgstr ""
+
+#: templates/admin_template.html:171
+msgid "Contact support"
+msgstr ""
+
+#: templates/admin_template.html:175
+msgid "System status"
+msgstr ""
+
+#: templates/admin_template.html:179 templates/views/performance.html:7
+#: templates/views/performance.html:14
+msgid "Performance data"
+msgstr ""
+
+#: templates/admin_template.html:183
+msgid "Chat to us on Slack"
+msgstr ""
+
+#: templates/admin_template.html:213
+msgid "Blog"
+msgstr ""
+
+#: templates/flash_messages.html:6
+msgid "Yes, {}"
+msgstr ""
+
+#: templates/main_nav.html:8 templates/views/broadcast/dashboard.html:7
+#: templates/views/broadcast/dashboard.html:12
+msgid "Current alerts"
+msgstr ""
+
+#: templates/main_nav.html:12 templates/views/dashboard/dashboard.html:8
+#: templates/views/dashboard/dashboard.html:15
+msgid "Dashboard"
+msgstr ""
+
+#: templates/main_nav.html:16 templates/views/notifications.html:16
+msgid "Sent messages"
+msgstr ""
+
+#: templates/main_nav.html:19 templates/views/jobs/jobs.html:6
+#: templates/views/jobs/jobs.html:10
+msgid "Uploads"
+msgstr ""
+
+#: templates/main_nav.html:21 templates/main_nav.html:37
+#: templates/org_nav.html:4 templates/views/manage-users.html:7
+#: templates/views/manage-users.html:13
+#: templates/views/organisations/organisation/users/index.html:8
+#: templates/views/organisations/organisation/users/index.html:23
+msgid "Team members"
+msgstr ""
+
+#: templates/main_nav.html:23 templates/main_nav.html:36
+#: templates/org_nav.html:3
+#: templates/views/organisations/organisation/index.html:8
+#: templates/views/organisations/organisation/index.html:13
+msgid "Usage"
+msgstr ""
+
+#: templates/main_nav.html:26 templates/org_nav.html:6
+#: templates/views/organisations/organisation/settings/index.html:5
+#: templates/views/organisations/organisation/settings/index.html:9
+#: templates/views/service-settings.html:7
+#: templates/views/service-settings.html:12
+#: templates/views/service-settings.html:314
+msgid "Settings"
+msgstr ""
+
+#: templates/main_nav.html:30 templates/main_nav.html:32
+#: templates/views/api/index.html:7 templates/views/api/index.html:13
+#: templates/views/features.html:39
+msgid "API integration"
+msgstr ""
+
+#: templates/org_nav.html:7 templates/views/choose-account.html:93
+#: templates/views/find-users/user-information.html:33
+#: templates/views/organisations/organisation/trial-mode-services.html:11
+msgid "Trial mode services"
+msgstr ""
+
+#: templates/org_nav.html:8
+#: templates/views/organisations/organisation/billing.html:5
+msgid "Billing"
+msgstr ""
+
+#: templates/org_template.html:11
+msgid "Organisations"
+msgstr ""
+
+#: templates/org_template.html:16 templates/service_navigation.html:41
+#: templates/views/organisations/add-organisation.html:14
+#: templates/views/service-settings/service-already-live.html:25
+msgid "Switch service"
+msgstr ""
+
+#: templates/service_navigation.html:5
+msgid "Suspended"
+msgstr ""
+
+#: templates/service_navigation.html:19
+msgid "Training"
+msgstr ""
+
+#: templates/withoutnav_template.html:8
+#, python-format
+msgid "Back to %%s"
+msgstr ""
+
+#: templates/components/cookie-banner.html:5
+msgid "Can we store analytics cookies on your device?"
+msgstr ""
+
+#: templates/components/cookie-banner.html:6
+msgid "Analytics cookies help us understand how our website is being used."
+msgstr ""
+
+#: templates/components/cookie-banner.html:9
+msgid ""
+"Yes<span class=\"govuk-visually-hidden\">, Notify can store analytics "
+"cookies on your device</span>"
+msgstr ""
+
+#: templates/components/cookie-banner.html:12
+msgid ""
+"No<span class=\"govuk-visually-hidden\">, Notify cannot store analytics "
+"cookies on your device</span>"
+msgstr ""
+
+#: templates/components/cookie-banner.html:14
+msgid "How Notify uses cookies"
+msgstr ""
+
+#: templates/components/cookie-banner.html:20
+msgid ""
+"You can <a class=\"govuk-link\" href=\"/cookies\">change your cookie "
+"settings</a> at any time."
+msgstr ""
+
+#: templates/components/cookie-banner.html:22
+msgid "Hide<span class=\"govuk-visually-hidden\"> cookies message</span>"
+msgstr ""
+
+#: templates/components/task-list.html:5
+msgid "Completed"
+msgstr ""
+
+#: templates/components/task-list.html:7
+msgid "Not completed"
+msgstr ""
+
+#: templates/error/403.html:2 templates/error/403.html:7
+msgid "You’re not allowed to see this page"
+msgstr ""
+
+#: templates/error/403.html:10
+msgid ""
+"To check your permissions, speak to a member of your team who can manage "
+"settings, team and usage."
+msgstr ""
+
+#: templates/error/404.html:2 templates/error/404.html:7
+#: templates/error/410.html:2 templates/error/410.html:7
+msgid "Page not found"
+msgstr ""
+
+#: templates/error/404.html:10 templates/error/410.html:10
+msgid "If you typed the web address, check it is correct."
+msgstr ""
+
+#: templates/error/404.html:13 templates/error/410.html:13
+msgid "If you pasted the web address, check you copied the entire address."
+msgstr ""
+
+#: templates/error/404.html:16 templates/error/410.html:16
+#, python-format
+msgid ""
+"If the web address is correct or you selected a link or button, <a class"
+"=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">contact us</a>."
+msgstr ""
+
+#: templates/error/500.html:2
+msgid "Sorry, there’s a problem with the service"
+msgstr ""
+
+#: templates/error/500.html:7
+msgid "Sorry, there’s a problem with GOV.UK Notify"
+msgstr ""
+
+#: templates/error/500.html:10
+msgid "Try again later."
+msgstr ""
+
+#: templates/error/500.html:13
+msgid ""
+"You can check our <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://status.notifications.service.gov.uk\">system status</a> "
+"page to see if there are any known issues."
+msgstr ""
+
+#: templates/error/500.html:16
+msgid ""
+"To report a problem, email <a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"mailto:gov-uk-notify-support@digital.cabinet-office.gov.uk"
+"\">gov-uk-notify-support@digital.cabinet-office.gov.uk</a>"
+msgstr ""
+
+#: templates/partials/tour.html:4
+msgid "Try sending yourself this example"
+msgstr ""
+
+#: templates/partials/tour.html:11
+msgid "Every message is sent from a template"
+msgstr ""
+
+#: templates/partials/tour.html:21
+msgid "The template pulls in the data you provide"
+msgstr ""
+
+#: templates/partials/tour.html:31
+msgid "Notify delivers the message"
+msgstr ""
+
+#: templates/partials/tour.html:35
+msgid "Now go to your dashboard"
+msgstr ""
+
 #: templates/partials/check/letter-too-long.html:2
 msgid "Your letter is too long"
 msgstr ""
@@ -2878,6 +3185,7 @@ msgid "Status"
 msgstr ""
 
 #: templates/partials/jobs/notifications.html:68
+#: templates/partials/notifications/notifications.html:26
 msgid "Only showing the first 50 rows"
 msgstr ""
 
@@ -2893,6 +3201,10 @@ msgid ""
 "Upload this spreadsheet again tomorrow or <a class=\"govuk-link\" "
 "href=\"https://www.notifications.service.gov.uk/support\">contact the "
 "GOV.UK Notify team</a> to raise the limit."
+msgstr ""
+
+#: templates/partials/notifications/status.html:15
+msgid "(test)"
 msgstr ""
 
 #: templates/partials/templates/guidance-character-count.html:1
@@ -3074,11 +3386,6 @@ msgid ""
 "Next, use the API to upload your document. Follow the instructions to "
 "send a document by email in the <a class=\"govuk-link govuk-link--no-"
 "visited-state\" href=\"%%s\">API documentation</a>."
-msgstr ""
-
-#: templates/views/accessibility_statement.html:6
-#: templates/views/accessibility_statement.html:11
-msgid "Accessibility statement"
 msgstr ""
 
 #: templates/views/accessibility_statement.html:22
@@ -3523,10 +3830,6 @@ msgstr ""
 msgid "Choose service"
 msgstr ""
 
-#: templates/views/choose-account.html:61
-msgid "Platform admin"
-msgstr ""
-
 #: templates/views/choose-account.html:68
 #, python-format
 msgid "%%s organisations, %%s live services"
@@ -3538,18 +3841,8 @@ msgstr ""
 msgid "Live services"
 msgstr ""
 
-#: templates/views/choose-account.html:93
-#: templates/views/find-users/user-information.html:33
-#: templates/views/organisations/organisation/trial-mode-services.html:11
-msgid "Trial mode services"
-msgstr ""
-
 #: templates/views/choose-account.html:112
 msgid "Add a new service"
-msgstr ""
-
-#: templates/views/cookies.html:6 templates/views/cookies.html:21
-msgid "Cookies"
 msgstr ""
 
 #: templates/views/cookies.html:16
@@ -3722,10 +4015,6 @@ msgstr ""
 msgid "Save cookie settings"
 msgstr ""
 
-#: templates/views/documentation.html:7 templates/views/documentation.html:12
-msgid "Documentation"
-msgstr ""
-
 #: templates/views/documentation.html:13
 msgid ""
 "This documentation is for developers who want to integrate the GOV.UK "
@@ -3771,6 +4060,7 @@ msgid "%%s template"
 msgstr ""
 
 #: templates/views/api/callbacks/delivery-status-callback.html:39
+#: templates/views/api/guest-list.html:71
 #: templates/views/edit-broadcast-template.html:44
 #: templates/views/edit-user-permissions.html:47
 #: templates/views/email-branding/manage-branding.html:42
@@ -3871,12 +4161,6 @@ msgstr ""
 
 #: templates/views/edit-user-permissions.html:49
 msgid "Remove this team member"
-msgstr ""
-
-#: templates/views/email-link-interstitial.html:6
-#: templates/views/email-link-interstitial.html:13
-#: templates/views/signin.html:9 templates/views/signin.html:30
-msgid "Sign in"
 msgstr ""
 
 #: templates/views/email-link-interstitial.html:16
@@ -4000,11 +4284,6 @@ msgid ""
 " the date and time you want them to be sent."
 msgstr ""
 
-#: templates/views/api/index.html:7 templates/views/api/index.html:13
-#: templates/views/features.html:39
-msgid "API integration"
-msgstr ""
-
 #: templates/views/features.html:40
 msgid ""
 "You can integrate the Notify API with your web application or back-office"
@@ -4125,11 +4404,6 @@ msgstr ""
 msgid ""
 "Read more about <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">security"
-msgstr ""
-
-#: templates/views/features.html:77 templates/views/support/index.html:6
-#: templates/views/support/index.html:11
-msgid "Support"
 msgstr ""
 
 #: templates/views/features.html:78
@@ -4356,12 +4630,6 @@ msgstr ""
 #: templates/views/invite-user.html:36
 #: templates/views/organisations/organisation/users/invite-org-user.html:37
 msgid "Send invitation email"
-msgstr ""
-
-#: templates/views/manage-users.html:7 templates/views/manage-users.html:13
-#: templates/views/organisations/organisation/users/index.html:8
-#: templates/views/organisations/organisation/users/index.html:23
-msgid "Team members"
 msgstr ""
 
 #: templates/views/manage-users.html:57
@@ -4627,10 +4895,6 @@ msgstr ""
 msgid "Failed "
 msgstr ""
 
-#: templates/views/notifications.html:16
-msgid "Sent messages"
-msgstr ""
-
 #: templates/views/notifications.html:47 templates/views/notifications.html:48
 msgid "Search by"
 msgstr ""
@@ -4648,10 +4912,6 @@ msgstr ""
 
 #: templates/views/password-reset-sent.html:13
 msgid "Click the link in the email to reset your password."
-msgstr ""
-
-#: templates/views/performance.html:7 templates/views/performance.html:14
-msgid "Performance data"
 msgstr ""
 
 #: templates/views/performance.html:19 templates/views/performance.html:57
@@ -5664,14 +5924,6 @@ msgstr ""
 
 #: templates/views/send-test.html:33
 msgid "Use an emergency list"
-msgstr ""
-
-#: templates/views/organisations/organisation/settings/index.html:5
-#: templates/views/organisations/organisation/settings/index.html:9
-#: templates/views/service-settings.html:7
-#: templates/views/service-settings.html:12
-#: templates/views/service-settings.html:314
-msgid "Settings"
 msgstr ""
 
 #: templates/views/api/callbacks.html:19
@@ -6771,8 +7023,37 @@ msgstr ""
 msgid "Received text messages"
 msgstr ""
 
-#: templates/views/api/index.html:21
+#: templates/views/api/guest-list.html:11 templates/views/api/index.html:21
 msgid "Guest list"
+msgstr ""
+
+#: templates/views/api/guest-list.html:23
+msgid "There was a problem with your guest list"
+msgstr ""
+
+#: templates/views/api/guest-list.html:25
+msgid "Fix these errors:"
+msgstr ""
+
+#: templates/views/api/guest-list.html:29
+msgid "Enter valid email addresses"
+msgstr ""
+
+#: templates/views/api/guest-list.html:34
+msgid "Enter valid phone numbers"
+msgstr ""
+
+#: templates/views/api/guest-list.html:44
+msgid ""
+"You can use a team and guest list key to send real messages to your team "
+"and up to 5 other email addresses or phone numbers."
+msgstr ""
+
+#: templates/views/api/guest-list.html:48
+#, python-format
+msgid ""
+"You do not need to add yourself or your <a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"%%s\">team members</a> to the guest list."
 msgstr ""
 
 #: templates/views/api/index.html:31
@@ -6876,11 +7157,6 @@ msgstr ""
 
 #: templates/views/api/keys/show.html:33
 msgid "Back to API keys"
-msgstr ""
-
-#: templates/views/broadcast/dashboard.html:7
-#: templates/views/broadcast/dashboard.html:12
-msgid "Current alerts"
 msgstr ""
 
 #: templates/views/broadcast/dashboard.html:24
@@ -7459,11 +7735,6 @@ msgstr ""
 
 #: templates/views/dashboard/all-template-statistics.html:28
 msgid "No messages sent"
-msgstr ""
-
-#: templates/views/dashboard/dashboard.html:8
-#: templates/views/dashboard/dashboard.html:15
-msgid "Dashboard"
 msgstr ""
 
 #: templates/views/dashboard/dashboard.html:20
@@ -8559,10 +8830,6 @@ msgstr ""
 msgid "Cancel sending these letters"
 msgstr ""
 
-#: templates/views/jobs/jobs.html:6 templates/views/jobs/jobs.html:10
-msgid "Uploads"
-msgstr ""
-
 #: templates/views/jobs/jobs.html:16
 msgid "You have not uploaded any files recently."
 msgstr ""
@@ -8754,15 +9021,6 @@ msgstr ""
 msgid "All organisations"
 msgstr ""
 
-#: templates/views/organisations/add-organisation.html:14
-#: templates/views/service-settings/service-already-live.html:25
-msgid "Switch service"
-msgstr ""
-
-#: templates/views/organisations/organisation/billing.html:5
-msgid "Billing"
-msgstr ""
-
 #: templates/views/organisations/organisation/billing.html:13
 #: templates/views/organisations/organisation/settings/edit-agreement.html:12
 #: templates/views/organisations/organisation/settings/edit-agreement.html:16
@@ -8805,11 +9063,6 @@ msgstr ""
 msgid ""
 "%%s has not accepted the GOV.UK Notify data sharing and financial "
 "agreement, but we have some service-specific agreements in place."
-msgstr ""
-
-#: templates/views/organisations/organisation/index.html:8
-#: templates/views/organisations/organisation/index.html:13
-msgid "Usage"
 msgstr ""
 
 #: templates/views/organisations/organisation/index.html:25

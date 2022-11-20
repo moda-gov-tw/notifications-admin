@@ -34,7 +34,7 @@
 {% endblock %}
 
 {% block pageTitle %}
-   {% block per_page_title %}{% endblock %} – GOV.UK Notify
+   {% block per_page_title %}{% endblock %} {{_('– GOV.UK Notify')}}
 {% endblock %}
 
 {% block bodyStart %}
@@ -52,12 +52,12 @@
       {% set navigation = [
         {
           "href": url_for('main.support'),
-          "text": "Support",
+          "text": _("Support"),
           "active": header_navigation.is_selected('support')
         },
         {
           "href": url_for('main.documentation'),
-          "text": "Documentation",
+          "text": _("Documentation"),
           "active": header_navigation.is_selected('documentation')
         },
         {
@@ -67,24 +67,24 @@
         },
         {
           "href": url_for('main.platform_admin_splash_page'),
-          "text": "Platform admin",
+          "text": _("Platform admin"),
           "active": header_navigation.is_selected('platform-admin')
         },
         {
           "href": url_for('main.sign_out'),
-          "text": "Sign out"
+          "text": _("Sign out")
         }
       ] %}
     {% else %}
       {% set navigation = [
         {
           "href": url_for('main.support'),
-          "text": "Support",
+          "text": _("Support"),
           "active": header_navigation.is_selected('support')
         },
         {
           "href": url_for('main.documentation'),
-          "text": "Documentation",
+          "text": _("Documentation"),
           "active": header_navigation.is_selected('documentation')
         },
         {
@@ -94,7 +94,7 @@
         },
         {
           "href": url_for('main.sign_out'),
-          "text": "Sign out"
+          "text": _("Sign out")
         }
       ] %}
     {% endif %}
@@ -102,27 +102,27 @@
     {% set navigation = [
       {
         "href": url_for('main.support'),
-        "text": "Support",
+        "text": _("Support"),
         "active": header_navigation.is_selected('support')
       },
       {
         "href": url_for('main.features'),
-        "text": "Features",
+        "text": _("Features"),
         "active": header_navigation.is_selected('features')
       },
       {
         "href": url_for('main.pricing'),
-        "text": "Pricing",
+        "text": _("Pricing"),
         "active": header_navigation.is_selected('pricing')
       },
       {
         "href": url_for('main.documentation'),
-        "text": "Documentation",
+        "text": _("Documentation"),
         "active": header_navigation.is_selected('documentation')
       },
       {
         "href": url_for('main.sign_in'),
-        "text": "Sign in",
+        "text": _("Sign in"),
         "active": header_navigation.is_selected('sign-in')
       }
     ] %}
@@ -130,7 +130,7 @@
 
   {{ govukHeader({
     "homepageUrl": url_for('main.show_accounts_or_dashboard'),
-    "productName": "Notify",
+    "productName": _("Notify"),
     "navigation": navigation,
     "navigationClasses": "govuk-header__navigation--end",
     "assetsPath": asset_path + "images"
@@ -141,46 +141,46 @@
   {% set meta_items = [
     {
       "href": url_for("main.privacy"),
-      "text": "Privacy"
+      "text": _("Privacy")
     },
     {
       "href": url_for("main.cookies"),
-      "text": "Cookies"
+      "text": _("Cookies")
     },
     {
       "href": url_for("main.accessibility_statement"),
-      "text": "Accessibility statement"
+      "text": _("Accessibility statement")
     }
   ] %}
 
   {% if current_service and current_service.research_mode %}
-    {% set meta_suffix = 'Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service" class="govuk-footer__link">Government Digital Service</a><span id="research-mode" class="research-mode">research mode</span>' %}
+    {% set meta_suffix = _('Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service" class="govuk-footer__link">Government Digital Service</a><span id="research-mode" class="research-mode">research mode</span>') %}
   {% else %}
-    {% set meta_suffix = 'Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service" class="govuk-footer__link">Government Digital Service</a>' %}
+    {% set meta_suffix = _('Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service" class="govuk-footer__link">Government Digital Service</a>') %}
   {% endif %}
 
   {{ govukFooter({
     "classes": "js-footer",
     "navigation": [
       {
-        "title": "Support",
+        "title": _("Support"),
         "columns": 1,
         "items": [
           {
             "href": url_for('main.support'),
-            "text": "Contact support"
+            "text": _("Contact support")
           },
           {
             "href": "https://status.notifications.service.gov.uk",
-            "text": "System status"
+            "text": _("System status")
           },
           {
             "href": url_for('main.performance'),
-            "text": "Performance data"
+            "text": _("Performance data")
           },
           {
             "href": "https://ukgovernmentdigital.slack.com/messages/C0E1ADVPC",
-            "text": "Chat to us on Slack"
+            "text": _("Chat to us on Slack")
           }
         ]
       },
@@ -190,27 +190,27 @@
         "items": [
           {
             "href": url_for("main.features"),
-            "text": "Features"
+            "text": _("Features")
           },
           {
             "href": url_for("main.roadmap"),
-            "text": "Roadmap"
+            "text": _("Roadmap")
           },
           {
             "href": url_for("main.who_can_use_notify"),
-            "text": "Who can use Notify",
+            "text": _("Who can use Notify"),
           },
           {
             "href": url_for("main.security"),
-            "text": "Security"
+            "text": _("Security")
           },
           {
             "href": url_for("main.terms"),
-            "text": "Terms of use"
+            "text": _("Terms of use")
           },
           {
             "href": "https://gds.blog.gov.uk/category/gov-uk-notify/",
-            "text": "Blog"
+            "text": _("Blog")
           }
         ]
       },
@@ -220,15 +220,15 @@
         "items": [
           {
             "href": url_for("main.pricing"),
-            "text": "Pricing"
+            "text": _("Pricing")
           },
           {
             "href": url_for("main.how_to_pay"),
-            "text": "How to pay"
+            "text": _("How to pay")
           },
           {
             "href": url_for("main.billing_details"),
-            "text": "Billing details"
+            "text": _("Billing details")
           }
         ]
       },
@@ -238,23 +238,23 @@
         "items": [
           {
             "href": url_for("main.get_started"),
-            "text": "Get started"
+            "text": _("Get started")
           },
           {
             "href": url_for("main.trial_mode_new"),
-            "text": "Trial mode"
+            "text": _("Trial mode")
           },
           {
             "href": url_for("main.message_status"),
-            "text": "Delivery status"
+            "text": _("Delivery status")
           },
           {
             "href": url_for("main.guidance_index"),
-            "text": "Guidance"
+            "text": _("Guidance")
           },
           {
             "href": url_for("main.documentation"),
-            "text": "API documentation"
+            "text": _("API documentation")
           }
         ]
       }

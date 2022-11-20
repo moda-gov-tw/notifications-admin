@@ -8,7 +8,7 @@
 {% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
 
 {% block service_page_title %}
-  Guest list
+  {{_('Guest list')}}
 {% endblock %}
 
 {% block backLink %}
@@ -20,18 +20,18 @@
   {% if form.email_addresses.errors or form.phone_numbers.errors %}
     {% call banner_wrapper(type='dangerous') %}
       <h1 class='banner-title'>
-        There was a problem with your guest list
+        {{_('There was a problem with your guest list')}}
       </h1>
-      <p class="govuk-body">Fix these errors:</p>
+      <p class="govuk-body">{{_('Fix these errors:')}}</p>
       <ul class="govuk-list govuk-!-margin-bottom-0">
         {% if form.email_addresses.errors %}
           <li>
-            <a class="govuk-link govuk-link--destructive" href="#{{ form.email_addresses.name }}">Enter valid email addresses</a>
+            <a class="govuk-link govuk-link--destructive" href="#{{ form.email_addresses.name }}">{{_('Enter valid email addresses')}}</a>
           </li>
         {% endif %}
         {% if form.phone_numbers.errors %}
           <li>
-            <a class="govuk-link govuk-link--destructive" href="#{{ form.phone_numbers.name }}">Enter valid phone numbers</a>
+            <a class="govuk-link govuk-link--destructive" href="#{{ form.phone_numbers.name }}">{{_('Enter valid phone numbers')}}</a>
           </li>
         {% endif %}
       </ul>
@@ -41,11 +41,11 @@
   {% endif %}
 
   <p class="govuk-body">
-    You can use a team and guest list key to send real messages to your team and up to 5 other email addresses or phone numbers.
+    {{_('You can use a team and guest list key to send real messages to your team and up to 5 other email addresses or phone numbers.')}}
   </p>
 
   <p class="govuk-body">
-    You do not need to add yourself or your <a class="govuk-link govuk-link--no-visited-state" href="{{ url_for('main.manage_users', service_id=current_service.id) }}">team members</a> to the guest list.
+    {{_("You do not need to add yourself or your <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">team members</a> to the guest list.") % url_for('main.manage_users', service_id=current_service.id)}}
   </p>
 
   {% call form_wrapper() %}
@@ -55,20 +55,20 @@
 
         {{ list_entry(
           form.email_addresses,
-          item_name='email address',
+          item_name=_('email address'),
           autocomplete=False
         ) }}
 
         {{ list_entry(
           form.phone_numbers,
-          item_name='phone number',
+          item_name=_('phone number'),
           autocomplete=False
         ) }}
 
       </div>
     </div>
 
-    {{ page_footer('Save') }}
+    {{ page_footer(_('Save')) }}
 
   {% endcall %}
 
