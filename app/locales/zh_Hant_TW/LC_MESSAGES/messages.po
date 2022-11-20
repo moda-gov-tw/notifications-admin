@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-20 12:21+0800\n"
+"POT-Creation-Date: 2022-11-20 12:29+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -472,7 +472,8 @@ msgstr ""
 msgid "How many text messages do you expect to send in the next year?"
 msgstr ""
 
-#: main/forms.py:1623 main/forms.py:1788 templates/views/features.html:20
+#: main/forms.py:1623 main/forms.py:1788 main/validators.py:121
+#: templates/views/features.html:20
 msgid "text messages"
 msgstr ""
 
@@ -1059,6 +1060,85 @@ msgstr ""
 
 #: main/forms.py:2667
 msgid "a colour for the stripe"
+msgstr ""
+
+#: main/validators.py:21
+msgid "Password is in list of commonly used passwords."
+msgstr ""
+
+#: main/validators.py:30
+msgid "Not a csv file"
+msgstr ""
+
+#: main/validators.py:35
+msgid "{} is not a spreadsheet that Notify can read"
+msgstr ""
+
+#: main/validators.py:46
+msgid ""
+"\n"
+"            Enter a public sector email address or\n"
+"            <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"{}\">find out who can use Notify</a>\n"
+"        "
+msgstr ""
+
+#: main/validators.py:58
+msgid "Enter a valid email address"
+msgstr ""
+
+#: main/validators.py:72
+msgid "You cannot put commas between double brackets"
+msgstr ""
+
+#: main/validators.py:100
+msgid "This SVG has an embedded raster image in it and will not render well"
+msgstr ""
+
+#: main/validators.py:105
+msgid ""
+"This SVG has text which has not been converted to paths and may not "
+"render well"
+msgstr ""
+
+#: main/validators.py:117
+msgid ""
+"You cannot use {} in {}. {} will not show up properly on everyone’s "
+"phones."
+msgstr ""
+
+#: main/validators.py:123
+msgid "It"
+msgstr ""
+
+#: main/validators.py:123
+msgid "They"
+msgstr ""
+
+#: main/validators.py:130
+msgid "You can’t use ((double brackets)) to personalise this message"
+msgstr ""
+
+#: main/validators.py:149
+#, python-format
+msgid "Content must be %%s characters or fewer because it contains %%s"
+msgstr ""
+
+#: main/validators.py:159
+msgid "Use letters and numbers only"
+msgstr ""
+
+#: main/validators.py:168
+msgid "Cannot start with 00"
+msgstr ""
+
+#: main/validators.py:180
+msgid "Must include at least two alphanumeric characters"
+msgstr ""
+
+#: main/validators.py:200
+#, python-format
+msgid "Cannot contain %%s"
 msgstr ""
 
 #: main/views/add_service.py:41

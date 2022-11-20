@@ -1,6 +1,7 @@
 import re
 from abc import ABC, abstractmethod
 
+from flask_babel import lazy_gettext as _
 from notifications_utils.field import Field
 from notifications_utils.formatters import formatted_list
 from notifications_utils.recipients import InvalidEmailError, validate_email_address
@@ -17,7 +18,7 @@ from app.utils.user import is_gov_user
 class CommonlyUsedPassword:
     def __init__(self, message=None):
         if not message:
-            message = "Password is in list of commonly used passwords."
+            message = _("Password is in list of commonly used passwords.")
         self.message = message
 
     def __call__(self, form, field):
@@ -26,12 +27,12 @@ class CommonlyUsedPassword:
 
 
 class CsvFileValidator:
-    def __init__(self, message="Not a csv file"):
+    def __init__(self, message=_("Not a csv file")):
         self.message = message
 
     def __call__(self, form, field):
         if not Spreadsheet.can_handle(field.data.filename):
-            raise ValidationError("{} is not a spreadsheet that Notify can read".format(field.data.filename))
+            raise ValidationError(_("{} is not a spreadsheet that Notify can read").format(field.data.filename))
 
 
 class ValidGovEmail:
@@ -42,19 +43,19 @@ class ValidGovEmail:
 
         from flask import url_for
 
-        message = """
+        message = _(
+            """
             Enter a public sector email address or
             <a class="govuk-link govuk-link--no-visited-state" href="{}">find out who can use Notify</a>
-        """.format(
-            url_for("main.who_can_use_notify")
-        )
+        """
+        ).format(url_for("main.who_can_use_notify"))
         if not is_gov_user(field.data.lower()):
             raise ValidationError(message)
 
 
 class ValidEmail:
 
-    message = "Enter a valid email address"
+    message = _("Enter a valid email address")
 
     def __call__(self, form, field):
 
@@ -68,7 +69,7 @@ class ValidEmail:
 
 
 class NoCommasInPlaceHolders:
-    def __init__(self, message="You cannot put commas between double brackets"):
+    def __init__(self, message=_("You cannot put commas between double brackets")):
         self.message = message
 
     def __call__(self, form, field):
@@ -96,12 +97,12 @@ class NoElementInSVG(ABC):
 
 class NoEmbeddedImagesInSVG(NoElementInSVG):
     element = "image"
-    message = "This SVG has an embedded raster image in it and will not render well"
+    message = _("This SVG has an embedded raster image in it and will not render well")
 
 
 class NoTextInSVG(NoElementInSVG):
     element = "text"
-    message = "This SVG has text which has not been converted to paths and may not render well"
+    message = _("This SVG has text which has not been converted to paths and may not render well")
 
 
 class OnlySMSCharacters:
@@ -113,20 +114,20 @@ class OnlySMSCharacters:
         non_sms_characters = sorted(list(SanitiseSMS.get_non_compatible_characters(field.data)))
         if non_sms_characters:
             raise ValidationError(
-                "You cannot use {} in {}. {} will not show up properly on everyone’s phones.".format(
+                _("You cannot use {} in {}. {} will not show up properly on everyone’s phones.").format(
                     formatted_list(non_sms_characters, conjunction="or", before_each="", after_each=""),
                     {
                         "broadcast": "broadcasts",
-                        "sms": "text messages",
+                        "sms": _("text messages"),
                     }.get(self._template_type),
-                    ("It" if len(non_sms_characters) == 1 else "They"),
+                    (_("It") if len(non_sms_characters) == 1 else _("They")),
                 )
             )
 
 
 class NoPlaceholders:
     def __init__(self, message=None):
-        self.message = message or ("You can’t use ((double brackets)) to personalise this message")
+        self.message = message or (_("You can’t use ((double brackets)) to personalise this message"))
 
     def __call__(self, form, field):
         if Field(field.data).placeholders:
@@ -146,9 +147,11 @@ class BroadcastLength:
             non_gsm_characters = list(sorted(template.non_gsm_characters))
             if non_gsm_characters:
                 raise ValidationError(
-                    f"Content must be {template.max_content_count:,.0f} "
-                    f"characters or fewer because it contains "
-                    f'{formatted_list(non_gsm_characters, conjunction="and", before_each="", after_each="")}'
+                    _("Content must be %%s characters or fewer because it contains %%s")
+                    % (
+                        f"{template.max_content_count:,.0f}",
+                        formatted_list(non_gsm_characters, conjunction="and", before_each="", after_each=""),
+                    )
                 )
             raise ValidationError(f"Content must be {template.max_content_count:,.0f} " f"characters or fewer")
 
@@ -157,7 +160,7 @@ class LettersNumbersSingleQuotesFullStopsAndUnderscoresOnly:
 
     regex = re.compile(r"^[a-zA-Z0-9\s\._']+$")
 
-    def __init__(self, message="Use letters and numbers only"):
+    def __init__(self, message=_("Use letters and numbers only")):
         self.message = message
 
     def __call__(self, form, field):
@@ -166,7 +169,7 @@ class LettersNumbersSingleQuotesFullStopsAndUnderscoresOnly:
 
 
 class DoesNotStartWithDoubleZero:
-    def __init__(self, message="Cannot start with 00"):
+    def __init__(self, message=_("Cannot start with 00")):
         self.message = message
 
     def __call__(self, form, field):
@@ -178,7 +181,7 @@ class MustContainAlphanumericCharacters:
 
     regex = re.compile(r".*[a-zA-Z0-9].*[a-zA-Z0-9].*")
 
-    def __init__(self, message="Must include at least two alphanumeric characters"):
+    def __init__(self, message=_("Must include at least two alphanumeric characters")):
         self.message = message
 
     def __call__(self, form, field):
@@ -198,6 +201,6 @@ class CharactersNotAllowed:
             if self.message:
                 raise ValidationError(self.message)
             raise ValidationError(
-                f"Cannot contain "
-                f'{formatted_list(illegal_characters, conjunction="or", before_each="", after_each="")}'
+                _("Cannot contain %%s")
+                % formatted_list(illegal_characters, conjunction="or", before_each="", after_each="")
             )
