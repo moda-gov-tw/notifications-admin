@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-20 12:29+0800\n"
+"POT-Creation-Date: 2022-11-20 15:47+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -1119,24 +1119,24 @@ msgstr ""
 msgid "You can’t use ((double brackets)) to personalise this message"
 msgstr ""
 
-#: main/validators.py:149
+#: main/validators.py:150
 #, python-format
 msgid "Content must be %%s characters or fewer because it contains %%s"
 msgstr ""
 
-#: main/validators.py:159
+#: main/validators.py:163
 msgid "Use letters and numbers only"
 msgstr ""
 
-#: main/validators.py:168
+#: main/validators.py:172
 msgid "Cannot start with 00"
 msgstr ""
 
-#: main/validators.py:180
+#: main/validators.py:184
 msgid "Must include at least two alphanumeric characters"
 msgstr ""
 
-#: main/validators.py:200
+#: main/validators.py:204
 #, python-format
 msgid "Cannot contain %%s"
 msgstr ""
@@ -4543,6 +4543,7 @@ msgid "We’ll send you a security code by text message"
 msgstr ""
 
 #: templates/views/agreement/agreement-accept.html:41
+#: templates/views/agreement/service-agreement.html:38
 #: templates/views/api/keys/create.html:23
 #: templates/views/broadcast/areas.html:30
 #: templates/views/broadcast/counties.html:40
@@ -6156,6 +6157,8 @@ msgstr ""
 
 #: templates/views/agreement/agreement-accept.html:10
 #: templates/views/agreement/agreement-accept.html:22
+#: templates/views/agreement/service-agreement.html:7
+#: templates/views/agreement/service-agreement.html:19
 #: templates/views/organisations/add-gp-organisation.html:10
 #: templates/views/organisations/add-gp-organisation.html:18
 #: templates/views/organisations/add-nhs-local-organisation.html:8
@@ -6190,6 +6193,108 @@ msgstr ""
 
 #: templates/views/agreement/agreement-confirm.html:35
 msgid "Accept this agreement"
+msgstr ""
+
+#: templates/views/agreement/agreement-public.html:5
+#: templates/views/agreement/agreement-public.html:14
+msgid "Download the GOV.UK Notify data sharing and financial agreement"
+msgstr ""
+
+#: templates/views/agreement/agreement-public.html:19
+#, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">Download the agreement (PDF)</a> for %%s."
+msgstr ""
+
+#: templates/views/agreement/agreement-public.html:21
+msgid "Download the agreement (PDF)"
+msgstr ""
+
+#: templates/views/agreement/agreement-public.html:25
+msgid ""
+"The agreement contains commercially sensitive information. Do not share "
+"it outside your organisation."
+msgstr ""
+
+#: templates/views/agreement/service-agreement-choose.html:6
+#: templates/views/agreement/service-agreement-choose.html:18
+msgid "Accept the data sharing and financial agreement"
+msgstr ""
+
+#: templates/views/agreement/service-agreement-choose.html:21
+#: templates/views/agreement/service-agreement.html:22
+msgid ""
+"Before you can use GOV.UK Notify, you need to accept our data sharing and"
+" financial agreement."
+msgstr ""
+
+#: templates/views/agreement/service-agreement-choose.html:24
+msgid ""
+"This must be done by, or on behalf of, someone with the authority to sign"
+" contracts for your organisation."
+msgstr ""
+
+#: templates/views/agreement/service-agreement-choose.html:27
+msgid ""
+"Once accepted, the agreement covers all Notify services from your "
+"organisation."
+msgstr ""
+
+#: templates/views/agreement/service-agreement-choose.html:30
+msgid "There are different agreements for crown and non-crown organisations."
+msgstr ""
+
+#: templates/views/agreement/service-agreement-choose.html:33
+#, python-format
+msgid ""
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
+" us</a> to tell us\n"
+"      whether or not you work for a crown organisation. If you’re not "
+"sure\n"
+"      we’ll help you work it out."
+msgstr ""
+
+#: templates/views/agreement/service-agreement-signed.html:6
+#: templates/views/agreement/service-agreement-signed.html:18
+msgid "Your organisation has already accepted the agreement"
+msgstr ""
+
+#: templates/views/agreement/service-agreement-signed.html:21
+#, python-format
+msgid ""
+"%%s has already accepted the GOV.UK\n"
+"      Notify data sharing and financial agreement."
+msgstr ""
+
+#: templates/views/agreement/service-agreement-signed.html:24
+#, python-format
+msgid ""
+"For more information, you can <a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"%%s\">download a copy of the agreement (PDF)"
+msgstr ""
+
+#: templates/views/agreement/service-agreement-signed.html:27
+#: templates/views/agreement/service-agreement.html:34
+msgid ""
+"The agreement is confidential and should not be shared outside your "
+"organisation."
+msgstr ""
+
+#: templates/views/agreement/service-agreement.html:25
+#, python-format
+msgid ""
+"This must be done by, or on behalf of, someone with the authority to sign"
+" contracts for %%s."
+msgstr ""
+
+#: templates/views/agreement/service-agreement.html:28
+#, python-format
+msgid "Once accepted, the agreement covers all Notify services from %%s."
+msgstr ""
+
+#: templates/views/agreement/service-agreement.html:31
+msgid "Download a copy of the data sharing and financial agreement (PDF)"
 msgstr ""
 
 #: templates/views/api/callbacks.html:8 templates/views/api/callbacks.html:16
