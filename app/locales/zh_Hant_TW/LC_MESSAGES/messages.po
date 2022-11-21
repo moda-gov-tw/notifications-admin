@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-20 19:56+0800\n"
+"POT-Creation-Date: 2022-11-21 13:41+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -2181,11 +2181,11 @@ msgstr ""
 msgid "Letter branding request - %%s"
 msgstr ""
 
-#: main/views/sign_in.py:49
+#: main/views/sign_in.py:45
 msgid "You cannot accept an invite for another person."
 msgstr ""
 
-#: main/views/sign_in.py:68
+#: main/views/sign_in.py:69
 #, python-format
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
@@ -2716,7 +2716,7 @@ msgstr ""
 msgid "{} folders"
 msgstr ""
 
-#: models/user.py:214
+#: models/user.py:215
 msgid "{} are not valid permissions"
 msgstr ""
 
@@ -11878,21 +11878,22 @@ msgstr ""
 
 #: utils/letters.py:151
 #, python-format
-msgid "The address must be at least %%s lines long."
+msgid "The address must be at least %s lines long."
 msgstr ""
 
 #: utils/letters.py:153
 #, python-format
-msgid "Validation failed because the address must be at least %%s lines long."
+msgid "Validation failed because the address must be at least %s lines long."
 msgstr ""
 
 #: utils/letters.py:158
-msgid "The address must be no more than lines long."
+#, python-format
+msgid "The address must be no more than %s lines long."
 msgstr ""
 
 #: utils/letters.py:160
 #, python-format
-msgid "Validation failed because the address must be no more than %%s lines long."
+msgid "Validation failed because the address must be no more than %s lines long."
 msgstr ""
 
 #: utils/letters.py:167
@@ -20138,4 +20139,19 @@ msgstr ""
 #~ "Validation failed because your file "
 #~ "includes a letter you’ve downloaded from"
 #~ " Notify on %%s."
+#~ msgstr ""
+
+#~ msgid "The address must be at least %%s lines long."
+#~ msgstr ""
+
+#~ msgid "Validation failed because the address must be at least %%s lines long."
+#~ msgstr ""
+
+#~ msgid "The address must be no more than lines long."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Validation failed because the address "
+#~ "must be no more than %%s lines "
+#~ "long."
 #~ msgstr ""

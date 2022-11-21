@@ -107,7 +107,7 @@
   <div class="keyline-block govuk-!-margin-top-2"></div>
   {% if not services %}
     <p class="govuk-body govuk-hint">
-      {{_("%%(name)s has no live services on GOV.UK Notify") % {'': current_org.name}}}
+      {{_("%%(name)s has no live services on GOV.UK Notify") % {'name': current_org.name}}}
     </p>
     <div class="keyline-block govuk-!-margin-top-2"></div>
   {% else %}

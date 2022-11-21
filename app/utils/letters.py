@@ -148,16 +148,16 @@ LETTER_VALIDATION_MESSAGES = {
     },
     "not-enough-address-lines": {
         "title": _("There’s a problem with the address for this letter"),
-        "detail": _("The address must be at least %%s lines long.") % PostalAddress.MIN_LINES,
+        "detail": _("The address must be at least %s lines long.") % PostalAddress.MIN_LINES,
         "summary": (
-            _("Validation failed because the address must be at least %%s lines long.") % PostalAddress.MIN_LINES
+            _("Validation failed because the address must be at least %s lines long.") % PostalAddress.MIN_LINES
         ),
     },
     "too-many-address-lines": {
         "title": _("There’s a problem with the address for this letter"),
-        "detail": _("The address must be no more than lines long.") % PostalAddress.MAX_LINES,
+        "detail": _("The address must be no more than %s lines long.") % PostalAddress.MAX_LINES,
         "summary": (
-            _("Validation failed because the address must be no more than %%s lines long.") % PostalAddress.MAX_LINES
+            _("Validation failed because the address must be no more than %s lines long.") % PostalAddress.MAX_LINES
         ),
     },
     "invalid-char-in-address": {
