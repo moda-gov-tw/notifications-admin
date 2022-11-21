@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-21 13:41+0800\n"
+"POT-Creation-Date: 2022-11-21 14:39+0800\n"
 "PO-Revision-Date: 2022-11-16 11:54+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -1928,6 +1928,7 @@ msgstr ""
 
 #: main/views/platform_admin.py:353 main/views/platform_admin.py:405
 #: main/views/platform_admin.py:453
+#: templates/views/platform-admin/get-billing-report.html:33
 msgid "sms chargeable units"
 msgstr ""
 
@@ -1940,6 +1941,7 @@ msgid "letter totals"
 msgstr ""
 
 #: main/views/platform_admin.py:356
+#: templates/views/platform-admin/get-billing-report.html:34
 msgid "letter cost"
 msgstr ""
 
@@ -1972,6 +1974,7 @@ msgid "provider"
 msgstr ""
 
 #: main/views/platform_admin.py:454
+#: templates/views/platform-admin/get-billing-report.html:32
 msgid "sms cost"
 msgstr ""
 
@@ -3878,6 +3881,7 @@ msgstr ""
 #: templates/views/cookies.html:35 templates/views/cookies.html:85
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:27
 #: templates/views/platform-admin/daily-volumes-report.html:27
+#: templates/views/platform-admin/get-billing-report.html:27
 #: templates/views/user-profile.html:51
 msgid "Name"
 msgstr ""
@@ -4707,6 +4711,7 @@ msgstr ""
 #: templates/views/message-status.html:78
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:27
 #: templates/views/platform-admin/daily-volumes-report.html:27
+#: templates/views/platform-admin/get-billing-report.html:27
 #: templates/views/pricing/index.html:112
 msgid "Description"
 msgstr ""
@@ -9364,11 +9369,14 @@ msgstr ""
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:17
 #: templates/views/platform-admin/daily-volumes-report.html:16
 #: templates/views/platform-admin/daily-volumes-report.html:17
+#: templates/views/platform-admin/get-billing-report.html:16
+#: templates/views/platform-admin/get-billing-report.html:17
 msgid "Use the format YYYY-MM-DD"
 msgstr ""
 
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:18
 #: templates/views/platform-admin/daily-volumes-report.html:18
+#: templates/views/platform-admin/get-billing-report.html:18
 #: templates/views/platform-admin/notifications_by_service.html:17
 msgid "Download report (CSV)"
 msgstr ""
@@ -9438,6 +9446,55 @@ msgstr ""
 msgid "The number of sheets sent"
 msgstr ""
 
+#: templates/views/platform-admin/get-billing-report.html:6
+#: templates/views/platform-admin/get-billing-report.html:12
+#: templates/views/platform-admin/reports.html:20
+msgid "Billing Report"
+msgstr ""
+
+#: templates/views/platform-admin/get-billing-report.html:26
+msgid "Descriptions of billing report data"
+msgstr ""
+
+#: templates/views/platform-admin/get-billing-report.html:32
+msgid ""
+"The total cost of text messages sent after a service has used its free "
+"allowance."
+msgstr ""
+
+#: templates/views/platform-admin/get-billing-report.html:33
+msgid ""
+"The number of fragments sent after a service has used its free allowance."
+" This number takes into account the cost multiplier for <a class=\"govuk-"
+"link govuk-link--no-visited-state\" "
+"href=\"https://www.notifications.service.gov.uk/pricing#international-"
+"numbers\">sending international text messages</a>."
+msgstr ""
+
+#: templates/views/platform-admin/get-billing-report.html:34
+msgid "The total cost of letters sent by a service."
+msgstr ""
+
+#: templates/views/platform-admin/get-billing-report.html:35
+msgid "letter breakdown"
+msgstr ""
+
+#: templates/views/platform-admin/get-billing-report.html:35
+msgid "The number of letters sent by a service, grouped by postage and unit cost."
+msgstr ""
+
+#: templates/views/platform-admin/get-billing-report.html:36
+msgid ""
+"purchase order number, contact names, contact email addresses and billing"
+" reference"
+msgstr ""
+
+#: templates/views/platform-admin/get-billing-report.html:36
+msgid ""
+"We add this data manually based on the information we get from services. "
+"You can help by adding it to the service settings page."
+msgstr ""
+
 #: templates/views/platform-admin/index.html:9
 #: templates/views/platform-admin/index.html:15
 #: templates/views/platform-admin/splash-page.html:4
@@ -9480,10 +9537,6 @@ msgstr ""
 
 #: templates/views/platform-admin/reports.html:14
 msgid "Download live services csv report"
-msgstr ""
-
-#: templates/views/platform-admin/reports.html:20
-msgid "Billing Report"
 msgstr ""
 
 #: templates/views/platform-admin/reports.html:23
@@ -10280,7 +10333,8 @@ msgid "Provider"
 msgstr ""
 
 #: templates/views/providers/providers.html:22
-msgid "% monthly traffic"
+#, python-format
+msgid "%% monthly traffic"
 msgstr ""
 
 #: templates/views/providers/providers.html:47
