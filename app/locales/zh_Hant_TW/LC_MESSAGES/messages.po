@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-11-22 14:25+0800\n"
-"PO-Revision-Date: 2022-11-23 01:18+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"PO-Revision-Date: 2022-11-23 02:19+0000\n"
+"Last-Translator: Aaron <yannmaco@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -22,27 +22,27 @@ msgstr ""
 
 #: formatters.py:77 utils/letters.py:26
 msgid "tomorrow"
-msgstr ""
+msgstr "明天"
 
 #: formatters.py:79 formatters.py:157 utils/letters.py:24
 msgid "today"
-msgstr ""
+msgstr "今天"
 
 #: formatters.py:81 formatters.py:159
 msgid "yesterday"
-msgstr ""
+msgstr "昨天"
 
 #: formatters.py:96
 msgid "Midnight"
-msgstr ""
+msgstr "凌晨"
 
 #: formatters.py:96
 msgid "Midday"
-msgstr ""
+msgstr "白天"
 
 #: formatters.py:147
 msgid "just now"
-msgstr ""
+msgstr "現在"
 
 #: formatters.py:149
 msgid "in the last minute"
