@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-11-22 14:25+0800\n"
 "PO-Revision-Date: 2022-11-23 02:19+0000\n"
-"Last-Translator: Aaron <yannmaco@gmail.com>\n"
+"Last-Translator: Toomore at Steps <toomore@steps.com.tw>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -96,7 +96,7 @@ msgstr ""
 #: templates/views/message-status.html:30
 #: templates/views/message-status.html:59
 msgid "Sending"
-msgstr ""
+msgstr "寄送中"
 
 #: formatters.py:190 templates/views/message-status.html:63
 msgid "Phone not accepting messages right now"
