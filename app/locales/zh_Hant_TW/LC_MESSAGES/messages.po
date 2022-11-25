@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-11-22 14:25+0800\n"
 "PO-Revision-Date: 2022-11-26 17:16+0000\n"
-"Last-Translator: 小ㄐ <rosa@ocf.tw>\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -88,6 +88,7 @@ msgstr "此電子信箱不存在"
 #: formatters.py:182 formatters.py:185 formatters.py:192
 #: templates/views/message-status.html:31
 #: templates/views/message-status.html:61
+#, fuzzy
 msgid "Delivered"
 msgstr "已寄出"
 
@@ -99,10 +100,12 @@ msgid "Sending"
 msgstr "寄出中"
 
 #: formatters.py:190 templates/views/message-status.html:63
+#, fuzzy
 msgid "Phone not accepting messages right now"
 msgstr "此電話已無法接收更多簡訊"
 
 #: formatters.py:191 templates/views/message-status.html:62
+#, fuzzy
 msgid "Not delivered"
 msgstr "未寄出"
 
@@ -119,6 +122,7 @@ msgid "Virus detected"
 msgstr "偵測到病毒"
 
 #: formatters.py:213 utils/letters.py:189
+#, fuzzy
 msgid "Validation failed"
 msgstr "無法驗證"
 
@@ -233,11 +237,12 @@ msgid "%%s times"
 msgstr "%%s 次"
 
 #: formatters.py:474
+#, fuzzy
 msgid "1 character"
 msgstr "一個字"
 
 #: formatters.py:475
-#, python-format
+#, fuzzy, python-format
 msgid "%%s characters"
 msgstr "%%s 個字"
 
@@ -265,7 +270,7 @@ msgid "Unknown type: {}"
 msgstr "未知類型: {}"
 
 #: broadcast_areas/create-broadcast-areas-db.py:68
-#, python-format
+#, fuzzy, python-format
 msgid "%% Polygon %%s/%%s is valid"
 msgstr "存在 %% 多邊圖 %%s/%%s"
 
@@ -275,7 +280,7 @@ msgid "%%s Polygon %%s/%%s has 0 area, skipping"
 msgstr "%%s 多邊形 %%s/%%s 面積為零，略過"
 
 #: broadcast_areas/create-broadcast-areas-db.py:81
-#, python-format
+#, fuzzy, python-format
 msgid "%%s Polygon %%s/%%s needs fixing..."
 msgstr "%%s Polygon %%s/%%s needs fixing..."
 
@@ -317,6 +322,7 @@ msgid "country"
 msgstr "國家"
 
 #: broadcast_areas/create-broadcast-areas-db.py:314
+#, fuzzy
 msgid "Police forces in England and Wales"
 msgstr "在英格蘭和威爾斯的警力"
 
@@ -388,6 +394,7 @@ msgid "Password"
 msgstr "密碼"
 
 #: main/forms.py:257
+#, fuzzy
 msgid "Must be at least 8 characters"
 msgstr "至少需要八個字元"
 
@@ -408,6 +415,7 @@ msgid "Too many numbers"
 msgstr "太多數字"
 
 #: main/forms.py:439
+#, fuzzy
 msgid "Number of {} must be {} or less"
 msgstr "{}的數量應該要是{}以下"
 
@@ -428,18 +436,22 @@ msgid "Full name"
 msgstr "全名"
 
 #: main/forms.py:960
+#, fuzzy
 msgid "Must provide `image_data` to initialiser"
 msgstr "請提供 `image_data`作為初始值"
 
 #: main/forms.py:1024
+#, fuzzy
 msgid "Folders this team member can see"
 msgstr "此資料夾只有團隊成員能夠看到"
 
 #: main/forms.py:1033
+#, fuzzy
 msgid "how this team member should sign in"
 msgstr "這位團隊成員應該如何登入"
 
 #: main/forms.py:1041
+#, fuzzy
 msgid "All team members can see sent messages."
 msgstr "所有團隊成員都能夠已經寄出的訊息。"
 
@@ -452,6 +464,7 @@ msgid "You cannot send an invitation to yourself"
 msgstr "你不能傳送邀請給你自己"
 
 #: main/forms.py:1145 main/forms.py:1264
+#, fuzzy
 msgid "Service name must be 255 characters or fewer"
 msgstr "服務名稱請小於 255 個字"
 
@@ -460,22 +473,26 @@ msgid "Organisation name must be 255 characters or fewer"
 msgstr "單位名稱請小於 255 個字"
 
 #: main/forms.py:1164
+#, fuzzy
 msgid "Is your GP practice called ‘{}’?"
 msgstr "請問你的家庭醫師為‘{}’嗎?"
 
 #: main/forms.py:1173
+#, fuzzy
 msgid "Is your GP practice called the same name as your service?"
 msgstr "請問你的家庭醫師與您在同一個服務單位嗎？"
 
 #: main/forms.py:1175 main/forms.py:1211 main/forms.py:1223 main/forms.py:1608
 #: main/forms.py:1634 main/views/service_settings.py:237
 #: templates/views/organisations/organisation/settings/index.html:41
+#, fuzzy
 msgid "Yes"
 msgstr "是的"
 
 #: main/forms.py:1176 main/forms.py:1212 main/forms.py:1224 main/forms.py:1609
 #: main/forms.py:1635 main/views/service_settings.py:238
 #: templates/views/organisations/organisation/settings/index.html:42
+#, fuzzy
 msgid "No"
 msgstr "不是"
 
@@ -492,15 +509,18 @@ msgid "an NHS Trust or Clinical Commissioning Group"
 msgstr "國民健康基金或臨床委員會"
 
 #: main/forms.py:1204
+#, fuzzy
 msgid "What type of organisation is this?"
 msgstr "這是哪一類的機關？"
 
 #: main/forms.py:1209
+#, fuzzy
 msgid "Is this organisation a crown body?"
 msgstr "請問這個機關是政府機關嗎？"
 
 #: main/forms.py:1213
 #: templates/views/organisations/organisation/settings/index.html:44
+#, fuzzy
 msgid "Not sure"
 msgstr "不確定"
 
@@ -521,6 +541,7 @@ msgid "Users will be told their organisation has already signed the agreement"
 msgstr "使用者將會被告知他們的機關已經簽署了同意條款"
 
 #: main/forms.py:1231
+#, fuzzy
 msgid "Users will be prompted to sign the agreement before they can go live"
 msgstr "在使用者上線前會被要求簽署同意條款"
 
@@ -541,6 +562,7 @@ msgid "Who runs this service?"
 msgstr "誰負責營運這項服務？"
 
 #: main/forms.py:1290
+#, fuzzy
 msgid "Numbers of text message fragments per year"
 msgstr "每年的簡訊量"
 
@@ -561,6 +583,7 @@ msgid "Invalid password"
 msgstr "密碼錯誤"
 
 #: main/forms.py:1324
+#, fuzzy
 msgid "Write your own message"
 msgstr "撰寫你的訊息"
 
@@ -581,17 +604,17 @@ msgid "Confirm"
 msgstr "確認"
 
 #: main/forms.py:1349
-#, python-format
+#, fuzzy, python-format
 msgid "I understand this will alert anyone who has switched on the %%s channel"
 msgstr "我完全了解這將會向 %%s 頻道上的每一個人送出警告訊息"
 
 #: main/forms.py:1351
-#, python-format
+#, fuzzy, python-format
 msgid "I understand this will alert %%s of people"
 msgstr "我理解這將會警告%%s 人"
 
 #: main/forms.py:1355
-#, python-format
+#, fuzzy, python-format
 msgid "I understand this will alert %%s of people, even if they’ve opted out"
 msgstr "我完全了解這將會警告 %%s 人，即便他們選擇退出"
 
@@ -656,6 +679,7 @@ msgstr "地址最後一行應該是真實存在的英國郵遞區號"
 
 #: main/forms.py:1431 templates/views/check/row-errors.html:90
 #: utils/letters.py:165
+#, fuzzy
 msgid ""
 "Address lines must not start with any of the following characters: @ ( ) "
 "= [ ] ” \\ / , < > ~"
@@ -1292,6 +1316,7 @@ msgid "Choose a mobile network"
 msgstr ""
 
 #: main/forms.py:2471
+#, fuzzy
 msgid "All networks"
 msgstr "所有的網絡"
 
@@ -1573,6 +1598,7 @@ msgid ""
 msgstr ""
 
 #: main/views/invites.py:18
+#, fuzzy
 msgid ""
 "\n"
 "            You’re signed in as {}.\n"
@@ -1591,6 +1617,7 @@ msgstr ""
 "            "
 
 #: main/views/invites.py:91
+#, fuzzy
 msgid ""
 "\n"
 "            You’re signed in as {}.\n"
@@ -1755,6 +1782,7 @@ msgid ""
 msgstr ""
 
 #: main/views/organisations.py:577
+#, fuzzy
 msgid "1 email branding option added"
 msgstr "加入一個電子郵件推廣的選項"
 
@@ -2229,7 +2257,7 @@ msgid "You cannot accept an invite for another person."
 msgstr ""
 
 #: main/views/sign_in.py:68
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
 "href=\"%%s\" class='govuk-link'>Forgotten your password?</a>"
@@ -2519,6 +2547,7 @@ msgid "Wrong file type"
 msgstr ""
 
 #: main/views/uploads.py:410
+#, fuzzy
 msgid ""
 "{} contains numbers or dates that Notify cannot understand. Try "
 "formatting all columns as ‘text’ or export your file as CSV."
@@ -2762,6 +2791,7 @@ msgid "{} folders"
 msgstr "{} 資料夾"
 
 #: models/user.py:214
+#, fuzzy
 msgid "{} are not valid permissions"
 msgstr "{} 並未取得有效授權"
 
@@ -2822,6 +2852,7 @@ msgstr ""
 #: templates/admin_template.html:152
 #: templates/views/accessibility_statement.html:6
 #: templates/views/accessibility_statement.html:11
+#, fuzzy
 msgid "Accessibility statement"
 msgstr "無障礙聲明"
 
