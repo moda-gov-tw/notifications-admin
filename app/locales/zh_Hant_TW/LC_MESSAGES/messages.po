@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-11-22 14:25+0800\n"
 "PO-Revision-Date: 2022-11-25 03:41+0000\n"
-"Last-Translator: Aaron <yannmaco@gmail.com>\n"
+"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -272,26 +272,26 @@ msgstr "存在 %% 多邊圖 %%s/%%s"
 #: broadcast_areas/create-broadcast-areas-db.py:78
 #, python-format
 msgid "%%s Polygon %%s/%%s has 0 area, skipping"
-msgstr ""
+msgstr "%%s 多邊形 %%s/%%s 面積為零，略過"
 
 #: broadcast_areas/create-broadcast-areas-db.py:81
 #, python-format
 msgid "%%s Polygon %%s/%%s needs fixing..."
-msgstr ""
+msgstr "%%s Polygon %%s/%%s needs fixing..."
 
 #: broadcast_areas/create-broadcast-areas-db.py:105
 #, python-format
 msgid "%%s Polygon %%s/%%s fixed!"
-msgstr ""
+msgstr "%%s 多邊形圖 %%s/%%s 已修復!"
 
 #: broadcast_areas/create-broadcast-areas-db.py:126
 msgid "Polygon of 0 size found"
 msgstr ""
 
 #: broadcast_areas/create-broadcast-areas-db.py:129
-#, python-format
+#, fuzzy, python-format
 msgid "    Original:%%s points    Smoothed:%%s points    Simplified:%%s points"
-msgstr ""
+msgstr "    原始:%% 點    平滑:%%點    簡化:%%點"
 
 #: broadcast_areas/create-broadcast-areas-db.py:137
 msgid ""
@@ -333,7 +333,7 @@ msgid "Local authorities"
 msgstr "地區政府"
 
 #: broadcast_areas/create-broadcast-areas-db.py:507
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "DONE\n"
@@ -341,6 +341,11 @@ msgid ""
 "    Cleaned up %%s polygons.\n"
 "    Highest point counts once simplifed: %%s\n"
 msgstr ""
+"\n"
+"完成\n"
+"    處理 %% 多邊形中。\n"
+"    清除 %% 多邊形中。\n"
+"    Highest point counts once simplifed: %%s\n"
 
 #: broadcast_areas/populations.py:127
 #, python-format
@@ -654,7 +659,7 @@ msgstr "地址最後一行應該是真實存在的英國郵遞區號"
 msgid ""
 "Address lines must not start with any of the following characters: @ ( ) "
 "= [ ] ” \\ / , < > ~"
-msgstr ""
+msgstr "地址欄的第一個字不能夠為下列特殊符號：@ ( ) = [ ] ” \\ / , < > ~"
 
 #: main/forms.py:1449
 msgid "Choose the postage for this letter template"
@@ -694,7 +699,7 @@ msgstr ""
 
 #: main/forms.py:1505
 msgid "Add recipients"
-msgstr ""
+msgstr "加入收件人"
 
 #: main/forms.py:1507
 msgid "Please pick a file"
@@ -730,7 +735,7 @@ msgstr ""
 
 #: main/forms.py:1575
 msgid "A key with this name already exists"
-msgstr ""
+msgstr "這組獨特的名字已被使用"
 
 #: main/forms.py:1580
 msgid "How can we help you?"
@@ -877,7 +882,7 @@ msgstr ""
 
 #: main/forms.py:1800
 msgid "a branding style"
-msgstr ""
+msgstr "推廣模式"
 
 #: main/forms.py:1803 utils/branding.py:8
 msgid "GOV.UK"
@@ -1081,7 +1086,7 @@ msgstr ""
 
 #: main/forms.py:2049
 msgid "an inbound number"
-msgstr ""
+msgstr "內線號碼"
 
 #: main/forms.py:2058
 msgid "Must be a valid https URL"
@@ -1164,7 +1169,7 @@ msgstr ""
 msgid ""
 "An example of an email with the heading \"Your logo\" in blue text on a "
 "white background."
-msgstr ""
+msgstr "範例：一封電子郵件中的標題有公司標誌，用藍色的字寫在白色的背景上。"
 
 #: main/forms.py:2227
 msgid "Coloured banner"
@@ -1172,11 +1177,11 @@ msgstr ""
 
 #: main/forms.py:2230
 msgid "An example of an email with a logo on a blue banner."
-msgstr ""
+msgstr "電子郵件範例中有藍色的橫幅圖片加上標誌。"
 
 #: main/forms.py:2237
 msgid "Add a banner to your logo"
-msgstr ""
+msgstr "將橫幅旗幟加入你的標誌"
 
 #: main/forms.py:2249
 msgid "What notification type?"
@@ -1288,11 +1293,11 @@ msgstr ""
 
 #: main/forms.py:2471
 msgid "All networks"
-msgstr ""
+msgstr "所有的網絡"
 
 #: main/forms.py:2471
 msgid "A single network"
-msgstr ""
+msgstr "單一的網路"
 
 #: main/forms.py:2495
 msgid "Select a mobile network"
@@ -1320,7 +1325,7 @@ msgstr ""
 
 #: main/forms.py:2537
 msgid "Yourself"
-msgstr ""
+msgstr "你自己"
 
 #: main/forms.py:2546
 msgid "What’s their name?"
@@ -1360,7 +1365,7 @@ msgstr ""
 
 #: main/forms.py:2667
 msgid "a colour for the stripe"
-msgstr ""
+msgstr "條紋的顏色"
 
 #: main/validators.py:21
 msgid "Password is in list of commonly used passwords."
@@ -1372,7 +1377,7 @@ msgstr ""
 
 #: main/validators.py:35
 msgid "{} is not a spreadsheet that Notify can read"
-msgstr ""
+msgstr "{} 並非是Notify能夠讀取的試算表"
 
 #: main/validators.py:46
 msgid ""
@@ -1459,8 +1464,9 @@ msgstr ""
 #: main/views/add_service.py:91 templates/views/add-service-local.html:7
 #: templates/views/add-service-local.html:15
 #: templates/views/add-service.html:15
+#, fuzzy
 msgid "About your service"
-msgstr ""
+msgstr "關於你的服務"
 
 #: main/views/api_keys.py:74 templates/views/api/keys.html:36
 msgid "Live – sends to anyone"
@@ -1527,7 +1533,7 @@ msgstr ""
 #: main/views/broadcast.py:297
 #, python-format
 msgid "All of %s"
-msgstr ""
+msgstr "所有的 %s"
 
 #: main/views/broadcast.py:317 main/views/broadcast.py:329
 #, python-format
@@ -1792,9 +1798,9 @@ msgid "This domain is already in use"
 msgstr ""
 
 #: main/views/organisations.py:808
-#, python-format
+#, fuzzy, python-format
 msgid "‘%%s’ was deleted"
-msgstr ""
+msgstr "‘%%’ 已被刪除"
 
 #: main/views/organisations.py:812
 #, python-format
@@ -1835,7 +1841,7 @@ msgstr ""
 
 #: main/views/platform_admin.py:175
 msgid "{} services"
-msgstr ""
+msgstr "{} 服務"
 
 #: main/views/platform_admin.py:175
 #: main/views/sub_navigation_dictionaries.py:67
@@ -1918,7 +1924,7 @@ msgstr ""
 msgid ""
 "attachment; filename=\"{} to {} notification status per service "
 "report.csv\""
-msgstr ""
+msgstr "附件; 檔案名稱=\"{} 到 {} 每次服務狀態通知.csv\""
 
 #: main/views/platform_admin.py:298
 msgid "Date must be in a single financial year."
@@ -1926,7 +1932,7 @@ msgstr ""
 
 #: main/views/platform_admin.py:328
 msgid "attachment; filename=\"Billing Report from {} to {}.csv\""
-msgstr ""
+msgstr "附件; 檔案名稱=\"帳單報告 從 {} 到 {}.csv\""
 
 #: main/views/platform_admin.py:334 main/views/platform_admin.py:436
 #: main/views/platform_admin.py:482
@@ -1983,7 +1989,7 @@ msgstr ""
 
 #: main/views/platform_admin.py:383
 msgid "attachment; filename=\"Volumes by service report from {} to {}.csv\""
-msgstr ""
+msgstr "附件; 檔案名稱=\"服務使用量報告從 {} 到 {}.csv\""
 
 #: main/views/platform_admin.py:402 main/views/platform_admin.py:449
 msgid "day"
@@ -1999,7 +2005,7 @@ msgstr ""
 
 #: main/views/platform_admin.py:430
 msgid "attachment; filename=\"Daily volumes report from {} to {}.csv\""
-msgstr ""
+msgstr "附件; 檔案名稱\"每日使用量從 {} 到 {}.csv\""
 
 #: main/views/platform_admin.py:450
 msgid "provider"
@@ -2015,7 +2021,7 @@ msgstr ""
 msgid ""
 "attachment; filename=\"Daily SMS provider volumes report from %%s to "
 "%%s.csv\""
-msgstr ""
+msgstr "附件; 檔案名稱=\"每天簡訊使用量報告從 %%s 到 %%s.csv\""
 
 #: main/views/platform_admin.py:532
 msgid "Submitted {} letter references"
@@ -2161,7 +2167,7 @@ msgstr ""
 
 #: main/views/service_settings.py:387
 msgid "‘{}’ was deleted"
-msgstr ""
+msgstr "‘{}’ 已被刪除"
 
 #: main/views/service_settings.py:393
 msgid "Are you sure you want to delete ‘{}’? There’s no way to undo this."
@@ -2377,7 +2383,7 @@ msgstr ""
 #: main/views/sub_navigation_dictionaries.py:101
 #: templates/admin_template.html:257
 msgid "API documentation"
-msgstr ""
+msgstr "API 文件"
 
 #: main/views/templates.py:133
 msgid "Select at least one template or folder"
@@ -2385,11 +2391,11 @@ msgstr ""
 
 #: main/views/templates.py:183 templates/views/temp-history.html:18
 msgid "All"
-msgstr ""
+msgstr "全部"
 
 #: main/views/templates.py:223
 msgid "An example letter"
-msgstr ""
+msgstr "信件範例"
 
 #: main/views/templates.py:224
 msgid ""
@@ -2516,7 +2522,8 @@ msgstr ""
 msgid ""
 "{} contains numbers or dates that Notify cannot understand. Try "
 "formatting all columns as ‘text’ or export your file as CSV."
-msgstr ""
+msgstr "{} 含有某些Notify無法處理的數字或日期。請嘗試將所有的欄位格式化成文字或以CSV"
+"檔的形式輸出。"
 
 #: main/views/uploads.py:561
 #, python-format
@@ -2631,7 +2638,7 @@ msgstr ""
 
 #: models/event.py:86
 msgid "{} this service’s daily message limit from {} to {}"
-msgstr ""
+msgstr "{}這項服務每天的訊息量限制是 {} 到 {}"
 
 #: models/event.py:87
 msgid "Reduced"
@@ -2651,7 +2658,7 @@ msgstr ""
 
 #: models/event.py:104
 msgid "Added {} to this service’s permissions"
-msgstr ""
+msgstr "將 {} 加入這項服務的權限"
 
 #: models/event.py:106
 msgid "Removed {} from this service’s permissions"
@@ -2744,7 +2751,7 @@ msgstr "一個模板"
 
 #: models/template_list.py:338
 msgid "{} templates"
-msgstr ""
+msgstr "{} 模板"
 
 #: models/template_list.py:341
 msgid "1 folder"
@@ -2752,11 +2759,11 @@ msgstr "一個資料夾"
 
 #: models/template_list.py:343
 msgid "{} folders"
-msgstr ""
+msgstr "{} 資料夾"
 
 #: models/user.py:214
 msgid "{} are not valid permissions"
-msgstr ""
+msgstr "{} 並未取得有效授權"
 
 #: models/webauthn_credential.py:47
 msgid "Encryption algorithm not supported"
@@ -2767,8 +2774,9 @@ msgid "Unnamed key"
 msgstr ""
 
 #: templates/admin_template.html:37
+#, fuzzy
 msgid "– GOV.UK Notify"
-msgstr ""
+msgstr "– GOV.UK Notify"
 
 #: templates/admin_template.html:55 templates/admin_template.html:82
 #: templates/admin_template.html:105 templates/admin_template.html:166
@@ -2815,7 +2823,7 @@ msgstr ""
 #: templates/views/accessibility_statement.html:6
 #: templates/views/accessibility_statement.html:11
 msgid "Accessibility statement"
-msgstr ""
+msgstr "無障礙聲明"
 
 #: templates/admin_template.html:157
 msgid ""
@@ -2904,7 +2912,7 @@ msgstr ""
 #: templates/views/api/index.html:7 templates/views/api/index.html:13
 #: templates/views/features.html:39
 msgid "API integration"
-msgstr ""
+msgstr "API 整合"
 
 #: templates/org_nav.html:7 templates/views/choose-account.html:93
 #: templates/views/find-users/user-information.html:33
@@ -2938,7 +2946,7 @@ msgstr ""
 #: templates/withoutnav_template.html:8
 #, python-format
 msgid "Back to %%s"
-msgstr ""
+msgstr "回到 %%s"
 
 #: templates/components/cookie-banner.html:5
 msgid "Can we store analytics cookies on your device?"
@@ -2946,7 +2954,7 @@ msgstr ""
 
 #: templates/components/cookie-banner.html:6
 msgid "Analytics cookies help us understand how our website is being used."
-msgstr ""
+msgstr "分析 Cookies 能夠幫助你了解你的網站使用情形。"
 
 #: templates/components/cookie-banner.html:9
 msgid ""
@@ -3126,9 +3134,9 @@ msgid "You can still send %%s messages today, but"
 msgstr ""
 
 #: templates/partials/check/too-many-messages.html:20
-#, python-format
+#, fuzzy, python-format
 msgid "‘%%s’ contains %%s."
-msgstr ""
+msgstr "‘%%’ 包含 %%."
 
 #: templates/partials/check/trying-to-send-letters-in-trial-mode.html:2
 msgid "You cannot send"
@@ -3319,7 +3327,7 @@ msgstr ""
 
 #: templates/partials/templates/guidance-formatting.html:25
 msgid "^ You must tell us if your circumstances change"
-msgstr ""
+msgstr "^ 當您的使用情境改變，請務必通知我們"
 
 #: templates/partials/templates/guidance-formatting.html:28
 msgid "To add a horizontal line, use three dashes:"
@@ -3339,7 +3347,7 @@ msgstr ""
 
 #: templates/partials/templates/guidance-links.html:5
 msgid "Always use full URLs, starting with https://"
-msgstr ""
+msgstr "每次都使用完整的網址，並以https://開頭"
 
 #: templates/partials/templates/guidance-links.html:8
 msgid "Apply now at https://www.gov.uk/example"
@@ -3456,7 +3464,7 @@ msgstr ""
 
 #: templates/views/accessibility_statement.html:30
 msgid "zoom in up to 300% without the text spilling off the screen"
-msgstr ""
+msgstr "放大三倍且文字在螢幕上沒有溢位"
 
 #: templates/views/accessibility_statement.html:31
 msgid "navigate most of the website using just a keyboard"
@@ -3709,6 +3717,9 @@ msgid ""
 "link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#info-and-"
 "relationships\">success criterion 1.3.1: info and relationships</a>"
 msgstr ""
+"錯誤使用標題的階層性 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://www.w3.org/TR/WCAG21/#info-and-relationships\""
+">將會破壞文件規範第 1.3.1：資訊與脈絡關係的規定</a>"
 
 #: templates/views/accessibility_statement.html:167
 msgid ""
@@ -3839,7 +3850,7 @@ msgstr ""
 #: templates/views/add-service-local.html:29
 #: templates/views/add-service.html:25
 msgid "Add service"
-msgstr ""
+msgstr "加入服務"
 
 #: templates/views/cancelled-invitation.html:2
 #: templates/views/cancelled-invitation.html:7
@@ -3860,7 +3871,7 @@ msgstr ""
 #: templates/views/registration-continue.html:10
 #, python-format
 msgid "An email has been sent to %%s."
-msgstr ""
+msgstr "一封電子郵件送到 %%s。"
 
 #: templates/views/change-email-continue.html:11
 msgid "Click the link in the email to confirm the change to your email address."
@@ -3889,7 +3900,7 @@ msgstr ""
 
 #: templates/views/choose-account.html:112
 msgid "Add a new service"
-msgstr ""
+msgstr "加入一個新的服務"
 
 #: templates/views/cookies.html:16
 msgid "Your cookie settings were saved"
@@ -3950,6 +3961,15 @@ msgid ""
 "                  20 hours\n"
 "                </td>"
 msgstr ""
+"<td>\n"
+"                  notify_admin_session\n"
+"                </td>\n"
+"                <td width=\"50%%\">\n"
+"                  用來讓你保持在登入狀態\n"
+"                </td>\n"
+"                <td>\n"
+"                  20 小時\n"
+"                </td>"
 
 #: templates/views/cookies.html:53
 #, python-format
@@ -3964,10 +3984,19 @@ msgid ""
 "                  1 year\n"
 "                </td>"
 msgstr ""
+"<td>\n"
+"                  cookie 政策\n"
+"                </td>\n"
+"                <td width=\"50%%\">\n"
+"                  儲存所有同意使用 cookie的設定\n"
+"                </td>\n"
+"                <td>\n"
+"                  一年\n"
+"                </td>"
 
 #: templates/views/cookies.html:66
 msgid "Analytics cookies (optional)"
-msgstr ""
+msgstr "分析 Cookies (選擇性)"
 
 #: templates/views/cookies.html:68
 msgid ""
@@ -4009,6 +4038,16 @@ msgid ""
 "                  2 years\n"
 "                </td>"
 msgstr ""
+"<td>\n"
+"                  _ga\n"
+"                </td>\n"
+"                <td width=\"50%%\">\n"
+"                  "
+"請確認您過去已經使用過Notify。這能夠幫助我們計算我們的網站訪問流量。\n"
+"                </td>\n"
+"                <td>\n"
+"                  兩年\n"
+"                </td>"
 
 #: templates/views/cookies.html:103
 #, python-format
@@ -4024,6 +4063,16 @@ msgid ""
 "                  24 hours\n"
 "                </td>"
 msgstr ""
+"<td>\n"
+"                  _gid\n"
+"                </td>\n"
+"                <td width=\"50%%\">\n"
+"                  "
+"請確認您過去已經使用過Notify。這能夠幫助我們計算我們的網站訪問流量。\n"
+"                </td>\n"
+"                <td>\n"
+"                  24 小時\n"
+"                </td>"
 
 #: templates/views/cookies.html:116 templates/views/cookies.html:128
 msgid "Do you want to accept analytics cookies?"
@@ -4081,7 +4130,8 @@ msgid ""
 "A developer should be able to set up the API client and start sending "
 "test messages in around 30 minutes. A full integration can take a few "
 "days, depending on the other systems you’re using."
-msgstr ""
+msgstr "一位開發者應該要能夠在30分鐘內設定API的客戶端並開始寄送簡訊。系統的完全整合則"
+"需要花上幾天的時間，這取決於你所正在使用的其他系統。"
 
 #: templates/views/documentation.html:29
 msgid "Integrate directly with the API"
@@ -4546,6 +4596,8 @@ msgid ""
 "can use our <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">guidance</a> to help you."
 msgstr ""
+"將預計要寄出的內容範例加入簡訊模板。你可以使用我們的 <a class=\"govuk-link "
+"govuk-link--no-visited-state\" href=\"%%s\">指引</a>來協助你。"
 
 #: templates/views/get-started.html:41
 msgid "Set up your service"
@@ -4559,7 +4611,7 @@ msgstr ""
 
 #: templates/views/get-started.html:44
 msgid "Add team members and check their permissions."
-msgstr ""
+msgstr "加入一位團隊成員並確認他們的權限。"
 
 #: templates/views/get-started.html:46
 #, python-format
@@ -4575,6 +4627,8 @@ msgid ""
 "Add <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">team members</a> and check their permissions."
 msgstr ""
+"增加 <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">團隊成員</a> 並確認他們的同意。"
 
 #: templates/views/get-started.html:52
 msgid "Set up an API integration (optional)"
@@ -4646,7 +4700,7 @@ msgstr ""
 #: templates/views/providers/providers.html:50
 #: templates/views/providers/providers.html:73
 msgid "Active"
-msgstr ""
+msgstr "活躍"
 
 #: templates/views/inbound-sms-admin.html:49
 msgid "Not used"
@@ -4940,7 +4994,7 @@ msgstr ""
 #: templates/views/register-from-org-invite.html:25
 #: templates/views/register.html:30
 msgid "At least 8 characters"
-msgstr ""
+msgstr "至少8個字"
 
 #: templates/views/new-password.html:26
 msgid ""
@@ -5229,7 +5283,7 @@ msgstr ""
 msgid ""
 "a copy of that personal data - this copy will be provided in a "
 "structured, commonly used and machine-readable format"
-msgstr ""
+msgstr "一份個資備份 - 這份備份會使用結構性、常見且可機讀的格式"
 
 #: templates/views/privacy.html:106
 msgid "that anything inaccurate in your personal data is corrected immediately"
@@ -5423,7 +5477,7 @@ msgstr ""
 #: templates/views/resend-email-verification.html:11
 #, python-format
 msgid "A new confirmation email has been sent to %%s"
-msgstr ""
+msgstr "一封新的確認電子郵件已經寄到 %%"
 
 #: templates/views/returned-letter-summary.html:7
 msgid "Returned letters"
@@ -5591,7 +5645,7 @@ msgstr ""
 msgid ""
 "Add multilingual letter templates so services can provide information in "
 "several languages"
-msgstr ""
+msgstr "加入多語言的信件模板，使你的服務能夠提供多語言服務"
 
 #: templates/views/roadmap.html:53
 msgid "Test reusable content patterns for text messages"
@@ -5710,7 +5764,7 @@ msgstr ""
 
 #: templates/views/security.html:28
 msgid "Any recipient data you upload is only held for 7 days."
-msgstr ""
+msgstr "你所上傳的所有收件人資料只會保留七天。"
 
 #: templates/views/security.html:29
 msgid ""
@@ -5811,8 +5865,9 @@ msgid "your email address and password"
 msgstr ""
 
 #: templates/views/security.html:57
+#, fuzzy
 msgid "a text message code that Notify sends to your phone"
-msgstr ""
+msgstr "一封Notify寄到你手機上的簡訊"
 
 #: templates/views/security.html:59
 #, python-format
@@ -6021,7 +6076,7 @@ msgstr ""
 #: templates/views/service-settings/data-retention.html:40
 #: templates/views/user-profile/security-keys.html:71
 msgid "Action"
-msgstr ""
+msgstr "行為"
 
 #: templates/views/service-settings.html:38
 #: templates/views/service-settings/set-auth-type.html:21
@@ -6080,14 +6135,14 @@ msgstr ""
 
 #: templates/views/service-settings.html:72
 msgid "your settings for sending emails"
-msgstr ""
+msgstr "設定：寄送電子郵件"
 
 #: templates/views/service-settings.html:82
 #: templates/views/service-settings.html:149
 #: templates/views/service-settings.html:244
-#, python-format
+#, fuzzy, python-format
 msgid "…and %%d more"
-msgstr ""
+msgstr "…以及 %%d 等"
 
 #: templates/views/service-settings.html:87
 #: templates/views/service-settings.html:112
@@ -6127,7 +6182,7 @@ msgstr ""
 
 #: templates/views/service-settings.html:139
 msgid "your settings for sending text messages"
-msgstr ""
+msgstr "設定：寄送簡訊"
 
 #: templates/views/service-settings.html:144
 #: templates/views/service-settings/sms-senders.html:9
@@ -6147,11 +6202,11 @@ msgstr ""
 
 #: templates/views/service-settings.html:169
 msgid "your settings for starting text messages with service name"
-msgstr ""
+msgstr "設定：(簡訊開頭)服務名稱"
 
 #: templates/views/service-settings.html:181
 msgid "your settings for sending international text messages"
-msgstr ""
+msgstr "設定：寄送國際簡訊"
 
 #: templates/views/features/text-messages.html:28
 #: templates/views/service-settings.html:187
@@ -6161,7 +6216,7 @@ msgstr ""
 
 #: templates/views/service-settings.html:193
 msgid "your settings for receiving text messages"
-msgstr ""
+msgstr "設定：接收簡訊"
 
 #: templates/views/service-settings.html:208
 #: templates/views/service-settings/set-letter.html:8
@@ -6171,7 +6226,7 @@ msgstr ""
 
 #: templates/views/service-settings.html:218
 msgid "your settings for sending letters"
-msgstr ""
+msgstr "設定：寄信"
 
 #: templates/views/service-settings.html:233
 #: templates/views/service-settings/letter-contact-details.html:9
@@ -6196,7 +6251,7 @@ msgstr ""
 
 #: templates/views/service-settings.html:274
 msgid "Your service is in trial mode"
-msgstr ""
+msgstr "你的服務在試用期間"
 
 #: templates/views/service-settings.html:276
 msgid "You can only:"
@@ -6225,11 +6280,11 @@ msgstr ""
 
 #: templates/views/service-settings.html:289
 msgid "Your service manager can ask to have these restrictions removed."
-msgstr ""
+msgstr "此服務的負責人能夠移除這些限制。"
 
 #: templates/views/service-settings.html:294
 msgid "Your service is live"
-msgstr ""
+msgstr "你的服務已經上線"
 
 #: templates/views/service-settings.html:297
 #, python-format
@@ -6302,7 +6357,7 @@ msgstr ""
 
 #: templates/views/service-settings.html:372
 msgid "{:,} per minute"
-msgstr ""
+msgstr "{:,} 每分"
 
 #: templates/views/service-settings.html:373
 msgid "rate limit"
@@ -6314,7 +6369,7 @@ msgstr ""
 
 #: templates/views/service-settings.html:377
 msgid "{:,} per day"
-msgstr ""
+msgstr "{:,} 每天"
 
 #: templates/views/service-settings.html:378
 msgid "daily message limit"
@@ -6329,7 +6384,7 @@ msgstr ""
 
 #: templates/views/service-settings.html:382
 msgid "{:,} per year"
-msgstr ""
+msgstr "{:,} 每年"
 
 #: templates/views/service-settings.html:383
 msgid "free text message allowance"
@@ -6359,7 +6414,7 @@ msgstr ""
 #: templates/views/service-settings.html:429
 #, python-format
 msgid "your settings for %%s"
-msgstr ""
+msgstr "設定 %%"
 
 #: templates/views/service-settings.html:436
 msgid "Emergency alerts"
@@ -6367,7 +6422,7 @@ msgstr ""
 
 #: templates/views/service-settings.html:447
 msgid "your settings for emergency alerts"
-msgstr ""
+msgstr "設定：緊急通知"
 
 #: templates/views/service-settings.html:462
 msgid "Delete this service"
@@ -6429,7 +6484,7 @@ msgstr ""
 msgid ""
 "A screenshot of GOV.UK Notify showing counts of emails and text messages "
 "sent"
-msgstr ""
+msgstr "一張螢幕截圖顯示使用 GOV.UK Notify 計算寄出的電子郵件和文字簡訊數量"
 
 #: templates/views/signedout.html:85
 msgid "Send messages manually or automatically"
@@ -6445,7 +6500,7 @@ msgstr ""
 msgid ""
 "A screenshot of a spreadsheet with columns for email address, name and "
 "colour"
-msgstr ""
+msgstr "一張試算表的螢幕截圖，欄位裡有電子郵件信箱、姓名與顏色"
 
 #: templates/views/signedout.html:100
 msgid ""
@@ -6455,7 +6510,7 @@ msgstr ""
 
 #: templates/views/signedout.html:105
 msgid "A screenshot of some computer code with a notify.send_email function"
-msgstr ""
+msgstr "一張螢幕截圖顯示了Notify寄送電子郵件所使用的程式碼"
 
 #: templates/views/signedout.html:112
 msgid "Introducing GOV.UK Notify"
@@ -6538,7 +6593,8 @@ msgstr ""
 msgid ""
 "A photo of the GOV.UK Notify team gathered around a big screen. One team "
 "member is pointing at a graph on the screen."
-msgstr ""
+msgstr "這張相片中， GOV.UK Notify "
+"團隊聚在一塊大螢幕旁。其中一位團隊成員指著螢幕上的圖片。"
 
 #: templates/views/signin.html:7 templates/views/signin.html:19
 msgid "You need to sign in again"
@@ -6562,7 +6618,7 @@ msgstr ""
 
 #: templates/views/temp-history.html:7 templates/views/temp-history.html:12
 msgid "Audit events"
-msgstr ""
+msgstr "稽核事件"
 
 #: templates/views/temp-history.html:19
 msgid "Service settings"
@@ -6572,7 +6628,7 @@ msgstr ""
 #: templates/views/api/keys.html:17 templates/views/api/keys.html:23
 #: templates/views/api/keys.html:26 templates/views/temp-history.html:20
 msgid "API keys"
-msgstr ""
+msgstr "API 金鑰"
 
 #: templates/views/terms-of-use.html:17
 msgid ""
@@ -6751,7 +6807,7 @@ msgstr ""
 
 #: templates/views/trial-mode.html:41
 msgid "add examples of the messages you want to send"
-msgstr ""
+msgstr "加入你想要寄送的簡訊範本"
 
 #: templates/views/trial-mode.html:42
 msgid "update your settings so you’re ready to send and receive messages"
@@ -6759,7 +6815,7 @@ msgstr ""
 
 #: templates/views/trial-mode.html:43
 msgid "accept our data sharing and financial agreement"
-msgstr ""
+msgstr "接受我們的資料共享與財務條款"
 
 #: templates/views/trial-mode.html:44
 #, python-format
@@ -6767,6 +6823,8 @@ msgid ""
 "accept our <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">terms of use</a>"
 msgstr ""
+"接受我們的 <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">使用條款</a>"
 
 #: templates/views/two-factor-email.html:13
 msgid "We’ve emailed you a link to sign in to Notify."
@@ -6855,8 +6913,9 @@ msgid "Security keys"
 msgstr ""
 
 #: templates/views/user-profile.html:118
+#, fuzzy
 msgid "{} registered"
-msgstr ""
+msgstr "{} 已註冊"
 
 #: templates/views/user-profile.html:118
 msgid "None registered"
@@ -6940,7 +6999,7 @@ msgstr ""
 #: templates/views/organisations/add-nhs-local-organisation.html:8
 #: templates/views/service-settings/request-to-go-live.html:56
 msgid "Accept our data sharing and financial agreement"
-msgstr ""
+msgstr "接受我們的資料共享與財務條款"
 
 #: templates/views/agreement/agreement-accept.html:37
 msgid "The version number is on the front page, for example ‘3.6’"
@@ -6969,7 +7028,7 @@ msgstr ""
 
 #: templates/views/agreement/agreement-confirm.html:35
 msgid "Accept this agreement"
-msgstr ""
+msgstr "接受這項條款"
 
 #: templates/views/agreement/agreement-public.html:5
 #: templates/views/agreement/agreement-public.html:14
@@ -6998,7 +7057,7 @@ msgstr ""
 #: templates/views/agreement/service-agreement-choose.html:6
 #: templates/views/agreement/service-agreement-choose.html:18
 msgid "Accept the data sharing and financial agreement"
-msgstr ""
+msgstr "接受我們的資料共享與財務條款"
 
 #: templates/views/agreement/service-agreement-choose.html:21
 #: templates/views/agreement/service-agreement.html:22
@@ -7196,7 +7255,7 @@ msgstr ""
 #: templates/views/api/callbacks/delivery-status-callback.html:35
 #: templates/views/api/callbacks/received-text-messages-callback.html:32
 msgid "At least 10 characters"
-msgstr ""
+msgstr "至少10個字"
 
 #: templates/views/api/callbacks/received-text-messages-callback.html:8
 msgid "Callbacks for received text messages"
@@ -7225,11 +7284,11 @@ msgstr ""
 
 #: templates/views/api/keys/show.html:27 templates/views/api/keys/show.html:28
 msgid "API key"
-msgstr ""
+msgstr "API 金鑰"
 
 #: templates/views/api/keys/show.html:33
 msgid "Back to API keys"
-msgstr ""
+msgstr "取回API金鑰"
 
 #: templates/views/broadcast/dashboard.html:24
 #: templates/views/broadcast/new-broadcast.html:8
@@ -7253,11 +7312,11 @@ msgstr ""
 
 #: templates/views/broadcast/preview-areas.html:48
 msgid "Add another area"
-msgstr ""
+msgstr "加入其他地區"
 
 #: templates/views/broadcast/preview-areas.html:57
 msgid "Add broadcast areas"
-msgstr ""
+msgstr "加入廣播區域"
 
 #: templates/views/broadcast/preview-areas.html:68
 msgid "Preview this alert"
@@ -7328,7 +7387,7 @@ msgstr "%%s 想要廣播 %%s"
 #: templates/views/broadcast/view-message.html:107
 #, python-format
 msgid "An API call wants to broadcast %%s"
-msgstr ""
+msgstr "呼叫 API會想要廣播 %%s"
 
 #: templates/views/broadcast/view-message.html:118
 msgid "No phones will get this alert."
@@ -7336,7 +7395,7 @@ msgstr ""
 
 #: templates/views/broadcast/view-message.html:131
 msgid "Another member of your team needs to approve this alert."
-msgstr ""
+msgstr "其他團隊成員需要審核這項警告訊息。"
 
 #: templates/views/broadcast/view-message.html:145
 msgid "This alert is waiting for approval"
@@ -7376,7 +7435,7 @@ msgstr ""
 #: templates/views/broadcast/view-message.html:202
 #, python-format
 msgid "and approved by %%s"
-msgstr ""
+msgstr "而且經過 %%s 的允許"
 
 #: templates/views/broadcast/view-message.html:210
 #, python-format
@@ -7441,7 +7500,7 @@ msgstr ""
 #: templates/views/broadcast/tour/4.html:6
 #: templates/views/broadcast/tour/4.html:17
 msgid "An alert is not a normal text message."
-msgstr ""
+msgstr "警告訊息並不是正常的簡訊。"
 
 #: templates/views/broadcast/tour/4.html:20
 msgid ""
@@ -7890,7 +7949,7 @@ msgstr ""
 #: templates/views/email-branding/manage-branding.html:12
 #: templates/views/email-branding/manage-branding.html:23
 msgid "Add email branding"
-msgstr ""
+msgstr "加入電子郵件推廣"
 
 #: templates/views/email-branding/manage-branding.html:32
 msgid "Logos should be PNG files, 108px high"
@@ -7948,7 +8007,7 @@ msgstr ""
 
 #: templates/views/features/emails.html:30
 msgid "Add your organisa:tion’s logo and brand colour to email templates."
-msgstr ""
+msgstr "將你的機關的標誌與品牌色加到電子郵件的模板中。"
 
 #: templates/views/features/emails.html:31
 #, python-format
@@ -7987,7 +8046,7 @@ msgstr ""
 
 #: templates/views/features/emails.html:45
 msgid "Add a reply-to address"
-msgstr ""
+msgstr "加入回覆的電子郵件信箱"
 
 #: templates/views/features/emails.html:46
 msgid "Notify lets you choose the email address that users reply to."
@@ -8066,7 +8125,7 @@ msgstr ""
 
 #: templates/views/features/letters.html:35
 msgid "Add your organisation’s logo to your letter templates."
-msgstr ""
+msgstr "將你的機關的標誌加進信件模板。"
 
 #: templates/views/features/letters.html:36
 #, python-format
@@ -8242,7 +8301,7 @@ msgstr ""
 
 #: templates/views/find-users/user-information.html:50
 msgid "Authentication"
-msgstr ""
+msgstr "授權"
 
 #: templates/views/find-users/user-information.html:54
 msgid "Change authentication for this user"
@@ -8285,7 +8344,7 @@ msgstr ""
 
 #: templates/views/guidance/branding-and-customisation.html:20
 msgid "add a reply-to email address"
-msgstr ""
+msgstr "加入回覆的電子郵件信箱"
 
 #: templates/views/guidance/branding-and-customisation.html:21
 msgid "change the text message sender"
@@ -8324,7 +8383,7 @@ msgstr ""
 #: templates/views/guidance/branding-and-customisation.html:36
 #: templates/views/service-settings/request-to-go-live.html:39
 msgid "Add a reply-to email address"
-msgstr ""
+msgstr "加入回覆的電子郵件信箱"
 
 #: templates/views/guidance/branding-and-customisation.html:38
 #, python-format
@@ -8459,7 +8518,7 @@ msgstr ""
 
 #: templates/views/guidance/edit-and-format-messages.html:19
 msgid "add links"
-msgstr ""
+msgstr "加入連結"
 
 #: templates/views/guidance/edit-and-format-messages.html:20
 msgid "personalise your content"
@@ -8467,7 +8526,7 @@ msgstr ""
 
 #: templates/views/guidance/edit-and-format-messages.html:21
 msgid "add optional content"
-msgstr ""
+msgstr "加入選擇性內容"
 
 #: templates/views/guidance/edit-and-format-messages.html:24
 msgid "Format your content"
@@ -8491,7 +8550,8 @@ msgstr ""
 msgid ""
 "Add a new template or choose an existing template and select <b "
 "class=\"govuk-!-font-weight-bold\">Edit</b>."
-msgstr ""
+msgstr "加入一個新的模板或是選擇一個舊的模板來 <b class=\"govuk-!-font-weight-bold\""
+">編輯</b>."
 
 #: templates/views/guidance/edit-and-format-messages.html:33
 msgid "Email templates can include:"
@@ -8526,7 +8586,7 @@ msgstr ""
 
 #: templates/views/guidance/edit-and-format-messages.html:45
 msgid "Add links"
-msgstr ""
+msgstr "加入連結"
 
 #: templates/views/guidance/edit-and-format-messages.html:47
 msgid ""
@@ -8547,7 +8607,7 @@ msgstr ""
 
 #: templates/views/guidance/edit-and-format-messages.html:54
 msgid "your users cannot see where the link will take them"
-msgstr ""
+msgstr "你的使用者無法看見這個連結指向的位置"
 
 #: templates/views/guidance/edit-and-format-messages.html:55
 msgid "your link might stop working if there’s a service outage"
@@ -8581,7 +8641,8 @@ msgstr ""
 msgid ""
 "Add a placeholder using double brackets. For example: Hello "
 "((first&nbsp;name)), your reference is ((ref&nbsp;number))."
-msgstr ""
+msgstr "用雙括號加入一個佔位符號。例如：哈囉 ((姓&nbsp;)), 你參照的是 "
+"((參照&nbsp;號碼))."
 
 #: templates/views/guidance/edit-and-format-messages.html:71
 #: templates/views/guidance/edit-and-format-messages.html:91
@@ -8609,7 +8670,7 @@ msgstr ""
 
 #: templates/views/guidance/edit-and-format-messages.html:83
 msgid "Add optional content"
-msgstr ""
+msgstr "加入選擇性內容"
 
 #: templates/views/guidance/edit-and-format-messages.html:85
 msgid "To add optional content to your messages:"
@@ -8654,7 +8715,7 @@ msgstr ""
 
 #: templates/views/guidance/index.html:23
 msgid "add branding and customisation"
-msgstr ""
+msgstr "加入推廣與客製化選項"
 
 #: templates/views/guidance/index.html:24
 msgid "send files by email"
@@ -8749,8 +8810,9 @@ msgid "Size: 200mm wide by 25mm high"
 msgstr ""
 
 #: templates/views/guidance/letter-specification.html:37
+#, fuzzy
 msgid "Address block"
-msgstr ""
+msgstr "地址區塊"
 
 #: templates/views/guidance/letter-specification.html:39
 msgid "Position: 24.6mm from left edge, 39.5mm from top edge"
@@ -8929,7 +8991,7 @@ msgstr ""
 #: templates/views/letter-branding/manage-letter-branding.html:12
 #: templates/views/letter-branding/manage-letter-branding.html:25
 msgid "Add letter branding"
-msgstr ""
+msgstr "加入推廣信件"
 
 #: templates/views/letter-branding/manage-letter-branding.html:35
 msgid ""
@@ -9029,15 +9091,15 @@ msgstr ""
 
 #: templates/views/notifications/notification.html:40
 msgid "an address"
-msgstr ""
+msgstr "地址"
 
 #: templates/views/notifications/notification.html:40
 msgid "an email address"
-msgstr ""
+msgstr "電子郵件信箱"
 
 #: templates/views/notifications/notification.html:40
 msgid "a phone number"
-msgstr ""
+msgstr "一組電話號碼"
 
 #: templates/views/notifications/notification.html:41
 #, python-format
@@ -9097,7 +9159,7 @@ msgstr ""
 
 #: templates/views/organisations/add-organisation.html:13
 msgid "All organisations"
-msgstr ""
+msgstr "所有的機關"
 
 #: templates/views/organisations/organisation/billing.html:13
 #: templates/views/organisations/organisation/settings/edit-agreement.html:12
@@ -9173,7 +9235,7 @@ msgstr ""
 #: templates/views/organisations/organisation/settings/add-email-branding-options.html:9
 #: templates/views/organisations/organisation/settings/add-email-branding-options.html:17
 msgid "Add email branding options"
-msgstr ""
+msgstr "加入電子郵件推廣選項"
 
 #: templates/views/organisations/organisation/settings/add-email-branding-options.html:27
 #: templates/views/organisations/organisation/settings/add-letter-branding-options.html:27
@@ -9184,7 +9246,7 @@ msgstr ""
 #: templates/views/organisations/organisation/settings/add-letter-branding-options.html:9
 #: templates/views/organisations/organisation/settings/add-letter-branding-options.html:17
 msgid "Add letter branding options"
-msgstr ""
+msgstr "加入信件選項"
 
 #: templates/views/organisations/organisation/settings/edit-crown-status.html:8
 #: templates/views/organisations/organisation/settings/index.html:38
@@ -9267,7 +9329,7 @@ msgstr ""
 #: templates/views/organisations/organisation/settings/email-branding-options.html:75
 #: templates/views/organisations/organisation/settings/letter-branding-options.html:47
 msgid "Add branding options"
-msgstr ""
+msgstr "加入推廣選項"
 
 #: templates/views/organisations/organisation/settings/index.html:28
 msgid "Sector"
@@ -9716,15 +9778,15 @@ msgstr ""
 
 #: templates/views/pricing/billing-details.html:77
 msgid "Account name"
-msgstr ""
+msgstr "帳戶名稱"
 
 #: templates/views/pricing/billing-details.html:85
 msgid "Account number"
-msgstr ""
+msgstr "帳戶號碼"
 
 #: templates/views/pricing/billing-details.html:91
 msgid "account number"
-msgstr ""
+msgstr "帳戶號碼"
 
 #: templates/views/pricing/billing-details.html:96
 msgid "Sort code"
@@ -10036,7 +10098,7 @@ msgstr ""
 
 #: templates/views/pricing/index.html:104
 msgid "Accents and accented characters"
-msgstr ""
+msgstr "重音與重音符號"
 
 #: templates/views/pricing/index.html:105
 msgid "Some languages, such as Welsh, use accented characters."
@@ -10057,7 +10119,7 @@ msgstr ""
 #: templates/views/pricing/index.html:111
 #: templates/views/pricing/index.html:170
 msgid "Accented characters that affect text message charges"
-msgstr ""
+msgstr "重音符號會影響簡訊費用"
 
 #: templates/views/pricing/index.html:112
 msgid "Character"
@@ -10440,7 +10502,7 @@ msgstr ""
 
 #: templates/views/service-settings/data-retention.html:20
 msgid "Add data retention"
-msgstr ""
+msgstr "加入資料保存"
 
 #: templates/views/service-settings/data-retention.html:28
 msgid "By default data is kept for 7 days"
@@ -10488,7 +10550,7 @@ msgstr ""
 #: templates/views/service-settings/email-reply-to/add.html:17
 #: templates/views/service-settings/email_reply_to.html:62
 msgid "Add reply-to email address"
-msgstr ""
+msgstr "加入回覆信件的電子郵件信箱"
 
 #: templates/views/service-settings/email_reply_to.html:70
 msgid ""
@@ -10506,7 +10568,7 @@ msgstr ""
 
 #: templates/views/service-settings/email_reply_to.html:77
 msgid "appear more trustworthy"
-msgstr ""
+msgstr "看似更加可靠"
 
 #: templates/views/service-settings/estimate-usage.html:9
 #: templates/views/service-settings/estimate-usage.html:26
@@ -10541,7 +10603,7 @@ msgstr ""
 #: templates/views/service-settings/letter-contact-details.html:74
 #: templates/views/service-settings/letter-contact/add.html:9
 msgid "Add a new address"
-msgstr ""
+msgstr "增加新的電子郵件信箱"
 
 #: templates/views/service-settings/letter-preview.html:6
 msgid "Letter preview"
@@ -10585,7 +10647,7 @@ msgstr ""
 #: templates/views/service-settings/name-local.html:32
 #: templates/views/service-settings/name.html:29
 msgid "at the start of every text message"
-msgstr ""
+msgstr "在每一封簡訊的開始"
 
 #: templates/views/service-settings/name-local.html:33
 #: templates/views/service-settings/name.html:30
@@ -10601,7 +10663,7 @@ msgstr ""
 msgid ""
 "Your service name should tell users what the message is about as well as "
 "who it’s from."
-msgstr ""
+msgstr "服務名稱應該告知使用者這封簡訊的概要以及送出的人是誰。"
 
 #: templates/views/service-settings/preview-email-branding.html:7
 #: templates/views/service-settings/preview-email-branding.html:12
@@ -10614,11 +10676,11 @@ msgstr ""
 
 #: templates/views/service-settings/request-to-go-live.html:28
 msgid "Add a team member who can manage settings, team and usage"
-msgstr ""
+msgstr "加入一個團隊成員，這位成員能夠管理設定、團隊和使用量"
 
 #: templates/views/service-settings/request-to-go-live.html:33
 msgid "Add templates with examples of the content you plan to send"
-msgstr ""
+msgstr "將你預計要寄出的內容範例新增為模板"
 
 #: templates/views/service-settings/request-to-go-live.html:49
 msgid "Change your text message sender name"
@@ -10649,7 +10711,7 @@ msgstr ""
 
 #: templates/views/service-settings/send-files-by-email.html:27
 msgid "Add contact details to the file download page"
-msgstr ""
+msgstr "在檔案下載的頁面中加入聯絡人的資訊"
 
 #: templates/views/service-settings/send-files-by-email.html:29
 msgid ""
@@ -10661,17 +10723,17 @@ msgstr ""
 #: templates/views/service-settings/service-already-live.html:5
 #: templates/views/service-settings/service-already-live.html:11
 msgid "Your service is already live"
-msgstr ""
+msgstr "你的服務已經上線"
 
 #: templates/views/service-settings/service-already-live.html:15
 #, python-format
 msgid "‘%%s’ went live on %%s."
-msgstr ""
+msgstr "'%%'在 %% 上線。"
 
 #: templates/views/service-settings/service-already-live.html:20
-#, python-format
+#, fuzzy, python-format
 msgid "‘%%s’ is already live."
-msgstr ""
+msgstr "‘%%’ 已經上線."
 
 #: templates/views/service-settings/service-already-live.html:26
 msgid "if you want to make a different service live."
@@ -10701,7 +10763,7 @@ msgstr ""
 
 #: templates/views/service-settings/service-confirm-broadcast-account-type.html:48
 msgid "All team member permissions will be removed."
-msgstr ""
+msgstr "所有團隊成員的權限都會被移除。"
 
 #: templates/views/service-settings/set-auth-type.html:7
 #: templates/views/service-settings/set-auth-type.html:18
@@ -10712,7 +10774,7 @@ msgstr ""
 msgid ""
 "Your team members can sign in with either a text message code\n"
 "          or an email link."
-msgstr ""
+msgstr "你的團隊成員能夠用簡訊短碼或是電子信件連結登入。"
 
 #: templates/views/service-settings/set-auth-type.html:28
 #, python-format
@@ -10723,7 +10785,7 @@ msgstr ""
 
 #: templates/views/service-settings/set-auth-type.html:35
 msgid "Your team members sign in with a text message code."
-msgstr ""
+msgstr "你的團隊成員用簡訊短碼登入。"
 
 #: templates/views/service-settings/set-auth-type.html:38
 #, python-format
@@ -10736,7 +10798,7 @@ msgstr ""
 
 #: templates/views/service-settings/set-email-branding-add-to-branding-pool-step.html:7
 msgid "Apply ‘{}’ branding"
-msgstr ""
+msgstr "應用 ‘{}’ 推廣"
 
 #: templates/views/service-settings/set-email-branding.html:8
 msgid "Set email branding"
@@ -10761,7 +10823,7 @@ msgstr ""
 #: templates/views/service-settings/set-inbound-sms.html:21
 #, python-format
 msgid "Your service can receive text messages sent to %%s."
-msgstr ""
+msgstr "你的服務能夠接受送給%%的簡訊。"
 
 #: templates/views/service-settings/set-inbound-sms.html:24
 #: templates/views/service-settings/set-inbound-sms.html:46
@@ -10886,19 +10948,19 @@ msgstr ""
 #: templates/views/service-settings/sms-sender/add.html:17
 #: templates/views/service-settings/sms-senders.html:60
 msgid "Add text message sender"
-msgstr ""
+msgstr "加入寄出簡訊的人"
 
 #: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:26
 msgid "A government identity logo is made up of:"
-msgstr ""
+msgstr "政府機關的識別標誌以下列組成："
 
 #: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:30
 msgid "a coloured line"
-msgstr ""
+msgstr "一條上色的線"
 
 #: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:31
 msgid "a symbol, for example the Royal Coat of Arms"
-msgstr ""
+msgstr "一種象徵，例如英國皇家徽章"
 
 #: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:32
 msgid "text, usually the organisation name"
@@ -11089,7 +11151,7 @@ msgstr ""
 #: templates/views/service-settings/email-reply-to/add.html:30
 #: templates/views/service-settings/letter-contact/add.html:33
 msgid "Add"
-msgstr ""
+msgstr "增加"
 
 #: templates/views/service-settings/email-reply-to/edit.html:9
 #: templates/views/service-settings/email-reply-to/edit.html:17
@@ -11186,7 +11248,7 @@ msgstr ""
 
 #: templates/views/support/bat-phone.html:37
 msgid "Any other problems"
-msgstr ""
+msgstr "任何其他的問題"
 
 #: templates/views/support/bat-phone.html:39
 #, python-format
@@ -11251,7 +11313,7 @@ msgstr ""
 
 #: templates/views/support/index.html:35
 msgid "A problem is only classed as an emergency if you have a live service and:"
-msgstr ""
+msgstr "只有當你的服務上線時，才能夠被歸類為緊急狀況："
 
 #: templates/views/support/index.html:37
 msgid "nobody on your team can sign in"
@@ -11259,11 +11321,11 @@ msgstr ""
 
 #: templates/views/support/index.html:38
 msgid "a ‘technical difficulties’ error appears when you try to upload a file"
-msgstr ""
+msgstr "當你試著上傳檔案，出現一則「技術問題」的警告訊息"
 
 #: templates/views/support/index.html:39
 msgid "a 500 response code appears when you try to send messages using the API"
-msgstr ""
+msgstr "當你試著想要利用API送出訊息時，出現了500 錯誤訊息"
 
 #: templates/views/support/public.html:7 templates/views/support/public.html:19
 msgid "The GOV.UK Notify service is for people who work in the government"
@@ -11301,7 +11363,7 @@ msgstr ""
 
 #: templates/views/support/public.html:45
 msgid "Advice on suspicious emails and text messages."
-msgstr ""
+msgstr "對於可疑的電子郵件和簡訊的建議。"
 
 #: templates/views/support/thanks.html:7
 msgid "Thanks for contacting us"
@@ -11356,7 +11418,7 @@ msgstr ""
 
 #: templates/views/support/triage.html:45
 msgid "all your messages stay in ‘sending’ for a few hours"
-msgstr ""
+msgstr "所有的訊息都會放在寄件匣中幾個小時"
 
 #: templates/views/support/triage.html:48
 msgid "you send the wrong message by accident"
@@ -11367,12 +11429,16 @@ msgid ""
 "a team member uses GOV.UK Notify to send an\n"
 "          inappropriate message"
 msgstr ""
+"一位 GOV.UK Notify 的團隊成員\n"
+"          寄出了一封不太合宜的訊息"
 
 #: templates/views/support/triage.html:55
 msgid ""
 "your system is telling the GOV.UK Notify API to send the wrong\n"
 "          message"
 msgstr ""
+"你的系統正要求 GOV.UK Notify API 送出錯誤\n"
+"          訊息"
 
 #: templates/views/templates/_template.html:6
 #, python-format
@@ -11401,7 +11467,7 @@ msgstr ""
 
 #: templates/views/templates/_template.html:66
 msgid "Add logo"
-msgstr ""
+msgstr "加入標誌"
 
 #: templates/views/templates/_template.html:68
 msgid "Change<span class=\"govuk-visually-hidden\"> postage</span>"
@@ -11432,7 +11498,7 @@ msgstr ""
 #: templates/views/templates/action_blocked.html:7
 #: templates/views/templates/action_blocked.html:18
 msgid "{} are disabled"
-msgstr ""
+msgstr "{} 已被關閉"
 
 #: templates/views/templates/action_blocked.html:20
 #, python-format
@@ -11481,7 +11547,7 @@ msgstr ""
 
 #: templates/views/templates/choose-reply.html:26
 msgid "Add a new template"
-msgstr ""
+msgstr "加入一個新的模板"
 
 #: templates/views/templates/choose-reply.html:31
 msgid ""
@@ -11514,7 +11580,7 @@ msgstr ""
 
 #: templates/views/templates/choose_history.html:17
 msgid "Back to current templates"
-msgstr ""
+msgstr "取回現在的"
 
 #: templates/views/templates/copy.html:19
 msgid "This folder is empty"
@@ -11535,7 +11601,7 @@ msgstr ""
 
 #: templates/views/templates/set-template-sender.html:32
 msgid "Add new sender"
-msgstr ""
+msgstr "加入新的寄件人"
 
 #: templates/views/templates/template.html:19
 msgid ""
