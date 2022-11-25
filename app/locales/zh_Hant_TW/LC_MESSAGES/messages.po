@@ -11811,7 +11811,6 @@ msgid "test@example.gov.uk"
 msgstr ""
 
 #: templates/views/uploads/contact-list/upload.html:82
-#, fuzzy
 msgid "07700 900123"
 msgstr "07700 900123"
 
@@ -11925,7 +11924,7 @@ msgstr ""
 
 #: utils/csv.py:71 utils/csv.py:78
 msgid "Type"
-msgstr ""
+msgstr "類型"
 
 #: utils/csv.py:71 utils/csv.py:81
 msgid "Job"
@@ -12130,7 +12129,7 @@ msgstr ""
 
 #: utils/letters.py:191
 msgid "are"
-msgstr ""
+msgstr "是"
 
 #: utils/pagination.py:16
 msgid "Previous page"
@@ -12145,8 +12144,9 @@ msgid "page {}"
 msgstr ""
 
 #: utils/templates.py:37
+#, fuzzy
 msgid "{}@notifications.service.gov.uk"
-msgstr ""
+msgstr "{}@notifications.service.gov.uk"
 
 #: utils/user_permissions.py:19
 msgid "See dashboard"
@@ -12154,7 +12154,7 @@ msgstr ""
 
 #: utils/user_permissions.py:21 utils/user_permissions.py:27
 msgid "Add and edit templates"
-msgstr ""
+msgstr "加入並編輯模板"
 
 #: utils/user_permissions.py:22
 msgid "Manage settings, team and usage"
