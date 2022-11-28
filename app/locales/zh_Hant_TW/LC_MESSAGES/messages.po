@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-11-28 15:14+0800\n"
-"PO-Revision-Date: 2022-11-28 03:08+0000\n"
-"Last-Translator: Jocelyn Chang <jocelyn81616@gmail.com>\n"
+"PO-Revision-Date: 2022-11-28 10:20+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
+"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
-"Language-Team: Chinese (Traditional) "
-"<https://weblate.toomore.net/projects/notification-admin/notification-"
-"admin-github/zh_Hant/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -4751,8 +4751,8 @@ msgid ""
 "href=\"%%s\">documentation\n"
 "      for the client library you are using."
 msgstr ""
-"請參考<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">您使用的客戶端程式庫文件"
+"請參考<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">您使用的客戶端程式庫文件。"
 
 #: templates/views/invite-user.html:8 templates/views/manage-users.html:98
 #: templates/views/organisations/organisation/users/invite-org-user.html:9
@@ -4868,7 +4868,7 @@ msgstr "Notify 已將訊息送交服務供應商。服務供應商將嘗試於 7
 msgid ""
 "The message was successfully delivered. Notify will not tell you if a "
 "user has opened or read a message."
-msgstr ""
+msgstr "訊息已成功送達。Notify 不會告訴您使用者是否有開啟或閱讀過訊息內容。"
 
 #: templates/views/message-status.html:32
 msgid ""
@@ -4907,6 +4907,9 @@ msgid ""
 "your emails. When this happens you should remove the recipient’s email "
 "address from your list."
 msgstr ""
+"若電子郵件被標示為垃圾信，Notify 會收到來自對方電子郵件業者的「抱怨」通知。我"
+"們收到有關您的電子郵件的抱怨通知時，就會主動聯絡您，然後您就應該將該收件信箱"
+"從您的郵寄清單中刪除。"
 
 #: templates/views/message-status.html:47
 msgid "Open rates and click-throughs"
@@ -4930,7 +4933,7 @@ msgstr "信息狀態 – 簡訊"
 msgid ""
 "The mobile networks in some countries do not provide any more delivery "
 "information."
-msgstr ""
+msgstr "某些國家的行動網路不提供任何簡訊傳遞狀態資訊。"
 
 #: templates/views/message-status.html:62
 #, python-format
@@ -5010,7 +5013,7 @@ msgstr "未寄達的紙本信件與退信"
 msgid ""
 "Every letter we send includes our printer’s address on the back of the "
 "envelope. It’s not possible to customise the return address."
-msgstr ""
+msgstr "我們寄出的每封紙本信件，都會包含印刷廠的地址在信封背面。無法自訂退件地址。"
 
 #: templates/views/message-status.html:100
 msgid "Returned mail is destroyed by our printer."
@@ -5185,7 +5188,7 @@ msgstr "我們會向您收集哪些資料"
 msgid ""
 "The personal data we collect from public sector employees that create a "
 "GOV.UK Notify account includes:"
-msgstr ""
+msgstr "我們向註冊了 GOV.UK Notify 帳號的公部門員工所收集的個人資訊，包含："
 
 #: templates/views/privacy.html:39 templates/views/privacy.html:72
 msgid "your name"
@@ -5218,7 +5221,8 @@ msgstr "為什麼我們需要您的資料"
 msgid ""
 "We need your personal data to ensure that only legitimate users of GOV.UK"
 " Notify can use it to send notifications."
-msgstr ""
+msgstr "我們需要您個的個人資料，才能確保僅有真正的 GOV.UK Notify "
+"使用者能夠使用本系統傳送通知。"
 
 #: templates/views/privacy.html:52
 msgid "What we do with your data"
@@ -5251,7 +5255,7 @@ msgstr "我們只會在依法必須透漏時，分享您的資料（舉例來說
 
 #: templates/views/privacy.html:65
 msgid "How long we keep your data"
-msgstr "我們會保存您的資料多久？"
+msgstr "我們會保存您的資料多久"
 
 #: templates/views/privacy.html:67
 msgid ""
@@ -5282,7 +5286,8 @@ msgid ""
 "We design, build and run our systems to make sure that your data is as "
 "safe as possible at any stage, both while it’s\n"
 "    processed and when it’s stored."
-msgstr ""
+msgstr "我們設計、打造、並自行維運系統，以確保您的資料在被處理時，或被儲存時的任何階"
+"段都盡可能維持安全。"
 
 #: templates/views/privacy.html:84
 msgid ""
@@ -5312,6 +5317,10 @@ msgid ""
 " third parties that we deal with have an obligation to\n"
 "      keep all personal data they process on our behalf secure."
 msgstr ""
+"我們承諾將盡所有可能，盡力保護您的資料安全。為了防止未經授權的存取或資訊揭露"
+"，我們從技術層面與組織層面規劃並執行不同程序來保護所收集到有關您的資料（舉例"
+"來說，我們使用不同層級的加密機制來保護您的資訊）。我們也會確保任何合作的第三"
+"方，有相同的義務來確保所有經手處理的資料安全。"
 
 #: templates/views/privacy.html:93
 msgid "Children’s privacy protection"
@@ -5325,6 +5334,9 @@ msgid ""
 "policy to intentionally collect or maintain data about anyone\n"
 "      under the age of 13."
 msgstr ""
+"我們了解保護兒童在線上的隱私權的重要性。我們的服務並非設計給 13 "
+"歲以下的使用者，或刻意提供給 13 歲以下兒童使用。我們的政策是不刻意針對任何 "
+"13 歲以下的使用者收集或管理任何資料。"
 
 #: templates/views/privacy.html:99
 msgid "What are your rights"
@@ -5360,7 +5372,7 @@ msgstr "針對您的個人資料處理方式提出反對意見"
 msgid ""
 "request that your personal data is erased if there is no longer a "
 "justification for it"
-msgstr ""
+msgstr "若沒有任何正當理由需要保存的話，可請求清除您的個人資料"
 
 #: templates/views/privacy.html:114
 msgid ""
@@ -5372,7 +5384,7 @@ msgstr "要求限制僅能於特定情況下處理您的個人資料"
 msgid ""
 "If you have any of these requests, get in contact with our Data "
 "Protection Officer - you can find their contact details below."
-msgstr ""
+msgstr "若您有上述任何請求，請聯絡我們的資料保護官。以下是他們的連絡資訊。"
 
 #: templates/views/privacy.html:119
 msgid "Changes to this notice"
@@ -5388,6 +5400,10 @@ msgid ""
 "periodically review this privacy notice to be informed\n"
 "      about how we are protecting your data."
 msgstr ""
+"我們可能隨時自行決定修改或增補本隱私權公告。當我們修改此公告時，將更新本頁面"
+"頂部的「最後更新時間」。對這份隱私權公告所做的任何修改或增補會在該「最後更新"
+"時間」生效。我們建議您定期審視最新版的隱私權公告，以了解我們如何保護您的資料"
+"。"
 
 #: templates/views/privacy.html:126
 msgid "Questions and complaints"
@@ -5563,7 +5579,7 @@ msgstr "退信報告"
 #: templates/views/returned-letter-summary.html:32
 #: templates/views/returned-letters.html:28
 msgid "If you have returned letter reports they will be listed here"
-msgstr "若您有紙本退信的報告，將列出於此處。"
+msgstr "若您有紙本退信的報告，將列出於此處"
 
 #: templates/views/returned-letter-summary.html:33
 msgid "Report"
@@ -5733,7 +5749,7 @@ msgstr "加入多語言的信件模板，使你的服務能夠提供多語言服
 
 #: templates/views/roadmap.html:53
 msgid "Test reusable content patterns for text messages"
-msgstr ""
+msgstr "針對簡訊測試可重複使用的內容格式"
 
 #: templates/views/roadmap.html:54
 #, python-format
@@ -5741,6 +5757,8 @@ msgid ""
 "Review our <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">email formatting options</a>"
 msgstr ""
+"請參考我們的<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">電子郵件格式化選項</a>"
 
 #: templates/views/roadmap.html:55
 msgid "Migrate a second application from GOV.UK PaaS to Amazon ECS"
@@ -5760,7 +5778,7 @@ msgstr "提供更詳細資訊的報表與使用資料"
 
 #: templates/views/roadmap.html:66
 msgid "Explore ways to let services send one-off messages"
-msgstr ""
+msgstr "探索能夠讓服務單次發送訊息的方式"
 
 #: templates/views/roadmap.html:70
 msgid "Things we’ve done"
@@ -5910,7 +5928,8 @@ msgstr "符合英國國家網路安全中心（NCSC）的雲端服務安全準�
 msgid ""
 "protective monitoring to record activity, and raise alerts about any "
 "suspicious activity"
-msgstr ""
+msgstr "「保護性監控」指的是會記錄下系統中的操作行為，並且在發現任何可疑行為時主動發"
+"出警示"
 
 #: templates/views/security.html:44
 msgid ""
@@ -5926,7 +5945,7 @@ msgstr "保護敏感資訊"
 msgid ""
 "Some messages include sensitive information like security codes or "
 "password reset links."
-msgstr ""
+msgstr "某些訊息包含安全碼、密碼重設連結等敏感資訊。"
 
 #: templates/views/security.html:49
 msgid ""
@@ -5934,7 +5953,8 @@ msgid ""
 " hide those details on the Notify dashboard once the message has been "
 "sent. This means that only the message recipient will be able to see that"
 " information."
-msgstr ""
+msgstr "若您傳送的是包含敏感資訊的訊息，可以選擇在訊息送出後於 Notify "
+"儀錶板隱藏這些詳細資訊。也就是說僅有訊息收件者才能看到該敏感資訊。"
 
 #: templates/views/security.html:51
 msgid "User permissions and signing in"
@@ -5976,7 +5996,7 @@ msgstr "資訊風險管理"
 msgid ""
 "Our approach to information risk management follows NCSC guidance. It "
 "assesses:"
-msgstr ""
+msgstr "我們的資訊風險管理流程是遵照 NCSC 的指引，此指引會評估下列風險："
 
 #: templates/views/security.html:64
 msgid "how Notify is built"
@@ -6011,6 +6031,9 @@ msgid ""
 "href=\"http://www.iso.org/iso/catalogue_detail?csnumber=56742\">ISO "
 "27005:2011</a> and National Cyber Security Centre guidance"
 msgstr ""
+"依照 <a class=\"govuk-link govuk-link--no-visited-state\" href=\"http://www."
+"iso.org/iso/catalogue_detail?csnumber=56742\">ISO 27005:2011</a> "
+"及英國國家網路安全中心所撰寫的指南所進行的正式風險評估"
 
 #: templates/views/security.html:74
 msgid ""
@@ -6066,6 +6089,10 @@ msgid ""
 "/government-security-classifications\">Government Security "
 "Classifications</a> policy."
 msgstr ""
+"您可以使用 Notify 傳送依照<a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"https://www.gov.uk/government/publications/government-"
+"security-classifications\">政府安全分類</a>政策分類為「OFFICIAL」或"
+"「OFFICIAL-SENSITIVE」等級的資訊。"
 
 #: templates/views/security.html:86
 msgid "Notify does not process data classified as ‘SECRET’ or ‘TOP SECRET’."
@@ -6078,6 +6105,9 @@ msgid ""
 "href=\"https://www.gov.uk/government/organisations/united-kingdom-"
 "security-vetting\">United Kingdom Security Vetting</a> (UKSV)."
 msgstr ""
+"Notify 通過了<a class=\"govuk-link govuk-link--no-visited-state\" href="
+"\"https://www.gov.uk/government/organisations/united-kingdom-security-"
+"vetting\">英國安全審核</a>（UKSV）的安全性檢查（SC）等級審核。"
 
 #: templates/views/send-contact-list.html:9
 #: templates/views/send-contact-list.html:18
@@ -6676,7 +6706,7 @@ msgstr "<div class=\"product-page-big-number\">41 便士</div>印刷並寄送一
 
 #: templates/views/signedout.html:164
 msgid "There’s no monthly charge, no setup fee and no&nbsp;procurement process."
-msgstr "無月租費、無設定、不須走採購流程"
+msgstr "無月租費、無設定、不須走採購流程。"
 
 #: templates/views/signedout.html:166
 msgid ""
@@ -6786,7 +6816,7 @@ msgstr "確保 API 金鑰安全"
 
 #: templates/views/terms-of-use.html:26
 msgid "get the right levels of consent (to send messages and to use data)"
-msgstr ""
+msgstr "取得正確的同意層級（要能傳送訊息並使用資料）"
 
 #: templates/views/terms-of-use.html:27
 msgid ""
@@ -6812,7 +6842,7 @@ msgstr ""
 msgid ""
 "check that the data you add to Notify is accurate and complies with data "
 "protection legislation"
-msgstr ""
+msgstr "確認您提供給 Notify 的資料真實、準確，且符合資料保護法規定"
 
 #: templates/views/terms-of-use.html:32
 msgid ""
@@ -6836,6 +6866,10 @@ msgid ""
 "state\" href=\"https://status.notifications.service.gov.uk/\">status</a> "
 "pages)"
 msgstr ""
+"顯示 Notify 的運作情況（透過我們的<a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"{{ url_for('main.performance') }}\">效能</a>與<a class"
+"=\"govuk-link govuk-link--no-visited-state\" href=\"https://status."
+"notifications.service.gov.uk/\">服務狀態</a>頁面）"
 
 #: templates/views/terms-of-use.html:40
 #, python-format
@@ -6850,7 +6884,7 @@ msgstr ""
 msgid ""
 "give you one month’s notice by email if we change our terms of use or "
 "delivery providers"
-msgstr ""
+msgstr "當我們更改服務條款，或郵寄服務業者時，會提早於一個月前以電子郵件方式通知您"
 
 #: templates/views/terms-of-use.html:44
 msgid "Leaving Notify"
@@ -6872,6 +6906,9 @@ msgid ""
 "--no-visited-state\" href=\"%%s#how-long-we-keep-your-data\">how long we "
 "keep your personal data</a>."
 msgstr ""
+"想了解<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s#how-"
+"long-we-keep-your-data\""
+">我們會保存您的個人資料多久</a>，請參考我們的隱私權公告。"
 
 #: templates/views/text-not-received.html:6
 #: templates/views/text-not-received.html:13
@@ -7096,7 +7133,8 @@ msgstr "簡訊回覆"
 msgid ""
 "Text messages sometimes take a few minutes to arrive. If you do not "
 "receive a security code, Notify can send you a new one."
-msgstr ""
+msgstr "有時會需要幾分鐘才能收到簡訊。若您無法接收安全碼，Notify "
+"可以重傳一封新的安全碼。"
 
 #: templates/views/verification-not-received.html:23
 msgid "If your mobile number has changed"
@@ -7661,7 +7699,7 @@ msgstr "傳送真實的警示沒有風險。"
 
 #: templates/views/broadcast/tour/5.html:28
 msgid "Get used to the system now, so you know what to do in an&nbsp;emergency."
-msgstr ""
+msgstr "現在就先熟悉系統操作，發生緊急事件時就知道該怎麼做。"
 
 #: templates/views/broadcast/tour/5.html:31
 msgid "When you’re ready, you can ask for access to the live system."
@@ -7685,7 +7723,7 @@ msgstr "您已受邀傳送即時緊急警示。"
 
 #: templates/views/broadcast/tour/live/1.html:23
 msgid "Members of the public will receive alerts you send from this service."
-msgstr "所有大眾會收到您透過此服務傳送的警示訊息"
+msgstr "所有大眾會收到您透過此服務傳送的警示訊息。"
 
 #: templates/views/broadcast/tour/live/2.html:6
 #: templates/views/broadcast/tour/live/2.html:20
@@ -8206,7 +8244,7 @@ msgstr "Notify 讓您可以決定使用者回信時，要回覆到哪個電子�
 msgid ""
 "Emails with a reply-to address seem more trustworthy and are less likely "
 "to be labelled as spam."
-msgstr ""
+msgstr "包含 Reply-to 回覆地址的電子郵件，看起來更可靠，並且更不容易被當成垃圾信。"
 
 #: templates/views/features/emails.html:48
 #, python-format
@@ -8360,7 +8398,7 @@ msgstr "紙本郵件最多可達 10 頁長（5 張雙面列印的信紙）。"
 msgid ""
 "Send thousands of free text messages to UK and international numbers with"
 " GOV.UK Notify."
-msgstr ""
+msgstr "使用 GOV.UK Notify 傳送數以千封的免費簡訊給英國及國際手機號碼。"
 
 #: templates/views/features/text-messages.html:23
 msgid "create reusable text message templates"
@@ -8377,8 +8415,8 @@ msgid ""
 "href=\"%%s\">integrate with our API</a> to send text messages "
 "automatically"
 msgstr ""
-"您也可以<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">串接我們的 API</a>來自動發送手機簡訊。"
+"您也可以<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">串接我們的 API</a>來自動發送手機簡訊"
 
 #: templates/views/features/text-messages.html:29
 msgid "Let people send messages to your service or reply to your texts."
@@ -8421,7 +8459,7 @@ msgstr ""
 
 #: templates/views/features/text-messages.html:38
 msgid "Each service you add has an annual allowance of free text messages."
-msgstr ""
+msgstr "您建立的每組服務都有年度免費簡訊額度。"
 
 #: templates/views/find-services/find-services-by-name.html:7
 #: templates/views/find-services/find-services-by-name.html:13
@@ -8682,6 +8720,10 @@ msgid ""
 "phone numbers</b>. If you’re sending letters, select <b class=\"govuk"
 "-!-font-weight-bold\">Upload a list of addresses</b>."
 msgstr ""
+"若您傳送的是電子郵件，請選擇<b class=\"govuk-!-font-weight-bold\""
+">上傳電子郵件地址清單</b>。若您傳送的是手機簡訊，請選擇<b class=\"govuk"
+"-!-font-weight-bold\">上傳手機號碼清單</b>。若您傳送的是紙本信件，請選擇<b "
+"class=\"govuk-!-font-weight-bold\">上傳地址清單</b>。"
 
 #: templates/views/guidance/edit-and-format-messages.html:9
 #: templates/views/guidance/edit-and-format-messages.html:14
@@ -8778,7 +8820,7 @@ msgstr "您不能將將超連結顯示成文字。研究發現人們點擊郵件
 
 #: templates/views/guidance/edit-and-format-messages.html:51
 msgid "We do not recommend using a third-party link shortening service because:"
-msgstr ""
+msgstr "我們不建議使用任何第三方短網址服務，因為："
 
 #: templates/views/guidance/edit-and-format-messages.html:54
 msgid "your users cannot see where the link will take them"
@@ -8806,7 +8848,8 @@ msgstr "若要個人化您的訊息內容，可以將 placeholder 加入到範�
 msgid ""
 "Placeholders are filled in with details, like a name or reference number,"
 " each time you send a message."
-msgstr ""
+msgstr "建立 Placeholder "
+"之後，在每次傳送訊息前會自動填入一些詳細資訊，例如收件者姓名、參考編號等等。"
 
 #: templates/views/guidance/edit-and-format-messages.html:65
 msgid "To add a placeholder to the template:"
