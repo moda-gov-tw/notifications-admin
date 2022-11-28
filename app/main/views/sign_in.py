@@ -67,7 +67,7 @@ def sign_in():
                 (
                     _(
                         "The email address or password you entered is incorrect."
-                        "&ensp;<a href=\"%%s\" class='govuk-link'>Forgotten your password?</a>"
+                        "&ensp;<a href=\"%s\" class='govuk-link'>Forgotten your password?</a>"
                     )
                     % password_reset_url
                 )
