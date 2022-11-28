@@ -8409,11 +8409,11 @@ msgid "personalise the content of your texts"
 msgstr "個人化您的簡訊內容"
 
 #: templates/views/features/text-messages.html:26
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "You can also <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">integrate with our API</a> to send text messages "
-"automatically"
+"automatically."
 msgstr ""
 "您也可以<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
 ">串接我們的 API</a>來自動發送手機簡訊"
