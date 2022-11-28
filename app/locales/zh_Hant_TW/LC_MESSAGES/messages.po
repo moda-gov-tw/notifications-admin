@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-11-22 14:25+0800\n"
-"PO-Revision-Date: 2022-11-28 02:15+0000\n"
+"PO-Revision-Date: 2022-11-28 02:25+0000\n"
 "Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
@@ -4757,6 +4757,8 @@ msgid ""
 "href=\"%%s\">documentation\n"
 "      for the client library you are using."
 msgstr ""
+"請參考<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">您使用的客戶端程式庫文件"
 
 #: templates/views/invite-user.html:8 templates/views/manage-users.html:98
 #: templates/views/organisations/organisation/users/invite-org-user.html:9
@@ -4826,12 +4828,15 @@ msgid ""
 "after a message has been sent. You can download a report, including a "
 "list of sent messages, for your own records."
 msgstr ""
+"為了<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">安全</a>，此資訊僅在訊息寄發後 7 "
+"天內提供。您可下載含有寄出訊息清單的報告留存。"
 
 #: templates/views/message-status.html:18
 msgid ""
 "This page describes the statuses you’ll see when you’re signed in to "
 "Notify."
-msgstr ""
+msgstr "此頁面描述的是當您登入 Notify 時會看到的狀態。"
 
 #: templates/views/message-status.html:19
 #, python-format
@@ -4840,6 +4845,8 @@ msgid ""
 "--no-visited-state\" href=\"%%s\">documentation</a> for a list of API "
 "statuses."
 msgstr ""
+"若您使用 Notify API，請閱讀我們的<a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"%%s\">文件</a>即可了解 API 狀態清單。"
 
 #: templates/views/message-status.html:24
 msgid "Message statuses – emails"
@@ -4875,7 +4882,8 @@ msgstr ""
 msgid ""
 "The provider could not deliver the message because the email address was "
 "wrong. You should remove these email addresses from your database."
-msgstr ""
+msgstr "由於電子郵件地址錯誤，服務商無法寄送郵件。您應從資料庫中移除這些電子郵件地址"
+"。"
 
 #: templates/views/message-status.html:33
 msgid ""
@@ -4886,12 +4894,17 @@ msgid ""
 "messages#protect-your-users-from-spam-and-phishing\">Check your content "
 "does not look like spam</a> before you try to send the message again."
 msgstr ""
+"服務商無法寄送郵件。可能是收件者的信箱已滿，或垃圾信件過濾去退回了您的郵件。"
+"嘗試再次寄送前，<a class=\"govuk-link govuk-link--no-visited-state\" href="
+"\"https://www.gov.uk/service-manual/design/sending-emails-and-text-messages"
+"#protect-your-users-from-spam-and-phishing\""
+">請先確認您的信件內容是否長得像垃圾信</a>。"
 
 #: templates/views/message-status.html:34
 msgid ""
 "Your message was not sent because there was a problem between Notify and "
 "the provider. You’ll have to try sending your messages again."
-msgstr ""
+msgstr "由於 Notify 與服務業者間發生問題，並未傳送您的訊息。請您再寄一次訊息。"
 
 #: templates/views/message-status.html:44
 msgid "Spam"
@@ -4940,6 +4953,10 @@ msgid ""
 " If not, you should remove them from your database. You’ll still be "
 "charged for text messages that cannot be delivered."
 msgstr ""
+"電信業者無法傳遞簡訊。可能是手機號碼不正確，或電信業者拒絕該訊息。若您確定這"
+"些手機號碼都正確，請<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">聯絡我們</a>。若您無法確定，則應該將這些號碼從您的資料庫中刪除。"
+"無法傳遞的簡訊還是會向您收取費用。"
 
 #: templates/views/message-status.html:63
 msgid ""
@@ -4947,7 +4964,8 @@ msgid ""
 "recipient’s phone is off, has no signal, or their text message inbox is "
 "full. You can try to send the message again. You’ll still be charged for "
 "text messages to phones that are not accepting messages."
-msgstr ""
+msgstr "電信業者無法傳遞簡訊。可能是因為收件者手機關機、沒有訊號，或簡訊收件匣已滿。"
+"您可以嘗試再次寄訊簡訊。對方手機未接收的簡訊還是會向您收取費用。"
 
 #: templates/views/message-status.html:64
 msgid ""
@@ -4955,7 +4973,8 @@ msgid ""
 "the provider. You’ll have to try sending your messages again. You will "
 "not be charged for text messages that are affected by a technical "
 "failure."
-msgstr ""
+msgstr "由於 Notify 與服務業者間發生問題，並未傳送您的訊息。請您再寄一次訊息。因技術"
+"問題未寄出的簡訊將不會向您收費。"
 
 #: templates/views/message-status.html:77
 msgid "Message statuses – letters"
@@ -4977,7 +4996,7 @@ msgstr "已列印"
 msgid ""
 "The provider has printed the letter. Letters are printed at 5:30pm and "
 "dispatched the next working day."
-msgstr ""
+msgstr "印刷廠已印出信件。信件於每日下午 5:30 印出，並於次一上班日交由郵局寄送。"
 
 #: templates/views/message-status.html:85
 msgid "Cancelled"
@@ -4995,7 +5014,7 @@ msgstr "Notify 將信件傳送給印刷廠時，遇到未知錯誤。"
 
 #: templates/views/message-status.html:87
 msgid "The provider cannot print the letter. Your letter will not be dispatched."
-msgstr ""
+msgstr "印刷廠無法印出信件，將不會交遞您的信件。"
 
 #: templates/views/message-status.html:97
 msgid "Undelivered letters and returned mail"
@@ -5017,6 +5036,9 @@ msgid ""
 "they destroy. We’ll contact you if the IDs match any of your letters. "
 "This is a partly manual process, so it can take a few weeks."
 msgstr ""
+"每封信上都會有唯一的 ID。我們的印刷廠會通知我們有哪些郵件被銷毀，並在確認是您"
+"寄出的信件後通知您。這個過程有一部分需要人工處理，所以可能需要花上幾週的時間"
+"。"
 
 #: templates/views/new-password.html:6 templates/views/new-password.html:15
 msgid "Create a new password"
@@ -5024,7 +5046,7 @@ msgstr "設定新密碼"
 
 #: templates/views/new-password.html:18
 msgid "You can now create a new password for your account."
-msgstr ""
+msgstr "您現在可以幫帳號設定新密碼。"
 
 #: templates/views/new-password.html:21
 #: templates/views/register-from-invite.html:39
@@ -5037,7 +5059,7 @@ msgstr "至少8個字"
 msgid ""
 "Message about email address does not exist. Some one needs to figure out "
 "the words here."
-msgstr ""
+msgstr "關於電子郵件地址的訊息不存在。某人必須想好這邊的文案。"
 
 #: templates/views/notifications.html:9
 msgid "Failed "
@@ -5137,26 +5159,28 @@ msgid ""
 "GOV.UK Notify is a service that lets public service teams in the UK send "
 "emails, text messages, and letters\n"
 "    to users of their service."
-msgstr ""
+msgstr "GOV.UK Notify 是一套讓英國的公共服務團隊在打造資訊服務時，能夠傳送電子郵件、"
+"簡訊、紙本信件給他們的使用者的服務。"
 
 #: templates/views/privacy.html:25
 msgid ""
 "GOV.UK Notify is provided by the Government Digital Service (GDS) which "
 "is part of the Cabinet Office."
-msgstr ""
+msgstr "GOV.UK Notify 是由英國內閣辦公室下屬的政府數位服務團隊（GDS）提供。"
 
 #: templates/views/privacy.html:27
 msgid ""
 "Organisations sending notifications using GOV.UK Notify are the data "
 "controller and Cabinet Office is the data processor. The data controller "
 "must tell you about what they are doing with your personal data."
-msgstr ""
+msgstr "使用 GOV.UK Notify 傳送通知的單位是資料控管人，而英國內閣辦公室是資料處理者。"
+"資料控管人必須告知您會如何處理您的個人資料。"
 
 #: templates/views/privacy.html:29
 msgid ""
 "For the credentials used to access GOV.UK Notify, Cabinet Office is the "
 "data controller."
-msgstr ""
+msgstr "針對存取 GOV.UK Notify 的帳號資訊，資料管控人為英國內閣辦公室。"
 
 #: templates/views/privacy.html:31
 msgid ""
@@ -5166,6 +5190,9 @@ msgid ""
 "Register</a>.\n"
 "    The Cabinet Office registration number is: Z7414053"
 msgstr ""
+"若需更多資訊，請參考資訊專員辦公室（ICO）的<a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"https://ico.org.uk/esdwebpages/search\""
+">資料保護公開登記資料</a>。內閣辦公室的登記編號為：Z7414053"
 
 #: templates/views/privacy.html:34
 msgid "What data we collect from you"
@@ -5219,7 +5246,8 @@ msgid ""
 "We use your data to check that you are allowed to access GOV.UK Notify "
 "and to record your activity when using it. We use third party suppliers "
 "to do this."
-msgstr ""
+msgstr "我們會使用您的資料來確認您是否可使用 GOV.UK "
+"Notify，並在您使用時記錄您的使用行為。我們使用第三方供應商的服務來記錄。"
 
 #: templates/views/privacy.html:56
 msgid "We will not:"
@@ -5237,7 +5265,8 @@ msgstr ""
 msgid ""
 "We will share your data if we are required to do so by law – for example,"
 " by court order, or to prevent fraud or other crime."
-msgstr ""
+msgstr "我們只會在依法必須透漏時，分享您的資料（舉例來說：法院為了防止詐騙或其他犯罪"
+"而命令我們提供資訊時）"
 
 #: templates/views/privacy.html:65
 msgid "How long we keep your data"
@@ -5247,11 +5276,11 @@ msgstr "我們會保存您的資料多久？"
 msgid ""
 "We’ll keep your personal data for as long as you have a GOV.UK Notify "
 "account."
-msgstr ""
+msgstr "只要您有 GOV.UK Notify 帳號，我們就會持續保存您的個人資料。"
 
 #: templates/views/privacy.html:69
 msgid "When you ask us to close your account, we will delete:"
-msgstr ""
+msgstr "當您要求我們關閉帳號時，我們會刪除下列資料："
 
 #: templates/views/privacy.html:74
 msgid "your GOV.UK Notify password"
@@ -5261,7 +5290,7 @@ msgstr "您的 GOV.UK Notify 密碼"
 msgid ""
 "For security, we’ll keep your email address and IP addresses for 1 year "
 "before we delete them."
-msgstr ""
+msgstr "為了安全，我們將紀錄您的電子郵件信箱與 IP 地址，1 年後才會刪除。"
 
 #: templates/views/privacy.html:79
 msgid "Where your data is processed and stored"
@@ -5327,7 +5356,7 @@ msgstr "您有權請求："
 
 #: templates/views/privacy.html:104
 msgid "information about how your personal data is processed"
-msgstr ""
+msgstr "有關您的個人資料會被如何處理的資訊"
 
 #: templates/views/privacy.html:105
 msgid ""
@@ -5337,7 +5366,7 @@ msgstr "一份個資備份 - 這份備份會使用結構性、常見且可機讀
 
 #: templates/views/privacy.html:106
 msgid "that anything inaccurate in your personal data is corrected immediately"
-msgstr ""
+msgstr "您的任何個人資料有不準確的情況時，應立即更正"
 
 #: templates/views/privacy.html:109
 msgid "You can also:"
@@ -5394,7 +5423,7 @@ msgstr "對此文件有任何疑問"
 
 #: templates/views/privacy.html:132
 msgid "think that your personal data has been misused or mishandled"
-msgstr ""
+msgstr "認為您的個人資料被濫用或被錯誤使用"
 
 #: templates/views/privacy.html:136
 msgid "GDS Privacy Team"
@@ -5402,7 +5431,7 @@ msgstr "政府數位服務隱私權團隊"
 
 #: templates/views/privacy.html:141
 msgid "You can also contact the Cabinet Office Data Protection Officer."
-msgstr ""
+msgstr "您也可以聯絡英國內閣辦公室的資料保護官。"
 
 #: templates/views/privacy.html:145
 msgid "Data Protection Officer"
@@ -5416,7 +5445,7 @@ msgid ""
 "    London SW1A 2AS"
 msgstr ""
 "資料保護官<br>\n"
-"    英國首相府<br>\n"
+"    英國內閣辦公室<br>\n"
 "    70 Whitehall<br>\n"
 "    London SW1A 2AS"
 
@@ -5427,6 +5456,9 @@ msgid ""
 "Commissioner's Office</a> (ICO). The ICO is an independent regulator set "
 "up to uphold information rights."
 msgstr ""
+"若您想要投訴，也可連絡<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://ico.org.uk/\">資訊專員辦公室</a>（ICO）。ICO "
+"是一個負責維護資訊權利的獨立監管單位。"
 
 #: templates/views/privacy.html:156
 msgid "Information Commissioner’s Office"
@@ -5450,13 +5482,14 @@ msgstr ""
 msgid ""
 "For security, we need to check if you still have access to your email "
 "address."
-msgstr ""
+msgstr "為了安全，我們需要確認您是否仍有權限使用此電子郵件信箱。"
 
 #: templates/views/re-validate-email-sent.html:14
 msgid ""
 "We’ve sent you a link to sign in to Notify. The link will open in a new "
 "browser window, so you can close this one."
-msgstr ""
+msgstr "我們已將登入 Notify 的連結傳送給您。點擊該連結將在新瀏覽器視窗登入 "
+"Notify，因此這一頁可以先關閉了。"
 
 #: templates/views/re-validate-email-sent.html:18
 #: templates/views/two-factor-email.html:17
@@ -5465,13 +5498,13 @@ msgstr "沒有收到電子郵件嗎？"
 
 #: templates/views/register-from-invite.html:15
 msgid "Your account will be created with this email address:"
-msgstr ""
+msgstr "將使用此電子郵件地址來建立您的帳號："
 
 #: templates/views/register-from-invite.html:33
 #: templates/views/register-from-org-invite.html:20
 #: templates/views/register.html:26
 msgid "We’ll send you a security code by text message"
-msgstr ""
+msgstr "我們將把安全把用簡訊的方式傳送給您"
 
 #: templates/views/agreement/agreement-accept.html:41
 #: templates/views/agreement/service-agreement.html:38
@@ -5517,7 +5550,7 @@ msgstr "繼續"
 
 #: templates/views/register-from-org-invite.html:14
 msgid "Your account will be created with this email:"
-msgstr ""
+msgstr "將使用此電子郵件地址來建立您的帳號："
 
 #: templates/views/register.html:18
 msgid "Must be from a public sector organisation"
@@ -5543,7 +5576,7 @@ msgstr "每月發布一次報告。"
 
 #: templates/views/returned-letter-summary.html:23
 msgid "You’ll only get a report if one or more of your letters is returned."
-msgstr ""
+msgstr "只會在至少有一封信被退回時，才會收到報告。"
 
 #: templates/views/returned-letter-summary.html:30
 msgid "Returned letters report"
@@ -5552,7 +5585,7 @@ msgstr "退信報告"
 #: templates/views/returned-letter-summary.html:32
 #: templates/views/returned-letters.html:28
 msgid "If you have returned letter reports they will be listed here"
-msgstr ""
+msgstr "若您有紙本退信的報告，將列出於此處。"
 
 #: templates/views/returned-letter-summary.html:33
 msgid "Report"
@@ -5567,7 +5600,7 @@ msgstr "%%s 的退信"
 
 #: templates/views/returned-letters.html:29
 msgid "Originally sent"
-msgstr ""
+msgstr "原始寄出"
 
 #: templates/views/dashboard/template-statistics.html:24
 #: templates/views/notifications/notification.html:28
@@ -5607,12 +5640,15 @@ msgid ""
 "class=\"govuk-link govuk-link--no-visited-state\" href=\"#things-we-have-"
 "done\">things we’ve done</a>."
 msgstr ""
+"GOV.UK Notify 開發路線圖將展示我們正在開發哪些功能，以及部分<a class=\"govuk-"
+"link govuk-link--no-visited-state\" href=\"#things-we-have-done\""
+">我們已經完成的項目</a>。"
 
 #: templates/views/roadmap.html:26
 msgid ""
 "The roadmap is only a guide. It does not cover everything we do, and some"
 " things may change."
-msgstr ""
+msgstr "產品路線圖僅為參考，並不包含我們會實做的所有項目，有些項目也可能改變。"
 
 #: templates/views/roadmap.html:27
 #, python-format
@@ -5621,6 +5657,8 @@ msgid ""
 "href=\"%%s\">contact us</a> if you have any questions about the roadmap "
 "or suggestions for new features."
 msgstr ""
+"若您有關於本服務的發展規劃疑問，或想要建議任何新功能，歡迎隨時<a class"
+"=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">聯絡我們</a>。"
 
 #: templates/views/roadmap.html:29
 msgid "Things we’re working on now"
@@ -5628,7 +5666,7 @@ msgstr "我們正在做的功能"
 
 #: templates/views/roadmap.html:33
 msgid "Let services upload their own logo for emails and letters"
-msgstr ""
+msgstr "讓服務自行上傳圖示，放置在電子郵件與紙本信件中"
 
 #: templates/views/roadmap.html:34
 msgid ""
@@ -5638,6 +5676,11 @@ msgid ""
 "from GOV.UK PaaS</a> to one hosted using <a class=\"govuk-link govuk-link"
 "--no-visited-state\" href=\"https://aws.amazon.com/rds/\">Amazon RDS</a>"
 msgstr ""
+"開始<a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://gds."
+"blog.gov.uk/2022/07/12/"
+"why-weve-decided-to-decommission-gov-uk-paas-platform-as-a-service/\">從 "
+"GOV.UK PaaS 移轉我們的資料庫</a>到 <a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"https://aws.amazon.com/rds/\">Amazon RDS</a>"
 
 #: templates/views/roadmap.html:35
 msgid ""
@@ -5654,10 +5697,12 @@ msgid ""
 "Make it quicker and easier to turn off <a class=\"govuk-link govuk-link"
 "--no-visited-state\" href=\"%%s\">trial mode restrictions</a>"
 msgstr ""
+"更快、更簡單就能關閉<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">試用模式限制</a>"
 
 #: templates/views/roadmap.html:37
 msgid "Let services choose their own two-factor authentication method"
-msgstr ""
+msgstr "讓服務自行決定要使用怎樣的兩階段驗證方式"
 
 #: templates/views/roadmap.html:38
 #, python-format
@@ -5666,6 +5711,8 @@ msgid ""
 "href=\"%%s#receive\">receive text messages</a> without having to contact "
 "the Notify team first"
 msgstr ""
+"讓服務<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s#"
+"receive\">能接收簡訊</a>而不需先通知 Notify 團隊"
 
 #: templates/views/roadmap.html:39
 msgid "Make it easier to find information and guidance on the Notify website"
@@ -5681,6 +5728,8 @@ msgid ""
 "state\" href=\"https://design-system.service.gov.uk/\">GOV.UK Design "
 "System</a> that we use"
 msgstr ""
+"更新我們使用的 <a class=\"govuk-link govuk-link--no-visited-state\" href="
+"\"https://design-system.service.gov.uk/\">GOV.UK 設計系統</a>版本"
 
 #: templates/views/roadmap.html:42
 #, python-format
@@ -5730,7 +5779,7 @@ msgstr "改善紙本信件的格式化選項"
 
 #: templates/views/roadmap.html:65
 msgid "Provide more detailed reporting and usage data"
-msgstr ""
+msgstr "提供更詳細資訊的報表與使用資料"
 
 #: templates/views/roadmap.html:66
 msgid "Explore ways to let services send one-off messages"
@@ -5746,7 +5795,7 @@ msgstr "改善電子郵件品牌功能"
 
 #: templates/views/roadmap.html:74
 msgid "When a service team needs to update their email branding, they can now:"
-msgstr ""
+msgstr "現在起，當服務團隊需要更新電子郵件品牌時，可以："
 
 #: templates/views/roadmap.html:78
 msgid "choose new branding from a set of existing options"
@@ -5762,7 +5811,7 @@ msgstr "讓使用電子郵件傳送檔案更安全"
 
 #: templates/views/roadmap.html:85
 msgid "To protect files sent by email, service teams can now:"
-msgstr ""
+msgstr "為了保護由電子郵件傳送的檔案，服務團隊現在可以："
 
 #: templates/views/roadmap.html:89
 msgid ""
@@ -5785,6 +5834,10 @@ msgid ""
 "/how-rewriting-text-messages-can-help-services-to-save-money/\">how "
 "rewriting text messages can help services to save money</a>’."
 msgstr ""
+"針對這件事情我們發過一篇部落格文章，標題是《<a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"https://gds.blog.gov.uk/2022/07/20/"
+"how-rewriting-text-messages-can-help-services-to-save-money/\""
+">網路服務要如何透過改寫簡訊內容節省簡訊費</a>》。"
 
 #: templates/views/security.html:15
 msgid ""
@@ -5818,7 +5871,7 @@ msgstr ""
 
 #: templates/views/security.html:26
 msgid "it’s stored on the service"
-msgstr ""
+msgstr "儲存於服務中"
 
 #: templates/views/security.html:28
 msgid "Any recipient data you upload is only held for 7 days."
@@ -5831,12 +5884,15 @@ msgid ""
 "will be available for the recipient to download for up to 78 weeks (18 "
 "months)."
 msgstr ""
+"若您<a class=\"govuk-link govuk-link--no-visited-state\" href=\"/features/"
+"email#send-files\">使用電子郵件方式寄送檔案</a>，將提供收件者最多 78 週（18 "
+"個月）的時間來下載檔案。"
 
 #: templates/views/security.html:30
 msgid ""
 "The Cabinet Office acts as data processor for Notify. Your organisation "
 "is the data controller."
-msgstr ""
+msgstr "英國內閣辦公室是 Notify 的資料處理者；資料管控人是您的單位。"
 
 #: templates/views/security.html:31
 msgid "Data Protection Act"
@@ -5885,7 +5941,7 @@ msgstr ""
 msgid ""
 "using JSON Web Tokens, to avoid sending API keys when your service talks "
 "to Notify"
-msgstr ""
+msgstr "使用 JSON Web Token 來防止您的服務與 Notify 溝通時誤送 API 金鑰"
 
 #: templates/views/security.html:47
 msgid "Protect sensitive information"
@@ -5913,11 +5969,12 @@ msgstr "使用者權限與登入"
 msgid ""
 "You can set different user permissions in Notify. This lets you control "
 "who in your team has access to certain parts of the service."
-msgstr ""
+msgstr "您可以在 Notify "
+"設定不同的使用者權限。此功能讓您可以控制團隊中的誰可以使用此服務的哪些功能。"
 
 #: templates/views/security.html:54
 msgid "To sign in to Notify, you’ll need to enter:"
-msgstr ""
+msgstr "若要登入 Notify，需要輸入："
 
 #: templates/views/security.html:56
 msgid "your email address and password"
@@ -5934,6 +5991,8 @@ msgid ""
 "=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">contact us</a> "
 "to find out about using an email link instead."
 msgstr ""
+"若您的團隊無法使用簡訊登入，<a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"%%s\">請聯繫我們</a>來改用電子郵件寄送連結登入。"
 
 #: templates/views/security.html:61
 msgid "Information risk management"
@@ -5961,7 +6020,7 @@ msgstr "支援 Notify 服務"
 msgid ""
 "This approach also applies to the service providers Notify uses to send "
 "messages."
-msgstr ""
+msgstr "此方式也適用於 Notify 用來傳遞訊息的服務業者。"
 
 #: templates/views/security.html:70
 msgid "How we manage risks on Notify"
@@ -5969,7 +6028,7 @@ msgstr "我們在 Notify 如何管理風險"
 
 #: templates/views/security.html:71
 msgid "Things we do to manage risks on Notify include:"
-msgstr ""
+msgstr "我們在 Notify 採取下列行動來管理風險："
 
 #: templates/views/security.html:73
 msgid ""
@@ -5998,7 +6057,7 @@ msgstr ""
 
 #: templates/views/security.html:76
 msgid "regular updates to the Privacy Impact Assessment"
-msgstr ""
+msgstr "定期更新隱私權影響評估表（PIA）"
 
 #: templates/views/security.html:77
 msgid "security impact assessments"
@@ -6006,15 +6065,15 @@ msgstr "安全影響評估"
 
 #: templates/views/security.html:80
 msgid "Cabinet Office approval"
-msgstr "首相辦公室審核同意"
+msgstr "英國內閣辦公室審核同意"
 
 #: templates/views/security.html:81
 msgid ""
 "Notify has been assessed and approved by the Cabinet Office Senior "
 "Information Risk Officer (SIRO). The SIRO checks this approval once a "
 "year."
-msgstr "英國首相府資深資訊風險負責人（SIRO）已經評估並審核同意過 Notify 系統。SIRO "
-"每年將重新進行審核。"
+msgstr "英國內閣辦公室資深資訊風險負責人（SIRO）已經評估並審核同意過 Notify 系統。"
+"SIRO 每年將重新進行審核。"
 
 #: templates/views/security.html:82
 msgid ""
@@ -6057,7 +6116,7 @@ msgstr "選擇緊急連絡人清單"
 msgid ""
 "You cannot use an emergency contact list with this template because it\n"
 "          is personalised with %%s."
-msgstr ""
+msgstr "由於此範本已經個人化為 %%s，您無法使用此範本匯入緊急聯絡人清單。"
 
 #: templates/views/send-contact-list.html:28
 msgid ""
@@ -6094,6 +6153,8 @@ msgid ""
 "To upload and save an emergency contact list, go to the <a class=\"govuk-"
 "link govuk-link--no-visited-state\" href=\"%%s\">uploads</a> page."
 msgstr ""
+"若要上傳並儲存緊急聯絡人清單，請到<a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"%%s\">上傳</a>頁面。"
 
 #: templates/views/send-one-off-letter-address.html:38
 #: templates/views/send-test.html:31
@@ -6143,7 +6204,7 @@ msgstr "行為"
 #: templates/views/service-settings.html:38
 #: templates/views/service-settings/set-auth-type.html:21
 msgid "Email link or text message code"
-msgstr ""
+msgstr "電子郵件鏈結或簡訊代碼"
 
 #: templates/views/api/callbacks.html:27 templates/views/api/callbacks.html:33
 #: templates/views/organisations/organisation/settings/index.html:31
@@ -6260,7 +6321,7 @@ msgstr "簡訊寄件者"
 #: templates/views/service-settings/sms-prefix.html:8
 #: templates/views/service-settings/sms-prefix.html:17
 msgid "Start text messages with service name"
-msgstr ""
+msgstr "在簡訊開頭註明服務名稱"
 
 #: templates/views/service-settings.html:169
 msgid "your settings for starting text messages with service name"
@@ -6326,7 +6387,7 @@ msgstr "每天可寄發 %%(limit)s 封簡訊與電子郵件"
 
 #: templates/views/service-settings.html:280 templates/views/trial-mode.html:18
 msgid "send messages to yourself and other people in your team"
-msgstr ""
+msgstr "傳送訊息給自己與團隊中的其他人"
 
 #: templates/views/service-settings.html:281 templates/views/trial-mode.html:19
 msgid "create letter templates, but not send them"
@@ -6353,7 +6414,7 @@ msgstr "你的服務已經上線"
 #: templates/views/service-settings.html:297
 #, python-format
 msgid "You can send up to %%(limit)s messages per day."
-msgstr ""
+msgstr "您每天可以寄送最多 %%(limit)s 封訊息。"
 
 #: templates/views/service-settings.html:300
 #, python-format
@@ -6379,7 +6440,7 @@ msgstr "服務狀態"
 
 #: templates/views/service-settings.html:335
 msgid "if service is counted in list of live services"
-msgstr ""
+msgstr "若服務已經列為正式上線服務"
 
 #: templates/views/service-settings.html:340
 msgid "billing details for service"
@@ -6404,7 +6465,7 @@ msgstr "無"
 
 #: templates/views/service-settings.html:347
 msgid "the notes for the service"
-msgstr ""
+msgstr "服務註記"
 
 #: templates/views/service-settings.html:359
 #: templates/views/service-settings.html:410
@@ -6413,7 +6474,7 @@ msgstr "未設定"
 
 #: templates/views/service-settings.html:367
 msgid "organisation for service"
-msgstr ""
+msgstr "服務單位"
 
 #: templates/views/service-settings.html:371
 #: templates/views/service-settings/set-rate-limit.html:8
@@ -6503,7 +6564,8 @@ msgid ""
 "GOV.UK Notify lets you send emails, text messages and letters to your "
 "users. Try it now if you work in central government, a local authority, "
 "or the NHS."
-msgstr ""
+msgstr "GOV.UK Notify 可讓您寄送電子郵件、手機簡訊、紙本信件給您的使用者。若您在中央"
+"或地方政府，或國民保健服務（NHS）工作，歡迎試用。"
 
 #: templates/views/signedout.html:19
 msgid "GOV.UK services"
@@ -6517,7 +6579,7 @@ msgstr "寄發電子郵件、簡訊或紙本信件給您的使用者"
 msgid ""
 "Try GOV.UK Notify now if you work in central government, a&nbsp;local "
 "authority, or the NHS."
-msgstr ""
+msgstr "若您在中央或地方政府，或國民保健服務（NHS）工作，歡迎試用 GOV.UK Notify。"
 
 #: templates/views/signedout.html:41
 #, python-format
@@ -6536,7 +6598,7 @@ msgstr "控管您的內容"
 msgid ""
 "You do not need any technical knowledge to create email,\n"
 "          text&nbsp;message or letter templates."
-msgstr ""
+msgstr "您不需要任何技術知識，就能建立電子郵件、簡訊或紙本信件範本。"
 
 #: templates/views/signedout.html:68
 msgid "See how your messages perform"
@@ -6546,7 +6608,7 @@ msgstr "看看您的訊息表現如何"
 msgid ""
 "Track how many messages you’ve sent and\n"
 "          find out which ones are not being delivered."
-msgstr ""
+msgstr "追蹤您傳送過多少訊息，並且看看有哪些訊息並未送達。"
 
 #: templates/views/signedout.html:78
 msgid ""
@@ -6562,7 +6624,7 @@ msgstr "手動或自動寄發訊息"
 msgid ""
 "Upload a spreadsheet of email&nbsp;addresses or\n"
 "          phone&nbsp;numbers and Notify sends the messages."
-msgstr ""
+msgstr "上傳含有電子郵件地址的試算表或手機號碼，交遊 Notify 來傳送訊息。"
 
 #: templates/views/signedout.html:95
 msgid ""
@@ -6574,7 +6636,7 @@ msgstr "一張試算表的螢幕截圖，欄位裡有電子郵件信箱、姓名
 msgid ""
 "Integrate the GOV.UK Notify API with your web&nbsp;application or\n"
 "          back office system."
-msgstr ""
+msgstr "將串接 GOV.UK Notify API 串接到您的網頁應用程式或後台應用程式。"
 
 #: templates/views/signedout.html:105
 msgid "A screenshot of some computer code with a notify.send_email function"
@@ -6670,7 +6732,7 @@ msgid ""
 msgstr ""
 "<h2 class=\"with-keyline\">團隊</h2>\n"
 "        <p class=\"govuk-body\">\n"
-"          GOV.UK Notify 是由英國政府首相辦公室的政府數位服務團隊打造\n"
+"          GOV.UK Notify 是由英國政府內閣辦公室的政府數位服務團隊打造\n"
 "          一週七天，每天 24 小時，全年無休。\n"
 "        </p>\n"
 "        <p class=\"govuk-body\">\n"
@@ -6693,11 +6755,11 @@ msgstr "您需要再次登入"
 
 #: templates/views/signin.html:22
 msgid "We signed you out because you logged in to Notify on another device."
-msgstr ""
+msgstr "由於您在另一台裝置登入 Notify，已在本裝置將您登出。"
 
 #: templates/views/signin.html:26
 msgid "We signed you out because you have not used Notify for a while."
-msgstr ""
+msgstr "由於您已經有一段時間未使用 Notify，已將您登出。"
 
 #: templates/views/signin.html:32
 #, python-format
@@ -6706,6 +6768,8 @@ msgid ""
 "        <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">create one now</a>."
 msgstr ""
+"若您沒有帳號，可以<a class=\"govuk-link govuk-link--no-visited-state\" href="
+"\"%%s\">立即註冊一組</a>。"
 
 #: templates/views/temp-history.html:7 templates/views/temp-history.html:12
 msgid "Audit events"
@@ -6745,7 +6809,7 @@ msgstr "完成您的組織的資訊保障處理程序（不需包含 Notify "
 
 #: templates/views/terms-of-use.html:24
 msgid "tell us immediately if you have any security breaches"
-msgstr ""
+msgstr "當您遭受任何資訊安全事件時，請立即通知我們"
 
 #: templates/views/terms-of-use.html:25
 msgid "keep your API keys secure"
@@ -6786,7 +6850,7 @@ msgstr ""
 msgid ""
 "If you do not keep to these terms, we might have to stop sending your "
 "messages."
-msgstr ""
+msgstr "若您不遵守這些這款，我們得停止為您傳送訊息。"
 
 #: templates/views/terms-of-use.html:34
 msgid "Notify will:"
@@ -6794,7 +6858,7 @@ msgstr "Notify 將："
 
 #: templates/views/terms-of-use.html:36
 msgid "send all the messages you pass to us, as long as they meet our guidelines"
-msgstr ""
+msgstr "只要符合我們的傳送標準，就會傳送所有您交給我們的訊息內容"
 
 #: templates/views/terms-of-use.html:38
 msgid ""
@@ -6830,6 +6894,8 @@ msgid ""
 "You can <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">contact us</a> at any time to close your account."
 msgstr ""
+"您可以隨時<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">聯絡我們</a>來關閉帳號。"
 
 #: templates/views/terms-of-use.html:46
 #, python-format
@@ -6861,11 +6927,12 @@ msgstr "重寄安全碼"
 msgid ""
 "When you add a new service it will start in trial mode. This lets you try"
 " out GOV.UK Notify, with a few restrictions."
-msgstr ""
+msgstr "當您開啟新服務時，會先處於試用模式當中。"
+"您可以在只有少數限制的試用模式中盡情試用 GOV.UK Notify。"
 
 #: templates/views/trial-mode.html:15
 msgid "While your service is in trial mode you can only:"
-msgstr ""
+msgstr "當您的服務仍在試用模式時，只能："
 
 #: templates/views/trial-mode.html:17
 msgid "send 50 text messages and emails per day"
@@ -6899,7 +6966,7 @@ msgstr "選擇<b class=\"govuk-!-font-weight-bold\">申請轉正式上線</b>。
 #: templates/views/service-settings/request-to-go-live.html:71
 #: templates/views/trial-mode.html:36
 msgid "When we receive your request we’ll get back to you within one working day."
-msgstr ""
+msgstr "我們收到您的請求後，會在下一個上班日回覆您。"
 
 #: templates/views/service-settings/request-to-go-live.html:9
 #: templates/views/trial-mode.html:38
@@ -6912,7 +6979,7 @@ msgstr "加入你想要寄送的簡訊範本"
 
 #: templates/views/trial-mode.html:42
 msgid "update your settings so you’re ready to send and receive messages"
-msgstr ""
+msgstr "更新您的設定，這樣才可以收發訊息"
 
 #: templates/views/trial-mode.html:43
 msgid "accept our data sharing and financial agreement"
@@ -6929,7 +6996,7 @@ msgstr ""
 
 #: templates/views/two-factor-email.html:13
 msgid "We’ve emailed you a link to sign in to Notify."
-msgstr ""
+msgstr "我們已將登入 Notify 的連結 E-mail 給您。"
 
 #: templates/views/two-factor-email.html:14
 msgid ""
@@ -6943,7 +7010,7 @@ msgstr "確認您的手機"
 
 #: templates/views/two-factor-sms.html:15
 msgid "We’ve sent you a text message with a security code."
-msgstr ""
+msgstr "我們已將安全碼簡訊傳送給您。"
 
 #: templates/views/two-factor-sms.html:25
 msgid "Not received a text message?"
@@ -6966,14 +7033,14 @@ msgstr "檢查安全金鑰"
 msgid ""
 "Your browser does not support security keys. Try signing in to Notify "
 "using a different browser."
-msgstr ""
+msgstr "您的瀏覽器不支援安全金鑰，請嘗試改用另一套瀏覽器登入 Notify。"
 
 #: templates/views/two-factor-webauthn.html:64
 #: templates/views/user-profile/security-keys.html:44
 msgid ""
 "JavaScript is not available for this page. Security keys need JavaScript "
 "to work."
-msgstr ""
+msgstr "此頁面無法使用 JavaScript。必須能使用 JavaScript 才可以使用安全金鑰登入。"
 
 #: templates/views/user-already-invited.html:6
 #: templates/views/user-already-invited.html:15
@@ -7155,7 +7222,7 @@ msgstr "下載同意書（PDF）"
 msgid ""
 "The agreement contains commercially sensitive information. Do not share "
 "it outside your organisation."
-msgstr ""
+msgstr "同意書包含商業機密資訊，請勿透漏給組織外的人士。"
 
 #: templates/views/agreement/service-agreement-choose.html:6
 #: templates/views/agreement/service-agreement-choose.html:18
@@ -7183,7 +7250,7 @@ msgstr "一旦接受後，此同意書有效範圍涵蓋來自您的組織所使
 
 #: templates/views/agreement/service-agreement-choose.html:30
 msgid "There are different agreements for crown and non-crown organisations."
-msgstr ""
+msgstr "官方與非官方單位須簽署的同意書不同。"
 
 #: templates/views/agreement/service-agreement-choose.html:33
 #, python-format
@@ -7219,13 +7286,15 @@ msgid ""
 "For more information, you can <a class=\"govuk-link govuk-link--no-"
 "visited-state\" href=\"%%s\">download a copy of the agreement (PDF)"
 msgstr ""
+"若需更多資訊，可以<a class=\"govuk-link govuk-link--no-visited-state\" href="
+"\"%%s\">下載一份同意書的副本（PDF）"
 
 #: templates/views/agreement/service-agreement-signed.html:27
 #: templates/views/agreement/service-agreement.html:34
 msgid ""
 "The agreement is confidential and should not be shared outside your "
 "organisation."
-msgstr ""
+msgstr "同意書是機密文件，不應分享給組織外的人士。"
 
 #: templates/views/agreement/service-agreement.html:25
 #, python-format
@@ -7281,7 +7350,8 @@ msgstr "請輸入有效的手機號碼"
 msgid ""
 "You can use a team and guest list key to send real messages to your team "
 "and up to 5 other email addresses or phone numbers."
-msgstr ""
+msgstr "您可以使用團隊與訪客清單來傳送真實的訊息給您的團隊成員，以及最多 5 "
+"筆其他的電子郵件地址或手機號碼。"
 
 #: templates/views/api/guest-list.html:48
 #, python-format
@@ -7289,6 +7359,8 @@ msgid ""
 "You do not need to add yourself or your <a class=\"govuk-link govuk-link"
 "--no-visited-state\" href=\"%%s\">team members</a> to the guest list."
 msgstr ""
+"您不需要將自己或您的<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">團隊成員</a>加到訪客清單。"
 
 #: templates/views/api/index.html:31
 msgid "Message log"
@@ -7301,7 +7373,7 @@ msgstr "重新整理"
 
 #: templates/views/api/index.html:42
 msgid "When you send messages via the API they’ll appear here."
-msgstr ""
+msgstr "將您透過 API 傳送訊息時，將顯示於此處。"
 
 #: templates/views/api/index.html:45 templates/views/api/index.html:98
 msgid "Notify deletes messages after 7 days."
@@ -7349,6 +7421,9 @@ msgid ""
 "link--no-visited-state\" href=\"%%s\">API documentation</a> for more "
 "information."
 msgstr ""
+"當您發送電子郵件或簡訊後，我們可告訴您 Notify 是否已傳送成功。"
+"若需更多資訊請參考我們的 <a class=\"govuk-link govuk-link--no-visited-state\""
+" href=\"%%s\">API 文件</a>當中的 Callback 段落。"
 
 #: templates/views/api/callbacks/delivery-status-callback.html:30
 #: templates/views/api/callbacks/received-text-messages-callback.html:27
@@ -7372,6 +7447,9 @@ msgid ""
 "        Check the <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\"> callback documentation </a> for more information."
 msgstr ""
+"當您在 Notify 收到簡訊時，我們可以將收到資訊轉寄到您的系統。若需更多資訊，"
+"請參考<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">Callback 文件</a>。"
 
 #: templates/views/api/keys/show.html:6 templates/views/api/keys/show.html:13
 msgid "New API key"
@@ -7451,7 +7529,7 @@ msgstr "捨棄此警示"
 msgid ""
 "When you use a live account you’ll need another member of\n"
 "            your team to approve your alert."
-msgstr ""
+msgstr "當您使用正式帳號時，需要團隊中的另一名成員來同意您發出警示。"
 
 #: templates/views/broadcast/view-message.html:69
 msgid ""
@@ -7506,7 +7584,7 @@ msgstr "此警示正等待審核中"
 
 #: templates/views/broadcast/view-message.html:147
 msgid "You don’t have permission to approve alerts."
-msgstr ""
+msgstr "您沒有權限同意發送警示。"
 
 #: templates/views/broadcast/view-message.html:158
 msgid "Stop sending"
@@ -7571,11 +7649,11 @@ msgstr "%%(starts_at_format_human)s 在 %%(starts_at)s"
 
 #: templates/views/broadcast/tour/1.html:6
 msgid "You’ve been invited to use GOV.UK Notify for emergency alerts."
-msgstr ""
+msgstr "您已受邀使用 GOV.UK Notify 傳送緊急警示。"
 
 #: templates/views/broadcast/tour/1.html:17
 msgid "You’ve been invited to use GOV.UK&nbsp;Notify for emergency alerts."
-msgstr ""
+msgstr "您已受邀使用 GOV.UK&nbsp;Notify 傳送緊急警示。"
 
 #: templates/views/broadcast/tour/1.html:20
 msgid ""
@@ -7587,18 +7665,18 @@ msgstr "緊急警示讓您可向大眾警告迫在眉睫的危險即將發生。
 msgid ""
 "In an emergency, you can send an alert to every mobile phone in\n"
 "  the affected area at exactly the same time."
-msgstr ""
+msgstr "緊急情況下，您可以同時傳送警示到特定區域中的每一支手機中。"
 
 #: templates/views/broadcast/tour/2.html:18
 msgid ""
 "In an emergency, you can send an alert to every mobile phone in\n"
 "          the affected area at exactly the same time."
-msgstr ""
+msgstr "緊急情況下，您可以同時傳送警示到特定區域中的每一支手機中。"
 
 #: templates/views/broadcast/tour/3.html:6
 #: templates/views/broadcast/tour/3.html:17
 msgid "The phone will make a loud alarm noise, even if it’s set on silent."
-msgstr ""
+msgstr "收到警示的手機將發出超大聲的警示音效，就算在靜音模式也會觸發。"
 
 #: templates/views/broadcast/tour/4.html:6
 #: templates/views/broadcast/tour/4.html:17
@@ -7609,7 +7687,7 @@ msgstr "警告訊息並不是正常的簡訊。"
 msgid ""
 "It’s broadcast directly from a mobile phone mast, so you don’t\n"
 "          need to know anyone’s phone number."
-msgstr ""
+msgstr "警示是直接透過行動網路基地台廣播出去的，不需要事先知道任何人的手機號碼。"
 
 #: templates/views/broadcast/tour/5.html:7
 #: templates/views/broadcast/tour/5.html:22
@@ -7618,7 +7696,7 @@ msgstr "您正處於測試模式。"
 
 #: templates/views/broadcast/tour/5.html:25
 msgid "There’s no risk of sending a real alert."
-msgstr ""
+msgstr "傳送真實的警示沒有風險。"
 
 #: templates/views/broadcast/tour/5.html:28
 msgid "Get used to the system now, so you know what to do in an&nbsp;emergency."
@@ -7626,7 +7704,7 @@ msgstr ""
 
 #: templates/views/broadcast/tour/5.html:31
 msgid "When you’re ready, you can ask for access to the live system."
-msgstr ""
+msgstr "只要您一切都準備好，就可以要求轉正式系統上線。"
 
 #: templates/views/broadcast/tour/6.html:6
 #: templates/views/broadcast/tour/6.html:18
@@ -7643,11 +7721,11 @@ msgstr "在實際發生緊急情況時，您選擇的區域當中的所有行動
 #: templates/views/broadcast/tour/live/1.html:6
 #: templates/views/broadcast/tour/live/1.html:20
 msgid "You’ve been invited to send live emergency alerts."
-msgstr ""
+msgstr "您已受邀傳送即時緊急警示。"
 
 #: templates/views/broadcast/tour/live/1.html:23
 msgid "Members of the public will receive alerts you send from this service."
-msgstr ""
+msgstr "所有大眾會收到您透過此服務傳送的警示訊息"
 
 #: templates/views/broadcast/tour/live/2.html:6
 #: templates/views/broadcast/tour/live/2.html:20
@@ -7703,7 +7781,8 @@ msgid ""
 "Your file needs at least 3 address columns, for example ‘address line 1’,"
 "\n"
 "            ‘address line 2’ and ‘address line 3’."
-msgstr ""
+msgstr "您的檔案至少得有三個地址欄，例如：「地址第一行」、「地址第二行」、「地址第三"
+"行」。"
 
 #: templates/views/check/column-errors.html:65
 #, python-format
@@ -7718,7 +7797,7 @@ msgstr ""
 #: templates/views/check/column-errors.html:81
 #, python-format
 msgid "We found more than one column called %%s."
-msgstr ""
+msgstr "我們找到超過一欄 %%s。"
 
 #: templates/views/check/column-errors.html:90
 msgid "Delete or rename one of these columns and try again."
@@ -7726,7 +7805,7 @@ msgstr "請刪除或更改下列任一欄位名稱，然後再試一次。"
 
 #: templates/views/check/column-errors.html:96
 msgid "Your column names need to match the double brackets in your template"
-msgstr ""
+msgstr "欄位名稱必須要與範本中的雙括弧內容相符"
 
 #: templates/views/check/column-errors.html:99
 #, python-format
@@ -7858,7 +7937,7 @@ msgstr "收到的簡訊"
 
 #: templates/views/conversations/conversation.html:32
 msgid "Send a text message to this phone number"
-msgstr ""
+msgstr "傳送簡訊至此電話號碼"
 
 #: templates/views/conversations/messages.html:23
 #: templates/views/dashboard/_jobs.html:93
@@ -7898,7 +7977,7 @@ msgstr "收件匣"
 msgid ""
 "When users text your service’s phone number ({}) you’ll see the messages "
 "here"
-msgstr ""
+msgstr "當使用者傳送簡訊到您服務的電話號碼（{}）時，您會在此處看到簡訊內容"
 
 #: templates/views/dashboard/_inbox_messages.html:16
 msgid "From"
@@ -8074,7 +8153,7 @@ msgstr "新增品牌"
 
 #: templates/views/features/emails.html:15
 msgid "Send an unlimited number of emails for free with GOV.UK Notify."
-msgstr ""
+msgstr "使用 GOV.UK Notify 免費、無限量傳送電子郵件。"
 
 #: templates/views/features/emails.html:17
 #: templates/views/features/letters.html:17
@@ -8112,6 +8191,8 @@ msgid ""
 "You can also <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">integrate with our API</a> to send emails automatically."
 msgstr ""
+"您也可以<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">串接我們的 API</a>來自動發送電子郵件。"
 
 #: templates/views/features/emails.html:30
 msgid "Add your organisa:tion’s logo and brand colour to email templates."
@@ -8134,7 +8215,7 @@ msgstr "Notify 提供您一套安全又可靠的機制來透過電子郵件傳�
 msgid ""
 "Upload a file using our API, then send your users an email with a link to"
 " download it."
-msgstr ""
+msgstr "使用我們的 API 上傳檔案，再將連結透過電子郵件方式傳送給收件者來下載檔案。"
 
 #: templates/views/features/emails.html:36
 msgid "Notify uses encrypted links instead of email attachments because:"
@@ -8146,13 +8227,13 @@ msgstr "它們更安全"
 
 #: templates/views/features/emails.html:40
 msgid "email attachments are often marked as spam"
-msgstr ""
+msgstr "有時含有附件的郵件，會被標示為垃圾信"
 
 #: templates/views/features/emails.html:42
 msgid ""
 "This is an API-only feature. You’ll need a developer on your team to set "
 "it up for you."
-msgstr ""
+msgstr "這是純 API 功能。您的團隊中需要有工程師來開發。"
 
 #: templates/views/features/emails.html:45
 msgid "Add a reply-to address"
@@ -8180,7 +8261,7 @@ msgstr ""
 #: templates/views/features/emails.html:51
 #: templates/views/pricing/index.html:44
 msgid "It’s free to send emails through Notify."
-msgstr ""
+msgstr "使用 Notify 傳送電子郵件免費。"
 
 #: templates/views/features/emails.html:52
 #: templates/views/features/letters.html:55
@@ -8195,7 +8276,7 @@ msgstr ""
 
 #: templates/views/features/letters.html:15
 msgid "GOV.UK Notify will print, pack and post your letters for you."
-msgstr ""
+msgstr "GOV.UK Notify 可為您印出、封緘、寄出信件。"
 
 #: templates/views/features/letters.html:23
 msgid "create reusable letter templates"
@@ -8215,6 +8296,8 @@ msgid ""
 "You can also <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">integrate with our API</a> to send letters automatically."
 msgstr ""
+"您也可以<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">串接我們的 API</a>來自動發送紙本信件。"
 
 #: templates/views/features/letters.html:29
 msgid "Choose your postage"
@@ -8259,7 +8342,8 @@ msgstr "上傳您自己的紙本信件"
 msgid ""
 "You can create reusable letter templates in Notify, or upload and send "
 "your own letters with the Notify API."
-msgstr ""
+msgstr "您可以在 Notify 建立可使用的信件範本，或使用 Notify API "
+"自行上傳並寄送自己的信件。"
 
 #: templates/views/features/letters.html:40
 #, python-format
@@ -8337,17 +8421,20 @@ msgid ""
 "href=\"%%s\">integrate with our API</a> to send text messages "
 "automatically"
 msgstr ""
+"您也可以<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">串接我們的 API</a>來自動發送手機簡訊。"
 
 #: templates/views/features/text-messages.html:29
 msgid "Let people send messages to your service or reply to your texts."
-msgstr ""
+msgstr "讓人們傳送簡訊到您的服務，或回覆您的簡訊。"
 
 #: templates/views/features/text-messages.html:30
 msgid ""
 "You can see and reply to the messages you receive when you sign in to "
 "Notify. If you’re using our API, you can set up your own automated "
 "processes to manage replies."
-msgstr ""
+msgstr "登入 Notify 後，您就可以看到並回覆收到的簡訊。若您使用我們的 "
+"API，還可以建立自己的自動化程序來管理回覆內容。"
 
 #: templates/views/features/text-messages.html:31
 #, python-format
@@ -8366,7 +8453,7 @@ msgstr "顯示您的簡訊來自何處"
 msgid ""
 "When you send a text message with Notify, the sender name tells people "
 "who it’s from."
-msgstr ""
+msgstr "當您使用 Notify 傳送簡訊時，寄件者名稱能告訴收到簡訊的人這是誰寄的簡訊。"
 
 #: templates/views/features/text-messages.html:35
 #, python-format
@@ -8482,11 +8569,11 @@ msgstr "更改電子郵件品牌"
 
 #: templates/views/guidance/branding-and-customisation.html:27
 msgid "The default branding for email templates is the GOV.UK logo."
-msgstr ""
+msgstr "電子郵件範本的預設品牌為 GOV.UK 圖示。"
 
 #: templates/views/guidance/branding-and-customisation.html:29
 msgid "To change your email branding:"
-msgstr ""
+msgstr "若要更改郵件品牌資訊："
 
 #: templates/views/guidance/branding-and-customisation.html:32
 #: templates/views/guidance/branding-and-customisation.html:43
@@ -8518,6 +8605,9 @@ msgid ""
 "=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">request to go "
 "live</a>."
 msgstr ""
+"您可以指定當使用者回覆信件時，要回覆到哪個電子郵件地址。您必須至少新增一組 "
+"Reply-to 回覆地址到服務中，才可以<a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"%%s\">申請轉正式上線</a>。"
 
 #: templates/views/guidance/branding-and-customisation.html:40
 msgid "To add a reply-to email address:"
@@ -8542,11 +8632,11 @@ msgstr "更改簡訊寄件者"
 #: templates/views/guidance/branding-and-customisation.html:50
 #: templates/views/service-settings/sms-senders.html:67
 msgid "The text message sender tells your users who the message is from."
-msgstr ""
+msgstr "簡訊寄件者資訊可告訴使用者簡訊是由誰寄發。"
 
 #: templates/views/guidance/branding-and-customisation.html:52
 msgid "To change the text message sender from the default of ‘GOVUK’:"
-msgstr ""
+msgstr "若要更改簡訊的預設寄件者名稱「GOVUK」："
 
 #: templates/views/guidance/branding-and-customisation.html:55
 #, python-format
@@ -8621,7 +8711,7 @@ msgstr "批次發送"
 
 #: templates/views/guidance/create-and-send-messages.html:20
 msgid "To send a batch of messages at once:"
-msgstr ""
+msgstr "若要一次傳送一整批訊息："
 
 #: templates/views/guidance/create-and-send-messages.html:22
 #, python-format
@@ -8668,7 +8758,7 @@ msgstr "格式化訊息內容"
 
 #: templates/views/guidance/edit-and-format-messages.html:26
 msgid "You can see a list of formatting instructions on the edit template page:"
-msgstr ""
+msgstr "您可以在範本編輯頁面看到格式教學清單："
 
 #: templates/views/guidance/edit-and-format-messages.html:29
 #: templates/views/guidance/edit-and-format-messages.html:68
@@ -8727,7 +8817,7 @@ msgstr "加入連結"
 msgid ""
 "When composing an email or text message, write URLs in full and Notify "
 "will convert them into links for you."
-msgstr ""
+msgstr "撰寫電子郵件或簡訊時，請撰寫完整網址。Notify 會自動幫您轉換成連結。"
 
 #: templates/views/guidance/edit-and-format-messages.html:49
 msgid ""
@@ -8735,6 +8825,9 @@ msgid ""
 "check a URL looks genuine before clicking the link in an email. This is "
 "hard to do if the URL is hidden behind clickable link text."
 msgstr ""
+"您不能將將超連結顯示成文字。研究發現人們點擊郵件中的網址前會先確認目標是否長"
+"得像真正的網址，才會點擊。若網址隱藏在可以點擊的連結文字中，就不容易判斷網址"
+"真偽。"
 
 #: templates/views/guidance/edit-and-format-messages.html:51
 msgid "We do not recommend using a third-party link shortening service because:"
@@ -8746,11 +8839,11 @@ msgstr "你的使用者無法看見這個連結指向的位置"
 
 #: templates/views/guidance/edit-and-format-messages.html:55
 msgid "your link might stop working if there’s a service outage"
-msgstr ""
+msgstr "服務故障時，您的連結可能會暫時無法使用"
 
 #: templates/views/guidance/edit-and-format-messages.html:56
 msgid "you can no longer control where the redirect goes"
-msgstr ""
+msgstr "您無法再控制會重新導向到何處"
 
 #: templates/views/guidance/edit-and-format-messages.html:59
 msgid "Personalise your content"
@@ -8760,7 +8853,7 @@ msgstr "個人化您的內容"
 msgid ""
 "To personalise the content of your messages, add a placeholder to the "
 "template."
-msgstr ""
+msgstr "若要個人化您的訊息內容，可以將 placeholder 加入到範本中。"
 
 #: templates/views/guidance/edit-and-format-messages.html:63
 msgid ""
