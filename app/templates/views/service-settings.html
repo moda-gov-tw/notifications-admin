@@ -24,7 +24,7 @@
           {{ text_field(_('Service name')) }}
           {{ text_field(current_service.name) }}
           {{ edit_field(
-              'Change',
+              _('Change'),
               url_for('.service_name_change', service_id=current_service.id),
               permissions=['manage_service'],
               suffix=_('service name'),
@@ -98,7 +98,7 @@
             {{ text_field(_('Email branding')) }}
             {{ text_field(current_service.email_branding.name) }}
             {{ edit_field(
-              'Change',
+              _('Change'),
               email_request_url,
               permissions=['manage_service'],
               suffix=_('email branding'),
@@ -163,7 +163,7 @@
             {{ text_field(_('Start text messages with service name')) }}
             {{ boolean_field(current_service.prefix_sms) }}
             {{ edit_field(
-                'Change',
+                _('Change'),
                 url_for('.service_set_sms_prefix', service_id=current_service.id),
                 permissions=['manage_service'],
                 suffix=_('your settings for starting text messages with service name'),
@@ -246,7 +246,7 @@
               {% endif %}
             {% endcall %}
             {{ edit_field(
-                'Manage',
+                _('Manage'),
                 url_for('.service_letter_contact_details', service_id=current_service.id),
                 permissions=['manage_service','manage_api_keys'],
                 suffix=_('sender addresses'),
@@ -426,7 +426,7 @@
                       service_id=current_service.id,
                       permission=permission if not service_permissions[permission].endpoint else None
                     ),
-                    suffix=_('your settings for %%s') % service_permissions[permission].title,
+                    suffix=_('your settings for {}').format(service_permissions[permission].title),
                   ) }}
               {% endcall %}
             {% endif %}
