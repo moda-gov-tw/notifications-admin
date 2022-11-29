@@ -106,7 +106,7 @@
               <ul class="govuk-list">
               {% if item.sms_free_allowance_used %}
                 <li class="tabular-numbers">{{_("%%(sms_free_allowance_used)s free %%(sms_free_count)s") % {
-                  'sms_free_allowance_used': item.sms_free_allowance_used|format_thousands),
+                  'sms_free_allowance_used': item.sms_free_allowance_used|format_thousands,
                   'sms_free_count': item.sms_free_count|message_count_label('sms', suffix=''),
                 }}}</li>
               {% endif %}

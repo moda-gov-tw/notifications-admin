@@ -426,7 +426,7 @@
                       service_id=current_service.id,
                       permission=permission if not service_permissions[permission].endpoint else None
                     ),
-                    suffix=_('your settings for %%s') % service_permissions[permission].title,
+                    suffix=_('your settings for %s') % service_permissions[permission].title,
                   ) }}
               {% endcall %}
             {% endif %}
