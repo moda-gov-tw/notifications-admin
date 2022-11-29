@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-28 18:32+0800\n"
+"POT-Creation-Date: 2022-11-29 14:41+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -351,7 +351,7 @@ msgstr ""
 
 #: main/forms.py:187
 #, python-format
-msgid "Select %%s"
+msgid "Select %s"
 msgstr ""
 
 #: main/forms.py:190 main/forms.py:1600 main/forms.py:1692 main/forms.py:1698
@@ -575,17 +575,17 @@ msgstr ""
 
 #: main/forms.py:1349
 #, python-format
-msgid "I understand this will alert anyone who has switched on the %%s channel"
+msgid "I understand this will alert anyone who has switched on the %s channel"
 msgstr ""
 
 #: main/forms.py:1351
 #, python-format
-msgid "I understand this will alert %%s of people"
+msgid "I understand this will alert %s of people"
 msgstr ""
 
 #: main/forms.py:1355
 #, python-format
-msgid "I understand this will alert %%s of people, even if they’ve opted out"
+msgid "I understand this will alert %s of people, even if they’ve opted out"
 msgstr ""
 
 #: main/forms.py:1362
@@ -625,14 +625,14 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
-#: main/forms.py:1417 templates/views/check/row-errors.html:78
+#: main/forms.py:1417
 #, python-format
-msgid "Address must be at least %%s lines long"
+msgid "Address must be at least %s lines long"
 msgstr ""
 
-#: main/forms.py:1420 templates/views/check/row-errors.html:80
+#: main/forms.py:1420
 #, python-format
-msgid "Address must be no more than %%s lines long"
+msgid "Address must be no more than %s lines long"
 msgstr ""
 
 #: main/forms.py:1424 templates/views/check/row-errors.html:83
@@ -943,7 +943,7 @@ msgstr ""
 
 #: main/forms.py:1879
 #, python-format
-msgid "Should other teams in %%s have the option to use this branding?"
+msgid "Should other teams in %s have the option to use this branding?"
 msgstr ""
 
 #: main/forms.py:1895
@@ -951,9 +951,9 @@ msgstr ""
 msgid ""
 "\n"
 "            <ul class=\"govuk-list govuk-hint govuk-!-margin-bottom-0\">\n"
-"                <li>Apply this branding to ‘%%(service_name)s’</li>\n"
+"                <li>Apply this branding to ‘%(service_name)s’</li>\n"
 "                <li class=\"govuk-!-margin-bottom-0\">Let other "
-"%%(org_name)s teams apply this branding themselves</li>\n"
+"%(org_name)s teams apply this branding themselves</li>\n"
 "            </ul>\n"
 "        "
 msgstr ""
@@ -964,7 +964,7 @@ msgid ""
 "\n"
 "            <ul class=\"govuk-list govuk-hint govuk-!-margin-bottom-0\">\n"
 "                <li class=\"govuk-!-margin-bottom-0\">Only apply this "
-"branding to ‘%%s’</li>\n"
+"branding to ‘%s’</li>\n"
 "            </ul>\n"
 "        "
 msgstr ""
@@ -1406,7 +1406,7 @@ msgstr ""
 
 #: main/validators.py:150
 #, python-format
-msgid "Content must be %%s characters or fewer because it contains %%s"
+msgid "Content must be %s characters or fewer because it contains %s"
 msgstr ""
 
 #: main/validators.py:163
@@ -1423,7 +1423,7 @@ msgstr ""
 
 #: main/validators.py:204
 #, python-format
-msgid "Cannot contain %%s"
+msgid "Cannot contain %s"
 msgstr ""
 
 #: main/views/add_service.py:41
@@ -1603,22 +1603,22 @@ msgstr ""
 
 #: main/views/jobs.py:335
 #, python-format
-msgid "total<span class=\"govuk-visually-hidden\">%%s</span>"
+msgid "total<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
 
 #: main/views/jobs.py:343
 #, python-format
-msgid "sending<span class=\"govuk-visually-hidden\">%%s</span>"
+msgid "sending<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
 
 #: main/views/jobs.py:351
 #, python-format
-msgid "delivered<span class=\"govuk-visually-hidden\">%%s</span>"
+msgid "delivered<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
 
 #: main/views/jobs.py:359
 #, python-format
-msgid "failed<span class=\"govuk-visually-hidden\">%%s</span>"
+msgid "failed<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
 
 #: main/views/letter_branding.py:97
@@ -1635,7 +1635,7 @@ msgstr ""
 
 #: main/views/manage_users.py:281 main/views/organisations.py:279
 #, python-format
-msgid "Invitation cancelled for %%(mail)s"
+msgid "Invitation cancelled for %(mail)s"
 msgstr ""
 
 #: main/views/new_password.py:32
@@ -1693,13 +1693,13 @@ msgstr ""
 #: main/views/organisations.py:403
 #, python-format
 msgid ""
-"Invalid email branding ID %%(remove_branding_id)s for "
-"%%(current_organisation)s"
+"Invalid email branding ID %(remove_branding_id)s for "
+"%(current_organisation)s"
 msgstr ""
 
 #: main/views/organisations.py:409
 #, python-format
-msgid "Email branding ‘%%(name)s’ removed."
+msgid "Email branding ‘%(name)s’ removed."
 msgstr ""
 
 #: main/views/organisations.py:455 main/views/organisations.py:504
@@ -1710,7 +1710,7 @@ msgstr ""
 #: main/views/organisations.py:473
 #, python-format
 msgid ""
-"Email branding ID %%(id)s is not present in organisation %%(org_name)s's "
+"Email branding ID %(id)s is not present in organisation %(org_name)s's "
 "email branding pool."
 msgstr ""
 
@@ -1720,24 +1720,24 @@ msgstr ""
 
 #: main/views/organisations.py:579
 #, python-format
-msgid "%%(selected_mails)s email branding options added"
+msgid "%(selected_mails)s email branding options added"
 msgstr ""
 
 #: main/views/organisations.py:645
 #, python-format
 msgid ""
-"Invalid letter branding ID %%(remove_branding_id)s for "
-"%%(current_organisation)s"
+"Invalid letter branding ID %(remove_branding_id)s for "
+"%(current_organisation)s"
 msgstr ""
 
 #: main/views/organisations.py:653
 #, python-format
-msgid "Are you sure you want to remove the letter brand ‘%%s’?"
+msgid "Are you sure you want to remove the letter brand ‘%s’?"
 msgstr ""
 
 #: main/views/organisations.py:656
 #, python-format
-msgid "Letter branding ‘%%s’ removed."
+msgid "Letter branding ‘%s’ removed."
 msgstr ""
 
 #: main/views/organisations.py:680
@@ -1746,7 +1746,7 @@ msgstr ""
 
 #: main/views/organisations.py:682
 #, python-format
-msgid "%%s letter branding options added"
+msgid "%s letter branding options added"
 msgstr ""
 
 #: main/views/organisations.py:707
@@ -1759,12 +1759,12 @@ msgstr ""
 
 #: main/views/organisations.py:808
 #, python-format
-msgid "‘%%s’ was deleted"
+msgid "‘%s’ was deleted"
 msgstr ""
 
 #: main/views/organisations.py:812
 #, python-format
-msgid "Are you sure you want to delete ‘%%s’? There’s no way to undo this."
+msgid "Are you sure you want to delete ‘%s’? There’s no way to undo this."
 msgstr ""
 
 #: main/views/performance.py:22
@@ -1916,7 +1916,7 @@ msgstr ""
 msgid "service name"
 msgstr ""
 
-#: main/views/platform_admin.py:351
+#: main/views/platform_admin.py:351 templates/views/usage.html:32
 msgid "free allowance"
 msgstr ""
 
@@ -1979,8 +1979,8 @@ msgstr ""
 #: main/views/platform_admin.py:476
 #, python-format
 msgid ""
-"attachment; filename=\"Daily SMS provider volumes report from %%s to "
-"%%s.csv\""
+"attachment; filename=\"Daily SMS provider volumes report from %s to "
+"%s.csv\""
 msgstr ""
 
 #: main/views/platform_admin.py:532
@@ -1989,7 +1989,7 @@ msgstr ""
 
 #: main/views/platform_admin.py:617
 #, python-format
-msgid "Removed %%s objects across %%s key formats for {%%s}"
+msgid "Removed %s objects across %s key formats for {%s}"
 msgstr ""
 
 #: main/views/returned_letters.py:45
@@ -2031,12 +2031,12 @@ msgstr ""
 #: main/views/send.py:150
 #, python-format
 msgid ""
-"%%s contains numbers or dates that Notify cannot understand.\n"
+"%s contains numbers or dates that Notify cannot understand.\n"
 "                    Try formatting all columns as ‘text’ or export your "
 "file as CSV."
 msgstr ""
 
-#: main/views/send.py:216 main/views/templates.py:821
+#: main/views/send.py:216 main/views/templates.py:820
 msgid "(Default)"
 msgstr ""
 
@@ -2105,7 +2105,7 @@ msgstr ""
 
 #: main/views/service_settings.py:196
 #, python-format
-msgid "Request to go live - %%s"
+msgid "Request to go live - %s"
 msgstr ""
 
 #: main/views/service_settings.py:210
@@ -2153,19 +2153,19 @@ msgstr ""
 
 #: main/views/service_settings.py:1011
 #, python-format
-msgid "The email branding has been set to %%s"
+msgid "The email branding has been set to %s"
 msgstr ""
 
 #: main/views/service_settings.py:1018
 #, python-format
 msgid ""
-"The email branding has been set to %%s and it has been added to %%s's "
-"email branding pool"
+"The email branding has been set to %s and it has been added to %s's email"
+" branding pool"
 msgstr ""
 
 #: main/views/service_settings.py:1143 main/views/service_settings.py:1322
 #, python-format
-msgid "Email branding request - %%s"
+msgid "Email branding request - %s"
 msgstr ""
 
 #: main/views/service_settings.py:1196
@@ -2179,14 +2179,14 @@ msgstr ""
 
 #: main/views/service_settings.py:1420
 #, python-format
-msgid "Letter branding request - %%s"
+msgid "Letter branding request - %s"
 msgstr ""
 
-#: main/views/sign_in.py:49
+#: main/views/sign_in.py:45
 msgid "You cannot accept an invite for another person."
 msgstr ""
 
-#: main/views/sign_in.py:68
+#: main/views/sign_in.py:69
 #, python-format
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
@@ -2210,6 +2210,7 @@ msgstr ""
 #: templates/views/message-status.html:21
 #: templates/views/platform-admin/services.html:14
 #: templates/views/pricing/index.html:43 templates/views/signedout.html:147
+#: templates/views/usage.html:22
 msgid "Emails"
 msgstr ""
 
@@ -2221,6 +2222,7 @@ msgstr ""
 #: templates/views/organisations/organisation/index.html:31
 #: templates/views/platform-admin/services.html:15
 #: templates/views/pricing/index.html:46 templates/views/signedout.html:152
+#: templates/views/usage.html:29
 msgid "Text messages"
 msgstr ""
 
@@ -2231,6 +2233,7 @@ msgstr ""
 #: templates/views/organisations/organisation/index.html:42
 #: templates/views/platform-admin/services.html:16
 #: templates/views/pricing/index.html:234 templates/views/signedout.html:158
+#: templates/views/usage.html:48
 msgid "Letters"
 msgstr ""
 
@@ -2398,37 +2401,37 @@ msgstr ""
 
 #: main/views/templates.py:675 main/views/templates.py:688
 #, python-format
-msgid "You have %%s too many"
+msgid "You have %s too many"
 msgstr ""
 
 #: main/views/templates.py:680
 #, python-format
-msgid "Will be charged as %%s (not including personalisation)"
+msgid "Will be charged as %s (not including personalisation)"
 msgstr ""
 
 #: main/views/templates.py:683
 #, python-format
-msgid "Will be charged as %%s"
+msgid "Will be charged as %s"
 msgstr ""
 
-#: main/views/templates.py:693
+#: main/views/templates.py:692
 #, python-format
-msgid "You have %%s remaining"
+msgid "You have %s remaining"
 msgstr ""
 
-#: main/views/templates.py:716
+#: main/views/templates.py:715
 msgid "This template has never been used."
 msgstr ""
 
-#: main/views/templates.py:718
+#: main/views/templates.py:717
 msgid "This template was last used {}."
 msgstr ""
 
-#: main/views/templates.py:727
+#: main/views/templates.py:726
 msgid "Are you sure you want to delete ‘{}’?"
 msgstr ""
 
-#: main/views/templates.py:774
+#: main/views/templates.py:773
 msgid "Personalised content will be hidden for messages sent with this template"
 msgstr ""
 
@@ -2483,7 +2486,7 @@ msgstr ""
 
 #: main/views/uploads.py:561
 #, python-format
-msgid "Are you sure you want to delete ‘%%s’?"
+msgid "Are you sure you want to delete ‘%s’?"
 msgstr ""
 
 #: main/views/user_profile.py:57 templates/views/user-profile.html:61
@@ -2534,7 +2537,7 @@ msgstr ""
 
 #: main/views/webauthn_credentials.py:50
 #, python-format
-msgid "User %%s could not register a new webauthn token - %%s"
+msgid "User %s could not register a new webauthn token - %s"
 msgstr ""
 
 #: main/views/webauthn_credentials.py:57
@@ -2545,7 +2548,7 @@ msgstr ""
 
 #: main/views/webauthn_credentials.py:133
 #, python-format
-msgid "User %%s could not sign in using their webauthn token - %%s"
+msgid "User %s could not sign in using their webauthn token - %s"
 msgstr ""
 
 #: models/event.py:41
@@ -2717,7 +2720,7 @@ msgstr ""
 msgid "{} folders"
 msgstr ""
 
-#: models/user.py:214
+#: models/user.py:215
 msgid "{} are not valid permissions"
 msgstr ""
 
@@ -2851,6 +2854,7 @@ msgstr ""
 #: templates/org_nav.html:3
 #: templates/views/organisations/organisation/index.html:8
 #: templates/views/organisations/organisation/index.html:13
+#: templates/views/usage.html:9 templates/views/usage.html:14
 msgid "Usage"
 msgstr ""
 
@@ -5964,11 +5968,6 @@ msgstr ""
 msgid "Action"
 msgstr ""
 
-#: templates/views/service-settings.html:38
-#: templates/views/service-settings/set-auth-type.html:21
-msgid "Email link or text message code"
-msgstr ""
-
 #: templates/views/api/callbacks.html:27 templates/views/api/callbacks.html:33
 #: templates/views/organisations/organisation/settings/index.html:31
 #: templates/views/organisations/organisation/settings/index.html:63
@@ -5977,9 +5976,12 @@ msgstr ""
 #: templates/views/organisations/organisation/settings/index.html:95
 #: templates/views/organisations/organisation/settings/index.html:124
 #: templates/views/organisations/organisation/settings/index.html:147
+#: templates/views/service-settings.html:27
 #: templates/views/service-settings.html:43
 #: templates/views/service-settings.html:65
+#: templates/views/service-settings.html:101
 #: templates/views/service-settings.html:132
+#: templates/views/service-settings.html:166
 #: templates/views/service-settings.html:178
 #: templates/views/service-settings.html:190
 #: templates/views/service-settings.html:211
@@ -6003,6 +6005,11 @@ msgstr ""
 #: templates/views/user-profile.html:81 templates/views/user-profile.html:101
 #: templates/views/user-profile.html:125 templates/views/user-profile.html:149
 msgid "Change"
+msgstr ""
+
+#: templates/views/service-settings.html:38
+#: templates/views/service-settings/set-auth-type.html:21
+msgid "Email link or text message code"
 msgstr ""
 
 #: templates/views/service-settings.html:46
@@ -6033,6 +6040,7 @@ msgstr ""
 #: templates/views/service-settings.html:87
 #: templates/views/service-settings.html:112
 #: templates/views/service-settings.html:154
+#: templates/views/service-settings.html:249
 #: templates/views/user-profile/security-keys.html:81
 msgid "Manage"
 msgstr ""
@@ -6298,8 +6306,7 @@ msgid "data retention"
 msgstr ""
 
 #: templates/views/service-settings.html:429
-#, python-format
-msgid "your settings for %%s"
+msgid "your settings for {}"
 msgstr ""
 
 #: templates/views/service-settings.html:436
@@ -6755,6 +6762,59 @@ msgstr ""
 msgid ""
 "JavaScript is not available for this page. Security keys need JavaScript "
 "to work."
+msgstr ""
+
+#: templates/views/organisations/organisation/index.html:25
+#: templates/views/usage.html:31 templates/views/usage.html:50
+msgid "sent"
+msgstr ""
+
+#: templates/views/usage.html:34
+msgid "free allowance remaining"
+msgstr ""
+
+#: templates/views/usage.html:40
+msgid "at {:.2f} pence per message"
+msgstr ""
+
+#: templates/views/organisations/organisation/index.html:35
+#: templates/views/organisations/organisation/index.html:46
+#: templates/views/usage.html:65 templates/views/usage.html:75
+msgid "spent"
+msgstr ""
+
+#: templates/views/dashboard/monthly.html:29 templates/views/usage.html:88
+msgid "Total spend"
+msgstr ""
+
+#: templates/views/usage.html:92
+msgid "By month"
+msgstr ""
+
+#: templates/views/usage.html:108
+#, python-format
+msgid "%%(sms_free_allowance_used)s free %%(sms_free_count)s"
+msgstr ""
+
+#: templates/views/usage.html:114
+#, python-format
+msgid "%%(charged_units)s at %%(charged_units_rate)s"
+msgstr ""
+
+#: templates/views/usage.html:121
+#, python-format
+msgid "%%(letter_sent)s %%(letter_count)s at %%(letter_rate)s"
+msgstr ""
+
+#: templates/views/usage.html:141
+msgid "Financial year ends 31&nbsp;March"
+msgstr ""
+
+#: templates/views/usage.html:146
+msgid ""
+"What counts as 1 text message?<br />\n"
+"          See <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"{{ url_for('.pricing') }}\">pricing</a>."
 msgstr ""
 
 #: templates/views/user-already-invited.html:6
@@ -7616,6 +7676,16 @@ msgstr ""
 msgid "Message is too long"
 msgstr ""
 
+#: templates/views/check/row-errors.html:78
+#, python-format
+msgid "Address must be at least %%s lines long"
+msgstr ""
+
+#: templates/views/check/row-errors.html:80
+#, python-format
+msgid "Address must be no more than %%s lines long"
+msgstr ""
+
 #: templates/views/conversations/conversation.html:7
 msgid "Received text message"
 msgstr ""
@@ -7773,10 +7843,6 @@ msgstr ""
 msgid ""
 "Messages sent, %%(selected_year)s to %%(selected_year_plus_one)s "
 "financial year"
-msgstr ""
-
-#: templates/views/dashboard/monthly.html:29
-msgid "Total spend"
 msgstr ""
 
 #: templates/views/dashboard/monthly.html:33
@@ -9066,15 +9132,6 @@ msgstr ""
 msgid ""
 "%%s has not accepted the GOV.UK Notify data sharing and financial "
 "agreement, but we have some service-specific agreements in place."
-msgstr ""
-
-#: templates/views/organisations/organisation/index.html:25
-msgid "sent"
-msgstr ""
-
-#: templates/views/organisations/organisation/index.html:35
-#: templates/views/organisations/organisation/index.html:46
-msgid "spent"
 msgstr ""
 
 #: templates/views/organisations/organisation/index.html:60
@@ -12029,4 +12086,157 @@ msgstr ""
 #~ "govuk-link--no-visited-state\" "
 #~ "href=\"%%s\">integrate with our API</a> to "
 #~ "send text messages automatically"
+#~ msgstr ""
+
+#~ msgid "Select %%s"
+#~ msgstr ""
+
+#~ msgid "I understand this will alert anyone who has switched on the %%s channel"
+#~ msgstr ""
+
+#~ msgid "I understand this will alert %%s of people"
+#~ msgstr ""
+
+#~ msgid "I understand this will alert %%s of people, even if they’ve opted out"
+#~ msgstr ""
+
+#~ msgid "Should other teams in %%s have the option to use this branding?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "            <ul class=\"govuk-list govuk-"
+#~ "hint govuk-!-margin-bottom-0\">\n"
+#~ "                <li>Apply this branding to ‘%%(service_name)s’</li>\n"
+#~ "                <li class=\"govuk-!-margin-"
+#~ "bottom-0\">Let other %%(org_name)s teams apply"
+#~ " this branding themselves</li>\n"
+#~ "            </ul>\n"
+#~ "        "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "            <ul class=\"govuk-list govuk-"
+#~ "hint govuk-!-margin-bottom-0\">\n"
+#~ "                <li class=\"govuk-!-margin-"
+#~ "bottom-0\">Only apply this branding to "
+#~ "‘%%s’</li>\n"
+#~ "            </ul>\n"
+#~ "        "
+#~ msgstr ""
+
+#~ msgid "Content must be %%s characters or fewer because it contains %%s"
+#~ msgstr ""
+
+#~ msgid "Cannot contain %%s"
+#~ msgstr ""
+
+#~ msgid "total<span class=\"govuk-visually-hidden\">%%s</span>"
+#~ msgstr ""
+
+#~ msgid "sending<span class=\"govuk-visually-hidden\">%%s</span>"
+#~ msgstr ""
+
+#~ msgid "delivered<span class=\"govuk-visually-hidden\">%%s</span>"
+#~ msgstr ""
+
+#~ msgid "failed<span class=\"govuk-visually-hidden\">%%s</span>"
+#~ msgstr ""
+
+#~ msgid "Invitation cancelled for %%(mail)s"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Invalid email branding ID "
+#~ "%%(remove_branding_id)s for %%(current_organisation)s"
+#~ msgstr ""
+
+#~ msgid "Email branding ‘%%(name)s’ removed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Email branding ID %%(id)s is not "
+#~ "present in organisation %%(org_name)s's email"
+#~ " branding pool."
+#~ msgstr ""
+
+#~ msgid "%%(selected_mails)s email branding options added"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Invalid letter branding ID "
+#~ "%%(remove_branding_id)s for %%(current_organisation)s"
+#~ msgstr ""
+
+#~ msgid "Are you sure you want to remove the letter brand ‘%%s’?"
+#~ msgstr ""
+
+#~ msgid "Letter branding ‘%%s’ removed."
+#~ msgstr ""
+
+#~ msgid "%%s letter branding options added"
+#~ msgstr ""
+
+#~ msgid "‘%%s’ was deleted"
+#~ msgstr ""
+
+#~ msgid "Are you sure you want to delete ‘%%s’? There’s no way to undo this."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "attachment; filename=\"Daily SMS provider "
+#~ "volumes report from %%s to %%s.csv\""
+#~ msgstr ""
+
+#~ msgid "Removed %%s objects across %%s key formats for {%%s}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "%%s contains numbers or dates that Notify cannot understand.\n"
+#~ "                    Try formatting all columns"
+#~ " as ‘text’ or export your file "
+#~ "as CSV."
+#~ msgstr ""
+
+#~ msgid "Request to go live - %%s"
+#~ msgstr ""
+
+#~ msgid "The email branding has been set to %%s"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The email branding has been set to"
+#~ " %%s and it has been added to"
+#~ " %%s's email branding pool"
+#~ msgstr ""
+
+#~ msgid "Email branding request - %%s"
+#~ msgstr ""
+
+#~ msgid "Letter branding request - %%s"
+#~ msgstr ""
+
+#~ msgid "You have %%s too many"
+#~ msgstr ""
+
+#~ msgid "Will be charged as %%s (not including personalisation)"
+#~ msgstr ""
+
+#~ msgid "Will be charged as %%s"
+#~ msgstr ""
+
+#~ msgid "You have %%s remaining"
+#~ msgstr ""
+
+#~ msgid "Are you sure you want to delete ‘%%s’?"
+#~ msgstr ""
+
+#~ msgid "User %%s could not register a new webauthn token - %%s"
+#~ msgstr ""
+
+#~ msgid "User %%s could not sign in using their webauthn token - %%s"
+#~ msgstr ""
+
+#~ msgid "your settings for %%s"
 #~ msgstr ""
