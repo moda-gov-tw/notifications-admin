@@ -276,7 +276,7 @@ def cancel_invited_org_user(org_id, invited_user_id):
 
     invited_org_user = InvitedOrgUser.by_id_and_org_id(org_id, invited_user_id)
 
-    flash(_("Invitation cancelled for %%(mail)s") % {"mail": invited_org_user.email_address}, "default_with_tick")
+    flash(_("Invitation cancelled for %(mail)s") % {"mail": invited_org_user.email_address}, "default_with_tick")
     return redirect(url_for("main.manage_org_users", org_id=org_id))
 
 
@@ -400,13 +400,13 @@ def _handle_remove_branding(remove_branding_id) -> Optional[Response]:
     except current_organisation.email_branding_pool.NotFound:
         abort(
             400,
-            _("Invalid email branding ID %%(remove_branding_id)s for %%(current_organisation)s")
+            _("Invalid email branding ID %(remove_branding_id)s for %(current_organisation)s")
             % {"remove_branding_id": remove_branding_id, "current_organisation": current_organisation},
         )
 
     if request.method == "POST":
         organisations_client.remove_email_branding_from_pool(current_organisation.id, remove_branding_id)
-        confirmation_message = _("Email branding ‘%%(name)s’ removed.") % {"name": remove_branding.name}
+        confirmation_message = _("Email branding ‘%(name)s’ removed.") % {"name": remove_branding.name}
         flash(confirmation_message, "default_with_tick")
         return redirect(url_for("main.organisation_email_branding", org_id=current_organisation.id))
 
@@ -470,7 +470,7 @@ def _handle_change_default_branding(form, new_default_branding_id) -> Optional[R
             return current_organisation.email_branding_pool.get_item_by_id(branding_id).name
         except current_organisation.email_branding_pool.NotFound:
             current_app.logger.info(
-                _("Email branding ID %%(id)s is not present in organisation %%(org_name)s's email branding pool.")
+                _("Email branding ID %(id)s is not present in organisation %(org_name)s's email branding pool.")
                 % {
                     "id": branding_id,
                     "org_name": current_organisation.name,
@@ -576,7 +576,7 @@ def add_organisation_email_branding_options(org_id):
         if len(selected_email_branding_ids) == 1:
             msg = _("1 email branding option added")
         else:
-            msg = _("%%(selected_mails)s email branding options added") % {
+            msg = _("%(selected_mails)s email branding options added") % {
                 "selected_mails": len(selected_email_branding_ids)
             }
 
@@ -642,7 +642,7 @@ def organisation_letter_branding(org_id):
         except current_organisation.letter_branding_pool.NotFound:
             abort(
                 400,
-                _("Invalid letter branding ID %%(remove_branding_id)s for %%(current_organisation)s")
+                _("Invalid letter branding ID %(remove_branding_id)s for %(current_organisation)s")
                 % {
                     "remove_branding_id": remove_branding_id,
                     "current_organisation": current_organisation,
@@ -650,10 +650,10 @@ def organisation_letter_branding(org_id):
             )
 
         if request.method == "GET":
-            flash(_("Are you sure you want to remove the letter brand ‘%%s’?") % remove_branding.name, "delete")
+            flash(_("Are you sure you want to remove the letter brand ‘%s’?") % remove_branding.name, "delete")
         else:
             organisations_client.remove_letter_branding_from_pool(current_organisation.id, remove_branding_id)
-            flash(_("Letter branding ‘%%s’ removed.") % remove_branding.name, "default_with_tick")
+            flash(_("Letter branding ‘%s’ removed.") % remove_branding.name, "default_with_tick")
             return redirect(url_for("main.organisation_letter_branding", org_id=current_organisation.id))
 
     return render_template(
@@ -679,7 +679,7 @@ def add_organisation_letter_branding_options(org_id):
         if len(selected_letter_branding_ids) == 1:
             msg = _("1 letter branding option added")
         else:
-            msg = _("%%s letter branding options added") % len(selected_letter_branding_ids)
+            msg = _("%s letter branding options added") % len(selected_letter_branding_ids)
 
         flash(msg, "default_with_tick")
         return redirect(url_for(".organisation_letter_branding", org_id=org_id))
@@ -805,11 +805,11 @@ def archive_organisation(org_id):
             else:
                 raise e
 
-        flash(_("‘%%s’ was deleted") % current_organisation.name, "default_with_tick")
+        flash(_("‘%s’ was deleted") % current_organisation.name, "default_with_tick")
         return redirect(url_for(".choose_account"))
 
     flash(
-        _("Are you sure you want to delete ‘%%s’? There’s no way to undo this.") % current_organisation.name,
+        _("Are you sure you want to delete ‘%s’? There’s no way to undo this.") % current_organisation.name,
         "delete",
     )
     return organisation_settings(org_id)

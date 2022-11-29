@@ -473,7 +473,7 @@ def get_daily_sms_provider_volumes():
                 {
                     "Content-Type": "text/csv; charset=utf-8",
                     "Content-Disposition": (
-                        _('attachment; filename="Daily SMS provider volumes report from %%s to %%s.csv"')
+                        _('attachment; filename="Daily SMS provider volumes report from %s to %s.csv"')
                         % (start_date, end_date)
                     ),
                 },
@@ -614,7 +614,7 @@ def clear_cache():
 
         num_deleted = sum(redis_client.delete_by_pattern(pattern) for pattern in patterns)
 
-        msg = _("Removed %%s objects across %%s key formats for {%%s}") % (
+        msg = _("Removed %s objects across %s key formats for {%s}") % (
             num_deleted,
             len(patterns),
             ", ".join(group_keys),

@@ -184,7 +184,7 @@ class RadioField(WTFormsRadioField):
     def pre_validate(self, form):
         super().pre_validate(form)
         if self.data not in dict(self.choices).keys():
-            raise ValidationError(_("Select %%s") % self.thing)
+            raise ValidationError(_("Select %s") % self.thing)
 
 
 def email_address(label=_("Email address"), gov_user=True, required=True):
@@ -1346,14 +1346,14 @@ class ConfirmBroadcastForm(StripWhitespaceForm):
     @staticmethod
     def generate_label(channel, max_phones):
         if channel in {"test", "operator"}:
-            return _("I understand this will alert anyone who has switched on the %%s channel") % channel
+            return _("I understand this will alert anyone who has switched on the %s channel") % channel
         if channel == "severe":
-            return _("I understand this will alert %%s of people") % ConfirmBroadcastForm.format_number_generic(
+            return _("I understand this will alert %s of people") % ConfirmBroadcastForm.format_number_generic(
                 max_phones
             )
         if channel == "government":
             return _(
-                "I understand this will alert %%s of people, even if they’ve opted out"
+                "I understand this will alert %s of people, even if they’ve opted out"
             ) % ConfirmBroadcastForm.format_number_generic(max_phones)
 
     @staticmethod
@@ -1414,10 +1414,10 @@ class LetterAddressForm(StripWhitespaceForm):
         )
 
         if not address.has_enough_lines:
-            raise ValidationError(_("Address must be at least %%s lines long") % PostalAddress.MIN_LINES)
+            raise ValidationError(_("Address must be at least %s lines long") % PostalAddress.MIN_LINES)
 
         if address.has_too_many_lines:
-            raise ValidationError(_("Address must be no more than %%s lines long") % PostalAddress.MAX_LINES)
+            raise ValidationError(_("Address must be no more than %s lines long") % PostalAddress.MAX_LINES)
 
         if not address.has_valid_last_line:
             if self.allow_international_letters:
@@ -1876,7 +1876,7 @@ class AddLetterBrandingOptionsForm(StripWhitespaceForm):
 class AdminSetEmailBrandingAddToBrandingPoolStepForm(StripWhitespaceForm):
     def __init__(self, *args, org_name, service_name, **kwargs):
         super().__init__(*args, **kwargs)
-        self.add_to_pool.label.text = _("Should other teams in %%s have the option to use this branding?") % org_name
+        self.add_to_pool.label.text = _("Should other teams in %s have the option to use this branding?") % org_name
 
         self.add_to_pool.param_extensions = {
             "fieldset": {
@@ -1895,8 +1895,8 @@ class AdminSetEmailBrandingAddToBrandingPoolStepForm(StripWhitespaceForm):
             _(
                 """
             <ul class="govuk-list govuk-hint govuk-!-margin-bottom-0">
-                <li>Apply this branding to ‘%%(service_name)s’</li>
-                <li class="govuk-!-margin-bottom-0">Let other %%(org_name)s teams apply this branding themselves</li>
+                <li>Apply this branding to ‘%(service_name)s’</li>
+                <li class="govuk-!-margin-bottom-0">Let other %(org_name)s teams apply this branding themselves</li>
             </ul>
         """
             )
@@ -1906,7 +1906,7 @@ class AdminSetEmailBrandingAddToBrandingPoolStepForm(StripWhitespaceForm):
             _(
                 """
             <ul class="govuk-list govuk-hint govuk-!-margin-bottom-0">
-                <li class="govuk-!-margin-bottom-0">Only apply this branding to ‘%%s’</li>
+                <li class="govuk-!-margin-bottom-0">Only apply this branding to ‘%s’</li>
             </ul>
         """
             )

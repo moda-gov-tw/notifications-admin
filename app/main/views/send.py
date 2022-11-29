@@ -148,7 +148,7 @@ def send_messages(service_id, template_id):
         except (XLDateError):
             flash(
                 _(
-                    """%%s contains numbers or dates that Notify cannot understand.
+                    """%s contains numbers or dates that Notify cannot understand.
                     Try formatting all columns as ‘text’ or export your file as CSV."""
                 )
                 % form.file.data.filename

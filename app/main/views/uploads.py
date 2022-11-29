@@ -558,7 +558,7 @@ def delete_contact_list(service_id, contact_list_id):
 
     flash(
         [
-            _("Are you sure you want to delete ‘%%s’?") % contact_list.original_file_name,
+            _("Are you sure you want to delete ‘%s’?") % contact_list.original_file_name,
         ],
         "delete",
     )

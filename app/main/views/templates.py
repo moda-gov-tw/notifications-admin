@@ -672,25 +672,24 @@ def _get_content_count_error_and_message_for_template(template):
     if template.template_type == "sms":
         if template.is_message_too_long():
             return True, (
-                _("You have %%s too many")
+                _("You have %s too many")
                 % character_count(template.content_count_without_prefix - SMS_CHAR_COUNT_LIMIT)
             )
         if template.placeholders:
             return False, (
-                _("Will be charged as %%s (not including personalisation)")
+                _("Will be charged as %s (not including personalisation)")
                 % message_count(template.fragment_count, template.template_type)
             )
-        return False, (_("Will be charged as %%s") % message_count(template.fragment_count, template.template_type))
+        return False, (_("Will be charged as %s") % message_count(template.fragment_count, template.template_type))
 
     if template.template_type == "broadcast":
         if template.content_too_long:
             return True, (
-                _("You have %%s too many")
-                % character_count(template.encoded_content_count - template.max_content_count)
+                _("You have %s too many") % character_count(template.encoded_content_count - template.max_content_count)
             )
         else:
             return False, (
-                _("You have %%s remaining")
+                _("You have %s remaining")
                 % character_count(template.max_content_count - template.encoded_content_count)
             )
 

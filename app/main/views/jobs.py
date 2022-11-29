@@ -332,7 +332,7 @@ def _get_job_counts(job):
         for label, query_param, count in [
             [
                 Markup(
-                    _("""total<span class="govuk-visually-hidden">%%s</span>""")
+                    _("""total<span class="govuk-visually-hidden">%s</span>""")
                     % ("text message" if job_type == "sms" else job_type)
                 ),
                 "",
@@ -340,7 +340,7 @@ def _get_job_counts(job):
             ],
             [
                 Markup(
-                    _("""sending<span class="govuk-visually-hidden">%%s</span>""")
+                    _("""sending<span class="govuk-visually-hidden">%s</span>""")
                     % message_count_noun(job.notifications_sending, job_type)
                 ),
                 "sending",
@@ -348,7 +348,7 @@ def _get_job_counts(job):
             ],
             [
                 Markup(
-                    _("""delivered<span class="govuk-visually-hidden">%%s</span>""")
+                    _("""delivered<span class="govuk-visually-hidden">%s</span>""")
                     % message_count_noun(job.notifications_delivered, job_type)
                 ),
                 "delivered",
@@ -356,7 +356,7 @@ def _get_job_counts(job):
             ],
             [
                 Markup(
-                    _("""failed<span class="govuk-visually-hidden">%%s</span>""")
+                    _("""failed<span class="govuk-visually-hidden">%s</span>""")
                     % message_count_noun(job.notifications_failed, job_type)
                 ),
                 "failed",

@@ -147,7 +147,7 @@ class BroadcastLength:
             non_gsm_characters = list(sorted(template.non_gsm_characters))
             if non_gsm_characters:
                 raise ValidationError(
-                    _("Content must be %%s characters or fewer because it contains %%s")
+                    _("Content must be %s characters or fewer because it contains %s")
                     % (
                         f"{template.max_content_count:,.0f}",
                         formatted_list(non_gsm_characters, conjunction="and", before_each="", after_each=""),
@@ -201,6 +201,6 @@ class CharactersNotAllowed:
             if self.message:
                 raise ValidationError(self.message)
             raise ValidationError(
-                _("Cannot contain %%s")
+                _("Cannot contain %s")
                 % formatted_list(illegal_characters, conjunction="or", before_each="", after_each="")
             )
