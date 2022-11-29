@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-29 16:12+0800\n"
+"POT-Creation-Date: 2022-11-29 16:55+0800\n"
 "PO-Revision-Date: 2022-11-29 08:09+0000\n"
 "Last-Translator: Jocelyn Chang <jocelyn81616@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -8040,6 +8040,14 @@ msgstr "個檔案等待寄送"
 #, python-format
 msgid "sending starts %%s"
 msgstr "於 %%s 開始寄發"
+
+#: templates/views/dashboard/_usage.html:6
+msgid "Unlimited"
+msgstr ""
+
+#: templates/views/dashboard/_usage.html:6
+msgid "free email allowance"
+msgstr ""
 
 #: templates/views/dashboard/_usage.html:14
 #: templates/views/organisations/organisation/index.html:84
