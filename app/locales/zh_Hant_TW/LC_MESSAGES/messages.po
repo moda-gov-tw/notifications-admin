@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-11-28 15:14+0800\n"
-"PO-Revision-Date: 2022-11-29 04:10+0000\n"
+"PO-Revision-Date: 2022-11-29 07:15+0000\n"
 "Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
@@ -5253,7 +5253,8 @@ msgstr ""
 msgid ""
 "We will share your data if we are required to do so by law – for example,"
 " by court order, or to prevent fraud or other crime."
-msgstr "我們只會在依法必須透漏時，分享您的資料（舉例來說：法院為了防止詐騙或其他犯罪而命令我們提供資訊時）"
+msgstr "我們只會在依法必須透漏時，分享您的資料（舉例來說：法院為了防止詐騙或其他犯罪"
+"而命令我們提供資訊時）。"
 
 #: templates/views/privacy.html:65
 msgid "How long we keep your data"
@@ -8417,14 +8418,14 @@ msgid "personalise the content of your texts"
 msgstr "個人化您的簡訊內容"
 
 #: templates/views/features/text-messages.html:26
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "You can also <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">integrate with our API</a> to send text messages "
 "automatically."
 msgstr ""
 "您也可以<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">串接我們的 API</a>來自動發送手機簡訊"
+">串接我們的 API</a>來自動發送手機簡訊。"
 
 #: templates/views/features/text-messages.html:29
 msgid "Let people send messages to your service or reply to your texts."
@@ -9191,7 +9192,7 @@ msgstr "公眾人士"
 msgid ""
 "The GOV.UK Notify service is only for people who work in the government\n"
 "    or other public sector organisations."
-msgstr "GOV.UK Notify僅適用於任職於政府部門或其他公共部門組織的人員."
+msgstr "GOV.UK Notify 僅適用於任職於政府部門或其他公共部門組織的人員。"
 
 #: templates/views/guidance/who-can-use-notify.html:52
 msgid ""
