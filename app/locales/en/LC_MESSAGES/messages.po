@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-29 14:41+0800\n"
+"POT-Creation-Date: 2022-11-29 16:12+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -3881,6 +3881,7 @@ msgid ""
 msgstr ""
 
 #: templates/views/cookies.html:35 templates/views/cookies.html:85
+#: templates/views/organisations/organisation/settings/index.html:18
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:27
 #: templates/views/platform-admin/daily-volumes-report.html:27
 #: templates/views/platform-admin/get-billing-report.html:27
@@ -5969,13 +5970,17 @@ msgid "Action"
 msgstr ""
 
 #: templates/views/api/callbacks.html:27 templates/views/api/callbacks.html:33
+#: templates/views/organisations/organisation/settings/index.html:21
 #: templates/views/organisations/organisation/settings/index.html:31
+#: templates/views/organisations/organisation/settings/index.html:47
 #: templates/views/organisations/organisation/settings/index.html:63
 #: templates/views/organisations/organisation/settings/index.html:73
 #: templates/views/organisations/organisation/settings/index.html:84
 #: templates/views/organisations/organisation/settings/index.html:95
 #: templates/views/organisations/organisation/settings/index.html:124
+#: templates/views/organisations/organisation/settings/index.html:137
 #: templates/views/organisations/organisation/settings/index.html:147
+#: templates/views/organisations/organisation/settings/index.html:157
 #: templates/views/service-settings.html:27
 #: templates/views/service-settings.html:43
 #: templates/views/service-settings.html:65

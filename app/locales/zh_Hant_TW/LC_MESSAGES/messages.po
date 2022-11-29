@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-28 15:14+0800\n"
+"POT-Creation-Date: 2022-11-29 16:12+0800\n"
 "PO-Revision-Date: 2022-11-29 08:09+0000\n"
 "Last-Translator: Jocelyn Chang <jocelyn81616@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
-"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.toomore.net/projects/notification-admin/notification-"
+"admin-github/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -3920,6 +3920,7 @@ msgid ""
 msgstr ""
 
 #: templates/views/cookies.html:35 templates/views/cookies.html:85
+#: templates/views/organisations/organisation/settings/index.html:18
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:27
 #: templates/views/platform-admin/daily-volumes-report.html:27
 #: templates/views/platform-admin/get-billing-report.html:27
@@ -5207,8 +5208,7 @@ msgstr ""
 msgid ""
 "We will share your data if we are required to do so by law – for example,"
 " by court order, or to prevent fraud or other crime."
-msgstr "我們只會在依法必須透漏時，分享您的資料（舉例來說：法院為了防止詐騙或其他犯罪"
-"而命令我們提供資訊時）。"
+msgstr "我們只會在依法必須透漏時，分享您的資料（舉例來說：法院為了防止詐騙或其他犯罪而命令我們提供資訊時）。"
 
 #: templates/views/privacy.html:65
 msgid "How long we keep your data"
@@ -6149,13 +6149,17 @@ msgid "Action"
 msgstr "行為"
 
 #: templates/views/api/callbacks.html:27 templates/views/api/callbacks.html:33
+#: templates/views/organisations/organisation/settings/index.html:21
 #: templates/views/organisations/organisation/settings/index.html:31
+#: templates/views/organisations/organisation/settings/index.html:47
 #: templates/views/organisations/organisation/settings/index.html:63
 #: templates/views/organisations/organisation/settings/index.html:73
 #: templates/views/organisations/organisation/settings/index.html:84
 #: templates/views/organisations/organisation/settings/index.html:95
 #: templates/views/organisations/organisation/settings/index.html:124
+#: templates/views/organisations/organisation/settings/index.html:137
 #: templates/views/organisations/organisation/settings/index.html:147
+#: templates/views/organisations/organisation/settings/index.html:157
 #: templates/views/service-settings.html:27
 #: templates/views/service-settings.html:43
 #: templates/views/service-settings.html:65
@@ -8419,8 +8423,8 @@ msgid ""
 "href=\"%%s\">integrate with our API</a> to send text messages "
 "automatically."
 msgstr ""
-"您也可以<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">串接我們的 API</a>來自動發送手機簡訊。"
+"您也可以<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">串接我們的 API</a>來自動發送手機簡訊。"
 
 #: templates/views/features/text-messages.html:29
 msgid "Let people send messages to your service or reply to your texts."
@@ -9372,7 +9376,9 @@ msgstr "由於您這份信件使用試用金鑰,故我們不會列印出來."
 msgid ""
 "Estimated delivery date: %%(estimated_letter_delivery_date_week)s "
 "%%(estimated_letter_delivery_date)s"
-msgstr "預計送達日期:%%(estimated_letter_delivery_date_week)s %%(estimated_letter_delivery_date)s"
+msgstr ""
+"預計送達日期:%%(estimated_letter_delivery_date_week)s "
+"%%(estimated_letter_delivery_date)s"
 
 #: templates/views/notifications/notification.html:101
 msgid "Cancel sending this letter"
