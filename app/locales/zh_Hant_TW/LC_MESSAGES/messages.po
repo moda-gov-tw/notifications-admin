@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-11-28 15:14+0800\n"
-"PO-Revision-Date: 2022-11-29 07:15+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"PO-Revision-Date: 2022-11-29 08:09+0000\n"
+"Last-Translator: Jocelyn Chang <jocelyn81616@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
+"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
-"Language-Team: Chinese (Traditional) "
-"<https://weblate.toomore.net/projects/notification-admin/notification-"
-"admin-github/zh_Hant/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -918,11 +918,11 @@ msgstr "品牌類別"
 
 #: main/forms.py:1841
 msgid "GOV.UK and branding"
-msgstr "GOV.UK 與品牌"
+msgstr "GOV.UK 與品牌行銷"
 
 #: main/forms.py:1842
 msgid "Branding only"
-msgstr ""
+msgstr "僅限品牌行銷"
 
 #: main/forms.py:1843
 msgid "Branding banner"
@@ -930,23 +930,23 @@ msgstr "品牌意象橫幅"
 
 #: main/forms.py:1850
 msgid "This field is required"
-msgstr ""
+msgstr "此欄位為必填"
 
 #: main/forms.py:1855
 msgid "Email branding id"
-msgstr ""
+msgstr "電子郵件品牌意象識別碼"
 
 #: main/forms.py:1862 main/forms.py:1870
 msgid "Branding options"
-msgstr ""
+msgstr "品牌意象選項"
 
 #: main/forms.py:1863
 msgid "Select at least 1 email branding option"
-msgstr ""
+msgstr "選擇至少一個電子郵件品牌行銷方案"
 
 #: main/forms.py:1871
 msgid "Select at least 1 letter branding option"
-msgstr ""
+msgstr "選擇至少一封信件的品牌行銷方案"
 
 #: main/forms.py:1879
 #, python-format
@@ -994,7 +994,7 @@ msgstr "上傳一個 PDF 格式的信件"
 
 #: main/forms.py:1942
 msgid "Save your letter as a PDF and try again."
-msgstr "將您的信件轉存為 PDF 格式後再試一次"
+msgstr "將您的信件轉存為 PDF 格式後再試一次。"
 
 #: main/forms.py:1943
 msgid "You need to choose a file to upload"
@@ -1030,7 +1030,7 @@ msgstr "報告的最終日"
 
 #: main/forms.py:1999
 msgid "You need to enter full or partial name to search by."
-msgstr "您需要輸入完整或部分的姓名以進行搜尋"
+msgstr "您需要輸入完整或部分的姓名以進行搜尋。"
 
 #: main/forms.py:2005 main/forms.py:2011
 msgid "Search by name or email address"
@@ -1038,7 +1038,7 @@ msgstr "依姓名或電子郵件地址搜尋"
 
 #: main/forms.py:2006
 msgid "You need to enter full or partial email address to search by."
-msgstr "您需要輸入完整或部分的電子郵件地址以進行搜尋"
+msgstr "您需要輸入完整或部分的電子郵件地址以進行搜尋。"
 
 #: main/forms.py:2018
 msgid "Search by email address"
@@ -1101,16 +1101,16 @@ msgstr "其他"
 
 #: main/forms.py:2134
 msgid "Choose your new email branding"
-msgstr ""
+msgstr "選擇您的新電子郵件品牌意象"
 
 #: main/forms.py:2142
 msgid "Choose your new letter branding"
-msgstr ""
+msgstr "選擇您的新信件品牌意象"
 
 #: main/forms.py:2143 main/forms.py:2163
 #: templates/views/service-settings/branding/email-branding-something-else.html:8
 msgid "Describe the branding you want"
-msgstr ""
+msgstr "描述您想要的品牌意象"
 
 #: main/forms.py:2170
 #: templates/views/service-settings/branding/letter-branding-options.html:32
@@ -1118,39 +1118,39 @@ msgstr ""
 msgid ""
 "Include links to your brand guidelines or examples of how to use your "
 "branding."
-msgstr ""
+msgstr "附上您的品牌行銷指南連結或品牌行銷使用範例連結。"
 
 #: main/forms.py:2177
 msgid "Enter the text that will appear in your logo"
-msgstr ""
+msgstr "輸入您的標誌中將出現的文字"
 
 #: main/forms.py:2186
 msgid ""
 "This is usually the full name of your organisation.<br/><br/>For example,"
 " {organisation_name}"
-msgstr ""
+msgstr "這通常是您的組織的完整名稱<br/><br/>例如，{organisation_name}"
 
 #: main/forms.py:2195
 msgid "Department of Education"
-msgstr ""
+msgstr "教育部門"
 
 #: main/forms.py:2203
 #: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:10
 #: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:19
 msgid "Create a government identity logo"
-msgstr ""
+msgstr "建立一個政府部門的識別標誌"
 
 #: main/forms.py:2204
 msgid "Upload a logo"
-msgstr ""
+msgstr "上傳一個標誌"
 
 #: main/forms.py:2208
 msgid "Choose a logo for your emails"
-msgstr ""
+msgstr "為您的電子郵件選擇一個標誌"
 
 #: main/forms.py:2217
 msgid "No banner"
-msgstr ""
+msgstr "沒有橫幅"
 
 #: main/forms.py:2220
 msgid ""
@@ -1160,7 +1160,7 @@ msgstr "範例：一封電子郵件中的標題有公司標誌，用藍色的字
 
 #: main/forms.py:2227
 msgid "Coloured banner"
-msgstr ""
+msgstr "彩色的橫幅"
 
 #: main/forms.py:2230
 msgid "An example of an email with a logo on a blue banner."
@@ -1172,111 +1172,111 @@ msgstr "將橫幅旗幟加入你的標誌"
 
 #: main/forms.py:2249
 msgid "What notification type?"
-msgstr ""
+msgstr "什麼樣的通知類別？"
 
 #: main/forms.py:2252 templates/views/providers/providers.html:13
 msgid "SMS"
-msgstr ""
+msgstr "簡訊服務"
 
 #: main/forms.py:2255
 msgid "notification type"
-msgstr ""
+msgstr "通知類別"
 
 #: main/forms.py:2258 main/forms.py:2265
 msgid "Days of retention"
-msgstr ""
+msgstr "留存的天數"
 
 #: main/forms.py:2259 main/forms.py:2266
 msgid "Must be between 3 and 90"
-msgstr ""
+msgstr "必須介於 3 到 90 之間"
 
 #: main/forms.py:2272
 msgid "Letter references"
-msgstr ""
+msgstr "信件參考案例"
 
 #: main/forms.py:2287
 msgid "Team members who can see this folder"
-msgstr ""
+msgstr "可以瀏覽這個資料夾的團隊成員"
 
 #: main/forms.py:2289
 msgid "Folder name"
-msgstr ""
+msgstr "資料夾名稱"
 
 #: main/forms.py:2298
 msgid "Must be empty"
-msgstr ""
+msgstr "必須為空白"
 
 #: main/forms.py:2323 models/service.py:514 templates/main_nav.html:14
 #: templates/views/templates/choose.html:10
 msgid "Templates"
-msgstr ""
+msgstr "模板"
 
 #: main/forms.py:2358 main/views/templates.py:187
 msgid "Broadcast"
-msgstr ""
+msgstr "廣播"
 
 #: main/forms.py:2359 templates/views/templates/copy.html:5
 msgid "Copy an existing template"
-msgstr ""
+msgstr "複製一個既存的模板"
 
 #: main/forms.py:2406
 msgid "Choose a folder"
-msgstr ""
+msgstr "選擇一個資料夾"
 
 #: main/forms.py:2412
 msgid "New template"
-msgstr ""
+msgstr "新的模板"
 
 #: main/forms.py:2417
 msgid "Select the type of template you want to add"
-msgstr ""
+msgstr "選擇您想新增的模板類型"
 
 #: main/forms.py:2423
 msgid "What do you want to clear today"
-msgstr ""
+msgstr "您今天想清除什麼？"
 
 #: main/forms.py:2428
 msgid "Select at least one option"
-msgstr ""
+msgstr "選擇至少一個選項"
 
 #: main/forms.py:2433
 msgid "Go live notes"
-msgstr ""
+msgstr "執行"
 
 #: main/forms.py:2452
 #: templates/views/service-settings/service-set-broadcast-channel.html:7
 msgid "Emergency alerts settings"
-msgstr ""
+msgstr "緊急警報設定"
 
 #: main/forms.py:2453
 msgid "mode or channel"
-msgstr ""
+msgstr "模式或頻道"
 
 #: main/forms.py:2455
 msgid "Training mode"
-msgstr ""
+msgstr "訓練模式"
 
 #: main/forms.py:2456
 msgid "Operator channel"
-msgstr ""
+msgstr "操作者頻道"
 
 #: main/forms.py:2457
 msgid "Test channel"
-msgstr ""
+msgstr "測試頻道"
 
 #: main/forms.py:2458
 msgid "Live channel"
-msgstr ""
+msgstr "直播頻道"
 
 #: main/forms.py:2459
 msgid "Government channel"
-msgstr ""
+msgstr "政府頻道"
 
 #: main/forms.py:2470 main/forms.py:2474
 #: templates/views/service-settings/service-set-broadcast-network.html:10
 #: templates/views/service-settings/service-set-broadcast-network.html:21
 msgid "Choose a mobile network"
-msgstr ""
+msgstr "選擇一個電信網路"
 
 #: main/forms.py:2471
 msgid "All networks"
@@ -1288,27 +1288,27 @@ msgstr "單一的網路"
 
 #: main/forms.py:2495
 msgid "Select a mobile network"
-msgstr ""
+msgstr "選擇一個電信網路"
 
 #: main/forms.py:2500
 msgid "Change cell broadcast service type"
-msgstr ""
+msgstr "變換手機廣播服務類型"
 
 #: main/forms.py:2501
 msgid "which type of account this cell broadcast service is"
-msgstr ""
+msgstr "這個手機廣播服務是哪一種類型？"
 
 #: main/forms.py:2530
 msgid "Which version of the agreement do you want to accept?"
-msgstr ""
+msgstr "您想要接受哪一版本的協議書？"
 
 #: main/forms.py:2533
 msgid "Who are you accepting the agreement for?"
-msgstr ""
+msgstr "您是為了誰接受協議？"
 
 #: main/forms.py:2536
 msgid "me"
-msgstr ""
+msgstr "我"
 
 #: main/forms.py:2537
 msgid "Yourself"
@@ -1316,39 +1316,39 @@ msgstr "你自己"
 
 #: main/forms.py:2546
 msgid "What’s their name?"
-msgstr ""
+msgstr "他們的姓名是？"
 
 #: main/forms.py:2549
 msgid "What’s their email address?"
-msgstr ""
+msgstr "他們的電子郵件地址是？"
 
 #: main/forms.py:2568
 msgid "Must be a number"
-msgstr ""
+msgstr "必須為數字"
 
 #: main/forms.py:2572
 msgid "Choose areas to broadcast to"
-msgstr ""
+msgstr "選擇廣播的地區"
 
 #: main/forms.py:2586
 msgid "Select all"
-msgstr ""
+msgstr "全選"
 
 #: main/forms.py:2606
 msgid "Name of key"
-msgstr ""
+msgstr "金鑰的名稱"
 
 #: main/forms.py:2610
 msgid "Name of key must be 255 characters or fewer"
-msgstr ""
+msgstr "金鑰的名稱必須小於 255 個字元"
 
 #: main/forms.py:2641
 msgid "Coat of arms or insignia"
-msgstr ""
+msgstr "紋章或徽章"
 
 #: main/forms.py:2666
 msgid "Colour for stripe"
-msgstr ""
+msgstr "條紋的顏色"
 
 #: main/forms.py:2667
 msgid "a colour for the stripe"
@@ -1356,11 +1356,11 @@ msgstr "條紋的顏色"
 
 #: main/validators.py:21
 msgid "Password is in list of commonly used passwords."
-msgstr ""
+msgstr "密碼被列入常用密碼中"
 
 #: main/validators.py:30
 msgid "Not a csv file"
-msgstr ""
+msgstr "此文件不是 CSV 格式"
 
 #: main/validators.py:35
 msgid "{} is not a spreadsheet that Notify can read"
@@ -1382,39 +1382,39 @@ msgstr ""
 
 #: main/validators.py:58
 msgid "Enter a valid email address"
-msgstr ""
+msgstr "請輸入一個有效的電子郵件地址"
 
 #: main/validators.py:72
 msgid "You cannot put commas between double brackets"
-msgstr ""
+msgstr "您不能將逗號放在雙括號之間"
 
 #: main/validators.py:100
 msgid "This SVG has an embedded raster image in it and will not render well"
-msgstr ""
+msgstr "此 SVG 檔案嵌入了網格影像會呈現不佳"
 
 #: main/validators.py:105
 msgid ""
 "This SVG has text which has not been converted to paths and may not "
 "render well"
-msgstr ""
+msgstr "此 SVG 檔案含有尚未轉換為路徑的文字，可能導致呈現不佳"
 
 #: main/validators.py:117
 msgid ""
 "You cannot use {} in {}. {} will not show up properly on everyone’s "
 "phones."
-msgstr ""
+msgstr "您不能將 {} 放入 {} 中。每個人的電話將無法正確顯示 {} 。"
 
 #: main/validators.py:123
 msgid "It"
-msgstr ""
+msgstr "這"
 
 #: main/validators.py:123
 msgid "They"
-msgstr ""
+msgstr "他們"
 
 #: main/validators.py:130
 msgid "You can’t use ((double brackets)) to personalise this message"
-msgstr ""
+msgstr "您不能使用 ((雙括號)) 來個人化此訊息"
 
 #: main/validators.py:150
 #, python-format
@@ -1423,15 +1423,15 @@ msgstr ""
 
 #: main/validators.py:163
 msgid "Use letters and numbers only"
-msgstr ""
+msgstr "僅限使用英文字母與數字"
 
 #: main/validators.py:172
 msgid "Cannot start with 00"
-msgstr ""
+msgstr "不可以 00 開頭"
 
 #: main/validators.py:184
 msgid "Must include at least two alphanumeric characters"
-msgstr ""
+msgstr "必須包含至少 2 個字母或數字字元"
 
 #: main/validators.py:204
 #, python-format
@@ -1440,81 +1440,83 @@ msgstr ""
 
 #: main/views/add_service.py:41
 msgid "Example text message template"
-msgstr ""
+msgstr "簡訊模板範例"
 
 #: main/views/add_service.py:43
 msgid ""
 "Hey ((name)), I’m trying out Notify. Today is ((day of week)) and my "
 "favourite colour is ((colour))."
-msgstr ""
+msgstr "嗨((姓名))，我正在測試 Notify。今天是((星期幾))、我最喜歡的顏色是 ((顏色)) 。"
 
 #: main/views/add_service.py:91 templates/views/add-service-local.html:7
 #: templates/views/add-service-local.html:15
 #: templates/views/add-service.html:15
 msgid "About your service"
-msgstr "關於你的服務"
+msgstr "關於您的服務"
 
 #: main/views/api_keys.py:74 templates/views/api/keys.html:36
 msgid "Live – sends to anyone"
-msgstr ""
+msgstr "直播 - 傳送給任何人"
 
 #: main/views/api_keys.py:75 templates/views/api/keys.html:38
 msgid "Team and guest list – limits who you can send to"
-msgstr ""
+msgstr "團隊與顧客名單 - 限制您的發送對象"
 
 #: main/views/api_keys.py:76 templates/views/api/keys.html:40
 msgid "Test – pretends to send messages"
-msgstr ""
+msgstr "測試 - 假裝發送訊息"
 
 #: main/views/api_keys.py:85
 msgid ""
 "Not available because your service is in <a class=\"govuk-link govuk-link"
 "--no-visited-state\" href=\"/features/trial-mode\">trial mode</a>"
 msgstr ""
+"不可使用因為您正在使用<a class=“govuk-link govuk-link—no-visited-state” "
+"href=“/features/trial-mode”>試用版</a>"
 
 #: main/views/api_keys.py:94
 msgid "Cannot be used to send letters"
-msgstr ""
+msgstr "無法適用於發送信件"
 
 #: main/views/api_keys.py:117
 msgid ""
 "Are you sure you want to revoke ‘{}’? You will not be able to use this "
 "API key to connect to GOV.UK Notify."
-msgstr ""
+msgstr "您確定想要撤銷‘{}’？您將無法使用這個 API 金鑰連線至 GOV.UK Notify。"
 
 #: main/views/api_keys.py:122
 msgid "revoke this API key"
-msgstr ""
+msgstr "撤銷這個 API 金鑰"
 
 #: main/views/broadcast.py:66 templates/main_nav.html:9
 msgid "Past alerts"
-msgstr ""
+msgstr "過往的警報"
 
 #: main/views/broadcast.py:67
 msgid "You do not have any past alerts"
-msgstr ""
+msgstr "您沒有任何過往的警報"
 
 #: main/views/broadcast.py:81 templates/main_nav.html:10
 msgid "Rejected alerts"
-msgstr ""
+msgstr "已拒絕的警報"
 
 #: main/views/broadcast.py:82
 msgid "You do not have any rejected alerts"
-msgstr ""
+msgstr "您沒有任何已拒絕的警報"
 
 #: main/views/broadcast.py:100
 msgid "You do not have any current alerts"
-msgstr ""
+msgstr "您沒有任何當下的警報"
 
 #: main/views/broadcast.py:235
 #, python-format
 msgid "Choose a %s"
-msgstr ""
+msgstr "選擇一個 %s"
 
 #: main/views/broadcast.py:254
 #, python-format
 msgid "Choose %s"
-msgstr ""
+msgstr "選擇 %s"
 
 #: main/views/broadcast.py:297
 #, python-format
@@ -1524,39 +1526,39 @@ msgstr "所有的 %s"
 #: main/views/broadcast.py:317 main/views/broadcast.py:329
 #, python-format
 msgid "Choose an area of %s"
-msgstr ""
+msgstr "選擇一個 %s 的範圍"
 
 #: main/views/dashboard.py:185
 msgid "Message"
-msgstr ""
+msgstr "訊息"
 
 #: main/views/dashboard.py:186
 msgid "Received"
-msgstr ""
+msgstr "已接收"
 
 #: main/views/dashboard.py:460
 msgid "financial year"
-msgstr ""
+msgstr "財政年度"
 
 #: main/views/feedback.py:71
 msgid "Contact GOV.UK Notify support"
-msgstr ""
+msgstr "聯繫 GOV.UK Notify 的支援"
 
 #: main/views/feedback.py:119
 msgid "Notify feedback"
-msgstr ""
+msgstr "Notify 的回饋評論"
 
 #: main/views/find_users.py:45
 msgid ""
 "User can’t be removed from a service - check all services have another "
 "team member with manage_settings"
-msgstr ""
+msgstr "此服務的用戶無法被移除 - 使用 管理_設定去確認所有服務有其他的團隊成員"
 
 #: main/views/find_users.py:58
 msgid ""
 "There's no way to reverse this! Are you sure you want to archive this "
 "user?"
-msgstr ""
+msgstr "這個動作將無法回復！您確定您想要封存這個使用者嗎？"
 
 #: main/views/invites.py:18
 msgid ""
@@ -1596,36 +1598,36 @@ msgstr ""
 
 #: main/views/jobs.py:69
 msgid "Your {} been sent. Printing starts {} at 5:30pm."
-msgstr ""
+msgstr "您的 {} 已經送出。將於下午 5:30 開始 {} 的列印。"
 
 #: main/views/jobs.py:131
 msgid "We are still processing these letters, please try again in a minute."
-msgstr ""
+msgstr "我們正在處理這些信件，請稍後再試一次。"
 
 #: main/views/jobs.py:139
 msgid "Cancelled {} letters from {}"
-msgstr ""
+msgstr "從 {} 之中取消 {} 封信件"
 
 #: main/views/jobs.py:144
 msgid "Are you sure you want to cancel sending these letters?"
-msgstr ""
+msgstr "您確定要取消發送這些信件嗎？"
 
 #: main/views/jobs.py:174
 msgid "postal address"
-msgstr ""
+msgstr "郵寄地址"
 
 #: main/views/jobs.py:174
 msgid "file name"
-msgstr ""
+msgstr "檔案名稱"
 
 #: main/views/jobs.py:180
 msgid "reference"
-msgstr ""
+msgstr "參考來源"
 
 #: main/views/jobs.py:208 main/views/platform_admin.py:491
 #: main/views/uploads.py:97
 msgid "Invalid page argument ({})."
-msgstr ""
+msgstr "無效的頁數參數 ({}) 。"
 
 #: main/views/jobs.py:335
 #, python-format
