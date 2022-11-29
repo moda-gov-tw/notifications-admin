@@ -193,7 +193,7 @@ def submit_request_to_go_live(service_id):
     ticket_message = render_template("support-tickets/go-live-request.txt") + "\n"
 
     ticket = NotifySupportTicket(
-        subject=_("Request to go live - %%s") % current_service.name,
+        subject=_("Request to go live - %s") % current_service.name,
         message=ticket_message,
         ticket_type=NotifySupportTicket.TYPE_QUESTION,
         user_name=current_user.name,
@@ -1008,14 +1008,14 @@ def service_set_email_branding_add_to_branding_pool_step(service_id):
     if form.validate_on_submit():
         # The service’s branding gets updated either way
         current_service.update(email_branding=email_branding_id)
-        message = _("The email branding has been set to %%s") % email_branding_name
+        message = _("The email branding has been set to %s") % email_branding_name
 
         # If the platform admin chose "yes" the branding is added to the organisation's
         # branding pool
         if form.add_to_pool.data == "yes":
             email_branding_ids = [email_branding_id]
             organisations_client.add_brandings_to_email_branding_pool(org_id, email_branding_ids)
-            message = _("The email branding has been set to %%s and it has been added to %%s's email branding pool") % (
+            message = _("The email branding has been set to %s and it has been added to %s's email branding pool") % (
                 email_branding_name,
                 current_service.organisation.name,
             )
@@ -1140,7 +1140,7 @@ def create_email_branding_zendesk_ticket(form_option_selected, detail=None):
         detail=detail,
     )
     ticket = NotifySupportTicket(
-        subject=_("Email branding request - %%s") % current_service.name,
+        subject=_("Email branding request - %s") % current_service.name,
         message=ticket_message,
         ticket_type=NotifySupportTicket.TYPE_QUESTION,
         user_name=current_user.name,
@@ -1319,7 +1319,7 @@ def email_branding_enter_government_identity_logo_text(service_id):
             logo_text=form.logo_text.data,
         )
         ticket = NotifySupportTicket(
-            subject=_("Email branding request - %%s") % current_service.name,
+            subject=_("Email branding request - %s") % current_service.name,
             message=ticket_message,
             ticket_type=NotifySupportTicket.TYPE_TASK,
             user_name=current_user.name,
@@ -1417,7 +1417,7 @@ def letter_branding_request(service_id):
             detail=form.something_else.data,
         )
         ticket = NotifySupportTicket(
-            subject=_("Letter branding request - %%s") % current_service.name,
+            subject=_("Letter branding request - %s") % current_service.name,
             message=ticket_message,
             ticket_type=NotifySupportTicket.TYPE_QUESTION,
             user_name=current_user.name,
