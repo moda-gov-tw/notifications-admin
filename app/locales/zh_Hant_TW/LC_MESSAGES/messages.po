@@ -9,8 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-11-28 15:14+0800\n"
 "PO-Revision-Date: 2022-11-29 04:10+0000\n"
-"Last-Translator: Transglobe Translation Service <interpretation@trsglobe.com>"
-"\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -8378,7 +8377,7 @@ msgstr "寄送到歐洲的紙本信件將於交寄後 3 至 5 天內投遞；寄
 msgid ""
 "It costs between 41 pence and £1.28 (plus VAT) to send a letter. Prices "
 "include:"
-msgstr "寄發一封紙本信件的價格於 41 便士至 1.28 英鎊之間（含稅）。價格包含："
+msgstr "寄發一封紙本信件的價格介於 41 便士至 1.28 英鎊之間（含稅）。價格包含："
 
 #: templates/views/features/letters.html:49
 #: templates/views/pricing/index.html:239
