@@ -48,6 +48,7 @@ def get_template(
             show_sender=bool(sms_sender),
             show_recipient=show_recipient,
             redact_missing_personalisation=redact_missing_personalisation,
+            downgrade_non_sms_characters=False,
         )
     if "letter" == template["template_type"]:
         if letter_preview_url:
