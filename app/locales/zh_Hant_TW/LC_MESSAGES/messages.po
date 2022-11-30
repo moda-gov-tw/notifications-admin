@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-11-29 16:55+0800\n"
-"PO-Revision-Date: 2022-11-30 10:17+0000\n"
-"Last-Translator: Transglobe Translation Service <trsglobetts@gmail.com>\n"
+"PO-Revision-Date: 2022-11-30 10:31+0000\n"
+"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -9256,7 +9256,7 @@ msgstr "新的電子郵件地址："
 #: templates/views/manage-users/confirm-edit-user-email.html:27
 #, python-format
 msgid "We will send %%(user_name)s an email to tell them about the change."
-msgstr "我們會寄一封電子信件通知 %%(user_name)有關電子郵件地址的變更。"
+msgstr "我們會寄一封電子信件通知 %%(user_name)s 有關電子郵件地址的變更。"
 
 #: templates/views/manage-users/confirm-edit-user-mobile-number.html:8
 #: templates/views/manage-users/confirm-edit-user-mobile-number.html:17
@@ -9270,7 +9270,7 @@ msgstr "新的行動電話號碼："
 #: templates/views/manage-users/confirm-edit-user-mobile-number.html:26
 #, python-format
 msgid "We will send %%(user_name)s a text message to tell them about the change."
-msgstr "我們會寄一封簡訊通知 %%(user_name)有關行動電話號碼的變更。"
+msgstr "我們會寄一封簡訊通知 %%(user_name)s 有關行動電話號碼的變更。"
 
 #: templates/views/manage-users/edit-user-email.html:8
 #: templates/views/manage-users/edit-user-email.html:18
@@ -9290,7 +9290,7 @@ msgstr "變更團隊成員的行動電話號碼"
 #: templates/views/manage-users/edit-user-mobile.html:19
 #, python-format
 msgid "This will change the mobile number for %%(user_name)s."
-msgstr "這會改變%%(user_name)的行動電話號碼。"
+msgstr "這會改變%%(user_name)s 的行動電話號碼。"
 
 #: templates/views/manage-users/permissions.html:9
 msgid "Platform admin users can access all template folders."
@@ -9318,7 +9318,7 @@ msgstr "傳送一條訊息"
 #: templates/views/notifications/invalid_precompiled_letter.html:12
 #, python-format
 msgid "Provided as PDF on %%(date)s"
-msgstr "於%%(date)以PDF格式提供"
+msgstr "於 %%(date)s 以PDF格式提供"
 
 #: templates/views/notifications/invalid_precompiled_letter.html:15
 msgid ""
@@ -9354,12 +9354,12 @@ msgstr "從 %%s到"
 #: templates/views/notifications/notification.html:44
 #, python-format
 msgid "by %%(created_by)s"
-msgstr "由 %%(created_by)"
+msgstr "由 %%(created_by)s"
 
 #: templates/views/notifications/notification.html:52
 #, python-format
 msgid "Cancelled %%(date)s"
-msgstr "已取消%%(date)"
+msgstr "已取消%%(date)s"
 
 #: templates/views/notifications/notification.html:60
 msgid ""
@@ -9424,8 +9424,8 @@ msgid ""
 " sharing\n"
 "          and financial agreement on %%(signed_at)s."
 msgstr ""
-"您的組織同意%%(version)的GOV.UK Notify數據分享\n"
-"          與財務協議版本。"
+"您的組織同意 %%(version)s 的GOV.UK Notify數據分享\n"
+"          與財務協議版本。%%(signed_at)s"
 
 #: templates/views/organisations/organisation/billing.html:25
 #, python-format
@@ -9687,7 +9687,7 @@ msgstr "(你)"
 #: templates/views/organisations/organisation/users/index.html:56
 #, python-format
 msgid "Cancel invitation<span class=\"govuk-visually-hidden\"> for %%(mail)s"
-msgstr "取消%%(mail)邀請<span class=\"govuk-visually-hidden\">"
+msgstr "取消%%(mail)s邀請<span class=\"govuk-visually-hidden\">"
 
 #: templates/views/organisations/organisation/users/index.html:69
 msgid "Invite team member"
@@ -10246,7 +10246,7 @@ msgstr "每一項您新增的特製服務項目皆含有年度免費簡訊額度
 msgid ""
 "When a service has used its annual allowance, it costs %%s pence (plus "
 "VAT) for each text message you send."
-msgstr "當一項服務提供年度額度時,您所傳送的每一則簡訊須支付%%便士(外加增值稅)。"
+msgstr "當一項服務提供年度額度時,您所傳送的每一則簡訊須支付 %%s 便士(外加增值稅)。"
 
 #: templates/views/pricing/index.html:49
 msgid ""
@@ -10841,7 +10841,8 @@ msgstr "(預設)"
 msgid ""
 "Change<span class=\"govuk-visually-hidden\"> {{ item.email_address "
 "}}</span>"
-msgstr "變更<span class=\"govuk-visually-hidden\"> {{ 項目、電子郵件_地址 }}</span>"
+msgstr ""
+"變更<span class=\"govuk-visually-hidden\"> {{ item.email_address }}</span>"
 
 #: templates/views/service-settings/email-reply-to/add.html:8
 #: templates/views/service-settings/email-reply-to/add.html:17
@@ -11033,7 +11034,7 @@ msgstr "'%%s'在 %%s 上線。"
 #: templates/views/service-settings/service-already-live.html:20
 #, python-format
 msgid "‘%%s’ is already live."
-msgstr "‘%%’ 已經上線。"
+msgstr "‘%%s’ 已經上線。"
 
 #: templates/views/service-settings/service-already-live.html:26
 msgid "if you want to make a different service live."
@@ -12135,7 +12136,7 @@ msgstr "須要有一個名稱為'電子郵件地址'或'電話號碼'的欄位�
 #: templates/views/uploads/contact-list/too-many-columns.html:52
 #, python-format
 msgid "Right now it has %%(herder_length)s columns called %%(headers)s."
-msgstr "目前有名稱為%%(herder_length)的%%(headers)欄位。"
+msgstr "目前有名稱為 %%(herder_length)s 的 %%(headers)s 欄位。"
 
 #: templates/views/uploads/contact-list/upload.html:29
 msgid "Save a list of staff email addresses or phone numbers in Notify."
@@ -12212,7 +12213,7 @@ msgstr "安全金鑰細節"
 #: templates/views/user-profile/security-keys.html:79
 #, python-format
 msgid "Registered %%(date)s"
-msgstr "已註冊%%(date)"
+msgstr "已註冊%%(date)s"
 
 #: templates/views/user-profile/security-keys.html:92
 msgid ""
