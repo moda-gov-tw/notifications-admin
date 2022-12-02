@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-11-29 16:55+0800\n"
 "PO-Revision-Date: 2022-12-02 02:50+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Last-Translator: Jocelyn Chang <jocelyn81616@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -663,7 +663,7 @@ msgstr "地址欄的第一個字不能夠為下列特殊符號：@ ( ) = [ ] ”
 
 #: main/forms.py:1449
 msgid "Choose the postage for this letter template"
-msgstr "選擇這封信件範本的郵資"
+msgstr "選擇這封信件模板的郵資"
 
 #: main/forms.py:1451 templates/views/pricing/index.html:248
 msgid "First class"
