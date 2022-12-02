@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 12:36+0800\n"
-"PO-Revision-Date: 2022-12-02 03:19+0000\n"
-"Last-Translator: Jocelyn Chang <jocelyn81616@gmail.com>\n"
+"PO-Revision-Date: 2022-12-02 04:44+0000\n"
+"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
+"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
-"Language-Team: Chinese (Traditional) "
-"<https://weblate.toomore.net/projects/notification-admin/notification-"
-"admin-github/zh_Hant/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -2926,7 +2926,7 @@ msgstr "API 整合"
 #: templates/views/organisations/organisation/trial-mode-services.html:11
 #: templates/views/platform-admin/_base_template.html:18
 msgid "Trial mode services"
-msgstr ""
+msgstr "試驗模式的服務"
 
 #: templates/org_nav.html:8
 #: templates/views/organisations/organisation/billing.html:5
@@ -2936,7 +2936,7 @@ msgstr ""
 #: templates/org_template.html:11
 #: templates/views/platform-admin/_base_template.html:19
 msgid "Organisations"
-msgstr ""
+msgstr "機關團體"
 
 #: templates/org_template.html:16 templates/service_navigation.html:41
 #: templates/views/organisations/add-organisation.html:14
@@ -3898,7 +3898,7 @@ msgstr "%%s 機關， %%s 上線的服務"
 #: templates/views/find-users/user-information.html:17
 #: templates/views/platform-admin/_base_template.html:17
 msgid "Live services"
-msgstr ""
+msgstr "已上線服務"
 
 #: templates/views/choose-account.html:112
 msgid "Add a new service"
@@ -9740,7 +9740,7 @@ msgstr "報告"
 
 #: templates/views/platform-admin/_base_template.html:24
 msgid "Inbound SMS numbers"
-msgstr ""
+msgstr "本地簡訊號碼"
 
 #: templates/views/platform-admin/_base_template.html:27
 #: templates/views/platform-admin/complaints.html:7
