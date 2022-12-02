@@ -66,9 +66,12 @@ def view_job(service_id, job_id):
     filter_args = parse_filter_args(request.args)
     filter_args["status"] = set_status_filters(filter_args)
 
-    just_sent_message = _("Your {} been sent. Printing starts {} at 5:30pm.").format(
-        "letter has" if job.notification_count == 1 else "letters have", printing_today_or_tomorrow(job.created_at)
-    )
+    if job.notification_count == 1:
+        _just_send_msg = _("Your letter has been sent. Printing starts {} at 5:30pm.")
+    else:
+        _just_send_msg = _("Your letters have been sent. Printing starts {} at 5:30pm.")
+
+    just_sent_message = _just_send_msg.format(printing_today_or_tomorrow(job.created_at))
 
     return render_template(
         "views/jobs/job.html",
@@ -136,7 +139,9 @@ def cancel_letter_job(service_id, job_id):
             flash(e.message, "dangerous")
             return redirect(url_for("main.view_job", service_id=service_id, job_id=job_id))
         flash(
-            _("Cancelled {} letters from {}").format(format_thousands(number_of_letters), job.original_file_name),
+            _("Cancelled {number_of_letters} letters from {original_file_name}").format(
+                number_of_letters=format_thousands(number_of_letters), original_file_name=job.original_file_name
+            ),
             "default_with_tick",
         )
         return redirect(url_for("main.service_dashboard", service_id=service_id))

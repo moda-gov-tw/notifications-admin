@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-11-29 16:55+0800\n"
+"POT-Creation-Date: 2022-12-02 12:30+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -178,7 +178,7 @@ msgstr ""
 msgid "broadcasts"
 msgstr ""
 
-#: formatters.py:436 main/views/jobs.py:177
+#: formatters.py:436 main/views/jobs.py:180
 msgid "recipient"
 msgstr ""
 
@@ -186,7 +186,7 @@ msgstr ""
 msgid "recipients"
 msgstr ""
 
-#: formatters.py:442 main/views/jobs.py:173
+#: formatters.py:442 main/views/jobs.py:176
 #: templates/views/api/guest-list.html:64
 #: templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:81
@@ -197,7 +197,7 @@ msgstr ""
 msgid "phone numbers"
 msgstr ""
 
-#: formatters.py:448 main/views/jobs.py:172 main/views/user_profile.py:70
+#: formatters.py:448 main/views/jobs.py:175 main/views/user_profile.py:70
 #: main/views/user_profile.py:91 templates/views/api/guest-list.html:58
 #: templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:63
@@ -1568,55 +1568,59 @@ msgid ""
 "            "
 msgstr ""
 
-#: main/views/jobs.py:69
-msgid "Your {} been sent. Printing starts {} at 5:30pm."
+#: main/views/jobs.py:70
+msgid "Your letter has been sent. Printing starts {} at 5:30pm."
 msgstr ""
 
-#: main/views/jobs.py:131
+#: main/views/jobs.py:72
+msgid "Your letters have been sent. Printing starts {} at 5:30pm."
+msgstr ""
+
+#: main/views/jobs.py:134
 msgid "We are still processing these letters, please try again in a minute."
 msgstr ""
 
-#: main/views/jobs.py:139
-msgid "Cancelled {} letters from {}"
+#: main/views/jobs.py:142
+msgid "Cancelled {number_of_letters} letters from {original_file_name}"
 msgstr ""
 
-#: main/views/jobs.py:144
+#: main/views/jobs.py:147
 msgid "Are you sure you want to cancel sending these letters?"
 msgstr ""
 
-#: main/views/jobs.py:174
+#: main/views/jobs.py:177
 msgid "postal address"
 msgstr ""
 
-#: main/views/jobs.py:174
+#: main/views/jobs.py:177
 msgid "file name"
 msgstr ""
 
-#: main/views/jobs.py:180
+#: main/views/jobs.py:183
 msgid "reference"
 msgstr ""
 
-#: main/views/jobs.py:208 main/views/platform_admin.py:491
+#: main/views/jobs.py:211 main/views/platform_admin.py:491
 #: main/views/uploads.py:97
 msgid "Invalid page argument ({})."
 msgstr ""
 
-#: main/views/jobs.py:335
+#: main/views/jobs.py:338
 #, python-format
 msgid "total<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
 
-#: main/views/jobs.py:343
+#: main/views/jobs.py:346
 #, python-format
 msgid "sending<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
 
-#: main/views/jobs.py:351
+#: main/views/jobs.py:354
 #, python-format
 msgid "delivered<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
 
-#: main/views/jobs.py:359
+#: main/views/jobs.py:362
 #, python-format
 msgid "failed<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
@@ -3320,12 +3324,6 @@ msgid ""
 "  18:"
 msgstr ""
 
-#: templates/partials/templates/guidance-optional-content.html:14
-msgid ""
-"((under18??Please get your application signed by a parent or\n"
-"  guardian.))"
-msgstr ""
-
 #: templates/partials/templates/guidance-optional-content.html:19
 msgid ""
 "For each person you send this message to, specify ‘yes’ or ‘no’ to\n"
@@ -4621,7 +4619,7 @@ msgstr ""
 msgid ""
 "Refer to the <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">documentation\n"
-"      for the client library you are using."
+"      for the client library you are using.</a>"
 msgstr ""
 
 #: templates/views/invite-user.html:8 templates/views/manage-users.html:98
@@ -12252,4 +12250,22 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "your settings for %%s"
+#~ msgstr ""
+
+#~ msgid "Your {} been sent. Printing starts {} at 5:30pm."
+#~ msgstr ""
+
+#~ msgid "Cancelled {} letters from {}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "((under18??Please get your application signed by a parent or\n"
+#~ "  guardian.))"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Refer to the <a class=\"govuk-link "
+#~ "govuk-link--no-visited-state\" "
+#~ "href=\"%%s\">documentation\n"
+#~ "      for the client library you are using."
 #~ msgstr ""
