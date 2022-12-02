@@ -1995,7 +1995,7 @@ class BillingReportDateFilterForm(StripWhitespaceForm):
 
 class SearchByNameForm(StripWhitespaceForm):
     search = GovukSearchField(
-        "Search by name",
+        _("Search by name"),
         validators=[DataRequired(_("You need to enter full or partial name to search by."))],
     )
 
