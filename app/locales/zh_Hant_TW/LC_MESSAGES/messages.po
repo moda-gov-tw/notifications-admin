@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-02 04:55+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"PO-Revision-Date: 2022-12-02 10:04+0000\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
+"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
-"Language-Team: Chinese (Traditional) "
-"<https://weblate.toomore.net/projects/notification-admin/notification-"
-"admin-github/zh_Hant/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -38,7 +38,7 @@ msgstr "凌晨"
 
 #: formatters.py:96
 msgid "Midday"
-msgstr "白天"
+msgstr "中午"
 
 #: formatters.py:147
 msgid "just now"
@@ -89,22 +89,22 @@ msgstr "此電子信箱不存在"
 #: templates/views/message-status.html:31
 #: templates/views/message-status.html:61
 msgid "Delivered"
-msgstr "已寄出"
+msgstr "已送達"
 
 #: formatters.py:183 formatters.py:184 formatters.py:193 formatters.py:194
 #: formatters.py:195 templates/partials/jobs/notifications.html:9
 #: templates/views/message-status.html:30
 #: templates/views/message-status.html:59
 msgid "Sending"
-msgstr "寄出中"
+msgstr "正在傳送"
 
 #: formatters.py:190 templates/views/message-status.html:63
 msgid "Phone not accepting messages right now"
-msgstr "此電話已無法接收更多簡訊"
+msgstr "此電話目前不接收簡訊"
 
 #: formatters.py:191 templates/views/message-status.html:62
 msgid "Not delivered"
-msgstr "未寄出"
+msgstr "未送達"
 
 #: formatters.py:196 templates/views/message-status.html:60
 msgid "Sent to an international number"
@@ -120,7 +120,7 @@ msgstr "偵測到病毒"
 
 #: formatters.py:213 utils/letters.py:189
 msgid "Validation failed"
-msgstr "無法驗證"
+msgstr "驗證失敗"
 
 #: formatters.py:219
 msgid " since {}"
@@ -128,11 +128,11 @@ msgstr " 從 {}"
 
 #: formatters.py:350
 msgid "Data available for {}"
-msgstr "資料留存{}"
+msgstr "{} 的資料留存{}"
 
 #: formatters.py:351
 msgid "Data no longer available"
-msgstr "資料已不存在"
+msgstr "資料不存在"
 
 #: formatters.py:399
 msgid "message"
@@ -234,12 +234,12 @@ msgstr "%%s 次"
 
 #: formatters.py:474
 msgid "1 character"
-msgstr "一個字"
+msgstr "一個字元"
 
 #: formatters.py:475
 #, python-format
 msgid "%%s characters"
-msgstr "%%s 個字"
+msgstr "%%s 個字元"
 
 #: formatters.py:500 main/forms.py:1031
 msgid "Email link"
@@ -267,17 +267,17 @@ msgstr "未知類型: {}"
 #: broadcast_areas/create-broadcast-areas-db.py:68
 #, python-format
 msgid "%% Polygon %%s/%%s is valid"
-msgstr "存在 %% 多邊圖 %%s/%%s"
+msgstr "存在 %% 多邊形圖 %%s/%%s"
 
 #: broadcast_areas/create-broadcast-areas-db.py:78
 #, python-format
 msgid "%%s Polygon %%s/%%s has 0 area, skipping"
-msgstr "%%s 多邊形 %%s/%%s 面積為零，略過"
+msgstr "%%s 多邊形圖 %%s/%%s 面積為零，略過"
 
 #: broadcast_areas/create-broadcast-areas-db.py:81
 #, python-format
 msgid "%%s Polygon %%s/%%s needs fixing..."
-msgstr "%%s Polygon %%s/%%s needs fixing..."
+msgstr "%%s 多邊形圖 %%s/%%s 需要修復..."
 
 #: broadcast_areas/create-broadcast-areas-db.py:105
 #, python-format
@@ -286,7 +286,7 @@ msgstr "%%s 多邊形圖 %%s/%%s 已修復！"
 
 #: broadcast_areas/create-broadcast-areas-db.py:126
 msgid "Polygon of 0 size found"
-msgstr "已找到0個多邊形"
+msgstr "已找到0個多邊形圖"
 
 #: broadcast_areas/create-broadcast-areas-db.py:129
 #, python-format
@@ -297,7 +297,9 @@ msgstr "    原始:%%s 點    平滑:%%s點    簡化:%%s點"
 msgid ""
 "Too many points (adjust Polygons.perimeter_to_simplification_ratio or "
 "Polygons.perimeter_to_buffer_ratio)"
-msgstr "錨點過多（調整多邊形周長至簡化比例或至緩衝比例）"
+msgstr ""
+"錨點過多（調整 Polygons.perimeter_to_simplification_ratio 或 Polygons."
+"perimeter_to_buffer_ratio）"
 
 #: broadcast_areas/create-broadcast-areas-db.py:163
 msgid "    Population:   N/A"
@@ -306,7 +308,7 @@ msgstr "    人口:   無"
 #: broadcast_areas/create-broadcast-areas-db.py:173
 #, python-format
 msgid "No population data for %%s"
-msgstr "無用來 %%s的人口資料"
+msgstr "沒有 %%s 的人口資料"
 
 #: broadcast_areas/create-broadcast-areas-db.py:279
 msgid "Countries"
@@ -318,7 +320,7 @@ msgstr "國家"
 
 #: broadcast_areas/create-broadcast-areas-db.py:314
 msgid "Police forces in England and Wales"
-msgstr "在英格蘭和威爾斯的警力"
+msgstr "英格蘭和威爾斯的警力"
 
 #: broadcast_areas/create-broadcast-areas-db.py:315
 msgid "police force"
@@ -330,7 +332,7 @@ msgstr "倫敦（倫敦市區）"
 
 #: broadcast_areas/create-broadcast-areas-db.py:374
 msgid "Local authorities"
-msgstr "地區政府"
+msgstr "地方政府"
 
 #: broadcast_areas/create-broadcast-areas-db.py:507
 #, python-format
@@ -343,9 +345,9 @@ msgid ""
 msgstr ""
 "\n"
 "完成\n"
-"    處理 %% 多邊形中。\n"
-"    清除 %% 多邊形中。\n"
-"   計算簡化後的錨點量： %%s\n"
+"    處理了 %% s 個多邊形中。\n"
+"    清除了 %% s 個多邊形中。\n"
+"   計算簡化後的最大錨點數量： %%s\n"
 
 #: broadcast_areas/populations.py:127
 #, python-format
@@ -389,7 +391,7 @@ msgstr "密碼"
 
 #: main/forms.py:257
 msgid "Must be at least 8 characters"
-msgstr "至少需要八個字元"
+msgstr "至少八個字元"
 
 #: main/forms.py:258
 msgid "Choose a password that’s harder to guess"
@@ -409,7 +411,7 @@ msgstr "太多數字"
 
 #: main/forms.py:439
 msgid "Number of {} must be {} or less"
-msgstr "{}的數量應該要是{}以下"
+msgstr "{}的數量要為{}或更少"
 
 #: main/forms.py:444
 msgid "Enter the number of {} {}"
@@ -433,15 +435,15 @@ msgstr "請提供 `image_data`作為初始值"
 
 #: main/forms.py:1024
 msgid "Folders this team member can see"
-msgstr "此資料夾只有團隊成員能夠看到"
+msgstr "團隊成員能看到的資料夾"
 
 #: main/forms.py:1033
 msgid "how this team member should sign in"
-msgstr "這位團隊成員應該如何登入"
+msgstr "團隊成員登入方法"
 
 #: main/forms.py:1041
 msgid "All team members can see sent messages."
-msgstr "所有團隊成員都能夠已經寄出的訊息。"
+msgstr "團隊成員都能看到已經寄出的訊息。"
 
 #: main/forms.py:1072
 msgid "Team members who can create or approve alerts can also reject them."
@@ -453,7 +455,7 @@ msgstr "你不能傳送邀請給你自己"
 
 #: main/forms.py:1145 main/forms.py:1264
 msgid "Service name must be 255 characters or fewer"
-msgstr "服務名稱請小於 255 個字"
+msgstr "服務名稱請小於 255 個字元"
 
 #: main/forms.py:1156
 msgid "Organisation name must be 255 characters or fewer"
@@ -461,23 +463,23 @@ msgstr "單位名稱請小於 255 個字"
 
 #: main/forms.py:1164
 msgid "Is your GP practice called ‘{}’?"
-msgstr "請問你的家庭醫師為‘{}’嗎?"
+msgstr "請問您的家庭醫師執業名稱為「{}」嗎？"
 
 #: main/forms.py:1173
 msgid "Is your GP practice called the same name as your service?"
-msgstr "請問你的家庭醫師與您在同一個服務單位嗎？"
+msgstr "請問您的家庭醫師執業名稱與您的服務名稱相同嗎？"
 
 #: main/forms.py:1175 main/forms.py:1211 main/forms.py:1223 main/forms.py:1608
 #: main/forms.py:1634 main/views/service_settings.py:237
 #: templates/views/organisations/organisation/settings/index.html:41
 msgid "Yes"
-msgstr "是的"
+msgstr "是"
 
 #: main/forms.py:1176 main/forms.py:1212 main/forms.py:1224 main/forms.py:1609
 #: main/forms.py:1635 main/views/service_settings.py:238
 #: templates/views/organisations/organisation/settings/index.html:42
 msgid "No"
-msgstr "不是"
+msgstr "否"
 
 #: main/forms.py:1181
 msgid "What’s your practice called?"
@@ -493,11 +495,11 @@ msgstr "國民健康基金或臨床委員會"
 
 #: main/forms.py:1204
 msgid "What type of organisation is this?"
-msgstr "這是哪一類的機關？"
+msgstr "這是哪一類組織？"
 
 #: main/forms.py:1209
 msgid "Is this organisation a crown body?"
-msgstr "請問這個機關是政府機關嗎？"
+msgstr "請問這個組織隸屬政府嗎？"
 
 #: main/forms.py:1213
 #: templates/views/organisations/organisation/settings/index.html:44
@@ -506,11 +508,11 @@ msgstr "不確定"
 
 #: main/forms.py:1215
 msgid "whether this organisation is a crown body"
-msgstr "無論這個機關是否為政府機關"
+msgstr "無論這個組織是否隸屬政府"
 
 #: main/forms.py:1221
 msgid "Has this organisation signed the agreement?"
-msgstr "這個機關已簽署同意條款了嗎？"
+msgstr "這個組織已簽署同意條款了嗎？"
 
 #: main/forms.py:1225
 msgid "No (but we have some service-specific agreements in place)"
@@ -518,11 +520,11 @@ msgstr "沒有（但我們有些專為各種服務設計的條款)"
 
 #: main/forms.py:1230
 msgid "Users will be told their organisation has already signed the agreement"
-msgstr "使用者將會被告知他們的機關已經簽署了同意條款"
+msgstr "使用者將被告知他們的組織已經簽署同意條款"
 
 #: main/forms.py:1231
 msgid "Users will be prompted to sign the agreement before they can go live"
-msgstr "在使用者上線前會被要求簽署同意條款"
+msgstr "服務轉正式環境上線前，將要求使用者簽署同意條款"
 
 #: main/forms.py:1232
 msgid "Users will not be prompted to sign the agreement"
@@ -542,7 +544,7 @@ msgstr "誰負責營運這項服務？"
 
 #: main/forms.py:1290
 msgid "Numbers of text message fragments per year"
-msgstr "每年的簡訊量"
+msgstr "每年的簡訊片段數量"
 
 #: main/forms.py:1296
 msgid "Number of messages the service is allowed to send each day"
@@ -550,7 +552,7 @@ msgstr "這項服務每天能夠送出的訊息量"
 
 #: main/forms.py:1303
 msgid "Number of messages the service can send in a rolling 60 second window"
-msgstr "這項服務在60秒的滾動視窗中能夠送出的訊息量"
+msgstr "這項服務在60秒滾動計時中可傳送的訊息量"
 
 #: main/forms.py:1313
 msgid "Enter password"
@@ -570,7 +572,7 @@ msgstr "使用範本"
 
 #: main/forms.py:1342
 msgid "You need to confirm that you understand"
-msgstr "你需要確認你真的理解"
+msgstr "請確認您已理解"
 
 #: main/forms.py:1344
 #: templates/views/manage-users/confirm-edit-user-email.html:28
@@ -659,7 +661,7 @@ msgstr "地址最後一行應該是真實存在的英國郵遞區號"
 msgid ""
 "Address lines must not start with any of the following characters: @ ( ) "
 "= [ ] ” \\ / , < > ~"
-msgstr "地址欄的第一個字不能夠為下列特殊符號：@ ( ) = [ ] ” \\ / , < > ~"
+msgstr "地址欄第一個字元不得為下列特殊符號：@ ( ) = [ ] ” \\ / , < > ~"
 
 #: main/forms.py:1449
 msgid "Choose the postage for this letter template"
@@ -667,27 +669,27 @@ msgstr "選擇這封信件模板的郵資"
 
 #: main/forms.py:1451 templates/views/pricing/index.html:248
 msgid "First class"
-msgstr "第一類"
+msgstr "國內快捷郵件"
 
 #: main/forms.py:1452 templates/views/pricing/index.html:248
 msgid "Second class"
-msgstr "第二類"
+msgstr "國內平信"
 
 #: main/forms.py:1454
 msgid "first class or second class"
-msgstr "第一類或第二類"
+msgstr "國內快捷郵件或平信"
 
 #: main/forms.py:1472
 msgid "Choose the postage for this letter"
-msgstr "選擇這封信件的郵資"
+msgstr "選擇信件郵資"
 
 #: main/forms.py:1474
 msgid "First class post"
-msgstr "第一類郵件"
+msgstr "國內快捷郵件"
 
 #: main/forms.py:1475
 msgid "Second class post"
-msgstr "第二類郵件"
+msgstr "國內平信"
 
 #: main/forms.py:1495
 msgid "Current password"
@@ -707,7 +709,7 @@ msgstr "請選擇一個檔案"
 
 #: main/forms.py:1509
 msgid "File must be smaller than 10Mb"
-msgstr "檔案尺寸需小於 10Mb"
+msgstr "檔案大小需小於 10Mb"
 
 #: main/forms.py:1515
 msgid "Your name"
@@ -719,15 +721,15 @@ msgstr "此信箱地址已被使用"
 
 #: main/forms.py:1554
 msgid "When should Notify send these messages?"
-msgstr "Notify 何時需要發送這些訊息？"
+msgstr "Notify 何時該發送這些訊息？"
 
 #: main/forms.py:1565
 msgid "Type of key"
-msgstr "金鑰的屬性"
+msgstr "金鑰的類別"
 
 #: main/forms.py:1566
 msgid "the type of key"
-msgstr "金鑰的屬性"
+msgstr "金鑰的類別"
 
 #: main/forms.py:1570
 msgid "You need to give the key a name"
@@ -735,11 +737,11 @@ msgstr "您需要為金鑰命名"
 
 #: main/forms.py:1575
 msgid "A key with this name already exists"
-msgstr "這組獨特的名字已被使用"
+msgstr "這組獨特的名稱已被使用"
 
 #: main/forms.py:1580
 msgid "How can we help you?"
-msgstr "我們如何協助您？"
+msgstr "我們能如何協助您？"
 
 #: main/forms.py:1582 main/views/feedback.py:70
 msgid "Report a problem"
@@ -757,11 +759,11 @@ msgstr "您需要什麼協助？"
 msgid ""
 "I work in the public sector and need to send emails, text messages or "
 "letters"
-msgstr "我在公眾領域工作並且需要發送電子郵件，簡訊或郵件"
+msgstr "我在公部門工作並且需要發送電子郵件，簡訊或郵件"
 
 #: main/forms.py:1593
 msgid "I’m a member of the public with a question for the government"
-msgstr "我是一般民眾並且想對政府提問"
+msgstr "我是想對政府提問的一般民眾"
 
 #: main/forms.py:1599
 msgid "Name (optional)"
@@ -801,7 +803,7 @@ msgstr "當我們進行使用者研究時，可以與您聯繫嗎？"
 
 #: main/forms.py:1638
 msgid "You do not have to take part and you can unsubscribe at any time"
-msgstr "您不需要參與，並且隨時可以取消訂閱"
+msgstr "您不一定要參與，並可以隨時取消訂閱"
 
 #: main/forms.py:1661
 msgid "Must be between 0 and 100"
@@ -809,7 +811,7 @@ msgstr "數值必須介於 0 到 100 之間"
 
 #: main/forms.py:1682
 msgid "Must add up to 100%"
-msgstr "數值加總必須等於 100%"
+msgstr "數值總和必須等於 100%"
 
 #: main/forms.py:1691
 msgid "Link"
@@ -841,7 +843,7 @@ msgstr "簡訊傳送人"
 
 #: main/forms.py:1734
 msgid "Enter 11 characters or fewer"
-msgstr "輸入不可多於 11 個字元"
+msgstr "輸入字元不可多於 11 個"
 
 #: main/forms.py:1735
 msgid "Enter 3 characters or more"
@@ -853,7 +855,7 @@ msgstr "將此簡訊傳送人設為預設"
 
 #: main/forms.py:1752
 msgid "Contact email addresses"
-msgstr "聯繫的電子郵件地址"
+msgstr "聯絡電子郵件地址"
 
 #: main/forms.py:1753
 msgid "Contact names"
@@ -862,7 +864,7 @@ msgstr "聯繫人姓名"
 #: main/forms.py:1754 main/views/returned_letters.py:46
 #: templates/views/broadcast/write-new-broadcast.html:27 utils/csv.py:76
 msgid "Reference"
-msgstr "參考來源"
+msgstr "參考編號"
 
 #: main/forms.py:1755
 msgid "Purchase order number"
@@ -870,7 +872,7 @@ msgstr "訂單編號"
 
 #: main/forms.py:1763
 msgid "Set as your default address"
-msgstr "設定為預設的地址"
+msgstr "設定為您的預設地址"
 
 #: main/forms.py:1768
 msgid "Contains {} lines, maximum is 10"
@@ -902,7 +904,7 @@ msgstr "顏色"
 
 #: main/forms.py:1833
 msgid "Must be a valid color hex code (starting with #)"
-msgstr "必須為有效的顏色代碼（由#符號開頭）"
+msgstr "必須為有效顏色代碼（由#符號開頭）"
 
 #: main/forms.py:1837
 msgid "Upload a PNG logo"
@@ -934,7 +936,7 @@ msgstr "此欄位為必填"
 
 #: main/forms.py:1855
 msgid "Email branding id"
-msgstr "電子郵件品牌識別編碼"
+msgstr "電子郵件品牌識別碼"
 
 #: main/forms.py:1862 main/forms.py:1870
 msgid "Branding options"
@@ -946,7 +948,7 @@ msgstr "選擇至少一個電子郵件品牌識別選項"
 
 #: main/forms.py:1871
 msgid "Select at least 1 letter branding option"
-msgstr "選擇至少一封信件的品牌識別選項"
+msgstr "選擇至少一個信件的品牌識別選項"
 
 #: main/forms.py:1879
 #, python-format
@@ -986,11 +988,11 @@ msgstr "僅接受 SVG 檔案格式！"
 
 #: main/forms.py:1931
 msgid "You need to upload a file to submit"
-msgstr "您需要上傳一個檔案後才可送出"
+msgstr "您需要上傳一個檔案才可送出"
 
 #: main/forms.py:1940
 msgid "Upload a letter in PDF format"
-msgstr "上傳一個 PDF 格式的信件"
+msgstr "上傳一封 PDF 格式的信件"
 
 #: main/forms.py:1942
 msgid "Save your letter as a PDF and try again."
@@ -998,7 +1000,7 @@ msgstr "將您的信件轉存為 PDF 格式後再試一次。"
 
 #: main/forms.py:1943
 msgid "You need to choose a file to upload"
-msgstr "您需要選擇一個檔案以進行上傳"
+msgstr "您需要選擇一個檔案上傳"
 
 #: main/forms.py:1969 templates/views/pricing/billing-details.html:41
 msgid "Email addresses"
@@ -1022,11 +1024,11 @@ msgstr "包含測試金鑰"
 
 #: main/forms.py:1992
 msgid "First day covered by report"
-msgstr "報告的起始日"
+msgstr "報告涵蓋的第一日"
 
 #: main/forms.py:1993
 msgid "Last day covered by report"
-msgstr "報告的最終日"
+msgstr "報告涵蓋的最終日"
 
 #: main/forms.py:1998 main/forms.py:2035
 #: templates/views/broadcast/areas-with-sub-areas.html:22
@@ -1042,7 +1044,7 @@ msgstr "依姓名搜尋"
 
 #: main/forms.py:1999
 msgid "You need to enter full or partial name to search by."
-msgstr "您需要輸入完整或部分的姓名以進行搜尋。"
+msgstr "您需要輸入完整或部分姓名以進行搜尋。"
 
 #: main/forms.py:2005 main/forms.py:2011
 msgid "Search by name or email address"
@@ -1050,7 +1052,7 @@ msgstr "依姓名或電子郵件地址搜尋"
 
 #: main/forms.py:2006
 msgid "You need to enter full or partial email address to search by."
-msgstr "您需要輸入完整或部分的電子郵件地址以進行搜尋。"
+msgstr "您需要輸入完整或部分電子郵件地址以進行搜尋。"
 
 #: main/forms.py:2018
 msgid "Search by email address"
@@ -1071,7 +1073,7 @@ msgstr "依姓名或代碼搜尋"
 #: main/forms.py:2048
 #: templates/views/service-settings/set-inbound-number.html:7
 msgid "Set inbound number"
-msgstr "設定通用電話號碼"
+msgstr "設定收訊電話號碼"
 
 #: main/forms.py:2049
 msgid "an inbound number"
@@ -1079,7 +1081,7 @@ msgstr "內線號碼"
 
 #: main/forms.py:2058
 msgid "Must be a valid https URL"
-msgstr "必須為有效的網址"
+msgstr "必須是有效的HTTPS網址"
 
 #: main/forms.py:2062
 msgid "Bearer token"
@@ -1103,11 +1105,11 @@ msgstr "其他"
 
 #: main/forms.py:2134
 msgid "Choose your new email branding"
-msgstr "選擇您的新電子郵件的品牌識別"
+msgstr "選擇您的新電子郵件品牌識別"
 
 #: main/forms.py:2142
 msgid "Choose your new letter branding"
-msgstr "選擇您的新信件的品牌識別"
+msgstr "選擇您的新信件品牌識別"
 
 #: main/forms.py:2143 main/forms.py:2163
 #: templates/views/service-settings/branding/email-branding-something-else.html:8
@@ -1124,17 +1126,17 @@ msgstr "附上您的品牌指南連結或品牌識別使用範例連結。"
 
 #: main/forms.py:2177
 msgid "Enter the text that will appear in your logo"
-msgstr "輸入您的標誌中將出現的文字"
+msgstr "輸入您標誌中將出現的文字"
 
 #: main/forms.py:2186
 msgid ""
 "This is usually the full name of your organisation.<br/><br/>For example,"
 " {organisation_name}"
-msgstr "這通常是您的組織的完整名稱<br/><br/>例如，{organisation_name}"
+msgstr "這通常是您組織的完整名稱。<br/><br/>例如，{organisation_name}"
 
 #: main/forms.py:2195
 msgid "Department of Education"
-msgstr "教育部門"
+msgstr "教育單位"
 
 #: main/forms.py:2203
 #: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:10
@@ -1174,7 +1176,7 @@ msgstr "將橫幅旗幟加入你的標誌"
 
 #: main/forms.py:2249
 msgid "What notification type?"
-msgstr "什麼樣的通知類別？"
+msgstr "什麼通知類別？"
 
 #: main/forms.py:2252 templates/views/providers/providers.html:13
 msgid "SMS"
@@ -1186,7 +1188,7 @@ msgstr "通知類別"
 
 #: main/forms.py:2258 main/forms.py:2265
 msgid "Days of retention"
-msgstr "留存的天數"
+msgstr "留存天數"
 
 #: main/forms.py:2259 main/forms.py:2266
 msgid "Must be between 3 and 90"
@@ -1194,7 +1196,7 @@ msgstr "必須介於 3 到 90 之間"
 
 #: main/forms.py:2272
 msgid "Letter references"
-msgstr "信件參考案例"
+msgstr "信件參考編號"
 
 #: main/forms.py:2287
 msgid "Team members who can see this folder"
@@ -1227,7 +1229,7 @@ msgstr "選擇一個資料夾"
 
 #: main/forms.py:2412
 msgid "New template"
-msgstr "新的模板"
+msgstr "新模板"
 
 #: main/forms.py:2417
 msgid "Select the type of template you want to add"
@@ -1235,7 +1237,7 @@ msgstr "選擇您想新增的模板類型"
 
 #: main/forms.py:2423
 msgid "What do you want to clear today"
-msgstr "您今天想清除什麼？"
+msgstr "您今天想清除什麼"
 
 #: main/forms.py:2428
 msgid "Select at least one option"
@@ -1243,7 +1245,7 @@ msgstr "選擇至少一個選項"
 
 #: main/forms.py:2433
 msgid "Go live notes"
-msgstr "執行"
+msgstr "轉正式環境註記"
 
 #: main/forms.py:2452
 #: templates/views/service-settings/service-set-broadcast-channel.html:7
@@ -1268,7 +1270,7 @@ msgstr "測試頻道"
 
 #: main/forms.py:2458
 msgid "Live channel"
-msgstr "直播頻道"
+msgstr "正式頻道"
 
 #: main/forms.py:2459
 msgid "Government channel"
@@ -1278,11 +1280,11 @@ msgstr "政府頻道"
 #: templates/views/service-settings/service-set-broadcast-network.html:10
 #: templates/views/service-settings/service-set-broadcast-network.html:21
 msgid "Choose a mobile network"
-msgstr "選擇一個電信網路"
+msgstr "選擇一個行動網路"
 
 #: main/forms.py:2471
 msgid "All networks"
-msgstr "所有的網絡"
+msgstr "所有的網路"
 
 #: main/forms.py:2471
 msgid "A single network"
@@ -1290,7 +1292,7 @@ msgstr "單一的網路"
 
 #: main/forms.py:2495
 msgid "Select a mobile network"
-msgstr "選擇一個電信網路"
+msgstr "選擇一個行動網路"
 
 #: main/forms.py:2500
 msgid "Change cell broadcast service type"
