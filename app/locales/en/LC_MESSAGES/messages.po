@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-02 12:30+0800\n"
+"POT-Creation-Date: 2022-12-02 12:36+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -178,7 +178,7 @@ msgstr ""
 msgid "broadcasts"
 msgstr ""
 
-#: formatters.py:436 main/views/jobs.py:180
+#: formatters.py:436 main/views/jobs.py:182
 msgid "recipient"
 msgstr ""
 
@@ -186,7 +186,7 @@ msgstr ""
 msgid "recipients"
 msgstr ""
 
-#: formatters.py:442 main/views/jobs.py:176
+#: formatters.py:442 main/views/jobs.py:178
 #: templates/views/api/guest-list.html:64
 #: templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:81
@@ -197,7 +197,7 @@ msgstr ""
 msgid "phone numbers"
 msgstr ""
 
-#: formatters.py:448 main/views/jobs.py:175 main/views/user_profile.py:70
+#: formatters.py:448 main/views/jobs.py:177 main/views/user_profile.py:70
 #: main/views/user_profile.py:91 templates/views/api/guest-list.html:58
 #: templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:63
@@ -1584,43 +1584,43 @@ msgstr ""
 msgid "Cancelled {number_of_letters} letters from {original_file_name}"
 msgstr ""
 
-#: main/views/jobs.py:147
+#: main/views/jobs.py:149
 msgid "Are you sure you want to cancel sending these letters?"
 msgstr ""
 
-#: main/views/jobs.py:177
+#: main/views/jobs.py:179
 msgid "postal address"
 msgstr ""
 
-#: main/views/jobs.py:177
+#: main/views/jobs.py:179
 msgid "file name"
 msgstr ""
 
-#: main/views/jobs.py:183
+#: main/views/jobs.py:185
 msgid "reference"
 msgstr ""
 
-#: main/views/jobs.py:211 main/views/platform_admin.py:491
+#: main/views/jobs.py:213 main/views/platform_admin.py:491
 #: main/views/uploads.py:97
 msgid "Invalid page argument ({})."
 msgstr ""
 
-#: main/views/jobs.py:338
+#: main/views/jobs.py:340
 #, python-format
 msgid "total<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
 
-#: main/views/jobs.py:346
+#: main/views/jobs.py:348
 #, python-format
 msgid "sending<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
 
-#: main/views/jobs.py:354
+#: main/views/jobs.py:356
 #, python-format
 msgid "delivered<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
 
-#: main/views/jobs.py:362
+#: main/views/jobs.py:364
 #, python-format
 msgid "failed<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
@@ -2754,6 +2754,7 @@ msgid "Documentation"
 msgstr ""
 
 #: templates/admin_template.html:70 templates/views/choose-account.html:61
+#: templates/views/platform-admin/_base_template.html:8
 msgid "Platform admin"
 msgstr ""
 
@@ -2880,6 +2881,7 @@ msgstr ""
 #: templates/org_nav.html:7 templates/views/choose-account.html:93
 #: templates/views/find-users/user-information.html:33
 #: templates/views/organisations/organisation/trial-mode-services.html:11
+#: templates/views/platform-admin/_base_template.html:18
 msgid "Trial mode services"
 msgstr ""
 
@@ -2889,6 +2891,7 @@ msgid "Billing"
 msgstr ""
 
 #: templates/org_template.html:11
+#: templates/views/platform-admin/_base_template.html:19
 msgid "Organisations"
 msgstr ""
 
@@ -3841,6 +3844,7 @@ msgstr ""
 #: templates/views/choose-account.html:78
 #: templates/views/choose-account.html:85
 #: templates/views/find-users/user-information.html:17
+#: templates/views/platform-admin/_base_template.html:17
 msgid "Live services"
 msgstr ""
 
@@ -5369,6 +5373,7 @@ msgstr ""
 msgid "A new confirmation email has been sent to %%s"
 msgstr ""
 
+#: templates/views/platform-admin/_base_template.html:28
 #: templates/views/returned-letter-summary.html:7
 msgid "Returned letters"
 msgstr ""
@@ -6055,6 +6060,7 @@ msgstr ""
 #: templates/views/email-branding/select-branding.html:6
 #: templates/views/features/emails.html:29
 #: templates/views/organisations/organisation/settings/email-branding-options.html:9
+#: templates/views/platform-admin/_base_template.html:22
 #: templates/views/service-settings.html:98
 #: templates/views/service-settings.html:386
 msgid "Email branding"
@@ -6137,6 +6143,7 @@ msgstr ""
 
 #: templates/views/organisations/organisation/settings/letter-branding-options.html:8
 #: templates/views/organisations/organisation/settings/letter-branding-options.html:16
+#: templates/views/platform-admin/_base_template.html:23
 #: templates/views/service-settings.html:258
 #: templates/views/service-settings.html:391
 msgid "Letter branding"
@@ -8206,6 +8213,7 @@ msgstr ""
 
 #: templates/views/find-services/find-services-by-name.html:7
 #: templates/views/find-services/find-services-by-name.html:13
+#: templates/views/platform-admin/_base_template.html:25
 msgid "Find services by name"
 msgstr ""
 
@@ -8225,6 +8233,7 @@ msgstr ""
 
 #: templates/views/find-users/find-users-by-email.html:7
 #: templates/views/find-users/find-users-by-email.html:13
+#: templates/views/platform-admin/_base_template.html:26
 msgid "Find users by email"
 msgstr ""
 
@@ -9391,6 +9400,37 @@ msgstr ""
 msgid "invite other team members"
 msgstr ""
 
+#: templates/views/platform-admin/_base_template.html:16
+#: templates/views/platform-admin/index.html:9
+#: templates/views/platform-admin/index.html:15
+#: templates/views/platform-admin/splash-page.html:4
+#: templates/views/platform-admin/splash-page.html:10
+msgid "Summary"
+msgstr ""
+
+#: templates/views/platform-admin/_base_template.html:20
+#: templates/views/providers/providers.html:6
+#: templates/views/providers/providers.html:11
+msgid "Providers"
+msgstr ""
+
+#: templates/views/platform-admin/_base_template.html:21
+#: templates/views/platform-admin/reports.html:4
+#: templates/views/platform-admin/reports.html:10
+msgid "Reports"
+msgstr ""
+
+#: templates/views/platform-admin/_base_template.html:24
+msgid "Inbound SMS numbers"
+msgstr ""
+
+#: templates/views/platform-admin/_base_template.html:27
+#: templates/views/platform-admin/complaints.html:7
+#: templates/views/platform-admin/complaints.html:13
+msgid "Email complaints"
+msgstr ""
+
+#: templates/views/platform-admin/_base_template.html:29
 #: templates/views/platform-admin/clear-cache.html:6
 #: templates/views/platform-admin/clear-cache.html:12
 msgid "Clear cache"
@@ -9398,11 +9438,6 @@ msgstr ""
 
 #: templates/views/platform-admin/clear-cache.html:17
 msgid "Clear"
-msgstr ""
-
-#: templates/views/platform-admin/complaints.html:7
-#: templates/views/platform-admin/complaints.html:13
-msgid "Email complaints"
 msgstr ""
 
 #: templates/views/platform-admin/complaints.html:19
@@ -9561,13 +9596,6 @@ msgid ""
 "You can help by adding it to the service settings page."
 msgstr ""
 
-#: templates/views/platform-admin/index.html:9
-#: templates/views/platform-admin/index.html:15
-#: templates/views/platform-admin/splash-page.html:4
-#: templates/views/platform-admin/splash-page.html:10
-msgid "Summary"
-msgstr ""
-
 #: templates/views/platform-admin/index.html:20
 #: templates/views/platform-admin/notifications_by_service.html:15
 #: templates/views/platform-admin/services.html:68
@@ -9594,11 +9622,6 @@ msgstr ""
 #: templates/views/platform-admin/notifications_by_service.html:11
 #: templates/views/platform-admin/reports.html:17
 msgid "Monthly notification statuses for live services"
-msgstr ""
-
-#: templates/views/platform-admin/reports.html:4
-#: templates/views/platform-admin/reports.html:10
-msgid "Reports"
 msgstr ""
 
 #: templates/views/platform-admin/reports.html:14
@@ -10373,11 +10396,6 @@ msgstr ""
 #: templates/views/providers/provider.html:31
 #: templates/views/providers/providers.html:22
 msgid "Priority"
-msgstr ""
-
-#: templates/views/providers/providers.html:6
-#: templates/views/providers/providers.html:11
-msgid "Providers"
 msgstr ""
 
 #: templates/views/providers/providers.html:15

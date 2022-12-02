@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-02 12:30+0800\n"
+"POT-Creation-Date: 2022-12-02 12:36+0800\n"
 "PO-Revision-Date: 2022-12-02 03:19+0000\n"
 "Last-Translator: Jocelyn Chang <jocelyn81616@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -180,7 +180,7 @@ msgstr "廣播"
 msgid "broadcasts"
 msgstr "廣播"
 
-#: formatters.py:436 main/views/jobs.py:180
+#: formatters.py:436 main/views/jobs.py:182
 msgid "recipient"
 msgstr "收件人"
 
@@ -188,7 +188,7 @@ msgstr "收件人"
 msgid "recipients"
 msgstr "收件人"
 
-#: formatters.py:442 main/views/jobs.py:176
+#: formatters.py:442 main/views/jobs.py:178
 #: templates/views/api/guest-list.html:64
 #: templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:81
@@ -199,7 +199,7 @@ msgstr "電話號碼"
 msgid "phone numbers"
 msgstr "電話號碼"
 
-#: formatters.py:448 main/views/jobs.py:175 main/views/user_profile.py:70
+#: formatters.py:448 main/views/jobs.py:177 main/views/user_profile.py:70
 #: main/views/user_profile.py:91 templates/views/api/guest-list.html:58
 #: templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:63
@@ -1612,43 +1612,43 @@ msgstr "我們正在處理這些信件，請稍後再試一次。"
 msgid "Cancelled {number_of_letters} letters from {original_file_name}"
 msgstr ""
 
-#: main/views/jobs.py:147
+#: main/views/jobs.py:149
 msgid "Are you sure you want to cancel sending these letters?"
 msgstr "您確定要取消發送這些信件嗎？"
 
-#: main/views/jobs.py:177
+#: main/views/jobs.py:179
 msgid "postal address"
 msgstr "郵寄地址"
 
-#: main/views/jobs.py:177
+#: main/views/jobs.py:179
 msgid "file name"
 msgstr "檔案名稱"
 
-#: main/views/jobs.py:183
+#: main/views/jobs.py:185
 msgid "reference"
 msgstr "參考來源"
 
-#: main/views/jobs.py:211 main/views/platform_admin.py:491
+#: main/views/jobs.py:213 main/views/platform_admin.py:491
 #: main/views/uploads.py:97
 msgid "Invalid page argument ({})."
 msgstr "無效的頁數參數 ({}) 。"
 
-#: main/views/jobs.py:338
+#: main/views/jobs.py:340
 #, python-format
 msgid "total<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
 
-#: main/views/jobs.py:346
+#: main/views/jobs.py:348
 #, python-format
 msgid "sending<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
 
-#: main/views/jobs.py:354
+#: main/views/jobs.py:356
 #, python-format
 msgid "delivered<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
 
-#: main/views/jobs.py:362
+#: main/views/jobs.py:364
 #, python-format
 msgid "failed<span class=\"govuk-visually-hidden\">%s</span>"
 msgstr ""
@@ -2797,6 +2797,7 @@ msgid "Documentation"
 msgstr ""
 
 #: templates/admin_template.html:70 templates/views/choose-account.html:61
+#: templates/views/platform-admin/_base_template.html:8
 msgid "Platform admin"
 msgstr ""
 
@@ -2923,6 +2924,7 @@ msgstr "API 整合"
 #: templates/org_nav.html:7 templates/views/choose-account.html:93
 #: templates/views/find-users/user-information.html:33
 #: templates/views/organisations/organisation/trial-mode-services.html:11
+#: templates/views/platform-admin/_base_template.html:18
 msgid "Trial mode services"
 msgstr ""
 
@@ -2932,6 +2934,7 @@ msgid "Billing"
 msgstr ""
 
 #: templates/org_template.html:11
+#: templates/views/platform-admin/_base_template.html:19
 msgid "Organisations"
 msgstr ""
 
@@ -3893,6 +3896,7 @@ msgstr "%%s 機關， %%s 上線的服務"
 #: templates/views/choose-account.html:78
 #: templates/views/choose-account.html:85
 #: templates/views/find-users/user-information.html:17
+#: templates/views/platform-admin/_base_template.html:17
 msgid "Live services"
 msgstr ""
 
@@ -5516,6 +5520,7 @@ msgstr "請點擊信件上的連結來繼續完成註冊。"
 msgid "A new confirmation email has been sent to %%s"
 msgstr "已將新的確認電子郵件寄到 %%s"
 
+#: templates/views/platform-admin/_base_template.html:28
 #: templates/views/returned-letter-summary.html:7
 msgid "Returned letters"
 msgstr "紙本退信"
@@ -6245,6 +6250,7 @@ msgstr "接收回覆的電子郵件地址"
 #: templates/views/email-branding/select-branding.html:6
 #: templates/views/features/emails.html:29
 #: templates/views/organisations/organisation/settings/email-branding-options.html:9
+#: templates/views/platform-admin/_base_template.html:22
 #: templates/views/service-settings.html:98
 #: templates/views/service-settings.html:386
 msgid "Email branding"
@@ -6327,6 +6333,7 @@ msgstr "寄件者地址"
 
 #: templates/views/organisations/organisation/settings/letter-branding-options.html:8
 #: templates/views/organisations/organisation/settings/letter-branding-options.html:16
+#: templates/views/platform-admin/_base_template.html:23
 #: templates/views/service-settings.html:258
 #: templates/views/service-settings.html:391
 msgid "Letter branding"
@@ -8488,6 +8495,7 @@ msgstr "您建立的每組服務都有年度免費簡訊額度。"
 
 #: templates/views/find-services/find-services-by-name.html:7
 #: templates/views/find-services/find-services-by-name.html:13
+#: templates/views/platform-admin/_base_template.html:25
 msgid "Find services by name"
 msgstr "尋找服務名稱"
 
@@ -8507,6 +8515,7 @@ msgstr "已設定 %%(user_name)s 的驗證類型"
 
 #: templates/views/find-users/find-users-by-email.html:7
 #: templates/views/find-users/find-users-by-email.html:13
+#: templates/views/platform-admin/_base_template.html:26
 msgid "Find users by email"
 msgstr "用電子郵件地址尋找使用者"
 
@@ -9709,6 +9718,37 @@ msgstr "查看每項服務的使用情形與團隊成員"
 msgid "invite other team members"
 msgstr "邀請其他團隊成員"
 
+#: templates/views/platform-admin/_base_template.html:16
+#: templates/views/platform-admin/index.html:9
+#: templates/views/platform-admin/index.html:15
+#: templates/views/platform-admin/splash-page.html:4
+#: templates/views/platform-admin/splash-page.html:10
+msgid "Summary"
+msgstr "摘要"
+
+#: templates/views/platform-admin/_base_template.html:20
+#: templates/views/providers/providers.html:6
+#: templates/views/providers/providers.html:11
+msgid "Providers"
+msgstr "供應商"
+
+#: templates/views/platform-admin/_base_template.html:21
+#: templates/views/platform-admin/reports.html:4
+#: templates/views/platform-admin/reports.html:10
+msgid "Reports"
+msgstr "報告"
+
+#: templates/views/platform-admin/_base_template.html:24
+msgid "Inbound SMS numbers"
+msgstr ""
+
+#: templates/views/platform-admin/_base_template.html:27
+#: templates/views/platform-admin/complaints.html:7
+#: templates/views/platform-admin/complaints.html:13
+msgid "Email complaints"
+msgstr "電子郵件顧客抱怨"
+
+#: templates/views/platform-admin/_base_template.html:29
 #: templates/views/platform-admin/clear-cache.html:6
 #: templates/views/platform-admin/clear-cache.html:12
 msgid "Clear cache"
@@ -9717,11 +9757,6 @@ msgstr "清除快取"
 #: templates/views/platform-admin/clear-cache.html:17
 msgid "Clear"
 msgstr "清除"
-
-#: templates/views/platform-admin/complaints.html:7
-#: templates/views/platform-admin/complaints.html:13
-msgid "Email complaints"
-msgstr "電子郵件顧客抱怨"
 
 #: templates/views/platform-admin/complaints.html:19
 msgid "Complaints"
@@ -9882,13 +9917,6 @@ msgid ""
 "You can help by adding it to the service settings page."
 msgstr "我們依照服務所獲得的資訊手動增加此數據。您可以在服務設定頁面增加數據來提供協助。"
 
-#: templates/views/platform-admin/index.html:9
-#: templates/views/platform-admin/index.html:15
-#: templates/views/platform-admin/splash-page.html:4
-#: templates/views/platform-admin/splash-page.html:10
-msgid "Summary"
-msgstr "摘要"
-
 #: templates/views/platform-admin/index.html:20
 #: templates/views/platform-admin/notifications_by_service.html:15
 #: templates/views/platform-admin/services.html:68
@@ -9916,11 +9944,6 @@ msgstr "申請過濾器"
 #: templates/views/platform-admin/reports.html:17
 msgid "Monthly notification statuses for live services"
 msgstr "每月線上服務通知狀態"
-
-#: templates/views/platform-admin/reports.html:4
-#: templates/views/platform-admin/reports.html:10
-msgid "Reports"
-msgstr "報告"
 
 #: templates/views/platform-admin/reports.html:14
 msgid "Download live services csv report"
@@ -10744,11 +10767,6 @@ msgstr "更新者"
 #: templates/views/providers/providers.html:22
 msgid "Priority"
 msgstr "優先順序"
-
-#: templates/views/providers/providers.html:6
-#: templates/views/providers/providers.html:11
-msgid "Providers"
-msgstr "供應商"
 
 #: templates/views/providers/providers.html:15
 msgid "Change priority"

@@ -5,7 +5,7 @@
 <div class="govuk-width-container {{ mainClasses }}">
     <div class="navigation-service">
       <div class="navigation-service-name govuk-!-font-weight-bold">
-        Platform admin
+        {{_('Platform admin')}}
       </div>
       <a href="{{ url_for('main.choose_account') }}" class="govuk-link govuk-link--no-visited-state navigation-service-switch">Switch service</a>
     </div>
@@ -13,20 +13,20 @@
       <div class="govuk-grid-column-one-quarter">
         <nav class="navigation" aria-label="Platform admin">
             {% for link_text, url in [
-            ('Summary', url_for('main.platform_admin')),
-            ('Live services', url_for('main.live_services')),
-            ('Trial mode services', url_for('main.trial_services')),
-            ('Organisations', url_for('main.organisations')),
-            ('Providers', url_for('main.view_providers')),
-            ('Reports', url_for('main.platform_admin_reports')),
-            ('Email branding', url_for('main.email_branding')),
-            ('Letter branding', url_for('main.letter_branding')),
-            ('Inbound SMS numbers', url_for('main.inbound_sms_admin')),
-            ('Find services by name', url_for('main.find_services_by_name')),
-            ('Find users by email', url_for('main.find_users_by_email')),
-            ('Email complaints', url_for('main.platform_admin_list_complaints')),
-            ('Returned letters', url_for('main.platform_admin_returned_letters')),
-            ('Clear cache', url_for('main.clear_cache')),
+            (_('Summary'), url_for('main.platform_admin')),
+            (_('Live services'), url_for('main.live_services')),
+            (_('Trial mode services'), url_for('main.trial_services')),
+            (_('Organisations'), url_for('main.organisations')),
+            (_('Providers'), url_for('main.view_providers')),
+            (_('Reports'), url_for('main.platform_admin_reports')),
+            (_('Email branding'), url_for('main.email_branding')),
+            (_('Letter branding'), url_for('main.letter_branding')),
+            (_('Inbound SMS numbers'), url_for('main.inbound_sms_admin')),
+            (_('Find services by name'), url_for('main.find_services_by_name')),
+            (_('Find users by email'), url_for('main.find_users_by_email')),
+            (_('Email complaints'), url_for('main.platform_admin_list_complaints')),
+            (_('Returned letters'), url_for('main.platform_admin_returned_letters')),
+            (_('Clear cache'), url_for('main.clear_cache')),
           ] %}
             <li>
               <a class="govuk-link govuk-link--no-visited-state" href="{{ url }}">
