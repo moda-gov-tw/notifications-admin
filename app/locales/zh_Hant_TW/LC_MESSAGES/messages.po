@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-02 12:52+0800\n"
+"POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-02 04:55+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
-"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.toomore.net/projects/notification-admin/notification-"
+"admin-github/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -1032,6 +1032,7 @@ msgstr "報告的最終日"
 #: templates/views/broadcast/areas-with-sub-areas.html:22
 #: templates/views/broadcast/areas.html:24
 #: templates/views/organisations/add-nhs-local-organisation.html:28
+#: templates/views/organisations/index.html:13
 #: templates/views/organisations/organisation/settings/set-letter-branding.html:32
 #: templates/views/organisations/organisation/trial-mode-services.html:13
 #: templates/views/service-settings/link-service-to-organisation.html:24
@@ -2938,7 +2939,8 @@ msgstr "試驗模式的服務"
 msgid "Billing"
 msgstr ""
 
-#: templates/org_template.html:11
+#: templates/org_template.html:11 templates/views/organisations/index.html:6
+#: templates/views/organisations/index.html:11
 #: templates/views/platform-admin/_base_template.html:19
 msgid "Organisations"
 msgstr "機關團體"
@@ -2961,6 +2963,10 @@ msgstr ""
 #, python-format
 msgid "Back to %%s"
 msgstr "回到 %%s"
+
+#: templates/components/big-number.html:54
+msgid "No failures"
+msgstr ""
 
 #: templates/components/cookie-banner.html:5
 msgid "Can we store analytics cookies on your device?"
@@ -9422,12 +9428,25 @@ msgid "See all text messages sent to this phone number"
 msgstr "查看傳送給這個電話號碼的所有簡訊"
 
 #: templates/views/organisations/add-organisation.html:7
+#: templates/views/organisations/index.html:39
 msgid "New organisation"
 msgstr "新的組織"
 
 #: templates/views/organisations/add-organisation.html:13
 msgid "All organisations"
 msgstr "所有的機關"
+
+#: templates/views/organisations/index.html:21
+msgid "- archived"
+msgstr ""
+
+#: templates/views/organisations/index.html:26
+msgid "live services"
+msgstr ""
+
+#: templates/views/organisations/index.html:28
+msgid "live service"
+msgstr ""
 
 #: templates/views/organisations/organisation/billing.html:13
 #: templates/views/organisations/organisation/settings/edit-agreement.html:12

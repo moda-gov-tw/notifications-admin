@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-02 12:52+0800\n"
+"POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -1025,6 +1025,7 @@ msgstr ""
 #: templates/views/broadcast/areas-with-sub-areas.html:22
 #: templates/views/broadcast/areas.html:24
 #: templates/views/organisations/add-nhs-local-organisation.html:28
+#: templates/views/organisations/index.html:13
 #: templates/views/organisations/organisation/settings/set-letter-branding.html:32
 #: templates/views/organisations/organisation/trial-mode-services.html:13
 #: templates/views/service-settings/link-service-to-organisation.html:24
@@ -2895,7 +2896,8 @@ msgstr ""
 msgid "Billing"
 msgstr ""
 
-#: templates/org_template.html:11
+#: templates/org_template.html:11 templates/views/organisations/index.html:6
+#: templates/views/organisations/index.html:11
 #: templates/views/platform-admin/_base_template.html:19
 msgid "Organisations"
 msgstr ""
@@ -2917,6 +2919,10 @@ msgstr ""
 #: templates/withoutnav_template.html:8
 #, python-format
 msgid "Back to %%s"
+msgstr ""
+
+#: templates/components/big-number.html:54
+msgid "No failures"
 msgstr ""
 
 #: templates/components/cookie-banner.html:5
@@ -9108,11 +9114,24 @@ msgid "See all text messages sent to this phone number"
 msgstr ""
 
 #: templates/views/organisations/add-organisation.html:7
+#: templates/views/organisations/index.html:39
 msgid "New organisation"
 msgstr ""
 
 #: templates/views/organisations/add-organisation.html:13
 msgid "All organisations"
+msgstr ""
+
+#: templates/views/organisations/index.html:21
+msgid "- archived"
+msgstr ""
+
+#: templates/views/organisations/index.html:26
+msgid "live services"
+msgstr ""
+
+#: templates/views/organisations/index.html:28
+msgid "live service"
 msgstr ""
 
 #: templates/views/organisations/organisation/billing.html:13
