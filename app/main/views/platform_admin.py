@@ -85,7 +85,7 @@ def get_status_box_data(stats, key, label, threshold=FAILURE_THRESHOLD):
 
 
 def get_tech_failure_status_box_data(stats):
-    stats = get_status_box_data(stats, "technical-failure", "technical failures", ZERO_FAILURE_THRESHOLD)
+    stats = get_status_box_data(stats, "technical-failure", _("technical failures"), ZERO_FAILURE_THRESHOLD)
     stats.pop("percentage")
     return stats
 
@@ -97,8 +97,8 @@ def make_columns(global_stats, complaints_number):
             "black_box": {"number": global_stats["email"]["total"], "notification_type": "email"},
             "other_data": [
                 get_tech_failure_status_box_data(global_stats["email"]),
-                get_status_box_data(global_stats["email"], "permanent-failure", "permanent failures"),
-                get_status_box_data(global_stats["email"], "temporary-failure", "temporary failures"),
+                get_status_box_data(global_stats["email"], "permanent-failure", _("permanent failures")),
+                get_status_box_data(global_stats["email"], "temporary-failure", _("temporary failures")),
                 {
                     "number": complaints_number,
                     "label": _("complaints"),

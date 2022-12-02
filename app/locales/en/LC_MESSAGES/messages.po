@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-02 12:36+0800\n"
+"POT-Creation-Date: 2022-12-02 12:52+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -1021,6 +1021,17 @@ msgstr ""
 msgid "Last day covered by report"
 msgstr ""
 
+#: main/forms.py:1998 main/forms.py:2035
+#: templates/views/broadcast/areas-with-sub-areas.html:22
+#: templates/views/broadcast/areas.html:24
+#: templates/views/organisations/add-nhs-local-organisation.html:28
+#: templates/views/organisations/organisation/settings/set-letter-branding.html:32
+#: templates/views/organisations/organisation/trial-mode-services.html:13
+#: templates/views/service-settings/link-service-to-organisation.html:24
+#: templates/views/service-settings/set-letter-branding.html:32
+msgid "Search by name"
+msgstr ""
+
 #: main/forms.py:1999
 msgid "You need to enter full or partial name to search by."
 msgstr ""
@@ -1047,16 +1058,6 @@ msgstr ""
 
 #: main/forms.py:2035
 msgid "Search by name or ID"
-msgstr ""
-
-#: main/forms.py:2035 templates/views/broadcast/areas-with-sub-areas.html:22
-#: templates/views/broadcast/areas.html:24
-#: templates/views/organisations/add-nhs-local-organisation.html:28
-#: templates/views/organisations/organisation/settings/set-letter-branding.html:32
-#: templates/views/organisations/organisation/trial-mode-services.html:13
-#: templates/views/service-settings/link-service-to-organisation.html:24
-#: templates/views/service-settings/set-letter-branding.html:32
-msgid "Search by name"
 msgstr ""
 
 #: main/forms.py:2048
@@ -1775,20 +1776,24 @@ msgstr ""
 msgid "No organisation"
 msgstr ""
 
+#: main/views/platform_admin.py:88
+msgid "technical failures"
+msgstr ""
+
+#: main/views/platform_admin.py:100 main/views/platform_admin.py:119
+msgid "permanent failures"
+msgstr ""
+
+#: main/views/platform_admin.py:101 main/views/platform_admin.py:120
+msgid "temporary failures"
+msgstr ""
+
 #: main/views/platform_admin.py:104
 msgid "complaints"
 msgstr ""
 
 #: main/views/platform_admin.py:112
 msgid "test emails"
-msgstr ""
-
-#: main/views/platform_admin.py:119
-msgid "permanent failures"
-msgstr ""
-
-#: main/views/platform_admin.py:120
-msgid "temporary failures"
 msgstr ""
 
 #: main/views/platform_admin.py:122

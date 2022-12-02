@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-02 12:36+0800\n"
+"POT-Creation-Date: 2022-12-02 12:52+0800\n"
 "PO-Revision-Date: 2022-12-02 04:44+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
-"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.toomore.net/projects/notification-admin/notification-"
+"admin-github/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -1028,6 +1028,17 @@ msgstr "報告的起始日"
 msgid "Last day covered by report"
 msgstr "報告的最終日"
 
+#: main/forms.py:1998 main/forms.py:2035
+#: templates/views/broadcast/areas-with-sub-areas.html:22
+#: templates/views/broadcast/areas.html:24
+#: templates/views/organisations/add-nhs-local-organisation.html:28
+#: templates/views/organisations/organisation/settings/set-letter-branding.html:32
+#: templates/views/organisations/organisation/trial-mode-services.html:13
+#: templates/views/service-settings/link-service-to-organisation.html:24
+#: templates/views/service-settings/set-letter-branding.html:32
+msgid "Search by name"
+msgstr "依姓名搜尋"
+
 #: main/forms.py:1999
 msgid "You need to enter full or partial name to search by."
 msgstr "您需要輸入完整或部分的姓名以進行搜尋。"
@@ -1055,16 +1066,6 @@ msgstr "依電話號碼或電子郵件地址搜尋"
 #: main/forms.py:2035
 msgid "Search by name or ID"
 msgstr "依姓名或代碼搜尋"
-
-#: main/forms.py:2035 templates/views/broadcast/areas-with-sub-areas.html:22
-#: templates/views/broadcast/areas.html:24
-#: templates/views/organisations/add-nhs-local-organisation.html:28
-#: templates/views/organisations/organisation/settings/set-letter-branding.html:32
-#: templates/views/organisations/organisation/trial-mode-services.html:13
-#: templates/views/service-settings/link-service-to-organisation.html:24
-#: templates/views/service-settings/set-letter-branding.html:32
-msgid "Search by name"
-msgstr "依姓名搜尋"
 
 #: main/forms.py:2048
 #: templates/views/service-settings/set-inbound-number.html:7
@@ -1803,6 +1804,18 @@ msgstr ""
 msgid "No organisation"
 msgstr "沒有機構"
 
+#: main/views/platform_admin.py:88
+msgid "technical failures"
+msgstr ""
+
+#: main/views/platform_admin.py:100 main/views/platform_admin.py:119
+msgid "permanent failures"
+msgstr "永久性故障"
+
+#: main/views/platform_admin.py:101 main/views/platform_admin.py:120
+msgid "temporary failures"
+msgstr "暫時性故障"
+
 #: main/views/platform_admin.py:104
 msgid "complaints"
 msgstr "投訴"
@@ -1810,14 +1823,6 @@ msgstr "投訴"
 #: main/views/platform_admin.py:112
 msgid "test emails"
 msgstr "測試電子郵件"
-
-#: main/views/platform_admin.py:119
-msgid "permanent failures"
-msgstr "永久性故障"
-
-#: main/views/platform_admin.py:120
-msgid "temporary failures"
-msgstr "暫時性故障"
 
 #: main/views/platform_admin.py:122
 msgid "test text messages"
