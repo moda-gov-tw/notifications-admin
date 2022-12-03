@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 16:51+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -1912,7 +1912,7 @@ msgstr "電子郵件觸及聲量"
 
 #: main/views/platform_admin.py:204
 msgid "Letter volume intent"
-msgstr "預期紙本信件發送量"
+msgstr "預期信件發送量"
 
 #: main/views/platform_admin.py:205
 msgid "SMS sent this year"
@@ -2482,7 +2482,7 @@ msgstr "您超過 %s 字數"
 #: main/views/templates.py:680
 #, python-format
 msgid "Will be charged as %s (not including personalisation)"
-msgstr "將會以 %s 身分收費（不包含客製化內容）"
+msgstr "將會以 %s 收費（不包含客製化內容）"
 
 #: main/views/templates.py:683
 #, python-format
@@ -4632,25 +4632,25 @@ msgstr "表現"
 
 #: templates/views/features.html:57
 msgid "Notify commits to:"
-msgstr "Notify 承諾："
+msgstr "Notify 承諾將："
 
 #: templates/views/features.html:59
 #, python-format
 msgid "sending 95%% of emails and text messages within 10 seconds"
-msgstr "10 秒內發送 95%% 的電子郵件和簡訊"
+msgstr "在 10 秒內發送 95%% 的電子郵件和簡訊"
 
 #: templates/views/features.html:60
 msgid ""
 "printing and posting letters by 3pm the next working day (if you send "
 "them to us before 5:30pm)"
-msgstr "在下一個工作日的下午 3 點之前印出與郵寄信件（如果您在下午 5:30 "
-"之前將信件傳送給我們）"
+msgstr "在下一個工作日的下午 3 點之前印出並郵寄信件（如果您在下午 5:30 "
+"前將信件傳送給我們）"
 
 #: templates/views/features.html:63
 msgid ""
 "We send messages through several different providers. If one provider "
 "fails, Notify switches to another so that your messages are not affected."
-msgstr "我們透過幾個不同的供應商發送訊息。如果一個供應商出現故障，Notify "
+msgstr "我們透過幾個不同的供應商發送訊息。如果有供應商出現故障，Notify "
 "會切換到另一個供應商，這樣您的訊息就不會受到影響。"
 
 #: templates/views/features.html:65
@@ -4660,11 +4660,11 @@ msgid ""
 "href=\"%%s\">performance data</a> page to see how Notify is performing."
 msgstr ""
 "請造訪我們的<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">表現資料</a>頁面，查看 Notify 的表現如何。"
+">表現資料</a>頁面，查看 Notify 的表現。"
 
 #: templates/views/features.html:68
 msgid "Notify protects and manages data to meet the needs of government services."
-msgstr "Notify 保護和管理數據並符合政府服務的需求。"
+msgstr "Notify 保護和管理數據並滿足政府服務的需求。"
 
 #: templates/views/features.html:70
 msgid "Hide sensitive information"
@@ -4688,9 +4688,8 @@ msgid ""
 "When you sign in, we’ll send a unique one-time code to your phone and ask"
 " you to enter it before we let you use your account."
 msgstr ""
-"Notify 使用二階段身份驗證 (2FA) 來確保您的帳戶安全。當您登入時，我們會向您的"
-"手機發送一個唯一的一次性代碼，並要求您輸入該代碼，通過後我們才能讓您使用您的"
-"帳戶。"
+"Notify 使用二階段身份驗證 (2FA) 來確保您的帳戶安全。登入時，我們會向您的手機"
+"發送獨特的一次性代碼，並要求您輸入該代碼，通過後我們才能讓您使用帳戶。"
 
 #: templates/views/features.html:75
 #, python-format
@@ -4775,9 +4774,8 @@ msgid ""
 "visited-state\" href=\"%%s\">trial mode</a>."
 msgstr ""
 "免費<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">建立帳號</a> 並啟用您的第一個 Notify 的服務。當您加入新服務的時候會從 <a "
-"class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">試用模式</a>開始。"
+">建立帳號</a> 並啟用您的第一個 Notify 服務。加入新服務時會從 <a class"
+"=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">試用模式</a>開始。"
 
 #: templates/views/get-started.html:31
 #, python-format
@@ -4786,12 +4784,12 @@ msgid ""
 "add a new service, it will start in <a class=\"govuk-link govuk-link--no-"
 "visited-state\" href=\"%%s\">trial mode</a>."
 msgstr ""
-"免費註冊帳號並新增您的第一個 Notify 服務。當您新增服務時，將先處於<a class"
-"=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">測試環境</a>。"
+"免費註冊帳號並新增您的第一個 Notify 服務。新增服務時，會先進入<a class"
+"=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">測試模式</a>。"
 
 #: templates/views/get-started.html:36
 msgid "Write some messages"
-msgstr "寫一些訊息"
+msgstr "寫幾個訊息"
 
 #: templates/views/get-started.html:37
 #, python-format
@@ -4800,7 +4798,7 @@ msgid ""
 "can use our <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">guidance</a> to help you."
 msgstr ""
-"將預計要寄出的內容範例加入訊息範本。可以使用我們的<a class=\"govuk-link "
+"將預計要寄出的內容範例加入訊息範本。歡迎使用我們的<a class=\"govuk-link "
 "govuk-link--no-visited-state\" href=\"%%s\">指引</a>來協助您。"
 
 #: templates/views/get-started.html:41
@@ -4811,7 +4809,7 @@ msgstr "設定您的服務"
 msgid ""
 "Review your settings to add message branding, reply-to addresses and "
 "sender information."
-msgstr "查看您的設定以增加訊息品牌識別化、回郵地址和發訊人資訊。"
+msgstr "檢視您的設定以增加訊息品牌識別、回郵地址和寄件人資訊。"
 
 #: templates/views/get-started.html:44
 msgid "Add team members and check their permissions."
@@ -4825,7 +4823,7 @@ msgid ""
 " sender information."
 msgstr ""
 "查看您的<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">設定</a>以增加訊息品牌、回郵地址和寄件者資訊。"
+">設定</a>以增加訊息品牌、回郵地址和寄件人資訊。"
 
 #: templates/views/get-started.html:47
 #, python-format
@@ -4833,12 +4831,12 @@ msgid ""
 "Add <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">team members</a> and check their permissions."
 msgstr ""
-"增加<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">團隊成員</a>並確認他們的權限。"
+"增加<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">團隊成員</a>並確認他們的權限。"
 
 #: templates/views/get-started.html:52
 msgid "Set up an API integration (optional)"
-msgstr "設置 API 串接（非必要）"
+msgstr "設定 API 串接（非必要）"
 
 #: templates/views/get-started.html:53
 msgid "You can use the Notify API to send messages automatically."
@@ -4852,7 +4850,7 @@ msgid ""
 "web application or back office system."
 msgstr ""
 "我們的<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">文件</a>說明如何將 API 與網路應用程式或後台應用程式串接起來。"
+">文件</a>說明如何串接 API 與網路應用程式或後台應用程式。"
 
 #: templates/views/get-started.html:58
 msgid "Start sending messages"
@@ -4924,12 +4922,12 @@ msgstr "未使用"
 
 #: templates/views/inbound-sms-admin.html:51
 msgid "Inactive"
-msgstr "未啟用"
+msgstr "靜止"
 
 #: templates/views/integration-testing.html:5
 #: templates/views/integration-testing.html:12
 msgid "Integration testing"
-msgstr "整合測試"
+msgstr "串接測試"
 
 #: templates/views/integration-testing.html:14
 msgid "This information has moved."
@@ -4942,14 +4940,14 @@ msgid ""
 "href=\"%%s\">documentation\n"
 "      for the client library you are using.</a>"
 msgstr ""
-"請參考您使用的客戶端程式庫的相關<a class=\"govuk-link govuk-link--no-visited-"
-"state\" href=\"%%s\">文件</a>。"
+"參考 <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">文件\n"
+"      來查找您使用的客戶端資料庫。</a>"
 
 #: templates/views/invite-user.html:8 templates/views/manage-users.html:98
 #: templates/views/organisations/organisation/users/invite-org-user.html:9
 #: templates/views/organisations/organisation/users/invite-org-user.html:18
 msgid "Invite a team member"
-msgstr "邀請團隊成員"
+msgstr "邀請一位團隊成員"
 
 #: templates/views/invite-user.html:17
 msgid "Invite {}"
@@ -4958,7 +4956,7 @@ msgstr "邀請 {}"
 #: templates/views/invite-user.html:36
 #: templates/views/organisations/organisation/users/invite-org-user.html:37
 msgid "Send invitation email"
-msgstr "寄發邀請函"
+msgstr "寄發邀請郵件"
 
 #: templates/views/manage-users.html:57
 msgid "Cannot see any folders"
