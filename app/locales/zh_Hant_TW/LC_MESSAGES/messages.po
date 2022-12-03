@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 11:08+0000\n"
-"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
+"PO-Revision-Date: 2022-12-03 14:07+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -483,15 +483,15 @@ msgstr "否"
 
 #: main/forms.py:1181
 msgid "What’s your practice called?"
-msgstr "請問您的專業是？"
+msgstr "請問您的執業名稱是？"
 
 #: main/forms.py:1198
 msgid "Which NHS Trust or Clinical Commissioning Group do you work for?"
-msgstr "請問您在哪一個國民健康基金或臨床委員會工作？"
+msgstr "請問您在哪一個國民健康基金或臨床委員組織工作？"
 
 #: main/forms.py:1199
 msgid "an NHS Trust or Clinical Commissioning Group"
-msgstr "國民健康基金或臨床委員會"
+msgstr "國民健康基金或臨床委員組織"
 
 #: main/forms.py:1204
 msgid "What type of organisation is this?"
@@ -516,7 +516,7 @@ msgstr "這個組織已簽署同意條款了嗎？"
 
 #: main/forms.py:1225
 msgid "No (but we have some service-specific agreements in place)"
-msgstr "沒有（但我們有些專為各種服務設計的條款)"
+msgstr "沒有（但我們有專為特定服務設計的同意書）"
 
 #: main/forms.py:1230
 msgid "Users will be told their organisation has already signed the agreement"
@@ -544,7 +544,7 @@ msgstr "誰負責營運這項服務？"
 
 #: main/forms.py:1290
 msgid "Numbers of text message fragments per year"
-msgstr "每年的簡訊片段數量"
+msgstr "每年的簡訊封數"
 
 #: main/forms.py:1296
 msgid "Number of messages the service is allowed to send each day"
@@ -585,17 +585,17 @@ msgstr "確認"
 #: main/forms.py:1349
 #, python-format
 msgid "I understand this will alert anyone who has switched on the %s channel"
-msgstr "我明白這將通知所有轉換到 %s 頻道的使用者"
+msgstr "我明白這封警報將通知所有開啟 %s 頻道的使用者"
 
 #: main/forms.py:1351
 #, python-format
 msgid "I understand this will alert %s of people"
-msgstr "我明白這會通知 %s 名用戶"
+msgstr "我明白傳送這封警報，將會通知當地的 %s 位人員"
 
 #: main/forms.py:1355
 #, python-format
 msgid "I understand this will alert %s of people, even if they’ve opted out"
-msgstr "我明白這會通知 %s 名用戶，即使他們已經退出"
+msgstr "我明白這封警報將會通知當地的 %s 位人員，即使他們已經設定拒收仍會收到警報"
 
 #: main/forms.py:1362
 msgid "millions"
@@ -603,23 +603,23 @@ msgstr "數百萬"
 
 #: main/forms.py:1363
 msgid "hundreds of thousands"
-msgstr "數十萬計"
+msgstr "數十萬"
 
 #: main/forms.py:1364
 msgid "tens of thousands"
-msgstr "數以萬計"
+msgstr "數萬"
 
 #: main/forms.py:1365
 msgid "thousands"
-msgstr "數以千計"
+msgstr "數千"
 
 #: main/forms.py:1366
 msgid "hundreds"
-msgstr "數以百計"
+msgstr "數百"
 
 #: main/forms.py:1367
 msgid "an unknown number"
-msgstr "未知數字"
+msgstr "數量未知"
 
 #: main/forms.py:1374 main/views/returned_letters.py:49
 #: templates/views/returned-letters.html:29
@@ -717,7 +717,7 @@ msgstr "您的名字"
 
 #: main/forms.py:1534
 msgid "The email address is already in use"
-msgstr "此信箱地址已有人使用"
+msgstr "此電子郵件地址已有人使用"
 
 #: main/forms.py:1554
 msgid "When should Notify send these messages?"
@@ -737,7 +737,7 @@ msgstr "您需要為金鑰命名"
 
 #: main/forms.py:1575
 msgid "A key with this name already exists"
-msgstr "這組名稱已被使用"
+msgstr "這組金鑰名稱已被使用"
 
 #: main/forms.py:1580
 msgid "How can we help you?"
@@ -795,7 +795,7 @@ msgstr "您預計明年將會寄出多少封簡訊？"
 
 #: main/forms.py:1627
 msgid "How many letters do you expect to send in the next year?"
-msgstr "您預計明年將會寄出多少封信件？"
+msgstr "您預計明年將會寄出多少封紙本信件？"
 
 #: main/forms.py:1632
 msgid "Can we contact you when we’re doing user research?"
@@ -904,7 +904,7 @@ msgstr "顏色"
 
 #: main/forms.py:1833
 msgid "Must be a valid color hex code (starting with #)"
-msgstr "必須為有效顏色代碼（由#符號開頭）"
+msgstr "必須為有效顏色代碼（由 # 符號開頭）"
 
 #: main/forms.py:1837
 msgid "Upload a PNG logo"
@@ -1102,7 +1102,7 @@ msgstr "Bearer token"
 
 #: main/forms.py:2065
 msgid "Must be at least 10 characters"
-msgstr "必須輸入至少10個字元"
+msgstr "必須輸入至少 10 個字元"
 
 #: main/forms.py:2111
 msgid "Select your sender"
@@ -1173,7 +1173,7 @@ msgstr "沒有橫幅"
 msgid ""
 "An example of an email with the heading \"Your logo\" in blue text on a "
 "white background."
-msgstr "範例：一封電子郵件中的標題有公司標誌，用藍色的字寫在白色的背景上。"
+msgstr "範例：一封電子郵件當中的標題用藍色的文字寫著「您的標誌」在白色的背景。"
 
 #: main/forms.py:2227
 msgid "Coloured banner"
@@ -1181,19 +1181,19 @@ msgstr "彩色的橫幅"
 
 #: main/forms.py:2230
 msgid "An example of an email with a logo on a blue banner."
-msgstr "電子郵件範例中有藍色的橫幅圖片加上標誌。"
+msgstr "範例：電子郵件中的藍色橫幅當中有個標誌。"
 
 #: main/forms.py:2237
 msgid "Add a banner to your logo"
-msgstr "將橫幅旗幟加入您的標誌"
+msgstr "將橫幅加入您的標誌"
 
 #: main/forms.py:2249
 msgid "What notification type?"
-msgstr "什麼通知類別？"
+msgstr "這是哪種類型的通知？"
 
 #: main/forms.py:2252 templates/views/providers/providers.html:13
 msgid "SMS"
-msgstr "簡訊服務"
+msgstr "簡訊"
 
 #: main/forms.py:2255
 msgid "notification type"
@@ -1309,11 +1309,11 @@ msgstr "選擇一個行動網路"
 
 #: main/forms.py:2500
 msgid "Change cell broadcast service type"
-msgstr "變更手機廣播服務類型"
+msgstr "變更細胞廣播服務類型"
 
 #: main/forms.py:2501
 msgid "which type of account this cell broadcast service is"
-msgstr "手機廣播服務是什麼類型"
+msgstr "這則細胞廣播服務的帳戶類型"
 
 #: main/forms.py:2530
 msgid "Which version of the agreement do you want to accept?"
@@ -1321,7 +1321,7 @@ msgstr "您想要接受哪一版協議書？"
 
 #: main/forms.py:2533
 msgid "Who are you accepting the agreement for?"
-msgstr "您是幫誰接受協議？"
+msgstr "您代表誰接受協議？"
 
 #: main/forms.py:2536
 msgid "me"
@@ -1377,11 +1377,11 @@ msgstr "此密碼為常用密碼。"
 
 #: main/validators.py:30
 msgid "Not a csv file"
-msgstr "此文件不是 CSV 格式"
+msgstr "這不是 CSV 檔案"
 
 #: main/validators.py:35
 msgid "{} is not a spreadsheet that Notify can read"
-msgstr "{} 並非是Notify能夠讀取的試算表"
+msgstr "{} 不是 Notify 能夠讀取的試算表"
 
 #: main/validators.py:46
 msgid ""
@@ -1419,7 +1419,7 @@ msgstr "此 SVG 檔案含有尚未轉換為路徑的文字，可能無法以最�
 msgid ""
 "You cannot use {} in {}. {} will not show up properly on everyone’s "
 "phones."
-msgstr "{}在{}中將無法使用。{}將無法在大家的電話正常顯示 。"
+msgstr "{} 在 {} 中將無法使用。{} 將無法正確在大家的電話顯示。"
 
 #: main/validators.py:123
 msgid "It"
@@ -1463,7 +1463,7 @@ msgstr "簡訊範本範例"
 msgid ""
 "Hey ((name)), I’m trying out Notify. Today is ((day of week)) and my "
 "favourite colour is ((colour))."
-msgstr "嗨((姓名))，我正在測試 Notify。今天是((星期幾))、我最喜歡的顏色是 ((顏色)) 。"
+msgstr "嗨((姓名))，我正在測試 Notify。今天是((星期幾))、我最喜歡的顏色是((顏色)) 。"
 
 #: main/views/add_service.py:91 templates/views/add-service-local.html:7
 #: templates/views/add-service-local.html:15
@@ -1507,23 +1507,23 @@ msgstr "撤銷這個 API 金鑰"
 
 #: main/views/broadcast.py:66 templates/main_nav.html:9
 msgid "Past alerts"
-msgstr "過往的通知"
+msgstr "過去發布過的警報"
 
 #: main/views/broadcast.py:67
 msgid "You do not have any past alerts"
-msgstr "您沒有任何過往的通知"
+msgstr "您沒有任何過去發布過的警報"
 
 #: main/views/broadcast.py:81 templates/main_nav.html:10
 msgid "Rejected alerts"
-msgstr "已拒絕的通知"
+msgstr "被拒絕的警報"
 
 #: main/views/broadcast.py:82
 msgid "You do not have any rejected alerts"
-msgstr "您沒有任何已拒絕的通知"
+msgstr "您沒有任何被拒絕的警報"
 
 #: main/views/broadcast.py:100
 msgid "You do not have any current alerts"
-msgstr "您沒有任何當下的通知"
+msgstr "您沒有任何目前發布的警報"
 
 #: main/views/broadcast.py:235
 #, python-format
@@ -1628,7 +1628,7 @@ msgstr "我們仍在處理這些信件，請稍後再試一次。"
 
 #: main/views/jobs.py:142
 msgid "Cancelled {number_of_letters} letters from {original_file_name}"
-msgstr "已從{original_file_name}取消{number_of_letters}封信件"
+msgstr "已從{original_file_name}取消 {number_of_letters} 封信件"
 
 #: main/views/jobs.py:149
 msgid "Are you sure you want to cancel sending these letters?"
@@ -1649,12 +1649,12 @@ msgstr "參考編號"
 #: main/views/jobs.py:213 main/views/platform_admin.py:491
 #: main/views/uploads.py:97
 msgid "Invalid page argument ({})."
-msgstr "無效的頁數參數 ({}) 。"
+msgstr "無效的頁面參數（{}）。"
 
 #: main/views/jobs.py:340
 #, python-format
 msgid "total<span class=\"govuk-visually-hidden\">%s</span>"
-msgstr "共<span class=\"govuk-visually-hidden\">%s</span>"
+msgstr "共 <span class=\"govuk-visually-hidden\">%s</span>"
 
 #: main/views/jobs.py:348
 #, python-format
@@ -1673,7 +1673,7 @@ msgstr "<span class=\"govuk-visually-hidden\">%s</span>發生錯誤"
 
 #: main/views/letter_branding.py:97
 msgid "Error saving uploaded file - try uploading again"
-msgstr "儲存上傳文件時出錯 - 請嘗試重新上傳"
+msgstr "儲存上傳檔案時出錯 - 請嘗試重新上傳"
 
 #: main/views/manage_users.py:95
 msgid "Invite sent to {}"
@@ -1797,7 +1797,7 @@ msgstr "已加入一個信件品牌選項"
 #: main/views/organisations.py:682
 #, python-format
 msgid "%s letter branding options added"
-msgstr "已加入 %s 信件品牌選項"
+msgstr "已加入 %s 個信件品牌選項"
 
 #: main/views/organisations.py:707
 msgid "Domain already exists"
@@ -2015,7 +2015,7 @@ msgstr "簡訊總數"
 
 #: main/views/platform_admin.py:404 main/views/platform_admin.py:452
 msgid "sms fragment totals"
-msgstr "簡訊總片段數"
+msgstr "總簡訊封數"
 
 #: main/views/platform_admin.py:430
 msgid "attachment; filename=\"Daily volumes report from {} to {}.csv\""
@@ -2908,7 +2908,7 @@ msgstr "是，{}"
 #: templates/main_nav.html:8 templates/views/broadcast/dashboard.html:7
 #: templates/views/broadcast/dashboard.html:12
 msgid "Current alerts"
-msgstr "目前的通知"
+msgstr "目前的警報"
 
 #: templates/main_nav.html:12 templates/views/dashboard/dashboard.html:8
 #: templates/views/dashboard/dashboard.html:15
@@ -6114,7 +6114,8 @@ msgstr "符合英國國家網路安全中心（NCSC）的《雲端服務安全�
 msgid ""
 "protective monitoring to record activity, and raise alerts about any "
 "suspicious activity"
-msgstr "「保護性監控」指的是會記錄下系統中的操作行為，並且在發現任何可疑行為時主動發出警示"
+msgstr "「保護性監控」指的是會記錄下系統中的操作行為，並且在發現任何可疑行為時主動發"
+"出警示"
 
 #: templates/views/security.html:44
 msgid ""
@@ -6253,7 +6254,8 @@ msgid ""
 "Notify has been assessed and approved by the Cabinet Office Senior "
 "Information Risk Officer (SIRO). The SIRO checks this approval once a "
 "year."
-msgstr "英國內閣辦公室資深資訊風險負責人（SIRO）已經評估並審核同意過 Notify 系統。SIRO 每年將重新進行審核。"
+msgstr "英國內閣辦公室資深資訊風險負責人（SIRO）已經評估並核准 Notify 系統。SIRO "
+"每年將重新進行審核。"
 
 #: templates/views/security.html:82
 msgid ""
@@ -6740,11 +6742,11 @@ msgstr "您的 {} 設定"
 
 #: templates/views/service-settings.html:436
 msgid "Emergency alerts"
-msgstr "緊急警示"
+msgstr "緊急警報"
 
 #: templates/views/service-settings.html:447
 msgid "your settings for emergency alerts"
-msgstr "您的緊急通知設定"
+msgstr "您的緊急警報設定"
 
 #: templates/views/service-settings.html:462
 msgid "Delete this service"
@@ -7723,14 +7725,14 @@ msgstr "取回API金鑰"
 #: templates/views/broadcast/write-new-broadcast.html:9
 #: templates/views/broadcast/write-new-broadcast.html:19
 msgid "New alert"
-msgstr "新警示"
+msgstr "新警報"
 
 #: templates/views/broadcast/libraries.html:6
 #: templates/views/broadcast/libraries.html:15
 #: templates/views/broadcast/preview-areas.html:9
 #: templates/views/broadcast/preview-areas.html:26
 msgid "Choose where to send this alert"
-msgstr "選擇要將警示傳送到哪裡"
+msgstr "選擇要將警報傳送到哪裡"
 
 #: templates/views/broadcast/preview-areas.html:36
 #, python-format
@@ -7747,7 +7749,7 @@ msgstr "加入廣播區域"
 
 #: templates/views/broadcast/preview-areas.html:68
 msgid "Preview this alert"
-msgstr "預覽此警示"
+msgstr "預覽此警報"
 
 #: templates/views/broadcast/preview-message.html:10
 msgid "Preview message"
@@ -7764,47 +7766,47 @@ msgstr "%%s 等待審核中"
 
 #: templates/views/broadcast/view-message.html:55
 msgid "You need another member of your team to approve your alert."
-msgstr "您需要團隊中的另一位成員來審核您發出的警示。"
+msgstr "您需要團隊中的另一位成員來審核您發出的警報。"
 
 #: templates/views/broadcast/view-message.html:59
 #: templates/views/broadcast/view-message.html:97
 msgid "Discard this alert"
-msgstr "捨棄此警示"
+msgstr "捨棄此警報"
 
 #: templates/views/broadcast/view-message.html:63
 msgid ""
 "When you use a live account you’ll need another member of\n"
 "            your team to approve your alert."
-msgstr "當您使用正式帳號時，需要團隊中的另一名成員來同意您發出警示。"
+msgstr "當您使用正式帳號時，需要團隊中的另一名成員來核准您發出警報。"
 
 #: templates/views/broadcast/view-message.html:69
 msgid ""
 "Because you’re in training mode you can approve\n"
 "              your own alerts, to see how it works."
-msgstr "由於您正處於測試模式，可以核准自己的警示以了解運作原理。"
+msgstr "由於您正處於測試模式，可以核准自己發出的警報以了解運作原理。"
 
 #: templates/views/broadcast/view-message.html:73
 msgid "No real alerts will be broadcast to anyone’s phone."
-msgstr "沒有可實際廣播到任何人手機的警示。"
+msgstr "不會實際將警報廣播到任何人的手機。"
 
 #: templates/views/broadcast/view-message.html:78
 #: templates/views/broadcast/view-message.html:124
 #: templates/views/broadcast/view-message.html:140
 msgid "Reject this alert"
-msgstr "退回此警示"
+msgstr "拒絕發出這封警報"
 
 #: templates/views/broadcast/view-message.html:85
 msgid "Approve your own alert"
-msgstr "批准您自己的警示"
+msgstr "核准您自己的警報"
 
 #: templates/views/broadcast/view-message.html:90
 msgid "You need another member of your team to approve this alert."
-msgstr "您需要團隊中的另一位成員來審核此警示。"
+msgstr "您需要團隊中的另一位成員來審核這封警報。"
 
 #: templates/views/broadcast/view-message.html:93
 #: templates/views/broadcast/view-message.html:135
 msgid "This service is in training mode. No real alerts will be sent."
-msgstr "此服務仍處於測試模式，不會實際發出警示。"
+msgstr "此服務仍處於測試模式，不會實際發出警報。"
 
 #: templates/views/broadcast/view-message.html:105
 #, python-format
@@ -7818,19 +7820,19 @@ msgstr "呼叫 API會想要廣播 %%s"
 
 #: templates/views/broadcast/view-message.html:118
 msgid "No phones will get this alert."
-msgstr "無電話收到此警示。"
+msgstr "沒有電話會收到這則警報。"
 
 #: templates/views/broadcast/view-message.html:131
 msgid "Another member of your team needs to approve this alert."
-msgstr "其他團隊成員需要審核這項警告訊息。"
+msgstr "需要由團隊中的其他成員審核這封警報。"
 
 #: templates/views/broadcast/view-message.html:145
 msgid "This alert is waiting for approval"
-msgstr "此警示正等待審核中"
+msgstr "這封警報正等待審核中"
 
 #: templates/views/broadcast/view-message.html:147
 msgid "You don’t have permission to approve alerts."
-msgstr "您沒有權限同意發送警示。"
+msgstr "您沒有權限核准發送警報。"
 
 #: templates/views/broadcast/view-message.html:158
 msgid "Stop sending"
@@ -7862,7 +7864,7 @@ msgstr "使用 API 呼叫建立"
 #: templates/views/broadcast/view-message.html:202
 #, python-format
 msgid "and approved by %%s"
-msgstr "而且經過 %%s 的允許"
+msgstr "而且經過 %%s 核准"
 
 #: templates/views/broadcast/view-message.html:210
 #, python-format
@@ -7895,29 +7897,29 @@ msgstr "%%(starts_at_format_human)s 在 %%(starts_at)s"
 
 #: templates/views/broadcast/tour/1.html:6
 msgid "You’ve been invited to use GOV.UK Notify for emergency alerts."
-msgstr "您已受邀使用 GOV.UK Notify 傳送緊急警示。"
+msgstr "您已受邀使用 GOV.UK Notify 傳送緊急警報。"
 
 #: templates/views/broadcast/tour/1.html:17
 msgid "You’ve been invited to use GOV.UK&nbsp;Notify for emergency alerts."
-msgstr "您已受邀使用 GOV.UK&nbsp;Notify 傳送緊急警示。"
+msgstr "您已受邀使用 GOV.UK&nbsp;Notify 傳送緊急警報。"
 
 #: templates/views/broadcast/tour/1.html:20
 msgid ""
 "Emergency alerts let you warn the public about an\n"
 "          imminent risk to life."
-msgstr "緊急警示讓您可向大眾警告迫在眉睫的危險即將發生。"
+msgstr "緊急警報讓您可向大眾警告迫在眉睫的危險即將發生。"
 
 #: templates/views/broadcast/tour/2.html:6
 msgid ""
 "In an emergency, you can send an alert to every mobile phone in\n"
 "  the affected area at exactly the same time."
-msgstr "緊急情況下，您可以同時傳送警示到特定區域中的每一支手機中。"
+msgstr "緊急情況下，您可以同時傳送警報到特定區域中的每一支手機中。"
 
 #: templates/views/broadcast/tour/2.html:18
 msgid ""
 "In an emergency, you can send an alert to every mobile phone in\n"
 "          the affected area at exactly the same time."
-msgstr "緊急情況下，您可以同時傳送警示到特定區域中的每一支手機中。"
+msgstr "緊急情況下，您可以同時傳送警報到特定區域中的每一支手機中。"
 
 #: templates/views/broadcast/tour/3.html:6
 #: templates/views/broadcast/tour/3.html:17
@@ -7927,7 +7929,7 @@ msgstr "收到警示的手機將發出超大聲的警示音效，就算在靜音
 #: templates/views/broadcast/tour/4.html:6
 #: templates/views/broadcast/tour/4.html:17
 msgid "An alert is not a normal text message."
-msgstr "警告訊息並不是正常的簡訊。"
+msgstr "警報訊息並不是一般簡訊。"
 
 #: templates/views/broadcast/tour/4.html:20
 msgid ""
@@ -7942,7 +7944,7 @@ msgstr "您正處於測試模式。"
 
 #: templates/views/broadcast/tour/5.html:25
 msgid "There’s no risk of sending a real alert."
-msgstr "傳送真實的警示沒有風險。"
+msgstr "傳送真實的警報沒有風險。"
 
 #: templates/views/broadcast/tour/5.html:28
 msgid "Get used to the system now, so you know what to do in an&nbsp;emergency."
@@ -7955,7 +7957,7 @@ msgstr "只要您一切都準備好，就可以要求轉正式系統上線。"
 #: templates/views/broadcast/tour/6.html:6
 #: templates/views/broadcast/tour/6.html:18
 msgid "Notify has not sent your alert because you’re in training mode."
-msgstr "由於您仍處於測試模式，Notify 並未傳送警示。"
+msgstr "由於您仍處於測試模式，Notify 並未實際傳送警報。"
 
 #: templates/views/broadcast/tour/6.html:21
 msgid ""
@@ -7966,11 +7968,11 @@ msgstr "在實際發生緊急情況時，您選擇的區域當中的所有行動
 #: templates/views/broadcast/tour/live/1.html:6
 #: templates/views/broadcast/tour/live/1.html:20
 msgid "You’ve been invited to send live emergency alerts."
-msgstr "您已受邀傳送即時緊急警示。"
+msgstr "您已受邀傳送即時緊急警報。"
 
 #: templates/views/broadcast/tour/live/1.html:23
 msgid "Members of the public will receive alerts you send from this service."
-msgstr "所有大眾會收到您透過此服務傳送的警示訊息。"
+msgstr "地區中的所有大眾都會收到您透過此服務傳送的警報訊息。"
 
 #: templates/views/broadcast/tour/live/2.html:6
 #: templates/views/broadcast/tour/live/2.html:20
@@ -10068,12 +10070,12 @@ msgstr "已傳送的簡訊數量"
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:35
 #: templates/views/platform-admin/daily-volumes-report.html:35
 msgid "The number of text message fragments sent"
-msgstr "已傳送的簡訊位元數量"
+msgstr "已傳送的簡訊封數"
 
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:36
 #: templates/views/platform-admin/daily-volumes-report.html:34
 msgid "The number of text message fragments sent times the rate multiplier"
-msgstr "已傳送的簡訊位元乘上乘數得到的和"
+msgstr "已傳送的簡訊封數乘上費率倍數的總值"
 
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:37
 msgid "The cost to Notify’s users of text messages sent"
@@ -10132,8 +10134,8 @@ msgid ""
 "href=\"https://www.notifications.service.gov.uk/pricing#international-"
 "numbers\">sending international text messages</a>."
 msgstr ""
-"超出免費額度後所寄出的簡訊片段數量。此數量包含<a class=\"govuk-link govuk-link--no-visited-"
-"state\" href=\"https://www.notifications.service.gov.uk/pricing"
+"超出免費額度後所寄出的簡訊封數。此數量包含<a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"https://www.notifications.service.gov.uk/pricing"
 "#international-numbers\">傳送國際簡訊的成本倍數</a>。"
 
 #: templates/views/platform-admin/get-billing-report.html:34
@@ -11300,11 +11302,11 @@ msgstr "若您想要讓不同的服務轉正式上線。"
 #: templates/views/service-settings/service-confirm-broadcast-account-type.html:9
 #: templates/views/service-settings/service-confirm-broadcast-account-type.html:20
 msgid "Confirm emergency alert settings"
-msgstr "確認緊急告示設定"
+msgstr "確認緊急警報設定"
 
 #: templates/views/service-settings/service-confirm-broadcast-account-type.html:31
 msgid "No phones will receive alerts sent from this service."
-msgstr "不會有任何手機收到此服務傳送的警示。"
+msgstr "不會有任何手機收到此服務傳送的警報。"
 
 #: templates/views/service-settings/service-confirm-broadcast-account-type.html:37
 #, python-format
@@ -11313,11 +11315,11 @@ msgstr "開啟電話%%s頻道者"
 
 #: templates/views/service-settings/service-confirm-broadcast-account-type.html:40
 msgid "will receive alerts sent from this service, even if they’ve opted out."
-msgstr "就算已經向電信業者申請拒收簡訊，仍會收到此服務傳送的警示。"
+msgstr "就算已經向電信業者申請拒收簡訊，仍會收到此服務傳送的警報。"
 
 #: templates/views/service-settings/service-confirm-broadcast-account-type.html:42
 msgid "will receive alerts sent from this service."
-msgstr "將會收到此服務傳送的警示。"
+msgstr "將會收到此服務傳送的警報。"
 
 #: templates/views/service-settings/service-confirm-broadcast-account-type.html:48
 msgid "All team member permissions will be removed."
@@ -12776,11 +12778,11 @@ msgstr "管理 API 整合"
 
 #: utils/user_permissions.py:28
 msgid "Create new alerts"
-msgstr "建立新的警告"
+msgstr "建立新的警報"
 
 #: utils/user_permissions.py:29
 msgid "Approve alerts"
-msgstr "核准警告"
+msgstr "核准發出警報"
 
 #~ msgid "Select %%s"
 #~ msgstr "選擇 %%s"
