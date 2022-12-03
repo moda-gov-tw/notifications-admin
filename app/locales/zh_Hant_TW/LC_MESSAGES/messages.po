@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 07:18+0000\n"
-"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
+"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -1745,12 +1745,12 @@ msgstr "這個組織機構名稱已有人使用"
 msgid ""
 "Invalid email branding ID %(remove_branding_id)s for "
 "%(current_organisation)s"
-msgstr ""
+msgstr "無效的電子郵件品牌 ID %(remove_branding_id)s 於 %(current_organisation)s"
 
 #: main/views/organisations.py:409
 #, python-format
 msgid "Email branding ‘%(name)s’ removed."
-msgstr ""
+msgstr "電子郵件品牌 %(name)s 已移除。"
 
 #: main/views/organisations.py:455 main/views/organisations.py:504
 #: templates/flash_messages.html:9
@@ -1762,7 +1762,7 @@ msgstr "是，將此電子郵件品牌識別設定為預設"
 msgid ""
 "Email branding ID %(id)s is not present in organisation %(org_name)s's "
 "email branding pool."
-msgstr ""
+msgstr "電子郵件品牌 ID %(id)s 未出現在 %(org_name)s 的電子郵件列表中。"
 
 #: main/views/organisations.py:577
 msgid "1 email branding option added"
@@ -1771,24 +1771,24 @@ msgstr "已加入一個電子郵件品牌選項"
 #: main/views/organisations.py:579
 #, python-format
 msgid "%(selected_mails)s email branding options added"
-msgstr ""
+msgstr "%(selected_mails)s 電子郵件選項已加入"
 
 #: main/views/organisations.py:645
 #, python-format
 msgid ""
 "Invalid letter branding ID %(remove_branding_id)s for "
 "%(current_organisation)s"
-msgstr ""
+msgstr "無效的信件品牌 ID %(remove_branding_id)s 於 %(current_organisation)s"
 
 #: main/views/organisations.py:653
 #, python-format
 msgid "Are you sure you want to remove the letter brand ‘%s’?"
-msgstr ""
+msgstr "確定刪除信件品牌 ‘%s’ 嗎？"
 
 #: main/views/organisations.py:656
 #, python-format
 msgid "Letter branding ‘%s’ removed."
-msgstr ""
+msgstr "信件品牌 ‘%s’ 已移除。"
 
 #: main/views/organisations.py:680
 msgid "1 letter branding option added"
@@ -1797,7 +1797,7 @@ msgstr "已加入一個信件品牌選項"
 #: main/views/organisations.py:682
 #, python-format
 msgid "%s letter branding options added"
-msgstr ""
+msgstr "%s 信件品牌選項已加入"
 
 #: main/views/organisations.py:707
 msgid "Domain already exists"
@@ -1810,12 +1810,12 @@ msgstr "這個網域已有人使用"
 #: main/views/organisations.py:808
 #, python-format
 msgid "‘%s’ was deleted"
-msgstr ""
+msgstr "‘%s’ 已刪除"
 
 #: main/views/organisations.py:812
 #, python-format
 msgid "Are you sure you want to delete ‘%s’? There’s no way to undo this."
-msgstr ""
+msgstr "確定要刪除 ‘%s’？此操作無法復原。"
 
 #: main/views/performance.py:22
 msgid "No organisation"
@@ -1932,7 +1932,7 @@ msgstr "免費簡訊額度"
 
 #: main/views/platform_admin.py:226
 msgid "inline; filename=\"{} live services report.csv\""
-msgstr ""
+msgstr "inline; filename=\"{}上線服務報告.csv\""
 
 #: main/views/platform_admin.py:262
 msgid ""
@@ -2035,7 +2035,7 @@ msgstr "簡訊費用"
 msgid ""
 "attachment; filename=\"Daily SMS provider volumes report from %s to "
 "%s.csv\""
-msgstr ""
+msgstr "attachment; filename=\"每日簡訊使用量報告從%s至%s.csv\""
 
 #: main/views/platform_admin.py:532
 msgid "Submitted {} letter references"
