@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 10:09+0000\n"
+"PO-Revision-Date: 2022-12-03 10:25+0000\n"
 "Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
@@ -2044,7 +2044,7 @@ msgstr "已提交的 {} 信件參考編號"
 #: main/views/platform_admin.py:617
 #, python-format
 msgid "Removed %s objects across %s key formats for {%s}"
-msgstr "移除 %s 物件透過 %s 主要格式為 {%s}"
+msgstr "移除 %s 物件涵蓋 %s 主要格式為 {%s}"
 
 #: main/views/returned_letters.py:45
 msgid "Notification ID"
@@ -3484,7 +3484,7 @@ msgstr "下午 5:30 之前發送的信件將在下一個工作日（週一至週
 msgid ""
 "First class letters are delivered one day after they're dispatched. "
 "Second class letters are delivered 2 days after they're dispatched."
-msgstr "第一類信件在寄出後一天送達。第二類信件在寄出後 2 天送達。"
+msgstr "國內快捷在寄出後一天送達。國內平信在寄出後 2 天送達。"
 
 #: templates/partials/templates/guidance-postage.html:11
 msgid "Royal Mail delivers from Monday to Saturday, excluding bank holidays."
@@ -3497,7 +3497,7 @@ msgid ""
 "href=\"%%s\">postage prices</a>."
 msgstr ""
 "查看<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">郵資</a>列表。"
+">郵資</a>。"
 
 #: templates/partials/templates/guidance-send-a-document.html:4
 msgid "Send a document by email"
@@ -3507,7 +3507,7 @@ msgstr "透過電子郵件發送文件"
 msgid ""
 "Use double brackets to add a placeholder field to your template. This "
 "will contain a secure link to download the document."
-msgstr "使用雙括號將預留文字加入道您的範本。將包含一個可安全下載文件的連結。"
+msgstr "使用雙括號將預留文字加入您的範本。這將包含一個可安全下載文件的連結。"
 
 #: templates/partials/templates/guidance-send-a-document.html:10
 msgid "Download your document at: ((link_to_file))"
@@ -3549,11 +3549,11 @@ msgstr "變更顏色、對比度和字體"
 
 #: templates/views/accessibility_statement.html:30
 msgid "zoom in up to 300% without the text spilling off the screen"
-msgstr "放大三倍且文字在螢幕上沒有溢位"
+msgstr "放大300%且不要讓文字超出螢幕"
 
 #: templates/views/accessibility_statement.html:31
 msgid "navigate most of the website using just a keyboard"
-msgstr "單單使用鍵盤瀏覽大部分網站"
+msgstr "使用鍵盤瀏覽大部分網站"
 
 #: templates/views/accessibility_statement.html:32
 msgid "navigate most of the website using speech recognition software"
@@ -3567,7 +3567,7 @@ msgstr "使用螢幕閱讀器收聽網站的大部分內容（包括最新版本
 
 #: templates/views/accessibility_statement.html:37
 msgid "The text should be clear and simple to understand."
-msgstr "文句應清晰易懂。"
+msgstr "文字應清晰易懂。"
 
 #: templates/views/accessibility_statement.html:41
 msgid ""
