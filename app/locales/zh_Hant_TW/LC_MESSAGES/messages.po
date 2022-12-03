@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 10:26+0000\n"
+"PO-Revision-Date: 2022-12-03 10:31+0000\n"
 "Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
@@ -3577,11 +3577,11 @@ msgid ""
 msgstr ""
 "若您是身障者，<a class=\"govuk-link govuk-link--no-visited-state\" href="
 "\"https://mcmw.abilitynet.org.uk\">AbilityNet</a> "
-"有讓您的裝置更簡單就能使用的建議。"
+"有讓您的裝置更容易使用的建議。"
 
 #: templates/views/accessibility_statement.html:44
 msgid "How accessible this website is"
-msgstr "本網站的無障礙等級"
+msgstr "本網站的無障礙程度是"
 
 #: templates/views/accessibility_statement.html:47
 msgid "We know some parts of this website are not fully accessible:"
@@ -3615,7 +3615,7 @@ msgstr "對於某些螢幕閱讀器使用者來說，選擇發送訊息的日期
 msgid ""
 "screen reader users may find it hard to expand or collapse groups of "
 "checkboxes"
-msgstr "螢幕閱讀器使用者可能會感到很難展開或收合複選方塊"
+msgstr "螢幕閱讀器使用者可能會有困難展開或收合複選框"
 
 #: templates/views/accessibility_statement.html:56
 msgid "one page links to a PDF document that is not fully accessible"
@@ -3632,11 +3632,11 @@ msgid ""
 "view them in Microsoft Outlook."
 msgstr ""
 "我們也了解 Notify 寄出的電子郵件尚未完全無障礙化。若您使用 Microsoft Outlook "
-"中閱讀這些電子郵件，JAWS 和 NVDA 螢幕閱讀器會唸出多餘的空格。"
+"閱讀這些電子郵件，JAWS 和 NVDA 螢幕閱讀器會唸出多餘的空格。"
 
 #: templates/views/accessibility_statement.html:64
 msgid "Feedback and contact information"
-msgstr "心得回饋和聯繫方式"
+msgstr "回饋和聯繫方式"
 
 #: templates/views/accessibility_statement.html:67
 msgid ""
