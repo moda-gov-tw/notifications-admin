@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 14:07+0000\n"
+"PO-Revision-Date: 2022-12-03 16:07+0000\n"
 "Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
@@ -1904,7 +1904,7 @@ msgstr "正式環境日期"
 
 #: main/views/platform_admin.py:202
 msgid "SMS volume intent"
-msgstr "簡訊觸及聲量"
+msgstr "預期簡訊發送量"
 
 #: main/views/platform_admin.py:203
 msgid "Email volume intent"
@@ -1912,19 +1912,19 @@ msgstr "電子郵件觸及聲量"
 
 #: main/views/platform_admin.py:204
 msgid "Letter volume intent"
-msgstr "信件觸及聲量"
+msgstr "預期紙本信件發送量"
 
 #: main/views/platform_admin.py:205
 msgid "SMS sent this year"
-msgstr "今年發出的簡訊"
+msgstr "今年發出的簡訊量"
 
 #: main/views/platform_admin.py:206
 msgid "Emails sent this year"
-msgstr "今年發出的電子郵件"
+msgstr "今年發出的電子郵件量"
 
 #: main/views/platform_admin.py:207
 msgid "Letters sent this year"
-msgstr "今年發出的信件"
+msgstr "今年發出的紙本信件量"
 
 #: main/views/platform_admin.py:208
 msgid "Free sms allowance"
@@ -1942,7 +1942,7 @@ msgstr "attachment; filename=\"各服務通知狀態報表 - 從 {} 至 {}.csv\"
 
 #: main/views/platform_admin.py:298
 msgid "Date must be in a single financial year."
-msgstr "日期必須介於一個財政年度中。"
+msgstr "日期必須介於相同財政年度中。"
 
 #: main/views/platform_admin.py:328
 msgid "attachment; filename=\"Billing Report from {} to {}.csv\""
@@ -2072,7 +2072,7 @@ msgstr "試算表檔案名稱"
 
 #: main/views/returned_letters.py:53
 msgid "Spreadsheet row number"
-msgstr "工作表列數"
+msgstr "試算表列數"
 
 #: main/views/returned_letters.py:54
 msgid "Uploaded letter file name"
@@ -2080,7 +2080,7 @@ msgstr "已上傳信件檔案名稱"
 
 #: main/views/send.py:147 main/views/uploads.py:407
 msgid "Could not read {}. Try using a different file format."
-msgstr "無法讀取{}。請嘗試其他檔案格式。"
+msgstr "無法讀取 {}。請嘗試改用其他格式的檔案。"
 
 #: main/views/send.py:150
 #, python-format
@@ -2110,7 +2110,7 @@ msgstr "回覆訊息應該回傳到哪裡？"
 
 #: main/views/send.py:249
 msgid "email_address"
-msgstr "電子信件地址"
+msgstr "email_address"
 
 #: main/views/send.py:252
 msgid "Send to one recipient"
@@ -2134,11 +2134,11 @@ msgstr "客製化這封訊息"
 
 #: main/views/send.py:892
 msgid "Use my {}"
-msgstr "使用我的{}"
+msgstr "使用我的 {}"
 
 #: main/views/send.py:1026
 msgid "Service {} could not send notification: \"{}\""
-msgstr "{} 服務無法傳送通知：”{}”"
+msgstr "{} 服務無法傳送通知：「{}」"
 
 #: main/views/service_settings.py:90
 msgid "Receive inbound SMS"
@@ -2210,7 +2210,7 @@ msgstr "您確定要刪除此簡訊發送者？"
 #: main/views/service_settings.py:1011
 #, python-format
 msgid "The email branding has been set to %s"
-msgstr "電子郵件品牌已經傳送到 %s"
+msgstr "已將電子郵件品牌設定為 %s"
 
 #: main/views/service_settings.py:1018
 #, python-format
@@ -2482,7 +2482,7 @@ msgstr "您超過 %s 字數"
 #: main/views/templates.py:680
 #, python-format
 msgid "Will be charged as %s (not including personalisation)"
-msgstr "將會以 %s 身分收費(不包含個人化服務)"
+msgstr "將會以 %s 身分收費（不包含客製化內容）"
 
 #: main/views/templates.py:683
 #, python-format
@@ -2593,7 +2593,7 @@ msgstr "您確定要刪除這把安全金鑰嗎？"
 
 #: main/views/user_profile.py:289
 msgid "Cannot delete last remaining webauthn credential for user"
-msgstr "無法刪除使用者的最後一把 webauthn 登入認證資訊"
+msgstr "無法刪除使用者的最後一把 WebAuthn 登入認證資訊"
 
 #: main/views/user_profile.py:291
 msgid "You cannot delete your last security key."
@@ -2657,7 +2657,7 @@ msgstr "已更新此服務的電子郵件品牌識別"
 
 #: models/event.py:75
 msgid "Updated the callback for received text messages"
-msgstr "已更新收到短信的召回功能"
+msgstr "已更新收到簡訊時的 callback 設定"
 
 #: models/event.py:79
 msgid "Removed the logo from this service’s letters"
@@ -2673,7 +2673,7 @@ msgstr "已更新服務信件預設的聯繫欄"
 
 #: models/event.py:86
 msgid "{} this service’s daily message limit from {} to {}"
-msgstr "{}這項服務每天的訊息量限制是 {} 到 {}"
+msgstr "{} 這項服務每天的訊息量限制是 {} 到 {}"
 
 #: models/event.py:87
 msgid "Reduced"
@@ -2717,7 +2717,7 @@ msgstr "已解除此服務的研究模式"
 
 #: models/event.py:121
 msgid "Updated the callback for delivery receipts"
-msgstr "已更新了送件回條的召回功能"
+msgstr "已更新郵件回執的 callback 設定"
 
 #: models/event.py:124
 msgid "Requested for this service to go live"
@@ -2729,7 +2729,7 @@ msgstr "已撤銷「 {} 」API 金鑰"
 
 #: models/event.py:135
 msgid "Created an API key called ‘{}’"
-msgstr "已建立一把名為「 {} 」的 API 金鑰"
+msgstr "已建立一把名為「{}」的 API 金鑰"
 
 #: models/job.py:153 models/job.py:164
 msgid "created"
@@ -2770,7 +2770,7 @@ msgstr "其他"
 #: models/service.py:132
 #, python-format
 msgid "%%s is not a service permission"
-msgstr "%%s 非服務授權"
+msgstr "%%s 非服務權限"
 
 #: models/spreadsheet.py:19
 msgid "Spreadsheet must be created from either rows or CSV data"
@@ -2802,7 +2802,7 @@ msgstr "{} 不是有效權限"
 
 #: models/webauthn_credential.py:47
 msgid "Encryption algorithm not supported"
-msgstr "不支援加密運算"
+msgstr "不支援的加密演算法"
 
 #: models/webauthn_credential.py:51
 msgid "Unnamed key"
@@ -2977,7 +2977,7 @@ msgstr "組織"
 #: templates/views/organisations/add-organisation.html:14
 #: templates/views/service-settings/service-already-live.html:25
 msgid "Switch service"
-msgstr "轉換服務"
+msgstr "切換服務"
 
 #: templates/service_navigation.html:5
 msgid "Suspended"
@@ -2998,7 +2998,7 @@ msgstr "無錯誤"
 
 #: templates/components/cookie-banner.html:5
 msgid "Can we store analytics cookies on your device?"
-msgstr "我們可以在您的設備上存放分析的 cookie 嗎？"
+msgstr "我們可以在您的裝置儲存分析用 cookie 嗎？"
 
 #: templates/components/cookie-banner.html:6
 msgid "Analytics cookies help us understand how our website is being used."
@@ -3009,7 +3009,7 @@ msgid ""
 "Yes<span class=\"govuk-visually-hidden\">, Notify can store analytics "
 "cookies on your device</span>"
 msgstr ""
-"是<span class=\"govuk-visually-hidden\">，Notify 可以在您的設備上儲存分析用 "
+"好<span class=\"govuk-visually-hidden\">，Notify 可以在您的裝置儲存分析用 "
 "cookie</span>"
 
 #: templates/components/cookie-banner.html:12
@@ -3017,8 +3017,8 @@ msgid ""
 "No<span class=\"govuk-visually-hidden\">, Notify cannot store analytics "
 "cookies on your device</span>"
 msgstr ""
-"否<span class=\"govuk-visually-hidden\">，Notify "
-"不可以在您的設備上儲存分析用 cookie</span>"
+"不要<span class=\"govuk-visually-hidden\">，Notify "
+"不可以在您的裝置儲存分析用 cookie</span>"
 
 #: templates/components/cookie-banner.html:14
 msgid "How Notify uses cookies"
@@ -3113,11 +3113,11 @@ msgstr "請嘗試向自己發送此範例"
 
 #: templates/partials/tour.html:11
 msgid "Every message is sent from a template"
-msgstr "每一則訊息都是從模版發送"
+msgstr "每一則訊息都是從範本發送"
 
 #: templates/partials/tour.html:21
 msgid "The template pulls in the data you provide"
-msgstr "此範本將導入您提供的數據"
+msgstr "此範本將匯入您提供的資料"
 
 #: templates/partials/tour.html:31
 msgid "Notify delivers the message"
@@ -3136,7 +3136,7 @@ msgstr "您的信件太長"
 msgid ""
 "Letters must be %%s pages or less (%%s double-sided sheets of "
 "paper).<br>Your letter is %%s pages long."
-msgstr "信件必須少於 %%s 頁（%%s 頁雙面列印）。<br> 您的信件長度有 %%s 頁。"
+msgstr "信件內容必須少於 %%s 頁（雙面列印 %%s 張紙）。<br> 您的信件長度有 %%s 頁。"
 
 #: templates/partials/check/message-too-long.html:2
 msgid "Message too long"
@@ -7660,7 +7660,7 @@ msgstr "建立 API 金鑰"
 #: templates/views/api/callbacks/delivery-status-callback.html:8
 #: templates/views/api/callbacks/delivery-status-callback.html:20
 msgid "Callbacks for delivery receipts"
-msgstr "寄件回執的 Callback"
+msgstr "郵件回執的 Callback"
 
 #: templates/views/api/callbacks/delivery-status-callback.html:23
 #, python-format
