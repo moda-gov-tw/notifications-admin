@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 08:40+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -1313,11 +1313,11 @@ msgstr "變更手機廣播服務類型"
 
 #: main/forms.py:2501
 msgid "which type of account this cell broadcast service is"
-msgstr "這個手機廣播服務是哪一種類型"
+msgstr "手機廣播服務是什麼類型"
 
 #: main/forms.py:2530
 msgid "Which version of the agreement do you want to accept?"
-msgstr "您想要接受哪一版本的協議書？"
+msgstr "您想要接受哪一版協議書？"
 
 #: main/forms.py:2533
 msgid "Who are you accepting the agreement for?"
