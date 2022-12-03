@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 10:09+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -3301,15 +3301,14 @@ msgstr "狀態"
 #: templates/partials/jobs/notifications.html:68
 #: templates/partials/notifications/notifications.html:26
 msgid "Only showing the first 50 rows"
-msgstr "僅顯示前 50 行"
+msgstr "僅顯示前 50 列"
 
 #: templates/partials/jobs/status.html:25
 #, python-format
 msgid ""
 "Notify cannot send these messages because you have reached your daily "
 "limit. You can only send %%s messages per day."
-msgstr "Notify 無法發送這些訊息，因為您已達到您的每日限額。您每天只能發送 %%s "
-"則訊息。"
+msgstr "Notify 無法發送這些訊息，因為已達到每日上限。您每日只能發送 %%s 則訊息。"
 
 #: templates/partials/jobs/status.html:28
 msgid ""
@@ -3319,7 +3318,7 @@ msgid ""
 msgstr ""
 "於明天再次上傳這份試算表，或<a class=\"govuk-link\" href=\"https://www."
 "notifications.service.gov.uk/support\">聯繫 GOV.UK Notify "
-"團隊</a>以提高限制。"
+"團隊</a>以提高上限。"
 
 #: templates/partials/notifications/status.html:15
 msgid "(test)"
@@ -3356,7 +3355,7 @@ msgstr "# 這是標題"
 #: templates/partials/templates/guidance-formatting-letters.html:12
 #: templates/partials/templates/guidance-formatting.html:11
 msgid "To make bullet points, use asterisks:"
-msgstr "如要建立列點，請使用＊："
+msgstr "如要建立項目符號，請使用星號："
 
 #: templates/partials/templates/guidance-formatting-letters.html:15
 msgid ""
@@ -3370,7 +3369,7 @@ msgstr ""
 
 #: templates/partials/templates/guidance-formatting-letters.html:21
 msgid "To insert a page break, use three asterisks:"
-msgstr "如要插入分頁段落，請使用三個＊："
+msgstr "若要插入分頁，請使用三個星號："
 
 #: templates/partials/templates/guidance-formatting-letters.html:24
 msgid ""
@@ -3406,11 +3405,11 @@ msgstr "如要加入縮排文字，請使用＾符號："
 
 #: templates/partials/templates/guidance-formatting.html:25
 msgid "^ You must tell us if your circumstances change"
-msgstr "^ 當您的使用情境改變，請務必通知我們"
+msgstr "^ 當您的使用情境改變時，請務必通知我們"
 
 #: templates/partials/templates/guidance-formatting.html:28
 msgid "To add a horizontal line, use three dashes:"
-msgstr "如要插入水平線，請使用三個 - ："
+msgstr "若要插入水平線，請使用三個連接號："
 
 #: templates/partials/templates/guidance-formatting.html:31
 msgid ""
@@ -3429,7 +3428,7 @@ msgstr "連結和網址"
 
 #: templates/partials/templates/guidance-links.html:5
 msgid "Always use full URLs, starting with https://"
-msgstr "每次都使用完整的網址，並以https://開頭"
+msgstr "務必使用完整的網址，並以 https:// 開頭"
 
 #: templates/partials/templates/guidance-links.html:8
 msgid "Apply now at https://www.gov.uk/example"
@@ -3437,7 +3436,7 @@ msgstr "於 https://www.gov.uk/example 立刻申請"
 
 #: templates/partials/templates/guidance-optional-content.html:4
 msgid "Optional content"
-msgstr "選填的內容"
+msgstr "選填內容"
 
 #: templates/partials/templates/guidance-optional-content.html:7
 msgid "Use double brackets and ‘??’ to define optional content."
@@ -3447,7 +3446,9 @@ msgstr "使用雙括號和「??」來插入選擇性內容。"
 msgid ""
 "For example if you only want to show something to people who are under\n"
 "  18:"
-msgstr "例如，如果您只想向未滿 18 歲的人顯示特定內容："
+msgstr ""
+"例如，如果您只想向未滿r\n"
+"   18 歲的人顯示特定內容："
 
 #: templates/partials/templates/guidance-optional-content.html:19
 msgid ""
@@ -3455,7 +3456,7 @@ msgid ""
 "  show or hide this content."
 msgstr ""
 "請為您發送此消息的每個人，指定「是」或「否」\n"
-"顯示或隱藏此內容。"
+"  來顯示或隱藏此內容。"
 
 #: templates/partials/templates/guidance-personalisation.html:4
 msgid "Personalisation"
@@ -3467,7 +3468,7 @@ msgstr "使用雙括號來客製化您的訊息："
 
 #: templates/partials/templates/guidance-personalisation.html:10
 msgid "Hello ((first name)), your reference is ((ref number))"
-msgstr "您好 ((first name))，您的參考號是 ((ref number))"
+msgstr "您好 ((first name))，您的參考編號是 ((ref number))"
 
 #: templates/partials/templates/guidance-postage.html:2
 msgid "Delivery times"
