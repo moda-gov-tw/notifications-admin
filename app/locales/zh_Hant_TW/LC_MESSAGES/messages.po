@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 08:40+0000\n"
+"PO-Revision-Date: 2022-12-03 09:00+0000\n"
 "Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
@@ -2745,15 +2745,15 @@ msgstr "地方政府"
 
 #: models/organisation.py:38
 msgid "NHS – central government agency or public body"
-msgstr "NHS—中央政府機構或公共機構"
+msgstr "NHS—中央政府機關或公共機構"
 
 #: models/organisation.py:39
 msgid "NHS Trust or Clinical Commissioning Group"
-msgstr "NHS 信託或醫療臨床委託小組"
+msgstr "NHS 信託或醫療委員會小組"
 
 #: models/organisation.py:40
 msgid "GP practice"
-msgstr "全科醫生執業"
+msgstr "全科家庭醫生執業"
 
 #: models/organisation.py:41
 msgid "Emergency service"
@@ -2774,7 +2774,7 @@ msgstr "%%s 非服務授權"
 
 #: models/spreadsheet.py:19
 msgid "Spreadsheet must be created from either rows or CSV data"
-msgstr "必須逐行加入資料，或透過 CSV 資料來建立試算表"
+msgstr "試算表要透過 CSV 資料或逐列加入來建立"
 
 #: models/template_list.py:333
 msgid "Empty"
@@ -2798,7 +2798,7 @@ msgstr "{} 資料夾"
 
 #: models/user.py:215
 msgid "{} are not valid permissions"
-msgstr "{} 並未取得有效授權"
+msgstr "{} 不是有效權限"
 
 #: models/webauthn_credential.py:47
 msgid "Encryption algorithm not supported"
@@ -2823,7 +2823,7 @@ msgstr "支援"
 #: templates/admin_template.html:120 templates/views/documentation.html:7
 #: templates/views/documentation.html:12
 msgid "Documentation"
-msgstr "文件處理"
+msgstr "文件"
 
 #: templates/admin_template.html:70 templates/views/choose-account.html:61
 #: templates/views/platform-admin/_base_template.html:8
@@ -2868,8 +2868,8 @@ msgid ""
 "mode\">research mode</span>"
 msgstr ""
 "由<a href=\"https://www.gov.uk/government/organisations/government-digital-"
-"service\" class=\"govuk-footer__link\">政府數位服務團隊</a>打造<span id"
-"=\"research-mode\" class=\"research-mode\">市場調查模式</span>"
+"service\" class=\"govuk-footer__link\">政府數位服務團隊</a>打造的<span id"
+"=\"research-mode\" class=\"research-mode\">研究模式</span>"
 
 #: templates/admin_template.html:159
 msgid ""
@@ -2882,7 +2882,7 @@ msgstr ""
 
 #: templates/admin_template.html:171
 msgid "Contact support"
-msgstr "聯繫支援"
+msgstr "聯繫客服"
 
 #: templates/admin_template.html:175
 msgid "System status"
@@ -2908,7 +2908,7 @@ msgstr "是，{}"
 #: templates/main_nav.html:8 templates/views/broadcast/dashboard.html:7
 #: templates/views/broadcast/dashboard.html:12
 msgid "Current alerts"
-msgstr "當前警報"
+msgstr "目前的通知"
 
 #: templates/main_nav.html:12 templates/views/dashboard/dashboard.html:8
 #: templates/views/dashboard/dashboard.html:15
@@ -2938,7 +2938,7 @@ msgstr "團隊成員"
 #: templates/views/organisations/organisation/index.html:13
 #: templates/views/usage.html:9 templates/views/usage.html:14
 msgid "Usage"
-msgstr "用法"
+msgstr "使用量"
 
 #: templates/main_nav.html:26 templates/org_nav.html:6
 #: templates/views/organisations/organisation/settings/index.html:5
