@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 09:14+0000\n"
-"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
+"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -2994,7 +2994,7 @@ msgstr "回到 %%s"
 
 #: templates/components/big-number.html:54
 msgid "No failures"
-msgstr ""
+msgstr "無錯誤"
 
 #: templates/components/cookie-banner.html:5
 msgid "Can we store analytics cookies on your device?"
@@ -4940,6 +4940,9 @@ msgid ""
 "href=\"%%s\">documentation\n"
 "      for the client library you are using.</a>"
 msgstr ""
+"你可以如何使用用戶端函式庫，請參考這份 <a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"%%s\">文件\n"
+"      </a>"
 
 #: templates/views/invite-user.html:8 templates/views/manage-users.html:98
 #: templates/views/organisations/organisation/users/invite-org-user.html:9
@@ -5398,6 +5401,8 @@ msgid ""
 "to access GOV.UK Notify to send notifications\n"
 "    to users of your public service."
 msgstr ""
+"處理資料的法律依據為 ‘公共事務’ - 允許您透過 GOV.UK Notify 傳送通知\n"
+"    給您的公共事務使用者。"
 
 #: templates/views/privacy.html:48
 msgid "Why we need your data"
@@ -6093,7 +6098,7 @@ msgstr "技術安全性"
 
 #: templates/views/security.html:40
 msgid "Other technical security controls on Notify include:"
-msgstr ""
+msgstr "其他在 Notify 資訊安全控制包含："
 
 #: templates/views/security.html:42
 msgid ""
@@ -6727,7 +6732,7 @@ msgstr "資料保存期限"
 
 #: templates/views/service-settings.html:429
 msgid "your settings for {}"
-msgstr ""
+msgstr "您的 {} 設定"
 
 #: templates/views/service-settings.html:436
 msgid "Emergency alerts"
