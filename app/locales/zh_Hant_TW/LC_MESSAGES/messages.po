@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 07:23+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"PO-Revision-Date: 2022-12-03 07:52+0000\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -1745,7 +1745,7 @@ msgstr "這個組織機構名稱已有人使用"
 msgid ""
 "Invalid email branding ID %(remove_branding_id)s for "
 "%(current_organisation)s"
-msgstr "%(current_organisation)s 的電子郵件品牌 ID %(remove_branding_id)s 無效"
+msgstr "%(current_organisation)s 的電子郵件品牌識別碼 %(remove_branding_id)s 無效"
 
 #: main/views/organisations.py:409
 #, python-format
@@ -1762,7 +1762,7 @@ msgstr "是，將此電子郵件品牌識別設定為預設"
 msgid ""
 "Email branding ID %(id)s is not present in organisation %(org_name)s's "
 "email branding pool."
-msgstr "電子郵件品牌 ID %(id)s 不存在於 %(org_name)s 的電子郵件品牌庫中。"
+msgstr "電子郵件品牌識別碼 %(id)s 不存在於 %(org_name)s 的電子郵件品牌庫中。"
 
 #: main/views/organisations.py:577
 msgid "1 email branding option added"
@@ -1778,7 +1778,7 @@ msgstr "已加入 %(selected_mails)s 電子郵件品牌選項"
 msgid ""
 "Invalid letter branding ID %(remove_branding_id)s for "
 "%(current_organisation)s"
-msgstr "%(current_organisation)s 的紙本信件品牌 ID %(remove_branding_id)s 無效"
+msgstr "%(current_organisation)s 的信件品牌識別碼 %(remove_branding_id)s 無效"
 
 #: main/views/organisations.py:653
 #, python-format
@@ -2466,7 +2466,7 @@ msgstr "文件夾未清空"
 
 #: main/views/templates.py:500
 msgid "Are you sure you want to delete the ‘{}’ folder?"
-msgstr "您去定要刪除 「{}」資料夾？"
+msgstr "您確定要刪除 「{}」資料夾？"
 
 #: main/views/templates.py:635 templates/views/templates/_template.html:54
 msgid "Edit"
@@ -2494,11 +2494,11 @@ msgstr ""
 
 #: main/views/templates.py:715
 msgid "This template has never been used."
-msgstr "此模板從未被使用過。"
+msgstr "此模板從未使用過。"
 
 #: main/views/templates.py:717
 msgid "This template was last used {}."
-msgstr "此模板上次於 {} 使用。"
+msgstr "此模板上次使用於 {}。"
 
 #: main/views/templates.py:726
 msgid "Are you sure you want to delete ‘{}’?"
@@ -2506,11 +2506,11 @@ msgstr "您確定要刪除「 {}」？"
 
 #: main/views/templates.py:773
 msgid "Personalised content will be hidden for messages sent with this template"
-msgstr "透過此模板發送的訊息將會隱藏客製化的內文"
+msgstr "此模板發送的訊息將會隱藏客製化內文"
 
 #: main/views/tour.py:95
 msgid "Example text message"
-msgstr "簡訊訊息範例"
+msgstr "簡訊範例"
 
 #: main/views/two_factor.py:31
 msgid "Email resent"
@@ -2533,7 +2533,7 @@ msgstr "您的檔案包含病毒"
 
 #: main/views/uploads.py:161
 msgid "Your file is too big"
-msgstr "您的檔案太大了"
+msgstr "您的檔案太大"
 
 #: main/views/uploads.py:161
 msgid "Files must be smaller than 2MB."
@@ -2541,11 +2541,11 @@ msgstr "檔案必須小於 2MB。"
 
 #: main/views/uploads.py:167
 msgid "Invalid PDF uploaded for service_id: {}"
-msgstr "服務代碼 {} 上傳了無效的 PDF 檔案"
+msgstr "上傳了無效的 PDF 檔案給服務代碼: {}"
 
 #: main/views/uploads.py:169 utils/letters.py:107
 msgid "There’s a problem with your file"
-msgstr "您的檔案似乎有問題"
+msgstr "您的檔案有問題"
 
 #: main/views/uploads.py:248
 msgid "Wrong file type"
@@ -2555,9 +2555,8 @@ msgstr "檔案格式錯誤"
 msgid ""
 "{} contains numbers or dates that Notify cannot understand. Try "
 "formatting all columns as ‘text’ or export your file as CSV."
-msgstr "{} 含有某些 Notify "
-"無法處理的數字或日期。請嘗試將所有的欄位轉換成「文字」格式，或以 CSV "
-"檔格式匯出。"
+msgstr "{} 含有 Notify 無法處理的數字或日期。請嘗試將所有的欄位轉換成「文字」格式，"
+"或以 CSV 檔格式匯出。"
 
 #: main/views/uploads.py:561
 #, python-format
@@ -2570,7 +2569,7 @@ msgstr "姓名"
 
 #: main/views/user_profile.py:127
 msgid "Are you sure you want to delete your mobile number from Notify?"
-msgstr "您確定要從 Notify 刪除您的手機號碼嗎？"
+msgstr "確定要從 Notify 刪除您手機號碼嗎？"
 
 #: main/views/user_profile.py:165 templates/views/user-profile.html:82
 msgid "mobile number"
@@ -2579,7 +2578,7 @@ msgstr "手機號碼"
 #: main/views/user_profile.py:219 templates/views/user-profile.html:140
 #: templates/views/user-profile/disable-platform-admin-view.html:6
 msgid "Use platform admin view"
-msgstr "使用平台管理者檢視"
+msgstr "使用平台管理員介面"
 
 #: main/views/user_profile.py:225
 #: templates/views/user-profile/disable-platform-admin-view.html:30
@@ -2588,11 +2587,11 @@ msgstr "重新登入會清除這個設定"
 
 #: main/views/user_profile.py:275
 msgid "Are you sure you want to delete this security key?"
-msgstr "您確定要刪除這個安全金鑰嗎？"
+msgstr "您確定要刪除安全金鑰嗎？"
 
 #: main/views/user_profile.py:289
 msgid "Cannot delete last remaining webauthn credential for user"
-msgstr "無法刪除僅存的 webauthn 用戶憑證"
+msgstr "無法刪除僅存的 webauthn 用戶認證"
 
 #: main/views/user_profile.py:291
 msgid "You cannot delete your last security key."
@@ -2600,7 +2599,7 @@ msgstr "您無法刪除僅存的安全金鑰。"
 
 #: main/views/verify.py:43
 msgid "The link in the email we sent you has expired. We've sent you a new one."
-msgstr "我們發送給您的電子郵件中的連結已過期。 我們已發了一封新的電子郵件給您。"
+msgstr "我們發送給您的連結已過期。 我們已發了一封新的電子郵件給您。"
 
 #: main/views/verify.py:53
 msgid "That verification link has expired."
