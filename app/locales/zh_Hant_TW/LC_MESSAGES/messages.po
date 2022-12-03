@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 09:14+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"PO-Revision-Date: 2022-12-03 09:45+0000\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -3125,11 +3125,11 @@ msgstr "Notify 傳送訊息"
 
 #: templates/partials/tour.html:35
 msgid "Now go to your dashboard"
-msgstr "現在前往到您的儀表板"
+msgstr "請現在前往您的儀表板"
 
 #: templates/partials/check/letter-too-long.html:2
 msgid "Your letter is too long"
-msgstr "您的信件太長了"
+msgstr "您的信件太長"
 
 #: templates/partials/check/letter-too-long.html:5
 #, python-format
@@ -3147,7 +3147,7 @@ msgstr "訊息太長"
 msgid ""
 "Text messages cannot be longer than %%s characters. Your message is %%s "
 "characters."
-msgstr "簡訊訊息不可超過 %%s 字元。您的訊息有 %%s 字元。"
+msgstr "簡訊不可超過 %%s 字元。您的訊息有 %%s 字元。"
 
 #: templates/partials/check/not-allowed-to-send-to.html:2
 msgid "You cannot send to"
@@ -3161,7 +3161,7 @@ msgid ""
 "  send to yourself and members of your team"
 msgstr ""
 "在<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">試用模式</a>中只能傳送通知給您自己和您的團隊成員"
+">試用模式</a>中只能傳送通知給自己和您的團隊成員"
 
 #: templates/partials/check/sent-previously.html:2
 msgid "These messages have already been sent today"
@@ -3169,7 +3169,7 @@ msgstr "這些訊息已於今天發送"
 
 #: templates/partials/check/sent-previously.html:5
 msgid "If you need to resend them, rename the file and upload it again."
-msgstr "如果您需要重新發送文件，請將文件重新命名後再上傳。"
+msgstr "如果您需要重新發送訊息，請將檔案重新命名後上傳。"
 
 #: templates/partials/check/too-many-messages.html:3
 msgid "Too many recipients"
@@ -3177,7 +3177,7 @@ msgstr "收件人過多"
 
 #: templates/partials/check/too-many-messages.html:5
 msgid "Daily limit reached"
-msgstr "達到每日額度"
+msgstr "已達每日上限"
 
 #: templates/partials/check/too-many-messages.html:9
 #, python-format
@@ -3190,7 +3190,7 @@ msgid ""
 "in <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">trial mode</a>"
 msgstr ""
-"處於<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+"在<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
 ">測試環境</a>"
 
 #: templates/partials/check/too-many-messages.html:18
@@ -3214,8 +3214,9 @@ msgid ""
 "href=\"%%s\">trial mode</a> you\n"
 "  can only preview how your letters will look"
 msgstr ""
-"處於<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">測試環境</a>時，僅能預覽信件外觀"
+"在 <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">測試模式</a> 您\n"
+"  只能預覽信件外觀"
 
 #: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:2
 #, python-format
@@ -3273,13 +3274,13 @@ msgstr "下載此報告（<abbr title=\"逗號分隔值\">CSV</abbr>）"
 
 #: templates/partials/jobs/notifications.html:50
 msgid "No messages to show yet…"
-msgstr "還沒有訊息可顯示…"
+msgstr "沒有訊息可顯示…"
 
 #: templates/partials/jobs/notifications.html:50
 msgid ""
 "These messages have been deleted because they were sent more than {} days"
 " ago"
-msgstr "此訊息已被刪除，因為其發送於 {} 天前"
+msgstr "此訊息已被刪除，因為已於 {} 天前發送"
 
 #: templates/partials/jobs/notifications.html:52 utils/csv.py:75
 msgid "Recipient"
