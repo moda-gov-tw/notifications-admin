@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 09:14+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -3591,7 +3591,7 @@ msgstr "驗證錯誤可能會讓使用螢幕閱讀器的使用者感到困惑"
 
 #: templates/views/accessibility_statement.html:51
 msgid "the ‘copy to clipboard’ button does not work with some screen readers"
-msgstr "「複製到剪貼板簿」的按鈕不適用於某些螢幕閱讀器"
+msgstr "「複製到剪貼簿」的按鈕不適用於某些螢幕閱讀器"
 
 #: templates/views/accessibility_statement.html:52
 msgid ""
@@ -3682,8 +3682,9 @@ msgid ""
 "Equality Advisory and Support Service (EASS)."
 msgstr ""
 "平等與人權委員會 (EHRC) 負責執行公共部門機構（網站和手機軟體）（第 2 號）"
-"2018 年無障礙條例（「無障礙條例」）。如果您對我們回應您的投訴的方式不滿意，"
-"請聯繫平等諮詢和支持服務 (EASS)。"
+"2018 "
+"年無障礙條例（「無障礙條例」）的相關規定。如果您不滿意我們回應投訴的方式，"
+"請聯絡平等諮詢和支援服務 (EASS)。"
 
 #: templates/views/accessibility_statement.html:87
 msgid ""
