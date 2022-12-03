@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 10:25+0000\n"
-"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
+"PO-Revision-Date: 2022-12-03 10:26+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -1730,7 +1730,7 @@ msgstr "信件的花費 (£)"
 msgid ""
 "inline;filename=\"{} organisation usage report for year {} - generated on"
 " {}.csv\""
-msgstr "inline;filename=“{} 組織年度使用報告 {} - 產生於 {}.csv”"
+msgstr "inline;filename=“{} 組織年度使用報表 {} - 產生於 {}.csv”"
 
 #: main/views/organisations.py:302
 msgid "Organisation name already exists"
@@ -1932,13 +1932,13 @@ msgstr "免費簡訊額度"
 
 #: main/views/platform_admin.py:226
 msgid "inline; filename=\"{} live services report.csv\""
-msgstr "inline; filename=\"{} 上線服務報告.csv\""
+msgstr "inline; filename=\"{} 上線服務報表.csv\""
 
 #: main/views/platform_admin.py:262
 msgid ""
 "attachment; filename=\"{} to {} notification status per service "
 "report.csv\""
-msgstr "attachment; filename=\"單一服務通知狀態報表 - 從 {} 至 {}.csv\""
+msgstr "attachment; filename=\"各服務通知狀態報表 - 從 {} 至 {}.csv\""
 
 #: main/views/platform_admin.py:298
 msgid "Date must be in a single financial year."
