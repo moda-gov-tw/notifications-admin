@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 08:13+0000\n"
-"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
+"PO-Revision-Date: 2022-12-03 08:40+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -968,9 +968,9 @@ msgid ""
 msgstr ""
 "\n"
 "            <ul class=\"govuk-list govuk-hint govuk-!-margin-bottom-0\">\n"
-"                <li>套用這個品牌至 ‘%(service_name)s’</li>\n"
-"                <li class=\"govuk-!-margin-bottom-0\""
-">讓其他%(org_name)s團隊套用這個品牌</li>\n"
+"                <li>套用這個品牌至「%(service_name)s」</li>\n"
+"                <li class=\"govuk-!-margin-bottom-0\">讓其他 %(org_name)s "
+"團隊可自行套用此品牌</li>\n"
 "            </ul>\n"
 "        "
 
@@ -986,8 +986,8 @@ msgid ""
 msgstr ""
 "\n"
 "            <ul class=\"govuk-list govuk-hint govuk-!-margin-bottom-0\">\n"
-"                <li class=\"govuk-!-margin-bottom-0\">只套用這個品牌至 "
-"‘%s’</li>\n"
+"                <li class=\"govuk-!-margin-bottom-0\""
+">只套用這個品牌至「%s」</li>\n"
 "            </ul>\n"
 "        "
 
@@ -1499,7 +1499,7 @@ msgstr "無法用來發送紙本信件"
 msgid ""
 "Are you sure you want to revoke ‘{}’? You will not be able to use this "
 "API key to connect to GOV.UK Notify."
-msgstr "您確定要撤銷「{}」嗎？您將無法再使用此 API 金鑰連線至 GOV.UK Notify。"
+msgstr "您確定要撤銷「{}」嗎？將無法再使用此 API 金鑰連線至 GOV.UK Notify。"
 
 #: main/views/api_keys.py:122
 msgid "revoke this API key"
@@ -1692,7 +1692,7 @@ msgstr "已取消 %(mail)s 的邀請"
 msgid ""
 "The link in the email we sent you has expired. Enter your email address "
 "to resend."
-msgstr "我們發送給您的連結已過期。 輸入您的電子郵件地址以重新發送。"
+msgstr "我們發送給您的連結已過期。輸入您的電子郵件地址以重新發送。"
 
 #: main/views/new_password.py:38
 msgid "The link in the email has already been used"
@@ -1815,7 +1815,7 @@ msgstr "「%s」已刪除"
 #: main/views/organisations.py:812
 #, python-format
 msgid "Are you sure you want to delete ‘%s’? There’s no way to undo this."
-msgstr "您確定要刪除「%s」嗎？此操作無法復原。"
+msgstr "您確定要刪除「%s」嗎？這個動作將無法復原。"
 
 #: main/views/performance.py:22
 msgid "No organisation"
@@ -2126,7 +2126,7 @@ msgstr "簡訊來自誰？"
 
 #: main/views/send.py:844
 msgid "Send ‘{}’"
-msgstr "傳送‘{}’"
+msgstr "傳送「{}」"
 
 #: main/views/send.py:845
 msgid "Personalise this message"
@@ -2181,11 +2181,11 @@ msgstr "計算已上線的服務總數"
 
 #: main/views/service_settings.py:387
 msgid "‘{}’ was deleted"
-msgstr "‘{}’ 已被刪除"
+msgstr "「{}」已被刪除"
 
 #: main/views/service_settings.py:393
 msgid "Are you sure you want to delete ‘{}’? There’s no way to undo this."
-msgstr "您確定要刪除‘{}’？這個動作將無法回復。"
+msgstr "您確定要刪除「{}」嗎？這個動作將無法復原。"
 
 #: main/views/service_settings.py:600
 msgid "Are you sure you want to delete this reply-to email address?"
@@ -2193,7 +2193,7 @@ msgstr "您確定要刪除此回信地址？"
 
 #: main/views/service_settings.py:652
 msgid "Start all text messages with ‘{}:’"
-msgstr "將所有簡訊開頭設為 ‘{}:’"
+msgstr "將所有簡訊開頭設為「{}：」"
 
 #: main/views/service_settings.py:665
 msgid "Send text messages to international phone numbers"
@@ -2468,7 +2468,7 @@ msgstr "資料夾未清空"
 
 #: main/views/templates.py:500
 msgid "Are you sure you want to delete the ‘{}’ folder?"
-msgstr "您確定要刪除 「{}」資料夾？"
+msgstr "您確定要刪除「{}」資料夾嗎？"
 
 #: main/views/templates.py:635 templates/views/templates/_template.html:54
 msgid "Edit"
@@ -2563,7 +2563,7 @@ msgstr "{} 含有 Notify 無法處理的數字或日期。請嘗試將所有的�
 #: main/views/uploads.py:561
 #, python-format
 msgid "Are you sure you want to delete ‘%s’?"
-msgstr ""
+msgstr "您確定要刪除「%s」嗎？"
 
 #: main/views/user_profile.py:57 templates/views/user-profile.html:61
 msgid "name"
@@ -2620,7 +2620,7 @@ msgstr ""
 msgid ""
 "Registration complete. Next time you sign in to Notify you’ll be asked to"
 " use your security key."
-msgstr "註冊完成。 下次您登錄 Notify 時，系統會要求您使用安全金鑰。"
+msgstr "註冊完成。下次登入 Notify 時，系統就會要求您使用安全金鑰。"
 
 #: main/views/webauthn_credentials.py:133
 #, python-format
@@ -2629,7 +2629,7 @@ msgstr ""
 
 #: models/event.py:41
 msgid "Created this service and called it ‘{}’"
-msgstr "創建此服務並命名為「{}」"
+msgstr "已建立此服務並命名為「{}」"
 
 #: models/event.py:58
 msgid "Made this service live"
@@ -2649,7 +2649,7 @@ msgstr "取消暫停此服務"
 
 #: models/event.py:69
 msgid "Set the contact details for this service to ‘{}’"
-msgstr "將此服務的聯絡訊息設為「{}」"
+msgstr "將此服務的聯絡詳細資訊設為「{}」"
 
 #: models/event.py:72
 msgid "Updated this service’s email branding"
@@ -2729,11 +2729,11 @@ msgstr "已撤銷「 {} 」API 金鑰"
 
 #: models/event.py:135
 msgid "Created an API key called ‘{}’"
-msgstr "已創建一個名為「 {} 」的 API 金鑰"
+msgstr "已建立一把名為「 {} 」的 API 金鑰"
 
 #: models/job.py:153 models/job.py:164
 msgid "created"
-msgstr "已創建"
+msgstr "已建立"
 
 #: models/organisation.py:36
 msgid "Central government"
@@ -2774,7 +2774,7 @@ msgstr "%%s 非服務授權"
 
 #: models/spreadsheet.py:19
 msgid "Spreadsheet must be created from either rows or CSV data"
-msgstr "電子表格必須創建自行列或 CSV數據"
+msgstr "必須逐行加入資料，或透過 CSV 資料來建立試算表"
 
 #: models/template_list.py:333
 msgid "Empty"
@@ -3201,7 +3201,7 @@ msgstr "您今天仍可以發送 %%s 則訊息，但"
 #: templates/partials/check/too-many-messages.html:20
 #, python-format
 msgid "‘%%s’ contains %%s."
-msgstr "「%%」 包含 %%s。"
+msgstr "「%%s」包含 %%s。"
 
 #: templates/partials/check/trying-to-send-letters-in-trial-mode.html:2
 msgid "You cannot send"
@@ -3220,7 +3220,7 @@ msgstr ""
 #: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:2
 #, python-format
 msgid "Are you sure you want to make ‘%%s’ the default email branding?"
-msgstr "您確定要將「%%s」設定為預設的電子郵件品牌識別？"
+msgstr "您確定要將「%%s」設為預設的電子郵件品牌嗎？"
 
 #: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:6
 #, python-format
@@ -3249,7 +3249,7 @@ msgstr "%%(organisation_name )s 的服務目前使用的 %%(current_brand )s 品
 #: templates/partials/flash_messages/email_branding_confirm_remove_brand.html:2
 #, python-format
 msgid "Are you sure you want to remove the email brand ‘%%(name)s’?"
-msgstr "您確定要移除電子郵件品牌識別「%%(name)s」？"
+msgstr "您確定要移除電子郵件品牌「%%(name)s」嗎？"
 
 #: templates/partials/jobs/count-letters.html:17
 msgid "Estimated delivery date"
@@ -3307,7 +3307,7 @@ msgstr "僅顯示前 50 行"
 msgid ""
 "Notify cannot send these messages because you have reached your daily "
 "limit. You can only send %%s messages per day."
-msgstr "Notify 無法發送這些訊息，因為您已達到您的每日限額。 您每天只能發送 %%s "
+msgstr "Notify 無法發送這些訊息，因為您已達到您的每日限額。您每天只能發送 %%s "
 "則訊息。"
 
 #: templates/partials/jobs/status.html:28
@@ -3440,7 +3440,7 @@ msgstr "選填的內容"
 
 #: templates/partials/templates/guidance-optional-content.html:7
 msgid "Use double brackets and ‘??’ to define optional content."
-msgstr "使用雙括號和 「??」來定義選填的內容。"
+msgstr "使用雙括號和「??」來插入選擇性內容。"
 
 #: templates/partials/templates/guidance-optional-content.html:10
 msgid ""
@@ -3482,7 +3482,7 @@ msgstr "下午 5:30 之前發送的信件將在下一個工作日（週一至週
 msgid ""
 "First class letters are delivered one day after they're dispatched. "
 "Second class letters are delivered 2 days after they're dispatched."
-msgstr "第一類信件在寄出後一天送達。 第二類信件在寄出後 2 天送達。"
+msgstr "第一類信件在寄出後一天送達。第二類信件在寄出後 2 天送達。"
 
 #: templates/partials/templates/guidance-postage.html:11
 msgid "Royal Mail delivers from Monday to Saturday, excluding bank holidays."
@@ -3529,9 +3529,9 @@ msgid ""
 "href=\"https://docs.notifications.service.gov.uk\">GOV.UK Notify API "
 "documentation subdomain"
 msgstr ""
-"此無障礙聲明適用於 www.notifications.service.gov.uk 網域。 它不適用於 <a "
-"class=“govuk-link govuk-link—no-visited-state” href=“https://docs."
-"notifications.service.gov.uk”>GOV.UK Notify 的 API 文件子網域"
+"此無障礙聲明適用於 www.notifications.service.gov.uk 網域。它不適用於 <a class"
+"=“govuk-link govuk-link—no-visited-state” href=“https://docs.notifications."
+"service.gov.uk”>GOV.UK Notify 的 API 文件子網域"
 
 #: templates/views/accessibility_statement.html:26
 msgid ""
@@ -3629,9 +3629,8 @@ msgid ""
 "JAWS and NVDA screen readers announce extra spaces in emails when you "
 "view them in Microsoft Outlook."
 msgstr ""
-"我們也注意到 Notify 發送的電子郵件尚未完全無障礙化。 當您在 Microsoft "
-"Outlook 中查看電子郵件時，JAWS 和 NVDA "
-"螢幕閱讀器會宣告電子郵件中有額外的空格。"
+"我們也注意到 Notify 發送的電子郵件尚未完全無障礙化。當您在 Microsoft Outlook "
+"中查看電子郵件時，JAWS 和 NVDA 螢幕閱讀器會宣告電子郵件中有額外的空格。"
 
 #: templates/views/accessibility_statement.html:64
 msgid "Feedback and contact information"
@@ -3683,7 +3682,7 @@ msgid ""
 "Equality Advisory and Support Service (EASS)."
 msgstr ""
 "平等與人權委員會 (EHRC) 負責執行公共部門機構（網站和手機軟體）（第 2 號）"
-"2018 年無障礙條例（「無障礙條例」）。 如果您對我們回應您的投訴的方式不滿意，"
+"2018 年無障礙條例（「無障礙條例」）。如果您對我們回應您的投訴的方式不滿意，"
 "請聯繫平等諮詢和支持服務 (EASS)。"
 
 #: templates/views/accessibility_statement.html:87
@@ -3762,9 +3761,8 @@ msgid ""
 "Our validation errors cause problems for screen readers. This means it "
 "can be hard to know when an error has occurred or what to do next. We "
 "plan to fix this in December 2022."
-msgstr "我們的驗證錯誤會導致螢幕閱讀器出現問題。 "
-"這意味著很難知道何時發生錯誤或下一步該怎麼做。 我們計劃在 2022 年 12 "
-"月解決此問題。"
+msgstr "我們的驗證錯誤會導致螢幕閱讀器出現問題。這意味著很難知道何時發生錯誤或下一步"
+"該怎麼做。我們計劃在 2022 年 12 月解決此問題。"
 
 #: templates/views/accessibility_statement.html:124
 msgid ""
@@ -3777,14 +3775,14 @@ msgstr "JAWS 螢幕閱讀器會將範本資料夾的頁面標題拆成多個句�
 msgid ""
 "Choosing the date and time you want to send a message using a screen "
 "reader can be confusing. We plan to fix this in March 2023."
-msgstr "使用螢幕閱讀器選擇要發送訊息的日期和時間可能會造成混淆。 我們計劃在 2023 年 "
-"3 月解決此問題。"
+msgstr "使用螢幕閱讀器選擇要發送訊息的日期和時間可能會造成混淆。我們計劃在 2023 年 3 "
+"月解決此問題。"
 
 #: templates/views/accessibility_statement.html:130
 msgid ""
 "Expanding and collapsing groups of checkboxes using a screen reader can "
 "be confusing. We plan to fix this in April 2023."
-msgstr "使用螢幕閱讀器展開或收合複選方塊可能會造成混淆。 我們計劃在 2023 年 4 "
+msgstr "使用螢幕閱讀器展開或收合複選方塊可能會造成混淆。我們計劃在 2023 年 4 "
 "月解決此問題。"
 
 #: templates/views/accessibility_statement.html:135
@@ -3795,7 +3793,7 @@ msgstr "PDF文件與其他文件"
 msgid ""
 "One page links to a PDF document that is not fully accessible. This is "
 "not a fail under any WCAG 2.1 success criterion."
-msgstr "一頁連結到未完全無障礙化的 PDF 文件。 依據 WCAG 2.1 "
+msgstr "一頁連結到未完全無障礙化的 PDF 文件。依據 WCAG 2.1 "
 "的任一檢核標準，這不是故障。"
 
 #: templates/views/accessibility_statement.html:142
@@ -3962,14 +3960,14 @@ msgid ""
 "We decided which pages to test based on the most common tasks that GOV.UK"
 " Notify users need to complete. We also tested a sample of pages with "
 "common user interface components."
-msgstr "我們根據 GOV.UK Notify 的使用者最經常需要完成的任務來決定測試哪些頁面。 "
-"我們也測試了具有通用界面元件的樣本頁面。"
+msgstr "我們根據 GOV.UK Notify 的使用者最經常需要完成的任務來決定測試哪些頁面。我們也"
+"測試了具有通用界面元件的樣本頁面。"
 
 #: templates/views/add-service-local.html:17
 msgid ""
 "Give your service a name that tells users what your messages are about, "
 "as well as who they’re from. For example:"
-msgstr "為您的服務命名，藉此告訴使用者您的訊息是與什麼有關，以及訊息來自於誰。 例如："
+msgstr "為您的服務命名，藉此告訴使用者您的訊息是與什麼有關，以及訊息來自於誰。例如："
 
 #: templates/views/add-service-local.html:19
 #, python-format
@@ -4042,7 +4040,7 @@ msgstr "選擇服務"
 #: templates/views/choose-account.html:68
 #, python-format
 msgid "%%s organisations, %%s live services"
-msgstr "%%s 機關， %%s 上線的服務"
+msgstr "%%s 機關，%%s 上線的服務"
 
 #: templates/views/choose-account.html:78
 #: templates/views/choose-account.html:85
@@ -4083,8 +4081,8 @@ msgstr "基本的 Cookies"
 msgid ""
 "Essential cookies keep your information secure while you use Notify. We "
 "do not need to ask permission to use them."
-msgstr "基本的 cookies 能在您使用 Notify 時保護您的資訊安全。 "
-"我們不需要徵求許可就可以使用它們。"
+msgstr "基本的 cookies 能在您使用 Notify "
+"時保護您的資訊安全。我們不需要徵求許可就可以使用它們。"
 
 #: templates/views/cookies.html:35 templates/views/cookies.html:85
 #: templates/views/organisations/organisation/settings/index.html:18
@@ -4158,7 +4156,7 @@ msgid ""
 "With your permission, we use Google Analytics to collect data about how "
 "you use Notify. This information helps us to improve our service."
 msgstr "在您允許的情況下，我們使用 Google Analytics 收集有關您如何使用 Notify "
-"的數據。 這些資訊有助於我們改進我們的服務。"
+"的數據。這些資訊有助於我們改進我們的服務。"
 
 #: templates/views/cookies.html:71
 msgid "Google is not allowed to use or share our analytics data with anyone."
@@ -4241,8 +4239,8 @@ msgid ""
 "is not running on your browser, so you cannot change your settings. You "
 "can try:"
 msgstr ""
-"我們使用 Javascript 來設置我們的分析 cookie。 遺憾的是，Javascript "
-"並未在您的瀏覽器上運行，因此您無法更改您的設定。 你可以試試："
+"我們使用 Javascript 來設置我們的分析 cookie。遺憾的是，Javascript "
+"並未在您的瀏覽器上運行，因此您無法更改您的設定。你可以試試："
 
 #: templates/views/cookies.html:119
 msgid ""
@@ -4465,7 +4463,7 @@ msgstr "重新傳送電子郵件連結"
 msgid ""
 "Emails sometimes take a few minutes to arrive. If you do not receive an "
 "email link, Notify can send you a new one."
-msgstr "電子郵件有時需要幾分鐘才能送達。 如果您沒有收到電子郵件連結，Notify "
+msgstr "電子郵件有時需要幾分鐘才能送達。如果您沒有收到電子郵件連結，Notify "
 "可以發送一個新連結給您。"
 
 #: templates/views/email-not-received.html:23
@@ -4504,7 +4502,7 @@ msgstr "如果您為中央政府、地方政府或 NHS 工作，您可以使用 
 
 #: templates/views/features.html:17
 msgid "Notify makes it easy to create, customise and send:"
-msgstr "Notify 使創建、個人化和發送變得容易："
+msgstr "透過 Notify，讓您更簡單就能建立通知範本、調整內容和傳送出去："
 
 #: templates/views/features.html:23
 msgid "You do not need any technical knowledge to use Notify."
@@ -4528,7 +4526,7 @@ msgid ""
 "To send an email, text or letter with Notify, you need to create a "
 "reusable message template first."
 msgstr "要使用 Notify "
-"發送電子郵件、簡訊或信件，您需要先創建一個可重複使用的訊息範本。"
+"發送電子郵件、簡訊或信件，您需要先建立一個可重複使用的訊息範本。"
 
 #: templates/views/features.html:30
 msgid ""
@@ -4562,8 +4560,8 @@ msgid ""
 "To send a batch of messages at once, upload a list of contact details to "
 "Notify. If you’re sending emails and text messages, you can also schedule"
 " the date and time you want them to be sent."
-msgstr "如要一次發送大量的訊息，請將聯繫方式列表上傳到 Notify。 "
-"如果您要發送電子郵件和簡訊，您還可以安排發送它們的日期和時間。"
+msgstr "如要一次發送大量的訊息，請將聯繫方式列表上傳到 "
+"Notify。如果您要發送電子郵件和簡訊，您還可以安排發送它們的日期和時間。"
 
 #: templates/views/features.html:40
 msgid ""
@@ -4589,8 +4587,8 @@ msgid ""
 "Notify’s real-time dashboard lets you see the number of messages sent. "
 "You can also check the current status of any message to see when it was "
 "delivered."
-msgstr "Notify 的即時儀表板可讓您查看已發送訊息的數量。 "
-"您還可以檢查任何訊息的即時狀態以了解它何時被送達。"
+msgstr "Notify 的即時儀表板可讓您查看已發送訊息的數量。您還可以檢查任何訊息的即時狀態"
+"以了解它何時被送達。"
 
 #: templates/views/features.html:45
 #, python-format
@@ -4609,7 +4607,7 @@ msgstr "許可"
 msgid ""
 "Control which members of your team can see, create, edit and send "
 "messages."
-msgstr "設定團隊中的哪些成員可以查看、創建、編輯和發送訊息。"
+msgstr "設定團隊中的哪些成員可以查看、建立、編輯和發送訊息。"
 
 #: templates/views/features.html:49
 msgid "Notify lets you:"
@@ -4651,7 +4649,7 @@ msgstr "在下一個工作日的下午 3 點之前印出與郵寄信件（如果
 msgid ""
 "We send messages through several different providers. If one provider "
 "fails, Notify switches to another so that your messages are not affected."
-msgstr "我們透過幾個不同的供應商發送訊息。 如果一個供應商出現故障，Notify "
+msgstr "我們透過幾個不同的供應商發送訊息。如果一個供應商出現故障，Notify "
 "會切換到另一個供應商，這樣您的訊息就不會受到影響。"
 
 #: templates/views/features.html:65
@@ -4676,8 +4674,8 @@ msgid ""
 "Notify lets you redact personal information from your messages after they"
 " have been sent. This means that only the recipient can see that "
 "information."
-msgstr "Notify 可讓您在訊息發送後編輯內文中的個人資訊。 "
-"這意味著只有收件人才能看到該資訊。"
+msgstr "Notify "
+"可讓您在訊息發送後編輯內文中的個人資訊。這意味著只有收件人才能看到該資訊。"
 
 #: templates/views/features.html:73 templates/views/security.html:53
 msgid "Two-factor authentication"
@@ -4689,7 +4687,7 @@ msgid ""
 "When you sign in, we’ll send a unique one-time code to your phone and ask"
 " you to enter it before we let you use your account."
 msgstr ""
-"Notify 使用二階段身份驗證 (2FA) 來確保您的帳戶安全。 當您登入時，我們會向您的"
+"Notify 使用二階段身份驗證 (2FA) 來確保您的帳戶安全。當您登入時，我們會向您的"
 "手機發送一個唯一的一次性代碼，並要求您輸入該代碼，通過後我們才能讓您使用您的"
 "帳戶。"
 
@@ -4706,7 +4704,7 @@ msgstr ""
 msgid ""
 "Notify provides 24-hour online support. If you have an emergency outside "
 "office hours, we’ll reply within 30 minutes."
-msgstr "Notify 提供 24 小時線上支援服務。 如果您在辦公時間以外遇到緊急情況，我們將在 "
+msgstr "Notify 提供 24 小時線上支援服務。如果您在辦公時間以外遇到緊急情況，我們將在 "
 "30 分鐘內回覆。"
 
 #: templates/views/features.html:79
@@ -4725,7 +4723,7 @@ msgstr "忘記密碼了？"
 
 #: templates/views/forgot-password.html:15
 msgid "We’ll send you an email to create a new password."
-msgstr "我們將向您發送一封電子郵件以創建新密碼。"
+msgstr "我們將寄送設定新密碼的電子郵件給您。"
 
 #: templates/views/forgot-password.html:19
 msgid "Send email"
@@ -6932,7 +6930,8 @@ msgstr ""
 msgid ""
 "A photo of the GOV.UK Notify team gathered around a big screen. One team "
 "member is pointing at a graph on the screen."
-msgstr "這張相片中， GOV.UK Notify 團隊聚在一塊大螢幕旁。其中一位團隊成員指著螢幕上的圖片。"
+msgstr "這張相片中，GOV.UK Notify "
+"團隊聚在一塊大螢幕旁。其中一位團隊成員指著螢幕上的圖片。"
 
 #: templates/views/signin.html:7 templates/views/signin.html:19
 msgid "You need to sign in again"
@@ -9109,7 +9108,8 @@ msgstr "若要將預留文字加入到範本："
 msgid ""
 "Add a placeholder using double brackets. For example: Hello "
 "((first&nbsp;name)), your reference is ((ref&nbsp;number))."
-msgstr "用雙括號加入一個佔位符號。例如：哈囉 ((姓&nbsp;))， 你參照的是 ((參照&nbsp;號碼))."
+msgstr "用雙括號加入預留文字。例如：「哈囉 ((first&nbsp;name))，您的參考編號是 "
+"((ref&nbsp;number))」。"
 
 #: templates/views/guidance/edit-and-format-messages.html:71
 #: templates/views/guidance/edit-and-format-messages.html:91
@@ -12561,8 +12561,8 @@ msgid ""
 "href=\"{letter_spec_guidance}\" target=\"_blank\">letter "
 "specification</a>."
 msgstr ""
-"您需要變更{invalid_pages}的尺寸或方向。 <br>檔案必須符合我們的<a class=\"govuk-link govuk-link"
-"--destructive\" href=\"{letter_spec_guidance}\" "
+"您需要變更{invalid_pages}的尺寸或方向。<br>檔案必須符合我們的<a class"
+"=\"govuk-link govuk-link--destructive\" href=\"{letter_spec_guidance}\" "
 "target=\"_blank\">信件規格</a>。"
 
 #: utils/letters.py:60
