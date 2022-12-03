@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 10:31+0000\n"
+"PO-Revision-Date: 2022-12-03 11:08+0000\n"
 "Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
@@ -42,11 +42,11 @@ msgstr "中午"
 
 #: formatters.py:147
 msgid "just now"
-msgstr "現在"
+msgstr "剛剛"
 
 #: formatters.py:149
 msgid "in the last minute"
-msgstr "最後"
+msgstr "前一分鐘內"
 
 #: formatters.py:172 main/forms.py:2251 main/forms.py:2355
 #: main/views/templates.py:185 templates/views/providers/providers.html:43
@@ -64,11 +64,11 @@ msgstr "簡訊"
 #: templates/views/notifications/invalid_precompiled_letter.html:4
 #: templates/views/notifications/invalid_precompiled_letter.html:9
 msgid "Letter"
-msgstr "信件"
+msgstr "紙本信件"
 
 #: formatters.py:178 formatters.py:188
 msgid "Failed"
-msgstr "錯誤"
+msgstr "失敗"
 
 #: formatters.py:179 formatters.py:189 formatters.py:200
 #: templates/views/message-status.html:34
@@ -96,7 +96,7 @@ msgstr "已送達"
 #: templates/views/message-status.html:30
 #: templates/views/message-status.html:59
 msgid "Sending"
-msgstr "正在傳送"
+msgstr "傳送中"
 
 #: formatters.py:190 templates/views/message-status.html:63
 msgid "Phone not accepting messages right now"
@@ -112,7 +112,7 @@ msgstr "傳送至國際電話"
 
 #: formatters.py:202 templates/views/message-status.html:87
 msgid "Permanent failure"
-msgstr "永久故障"
+msgstr "永久失敗"
 
 #: formatters.py:210
 msgid "Virus detected"
@@ -164,13 +164,13 @@ msgstr "電子郵件"
 #: formatters.py:417 templates/views/dashboard/monthly.html:48
 #: templates/views/returned-letter-summary.html:40
 msgid "letter"
-msgstr "信件"
+msgstr "紙本信件"
 
 #: formatters.py:419 main/forms.py:1628 main/forms.py:1789
 #: templates/views/dashboard/monthly.html:36 templates/views/features.html:21
 #: templates/views/using-notify.html:26
 msgid "letters"
-msgstr "信件"
+msgstr "紙本信件"
 
 #: formatters.py:423
 msgid "broadcast"
@@ -205,11 +205,11 @@ msgstr "電話號碼"
 #: templates/views/uploads/contact-list/upload.html:63
 #: templates/views/user-profile.html:26
 msgid "email address"
-msgstr "電子信箱"
+msgstr "電子郵件地址"
 
 #: formatters.py:450
 msgid "email addresses"
-msgstr "電子信箱"
+msgstr "電子郵件地址"
 
 #: formatters.py:454
 msgid "address"
@@ -262,7 +262,7 @@ msgstr "GOV.UK Notify"
 
 #: broadcast_areas/create-broadcast-areas-db.py:45
 msgid "Unknown type: {}"
-msgstr "未知類型: {}"
+msgstr "未知類型：{}"
 
 #: broadcast_areas/create-broadcast-areas-db.py:68
 #, python-format
@@ -352,7 +352,7 @@ msgstr ""
 #: broadcast_areas/populations.py:127
 #, python-format
 msgid "    Population:%%s    Phones:%%s"
-msgstr "    人口數:%%s    電話數:%%s"
+msgstr "    人口數量：%%s    電話數量：%%s"
 
 #: main/forms.py:152
 msgid "Tomorrow"
@@ -366,7 +366,7 @@ msgstr "選擇 %s"
 #: main/forms.py:190 main/forms.py:1600 main/forms.py:1692 main/forms.py:1698
 #: templates/views/user-profile.html:17 templates/views/user-profile.html:38
 msgid "Email address"
-msgstr "電子郵件"
+msgstr "電子郵件地址"
 
 #: main/forms.py:200 main/forms.py:245 main/forms.py:249 main/forms.py:256
 #: main/forms.py:389 main/forms.py:608 main/forms.py:614 main/forms.py:638
@@ -403,7 +403,7 @@ msgstr "只能輸入數字"
 
 #: main/forms.py:391
 msgid "Not enough numbers"
-msgstr "數字不足"
+msgstr "數字長度不足"
 
 #: main/forms.py:392
 msgid "Too many numbers"
@@ -411,15 +411,15 @@ msgstr "太多數字"
 
 #: main/forms.py:439
 msgid "Number of {} must be {} or less"
-msgstr "{}的數量要為{}或更少"
+msgstr "{} 的數量要為 {} 或更少"
 
 #: main/forms.py:444
 msgid "Enter the number of {} {}"
-msgstr "輸入{} {}的數量"
+msgstr "輸入 {} {} 的數量"
 
 #: main/forms.py:560
 msgid "Not a valid choice"
-msgstr "這個選項不存在"
+msgstr "非有效選項"
 
 #: main/forms.py:610
 msgid "Enter your password"
@@ -431,11 +431,11 @@ msgstr "全名"
 
 #: main/forms.py:960
 msgid "Must provide `image_data` to initialiser"
-msgstr "請提供 `image_data` 作為初始值"
+msgstr "必須提供 `image_data`作為初始值"
 
 #: main/forms.py:1024
 msgid "Folders this team member can see"
-msgstr "團隊成員能看到的資料夾"
+msgstr "此團隊成員能看到的資料夾"
 
 #: main/forms.py:1033
 msgid "how this team member should sign in"
@@ -447,7 +447,7 @@ msgstr "團隊成員都能看到已經寄出的訊息。"
 
 #: main/forms.py:1072
 msgid "Team members who can create or approve alerts can also reject them."
-msgstr "能夠建立或核准通知的團隊成員也能拒絕這些通知。"
+msgstr "能夠建立或核准警報的團隊成員也能拒絕這些警報。"
 
 #: main/forms.py:1091 main/forms.py:1103
 msgid "You cannot send an invitation to yourself"
@@ -10025,7 +10025,7 @@ msgstr "顧客抱怨日期"
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:12
 #: templates/views/platform-admin/reports.html:29
 msgid "Daily SMS provider volumes Report"
-msgstr "每日SMS供應商容量報告"
+msgstr "每日簡訊業者傳送量報表"
 
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:16
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:17
@@ -10041,12 +10041,12 @@ msgstr "使用年年年年-月月-日日格式"
 #: templates/views/platform-admin/get-billing-report.html:18
 #: templates/views/platform-admin/notifications_by_service.html:17
 msgid "Download report (CSV)"
-msgstr "下載報告（CSV）"
+msgstr "下載報表（CSV）"
 
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:22
 #: templates/views/platform-admin/daily-volumes-report.html:22
 msgid "Data included in the report"
-msgstr "數據已包含在報告中"
+msgstr "報表中的資料"
 
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:26
 msgid "Descriptions of daily SMS provider volumes data"
@@ -10081,12 +10081,12 @@ msgstr "Notify用戶已傳送簡訊的成本"
 
 #: templates/views/platform-admin/daily-volumes-report.html:6
 msgid "Daily volumes report"
-msgstr "每日容量報告"
+msgstr "每日傳送量報表"
 
 #: templates/views/platform-admin/daily-volumes-report.html:12
 #: templates/views/platform-admin/reports.html:26
 msgid "Daily volumes Report"
-msgstr "每日容量報告"
+msgstr "每日傳送量報表"
 
 #: templates/views/platform-admin/daily-volumes-report.html:26
 msgid "Descriptions of daily volumes data"
@@ -10112,11 +10112,11 @@ msgstr "已傳送的頁數"
 #: templates/views/platform-admin/get-billing-report.html:12
 #: templates/views/platform-admin/reports.html:20
 msgid "Billing Report"
-msgstr "帳單報告"
+msgstr "帳務報表"
 
 #: templates/views/platform-admin/get-billing-report.html:26
 msgid "Descriptions of billing report data"
-msgstr "帳單報告數據說明"
+msgstr "帳務報表資料說明"
 
 #: templates/views/platform-admin/get-billing-report.html:32
 msgid ""
@@ -10190,11 +10190,11 @@ msgstr "每月線上服務通知狀態"
 
 #: templates/views/platform-admin/reports.html:14
 msgid "Download live services csv report"
-msgstr "下載線上服務csv報告"
+msgstr "下載上線服務報表"
 
 #: templates/views/platform-admin/reports.html:23
 msgid "Volumes by service Report"
-msgstr "服務報告的容量"
+msgstr "服務傳送量報表"
 
 #: templates/views/platform-admin/returned-letters.html:12
 msgid "Submit returned letters"
@@ -11872,7 +11872,7 @@ msgstr "我們的工作時間為每週一到週五，上午 9:30 到下午 5:30�
 msgid ""
 "When you report a problem in office hours, we’ll aim to read it within 30"
 " minutes and reply within one working day."
-msgstr "您於工作時間內通報的問題，我們將盡力於 30 分鐘內閱讀，並在一個工作天內回覆。"
+msgstr "您於工作時間內回報的問題，我們將盡力於 30 分鐘內閱讀，並在一個工作天內回覆。"
 
 #: templates/views/support/index.html:31
 msgid "Out-of-hours"
@@ -11882,7 +11882,7 @@ msgstr "非工作時間"
 msgid ""
 "Outside office hours, response times depend on whether you’re reporting "
 "an emergency."
-msgstr "非工作時間時的回覆取決於您通報的是否為緊急狀況。"
+msgstr "非工作時間時的回覆取決於您回報的是否為緊急狀況。"
 
 #: templates/views/support/index.html:33
 msgid ""
@@ -11942,7 +11942,7 @@ msgstr "詢問有關福利、駕駛、交通、稅金及更多資訊。"
 
 #: templates/views/support/public.html:42
 msgid "Report internet scams and phishing"
-msgstr "通報網路釣魚和網路詐騙"
+msgstr "回報網路釣魚和網路詐騙"
 
 #: templates/views/support/public.html:45
 msgid "Advice on suspicious emails and text messages."
