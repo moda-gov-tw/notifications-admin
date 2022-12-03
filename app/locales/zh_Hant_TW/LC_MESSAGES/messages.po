@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 06:13+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"PO-Revision-Date: 2022-12-03 07:18+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -277,7 +277,7 @@ msgstr "%%s 多邊形圖 %%s/%%s 面積為零，略過"
 #: broadcast_areas/create-broadcast-areas-db.py:81
 #, python-format
 msgid "%%s Polygon %%s/%%s needs fixing..."
-msgstr "%%s 多邊形圖 %%s/%%s 需要修復..."
+msgstr "%%s 多邊形圖 %%s/%%s 需要修復…"
 
 #: broadcast_areas/create-broadcast-areas-db.py:105
 #, python-format
@@ -286,7 +286,7 @@ msgstr "%%s 多邊形圖 %%s/%%s 已修復！"
 
 #: broadcast_areas/create-broadcast-areas-db.py:126
 msgid "Polygon of 0 size found"
-msgstr "已找到0個多邊形圖"
+msgstr "找到無面積的多邊形"
 
 #: broadcast_areas/create-broadcast-areas-db.py:129
 #, python-format
@@ -345,9 +345,9 @@ msgid ""
 msgstr ""
 "\n"
 "完成\n"
-"    處理了 %% s 個多邊形中。\n"
-"    清除了 %% s 個多邊形中。\n"
-"   計算簡化後的最大錨點數量： %%s\n"
+"   處理了 %%s 個多邊形。\n"
+"   清除了 %%s 個多邊形。\n"
+"   簡化後的最大錨點數量：%%s\n"
 
 #: broadcast_areas/populations.py:127
 #, python-format
@@ -1097,7 +1097,6 @@ msgid "Must be a valid https URL"
 msgstr "必須是有效的HTTPS網址"
 
 #: main/forms.py:2062
-#, fuzzy
 msgid "Bearer token"
 msgstr "Bearer token"
 
@@ -1394,8 +1393,8 @@ msgid ""
 msgstr ""
 "\n"
 "            輸入政府單位的電子信箱或\n"
-"            <a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"{}\">找到那些能夠使用Notify的人</a>\n"
+"            <a class=\"govuk-link govuk-link--no-visited-state\" href=\"{}\""
+">看看哪些人能夠使用 Notify</a>\n"
 "        "
 
 #: main/validators.py:58
