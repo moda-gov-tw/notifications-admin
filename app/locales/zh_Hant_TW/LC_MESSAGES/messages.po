@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 07:52+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -2089,6 +2089,8 @@ msgid ""
 "                    Try formatting all columns as ‘text’ or export your "
 "file as CSV."
 msgstr ""
+"%s 包含數字或日期是 Notify 無法解讀的。\n"
+"                    試著轉換格式為文字或是輸出為 CSV 檔案。"
 
 #: main/views/send.py:216 main/views/templates.py:820
 msgid "(Default)"
@@ -2160,7 +2162,7 @@ msgstr "感謝您提出品牌識別申請，我們會在一個工作天內與您
 #: main/views/service_settings.py:196
 #, python-format
 msgid "Request to go live - %s"
-msgstr ""
+msgstr "請求轉換正式環境 - %s"
 
 #: main/views/service_settings.py:210
 msgid ""
@@ -2208,19 +2210,19 @@ msgstr "您確定要刪除此簡訊發送者？"
 #: main/views/service_settings.py:1011
 #, python-format
 msgid "The email branding has been set to %s"
-msgstr ""
+msgstr "電子郵件品牌已經傳送到 %s"
 
 #: main/views/service_settings.py:1018
 #, python-format
 msgid ""
 "The email branding has been set to %s and it has been added to %s's email"
 " branding pool"
-msgstr ""
+msgstr "電子郵件品牌已經設定到 %s 以及已加入到 %s 電子郵件品牌列表中"
 
 #: main/views/service_settings.py:1143 main/views/service_settings.py:1322
 #, python-format
 msgid "Email branding request - %s"
-msgstr ""
+msgstr "電子郵件品牌請求 - %s"
 
 #: main/views/service_settings.py:1196
 msgid "No branding found for this id."
@@ -2234,7 +2236,7 @@ msgstr "您已更新電子郵件品牌"
 #: main/views/service_settings.py:1420
 #, python-format
 msgid "Letter branding request - %s"
-msgstr ""
+msgstr "信件品牌請求 - %s"
 
 #: main/views/sign_in.py:45
 msgid "You cannot accept an invite for another person."
