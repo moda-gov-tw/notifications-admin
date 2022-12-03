@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 09:45+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"PO-Revision-Date: 2022-12-03 10:09+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -759,7 +759,7 @@ msgstr "您需要什麼協助？"
 msgid ""
 "I work in the public sector and need to send emails, text messages or "
 "letters"
-msgstr "我在公部門工作並且需要發送電子郵件，簡訊或郵件"
+msgstr "我在公部門工作並且需要發送電子郵件，簡訊或紙本信件"
 
 #: main/forms.py:1593
 msgid "I’m a member of the public with a question for the government"
@@ -1392,9 +1392,9 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"            輸入公部門電子信箱或\n"
+"            輸入公部門電子郵件地址或\n"
 "            <a class=\"govuk-link govuk-link--no-visited-state\" href=\"{}\""
-">找出哪些人能使用 Notify</a>\n"
+">看看哪些人能使用 Notify</a>\n"
 "        "
 
 #: main/validators.py:58
@@ -3584,7 +3584,7 @@ msgstr "本網站的無障礙等級"
 
 #: templates/views/accessibility_statement.html:47
 msgid "We know some parts of this website are not fully accessible:"
-msgstr "我們注意到本網站的某些部分尚未無障礙化："
+msgstr "我們了解本網站的某些部分仍未完全無障礙化："
 
 #: templates/views/accessibility_statement.html:50
 msgid "validation errors may be confusing for screen reader users"
@@ -3618,7 +3618,7 @@ msgstr "螢幕閱讀器使用者可能會感到很難展開或收合複選方塊
 
 #: templates/views/accessibility_statement.html:56
 msgid "one page links to a PDF document that is not fully accessible"
-msgstr "一頁式連結到尚未完全無障礙化的 PDF 文件"
+msgstr "PDF 文件的一頁式連結尚未完全無障礙化"
 
 #: templates/views/accessibility_statement.html:57
 msgid "the Notify status page has several accessibility issues"
@@ -3630,8 +3630,8 @@ msgid ""
 "JAWS and NVDA screen readers announce extra spaces in emails when you "
 "view them in Microsoft Outlook."
 msgstr ""
-"我們也注意到 Notify 發送的電子郵件尚未完全無障礙化。當您在 Microsoft Outlook "
-"中查看電子郵件時，JAWS 和 NVDA 螢幕閱讀器會宣告電子郵件中有額外的空格。"
+"我們也了解 Notify 寄出的電子郵件尚未完全無障礙化。若您使用 Microsoft Outlook "
+"中閱讀這些電子郵件，JAWS 和 NVDA 螢幕閱讀器會唸出多餘的空格。"
 
 #: templates/views/accessibility_statement.html:64
 msgid "Feedback and contact information"
@@ -3682,7 +3682,7 @@ msgid ""
 " If you’re not happy with how we respond to your complaint, contact the "
 "Equality Advisory and Support Service (EASS)."
 msgstr ""
-"平等與人權委員會 (EHRC) 負責執行公共部門機構（網站和手機軟體）（第 2 號）"
+"平等與人權委員會 (EHRC) 負責執行公部門機構（網站與行動應用程式）（第 2 號）"
 "2018 "
 "年無障礙條例（「無障礙條例」）的相關規定。如果您不滿意我們回應投訴的方式，"
 "請聯絡平等諮詢和支援服務 (EASS)。"
@@ -3705,8 +3705,8 @@ msgid ""
 "GDS is committed to making its website accessible, in accordance with the"
 " Public Sector Bodies (Websites and Mobile Applications) (No. 2) "
 "Accessibility Regulations 2018."
-msgstr "根據 2018 年公共部門機構（網站和手機應用程式）（第 2 號）無障礙條例，GDS "
-"致力於落實其網站的無障礙可及性。"
+msgstr "GDS 致力於依照 2018 年公部門機構（網站與行動應用程式）（第 2 "
+"號）無障礙條例，落實其網站的無障礙化。"
 
 #: templates/views/accessibility_statement.html:97
 msgid ""
@@ -3718,11 +3718,11 @@ msgstr "GOV.UK Notify 僅符合部分的網站內容無障礙性指南 (WCAG) 2.
 
 #: templates/views/accessibility_statement.html:100
 msgid "Non-accessible content"
-msgstr "無法支援瀏覽的內容"
+msgstr "尚未完成無障礙化的內容"
 
 #: templates/views/accessibility_statement.html:103
 msgid "The content listed below is non-accessible for the following reasons."
-msgstr "由於以下的原因，無法支援瀏覽下方的內容。"
+msgstr "由於下列原因，這些內容並未無障礙化。"
 
 #: templates/views/accessibility_statement.html:106
 msgid "Non-compliance with the WCAG version 2.1 AA standard"
@@ -3795,14 +3795,14 @@ msgstr "PDF文件與其他文件"
 msgid ""
 "One page links to a PDF document that is not fully accessible. This is "
 "not a fail under any WCAG 2.1 success criterion."
-msgstr "一頁連結到未完全無障礙化的 PDF 文件。依據 WCAG 2.1 "
-"的任一檢核標準，這不是故障。"
+msgstr "PDF 文件的一頁式連結並未完全無障礙化。此問題並未違反 WCAG 2.1 "
+"的任何檢核標準。"
 
 #: templates/views/accessibility_statement.html:142
 msgid ""
 "We provide a written description of the information in the PDF on an HTML"
 " page as an accessible alternative."
-msgstr "我們在 HTML 頁面上以 PDF 格式提供書面說明，作為一種無障礙可及性的替代方法。"
+msgstr "我們在 HTML 頁面中提供 PDF 檔案內容的文字說明，作為讓內容無障礙的替代方法。"
 
 #: templates/views/accessibility_statement.html:150
 msgid ""
@@ -4241,8 +4241,8 @@ msgid ""
 "is not running on your browser, so you cannot change your settings. You "
 "can try:"
 msgstr ""
-"我們使用 Javascript 來設置我們的分析 cookie。遺憾的是，Javascript "
-"並未在您的瀏覽器上運行，因此您無法更改您的設定。您可以試試："
+"我們使用 Javascript 來設定我們的分析 cookie。很可惜您的瀏覽器並未開啟 "
+"Javascript 功能，所以無法更改設定。可以試著："
 
 #: templates/views/cookies.html:119
 msgid ""
@@ -4801,7 +4801,7 @@ msgid ""
 "can use our <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">guidance</a> to help you."
 msgstr ""
-"將預計要寄出的內容範例加入簡訊範本。您可以使用我們的<a class=\"govuk-link "
+"將預計要寄出的內容範例加入訊息範本。可以使用我們的<a class=\"govuk-link "
 "govuk-link--no-visited-state\" href=\"%%s\">指引</a>來協助您。"
 
 #: templates/views/get-started.html:41
@@ -4943,9 +4943,8 @@ msgid ""
 "href=\"%%s\">documentation\n"
 "      for the client library you are using.</a>"
 msgstr ""
-"您可以如何使用用戶端函式庫，請參考這份 <a class=\"govuk-link govuk-link--no-"
-"visited-state\" href=\"%%s\">文件\n"
-"      </a>"
+"請參考您使用的客戶端程式庫的相關<a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"%%s\">文件</a>。"
 
 #: templates/views/invite-user.html:8 templates/views/manage-users.html:98
 #: templates/views/organisations/organisation/users/invite-org-user.html:9
@@ -7511,7 +7510,7 @@ msgid ""
 msgstr ""
 "請<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
 ">聯絡我們</a>並告訴我們\n"
-"      你是否在政府單位工作。如果你不確定，\n"
+"      您是否在政府單位工作。如果您不確定，\n"
 "      我們可以提供協助。"
 
 #: templates/views/agreement/service-agreement-signed.html:6
@@ -9420,7 +9419,7 @@ msgstr "供應商"
 msgid ""
 "If you’re doing work for a public sector organisation you can use "
 "GOV.UK&nbsp;Notify."
-msgstr "若您為公共部門組織工作，您可以利用GOV.UK&nbsp;Notify。"
+msgstr "若您為公共部門組織工作，就可以使用 GOV.UK&nbsp;Notify。"
 
 #: templates/views/guidance/who-can-use-notify.html:38
 msgid ""
@@ -10485,8 +10484,8 @@ msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Create "
 "an account</a> then add as many unique services as you need to.</p>"
 msgstr ""
-"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">建立帳號</"
-"a> 並加入各種您所需要的服務。</p>"
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">建立帳號</a>並加入各種您所需要的服務。</p>"
 
 #: templates/views/pricing/index.html:37
 msgid "You can add as many unique services as you need to."
@@ -11397,8 +11396,8 @@ msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
 " us</a> if you want to switch this feature off."
 msgstr ""
-"如果您希望可以將此功能關閉，請<a class=\"govuk-link govuk-link--no-visited-"
-"state\" href=\"%%s\">聯絡我們</a>。"
+"若您希望關閉此功能，請<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">聯絡我們</a>。"
 
 #: templates/views/service-settings/set-inbound-sms.html:31
 #, python-format
@@ -11416,8 +11415,8 @@ msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
 " us</a> if you want to be able to receive text messages from your users."
 msgstr ""
-"如果您想要從其他使用者接收簡訊<a class=\"govuk-link govuk-link--no-visited-"
-"state\" href=\"%%s\">聯絡我們</a>。"
+"若你想接受來自您服務的使用者所傳送的簡訊，請<a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"%%s\">聯絡我們</a>。"
 
 #: templates/views/service-settings/set-inbound-sms.html:40
 msgid ""
@@ -11907,7 +11906,7 @@ msgstr "當您試著上傳檔案，出現一則「技術問題」的警告訊息
 
 #: templates/views/support/index.html:39
 msgid "a 500 response code appears when you try to send messages using the API"
-msgstr "當您試著想要利用API送出訊息時，出現了500 錯誤訊息"
+msgstr "當您嘗試使用 API 傳送訊息時，出現了 500 錯誤代碼"
 
 #: templates/views/support/public.html:7 templates/views/support/public.html:19
 msgid "The GOV.UK Notify service is for people who work in the government"
