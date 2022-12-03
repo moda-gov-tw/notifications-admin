@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 05:11+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -361,7 +361,7 @@ msgstr "明天"
 #: main/forms.py:187
 #, python-format
 msgid "Select %s"
-msgstr ""
+msgstr "選擇 %s"
 
 #: main/forms.py:190 main/forms.py:1600 main/forms.py:1692 main/forms.py:1698
 #: templates/views/user-profile.html:17 templates/views/user-profile.html:38
@@ -585,17 +585,17 @@ msgstr "確認"
 #: main/forms.py:1349
 #, python-format
 msgid "I understand this will alert anyone who has switched on the %s channel"
-msgstr ""
+msgstr "我明白這將為通知所有轉換到 %s 頻道的使用者"
 
 #: main/forms.py:1351
 #, python-format
 msgid "I understand this will alert %s of people"
-msgstr ""
+msgstr "我明白這會通知 %s 名用戶"
 
 #: main/forms.py:1355
 #, python-format
 msgid "I understand this will alert %s of people, even if they’ve opted out"
-msgstr ""
+msgstr "我明白這會通知 %s 名用戶，即使他們已經退出"
 
 #: main/forms.py:1362
 msgid "millions"
