@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 08:13+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -2089,8 +2089,8 @@ msgid ""
 "                    Try formatting all columns as ‘text’ or export your "
 "file as CSV."
 msgstr ""
-"%s 包含數字或日期是 Notify 無法解讀的。\n"
-"                    試著轉換格式為文字或是輸出為 CSV 檔案。"
+"%s 包含Notify 無法理解的數字或日期 。\n"
+"                    試著將格式轉換為文字或是輸出為 CSV 檔案。"
 
 #: main/views/send.py:216 main/views/templates.py:820
 msgid "(Default)"
@@ -2217,7 +2217,7 @@ msgstr "電子郵件品牌已經傳送到 %s"
 msgid ""
 "The email branding has been set to %s and it has been added to %s's email"
 " branding pool"
-msgstr "電子郵件品牌已經設定到 %s 以及已加入到 %s 電子郵件品牌列表中"
+msgstr "電子郵件品牌已經設定到 %s 並加入 %s 電子郵件品牌列表中"
 
 #: main/views/service_settings.py:1143 main/views/service_settings.py:1322
 #, python-format
@@ -2620,7 +2620,7 @@ msgstr ""
 msgid ""
 "Registration complete. Next time you sign in to Notify you’ll be asked to"
 " use your security key."
-msgstr "註冊完成。 下次您登錄 Notify 時，系統會要求您使用安全密鑰。"
+msgstr "註冊完成。 下次您登錄 Notify 時，系統會要求您使用安全金鑰。"
 
 #: main/views/webauthn_credentials.py:133
 #, python-format
@@ -2629,7 +2629,7 @@ msgstr ""
 
 #: models/event.py:41
 msgid "Created this service and called it ‘{}’"
-msgstr "創建此服務並將其命名為「{}」"
+msgstr "創建此服務並命名為「{}」"
 
 #: models/event.py:58
 msgid "Made this service live"
@@ -2649,27 +2649,27 @@ msgstr "取消暫停此服務"
 
 #: models/event.py:69
 msgid "Set the contact details for this service to ‘{}’"
-msgstr "將此服務的聯絡內容設置為「{}」"
+msgstr "將此服務的聯絡訊息設為「{}」"
 
 #: models/event.py:72
 msgid "Updated this service’s email branding"
-msgstr "已更新了此服務的電子郵件品牌識別"
+msgstr "已更新此服務的電子郵件品牌識別"
 
 #: models/event.py:75
 msgid "Updated the callback for received text messages"
-msgstr "已更新收到短信的回撥"
+msgstr "已更新收到短信的召回功能"
 
 #: models/event.py:79
 msgid "Removed the logo from this service’s letters"
-msgstr "已從該服務的信件中刪除了標誌"
+msgstr "已從該服務的信件中刪除標誌"
 
 #: models/event.py:80
 msgid "Updated the logo on this service’s letters"
-msgstr "已更新了服務的信件中的標誌"
+msgstr "已更新服務信件中的標誌"
 
 #: models/event.py:83
 msgid "Updated the default letter contact block for this service"
-msgstr "已更新了此服務信件預設的聯繫資訊區塊"
+msgstr "已更新服務信件預設的聯繫欄"
 
 #: models/event.py:86
 msgid "{} this service’s daily message limit from {} to {}"
@@ -2701,27 +2701,27 @@ msgstr "已從此服務的權限中移除了 {}"
 
 #: models/event.py:110
 msgid "Set text messages to start with the name of this service"
-msgstr "將簡訊訊息的開頭設置為該服務的名稱"
+msgstr "將簡訊開頭設為該服務名稱"
 
 #: models/event.py:112
 msgid "Set text messages to not start with the name of this service"
-msgstr "不將簡訊訊息的開頭設置為該服務的名稱"
+msgstr "不將簡訊開頭設為該服務名稱"
 
 #: models/event.py:116
 msgid "Put this service into research mode"
-msgstr "將此服務設定為市場研究模式"
+msgstr "將此服務設為研究模式"
 
 #: models/event.py:118
 msgid "Took this service out of research mode"
-msgstr "已取消設定此服務的市場研究模式"
+msgstr "已解除此服務的研究模式"
 
 #: models/event.py:121
 msgid "Updated the callback for delivery receipts"
-msgstr "已更新了送件回條的回調函數"
+msgstr "已更新了送件回條的召回功能"
 
 #: models/event.py:124
 msgid "Requested for this service to go live"
-msgstr "申請將此服務上線"
+msgstr "申請讓此服務上線"
 
 #: models/event.py:133
 msgid "Revoked the ‘{}’ API key"
