@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 16:07+0000\n"
-"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
+"PO-Revision-Date: 2022-12-03 16:51+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -512,7 +512,7 @@ msgstr "無論這個組織是否隸屬政府"
 
 #: main/forms.py:1221
 msgid "Has this organisation signed the agreement?"
-msgstr "這個組織已簽署同意條款了嗎？"
+msgstr "這個組織已簽署同意書了嗎？"
 
 #: main/forms.py:1225
 msgid "No (but we have some service-specific agreements in place)"
@@ -520,15 +520,15 @@ msgstr "沒有（但我們有專為特定服務設計的同意書）"
 
 #: main/forms.py:1230
 msgid "Users will be told their organisation has already signed the agreement"
-msgstr "使用者將被告知他們的組織已經簽署同意條款"
+msgstr "使用者將被告知他們的組織已經簽署同意書"
 
 #: main/forms.py:1231
 msgid "Users will be prompted to sign the agreement before they can go live"
-msgstr "在服務轉正式環境上線前，將要求使用者簽署同意條款"
+msgstr "在服務轉正式環境上線前，將要求使用者簽署同意書"
 
 #: main/forms.py:1232
 msgid "Users will not be prompted to sign the agreement"
-msgstr "使用者不會被要求簽署同意條款"
+msgstr "使用者不會被要求簽署同意書"
 
 #: main/forms.py:1254
 msgid "Domain names"
@@ -1317,7 +1317,7 @@ msgstr "這則細胞廣播服務的帳戶類型"
 
 #: main/forms.py:2530
 msgid "Which version of the agreement do you want to accept?"
-msgstr "您想要接受哪一版協議書？"
+msgstr "您想要接受哪一版同意書？"
 
 #: main/forms.py:2533
 msgid "Who are you accepting the agreement for?"
@@ -3379,7 +3379,7 @@ msgid ""
 "            <br/>\n"
 "            Content on page 2<br/>"
 msgstr ""
-"第一頁的內容<br/>\n"
+"第 1 頁的內容<br/>\n"
 "             <br/>\n"
 "             ***<br/>\n"
 "             <br/>\n"
@@ -3446,9 +3446,7 @@ msgstr "使用雙括號和「??」來插入選擇性內容。"
 msgid ""
 "For example if you only want to show something to people who are under\n"
 "  18:"
-msgstr ""
-"例如，如果您只想向未滿r\n"
-"   18 歲的人顯示特定內容："
+msgstr "例如，如果您只想向未滿 18 歲的人顯示特定內容："
 
 #: templates/partials/templates/guidance-optional-content.html:19
 msgid ""
@@ -3488,7 +3486,7 @@ msgstr "國內快捷在寄出後一天送達。國內平信在寄出後 2 天送
 
 #: templates/partials/templates/guidance-postage.html:11
 msgid "Royal Mail delivers from Monday to Saturday, excluding bank holidays."
-msgstr "皇家郵政周一到週六皆有投遞，銀行假日除外。"
+msgstr "皇家郵政週一到週六皆有投遞，銀行假日除外。"
 
 #: templates/partials/templates/guidance-postage.html:14
 #, python-format
@@ -3497,7 +3495,7 @@ msgid ""
 "href=\"%%s\">postage prices</a>."
 msgstr ""
 "查看<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">郵資</a>。"
+">郵資</a>清單。"
 
 #: templates/partials/templates/guidance-send-a-document.html:4
 msgid "Send a document by email"
@@ -3549,15 +3547,15 @@ msgstr "變更顏色、對比度和字體"
 
 #: templates/views/accessibility_statement.html:30
 msgid "zoom in up to 300% without the text spilling off the screen"
-msgstr "放大300%且不要讓文字超出螢幕"
+msgstr "在放大 3 倍的情況不會讓文字超出螢幕"
 
 #: templates/views/accessibility_statement.html:31
 msgid "navigate most of the website using just a keyboard"
-msgstr "使用鍵盤瀏覽大部分網站"
+msgstr "能單純使用鍵盤完成大部分網站功能"
 
 #: templates/views/accessibility_statement.html:32
 msgid "navigate most of the website using speech recognition software"
-msgstr "使用語音識別軟體瀏覽大部分網站"
+msgstr "能使用語音識別軟體瀏覽網站大部分內容"
 
 #: templates/views/accessibility_statement.html:33
 msgid ""
@@ -3589,7 +3587,7 @@ msgstr "我們了解本網站的某些部分仍未完全無障礙化："
 
 #: templates/views/accessibility_statement.html:50
 msgid "validation errors may be confusing for screen reader users"
-msgstr "驗證錯誤可能會讓使用螢幕閱讀器的使用者感到困惑"
+msgstr "表單格式驗證的錯誤訊息，可能會讓使用螢幕閱讀器的使用者感到困惑"
 
 #: templates/views/accessibility_statement.html:51
 msgid "the ‘copy to clipboard’ button does not work with some screen readers"
@@ -4519,7 +4517,7 @@ msgid ""
 "an account</a> for free and try it yourself."
 msgstr ""
 "免費<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">建立帳號</a> 並開始嘗試。"
+">建立帳號</a>並開始嘗試。"
 
 #: templates/views/features.html:28
 msgid "Reusable message templates"
@@ -7183,7 +7181,7 @@ msgstr "更新您的設定，這樣才可以收發訊息"
 
 #: templates/views/trial-mode.html:43
 msgid "accept our data sharing and financial agreement"
-msgstr "接受我們的資料共享與財務條款"
+msgstr "接受我們的資料共享與財務同意書"
 
 #: templates/views/trial-mode.html:44
 #, python-format
@@ -7420,7 +7418,7 @@ msgstr "僅顯示前 50 行"
 #: templates/views/organisations/add-nhs-local-organisation.html:8
 #: templates/views/service-settings/request-to-go-live.html:56
 msgid "Accept our data sharing and financial agreement"
-msgstr "接受我們的資料共享與財務條款"
+msgstr "接受我們的資料共享與財務同意書"
 
 #: templates/views/agreement/agreement-accept.html:37
 msgid "The version number is on the front page, for example ‘3.6’"
@@ -7437,7 +7435,9 @@ msgid ""
 "I confirm that I have the legal authority to accept the GOV.UK Notify "
 "data sharing and financial agreement (version %%s) on behalf of %%s (%%s)"
 " and that %%s will be bound by it."
-msgstr "我確認我有法律權利可接受 GOV.UK Notify 資料共享與財務同意書（版本 %%s），代表 %%s（%%s）同意 %%s 將遵循此同意書內容。"
+msgstr ""
+"我確認我有法定權威可接受 GOV.UK Notify 資料共享與財務同意書（版本 %%s），"
+"代表 %%s（%%s）同意 %%s 將遵循此同意書內容。"
 
 #: templates/views/agreement/agreement-confirm.html:31
 #, python-format
@@ -7445,11 +7445,12 @@ msgid ""
 "I confirm that I have the legal authority to accept the GOV.UK Notify "
 "data sharing and financial agreement (version %%s) and that %%s will be "
 "bound by it."
-msgstr "我確認我有法律權利可接受 GOV.UK Notify 資料共享與財務同意書（版本 %%s），且 %%s 將遵循此同意書內容。"
+msgstr "我確認我有法定權威可接受 GOV.UK Notify 資料共享與財務同意書（版本 %%s），且 "
+"%%s 將遵循此同意書內容。"
 
 #: templates/views/agreement/agreement-confirm.html:35
 msgid "Accept this agreement"
-msgstr "接受這項條款"
+msgstr "接受此同意書"
 
 #: templates/views/agreement/agreement-public.html:5
 #: templates/views/agreement/agreement-public.html:14
@@ -7462,8 +7463,8 @@ msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">Download the agreement (PDF)</a> for %%s."
 msgstr ""
-"<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">下載同意書（PDF）</a> 以 %%s."
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">下載同意書（PDF）</a> 以 %%s。"
 
 #: templates/views/agreement/agreement-public.html:21
 msgid "Download the agreement (PDF)"
@@ -7478,7 +7479,7 @@ msgstr "同意書包含商業機密資訊，請勿透漏給組織外的人士。
 #: templates/views/agreement/service-agreement-choose.html:6
 #: templates/views/agreement/service-agreement-choose.html:18
 msgid "Accept the data sharing and financial agreement"
-msgstr "接受我們的資料共享與財務條款"
+msgstr "接受我們的資料共享與財務同意書"
 
 #: templates/views/agreement/service-agreement-choose.html:21
 #: templates/views/agreement/service-agreement.html:22
@@ -7529,7 +7530,7 @@ msgid ""
 "      Notify data sharing and financial agreement."
 msgstr ""
 "%%s 已經接受 GOV.UK Notify 的 \n"
-"      資料共享與財務條款。"
+"      資料共享與財務同意書。"
 
 #: templates/views/agreement/service-agreement-signed.html:24
 #, python-format
@@ -9674,7 +9675,7 @@ msgstr "正式環境服務"
 #: templates/views/organisations/organisation/settings/edit-agreement.html:16
 #: templates/views/organisations/organisation/settings/index.html:54
 msgid "Data sharing and financial agreement"
-msgstr "數據分享與財務協議"
+msgstr "資料分享與財務同意書"
 
 #: templates/views/organisations/organisation/billing.html:18
 #, python-format
@@ -9687,31 +9688,32 @@ msgstr "您的組織已於 %%(signed_at)s 接受第 %%(version)s 版的 GOV.UK N
 #: templates/views/organisations/organisation/billing.html:25
 #, python-format
 msgid "%%(behalf_of_name)s signed the agreement on behalf of %%(name)s."
-msgstr "%%(behalf_of_name)s 代替 %%(name)s 簽署了同意條款。"
+msgstr "%%(behalf_of_name)s 代表 %%(name)s 簽署了同意書。"
 
 #: templates/views/organisations/organisation/billing.html:32
 #: templates/views/organisations/organisation/billing.html:41
 msgid "Download the current version of the agreement (PDF)"
-msgstr "下載目前協議版本（PDF）"
+msgstr "下載目前版本的同意書（PDF）"
 
 #: templates/views/organisations/organisation/billing.html:37
 #, python-format
 msgid "%%s has accepted the GOV.UK Notify data sharing and financial agreement."
-msgstr "%%s 已經接受 GOV.UK Notify 的資料共享和財務的條款。"
+msgstr "%%s 已經接受 GOV.UK Notify 的資料共享與財務同意書。"
 
 #: templates/views/organisations/organisation/billing.html:46
 #, python-format
 msgid ""
 "%%s needs to accept the GOV.UK Notify data sharing and financial "
 "agreement."
-msgstr "%%s 需要同意 GOV.UK Notify 資料共享與財務條款。"
+msgstr "%%s 需要同意 GOV.UK Notify 資料共享與財務同意書。"
 
 #: templates/views/organisations/organisation/billing.html:50
 #, python-format
 msgid ""
 "%%s has not accepted the GOV.UK Notify data sharing and financial "
 "agreement, but we have some service-specific agreements in place."
-msgstr "%%s 並未接受 GOV.UK Notify 資料共享與財務條款，但我們還有一些針對特定服務的條款。"
+msgstr "%%s 並未接受 GOV.UK Notify "
+"資料共享與財務同意書，但我們還有一些針對特定服務的同意書。"
 
 #: templates/views/organisations/organisation/index.html:60
 msgid "Search by service"
@@ -9854,11 +9856,11 @@ msgstr "未簽署"
 
 #: templates/views/organisations/organisation/settings/index.html:59
 msgid "Not signed (but we have some service-specific agreements in place)"
-msgstr "未簽署（但我們有執行一些特定服務協議）"
+msgstr "未簽署（但我們有執行一些特定服務同意書）"
 
 #: templates/views/organisations/organisation/settings/index.html:65
 msgid "data sharing and financial agreement for the organisation"
-msgstr "組織的數據分享與財務協議"
+msgstr "組織的資料共享與財務同意書"
 
 #: templates/views/organisations/organisation/settings/index.html:70
 msgid "Request to go live notes"
@@ -10454,7 +10456,7 @@ msgstr ""
 
 #: templates/views/pricing/index.html:21
 msgid "Last updated"
-msgstr "最近一次更新"
+msgstr "最近更新於"
 
 #: templates/views/pricing/index.html:21
 msgid "1 May 2022"
@@ -10473,8 +10475,8 @@ msgid ""
 "send <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"#letters\">letters</a>"
 msgstr ""
-"傳送 <a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"#letters\">信件</a>"
+"傳送<a class=\"govuk-link govuk-link--no-visited-state\" href=\"#letters\""
+">紙本信件</a>"
 
 #: templates/views/pricing/index.html:31
 msgid ""
@@ -12376,7 +12378,7 @@ msgstr "目前有 %%(herder_length)s 個 %%(headers)s 欄位。"
 
 #: templates/views/uploads/contact-list/upload.html:29
 msgid "Save a list of staff email addresses or phone numbers in Notify."
-msgstr "在Notify中儲存一份員工電子郵件地址或電話號碼聯絡表。"
+msgstr "在 Notify 中儲存一份員工電子郵件地址或電話號碼聯絡表。"
 
 #: templates/views/uploads/contact-list/upload.html:32
 msgid "In an emergency, you can send a message to everyone on the list."
