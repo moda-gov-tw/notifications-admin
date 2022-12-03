@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 10:31+0000\n"
-"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -1037,11 +1037,11 @@ msgstr "包含測試金鑰"
 
 #: main/forms.py:1992
 msgid "First day covered by report"
-msgstr "報告涵蓋的第一日"
+msgstr "報表涵蓋的第一日"
 
 #: main/forms.py:1993
 msgid "Last day covered by report"
-msgstr "報告涵蓋的最終日"
+msgstr "報表涵蓋的最終日"
 
 #: main/forms.py:1998 main/forms.py:2035
 #: templates/views/broadcast/areas-with-sub-areas.html:22
@@ -3105,7 +3105,7 @@ msgid ""
 msgstr ""
 "若要回報問題，請發送電子郵件至 <a class=\"govuk-link govuk-link--no-visited-"
 "state\" href=\"mailto:gov-uk-notify-support@digital.cabinet-office.gov.uk\""
-">gov -uk-notify-support@digital.cabinet-office.gov.uk</a>"
+">gov-uk-notify-support@digital.cabinet-office.gov.uk</a>"
 
 #: templates/partials/tour.html:4
 msgid "Try sending yourself this example"
@@ -3263,14 +3263,14 @@ msgstr "取消發送"
 #: templates/partials/jobs/notifications.html:33
 #, python-format
 msgid "Report is %%(rate)s complete…"
-msgstr "報告已完成 %%(rate)s …"
+msgstr "報表已完成 %%(rate)s…"
 
 #: templates/partials/jobs/notifications.html:37
 #: templates/views/notifications.html:69
 #: templates/views/organisations/organisation/index.html:116
 #: templates/views/returned-letters.html:20
 msgid "Download this report (<abbr title=\"Comma separated values\">CSV</abbr>)"
-msgstr "下載此報告（<abbr title=\"逗號分隔值\">CSV</abbr>）"
+msgstr "下載此報表（<abbr title=\"逗號分隔值\">CSV</abbr>）"
 
 #: templates/partials/jobs/notifications.html:50
 msgid "No messages to show yet…"
@@ -3656,7 +3656,7 @@ msgstr "我們會考慮您的提案並在一個工作日內回覆您。"
 
 #: templates/views/accessibility_statement.html:74
 msgid "Reporting accessibility problems with this website"
-msgstr "回報本網站的無障礙可及性問題"
+msgstr "回報本網站的無障礙問題"
 
 #: templates/views/accessibility_statement.html:77
 msgid ""
@@ -5015,8 +5015,9 @@ msgid ""
 "after a message has been sent. You can download a report, including a "
 "list of sent messages, for your own records."
 msgstr ""
-"為了<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">安全</a>，此資訊僅在訊息寄發後 7 天內提供。您可下載含有寄出訊息清單的報告留存。"
+"為了<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">安全</a>，此資訊僅在訊息寄發後 7 "
+"天內提供。您可下載含有寄出訊息清單的報表留存。"
 
 #: templates/views/message-status.html:18
 msgid ""
@@ -5758,7 +5759,7 @@ msgstr "只會在至少有一封信被退回時，才會收到報告。"
 
 #: templates/views/returned-letter-summary.html:30
 msgid "Returned letters report"
-msgstr "退信報告"
+msgstr "退信報表"
 
 #: templates/views/returned-letter-summary.html:32
 #: templates/views/returned-letters.html:28
@@ -8216,7 +8217,7 @@ msgstr "已退信 %%s"
 #: templates/views/dashboard/_inbox.html:26
 #, python-format
 msgid "latest report %%s"
-msgstr "最新報告 %%s"
+msgstr "最新報表 %%s"
 
 #: templates/views/dashboard/_inbox_messages.html:7
 msgid "Download all messages"
@@ -9978,7 +9979,7 @@ msgstr "供應商"
 #: templates/views/platform-admin/reports.html:4
 #: templates/views/platform-admin/reports.html:10
 msgid "Reports"
-msgstr "報告"
+msgstr "報表"
 
 #: templates/views/platform-admin/_base_template.html:24
 msgid "Inbound SMS numbers"
