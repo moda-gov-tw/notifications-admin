@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 09:00+0000\n"
-"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
+"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -2477,22 +2477,22 @@ msgstr "編輯"
 #: main/views/templates.py:675 main/views/templates.py:688
 #, python-format
 msgid "You have %s too many"
-msgstr ""
+msgstr "你超過 %s 字數"
 
 #: main/views/templates.py:680
 #, python-format
 msgid "Will be charged as %s (not including personalisation)"
-msgstr ""
+msgstr "將會以 %s 身分收費(不包含個人)"
 
 #: main/views/templates.py:683
 #, python-format
 msgid "Will be charged as %s"
-msgstr ""
+msgstr "將會以 %s 身分收費"
 
 #: main/views/templates.py:692
 #, python-format
 msgid "You have %s remaining"
-msgstr ""
+msgstr "你還剩下 %s"
 
 #: main/views/templates.py:715
 msgid "This template has never been used."
@@ -2614,7 +2614,7 @@ msgstr "沒有正在進行的註冊"
 #: main/views/webauthn_credentials.py:50
 #, python-format
 msgid "User %s could not register a new webauthn token - %s"
-msgstr ""
+msgstr "使用者 %s 無法註冊新的 WebAuthn - %s"
 
 #: main/views/webauthn_credentials.py:57
 msgid ""
@@ -2625,7 +2625,7 @@ msgstr "註冊完成。下次登入 Notify 時，系統就會要求您使用安�
 #: main/views/webauthn_credentials.py:133
 #, python-format
 msgid "User %s could not sign in using their webauthn token - %s"
-msgstr ""
+msgstr "使用者 %s 無法使用他們的 WebAuthn 登入 - %s"
 
 #: models/event.py:41
 msgid "Created this service and called it ‘{}’"
