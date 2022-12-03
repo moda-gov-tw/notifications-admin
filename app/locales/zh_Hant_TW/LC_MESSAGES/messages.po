@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 05:11+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"PO-Revision-Date: 2022-12-03 06:13+0000\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -267,7 +267,7 @@ msgstr "未知類型: {}"
 #: broadcast_areas/create-broadcast-areas-db.py:68
 #, python-format
 msgid "%% Polygon %%s/%%s is valid"
-msgstr "%% 多邊形 %%s/%%s 有效"
+msgstr "%% 多邊形圖 %%s/%%s 有效"
 
 #: broadcast_areas/create-broadcast-areas-db.py:78
 #, python-format
@@ -291,7 +291,7 @@ msgstr "已找到0個多邊形圖"
 #: broadcast_areas/create-broadcast-areas-db.py:129
 #, python-format
 msgid "    Original:%%s points    Smoothed:%%s points    Simplified:%%s points"
-msgstr "    原始：%%s 點    已平滑化：%%s 點    已簡化：%%s 點"
+msgstr "    原始：%%s 點    平滑化：%%s 點    簡化：%%s 點"
 
 #: broadcast_areas/create-broadcast-areas-db.py:137
 msgid ""
@@ -411,7 +411,7 @@ msgstr "太多數字"
 
 #: main/forms.py:439
 msgid "Number of {} must be {} or less"
-msgstr "{} 的數量要少於等於 {}"
+msgstr "{}的數量要為{}或更少"
 
 #: main/forms.py:444
 msgid "Enter the number of {} {}"
@@ -431,7 +431,7 @@ msgstr "全名"
 
 #: main/forms.py:960
 msgid "Must provide `image_data` to initialiser"
-msgstr "必須提供 `image_data` 給 initialiser"
+msgstr "請提供 `image_data` 作為初始值"
 
 #: main/forms.py:1024
 msgid "Folders this team member can see"
@@ -447,7 +447,7 @@ msgstr "團隊成員都能看到已經寄出的訊息。"
 
 #: main/forms.py:1072
 msgid "Team members who can create or approve alerts can also reject them."
-msgstr "能夠建立或核准警訊的團隊成員也能拒絕這些警訊。"
+msgstr "能夠建立或核准通知的團隊成員也能拒絕這些通知。"
 
 #: main/forms.py:1091 main/forms.py:1103
 msgid "You cannot send an invitation to yourself"
@@ -585,7 +585,7 @@ msgstr "確認"
 #: main/forms.py:1349
 #, python-format
 msgid "I understand this will alert anyone who has switched on the %s channel"
-msgstr "我明白這將為通知所有轉換到 %s 頻道的使用者"
+msgstr "我明白這將通知所有轉換到 %s 頻道的使用者"
 
 #: main/forms.py:1351
 #, python-format
@@ -717,7 +717,7 @@ msgstr "您的名字"
 
 #: main/forms.py:1534
 msgid "The email address is already in use"
-msgstr "此信箱地址已被使用"
+msgstr "此信箱地址已有人使用"
 
 #: main/forms.py:1554
 msgid "When should Notify send these messages?"
@@ -1296,7 +1296,7 @@ msgstr "選擇一個行動網路"
 
 #: main/forms.py:2500
 msgid "Change cell broadcast service type"
-msgstr "變換手機廣播服務類型"
+msgstr "變更手機廣播服務類型"
 
 #: main/forms.py:2501
 msgid "which type of account this cell broadcast service is"
@@ -1308,7 +1308,7 @@ msgstr "您想要接受哪一版本的協議書？"
 
 #: main/forms.py:2533
 msgid "Who are you accepting the agreement for?"
-msgstr "您是為了誰接受協議？"
+msgstr "您是幫誰接受協議？"
 
 #: main/forms.py:2536
 msgid "me"
@@ -1360,7 +1360,7 @@ msgstr "條紋的顏色"
 
 #: main/validators.py:21
 msgid "Password is in list of commonly used passwords."
-msgstr "此密碼被列入常用密碼中。"
+msgstr "此密碼為常用密碼。"
 
 #: main/validators.py:30
 msgid "Not a csv file"
@@ -1386,7 +1386,7 @@ msgstr ""
 
 #: main/validators.py:58
 msgid "Enter a valid email address"
-msgstr "請輸入一個有效的電子郵件地址"
+msgstr "請輸入有效的電子郵件地址"
 
 #: main/validators.py:72
 msgid "You cannot put commas between double brackets"
@@ -1394,23 +1394,23 @@ msgstr "您不能將逗號放在雙括號之間"
 
 #: main/validators.py:100
 msgid "This SVG has an embedded raster image in it and will not render well"
-msgstr "此 SVG 檔案嵌入了網格影像會呈現不佳"
+msgstr "此 SVG 檔案嵌入了點陣圖，將無法以最佳方式呈現"
 
 #: main/validators.py:105
 msgid ""
 "This SVG has text which has not been converted to paths and may not "
 "render well"
-msgstr "此 SVG 檔案含有尚未轉換為路徑的文字，可能導致呈現不佳"
+msgstr "此 SVG 檔案含有尚未轉換為路徑的文字，可能無法以最佳方式呈現"
 
 #: main/validators.py:117
 msgid ""
 "You cannot use {} in {}. {} will not show up properly on everyone’s "
 "phones."
-msgstr "您不能將 {} 放入 {} 中。每個人的電話將無法正確顯示 {} 。"
+msgstr "{}在{}中將無法使用。{}將無法在大家的電話正常顯示 。"
 
 #: main/validators.py:123
 msgid "It"
-msgstr "這"
+msgstr "它"
 
 #: main/validators.py:123
 msgid "They"
@@ -1427,11 +1427,11 @@ msgstr ""
 
 #: main/validators.py:163
 msgid "Use letters and numbers only"
-msgstr "僅限使用英文字母與數字"
+msgstr "僅限英文字母與數字"
 
 #: main/validators.py:172
 msgid "Cannot start with 00"
-msgstr "不可以 00 開頭"
+msgstr "不可以使用 00 開頭"
 
 #: main/validators.py:184
 msgid "Must include at least two alphanumeric characters"
@@ -1460,11 +1460,11 @@ msgstr "關於您的服務"
 
 #: main/views/api_keys.py:74 templates/views/api/keys.html:36
 msgid "Live – sends to anyone"
-msgstr "直播 - 傳送給任何人"
+msgstr "正式環境 - 傳送給任何人"
 
 #: main/views/api_keys.py:75 templates/views/api/keys.html:38
 msgid "Team and guest list – limits who you can send to"
-msgstr "團隊與顧客名單 - 限制您的發送對象"
+msgstr "團隊與訪客名單 - 限制您的發送對象"
 
 #: main/views/api_keys.py:76 templates/views/api/keys.html:40
 msgid "Test – pretends to send messages"
@@ -1480,13 +1480,13 @@ msgstr ""
 
 #: main/views/api_keys.py:94
 msgid "Cannot be used to send letters"
-msgstr "無法適用於發送信件"
+msgstr "無法用來發送紙本信件"
 
 #: main/views/api_keys.py:117
 msgid ""
 "Are you sure you want to revoke ‘{}’? You will not be able to use this "
 "API key to connect to GOV.UK Notify."
-msgstr "您確定想要撤銷‘{}’？您將無法使用這個 API 金鑰連線至 GOV.UK Notify。"
+msgstr "您確定要撤銷「{}」嗎？您將無法再使用此 API 金鑰連線至 GOV.UK Notify。"
 
 #: main/views/api_keys.py:122
 msgid "revoke this API key"
@@ -1494,23 +1494,23 @@ msgstr "撤銷這個 API 金鑰"
 
 #: main/views/broadcast.py:66 templates/main_nav.html:9
 msgid "Past alerts"
-msgstr "過往的警報"
+msgstr "過往的通知"
 
 #: main/views/broadcast.py:67
 msgid "You do not have any past alerts"
-msgstr "您沒有任何過往的警報"
+msgstr "您沒有任何過往的通知"
 
 #: main/views/broadcast.py:81 templates/main_nav.html:10
 msgid "Rejected alerts"
-msgstr "已拒絕的警報"
+msgstr "已拒絕的通知"
 
 #: main/views/broadcast.py:82
 msgid "You do not have any rejected alerts"
-msgstr "您沒有任何已拒絕的警報"
+msgstr "您沒有任何已拒絕的通知"
 
 #: main/views/broadcast.py:100
 msgid "You do not have any current alerts"
-msgstr "您沒有任何當下的警報"
+msgstr "您沒有任何當下的通知"
 
 #: main/views/broadcast.py:235
 #, python-format
@@ -1550,7 +1550,7 @@ msgstr "聯繫 GOV.UK Notify 的支援"
 
 #: main/views/feedback.py:119
 msgid "Notify feedback"
-msgstr "Notify 的回饋評論"
+msgstr "Notify 的回饋"
 
 #: main/views/find_users.py:45
 msgid ""
@@ -1563,7 +1563,7 @@ msgstr "無法從服務移除使用者，請確認所有服務是否有已獲得
 msgid ""
 "There's no way to reverse this! Are you sure you want to archive this "
 "user?"
-msgstr "這個動作將無法回復！您確定您想要封存這個使用者嗎？"
+msgstr "這個動作將無法回復！您確定要封存這個使用者嗎？"
 
 #: main/views/invites.py:18
 msgid ""
@@ -1577,7 +1577,7 @@ msgid ""
 msgstr ""
 "\n"
 "            您以 {} 的身分登入。\n"
-"            這個邀請是給另一個電子郵件地址的。\n"
+"            這是給另一個電子郵件地址的邀請。\n"
 "            請<a href={} class=\"govuk-link govuk-link--no-visited-state\""
 ">登出</a>\n"
 "            並再次點擊此連結來接受邀請。\n"
@@ -1595,9 +1595,9 @@ msgid ""
 msgstr ""
 "\n"
 "            您以 {} 的身分登入。\n"
-"            這個邀請是給另一個電子郵件地址的。\n"
-"            請<a href={} class=\"govuk-link govuk-link--no-visited-"
-"state\">登出</a>\n"
+"            這是給另一個電子郵件地址的邀請。\n"
+"            請<a href={} class=\"govuk-link govuk-link--no-visited-state\""
+">登出</a>\n"
 "            並再次點擊此連結來接受邀請。\n"
 "            "
 
@@ -1611,7 +1611,7 @@ msgstr ""
 
 #: main/views/jobs.py:134
 msgid "We are still processing these letters, please try again in a minute."
-msgstr "我們正在處理這些信件，請稍後再試一次。"
+msgstr "我們仍在處理這些信件，請稍後再試一次。"
 
 #: main/views/jobs.py:142
 msgid "Cancelled {number_of_letters} letters from {original_file_name}"
@@ -1631,7 +1631,7 @@ msgstr "檔案名稱"
 
 #: main/views/jobs.py:185
 msgid "reference"
-msgstr "參考來源"
+msgstr "參考編號"
 
 #: main/views/jobs.py:213 main/views/platform_admin.py:491
 #: main/views/uploads.py:97
@@ -1679,11 +1679,11 @@ msgstr ""
 msgid ""
 "The link in the email we sent you has expired. Enter your email address "
 "to resend."
-msgstr "我們發送給您的電子郵件中的鏈接已過期。 輸入您的電子郵件地址以重新發送。"
+msgstr "我們發送給您的連結已過期。 輸入您的電子郵件地址以重新發送。"
 
 #: main/views/new_password.py:38
 msgid "The link in the email has already been used"
-msgstr "電子郵件中的鏈接已被使用"
+msgstr "電子郵件中的連結已經使用過"
 
 #: main/views/notifications.py:201
 msgid "Are you sure you want to cancel sending this letter?"
@@ -1699,7 +1699,7 @@ msgstr "服務名稱"
 
 #: main/views/organisations.py:185
 msgid "Emails sent"
-msgstr "已寄送的電子郵件"
+msgstr "電子郵件已寄送"
 
 #: main/views/organisations.py:186
 msgid "Free text message allowance remaining"
@@ -1707,17 +1707,17 @@ msgstr "剩餘的免費簡訊額度"
 
 #: main/views/organisations.py:191
 msgid "Spent on text messages (£)"
-msgstr "於簡訊的花費 (£)"
+msgstr "簡訊的花費 (£)"
 
 #: main/views/organisations.py:191
 msgid "Spent on letters (£)"
-msgstr "於信件的花費 (£)"
+msgstr "信件的花費 (£)"
 
 #: main/views/organisations.py:206
 msgid ""
 "inline;filename=\"{} organisation usage report for year {} - generated on"
 " {}.csv\""
-msgstr "inline;filename=“{} 組織機構年度使用報告 {} - generated on {}.csv”"
+msgstr "inline;filename=“{} 組織年度使用報告 {} - generated on {}.csv”"
 
 #: main/views/organisations.py:302
 msgid "Organisation name already exists"
@@ -1725,7 +1725,7 @@ msgstr "組織名稱已存在"
 
 #: main/views/organisations.py:304
 msgid "This organisation name is already in use"
-msgstr "這個組織機構的名稱已被使用"
+msgstr "這個組織機構名稱已有人使用"
 
 #: main/views/organisations.py:403
 #, python-format
@@ -1779,7 +1779,7 @@ msgstr ""
 
 #: main/views/organisations.py:680
 msgid "1 letter branding option added"
-msgstr "加入一個信件推廣的選項"
+msgstr "已加入一個信件品牌選項"
 
 #: main/views/organisations.py:682
 #, python-format
@@ -1788,11 +1788,11 @@ msgstr ""
 
 #: main/views/organisations.py:707
 msgid "Domain already exists"
-msgstr "網域已經存在"
+msgstr "網域已存在"
 
 #: main/views/organisations.py:709
 msgid "This domain is already in use"
-msgstr "這個網域已經被使用"
+msgstr "這個網域已有人使用"
 
 #: main/views/organisations.py:808
 #, python-format
@@ -1806,11 +1806,11 @@ msgstr ""
 
 #: main/views/performance.py:22
 msgid "No organisation"
-msgstr "沒有機構"
+msgstr "沒有組織"
 
 #: main/views/platform_admin.py:88
 msgid "technical failures"
-msgstr "技術問題故障"
+msgstr "技術性故障"
 
 #: main/views/platform_admin.py:100 main/views/platform_admin.py:119
 msgid "permanent failures"
