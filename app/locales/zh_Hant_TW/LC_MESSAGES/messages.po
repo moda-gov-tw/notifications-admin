@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 06:13+0000\n"
-"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
+"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -637,12 +637,12 @@ msgstr "地址"
 #: main/forms.py:1417
 #, python-format
 msgid "Address must be at least %s lines long"
-msgstr ""
+msgstr "郵件地址至少要 %s 行的長度"
 
 #: main/forms.py:1420
 #, python-format
 msgid "Address must be no more than %s lines long"
-msgstr ""
+msgstr "郵件地址最多不超過 %s 行的長度"
 
 #: main/forms.py:1424 templates/views/check/row-errors.html:83
 msgid "Last line of the address must be a UK postcode or another country"
@@ -953,7 +953,7 @@ msgstr "選擇至少一個信件的品牌識別選項"
 #: main/forms.py:1879
 #, python-format
 msgid "Should other teams in %s have the option to use this branding?"
-msgstr ""
+msgstr "在 %s 中其他組別應該可以選擇性的使用這個品牌？"
 
 #: main/forms.py:1895
 #, python-format
@@ -966,6 +966,13 @@ msgid ""
 "            </ul>\n"
 "        "
 msgstr ""
+"\n"
+"            <ul class=\"govuk-list govuk-hint govuk-!-margin-bottom-0\">\n"
+"                <li>套用這個品牌至 ‘%(service_name)s’</li>\n"
+"                <li class=\"govuk-!-margin-bottom-0\""
+">讓其他%(org_name)s組別自行使用這個品牌</li>\n"
+"            </ul>\n"
+"        "
 
 #: main/forms.py:1906
 #, python-format
@@ -977,6 +984,12 @@ msgid ""
 "            </ul>\n"
 "        "
 msgstr ""
+"\n"
+"            <ul class=\"govuk-list govuk-hint govuk-!-margin-bottom-0\">\n"
+"                <li class=\"govuk-!-margin-bottom-0\">只套用這個品牌至 "
+"‘%s’</li>\n"
+"            </ul>\n"
+"        "
 
 #: main/forms.py:1928
 msgid "Upload an SVG logo"
@@ -1084,8 +1097,9 @@ msgid "Must be a valid https URL"
 msgstr "必須是有效的HTTPS網址"
 
 #: main/forms.py:2062
+#, fuzzy
 msgid "Bearer token"
-msgstr ""
+msgstr "Bearer token"
 
 #: main/forms.py:2065
 msgid "Must be at least 10 characters"
@@ -1423,7 +1437,7 @@ msgstr "您不能使用 ((雙括號)) 來個人化此訊息"
 #: main/validators.py:150
 #, python-format
 msgid "Content must be %s characters or fewer because it contains %s"
-msgstr ""
+msgstr "內容必須包含最多 %s 個字元，因為內容包含了 %s"
 
 #: main/validators.py:163
 msgid "Use letters and numbers only"
@@ -1440,7 +1454,7 @@ msgstr "必須包含至少 2 個字母或數字字元"
 #: main/validators.py:204
 #, python-format
 msgid "Cannot contain %s"
-msgstr ""
+msgstr "不能包含 %s"
 
 #: main/views/add_service.py:41
 msgid "Example text message template"
@@ -1603,11 +1617,11 @@ msgstr ""
 
 #: main/views/jobs.py:70
 msgid "Your letter has been sent. Printing starts {} at 5:30pm."
-msgstr ""
+msgstr "你的信件已經寄送。將於{} 5:30pm 開始列印。"
 
 #: main/views/jobs.py:72
 msgid "Your letters have been sent. Printing starts {} at 5:30pm."
-msgstr ""
+msgstr "你的信件已經寄送。將於{} 5:30pm 開始列印。"
 
 #: main/views/jobs.py:134
 msgid "We are still processing these letters, please try again in a minute."
@@ -1615,7 +1629,7 @@ msgstr "我們仍在處理這些信件，請稍後再試一次。"
 
 #: main/views/jobs.py:142
 msgid "Cancelled {number_of_letters} letters from {original_file_name}"
-msgstr ""
+msgstr "已在{original_file_name}取消{number_of_letters}封信件"
 
 #: main/views/jobs.py:149
 msgid "Are you sure you want to cancel sending these letters?"
@@ -1641,22 +1655,22 @@ msgstr "無效的頁數參數 ({}) 。"
 #: main/views/jobs.py:340
 #, python-format
 msgid "total<span class=\"govuk-visually-hidden\">%s</span>"
-msgstr ""
+msgstr "共<span class=\"govuk-visually-hidden\">%s</span>"
 
 #: main/views/jobs.py:348
 #, python-format
 msgid "sending<span class=\"govuk-visually-hidden\">%s</span>"
-msgstr ""
+msgstr "<span class=\"govuk-visually-hidden\">%s</span>傳送中"
 
 #: main/views/jobs.py:356
 #, python-format
 msgid "delivered<span class=\"govuk-visually-hidden\">%s</span>"
-msgstr ""
+msgstr "<span class=\"govuk-visually-hidden\">%s</span>已寄達"
 
 #: main/views/jobs.py:364
 #, python-format
 msgid "failed<span class=\"govuk-visually-hidden\">%s</span>"
-msgstr ""
+msgstr "<span class=\"govuk-visually-hidden\">%s</span>發生錯誤"
 
 #: main/views/letter_branding.py:97
 msgid "Error saving uploaded file - try uploading again"
@@ -1673,7 +1687,7 @@ msgstr "您不能移除服務的唯一使用者"
 #: main/views/manage_users.py:281 main/views/organisations.py:279
 #, python-format
 msgid "Invitation cancelled for %(mail)s"
-msgstr ""
+msgstr "已取消 %(mail)s 的邀請函"
 
 #: main/views/new_password.py:32
 msgid ""
