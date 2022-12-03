@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-04 00:47+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -4986,7 +4986,7 @@ msgstr "使用 %%(auth_type)s 登入"
 msgid ""
 "Cancel invitation<span class=\"govuk-visually-hidden\"> for "
 "%%(user_mail)s</span>"
-msgstr "取消 <span class=\"govuk-visually-hidden\">%%(user_mail)s</span> 的邀請函"
+msgstr "取消 <span class=\"govuk-visually-hidden\">%%(user_mail)s</span> 的邀請"
 
 #: templates/views/manage-users.html:84
 #, python-format
@@ -4994,14 +4994,14 @@ msgid ""
 "Change details<span class=\"govuk-visually-hidden\"> for %%(user_name)s "
 "%%(user_mail)s</span>"
 msgstr ""
-"<span class=\"govuk-visually-hidden\">%%(user_name)s "
-"%%(user_mail)s</span> 的更改詳細資訊"
+"變更訊息<span class=\"govuk-visually-hidden\"> 屬於 %%(user_name)s "
+"%%(user_mail)s</span>"
 
 #: templates/views/message-status.html:16
 msgid ""
 "Notify’s real-time dashboard lets you check the status of any message, to"
 " see when it was delivered."
-msgstr "Notify 的即時儀表板可讓您確認任何訊息的狀態，了解何時遞送成功。"
+msgstr "Notify 即時儀表板可讓您確認任何訊息的狀態，了解何時送達。"
 
 #: templates/views/message-status.html:17
 #, python-format
@@ -5013,13 +5013,13 @@ msgid ""
 msgstr ""
 "為了<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
 ">安全</a>，此資訊僅在訊息寄發後 7 "
-"天內提供。您可下載含有寄出訊息清單的報表留存。"
+"天內提供。您可下載含有寄出訊息清單的報告留存。"
 
 #: templates/views/message-status.html:18
 msgid ""
 "This page describes the statuses you’ll see when you’re signed in to "
 "Notify."
-msgstr "此頁面描述的是當您登入 Notify 時會看到的狀態。"
+msgstr "此頁面描述的是您登入 Notify 時會看到的狀態。"
 
 #: templates/views/message-status.html:19
 #, python-format
@@ -5028,12 +5028,12 @@ msgid ""
 "--no-visited-state\" href=\"%%s\">documentation</a> for a list of API "
 "statuses."
 msgstr ""
-"若您使用 Notify API，請閱讀我們的<a class=\"govuk-link govuk-link--no-visited-"
-"state\" href=\"%%s\">文件</a>即可了解 API 狀態清單。"
+"若您有使用 Notify API，請閱讀我們的<a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"%%s\">文件</a>來了解 API 狀態。"
 
 #: templates/views/message-status.html:24
 msgid "Message statuses – emails"
-msgstr "信息狀態 – 電子郵件"
+msgstr "訊息狀態 – 電子郵件"
 
 #: templates/views/message-status.html:25
 #: templates/views/message-status.html:54
@@ -5051,7 +5051,8 @@ msgid ""
 "Notify has sent the message to the provider. The provider will try to "
 "deliver the message to the recipient for up to 72 hours. Notify is "
 "waiting for delivery information."
-msgstr "Notify 已將訊息送交服務供應商。服務供應商將嘗試於 72 小時內將訊息投遞給收件者。Notify 正在等候接收投遞資訊。"
+msgstr "Notify 已將訊息送交服務供應商。服務供應商將嘗試於 72 小時內投遞訊息給收件者。"
+"Notify 正在等候投遞資訊。"
 
 #: templates/views/message-status.html:31
 #: templates/views/message-status.html:61
@@ -5064,7 +5065,8 @@ msgstr "訊息已成功送達。Notify 不會告訴您使用者是否有開啟�
 msgid ""
 "The provider could not deliver the message because the email address was "
 "wrong. You should remove these email addresses from your database."
-msgstr "由於電子郵件地址錯誤，服務商無法寄送郵件。您應從資料庫中移除這些電子郵件地址。"
+msgstr "由於電子郵件地址錯誤，服務商無法寄送郵件。您應從資料庫中移除這些電子郵件地址"
+"。"
 
 #: templates/views/message-status.html:33
 msgid ""
@@ -5075,10 +5077,11 @@ msgid ""
 "messages#protect-your-users-from-spam-and-phishing\">Check your content "
 "does not look like spam</a> before you try to send the message again."
 msgstr ""
-"服務商無法寄送郵件。可能是收件者的信箱已滿，或垃圾信件過濾器退回了您的郵件。嘗試再次寄送前，<a class=\"govuk-link "
-"govuk-link--no-visited-state\" href=\"https://www.gov.uk/service-"
-"manual/design/sending-emails-and-text-messages#protect-your-users-from-"
-"spam-and-phishing\">請先確認您的信件內容是否長得像垃圾信</a>。"
+"服務商無法寄送郵件。可能是收件者的信箱已滿，或垃圾信件過濾器退回了您的郵件。"
+"嘗試再次寄送前，<a class=\"govuk-link govuk-link--no-visited-state\" href="
+"\"https://www.gov.uk/service-manual/design/sending-emails-and-text-messages"
+"#protect-your-users-from-spam-and-phishing\""
+">請先確認您的信件內容是否像垃圾信</a>。"
 
 #: templates/views/message-status.html:34
 msgid ""
@@ -5097,8 +5100,9 @@ msgid ""
 "your emails. When this happens you should remove the recipient’s email "
 "address from your list."
 msgstr ""
-"若電子郵件被標示為垃圾信，Notify "
-"會收到來自對方電子郵件業者的「抱怨」通知。我們收到有關您的電子郵件的抱怨通知時，就會主動聯絡您，然後您就應該將該收件信箱從您的郵寄清單中刪除。"
+"若電子郵件被標示為垃圾信，Notify 會收到來自對方電子郵件業者的「抱怨」通知。我"
+"們收到有關您的電子郵件的抱怨通知時，會主動聯絡您，然後您應該將該收件信箱從郵"
+"寄清單中刪除。"
 
 #: templates/views/message-status.html:47
 msgid "Open rates and click-throughs"
@@ -5111,12 +5115,13 @@ msgid ""
 "are privacy issues. Tracking emails without asking permission from users "
 "could breach General Data Protection Regulations (GDPR)."
 msgstr ""
-"Notify "
-"無法告訴您使用者是否開啟了郵件，或點擊過郵件中的連結。由於這會造成隱私問題，我們並不追蹤開信率與點擊率。未經收件者同意就追蹤郵件，可能違反一般資料保護規則（GDPR）。"
+"Notify 無法告訴您使用者是否開啟了郵件，或點擊過郵件中的連結。由於這會造成隱私"
+"問題，我們並不追蹤開信率與點擊率。未經收件者同意就追蹤郵件，可能違反一般資料"
+"保護規則（GDPR）。"
 
 #: templates/views/message-status.html:53
 msgid "Message statuses – text messages"
-msgstr "信息狀態 – 簡訊"
+msgstr "訊息狀態 – 簡訊"
 
 #: templates/views/message-status.html:60
 msgid ""
@@ -5134,9 +5139,10 @@ msgid ""
 " If not, you should remove them from your database. You’ll still be "
 "charged for text messages that cannot be delivered."
 msgstr ""
-"電信業者無法傳遞簡訊。可能是手機號碼不正確，或電信業者拒絕該訊息。若您確定這些手機號碼都正確，請<a class=\"govuk-link "
-"govuk-link--no-visited-state\" "
-"href=\"%%s\">聯絡我們</a>。若您無法確定，則應該將這些號碼從您的資料庫中刪除。無法傳遞的簡訊還是會向您收取費用。"
+"電信業者無法傳遞簡訊。可能是手機號碼不正確，或電信業者拒絕該訊息。若您確定這"
+"些手機號碼都正確，請<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">聯絡我們</a>。若您無法確定，則應該將這些號碼從您的資料庫中刪除。"
+"無法傳遞的簡訊還是會向您收取費用。"
 
 #: templates/views/message-status.html:63
 msgid ""
@@ -5144,7 +5150,8 @@ msgid ""
 "recipient’s phone is off, has no signal, or their text message inbox is "
 "full. You can try to send the message again. You’ll still be charged for "
 "text messages to phones that are not accepting messages."
-msgstr "電信業者無法傳遞簡訊。可能是因為收件者手機關機、沒有訊號，或簡訊收件匣已滿。您可以嘗試再次寄訊簡訊。對方手機未接收的簡訊還是會向您收取費用。"
+msgstr "電信業者無法傳遞簡訊。可能是因為收件者手機關機、沒有訊號，或簡訊收件匣已滿。"
+"您可以嘗試再次寄送簡訊。對方手機未接收的簡訊還是會向您收取費用。"
 
 #: templates/views/message-status.html:64
 msgid ""
@@ -5152,11 +5159,12 @@ msgid ""
 "the provider. You’ll have to try sending your messages again. You will "
 "not be charged for text messages that are affected by a technical "
 "failure."
-msgstr "由於 Notify 與服務業者間發生問題，並未傳送您的訊息。請您再寄一次訊息。因技術問題未寄出的簡訊將不會向您收費。"
+msgstr "由於 Notify 與服務業者間發生問題，並未傳送您的訊息。請您再寄一次簡訊。因技術"
+"問題未寄出的簡訊將不會向您收費。"
 
 #: templates/views/message-status.html:77
 msgid "Message statuses – letters"
-msgstr "信息狀態 – 紙本信件"
+msgstr "訊息狀態 – 信件"
 
 #: templates/views/message-status.html:83
 msgid "Sent"
@@ -5164,7 +5172,7 @@ msgstr "已送出"
 
 #: templates/views/message-status.html:83
 msgid "Notify has sent the letter to the provider to be printed."
-msgstr "Notify 已將準備好需列印的郵件送交印刷廠。"
+msgstr "Notify 已將準備好列印的郵件送交印刷廠。"
 
 #: templates/views/message-status.html:84 utils/letters.py:42
 msgid "Printed"
@@ -5192,11 +5200,11 @@ msgstr "Notify 將信件傳送給印刷廠時，遇到未知錯誤。"
 
 #: templates/views/message-status.html:87
 msgid "The provider cannot print the letter. Your letter will not be dispatched."
-msgstr "印刷廠無法印出信件，將不會交遞您的信件。"
+msgstr "印刷廠無法印出信件，將不會寄出您的信件。"
 
 #: templates/views/message-status.html:97
 msgid "Undelivered letters and returned mail"
-msgstr "未寄達的紙本信件與退信"
+msgstr "未送達的信件與退件"
 
 #: templates/views/message-status.html:99
 msgid ""
@@ -5206,7 +5214,7 @@ msgstr "我們寄出的每封紙本信件，都會包含印刷廠的地址在信
 
 #: templates/views/message-status.html:100
 msgid "Returned mail is destroyed by our printer."
-msgstr "我們的印刷廠將銷毀退信。"
+msgstr "印刷廠將銷毀遭退郵件。"
 
 #: templates/views/message-status.html:101
 msgid ""
@@ -5214,8 +5222,9 @@ msgid ""
 "they destroy. We’ll contact you if the IDs match any of your letters. "
 "This is a partly manual process, so it can take a few weeks."
 msgstr ""
-"每封信上都會有唯一的 "
-"ID。若信件遭到退回，印刷廠會通知我們有哪些郵件被銷毀，並在確認是您寄出的信件後通知您。這個過程有一部分需要人工處理，所以可能需要花上幾週的時間。"
+"每封信都會有獨特的 ID。若信件遭退回，印刷廠會通知我們有哪些郵件被銷毀，並在確"
+"認是否為您的信件後通知您。這個過程有一部分需要人工處理，所以可能要花上幾週的"
+"時間。"
 
 #: templates/views/new-password.html:6 templates/views/new-password.html:15
 msgid "Create a new password"
