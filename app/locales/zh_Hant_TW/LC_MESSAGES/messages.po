@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 16:07+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -595,7 +595,7 @@ msgstr "我明白傳送這封警報，將會通知當地的 %s 位人員"
 #: main/forms.py:1355
 #, python-format
 msgid "I understand this will alert %s of people, even if they’ve opted out"
-msgstr "我明白這封警報將會通知當地的 %s 位人員，即使他們已經設定拒收仍會收到警報"
+msgstr "我明白這麼做會通知 %s 位人員，即使他們已設定拒收"
 
 #: main/forms.py:1362
 msgid "millions"
@@ -3615,7 +3615,7 @@ msgstr "對於某些螢幕閱讀器使用者來說，選擇發送訊息的日期
 msgid ""
 "screen reader users may find it hard to expand or collapse groups of "
 "checkboxes"
-msgstr "螢幕閱讀器使用者可能會有困難展開或收合複選框"
+msgstr "螢幕閱讀器使用者可能會有困難展開或收合複選方塊"
 
 #: templates/views/accessibility_statement.html:56
 msgid "one page links to a PDF document that is not fully accessible"
@@ -3646,9 +3646,9 @@ msgid ""
 "href=\"https://www.notifications.service.gov.uk/support\">contact the "
 "GOV.UK Notify team</a>."
 msgstr ""
-"若您需要本服務的任何其他不同版本，如大型字體、語音版或點字版，<a class"
-"=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.notifications"
-".service.gov.uk/support\">請聯繫 GOV.UK Notify 團隊</a>。"
+"若您需要本服務以不同格式呈現，如大型字體、錄音檔或點字版，<a class=\"govuk-"
+"link govuk-link--no-visited-state\" href=\"https://www.notifications.service."
+"gov.uk/support\">請聯繫 GOV.UK Notify 團隊</a>。"
 
 #: templates/views/accessibility_statement.html:71
 msgid "We’ll consider your request and get back to you within one working day."
@@ -3699,7 +3699,7 @@ msgstr ""
 
 #: templates/views/accessibility_statement.html:90
 msgid "Technical information about this website’s accessibility"
-msgstr "有關本網站無障礙可及性的技術資訊"
+msgstr "有關本網站的無障礙技術資訊"
 
 #: templates/views/accessibility_statement.html:93
 msgid ""
@@ -3707,14 +3707,14 @@ msgid ""
 " Public Sector Bodies (Websites and Mobile Applications) (No. 2) "
 "Accessibility Regulations 2018."
 msgstr "GDS 致力於依照 2018 年公部門機構（網站與行動應用程式）（第 2 "
-"號）無障礙條例，落實其網站的無障礙化。"
+"號）無障礙條例，落實網站的無障礙化。"
 
 #: templates/views/accessibility_statement.html:97
 msgid ""
 "GOV.UK Notify is partially compliant with the Web Content Accessibility "
 "Guidelines (WCAG) version 2.1 AA standard, due to the non-compliances "
 "listed below."
-msgstr "GOV.UK Notify 僅符合部分的網站內容無障礙性指南 (WCAG) 2.1 版 的 AA "
+msgstr "GOV.UK Notify 僅遵循部分的網站內容無障礙指南 (WCAG) 2.1 版 的 AA "
 "標準，因下列情況不符合。"
 
 #: templates/views/accessibility_statement.html:100
@@ -3727,7 +3727,7 @@ msgstr "由於下列原因，這些內容並未無障礙化。"
 
 #: templates/views/accessibility_statement.html:106
 msgid "Non-compliance with the WCAG version 2.1 AA standard"
-msgstr "不符合 WCAG 2.1 版 AA 標準"
+msgstr "未遵循 WCAG 2.1 版 AA 標準"
 
 #: templates/views/accessibility_statement.html:110
 msgid ""
@@ -3757,7 +3757,7 @@ msgstr ""
 
 #: templates/views/accessibility_statement.html:117
 msgid "Problems with using the interface"
-msgstr "使用介面時遇到的問題"
+msgstr "使用介面遇到的問題"
 
 #: templates/views/accessibility_statement.html:121
 msgid ""
@@ -3809,7 +3809,7 @@ msgstr "我們在 HTML 頁面中提供 PDF 檔案內容的文字說明，作為�
 msgid ""
 "The JAWS and NVDA screen readers announce extra spaces in emails when "
 "viewed in Microsoft Outlook."
-msgstr "當使用 Microsoft Outlook 瀏覽時，JAWS 和 NVDA "
+msgstr "使用 Microsoft Outlook 瀏覽時，JAWS 和 NVDA "
 "螢幕閱讀器會唸出電子郵件中的額外空格。"
 
 #: templates/views/accessibility_statement.html:154
@@ -3839,9 +3839,9 @@ msgid ""
 "link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#info-and-"
 "relationships\">success criterion 1.3.1: info and relationships</a>"
 msgstr ""
-"錯誤使用標題階層<a class=\"govuk-link govuk-link--no-visited-state\" href="
-"\"https://www.w3.org/TR/WCAG21/#info-and-relationships\">將違反文件規範第 1.3"
-".1：資訊與脈絡關係</a>的規定"
+"有一個使用標題階層的錯誤<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://www.w3.org/TR/WCAG21/#info-and-relationships\">違反文件規範第 "
+"1.3.1：資訊與脈絡關係</a>的規定"
 
 #: templates/views/accessibility_statement.html:167
 msgid ""
@@ -3857,7 +3857,7 @@ msgid ""
 "/#info-and-relationships\">success criterion 1.3.1: info and "
 "relationships</a>"
 msgstr ""
-"我們的狀態事件頁面缺少大標題、狀態網站首頁的標題階層不正確 – 此情形不符合<a "
+"我們的狀態事件頁面缺少大標題、狀態網站首頁的標題階層不正確 – 此情形未遵循<a "
 "class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.w3.org/"
 "TR/WCAG21/#info-and-relationships\">檢核標準 1.3.1：資訊和關係</a>"
 
@@ -3881,7 +3881,7 @@ msgid ""
 "state\" href=\"https://www.w3.org/TR/WCAG21/#info-and-"
 "relationships\">success criterion 1.3.1: info and relationships</a>"
 msgstr ""
-"我們的狀態頁面訂閱更新表單欄位未包含明確的標籤 – 這不符合<a class=\"govuk-"
+"我們的狀態頁面訂閱更新表單欄位未包含明確的標籤 – 這未遵循<a class=\"govuk-"
 "link govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/"
 "#info-and-relationships\">檢核標準 1.3.1：訊息和關係</a>"
 
@@ -3892,8 +3892,8 @@ msgid ""
 "govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#name-"
 "role-value\">success criterion 4.1.2: name, role, value</a>"
 msgstr ""
-"我們的狀態頁面的訂閱更新表單不會向使用者表明它們是可展開或可收合的 – "
-"這不符合<a class=\"govuk-link govuk-link--no-visited-state\" href=\"https"
+"我們的狀態頁面的訂閱更新表單，不會向使用者表明它們可展開或可收合 – "
+"這未遵循<a class=\"govuk-link govuk-link--no-visited-state\" href=\"https"
 "://www.w3.org/TR/WCAG21/#name-role-value\">檢核標準 4.1."
 "2：名稱、用途、價值</a>"
 
@@ -3905,10 +3905,9 @@ msgid ""
 "href=\"https://www.w3.org/TR/WCAG21/#contrast-minimum\">success criterion"
 " 1.4.3: contrast, minimum</a>"
 msgstr ""
-"我們的狀態頁面的訂閱更新表單包含一些不符合最低顏色對比度要求的文字 – "
-"這不符合<a class=\"govuk-link govuk-link--no-visited-state\" href=\"https"
-"://www.w3.org/TR/WCAG21/#contrast-minimum\">檢核標準 1.4."
-"3：對比度，最小值</a>"
+"我們狀態頁面的訂閱更新表單，包含不符合最低顏色對比要求的文字 – 這未遵循<a "
+"class=\"govuk-link govuk-link--no-visited-state\" href=\"https://www.w3.org/"
+"TR/WCAG21/#contrast-minimum\">檢核標準 1.4.3：對比度，最小值</a>"
 
 #: templates/views/accessibility_statement.html:173
 msgid ""
@@ -3918,10 +3917,10 @@ msgid ""
 "href=\"https://www.w3.org/TR/WCAG21/#link-purpose-in-context\">success "
 "criterion 2.4.4: link purpose, in context</a>"
 msgstr ""
-"我們的狀態頁面訂閱更新表單的關閉連結 (x) 的描述不夠清楚，"
-"可能使一些使用者無法確定其功能或目的 – 這不符合<a class=\"govuk-link govuk-"
-"link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#link-purpose-"
-"in-context\">檢核標準 2.4.4：連結目的，在脈絡中</a>"
+"我們狀態頁面訂閱更新表單的關閉連結 (x) 未清楚描述，"
+"可能讓使用者無法確定其功能或目的 – 這未遵循<a class=\"govuk-link govuk-link"
+"--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#link-purpose-in-"
+"context\">檢核標準 2.4.4：連結目的，在脈絡中</a>"
 
 #: templates/views/accessibility_statement.html:174
 msgid ""
@@ -3931,8 +3930,8 @@ msgid ""
 "visited-state\" href=\"https://www.w3.org/TR/WCAG21/#status-"
 "messages\">success criterion 4.1.3: status messages</a>"
 msgstr ""
-"我們的狀態頁面的訂閱更新表單，在送出錯誤資料時，"
-"不會在出現錯誤訊息時告知螢幕閱讀器的使用者 – 這不符合<a class=\"govuk-link "
+"我們狀態頁面的訂閱更新表單，在送出錯誤資料時，"
+"不會在出現錯誤訊息時告知螢幕閱讀器的使用者 – 這未遵循<a class=\"govuk-link "
 "govuk-link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#status-"
 "messages\">檢核標準 4.1.3：狀態訊息</a>"
 
@@ -3944,7 +3943,7 @@ msgstr "我們計劃讓現在的供應商解決狀態頁面問題，或者在 20
 
 #: templates/views/accessibility_statement.html:182
 msgid "How we tested this service"
-msgstr "我們是如何測試這項服務"
+msgstr "我們如何測試這項服務"
 
 #: templates/views/accessibility_statement.html:186
 msgid ""
@@ -3955,7 +3954,7 @@ msgid ""
 msgstr ""
 "上一次測試用於發送短訊、電子郵件和信件的部分網站是在 2021 年 2 "
 "月。上一次測試我們發送的電子郵件、經由 Notify "
-"發送給網頁使用者的檔案文件和PDF格式的樣本信件是在 11 日 2019 年 3 月。"
+"發送給網頁使用者的檔案文件和PDF格式的樣本信件是在 2019 年 3 月11 日 。"
 "這兩項測試均由 DAC 進行。"
 
 #: templates/views/accessibility_statement.html:190
@@ -3963,14 +3962,14 @@ msgid ""
 "We decided which pages to test based on the most common tasks that GOV.UK"
 " Notify users need to complete. We also tested a sample of pages with "
 "common user interface components."
-msgstr "我們根據 GOV.UK Notify 的使用者最經常需要完成的任務來決定測試哪些頁面。我們也"
-"測試了具有通用界面元件的樣本頁面。"
+msgstr "我們根據 GOV.UK Notify 的使用者最經常完成的任務來決定測試哪些頁面。我們也測試"
+"了具有常用使用者介面元件的樣本頁面。"
 
 #: templates/views/add-service-local.html:17
 msgid ""
 "Give your service a name that tells users what your messages are about, "
 "as well as who they’re from. For example:"
-msgstr "為您的服務命名，藉此告訴使用者您的訊息是與什麼有關，以及訊息來自於誰。例如："
+msgstr "為您的服務命名，藉此告訴使用者您的訊息與什麼有關，以及自於誰。例如："
 
 #: templates/views/add-service-local.html:19
 #, python-format
@@ -3993,12 +3992,12 @@ msgstr "藍色徽章 – %%s"
 msgid ""
 "You should only use an acronym or initialism if your users are already "
 "familiar with it."
-msgstr "您僅可以在使用者已經熟悉的情形下使用縮寫與縮詞。"
+msgstr "您僅可以在使用者已經熟悉的情形使用字、詞縮寫。"
 
 #: templates/views/add-service-local.html:27
 #: templates/views/add-service.html:19
 msgid "You can change this later"
-msgstr "您可以稍後變更此設定"
+msgstr "您稍後可變更此設定"
 
 #: templates/views/add-service-local.html:29
 #: templates/views/add-service.html:25
@@ -4013,27 +4012,27 @@ msgstr "您收到的邀請已被取消"
 #: templates/views/cancelled-invitation.html:10
 #, python-format
 msgid "%%(from_user)s decided to cancel this invitation."
-msgstr "%%(from_user)s 決定撤回此邀請。"
+msgstr "%%(from_user)s 決定取消此邀請。"
 
 #: templates/views/cancelled-invitation.html:13
 #, python-format
 msgid "If you need access to %%s, you’ll have to ask them to invite you again."
-msgstr "如果您需要瀏覽 %%s，您必須請他們再次邀請您。"
+msgstr "如果需要瀏覽 %%s，必須請他們再次邀請您。"
 
 #: templates/views/change-email-continue.html:10
 #: templates/views/registration-continue.html:10
 #, python-format
 msgid "An email has been sent to %%s."
-msgstr "一封電子郵件送到 %%s。"
+msgstr "一封電子郵件已送達 %%s。"
 
 #: templates/views/change-email-continue.html:11
 msgid "Click the link in the email to confirm the change to your email address."
-msgstr "點擊電子郵件中的連結以確認更改您的電子郵件地址。"
+msgstr "點擊電子郵件的連結以確認更改您的電子郵件。"
 
 #: templates/views/choose-account.html:26
 #, python-format
 msgid "%%s live service"
-msgstr "%%s 已上線服務"
+msgstr "%%s 上線的服務"
 
 #: templates/views/choose-account.html:46
 #: templates/views/choose-account.html:52
@@ -4074,17 +4073,17 @@ msgstr "Cookie 是您在訪問網站時保存在您的手機、平板或電腦�
 msgid ""
 "We use cookies to make GOV.UK Notify work and collect information about "
 "how you use our service."
-msgstr "我們使用 cookie 使 GOV.UK Notify 正常工作並收集有關您如何使用我們服務的資訊。"
+msgstr "我們使用 cookie 使 GOV.UK Notify 正常運作並收集有關您使用我們服務的資訊。"
 
 #: templates/views/cookies.html:27 templates/views/cookies.html:32
 msgid "Essential cookies"
-msgstr "基本的 Cookies"
+msgstr "必要的 Cookies"
 
 #: templates/views/cookies.html:29
 msgid ""
 "Essential cookies keep your information secure while you use Notify. We "
 "do not need to ask permission to use them."
-msgstr "基本的 cookies 能在您使用 Notify "
+msgstr "必要的 cookies 能在您使用 Notify "
 "時保護您的資訊安全。我們不需要徵求許可就可以使用它們。"
 
 #: templates/views/cookies.html:35 templates/views/cookies.html:85
@@ -4144,7 +4143,7 @@ msgstr ""
 "                  cookie_policy\n"
 "                </td>\n"
 "                <td width=\"50%%\">\n"
-"                  儲存您是否同意使用 cookie 的設定\n"
+"                  儲存您同意使用 cookie 的設定\n"
 "                </td>\n"
 "                <td>\n"
 "                  一年\n"
@@ -4152,14 +4151,14 @@ msgstr ""
 
 #: templates/views/cookies.html:66
 msgid "Analytics cookies (optional)"
-msgstr "分析 Cookies（選擇性）"
+msgstr "分析性 cookies（選擇性）"
 
 #: templates/views/cookies.html:68
 msgid ""
 "With your permission, we use Google Analytics to collect data about how "
 "you use Notify. This information helps us to improve our service."
-msgstr "在您允許的情況下，我們使用 Google Analytics 收集有關您如何使用 Notify "
-"的數據。這些資訊有助於我們改進我們的服務。"
+msgstr "在您允許的情況，我們使用 Google Analytics 收集有關您使用 Notify "
+"的數據。這些資訊有助改進我們的服務。"
 
 #: templates/views/cookies.html:71
 msgid "Google is not allowed to use or share our analytics data with anyone."
@@ -4167,7 +4166,7 @@ msgstr "Google 不得使用或與任何人分享我們的分析數據。"
 
 #: templates/views/cookies.html:74
 msgid "Google Analytics stores anonymised information about:"
-msgstr "Google Analytics 會紀錄以下的匿名化資訊："
+msgstr "Google Analytics 儲存的匿名資訊是關於："
 
 #: templates/views/cookies.html:77
 msgid ""
@@ -4177,8 +4176,8 @@ msgid ""
 "      <li>any errors you see while using Notify</li>"
 msgstr ""
 "<li>您如何前往 GOV.UK Notify 網站</li>\n"
-"       <li>您在 Notify 上造訪的頁面以及您在這些頁面上花費的時間</li>\n"
-"       <li>您在使用 Notify 時遭遇到的任何錯誤</li>"
+"       <li>您在 Notify 上造訪的頁面以及在這些頁面上花費的時間</li>\n"
+"       <li>您使用 Notify 時遭遇的任何錯誤</li>"
 
 #: templates/views/cookies.html:82
 msgid "Google Analytics cookies"
@@ -4202,7 +4201,8 @@ msgstr ""
 "                  _ga\n"
 "                </td>\n"
 "                <td width=\"50%%\">\n"
-"                  確認您過去是否曾經使用過 Notify。這能夠幫助我們計算網站流量。\n"
+"                  確認您過去是否使用過 "
+"Notify。這能幫助我們計算網站的訪客人數。\n"
 "                </td>\n"
 "                <td>\n"
 "                  兩年\n"
@@ -4226,7 +4226,8 @@ msgstr ""
 "                  _gid\n"
 "                </td>\n"
 "                <td width=\"50%%\">\n"
-"                  確認您過去是否曾經使用過 Notify。這能夠幫助我們計算網站流量。\n"
+"                  確認您過去是否曾經使用過 "
+"Notify。這能幫助我們計算網站的訪客人數。\n"
 "                </td>\n"
 "                <td>\n"
 "                  24 小時\n"
@@ -4234,7 +4235,7 @@ msgstr ""
 
 #: templates/views/cookies.html:116 templates/views/cookies.html:128
 msgid "Do you want to accept analytics cookies?"
-msgstr "您想接受分析的 cookie 嗎？"
+msgstr "您想接受分析性 cookie 嗎？"
 
 #: templates/views/cookies.html:117
 msgid ""
@@ -4285,8 +4286,7 @@ msgstr "儲存 cookie 設定"
 msgid ""
 "This documentation is for developers who want to integrate the GOV.UK "
 "Notify API with a web application or back office system."
-msgstr "本文件適用於想將 GOV.UK Notify API 與 Web "
-"應用程序或後台系統串接起來的開發人員。"
+msgstr "本文件適用於想串接 GOV.UK Notify API 與 Web 應用程序或後台系統的開發人員。"
 
 #: templates/views/documentation.html:14
 msgid "Client libraries"
@@ -4301,7 +4301,8 @@ msgid ""
 "A developer should be able to set up the API client and start sending "
 "test messages in around 30 minutes. A full integration can take a few "
 "days, depending on the other systems you’re using."
-msgstr "開發者應該能夠在大約 30 分鐘內設定好 API 客戶端並開始寄送簡訊。系統完全整合好則需要花上幾天的時間，視您使用的其他系統而定。"
+msgstr "開發者應該能在 30 分鐘內設定好 API 客戶端並開始寄送簡訊。視您使用的其他系統而"
+"定，完全串接好系統可能需要幾天的時間。"
 
 #: templates/views/documentation.html:29
 msgid "Integrate directly with the API"
@@ -4400,7 +4401,7 @@ msgstr "您的收件人將不會看到這個"
 #: templates/views/edit-letter-template.html:9
 #, python-format
 msgid "%%s letter template"
-msgstr "%%s 紙本信件範本"
+msgstr "%%s 信件範本"
 
 #: templates/views/edit-sms-template.html:9
 #: templates/views/edit-sms-template.html:20
@@ -4423,7 +4424,7 @@ msgstr "是，移除"
 
 #: templates/views/edit-user-permissions.html:31
 msgid "Change<span class=\"govuk-visually-hidden\"> email address</span>"
-msgstr "更改<span class=\"govuk-visually-hidden\">電子郵件地址</span>"
+msgstr "更改<span class=\"govuk-visually-hidden\">電子郵件</span>"
 
 #: templates/views/edit-user-permissions.html:38
 msgid "Change<span class=\"govuk-visually-hidden\"> mobile number</span>"
@@ -4439,7 +4440,7 @@ msgstr "前往儀表板"
 
 #: templates/views/email-link-invalid.html:5
 msgid "Invalid email link"
-msgstr "無效的電子郵件連結"
+msgstr "無效電子郵件連結"
 
 #: templates/views/email-link-invalid.html:12
 msgid "The link has expired"
@@ -4466,12 +4467,12 @@ msgstr "重新傳送電子郵件連結"
 msgid ""
 "Emails sometimes take a few minutes to arrive. If you do not receive an "
 "email link, Notify can send you a new one."
-msgstr "電子郵件有時需要幾分鐘才能送達。如果您沒有收到電子郵件連結，Notify "
+msgstr "電子郵件有時需幾分鐘才能送達。如果您沒有收到電子郵件連結，Notify "
 "可以發送一個新連結給您。"
 
 #: templates/views/email-not-received.html:23
 msgid "If your email address has changed"
-msgstr "如果您的電子郵件地址已更改"
+msgstr "如果您的電子郵件已更改"
 
 #: templates/views/email-not-received.html:24
 #: templates/views/verification-not-received.html:24
@@ -4483,11 +4484,11 @@ msgstr "您需要："
 msgid ""
 "find a member of your team who has permission to manage settings, team "
 "and usage"
-msgstr "找到您的團隊中有權限管理設定、團隊和使用情況的成員"
+msgstr "找到您團隊中有權限管理設定、團隊和使用情況的成員"
 
 #: templates/views/email-not-received.html:27
 msgid "ask them to change the email address for your account"
-msgstr "請他們更改您帳戶的電子郵件地址"
+msgstr "請他們更改您帳戶的電子郵件"
 
 #: templates/views/email-not-received.html:28
 msgid ""
@@ -4505,7 +4506,7 @@ msgstr "如果您為中央政府、地方政府或 NHS 工作，您可以使用 
 
 #: templates/views/features.html:17
 msgid "Notify makes it easy to create, customise and send:"
-msgstr "透過 Notify，讓您更簡單就能建立通知範本、調整內容和傳送出去："
+msgstr "Notify 讓您更簡單地建立通知範本、調整內容並傳送出去："
 
 #: templates/views/features.html:23
 msgid "You do not need any technical knowledge to use Notify."
@@ -4517,8 +4518,8 @@ msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Create "
 "an account</a> for free and try it yourself."
 msgstr ""
-"免費<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">建立帳號</a> 並開始嘗試。"
+"免費<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">建立帳號</a> 並開始嘗試。"
 
 #: templates/views/features.html:28
 msgid "Reusable message templates"
@@ -4528,22 +4529,21 @@ msgstr "可重複使用的訊息範本"
 msgid ""
 "To send an email, text or letter with Notify, you need to create a "
 "reusable message template first."
-msgstr "要使用 Notify "
-"發送電子郵件、簡訊或信件，您需要先建立一個可重複使用的訊息範本。"
+msgstr "使用 Notify 發送電子郵件、簡訊或信件前，您需先建立一個可重複使用的訊息範本。"
 
 #: templates/views/features.html:30
 msgid ""
 "Templates let you send the same thing to lots of people, as often as you "
 "need to, without writing a new message each time."
-msgstr "範本讓您可以隨時向很多人發送相同的內容，無需每次都寫一條新的訊息。"
+msgstr "範本讓您可以向多人發送相同內容，無需每次都寫一條新的訊息。"
 
 #: templates/views/features.html:32
 msgid "Personalised content"
-msgstr "個人化的內容"
+msgstr "個人化內容"
 
 #: templates/views/features.html:33
 msgid "Notify makes it easy to send personalised messages from a single template."
-msgstr "Notify 讓使用單一範本發送個人化的訊息變得容易。"
+msgstr "Notify 讓使用單一範本發送個人化訊息變得容易。"
 
 #: templates/views/features.html:34
 #, python-format
@@ -4556,21 +4556,21 @@ msgstr ""
 
 #: templates/views/features.html:36
 msgid "Bulk sendin"
-msgstr "批量發送"
+msgstr "大宗郵件寄送"
 
 #: templates/views/features.html:37
 msgid ""
 "To send a batch of messages at once, upload a list of contact details to "
 "Notify. If you’re sending emails and text messages, you can also schedule"
 " the date and time you want them to be sent."
-msgstr "如要一次發送大量的訊息，請將聯繫方式列表上傳到 "
-"Notify。如果您要發送電子郵件和簡訊，您還可以安排發送它們的日期和時間。"
+msgstr "若要發送大宗訊息，請將聯繫方式列表上傳到 "
+"Notify。若要發送電子郵件和簡訊，還可以安排寄送日期和時間。"
 
 #: templates/views/features.html:40
 msgid ""
 "You can integrate the Notify API with your web application or back-office"
 " system to send messages automatically."
-msgstr "您可以將 Notify API 與您的網頁應用程式或後台系統串接起來，自動發送訊息。"
+msgstr "您可以串接 Notify API 與您的網頁應用程式或後台系統來自動發送訊息。"
 
 #: templates/views/features.html:41 templates/views/features/emails.html:43
 #, python-format
@@ -4579,7 +4579,7 @@ msgid ""
 "href=\"%%s\">API documentation</a> for more information."
 msgstr ""
 "閱讀我們的 <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">API 文件</a>了解更多資訊。"
+">API 文件</a>以了解更多資訊。"
 
 #: templates/views/features.html:43
 msgid "Reporting"
@@ -4599,7 +4599,7 @@ msgid ""
 "Read more about the <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">delivery status</a> of your messages."
 msgstr ""
-"更加了解您寄出的訊息的<a class=\"govuk-link govuk-link--no-visited-state\" "
+"更多關於您寄送訊息的<a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">傳遞狀態</a>。"
 
 #: templates/views/features.html:47
@@ -4618,15 +4618,15 @@ msgstr "Notify 讓您可以："
 
 #: templates/views/features.html:51
 msgid "set different permission levels for each team member"
-msgstr "為每個團隊成員設定不同的權限級別"
+msgstr "為每位團隊成員設定不同的權限"
 
 #: templates/views/features.html:52
 msgid "invite team members who do not have a government email address"
-msgstr "邀請沒有政府電子郵件地址的團隊成員"
+msgstr "邀請沒有政府電子郵件的團隊成員"
 
 #: templates/views/features.html:53
 msgid "choose who else can manage team members"
-msgstr "選擇其他人管理團隊成員"
+msgstr "選擇其他可以管理團隊的成員"
 
 #: templates/views/features.html:56
 msgid "Performance"
