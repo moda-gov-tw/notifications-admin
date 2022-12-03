@@ -1938,7 +1938,7 @@ msgstr "inline; filename=\"{} 上線服務報告.csv\""
 msgid ""
 "attachment; filename=\"{} to {} notification status per service "
 "report.csv\""
-msgstr "attachment; filename=\"{} 至 {} 單一服務通知狀態報告.csv\""
+msgstr "attachment; filename=\"單一服務通知狀態報表 - 從 {} 至 {}.csv\""
 
 #: main/views/platform_admin.py:298
 msgid "Date must be in a single financial year."
