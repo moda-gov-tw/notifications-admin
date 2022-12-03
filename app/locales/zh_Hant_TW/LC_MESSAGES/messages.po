@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 07:52+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"PO-Revision-Date: 2022-12-03 08:13+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -665,7 +665,7 @@ msgstr "地址欄第一個字元不得為下列特殊符號：@ ( ) = [ ] ” \\
 
 #: main/forms.py:1449
 msgid "Choose the postage for this letter template"
-msgstr "選擇這封信件模板的郵資"
+msgstr "選擇這封信件範本的郵資"
 
 #: main/forms.py:1451 templates/views/pricing/index.html:248
 msgid "First class"
@@ -1226,7 +1226,7 @@ msgstr "必須為空白"
 #: main/forms.py:2323 models/service.py:514 templates/main_nav.html:14
 #: templates/views/templates/choose.html:10
 msgid "Templates"
-msgstr "模板"
+msgstr "範本"
 
 #: main/forms.py:2358 main/views/templates.py:187
 msgid "Broadcast"
@@ -1234,7 +1234,7 @@ msgstr "廣播"
 
 #: main/forms.py:2359 templates/views/templates/copy.html:5
 msgid "Copy an existing template"
-msgstr "複製一個既存的模板"
+msgstr "複製一個既存的範本"
 
 #: main/forms.py:2406
 msgid "Choose a folder"
@@ -1242,11 +1242,11 @@ msgstr "選擇一個資料夾"
 
 #: main/forms.py:2412
 msgid "New template"
-msgstr "新模板"
+msgstr "新範本"
 
 #: main/forms.py:2417
 msgid "Select the type of template you want to add"
-msgstr "選擇您想新增的模板類型"
+msgstr "選擇您想新增的範本類型"
 
 #: main/forms.py:2423
 msgid "What do you want to clear today"
@@ -1457,7 +1457,7 @@ msgstr "不能包含 %s"
 
 #: main/views/add_service.py:41
 msgid "Example text message template"
-msgstr "簡訊模板範例"
+msgstr "簡訊範本範例"
 
 #: main/views/add_service.py:43
 msgid ""
@@ -2404,7 +2404,7 @@ msgstr "API 文件"
 
 #: main/views/templates.py:133
 msgid "Select at least one template or folder"
-msgstr "選擇至少一個模板或資料夾"
+msgstr "選擇至少一個範本或資料夾"
 
 #: main/views/templates.py:183 templates/views/temp-history.html:18
 msgid "All"
@@ -2464,7 +2464,7 @@ msgstr "您必須先清空此資料夾才能將其刪除"
 
 #: main/views/templates.py:486
 msgid "Folder is not empty"
-msgstr "文件夾未清空"
+msgstr "資料夾未清空"
 
 #: main/views/templates.py:500
 msgid "Are you sure you want to delete the ‘{}’ folder?"
@@ -2496,19 +2496,19 @@ msgstr ""
 
 #: main/views/templates.py:715
 msgid "This template has never been used."
-msgstr "此模板從未使用過。"
+msgstr "此範本從未使用過。"
 
 #: main/views/templates.py:717
 msgid "This template was last used {}."
-msgstr "此模板上次使用於 {}。"
+msgstr "此範本上次使用於 {}。"
 
 #: main/views/templates.py:726
 msgid "Are you sure you want to delete ‘{}’?"
-msgstr "您確定要刪除「 {}」？"
+msgstr "您確定要刪除「{}」嗎？"
 
 #: main/views/templates.py:773
 msgid "Personalised content will be hidden for messages sent with this template"
-msgstr "此模板發送的訊息將會隱藏客製化內文"
+msgstr "使用此範本發送訊息時，將會隱藏客製化內文"
 
 #: main/views/tour.py:95
 msgid "Example text message"
@@ -2543,7 +2543,7 @@ msgstr "檔案必須小於 2MB。"
 
 #: main/views/uploads.py:167
 msgid "Invalid PDF uploaded for service_id: {}"
-msgstr "上傳了無效的 PDF 檔案給服務代碼: {}"
+msgstr "上傳給下列 service_id 的 PDF 檔案無效：{}"
 
 #: main/views/uploads.py:169 utils/letters.py:107
 msgid "There’s a problem with your file"
@@ -2571,7 +2571,7 @@ msgstr "姓名"
 
 #: main/views/user_profile.py:127
 msgid "Are you sure you want to delete your mobile number from Notify?"
-msgstr "確定要從 Notify 刪除您手機號碼嗎？"
+msgstr "確定要從 Notify 刪除您的手機號碼嗎？"
 
 #: main/views/user_profile.py:165 templates/views/user-profile.html:82
 msgid "mobile number"
@@ -2589,19 +2589,19 @@ msgstr "重新登入會清除這個設定"
 
 #: main/views/user_profile.py:275
 msgid "Are you sure you want to delete this security key?"
-msgstr "您確定要刪除安全金鑰嗎？"
+msgstr "您確定要刪除這把安全金鑰嗎？"
 
 #: main/views/user_profile.py:289
 msgid "Cannot delete last remaining webauthn credential for user"
-msgstr "無法刪除僅存的 webauthn 用戶認證"
+msgstr "無法刪除使用者的最後一把 webauthn 登入認證資訊"
 
 #: main/views/user_profile.py:291
 msgid "You cannot delete your last security key."
-msgstr "您無法刪除僅存的安全金鑰。"
+msgstr "您無法刪除最後一把安全金鑰。"
 
 #: main/views/verify.py:43
 msgid "The link in the email we sent you has expired. We've sent you a new one."
-msgstr "我們發送給您的連結已過期。 我們已發了一封新的電子郵件給您。"
+msgstr "我們寄給您的連結已過期，已經寄發一封新的電子郵件給您。"
 
 #: main/views/verify.py:53
 msgid "That verification link has expired."
@@ -3117,7 +3117,7 @@ msgstr "每一則訊息都是從模版發送"
 
 #: templates/partials/tour.html:21
 msgid "The template pulls in the data you provide"
-msgstr "此模板將導入您提供的數據"
+msgstr "此範本將導入您提供的數據"
 
 #: templates/partials/tour.html:31
 msgid "Notify delivers the message"
@@ -3346,7 +3346,7 @@ msgstr ""
 
 #: templates/partials/templates/guidance-formatting-letters.html:5
 msgid "To put a heading in your template, use a hash:"
-msgstr "如要在模板中放入標題，請使用＃："
+msgstr "如要在範本中放入標題，請使用 #："
 
 #: templates/partials/templates/guidance-formatting-letters.html:8
 msgid "# This is a heading"
@@ -3387,7 +3387,7 @@ msgstr ""
 
 #: templates/partials/templates/guidance-formatting.html:5
 msgid "To put a title in your template, use a hash:"
-msgstr "如要在模板中放入標題，請使用＃："
+msgstr "如要在範本中放入標題，請使用 #："
 
 #: templates/partials/templates/guidance-formatting.html:15
 msgid ""
@@ -3505,7 +3505,7 @@ msgstr "透過電子郵件發送文件"
 msgid ""
 "Use double brackets to add a placeholder field to your template. This "
 "will contain a secure link to download the document."
-msgstr "使用雙括號將預設文字添加到您的模板。 這將包含一個可下載文檔的安全連結。"
+msgstr "使用雙括號將預留文字加入道您的範本。將包含一個可安全下載文件的連結。"
 
 #: templates/partials/templates/guidance-send-a-document.html:10
 msgid "Download your document at: ((link_to_file))"
@@ -3597,7 +3597,7 @@ msgstr "「複製到剪貼板簿」的按鈕不適用於某些螢幕閱讀器"
 msgid ""
 "if a team adds template folders, screen readers may announce the page "
 "heading in a confusing way"
-msgstr "如果有團隊新增模板文件夾，螢幕閱讀器可能會以令人困惑的方式念出頁面標題"
+msgstr "如果有團隊新增範本資料夾，螢幕閱讀器可能會以令人困惑的方式念出頁面標題"
 
 #: templates/views/accessibility_statement.html:53
 msgid "Windows users cannot view our icons in high contrast mode"
@@ -3770,8 +3770,8 @@ msgstr "我們的驗證錯誤會導致螢幕閱讀器出現問題。 "
 msgid ""
 "The JAWS screen reader announces template folder page headings as "
 "multiple sentences. We plan to fix this in January 2023."
-msgstr "JAWS 螢幕閱讀器會將模板文件夾的頁面標題宣告為多個句子。 我們計劃在 2023 年 1 "
-"月解決此問題。"
+msgstr "JAWS 螢幕閱讀器會將範本資料夾的頁面標題拆成多個句子唸出來。我們計劃在 2023 "
+"年 1 月修正此問題。"
 
 #: templates/views/accessibility_statement.html:127
 msgid ""
@@ -3795,7 +3795,7 @@ msgstr "PDF文件與其他文件"
 msgid ""
 "One page links to a PDF document that is not fully accessible. This is "
 "not a fail under any WCAG 2.1 success criterion."
-msgstr "一頁連結到未完全無障礙化的 PDF 文檔。 依據 WCAG 2.1 "
+msgstr "一頁連結到未完全無障礙化的 PDF 文件。 依據 WCAG 2.1 "
 "的任一檢核標準，這不是故障。"
 
 #: templates/views/accessibility_statement.html:142
@@ -12018,7 +12018,7 @@ msgstr "範本被刪除%%s。"
 #: templates/views/templates/_template.html:10
 #, python-format
 msgid "If you need to send this %%s or edit this template, contact your manager."
-msgstr "若您需要傳送此 %%s 或編輯此模板，請聯絡您的管理員。"
+msgstr "若您需要傳送此 %%s 或編輯此範本，請聯絡您的管理員。"
 
 #: templates/views/templates/_template.html:24
 #: templates/views/templates/_template.html:47
