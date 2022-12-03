@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-03 09:00+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"PO-Revision-Date: 2022-12-03 09:14+0000\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -2477,22 +2477,22 @@ msgstr "編輯"
 #: main/views/templates.py:675 main/views/templates.py:688
 #, python-format
 msgid "You have %s too many"
-msgstr "你超過 %s 字數"
+msgstr "您超過 %s 字數"
 
 #: main/views/templates.py:680
 #, python-format
 msgid "Will be charged as %s (not including personalisation)"
-msgstr "將會以 %s 身分收費(不包含個人)"
+msgstr "將會以 %s 身分收費(不包含個人化服務)"
 
 #: main/views/templates.py:683
 #, python-format
 msgid "Will be charged as %s"
-msgstr "將會以 %s 身分收費"
+msgstr "將以 %s 身分收費"
 
 #: main/views/templates.py:692
 #, python-format
 msgid "You have %s remaining"
-msgstr "你還剩下 %s"
+msgstr "您還剩下 %s"
 
 #: main/views/templates.py:715
 msgid "This template has never been used."
@@ -2614,7 +2614,7 @@ msgstr "沒有正在進行的註冊"
 #: main/views/webauthn_credentials.py:50
 #, python-format
 msgid "User %s could not register a new webauthn token - %s"
-msgstr "使用者 %s 無法註冊新的 WebAuthn - %s"
+msgstr "使用者 %s 無法註冊新的 WebAuthn token- %s"
 
 #: main/views/webauthn_credentials.py:57
 msgid ""
@@ -2625,7 +2625,7 @@ msgstr "註冊完成。下次登入 Notify 時，系統就會要求您使用安�
 #: main/views/webauthn_credentials.py:133
 #, python-format
 msgid "User %s could not sign in using their webauthn token - %s"
-msgstr "使用者 %s 無法使用他們的 WebAuthn 登入 - %s"
+msgstr "使用者 %s 無法使用他們的 WebAuthn token 登入 - %s"
 
 #: models/event.py:41
 msgid "Created this service and called it ‘{}’"
@@ -2938,7 +2938,7 @@ msgstr "團隊成員"
 #: templates/views/organisations/organisation/index.html:13
 #: templates/views/usage.html:9 templates/views/usage.html:14
 msgid "Usage"
-msgstr "使用量"
+msgstr "使用情況"
 
 #: templates/main_nav.html:26 templates/org_nav.html:6
 #: templates/views/organisations/organisation/settings/index.html:5
@@ -2971,7 +2971,7 @@ msgstr "計費"
 #: templates/views/organisations/index.html:11
 #: templates/views/platform-admin/_base_template.html:19
 msgid "Organisations"
-msgstr "機構"
+msgstr "組織"
 
 #: templates/org_template.html:16 templates/service_navigation.html:41
 #: templates/views/organisations/add-organisation.html:14
@@ -2985,7 +2985,7 @@ msgstr "已暫停"
 
 #: templates/service_navigation.html:19
 msgid "Training"
-msgstr "教學"
+msgstr "訓練"
 
 #: templates/withoutnav_template.html:8
 #, python-format
@@ -3002,7 +3002,7 @@ msgstr "我們可以在您的設備上存放分析的 cookie 嗎？"
 
 #: templates/components/cookie-banner.html:6
 msgid "Analytics cookies help us understand how our website is being used."
-msgstr "分析 Cookies 能夠幫助你了解你的網站使用情形。"
+msgstr "分析 Cookies 能夠幫助我們了解您的網站使用情形。"
 
 #: templates/components/cookie-banner.html:9
 msgid ""
@@ -3051,7 +3051,7 @@ msgstr "您沒有瀏覽此頁面的權限"
 msgid ""
 "To check your permissions, speak to a member of your team who can manage "
 "settings, team and usage."
-msgstr "要檢查您的權限，請聯繫可以管理設置、團隊和使用情況的團隊成員。"
+msgstr "若要檢查您的權限，請聯繫管理設定、團隊和使用情況的團隊成員。"
 
 #: templates/error/404.html:2 templates/error/404.html:7
 #: templates/error/410.html:2 templates/error/410.html:7
@@ -3060,11 +3060,11 @@ msgstr "未找到頁面"
 
 #: templates/error/404.html:10 templates/error/410.html:10
 msgid "If you typed the web address, check it is correct."
-msgstr "如果您輸入網頁網址，請檢查其是否正確。"
+msgstr "如果您手動輸入網址，請檢查其是否正確。"
 
 #: templates/error/404.html:13 templates/error/410.html:13
 msgid "If you pasted the web address, check you copied the entire address."
-msgstr "如果您貼上網頁網址，請檢查是否完整複製網址。"
+msgstr "如果您轉貼網址，請檢查是否完整複製網址。"
 
 #: templates/error/404.html:16 templates/error/410.html:16
 #, python-format
@@ -3072,12 +3072,12 @@ msgid ""
 "If the web address is correct or you selected a link or button, <a class"
 "=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">contact us</a>."
 msgstr ""
-"如果網址正確或者您是點擊了某個連結或按鈕而遇到本頁面，請<a class=\"govuk-"
+"如果網址正確或者您是點擊了某個連結或按鈕而來到本頁面，請<a class=\"govuk-"
 "link govuk-link--no-visited-state\" href=\"%%s\">聯絡我們</a>。"
 
 #: templates/error/500.html:2
 msgid "Sorry, there’s a problem with the service"
-msgstr "很抱歉，服務遇到一些狀況"
+msgstr "很抱歉，此服務遇到一些狀況"
 
 #: templates/error/500.html:7
 msgid "Sorry, there’s a problem with GOV.UK Notify"
