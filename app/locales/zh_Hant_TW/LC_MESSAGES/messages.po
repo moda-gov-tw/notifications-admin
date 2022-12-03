@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 09:45+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -2044,7 +2044,7 @@ msgstr "已提交的 {} 信件參考編號"
 #: main/views/platform_admin.py:617
 #, python-format
 msgid "Removed %s objects across %s key formats for {%s}"
-msgstr ""
+msgstr "移除 %s 物件透過 %s 主要格式為 {%s}"
 
 #: main/views/returned_letters.py:45
 msgid "Notification ID"
@@ -7028,6 +7028,9 @@ msgid ""
 "/service-manual/design/sending-emails-and-text-messages\">writing text "
 "messages and emails</a>"
 msgstr ""
+"傳送訊息符合 GOV.UK 服務標準手冊中的<a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"https://www.gov.uk/service-manual/design/sending-"
+"emails-and-text-messages\">編寫純文字訊息與郵件</a>"
 
 #: templates/views/terms-of-use.html:30
 msgid ""
@@ -7243,11 +7246,11 @@ msgstr "已傳送"
 
 #: templates/views/usage.html:34
 msgid "free allowance remaining"
-msgstr ""
+msgstr "剩餘免費補貼"
 
 #: templates/views/usage.html:40
 msgid "at {:.2f} pence per message"
-msgstr ""
+msgstr "每訊息 {:.2f} 便士"
 
 #: templates/views/organisations/organisation/index.html:35
 #: templates/views/organisations/organisation/index.html:46
@@ -7261,26 +7264,26 @@ msgstr "總花費"
 
 #: templates/views/usage.html:92
 msgid "By month"
-msgstr ""
+msgstr "依月份"
 
 #: templates/views/usage.html:108
 #, python-format
 msgid "%%(sms_free_allowance_used)s free %%(sms_free_count)s"
-msgstr ""
+msgstr "%%(sms_free_allowance_used)s 免費%%(sms_free_count)s"
 
 #: templates/views/usage.html:114
 #, python-format
 msgid "%%(charged_units)s at %%(charged_units_rate)s"
-msgstr ""
+msgstr "%%(charged_units)s 單位，每單位 %%(charged_units_rate)s 計費"
 
 #: templates/views/usage.html:121
 #, python-format
 msgid "%%(letter_sent)s %%(letter_count)s at %%(letter_rate)s"
-msgstr ""
+msgstr "%%(letter_sent)s 共發送 %%(letter_count)s %%(letter_rate)s"
 
 #: templates/views/usage.html:141
 msgid "Financial year ends 31&nbsp;March"
-msgstr ""
+msgstr "會計年度 3 月 31 日止"
 
 #: templates/views/usage.html:146
 msgid ""
@@ -7288,6 +7291,9 @@ msgid ""
 "          See <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"{{ url_for('.pricing') }}\">pricing</a>."
 msgstr ""
+"一則簡訊多少錢？<br />\n"
+"          參閱<a class=\"govuk-link govuk-link--no-visited-state\" href=\"{{ "
+"url_for('.pricing') }}\">定價</a>."
 
 #: templates/views/user-already-invited.html:6
 #: templates/views/user-already-invited.html:15
@@ -7700,7 +7706,7 @@ msgstr "將您的金鑰備份於安全的場所。"
 
 #: templates/views/api/keys/show.html:20
 msgid "You will not be able to see it again once you leave this page."
-msgstr ""
+msgstr "您無法再次看到一旦您離開此頁面。"
 
 #: templates/views/api/keys/show.html:27 templates/views/api/keys/show.html:28
 msgid "API key"
@@ -8029,7 +8035,7 @@ msgstr "您的檔案需要有稱為「%%s」的欄。"
 #: templates/views/check/column-errors.html:69
 #, python-format
 msgid "Right now it has %%s."
-msgstr ""
+msgstr "此刻有 %%s。"
 
 #: templates/views/check/column-errors.html:81
 #, python-format
@@ -8281,11 +8287,11 @@ msgstr "於 %%s 開始寄發"
 
 #: templates/views/dashboard/_usage.html:6
 msgid "Unlimited"
-msgstr ""
+msgstr "無限制"
 
 #: templates/views/dashboard/_usage.html:6
 msgid "free email allowance"
-msgstr ""
+msgstr "免費電子郵件補貼"
 
 #: templates/views/dashboard/_usage.html:14
 #: templates/views/organisations/organisation/index.html:84
@@ -9650,15 +9656,15 @@ msgstr "所有的機關"
 
 #: templates/views/organisations/index.html:21
 msgid "- archived"
-msgstr ""
+msgstr "- 封存"
 
 #: templates/views/organisations/index.html:26
 msgid "live services"
-msgstr ""
+msgstr "正式環境服務"
 
 #: templates/views/organisations/index.html:28
 msgid "live service"
-msgstr ""
+msgstr "正式環境服務"
 
 #: templates/views/organisations/organisation/billing.html:13
 #: templates/views/organisations/organisation/settings/edit-agreement.html:12
