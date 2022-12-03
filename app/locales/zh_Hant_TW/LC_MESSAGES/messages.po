@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 07:18+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -455,11 +455,11 @@ msgstr "你不能傳送邀請給你自己"
 
 #: main/forms.py:1145 main/forms.py:1264
 msgid "Service name must be 255 characters or fewer"
-msgstr "服務名稱請小於 255 個字元"
+msgstr "服務名稱必須小於 255 個字元"
 
 #: main/forms.py:1156
 msgid "Organisation name must be 255 characters or fewer"
-msgstr "單位名稱請小於 255 個字"
+msgstr "單位名稱必須小於 255 個字"
 
 #: main/forms.py:1164
 msgid "Is your GP practice called ‘{}’?"
@@ -637,12 +637,12 @@ msgstr "地址"
 #: main/forms.py:1417
 #, python-format
 msgid "Address must be at least %s lines long"
-msgstr "郵件地址至少要 %s 行的長度"
+msgstr "郵件地址至少要 %s 行"
 
 #: main/forms.py:1420
 #, python-format
 msgid "Address must be no more than %s lines long"
-msgstr "郵件地址最多不超過 %s 行的長度"
+msgstr "郵件地址最多不超過 %s 行"
 
 #: main/forms.py:1424 templates/views/check/row-errors.html:83
 msgid "Last line of the address must be a UK postcode or another country"
@@ -843,7 +843,7 @@ msgstr "簡訊傳送人"
 
 #: main/forms.py:1734
 msgid "Enter 11 characters or fewer"
-msgstr "輸入字元不可多於 11 個"
+msgstr "輸入字元不可超過 11 個"
 
 #: main/forms.py:1735
 msgid "Enter 3 characters or more"
@@ -953,7 +953,7 @@ msgstr "選擇至少一個信件的品牌識別選項"
 #: main/forms.py:1879
 #, python-format
 msgid "Should other teams in %s have the option to use this branding?"
-msgstr "在 %s 中其他組別應該可以選擇性的使用這個品牌？"
+msgstr "%s 的其他團隊可以使用這個品牌識別嗎？"
 
 #: main/forms.py:1895
 #, python-format
@@ -970,7 +970,7 @@ msgstr ""
 "            <ul class=\"govuk-list govuk-hint govuk-!-margin-bottom-0\">\n"
 "                <li>套用這個品牌至 ‘%(service_name)s’</li>\n"
 "                <li class=\"govuk-!-margin-bottom-0\""
-">讓其他%(org_name)s組別自行使用這個品牌</li>\n"
+">讓其他%(org_name)s團隊套用這個品牌</li>\n"
 "            </ul>\n"
 "        "
 
@@ -1090,7 +1090,7 @@ msgstr "設定收訊電話號碼"
 
 #: main/forms.py:2049
 msgid "an inbound number"
-msgstr "內線號碼"
+msgstr "收訊號碼"
 
 #: main/forms.py:2058
 msgid "Must be a valid https URL"
@@ -1436,7 +1436,7 @@ msgstr "您不能使用 ((雙括號)) 來個人化此訊息"
 #: main/validators.py:150
 #, python-format
 msgid "Content must be %s characters or fewer because it contains %s"
-msgstr "內容必須包含最多 %s 個字元，因為內容包含了 %s"
+msgstr "內容不能超過 %s 個字元，因為包含了 %s"
 
 #: main/validators.py:163
 msgid "Use letters and numbers only"
@@ -1616,11 +1616,11 @@ msgstr ""
 
 #: main/views/jobs.py:70
 msgid "Your letter has been sent. Printing starts {} at 5:30pm."
-msgstr "你的信件已經寄送。將於{} 5:30pm 開始列印。"
+msgstr "您的信件已寄出。將於{} 5:30pm 開始列印。"
 
 #: main/views/jobs.py:72
 msgid "Your letters have been sent. Printing starts {} at 5:30pm."
-msgstr "你的信件已經寄送。將於{} 5:30pm 開始列印。"
+msgstr "您的信件已經寄出。將於{} 5:30pm 開始列印。"
 
 #: main/views/jobs.py:134
 msgid "We are still processing these letters, please try again in a minute."
@@ -1628,7 +1628,7 @@ msgstr "我們仍在處理這些信件，請稍後再試一次。"
 
 #: main/views/jobs.py:142
 msgid "Cancelled {number_of_letters} letters from {original_file_name}"
-msgstr "已在{original_file_name}取消{number_of_letters}封信件"
+msgstr "已從{original_file_name}取消{number_of_letters}封信件"
 
 #: main/views/jobs.py:149
 msgid "Are you sure you want to cancel sending these letters?"
@@ -1686,7 +1686,7 @@ msgstr "您不能移除服務的唯一使用者"
 #: main/views/manage_users.py:281 main/views/organisations.py:279
 #, python-format
 msgid "Invitation cancelled for %(mail)s"
-msgstr "已取消 %(mail)s 的邀請函"
+msgstr "已取消 %(mail)s 的邀請"
 
 #: main/views/new_password.py:32
 msgid ""
@@ -1867,16 +1867,16 @@ msgstr "測試模式"
 #: main/views/platform_admin.py:175 templates/service_navigation.html:22
 #: templates/views/service-settings.html:322
 msgid "Live"
-msgstr "直播"
+msgstr "正式環境"
 
 #: main/views/platform_admin.py:194 templates/views/performance.html:143
 #: templates/views/service-settings.html:352
 msgid "Organisation"
-msgstr "機構"
+msgstr "組織"
 
 #: main/views/platform_admin.py:195
 msgid "Organisation type"
-msgstr "機構類型"
+msgstr "組織類型"
 
 #: main/views/platform_admin.py:196 templates/views/service-settings.html:24
 msgid "Service name"
@@ -1884,7 +1884,7 @@ msgstr "服務名稱"
 
 #: main/views/platform_admin.py:197
 msgid "Consent to research"
-msgstr "同意搜尋"
+msgstr "同意參與研究"
 
 #: main/views/platform_admin.py:198
 msgid "Main contact"
@@ -1900,35 +1900,35 @@ msgstr "聯絡手機"
 
 #: main/views/platform_admin.py:201
 msgid "Live date"
-msgstr "直播日期"
+msgstr "正式環境日期"
 
 #: main/views/platform_admin.py:202
 msgid "SMS volume intent"
-msgstr "簡訊的觸及聲量"
+msgstr "簡訊觸及聲量"
 
 #: main/views/platform_admin.py:203
 msgid "Email volume intent"
-msgstr "電子郵件的觸及聲量"
+msgstr "電子郵件觸及聲量"
 
 #: main/views/platform_admin.py:204
 msgid "Letter volume intent"
-msgstr "信件的觸及聲量"
+msgstr "信件觸及聲量"
 
 #: main/views/platform_admin.py:205
 msgid "SMS sent this year"
-msgstr "今年已發出的簡訊"
+msgstr "今年發出的簡訊"
 
 #: main/views/platform_admin.py:206
 msgid "Emails sent this year"
-msgstr "今年已發出的電子郵件"
+msgstr "今年發出的電子郵件"
 
 #: main/views/platform_admin.py:207
 msgid "Letters sent this year"
-msgstr "今年已發出的信件"
+msgstr "今年發出的信件"
 
 #: main/views/platform_admin.py:208
 msgid "Free sms allowance"
-msgstr "免費的簡訊額度"
+msgstr "免費簡訊額度"
 
 #: main/views/platform_admin.py:226
 msgid "inline; filename=\"{} live services report.csv\""
@@ -1955,12 +1955,12 @@ msgstr "日期查無結果"
 
 #: main/views/platform_admin.py:347
 msgid "organisation id"
-msgstr "機構代碼"
+msgstr "組織代碼"
 
 #: main/views/platform_admin.py:348
 #: templates/views/organisations/organisation/settings/index.html:23
 msgid "organisation name"
-msgstr "機構名稱"
+msgstr "組織名稱"
 
 #: main/views/platform_admin.py:349
 msgid "service id"
@@ -1982,7 +1982,7 @@ msgstr "簡訊通知"
 #: main/views/platform_admin.py:453
 #: templates/views/platform-admin/get-billing-report.html:33
 msgid "sms chargeable units"
-msgstr "簡訊儲值點數"
+msgstr "簡訊可收費單位"
 
 #: main/views/platform_admin.py:354 main/views/platform_admin.py:406
 msgid "email totals"
@@ -1995,11 +1995,11 @@ msgstr "信件總數"
 #: main/views/platform_admin.py:356
 #: templates/views/platform-admin/get-billing-report.html:34
 msgid "letter cost"
-msgstr "信件花費"
+msgstr "信件費用"
 
 #: main/views/platform_admin.py:357 main/views/platform_admin.py:408
 msgid "letter sheet totals"
-msgstr "信件頁數總數"
+msgstr "信件總頁數"
 
 #: main/views/platform_admin.py:383
 msgid "attachment; filename=\"Volumes by service report from {} to {}.csv\""
@@ -2015,7 +2015,7 @@ msgstr "簡訊總數"
 
 #: main/views/platform_admin.py:404 main/views/platform_admin.py:452
 msgid "sms fragment totals"
-msgstr "簡訊"
+msgstr "簡訊總片段數"
 
 #: main/views/platform_admin.py:430
 msgid "attachment; filename=\"Daily volumes report from {} to {}.csv\""
@@ -2028,7 +2028,7 @@ msgstr "供應商"
 #: main/views/platform_admin.py:454
 #: templates/views/platform-admin/get-billing-report.html:32
 msgid "sms cost"
-msgstr "簡訊花費"
+msgstr "簡訊費用"
 
 #: main/views/platform_admin.py:476
 #, python-format
@@ -2039,7 +2039,7 @@ msgstr ""
 
 #: main/views/platform_admin.py:532
 msgid "Submitted {} letter references"
-msgstr "已提交的 {} 信件參考來源"
+msgstr "已提交的 {} 信件參考編號"
 
 #: main/views/platform_admin.py:617
 #, python-format
@@ -2068,7 +2068,7 @@ msgstr "範本版本"
 
 #: main/views/returned_letters.py:52
 msgid "Spreadsheet file name"
-msgstr "工作表檔案名稱"
+msgstr "試算表檔案名稱"
 
 #: main/views/returned_letters.py:53
 msgid "Spreadsheet row number"
@@ -2076,11 +2076,11 @@ msgstr "工作表列數"
 
 #: main/views/returned_letters.py:54
 msgid "Uploaded letter file name"
-msgstr "已上傳的信件檔案名稱"
+msgstr "已上傳信件檔案名稱"
 
 #: main/views/send.py:147 main/views/uploads.py:407
 msgid "Could not read {}. Try using a different file format."
-msgstr "無法讀取{}。請嘗試其他的檔案格式。"
+msgstr "無法讀取{}。請嘗試其他檔案格式。"
 
 #: main/views/send.py:150
 #, python-format
@@ -2104,7 +2104,7 @@ msgstr "（預設與接受回覆）"
 
 #: main/views/send.py:247 main/views/send.py:248
 msgid "Where should replies come back to?"
-msgstr "回覆訊息應該傳回到哪裡？"
+msgstr "回覆訊息應該回傳到哪裡？"
 
 #: main/views/send.py:249
 msgid "email_address"
@@ -2112,15 +2112,15 @@ msgstr "電子信件地址"
 
 #: main/views/send.py:252
 msgid "Send to one recipient"
-msgstr "傳送給一個收件者"
+msgstr "傳送給一位收件者"
 
 #: main/views/send.py:253
 msgid "What should appear in the top right of the letter?"
-msgstr "信件的左上角應該顯示什麼？"
+msgstr "信件的右上角該顯示什麼？"
 
 #: main/views/send.py:257 main/views/send.py:258
 msgid "Who should the message come from?"
-msgstr "簡訊應該來自誰？"
+msgstr "簡訊來自誰？"
 
 #: main/views/send.py:844
 msgid "Send ‘{}’"
@@ -2140,7 +2140,7 @@ msgstr "{} 服務無法傳送通知：”{}”"
 
 #: main/views/service_settings.py:90
 msgid "Receive inbound SMS"
-msgstr "接收通用短訊"
+msgstr "接收回傳簡訊"
 
 #: main/views/service_settings.py:92
 msgid "Email authentication"
@@ -2166,7 +2166,7 @@ msgstr ""
 msgid ""
 "Thanks for your request to go live. We’ll get back to you within one "
 "working day."
-msgstr "感謝您提出直播申請，我們會在一個工作天內與您聯繫。"
+msgstr "感謝您申請轉為正式環境，我們會在一個工作天內與您聯繫。"
 
 #: main/views/service_settings.py:217 main/views/service_settings.py:225
 msgid "Make service live"
@@ -2175,7 +2175,7 @@ msgstr "讓服務上線"
 #: main/views/service_settings.py:235 main/views/service_settings.py:247
 #: templates/views/service-settings.html:333
 msgid "Count in list of live services"
-msgstr "已上線的服務總數"
+msgstr "計算已上線的服務總數"
 
 #: main/views/service_settings.py:387
 msgid "‘{}’ was deleted"
@@ -2187,11 +2187,11 @@ msgstr "您確定要刪除‘{}’？這個動作將無法回復。"
 
 #: main/views/service_settings.py:600
 msgid "Are you sure you want to delete this reply-to email address?"
-msgstr "您確定要刪除此收件人的電子郵件地址？"
+msgstr "您確定要刪除此回信地址？"
 
 #: main/views/service_settings.py:652
 msgid "Start all text messages with ‘{}:’"
-msgstr "將所有的簡訊以 ‘{}:’ 作為開頭"
+msgstr "將所有簡訊開頭設為 ‘{}:’"
 
 #: main/views/service_settings.py:665
 msgid "Send text messages to international phone numbers"
@@ -2199,7 +2199,7 @@ msgstr "傳送簡訊訊息給國際電話"
 
 #: main/views/service_settings.py:670
 msgid "international_sms"
-msgstr "國際簡訊服務"
+msgstr "國際簡訊"
 
 #: main/views/service_settings.py:899
 msgid "Are you sure you want to delete this text message sender?"
@@ -2224,12 +2224,12 @@ msgstr ""
 
 #: main/views/service_settings.py:1196
 msgid "No branding found for this id."
-msgstr "此代碼查無品牌識別模板。"
+msgstr "此代碼查無品牌。"
 
 #: main/views/service_settings.py:1202 main/views/service_settings.py:1226
 #: main/views/service_settings.py:1254
 msgid "You’ve updated your email branding"
-msgstr "您已更新您的電子郵件品牌識別設定"
+msgstr "您已更新電子郵件品牌"
 
 #: main/views/service_settings.py:1420
 #, python-format
@@ -2245,7 +2245,8 @@ msgstr "您無法替他人接受邀請。"
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
 "href=\"%s\" class='govuk-link'>Forgotten your password?</a>"
-msgstr "你輸入了錯誤的電子郵件或密碼。&ensp;<a href=\"%s\" class='govuk-link'>忘記密碼了嗎?</a>"
+msgstr "您輸入的電子郵件地址或密碼不正確。&ensp;<a href=\"%s\" class='govuk-"
+"link'>忘記密碼了嗎？</a>"
 
 #: main/views/sub_navigation_dictionaries.py:7
 #: templates/admin_template.html:110 templates/admin_template.html:193
@@ -2254,7 +2255,7 @@ msgstr "你輸入了錯誤的電子郵件或密碼。&ensp;<a href=\"%s\" class=
 #: templates/views/features/letters.html:20
 #: templates/views/features/text-messages.html:20
 msgid "Features"
-msgstr "特點"
+msgstr "功能"
 
 #: main/views/sub_navigation_dictionaries.py:11
 #: templates/views/accessibility_statement.html:146
@@ -2278,7 +2279,7 @@ msgstr "電子信箱"
 #: templates/views/pricing/index.html:46 templates/views/signedout.html:152
 #: templates/views/usage.html:29
 msgid "Text messages"
-msgstr "簡訊訊息"
+msgstr "簡訊"
 
 #: main/views/sub_navigation_dictionaries.py:19
 #: templates/views/features/letters.html:9
@@ -2347,7 +2348,7 @@ msgstr "帳單明細"
 #: templates/views/dashboard/write-first-messages.html:1
 #: templates/views/get-started.html:7 templates/views/get-started.html:15
 msgid "Get started"
-msgstr "啟用"
+msgstr "開始"
 
 #: main/views/sub_navigation_dictionaries.py:71
 #: templates/admin_template.html:249 templates/views/message-status.html:9
@@ -2386,7 +2387,7 @@ msgstr "透過電子郵件傳送檔案"
 #: templates/views/guidance/upload-a-letter.html:14
 #: templates/views/jobs/jobs.html:30 templates/views/uploads/choose-file.html:8
 msgid "Upload a letter"
-msgstr "上傳一封信件"
+msgstr "上傳一封信"
 
 #: main/views/sub_navigation_dictionaries.py:95
 #: templates/views/guidance/letter-specification.html:10
@@ -9965,7 +9966,7 @@ msgstr "報告"
 
 #: templates/views/platform-admin/_base_template.html:24
 msgid "Inbound SMS numbers"
-msgstr "本地簡訊號碼"
+msgstr "回傳簡訊號碼"
 
 #: templates/views/platform-admin/_base_template.html:27
 #: templates/views/platform-admin/complaints.html:7
@@ -11360,7 +11361,7 @@ msgstr "此服務已有一組簡訊接收號碼"
 
 #: templates/views/service-settings/set-inbound-number.html:24
 msgid "No available inbound numbers"
-msgstr "未提供入站號碼"
+msgstr "未提供回傳號碼"
 
 #: templates/views/service-settings/set-inbound-sms.html:21
 #, python-format
