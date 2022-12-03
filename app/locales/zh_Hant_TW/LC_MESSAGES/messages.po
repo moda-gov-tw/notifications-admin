@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 09:45+0000\n"
-"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -423,7 +423,7 @@ msgstr "這個選項不存在"
 
 #: main/forms.py:610
 msgid "Enter your password"
-msgstr "請輸入你的密碼"
+msgstr "請輸入您的密碼"
 
 #: main/forms.py:614 main/forms.py:648
 msgid "Full name"
@@ -451,7 +451,7 @@ msgstr "能夠建立或核准通知的團隊成員也能拒絕這些通知。"
 
 #: main/forms.py:1091 main/forms.py:1103
 msgid "You cannot send an invitation to yourself"
-msgstr "你不能傳送邀請給你自己"
+msgstr "您不能邀請自己"
 
 #: main/forms.py:1145 main/forms.py:1264
 msgid "Service name must be 255 characters or fewer"
@@ -483,7 +483,7 @@ msgstr "否"
 
 #: main/forms.py:1181
 msgid "What’s your practice called?"
-msgstr "請問你的專業是？"
+msgstr "請問您的專業是？"
 
 #: main/forms.py:1198
 msgid "Which NHS Trust or Clinical Commissioning Group do you work for?"
@@ -536,7 +536,7 @@ msgstr "網域名稱"
 
 #: main/forms.py:1260
 msgid "What’s your service called?"
-msgstr "你的服務名稱是？"
+msgstr "您的服務名稱是？"
 
 #: main/forms.py:1267 main/forms.py:1272
 msgid "Who runs this service?"
@@ -564,7 +564,7 @@ msgstr "密碼錯誤"
 
 #: main/forms.py:1324
 msgid "Write your own message"
-msgstr "撰寫你的訊息"
+msgstr "撰寫您的訊息"
 
 #: main/forms.py:1325
 msgid "Use a template"
@@ -650,7 +650,7 @@ msgstr "地址最後一行應該是英國或是其他國家的郵遞區號"
 
 #: main/forms.py:1426 templates/views/check/row-errors.html:85
 msgid "You do not have permission to send letters to other countries"
-msgstr "你沒有往其他國家寄信的權限"
+msgstr "您沒有往其他國家寄信的權限"
 
 #: main/forms.py:1427 templates/views/check/row-errors.html:87
 msgid "Last line of the address must be a real UK postcode"
@@ -1185,7 +1185,7 @@ msgstr "電子郵件範例中有藍色的橫幅圖片加上標誌。"
 
 #: main/forms.py:2237
 msgid "Add a banner to your logo"
-msgstr "將橫幅旗幟加入你的標誌"
+msgstr "將橫幅旗幟加入您的標誌"
 
 #: main/forms.py:2249
 msgid "What notification type?"
@@ -4242,7 +4242,7 @@ msgid ""
 "can try:"
 msgstr ""
 "我們使用 Javascript 來設置我們的分析 cookie。遺憾的是，Javascript "
-"並未在您的瀏覽器上運行，因此您無法更改您的設定。你可以試試："
+"並未在您的瀏覽器上運行，因此您無法更改您的設定。您可以試試："
 
 #: templates/views/cookies.html:119
 msgid ""
@@ -4775,9 +4775,10 @@ msgid ""
 " new service it will start in <a class=\"govuk-link govuk-link--no-"
 "visited-state\" href=\"%%s\">trial mode</a>."
 msgstr ""
-"免費<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">建立帳號</a> 並啟用你的第一個 Notify 的服務。當你加入新服務的時候會從 <a class=\"govuk-"
-"link govuk-link--no-visited-state\" href=\"%%s\">試用模式</a>開始。"
+"免費<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">建立帳號</a> 並啟用您的第一個 Notify 的服務。當您加入新服務的時候會從 <a "
+"class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">試用模式</a>開始。"
 
 #: templates/views/get-started.html:31
 #, python-format
@@ -4800,8 +4801,8 @@ msgid ""
 "can use our <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">guidance</a> to help you."
 msgstr ""
-"將預計要寄出的內容範例加入簡訊範本。你可以使用我們的<a class=\"govuk-link govuk-link--no-visited-"
-"state\" href=\"%%s\">指引</a>來協助你。"
+"將預計要寄出的內容範例加入簡訊範本。您可以使用我們的<a class=\"govuk-link "
+"govuk-link--no-visited-state\" href=\"%%s\">指引</a>來協助您。"
 
 #: templates/views/get-started.html:41
 msgid "Set up your service"
@@ -4942,7 +4943,7 @@ msgid ""
 "href=\"%%s\">documentation\n"
 "      for the client library you are using.</a>"
 msgstr ""
-"你可以如何使用用戶端函式庫，請參考這份 <a class=\"govuk-link govuk-link--no-"
+"您可以如何使用用戶端函式庫，請參考這份 <a class=\"govuk-link govuk-link--no-"
 "visited-state\" href=\"%%s\">文件\n"
 "      </a>"
 
@@ -5403,8 +5404,8 @@ msgid ""
 "to access GOV.UK Notify to send notifications\n"
 "    to users of your public service."
 msgstr ""
-"處理資料的法律依據為 ‘公共事務’ - 允許您透過 GOV.UK Notify 傳送通知\n"
-"    給您的公共事務使用者。"
+"處理資料的法律依據為「公共事務」– 允許您透過 GOV.UK Notify 傳送通知\n"
+"    給您的公共服務使用者。"
 
 #: templates/views/privacy.html:48
 msgid "Why we need your data"
@@ -5929,7 +5930,7 @@ msgstr "2023 年 1 至 3 月"
 msgid ""
 "Add multilingual letter templates so services can provide information in "
 "several languages"
-msgstr "加入多語言的信件範本，使你的服務能夠提供多語言服務"
+msgstr "加入多語言的信件範本，使您的服務能夠提供不同語言資訊"
 
 #: templates/views/roadmap.html:53
 msgid "Test reusable content patterns for text messages"
@@ -6053,7 +6054,7 @@ msgstr "資料儲存於本服務時"
 
 #: templates/views/security.html:28
 msgid "Any recipient data you upload is only held for 7 days."
-msgstr "你所上傳的所有收件人資料只會保留七天。"
+msgstr "您所上傳的所有收件人資料只會保留七天。"
 
 #: templates/views/security.html:29
 msgid ""
@@ -6568,7 +6569,7 @@ msgstr "紙本信件品牌"
 
 #: templates/views/service-settings.html:274
 msgid "Your service is in trial mode"
-msgstr "你的服務在試用期間"
+msgstr "您的服務處於測試環境"
 
 #: templates/views/service-settings.html:276
 msgid "You can only:"
@@ -6603,7 +6604,7 @@ msgstr "此服務的負責人能夠移除這些限制。"
 
 #: templates/views/service-settings.html:294
 msgid "Your service is live"
-msgstr "你的服務已經上線"
+msgstr "您的服務已經上線"
 
 #: templates/views/service-settings.html:297
 #, python-format
@@ -7168,7 +7169,7 @@ msgstr "在您申請轉正式環境前"
 
 #: templates/views/trial-mode.html:41
 msgid "add examples of the messages you want to send"
-msgstr "加入你想要寄送的簡訊範本"
+msgstr "加入您想要寄送的簡訊範本"
 
 #: templates/views/trial-mode.html:42
 msgid "update your settings so you’re ready to send and receive messages"
@@ -7298,9 +7299,7 @@ msgstr "此人員已接受邀請函"
 msgid ""
 "%%(user_name)s has not accepted their invitation to\n"
 "    ‘%%(service_name)s yet. You do not need to do anything."
-msgstr ""
-"%%(user_name)s 尚未接受寄送‘%%(service_name)s\n"
-"     寄送給他們的邀請。你無需做任何事。"
+msgstr "%%(user_name)s 尚未接受 %%(service_name)s 的邀請函。您不需要做任何事。"
 
 #: templates/views/user-already-team-member.html:6
 #: templates/views/user-already-team-member.html:15
@@ -7504,8 +7503,8 @@ msgid ""
 "sure\n"
 "      we’ll help you work it out."
 msgstr ""
-"請<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">聯絡我們</a> 並告訴我們\n"
+"請<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">聯絡我們</a>並告訴我們\n"
 "      你是否在政府單位工作。如果你不確定，\n"
 "      我們可以提供協助。"
 
@@ -8025,7 +8024,7 @@ msgstr "您的檔案至少得有三個地址欄，例如：「地址第一行」
 #: templates/views/check/column-errors.html:65
 #, python-format
 msgid "Your file needs a column called ‘%%s’."
-msgstr "您的檔案需要稱為「%%s」的欄。"
+msgstr "您的檔案需要有稱為「%%s」的欄。"
 
 #: templates/views/check/column-errors.html:69
 #, python-format
@@ -8448,7 +8447,7 @@ msgstr ""
 
 #: templates/views/features/emails.html:30
 msgid "Add your organisa:tion’s logo and brand colour to email templates."
-msgstr "將你的機關的標誌與品牌色加到電子郵件的範本中。"
+msgstr "將您的機關的標誌與品牌色加到電子郵件的範本中。"
 
 #: templates/views/features/emails.html:31
 #, python-format
@@ -8574,7 +8573,7 @@ msgstr "每日下午 5:30 將印製紙本信件，並於次一上班日（週一
 
 #: templates/views/features/letters.html:35
 msgid "Add your organisation’s logo to your letter templates."
-msgstr "將你的機關的標誌加進信件範本。"
+msgstr "將您的機關的標誌加進信件範本。"
 
 #: templates/views/features/letters.html:36
 #, python-format
@@ -9081,7 +9080,7 @@ msgstr "我們不建議使用任何第三方短網址服務，因為："
 
 #: templates/views/guidance/edit-and-format-messages.html:54
 msgid "your users cannot see where the link will take them"
-msgstr "你的使用者無法看見這個連結指向的位置"
+msgstr "您的使用者無法看見這個連結指向的位置"
 
 #: templates/views/guidance/edit-and-format-messages.html:55
 msgid "your link might stop working if there’s a service outage"
@@ -9549,7 +9548,7 @@ msgstr "不適用，因為這位團隊成員尚未在資料中增加電話號碼
 #: templates/views/notifications/check.html:8
 #: templates/views/notifications/check.html:61
 msgid "Preview of ‘{}’"
-msgstr "‘{}’預覽"
+msgstr "「{}」預覽"
 
 #: templates/views/notifications/check.html:75
 msgid "Send 1 message"
@@ -9931,7 +9930,7 @@ msgstr "%%(mail)s（已取消邀請）"
 
 #: templates/views/organisations/organisation/users/index.html:47
 msgid "(you)"
-msgstr "（你）"
+msgstr "（您）"
 
 #: templates/views/organisations/organisation/users/index.html:56
 #, python-format
@@ -10243,8 +10242,8 @@ msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
 " us</a> if you need any other details."
 msgstr ""
-"如果你需要更多資料<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">聯絡我們</a>。"
+"如果您需要更多資料<a class=\"govuk-link govuk-link--no-visited-state\" href="
+"\"%%s\">聯絡我們</a>。"
 
 #: templates/views/pricing/billing-details.html:26
 msgid "Supplier details"
@@ -10480,8 +10479,8 @@ msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Create "
 "an account</a> then add as many unique services as you need to.</p>"
 msgstr ""
-"<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">建立帳號</a> 並加入各種你所需要的服務。</p>"
+"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">建立帳號</"
+"a> 並加入各種您所需要的服務。</p>"
 
 #: templates/views/pricing/index.html:37
 msgid "You can add as many unique services as you need to."
@@ -11230,7 +11229,7 @@ msgstr "加入一個團隊成員，這位成員能夠管理設定、團隊和使
 
 #: templates/views/service-settings/request-to-go-live.html:33
 msgid "Add templates with examples of the content you plan to send"
-msgstr "將你預計要寄出的內容範例新增為範本"
+msgstr "將您預計要寄出的內容範例新增為範本"
 
 #: templates/views/service-settings/request-to-go-live.html:49
 msgid "Change your text message sender name"
@@ -11275,12 +11274,12 @@ msgstr "您需要在服務中加入聯繫方式，以便您的用戶遇到問題
 #: templates/views/service-settings/service-already-live.html:5
 #: templates/views/service-settings/service-already-live.html:11
 msgid "Your service is already live"
-msgstr "你的服務已經上線"
+msgstr "您的服務已經上線"
 
 #: templates/views/service-settings/service-already-live.html:15
 #, python-format
 msgid "‘%%s’ went live on %%s."
-msgstr "'%%s'在 %%s 上線。"
+msgstr "「%%s」已於 %%s 上線。"
 
 #: templates/views/service-settings/service-already-live.html:20
 #, python-format
@@ -11326,7 +11325,7 @@ msgstr "登入方式"
 msgid ""
 "Your team members can sign in with either a text message code\n"
 "          or an email link."
-msgstr "你的團隊成員能使用簡訊代碼或電子郵件連結登入。"
+msgstr "您的團隊成員能使用簡訊代碼或電子郵件連結登入。"
 
 #: templates/views/service-settings/set-auth-type.html:28
 #, python-format
@@ -11339,7 +11338,7 @@ msgstr ""
 
 #: templates/views/service-settings/set-auth-type.html:35
 msgid "Your team members sign in with a text message code."
-msgstr "你的團隊成員用簡訊短碼登入。"
+msgstr "您的團隊成員用簡訊短碼登入。"
 
 #: templates/views/service-settings/set-auth-type.html:38
 #, python-format
@@ -11352,7 +11351,7 @@ msgstr ""
 
 #: templates/views/service-settings/set-email-branding-add-to-branding-pool-step.html:7
 msgid "Apply ‘{}’ branding"
-msgstr "應用 ‘{}’ 推廣"
+msgstr "套用「{}」品牌"
 
 #: templates/views/service-settings/set-email-branding.html:8
 msgid "Set email branding"
@@ -11377,7 +11376,7 @@ msgstr "未提供回傳號碼"
 #: templates/views/service-settings/set-inbound-sms.html:21
 #, python-format
 msgid "Your service can receive text messages sent to %%s."
-msgstr "你的服務能夠接受送給%%的簡訊。"
+msgstr "您的服務能夠接受送給%%的簡訊。"
 
 #: templates/views/service-settings/set-inbound-sms.html:24
 #: templates/views/service-settings/set-inbound-sms.html:46
@@ -11392,8 +11391,8 @@ msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
 " us</a> if you want to switch this feature off."
 msgstr ""
-"如果你希望可以將此功能關閉，請<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">聯絡我們</a>。"
+"如果您希望可以將此功能關閉，請<a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"%%s\">聯絡我們</a>。"
 
 #: templates/views/service-settings/set-inbound-sms.html:31
 #, python-format
@@ -11411,8 +11410,8 @@ msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
 " us</a> if you want to be able to receive text messages from your users."
 msgstr ""
-"如果你想要從其他使用者接收簡訊<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">聯絡我們</a>。"
+"如果您想要從其他使用者接收簡訊<a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"%%s\">聯絡我們</a>。"
 
 #: templates/views/service-settings/set-inbound-sms.html:40
 msgid ""
@@ -11890,7 +11889,7 @@ msgstr "若您的問題不是緊急情況，我們會在下一個工作天回覆
 
 #: templates/views/support/index.html:35
 msgid "A problem is only classed as an emergency if you have a live service and:"
-msgstr "只有當你的服務上線時，才能夠被歸類為緊急狀況："
+msgstr "只有當您的服務上線時，才能夠被歸類為緊急狀況："
 
 #: templates/views/support/index.html:37
 msgid "nobody on your team can sign in"
@@ -11898,11 +11897,11 @@ msgstr "您的團隊成員皆無法登入"
 
 #: templates/views/support/index.html:38
 msgid "a ‘technical difficulties’ error appears when you try to upload a file"
-msgstr "當你試著上傳檔案，出現一則「技術問題」的警告訊息"
+msgstr "當您試著上傳檔案，出現一則「技術問題」的警告訊息時"
 
 #: templates/views/support/index.html:39
 msgid "a 500 response code appears when you try to send messages using the API"
-msgstr "當你試著想要利用API送出訊息時，出現了500 錯誤訊息"
+msgstr "當您試著想要利用API送出訊息時，出現了500 錯誤訊息"
 
 #: templates/views/support/public.html:7 templates/views/support/public.html:19
 msgid "The GOV.UK Notify service is for people who work in the government"
@@ -12014,7 +12013,7 @@ msgid ""
 "your system is telling the GOV.UK Notify API to send the wrong\n"
 "          message"
 msgstr ""
-"你的系統正要求 GOV.UK Notify API 送出錯誤\n"
+"您的系統正要求 GOV.UK Notify API 送出錯誤\n"
 "          訊息"
 
 #: templates/views/templates/_template.html:6
