@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-03 10:25+0000\n"
-"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -128,7 +128,7 @@ msgstr " 從 {}"
 
 #: formatters.py:350
 msgid "Data available for {}"
-msgstr "{} 的資料留存{}"
+msgstr "{} 的資料留存"
 
 #: formatters.py:351
 msgid "Data no longer available"
@@ -463,7 +463,7 @@ msgstr "單位名稱必須小於 255 個字"
 
 #: main/forms.py:1164
 msgid "Is your GP practice called ‘{}’?"
-msgstr "請問您的家庭醫師執業名稱為「{}」嗎？"
+msgstr "您的家庭醫師執業名稱為「{}」嗎？"
 
 #: main/forms.py:1173
 msgid "Is your GP practice called the same name as your service?"
@@ -524,7 +524,7 @@ msgstr "使用者將被告知他們的組織已經簽署同意條款"
 
 #: main/forms.py:1231
 msgid "Users will be prompted to sign the agreement before they can go live"
-msgstr "服務轉正式環境上線前，將要求使用者簽署同意條款"
+msgstr "在服務轉正式環境上線前，將要求使用者簽署同意條款"
 
 #: main/forms.py:1232
 msgid "Users will not be prompted to sign the agreement"
@@ -737,7 +737,7 @@ msgstr "您需要為金鑰命名"
 
 #: main/forms.py:1575
 msgid "A key with this name already exists"
-msgstr "這組金鑰名稱已存在"
+msgstr "這組名稱已被使用"
 
 #: main/forms.py:1580
 msgid "How can we help you?"
@@ -876,7 +876,7 @@ msgstr "設定為您的預設地址"
 
 #: main/forms.py:1768
 msgid "Contains {} lines, maximum is 10"
-msgstr "包含 {} 行，最大值為10"
+msgstr "包含 {} 行，最大值為 10 行"
 
 #: main/forms.py:1780
 msgid "Choices"
@@ -1094,7 +1094,7 @@ msgstr "收訊號碼"
 
 #: main/forms.py:2058
 msgid "Must be a valid https URL"
-msgstr "必須是有效的HTTPS網址"
+msgstr "必須是有效的 HTTPS 網址"
 
 #: main/forms.py:2062
 msgid "Bearer token"
@@ -1609,8 +1609,8 @@ msgstr ""
 "\n"
 "            您以 {} 的身分登入。\n"
 "            這是給另一個電子郵件地址的邀請。\n"
-"            請<a href={} class=\"govuk-link govuk-link--no-visited-state\""
-">登出</a>\n"
+"            請<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href={}>登出</a>\n"
 "            並再次點擊此連結來接受邀請。\n"
 "            "
 
@@ -1730,7 +1730,7 @@ msgstr "信件的花費 (£)"
 msgid ""
 "inline;filename=\"{} organisation usage report for year {} - generated on"
 " {}.csv\""
-msgstr "inline;filename=“{} 組織年度使用報告 {} - generated on {}.csv”"
+msgstr "inline;filename=“{} 組織年度使用報告 {} - 產生於 {}.csv”"
 
 #: main/views/organisations.py:302
 msgid "Organisation name already exists"
@@ -1938,7 +1938,7 @@ msgstr "inline; filename=\"{} 上線服務報告.csv\""
 msgid ""
 "attachment; filename=\"{} to {} notification status per service "
 "report.csv\""
-msgstr "附件; 檔案名稱=\"{} 到 {} 每次服務狀態通知.csv\""
+msgstr "attachment; filename=\"{} 至 {} 單一服務通知狀態報告.csv\""
 
 #: main/views/platform_admin.py:298
 msgid "Date must be in a single financial year."
@@ -1946,7 +1946,7 @@ msgstr "日期必須介於一個財政年度中。"
 
 #: main/views/platform_admin.py:328
 msgid "attachment; filename=\"Billing Report from {} to {}.csv\""
-msgstr "附件; 檔案名稱=\"帳單報告 從 {} 到 {}.csv\""
+msgstr "attachment; filename=\"帳務報表 - 從 {} 至 {}.csv\""
 
 #: main/views/platform_admin.py:334 main/views/platform_admin.py:436
 #: main/views/platform_admin.py:482
@@ -2003,7 +2003,7 @@ msgstr "信件總頁數"
 
 #: main/views/platform_admin.py:383
 msgid "attachment; filename=\"Volumes by service report from {} to {}.csv\""
-msgstr "附件; 檔案名稱=\"服務使用量報告從 {} 到 {}.csv\""
+msgstr "attachment; filename=\"服務傳送量報表 - 從 {} 至 {}.csv\""
 
 #: main/views/platform_admin.py:402 main/views/platform_admin.py:449
 msgid "day"
@@ -2019,7 +2019,7 @@ msgstr "簡訊總片段數"
 
 #: main/views/platform_admin.py:430
 msgid "attachment; filename=\"Daily volumes report from {} to {}.csv\""
-msgstr "附件; 檔案名稱\"每日使用量從 {} 到 {}.csv\""
+msgstr "attachment; filename=\"每日傳送量報表 - 從 {} 至 {}.csv\""
 
 #: main/views/platform_admin.py:450
 msgid "provider"
@@ -2035,7 +2035,7 @@ msgstr "簡訊費用"
 msgid ""
 "attachment; filename=\"Daily SMS provider volumes report from %s to "
 "%s.csv\""
-msgstr "attachment; filename=\"每日簡訊使用量報告從 %s 至 %s.csv\""
+msgstr "attachment; filename=\"每日簡訊業者傳送量報表 - 從 %s 至 %s.csv\""
 
 #: main/views/platform_admin.py:532
 msgid "Submitted {} letter references"
@@ -3002,7 +3002,7 @@ msgstr "我們可以在您的設備上存放分析的 cookie 嗎？"
 
 #: templates/components/cookie-banner.html:6
 msgid "Analytics cookies help us understand how our website is being used."
-msgstr "分析 Cookies 能夠幫助我們了解您的網站使用情形。"
+msgstr "分析用 Cookie 能夠幫助我們了解您如何使用本網站。"
 
 #: templates/components/cookie-banner.html:9
 msgid ""
@@ -3428,7 +3428,7 @@ msgstr "連結和網址"
 
 #: templates/partials/templates/guidance-links.html:5
 msgid "Always use full URLs, starting with https://"
-msgstr "務必使用完整的網址，並以 https:// 開頭"
+msgstr "每次都使用完整的網址，並以 https:// 開頭"
 
 #: templates/partials/templates/guidance-links.html:8
 msgid "Apply now at https://www.gov.uk/example"
@@ -3839,9 +3839,9 @@ msgid ""
 "link--no-visited-state\" href=\"https://www.w3.org/TR/WCAG21/#info-and-"
 "relationships\">success criterion 1.3.1: info and relationships</a>"
 msgstr ""
-"錯誤使用標題的階層性 <a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"https://www.w3.org/TR/WCAG21/#info-and-relationships\">將會破壞文件規範第 "
-"1.3.1：資訊與脈絡關係的規定</a>"
+"錯誤使用標題階層<a class=\"govuk-link govuk-link--no-visited-state\" href="
+"\"https://www.w3.org/TR/WCAG21/#info-and-relationships\">將違反文件規範第 1.3"
+".1：資訊與脈絡關係</a>的規定"
 
 #: templates/views/accessibility_statement.html:167
 msgid ""
