@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-04 13:44+0000\n"
-"Last-Translator: 小ㄐ <rosa@ocf.tw>\n"
+"PO-Revision-Date: 2022-12-05 01:42+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -9642,7 +9642,7 @@ msgstr "即將更改 %%(user_name)s 的電話號碼。"
 
 #: templates/views/manage-users/permissions.html:9
 msgid "Platform admin users can access all template folders."
-msgstr "平台管管員可以存取所有範本的檔案."
+msgstr "平台管理員使用者可存取所有範本資料夾。"
 
 #: templates/views/manage-users/permissions.html:16
 msgid "This user will login with a security key."
@@ -10032,7 +10032,7 @@ msgstr "預覽"
 #: templates/views/organisations/organisation/users/index.html:43
 #, python-format
 msgid "%%(mail)s (invited)"
-msgstr "%%(mail)s (已邀請)"
+msgstr "%%(mail)s（已邀請）"
 
 #: templates/views/organisations/organisation/users/index.html:45
 #, python-format
@@ -10055,7 +10055,7 @@ msgstr "邀請團隊成員"
 #: templates/views/organisations/organisation/users/invite-org-user.html:29
 #, python-format
 msgid "%%(name)s team members can:"
-msgstr "%%(name)s 團隊成員可以:"
+msgstr "%%(name)s 團隊成員可以："
 
 #: templates/views/organisations/organisation/users/invite-org-user.html:32
 msgid "see usage and team members for each service"
@@ -11495,7 +11495,7 @@ msgstr "未提供回傳號碼"
 #: templates/views/service-settings/set-inbound-sms.html:21
 #, python-format
 msgid "Your service can receive text messages sent to %%s."
-msgstr "您的服務能接受傳送給%%的簡訊。"
+msgstr "您的服務能接受傳送給 %%s 的簡訊。"
 
 #: templates/views/service-settings/set-inbound-sms.html:24
 #: templates/views/service-settings/set-inbound-sms.html:46
