@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
 "PO-Revision-Date: 2022-12-04 07:11+0000\n"
-"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -1275,7 +1275,7 @@ msgstr "訓練模式"
 
 #: main/forms.py:2456
 msgid "Operator channel"
-msgstr "操作者頻道"
+msgstr "電信業者頻道"
 
 #: main/forms.py:2457
 msgid "Test channel"
@@ -1477,7 +1477,7 @@ msgstr "正式環境 - 傳送給任何人"
 
 #: main/views/api_keys.py:75 templates/views/api/keys.html:38
 msgid "Team and guest list – limits who you can send to"
-msgstr "團隊與訪客名單 - 限制您的發送對象"
+msgstr "團隊與訪客名單 - 僅可傳送給名單中的人員"
 
 #: main/views/api_keys.py:76 templates/views/api/keys.html:40
 msgid "Test – pretends to send messages"
@@ -6723,7 +6723,7 @@ msgstr "速率限制"
 
 #: templates/views/service-settings.html:372
 msgid "{:,} per minute"
-msgstr "{:,} 每分"
+msgstr "每分鐘 {:,} 封"
 
 #: templates/views/service-settings.html:373
 msgid "rate limit"
@@ -6735,7 +6735,7 @@ msgstr "訊息限制"
 
 #: templates/views/service-settings.html:377
 msgid "{:,} per day"
-msgstr "{:,} 每天"
+msgstr "每天 {:,} 封"
 
 #: templates/views/service-settings.html:378
 msgid "daily message limit"
@@ -6750,7 +6750,7 @@ msgstr "免費簡訊額度"
 
 #: templates/views/service-settings.html:382
 msgid "{:,} per year"
-msgstr "{:,} 每年"
+msgstr "每年 {:,} 封"
 
 #: templates/views/service-settings.html:383
 msgid "free text message allowance"
@@ -7780,7 +7780,7 @@ msgstr "將您的金鑰備份於安全的地方。"
 
 #: templates/views/api/keys/show.html:20
 msgid "You will not be able to see it again once you leave this page."
-msgstr "您無法再次看到一旦您離開此頁面。"
+msgstr "離開此頁面後就無法再看到這把金鑰。"
 
 #: templates/views/api/keys/show.html:27 templates/views/api/keys/show.html:28
 msgid "API key"
@@ -7788,7 +7788,7 @@ msgstr "API 金鑰"
 
 #: templates/views/api/keys/show.html:33
 msgid "Back to API keys"
-msgstr "取回API金鑰"
+msgstr "返回 API 金鑰頁面"
 
 #: templates/views/broadcast/dashboard.html:24
 #: templates/views/broadcast/new-broadcast.html:8
@@ -11141,7 +11141,7 @@ msgstr "加入資料保存"
 
 #: templates/views/service-settings/data-retention.html:28
 msgid "By default data is kept for 7 days"
-msgstr "預設數據保留7天"
+msgstr "資料預設將保留 7 天"
 
 #: templates/views/service-settings/data-retention.html:34
 msgid "You have not added any data retention"
@@ -11400,7 +11400,7 @@ msgstr "將會收到此服務傳送的警報。"
 
 #: templates/views/service-settings/service-confirm-broadcast-account-type.html:48
 msgid "All team member permissions will be removed."
-msgstr "所有團隊成員的權限都會被移除。"
+msgstr "將清除團隊中所有成員的權限。"
 
 #: templates/views/service-settings/set-auth-type.html:7
 #: templates/views/service-settings/set-auth-type.html:18
@@ -12245,7 +12245,7 @@ msgstr "先前的版本"
 
 #: templates/views/templates/choose_history.html:17
 msgid "Back to current templates"
-msgstr "取回現在的"
+msgstr "返回目前範本頁面"
 
 #: templates/views/templates/copy.html:19
 msgid "This folder is empty"
