@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 13:08+0800\n"
-"PO-Revision-Date: 2022-12-04 06:56+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"PO-Revision-Date: 2022-12-04 07:11+0000\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -7512,7 +7512,7 @@ msgid ""
 "I confirm that I have the legal authority to accept the GOV.UK Notify "
 "data sharing and financial agreement (version %%s) and that %%s will be "
 "bound by it."
-msgstr "我確認我有法定權威可接受 GOV.UK Notify 資料共享與財務同意書（版本 %%s），且 "
+msgstr "我確認我有法定權限可接受 GOV.UK Notify 資料共享與財務同意書（版本 %%s），且 "
 "%%s 將遵循此同意書內容。"
 
 #: templates/views/agreement/agreement-confirm.html:35
@@ -7531,7 +7531,7 @@ msgid ""
 "href=\"%%s\">Download the agreement (PDF)</a> for %%s."
 msgstr ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">下載同意書（PDF）</a> 以 %%s。"
+">下載同意書（PDF）</a> 給 %%s。"
 
 #: templates/views/agreement/agreement-public.html:21
 msgid "Download the agreement (PDF)"
@@ -7559,17 +7559,17 @@ msgstr "請先接受我們的資料共享與財務同意書，才可以使用 GO
 msgid ""
 "This must be done by, or on behalf of, someone with the authority to sign"
 " contracts for your organisation."
-msgstr "必須由有權以您單位名義簽署同意書的人員或代理人完成簽署。"
+msgstr "必須由有權以您組織名義簽署同意書的人員或代理人完成簽署。"
 
 #: templates/views/agreement/service-agreement-choose.html:27
 msgid ""
 "Once accepted, the agreement covers all Notify services from your "
 "organisation."
-msgstr "一旦接受後，此同意書有效範圍涵蓋來自您的組織所使用的所有 Notify 服務。"
+msgstr "一旦接受後，此同意書有效範圍涵蓋來自您組織使用的所有 Notify 服務。"
 
 #: templates/views/agreement/service-agreement-choose.html:30
 msgid "There are different agreements for crown and non-crown organisations."
-msgstr "官方與非官方單位須簽署的同意書不同。"
+msgstr "官方與非官方組織須簽署的同意書不同。"
 
 #: templates/views/agreement/service-agreement-choose.html:33
 #, python-format
@@ -7582,7 +7582,7 @@ msgid ""
 msgstr ""
 "請<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
 ">聯絡我們</a>並告訴我們\n"
-"      您是否在政府單位工作。如果您不確定，\n"
+"      您是否在政府單位組織。如果您不確定，\n"
 "      我們可以提供協助。"
 
 #: templates/views/agreement/service-agreement-signed.html:6
@@ -7605,8 +7605,8 @@ msgid ""
 "For more information, you can <a class=\"govuk-link govuk-link--no-"
 "visited-state\" href=\"%%s\">download a copy of the agreement (PDF)"
 msgstr ""
-"若需更多資訊，可以<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">下載一份同意書的副本（PDF）"
+"若需更多資訊，可以<a class=\"govuk-link govuk-link--no-visited-state\" href="
+"\"%%s\">下載一份同意書副本（PDF）"
 
 #: templates/views/agreement/service-agreement-signed.html:27
 #: templates/views/agreement/service-agreement.html:34
@@ -7669,7 +7669,8 @@ msgstr "請輸入有效的手機號碼"
 msgid ""
 "You can use a team and guest list key to send real messages to your team "
 "and up to 5 other email addresses or phone numbers."
-msgstr "您可以使用團隊與訪客清單來傳送真實的訊息給您的團隊成員，以及最多 5 筆其他的電子郵件地址或手機號碼。"
+msgstr "您可以使用團隊與訪客清單來傳送真實的訊息給團隊成員，以及最多 5 "
+"筆其他的電子郵件地址或手機號碼。"
 
 #: templates/views/api/guest-list.html:48
 #, python-format
@@ -7691,7 +7692,7 @@ msgstr "重新整理"
 
 #: templates/views/api/index.html:42
 msgid "When you send messages via the API they’ll appear here."
-msgstr "當您透過 API 傳送訊息時，將顯示於此處。"
+msgstr "當您透過 API 傳送訊息，將顯示於此處。"
 
 #: templates/views/api/index.html:45 templates/views/api/index.html:98
 msgid "Notify deletes messages after 7 days."
@@ -7704,7 +7705,7 @@ msgstr "檢視 %%s"
 
 #: templates/views/api/index.html:94
 msgid "Only showing the first 50 messages."
-msgstr "僅顯示前 50 行。"
+msgstr "僅顯示前 50 則訊息。"
 
 #: templates/views/api/keys.html:22
 msgid "You have not created any API keys yet"
@@ -7739,8 +7740,9 @@ msgid ""
 "link--no-visited-state\" href=\"%%s\">API documentation</a> for more "
 "information."
 msgstr ""
-"當您發送電子郵件或簡訊後，我們可告訴您 Notify 是否已傳送成功。若需更多資訊請參考我們的 <a class=\"govuk-link "
-"govuk-link--no-visited-state\" href=\"%%s\">API 文件</a>當中的 Callback 段落。"
+"當您發送電子郵件或簡訊後，我們可告訴您 Notify 是否已傳送成功。\n"
+"        若需更多資訊請參考我們的 <a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"%%s\">API 文件</a>當中的 Callback 段落。"
 
 #: templates/views/api/callbacks/delivery-status-callback.html:30
 #: templates/views/api/callbacks/received-text-messages-callback.html:27
@@ -7750,11 +7752,11 @@ msgstr "必須以 https:// 開頭"
 #: templates/views/api/callbacks/delivery-status-callback.html:35
 #: templates/views/api/callbacks/received-text-messages-callback.html:32
 msgid "At least 10 characters"
-msgstr "至少10個字"
+msgstr "至少10個字元"
 
 #: templates/views/api/callbacks/received-text-messages-callback.html:8
 msgid "Callbacks for received text messages"
-msgstr "接收到簡訊的 Callback"
+msgstr "已接收簡訊的 Callback"
 
 #: templates/views/api/callbacks/received-text-messages-callback.html:20
 #, python-format
@@ -7764,8 +7766,9 @@ msgid ""
 "        Check the <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\"> callback documentation </a> for more information."
 msgstr ""
-"當您在 Notify 收到簡訊時，我們可以將收到資訊轉寄到您的系統。若需更多資訊，請參考<a class=\"govuk-link govuk-"
-"link--no-visited-state\" href=\"%%s\">Callback 文件</a>。"
+"當您在 Notify 收到簡訊時，我們可以將收到資訊轉寄到您的系統。\n"
+"        若需更多資訊，請參考<a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"%%s\">Callback 文件</a>。"
 
 #: templates/views/api/keys/show.html:6 templates/views/api/keys/show.html:13
 msgid "New API key"
@@ -7773,7 +7776,7 @@ msgstr "新增 API 金鑰"
 
 #: templates/views/api/keys/show.html:17
 msgid "Copy your key to somewhere safe."
-msgstr "將您的金鑰備份於安全的場所。"
+msgstr "將您的金鑰備份於安全的地方。"
 
 #: templates/views/api/keys/show.html:20
 msgid "You will not be able to see it again once you leave this page."
