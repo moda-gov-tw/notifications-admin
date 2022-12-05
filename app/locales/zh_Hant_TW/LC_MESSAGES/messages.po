@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-05 16:46+0800\n"
-"PO-Revision-Date: 2022-12-05 08:54+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
-"notification-admin/notification-admin-github/zh_Hant/>\n"
+"POT-Creation-Date: 2022-12-05 17:16+0800\n"
+"PO-Revision-Date: 2022-12-05 01:42+0000\n"
+"Last-Translator: WILT <interpreter.wilt@gmail.com>\n"
 "Language: zh_Hant_TW\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.toomore.net/projects/notification-admin/notification-"
+"admin-github/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -2237,11 +2237,11 @@ msgstr "您已更新電子郵件品牌"
 msgid "Letter branding request - %s"
 msgstr "信件品牌請求 - %s"
 
-#: main/views/sign_in.py:45
+#: main/views/sign_in.py:49
 msgid "You cannot accept an invite for another person."
 msgstr "您無法替他人接受邀請。"
 
-#: main/views/sign_in.py:69
+#: main/views/sign_in.py:68
 #, python-format
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
@@ -2790,7 +2790,7 @@ msgstr "一個資料夾"
 msgid "{} folders"
 msgstr "{} 資料夾"
 
-#: models/user.py:215
+#: models/user.py:214
 msgid "{} are not valid permissions"
 msgstr "{} 不是有效權限"
 
@@ -3540,6 +3540,33 @@ msgid ""
 msgstr ""
 "接下來，使用 API 上傳您的文件。請依照 <a class=\"govuk-link govuk-link--no-visited-"
 "state\" href=\"%%s\">API 文件</a>的教學，來使用電子郵件寄送文件。"
+
+#: templates/views/accessibility_statement.html:15
+msgid "Published"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:15
+msgid "23 September 2020"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:16
+#: templates/views/pricing/index.html:21 templates/views/privacy.html:16
+#: templates/views/roadmap.html:19
+msgid "Last updated"
+msgstr "最近更新於"
+
+#: templates/views/accessibility_statement.html:16
+msgid "5 October 2022"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:17
+#: templates/views/roadmap.html:20
+msgid "Next review due"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:17
+msgid "20 December 2022"
+msgstr ""
 
 #: templates/views/accessibility_statement.html:22
 msgid ""
@@ -5805,6 +5832,14 @@ msgstr "已寄出 %%s"
 #, python-format
 msgid "Only showing the first %%(page_size)s of %%(count)s rows"
 msgstr "僅顯示 %%(count)s 列當中的前 %%(page_size)s 行"
+
+#: templates/views/roadmap.html:19
+msgid "28 October 2022"
+msgstr ""
+
+#: templates/views/roadmap.html:20
+msgid "27 January 2023"
+msgstr ""
 
 #: templates/views/roadmap.html:25
 msgid ""
@@ -10481,10 +10516,6 @@ msgstr ""
 "href=\"%%s\">先將英國內閣辦公室新增為供應商</a>才可下<abbr title=\"訂購單\">訂購單</abbr>。"
 
 #: templates/views/pricing/index.html:21
-msgid "Last updated"
-msgstr "最近更新於"
-
-#: templates/views/pricing/index.html:21
 msgid "1 May 2022"
 msgstr "2022年5月1日"
 
@@ -13003,3 +13034,4 @@ msgstr "核准發出警報"
 #~ msgstr ""
 #~ "請參考<a class=\"govuk-link govuk-link--no-"
 #~ "visited-state\" href=\"%%s\">您使用的客戶端程式庫文件。"
+

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-05 16:46+0800\n"
+"POT-Creation-Date: 2022-12-05 17:16+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -2193,11 +2193,11 @@ msgstr ""
 msgid "Letter branding request - %s"
 msgstr ""
 
-#: main/views/sign_in.py:45
+#: main/views/sign_in.py:49
 msgid "You cannot accept an invite for another person."
 msgstr ""
 
-#: main/views/sign_in.py:69
+#: main/views/sign_in.py:68
 #, python-format
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
@@ -2731,7 +2731,7 @@ msgstr ""
 msgid "{} folders"
 msgstr ""
 
-#: models/user.py:215
+#: models/user.py:214
 msgid "{} are not valid permissions"
 msgstr ""
 
@@ -3433,6 +3433,33 @@ msgid ""
 "Next, use the API to upload your document. Follow the instructions to "
 "send a document by email in the <a class=\"govuk-link govuk-link--no-"
 "visited-state\" href=\"%%s\">API documentation</a>."
+msgstr ""
+
+#: templates/views/accessibility_statement.html:15
+msgid "Published"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:15
+msgid "23 September 2020"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:16
+#: templates/views/pricing/index.html:21 templates/views/privacy.html:16
+#: templates/views/roadmap.html:19
+msgid "Last updated"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:16
+msgid "5 October 2022"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:17
+#: templates/views/roadmap.html:20
+msgid "Next review due"
+msgstr ""
+
+#: templates/views/accessibility_statement.html:17
+msgid "20 December 2022"
 msgstr ""
 
 #: templates/views/accessibility_statement.html:22
@@ -5481,6 +5508,14 @@ msgstr ""
 #: templates/views/returned-letters.html:54
 #, python-format
 msgid "Only showing the first %%(page_size)s of %%(count)s rows"
+msgstr ""
+
+#: templates/views/roadmap.html:19
+msgid "28 October 2022"
+msgstr ""
+
+#: templates/views/roadmap.html:20
+msgid "27 January 2023"
 msgstr ""
 
 #: templates/views/roadmap.html:25
@@ -9905,10 +9940,6 @@ msgid ""
 msgstr ""
 
 #: templates/views/pricing/index.html:21
-msgid "Last updated"
-msgstr ""
-
-#: templates/views/pricing/index.html:21
 msgid "1 May 2022"
 msgstr ""
 
@@ -12336,3 +12367,4 @@ msgstr ""
 #~ "href=\"%%s\">documentation\n"
 #~ "      for the client library you are using."
 #~ msgstr ""
+
