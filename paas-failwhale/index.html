@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>
-       Sorry, the service is unavailable – GOV.UK Notify
+       {{_('Sorry, the service is unavailable – GOV.UK Notify')}}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c" />
@@ -24,7 +24,7 @@
     <meta property="og:image" content="/static_503/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
-    <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    <a href="#main-content" class="govuk-skip-link">{{_('Skip to main content')}}</a>
     <header class="govuk-header " role="banner" data-module="header">
       <div class="govuk-header__container govuk-width-container">
 
@@ -68,13 +68,13 @@
         <div class="govuk-grid-row">
           <div class="govuk-grid-column-full">
             <h1 class="govuk-heading-l govuk-!-padding-top-7">
-              Sorry, the service is unavailable
+              {{_('Sorry, there is a problem with the service')}}
             </h1>
             <p class="govuk-body">
-              We’re performing some essential updates. Notify will be back shortly.
+              {{_('We’re performing some essential updates. Notify will be back shortly.')}}
             </p>
             <p class="govuk-body">
-              Please check the <a class="govuk-link govuk-link--no-visited-state" href="https://status.notifications.service.gov.uk/">status page</a> for updates.
+              {{_('Please check the <a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://status.notifications.service.gov.uk/">status page</a> for updates.')}}
             </p>
           </div>
         </div>
@@ -86,9 +86,9 @@
         <div class="govuk-footer__meta">
           <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
 
-            <h2 class="govuk-visually-hidden">Support links</h2>
+            <h2 class="govuk-visually-hidden">{{_('Support links')}}</h2>
             <div class="govuk-footer__meta-custom">
-              Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service" class="govuk-footer__link">Government Digital Service</a>
+              {{_("Built by the <a href=\"https://www.gov.uk/government/organisations/government-digital-service\" class=\"govuk-footer__link\">Government Digital Service</a>")}}
             </div>
 
             <svg
@@ -106,19 +106,19 @@
               />
             </svg>
             <span class="govuk-footer__licence-description">
-              All content is available under the
+              _("""All content is available under the
               <a
                 class="govuk-footer__link"
                 href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
                 rel="license"
-              >Open Government Licence v3.0</a>, except where otherwise stated
+              >Open Government Licence v3.0</a>, except where otherwise stated""")
             </span>
           </div>
           <div class="govuk-footer__meta-item">
             <a
               class="govuk-footer__link govuk-footer__copyright-logo"
               href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
-            >© Crown copyright</a>
+            >{{_('© Crown copyright')}}</a>
           </div>
         </div>
       </div>

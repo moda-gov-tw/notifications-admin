@@ -605,7 +605,8 @@ class PostalAddressField(TextAreaField):
 
 class LoginForm(StripWhitespaceForm):
     email_address = GovukEmailField(
-        "Email address", validators=[Length(min=5, max=255), DataRequired(message=_("Cannot be empty")), ValidEmail()]
+        _("Email address"),
+        validators=[Length(min=5, max=255), DataRequired(message=_("Cannot be empty")), ValidEmail()],
     )
     password = GovukPasswordField(_("Password"), validators=[DataRequired(message=_("Enter your password"))])
 
