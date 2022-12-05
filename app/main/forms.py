@@ -1141,7 +1141,7 @@ class RenameServiceForm(StripWhitespaceForm):
     name = GovukTextInputField(
         "Service name",
         validators=[
-            DataRequired(message="Cannot be empty"),
+            DataRequired(message=_("Cannot be empty")),
             MustContainAlphanumericCharacters(),
             Length(max=255, message=_("Service name must be 255 characters or fewer")),
         ],
@@ -1150,7 +1150,7 @@ class RenameServiceForm(StripWhitespaceForm):
 
 class RenameOrganisationForm(StripWhitespaceForm):
     name = GovukTextInputField(
-        "Organisation name",
+        _("Organisation name"),
         validators=[
             DataRequired(message=_("Cannot be empty")),
             MustContainAlphanumericCharacters(),

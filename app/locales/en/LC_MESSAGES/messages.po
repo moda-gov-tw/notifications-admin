@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-05 18:21+0800\n"
+"POT-Creation-Date: 2022-12-05 18:32+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -362,13 +362,13 @@ msgstr ""
 
 #: main/forms.py:200 main/forms.py:245 main/forms.py:249 main/forms.py:256
 #: main/forms.py:389 main/forms.py:609 main/forms.py:615 main/forms.py:639
-#: main/forms.py:649 main/forms.py:652 main/forms.py:1155 main/forms.py:1263
-#: main/forms.py:1298 main/forms.py:1305 main/forms.py:1375 main/forms.py:1378
-#: main/forms.py:1408 main/forms.py:1437 main/forms.py:1441 main/forms.py:1444
-#: main/forms.py:1602 main/forms.py:1734 main/forms.py:1762 main/forms.py:2058
-#: main/forms.py:2065 main/forms.py:2092 main/forms.py:2156 main/forms.py:2165
-#: main/forms.py:2179 main/forms.py:2275 main/forms.py:2290 main/forms.py:2301
-#: main/forms.py:2558 main/forms.py:2609
+#: main/forms.py:649 main/forms.py:652 main/forms.py:1144 main/forms.py:1155
+#: main/forms.py:1263 main/forms.py:1298 main/forms.py:1305 main/forms.py:1375
+#: main/forms.py:1378 main/forms.py:1408 main/forms.py:1437 main/forms.py:1441
+#: main/forms.py:1444 main/forms.py:1602 main/forms.py:1734 main/forms.py:1762
+#: main/forms.py:2058 main/forms.py:2065 main/forms.py:2092 main/forms.py:2156
+#: main/forms.py:2165 main/forms.py:2179 main/forms.py:2275 main/forms.py:2290
+#: main/forms.py:2301 main/forms.py:2558 main/forms.py:2609
 msgid "Cannot be empty"
 msgstr ""
 
@@ -447,6 +447,10 @@ msgstr ""
 
 #: main/forms.py:1146 main/forms.py:1265
 msgid "Service name must be 255 characters or fewer"
+msgstr ""
+
+#: main/forms.py:1153
+msgid "Organisation name"
 msgstr ""
 
 #: main/forms.py:1157
