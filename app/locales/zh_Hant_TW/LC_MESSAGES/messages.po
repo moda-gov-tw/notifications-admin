@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-05 18:17+0800\n"
+"POT-Creation-Date: 2022-12-05 18:21+0800\n"
 "PO-Revision-Date: 2022-12-05 10:19+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
-"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.toomore.net/projects/notification-admin/notification-"
+"admin-github/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -6681,6 +6681,7 @@ msgstr "本服務的帳務資訊"
 msgid "Notes"
 msgstr "備註"
 
+#: templates/views/organisations/organisation/settings/index.html:71
 #: templates/views/organisations/organisation/settings/index.html:82
 #: templates/views/organisations/organisation/settings/index.html:93
 #: templates/views/organisations/organisation/settings/index.html:145
