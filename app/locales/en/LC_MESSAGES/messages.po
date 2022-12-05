@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-05 17:16+0800\n"
+"POT-Creation-Date: 2022-12-05 17:29+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -6762,7 +6762,7 @@ msgid "To remove these restrictions:"
 msgstr ""
 
 #: templates/views/trial-mode.html:30
-msgid "Sign in to Notify"
+msgid "Sign in to Notify."
 msgstr ""
 
 #: templates/views/trial-mode.html:31
@@ -12368,3 +12368,5 @@ msgstr ""
 #~ "      for the client library you are using."
 #~ msgstr ""
 
+#~ msgid "Sign in to Notify"
+#~ msgstr ""
