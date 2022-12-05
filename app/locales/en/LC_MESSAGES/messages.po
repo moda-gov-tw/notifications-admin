@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-05 17:29+0800\n"
+"POT-Creation-Date: 2022-12-05 18:17+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -2291,6 +2291,7 @@ msgstr ""
 
 #: main/views/sub_navigation_dictionaries.py:54
 #: templates/admin_template.html:231
+#: templates/views/organisations/organisation/settings/index.html:81
 #: templates/views/pricing/billing-details-signed-out.html:9
 #: templates/views/pricing/billing-details-signed-out.html:14
 #: templates/views/pricing/billing-details.html:10
@@ -6299,10 +6300,13 @@ msgstr ""
 msgid "billing details for service"
 msgstr ""
 
+#: templates/views/organisations/organisation/settings/index.html:92
 #: templates/views/service-settings.html:345
 msgid "Notes"
 msgstr ""
 
+#: templates/views/organisations/organisation/settings/index.html:82
+#: templates/views/organisations/organisation/settings/index.html:93
 #: templates/views/organisations/organisation/settings/index.html:145
 #: templates/views/organisations/organisation/settings/index.html:155
 #: templates/views/providers/provider.html:40
@@ -9395,6 +9399,10 @@ msgstr ""
 
 #: templates/views/organisations/organisation/settings/index.html:97
 msgid "the notes for the organisation"
+msgstr ""
+
+#: templates/views/organisations/organisation/settings/index.html:102
+msgid "Email branding options"
 msgstr ""
 
 #: templates/views/organisations/organisation/settings/index.html:108

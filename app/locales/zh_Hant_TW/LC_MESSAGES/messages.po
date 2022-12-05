@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-05 17:29+0800\n"
+"POT-Creation-Date: 2022-12-05 18:17+0800\n"
 "PO-Revision-Date: 2022-12-05 09:49+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
-"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.toomore.net/projects/notification-admin/notification-"
+"admin-github/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -2335,6 +2335,7 @@ msgstr "付款方式"
 
 #: main/views/sub_navigation_dictionaries.py:54
 #: templates/admin_template.html:231
+#: templates/views/organisations/organisation/settings/index.html:81
 #: templates/views/pricing/billing-details-signed-out.html:9
 #: templates/views/pricing/billing-details-signed-out.html:14
 #: templates/views/pricing/billing-details.html:10
@@ -3576,9 +3577,10 @@ msgid ""
 "href=\"https://docs.notifications.service.gov.uk\">GOV.UK Notify API "
 "documentation subdomain"
 msgstr ""
-"此無障礙聲明適用於 www.notifications.service.gov.uk 網域。它不適用於 <a class"
-"=\"govuk-link govuk-link—no-visited-state\" href=\"https://docs.notifications"
-".service.gov.uk\">GOV.UK Notify 的 API 文件子網域"
+"此無障礙聲明適用於 www.notifications.service.gov.uk 網域。它不適用於 <a class=\"govuk-link"
+" govuk-link—no-visited-state\" "
+"href=\"https://docs.notifications.service.gov.uk\">GOV.UK Notify 的 API "
+"文件子網域"
 
 #: templates/views/accessibility_statement.html:26
 msgid ""
@@ -4710,8 +4712,8 @@ msgid ""
 "Read more about <a class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"%%s\">security"
 msgstr ""
-"了解<a class=\"govuk-link govuk-link—no-visited-state\" href=\"%%s\""
-">安全性</a>的更多資訊。"
+"了解<a class=\"govuk-link govuk-link—no-visited-state\" "
+"href=\"%%s\">安全性</a>的更多資訊。"
 
 #: templates/views/features.html:78
 msgid ""
@@ -6674,10 +6676,13 @@ msgstr "若服務已經列為正式上線服務"
 msgid "billing details for service"
 msgstr "本服務的帳務資訊"
 
+#: templates/views/organisations/organisation/settings/index.html:92
 #: templates/views/service-settings.html:345
 msgid "Notes"
 msgstr "備註"
 
+#: templates/views/organisations/organisation/settings/index.html:82
+#: templates/views/organisations/organisation/settings/index.html:93
 #: templates/views/organisations/organisation/settings/index.html:145
 #: templates/views/organisations/organisation/settings/index.html:155
 #: templates/views/providers/provider.html:40
@@ -9938,6 +9943,10 @@ msgstr "組織的帳單寄送地址"
 msgid "the notes for the organisation"
 msgstr "組織的備註"
 
+#: templates/views/organisations/organisation/settings/index.html:102
+msgid "Email branding options"
+msgstr ""
+
 #: templates/views/organisations/organisation/settings/index.html:108
 msgid "Default"
 msgstr "預設"
@@ -12328,8 +12337,8 @@ msgid ""
 "href=\"%%s\">trial mode</a> you can only\n"
 "          send to yourself and members of your team"
 msgstr ""
-"在 <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">測試模式</a>\n"
+"在 <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">測試模式</a>\n"
 "          只能傳送訊息給自己與您團隊當中的其他成員"
 
 #: templates/views/uploads/contact-list/column-errors.html:66
