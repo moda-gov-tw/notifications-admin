@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-06 11:54+0800\n"
 "PO-Revision-Date: 2022-12-06 06:02+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -2563,12 +2563,12 @@ msgstr "您超過 %s 字數"
 #: main/views/templates.py:680
 #, python-format
 msgid "Will be charged as %s (not including personalisation)"
-msgstr "將以 %s計費（不含客製化內容）"
+msgstr "將以 %s 計費（不含客製化內容）"
 
 #: main/views/templates.py:683
 #, python-format
 msgid "Will be charged as %s"
-msgstr "將以 %s計費"
+msgstr "將以 %s 計費"
 
 #: main/views/templates.py:692
 #, python-format
