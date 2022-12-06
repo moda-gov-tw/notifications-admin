@@ -246,7 +246,7 @@ def get_sender_context(sender_details, template_type):
         "email": {
             "title": _("Where should replies come back to?"),
             "description": _("Where should replies come back to?"),
-            "field_name": _("email_address"),
+            "field_name": "email_address",
         },
         "letter": {
             "title": _("Send to one recipient"),

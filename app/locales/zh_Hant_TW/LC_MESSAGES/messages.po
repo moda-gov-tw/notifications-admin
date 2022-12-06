@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-06 11:54+0800\n"
-"PO-Revision-Date: 2022-12-06 06:02+0000\n"
+"POT-Creation-Date: 2022-12-06 14:02+0800\n"
+"PO-Revision-Date: 2022-12-06 03:44+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
@@ -2191,10 +2191,6 @@ msgstr "（預設與接受回覆）"
 #: main/views/send.py:247 main/views/send.py:248
 msgid "Where should replies come back to?"
 msgstr "回覆訊息應該回傳到哪裡？"
-
-#: main/views/send.py:249
-msgid "email_address"
-msgstr "email_address"
 
 #: main/views/send.py:252
 msgid "Send to one recipient"
@@ -13120,3 +13116,6 @@ msgstr "核准發出警報"
 #~ msgstr ""
 #~ "%%(user_name)s 尚未接受 \n"
 #~ "    ‘%%(service_name)s 的邀請。您不需要做任何事。"
+
+#~ msgid "email_address"
+#~ msgstr "email_address"
