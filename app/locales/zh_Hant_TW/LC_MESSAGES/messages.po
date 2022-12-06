@@ -3249,8 +3249,8 @@ msgstr "您確定要將「%%s」設為預設的電子郵件品牌嗎？"
 
 #: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:6
 #, python-format
-msgid "%%(organisation_name )s services currently using GOV.UK branding:"
-msgstr "%%(organisation_name )s 目前使用 GOV.UK 品牌的服務有："
+msgid "%%(organisation_name)s services currently using GOV.UK branding:"
+msgstr "%%(organisation_name)s 目前使用 GOV.UK 品牌的服務有："
 
 #: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:10
 msgid "will have their default email branding changed"

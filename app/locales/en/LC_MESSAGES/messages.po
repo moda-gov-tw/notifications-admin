@@ -3169,7 +3169,7 @@ msgstr ""
 
 #: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:6
 #, python-format
-msgid "%%(organisation_name )s services currently using GOV.UK branding:"
+msgid "%%(organisation_name)s services currently using GOV.UK branding:"
 msgstr ""
 
 #: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:10
