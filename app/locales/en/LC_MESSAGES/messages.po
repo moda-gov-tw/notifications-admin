@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-05 18:32+0800\n"
+"POT-Creation-Date: 2022-12-06 10:57+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -6921,7 +6921,7 @@ msgstr ""
 #, python-format
 msgid ""
 "%%(user_name)s has not accepted their invitation to\n"
-"    ‘%%(service_name)s yet. You do not need to do anything."
+"    ‘%%(service_name)s’ yet. You do not need to do anything."
 msgstr ""
 
 #: templates/views/user-already-team-member.html:6
@@ -12382,4 +12382,9 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Sign in to Notify"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "%%(user_name)s has not accepted their invitation to\n"
+#~ "    ‘%%(service_name)s yet. You do not need to do anything."
 #~ msgstr ""
