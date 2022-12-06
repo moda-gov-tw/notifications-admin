@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-06 14:02+0800\n"
-"PO-Revision-Date: 2022-12-06 03:44+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"PO-Revision-Date: 2022-12-07 08:19+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -269,7 +269,7 @@ msgstr "404 - 找不到網頁"
 
 #: assets/error_pages/5xx.html:6 static/error_pages/5xx.html:6
 msgid "Sorry, there is a problem with the service – GOV.UK Notify"
-msgstr "抱歉，目前服務發生了一點問題 - GOV.UK Notify"
+msgstr "抱歉，服務目前發生了一點問題 – GOV.UK Notify"
 
 #: assets/error_pages/5xx.html:28 static/error_pages/5xx.html:28
 msgid "Skip to main content"
@@ -302,11 +302,11 @@ msgid ""
 "\"mailto:gov-uk-notify-support@digital.cabinet-office.gov.uk\">gov-uk-notify-"
 "support@digital.cabinet-office.gov.uk</a>"
 msgstr ""
-"您可以確認我們的 <a class=\"govuk-link govuk-link--no-visited-state\" href="
-"\"https://status.notifications.service.gov.uk/\">系統狀態</a> 頁面去瞭解是否"
-"目前有任何的已知問題。<br/>回報問題請寄信到 <a href=\"mailto:gov-uk-notify-"
-"support@digital.cabinet-office.gov.uk\">gov-uk-notify-support@digital."
-"cabinet-office.gov.uk</a>"
+"您可以到我們的<a class=\"govuk-link govuk-link--no-visited-state\" href="
+"\"https://status.notifications.service.gov.uk/\""
+">系統狀態</a>頁面去瞭解是否目前有任何的已知問題。<br/>若要回報問題，請來信到 "
+"<a href=\"mailto:gov-uk-notify-support@digital.cabinet-office.gov.uk\">gov-"
+"uk-notify-support@digital.cabinet-office.gov.uk</a>"
 
 #: assets/error_pages/5xx.html:89 static/error_pages/5xx.html:89
 msgid "Support links"
@@ -333,13 +333,9 @@ msgid ""
 "              >Open Government Licence v3.0</a>, except where otherwise "
 "stated"
 msgstr ""
-"除了另有聲明外，所有頁面內容均以 \n"
-"              <a\n"
-"                class=\"govuk-footer__link\"\n"
-"                href=\"https://www.nationalarchives.gov.uk/doc/open-"
-"government-licence/version/3/\"\n"
-"                rel=\"license\"\n"
-"              >Open Government Licence v3.0</a>條款授權"
+"除非另有聲明，所有頁面內容均以 <a class=\"govuk-footer__link\" href=\"https"
+"://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\" rel="
+"\"license\">Open Government Licence v3.0</a> 條款進行授權"
 
 #: assets/error_pages/5xx.html:121 static/error_pages/5xx.html:121
 msgid "© Crown copyright"
@@ -388,7 +384,7 @@ msgstr ""
 
 #: broadcast_areas/create-broadcast-areas-db.py:163
 msgid "    Population:   N/A"
-msgstr "    人口數：   無資料"
+msgstr "    人口數：無資料"
 
 #: broadcast_areas/create-broadcast-areas-db.py:173
 #, python-format
@@ -405,7 +401,7 @@ msgstr "國家"
 
 #: broadcast_areas/create-broadcast-areas-db.py:314
 msgid "Police forces in England and Wales"
-msgstr "英格蘭和威爾斯的警力"
+msgstr "英格蘭和威爾斯的警方"
 
 #: broadcast_areas/create-broadcast-areas-db.py:315
 msgid "police force"
@@ -477,7 +473,7 @@ msgstr "密碼"
 
 #: main/forms.py:257
 msgid "Must be at least 8 characters"
-msgstr "至少八個字元"
+msgstr "至少 8 個字元"
 
 #: main/forms.py:258
 msgid "Choose a password that’s harder to guess"
@@ -589,7 +585,7 @@ msgstr "這是哪一類組織？"
 
 #: main/forms.py:1210
 msgid "Is this organisation a crown body?"
-msgstr "請問這個組織隸屬政府嗎？"
+msgstr "請問這個組織屬於 Crown body 嗎？"
 
 #: main/forms.py:1214
 #: templates/views/organisations/organisation/settings/index.html:44
@@ -606,7 +602,7 @@ msgstr "這個組織已簽署同意書了嗎？"
 
 #: main/forms.py:1226
 msgid "No (but we have some service-specific agreements in place)"
-msgstr "沒有（但我們有專為特定服務設計的同意書）"
+msgstr "沒有（但我們針對特定服務有專屬同意書）"
 
 #: main/forms.py:1231
 msgid "Users will be told their organisation has already signed the agreement"
@@ -642,7 +638,7 @@ msgstr "這項服務每天能夠送出的訊息量"
 
 #: main/forms.py:1304
 msgid "Number of messages the service can send in a rolling 60 second window"
-msgstr "這項服務在 60 秒滾動計時中可傳送的訊息量"
+msgstr "這項服務在 60 秒滾動時間中可傳送的訊息量"
 
 #: main/forms.py:1314
 msgid "Enter password"
@@ -948,7 +944,7 @@ msgstr "聯絡電子郵件地址"
 
 #: main/forms.py:1754
 msgid "Contact names"
-msgstr "聯繫人姓名"
+msgstr "聯絡人姓名"
 
 #: main/forms.py:1755 main/views/returned_letters.py:46
 #: templates/views/broadcast/write-new-broadcast.html:27 utils/csv.py:76
@@ -1021,7 +1017,7 @@ msgstr "此欄位為必填"
 
 #: main/forms.py:1856
 msgid "Email branding id"
-msgstr "電子郵件品牌識別碼"
+msgstr "電子郵件品牌 ID"
 
 #: main/forms.py:1863 main/forms.py:1871
 msgid "Branding options"
@@ -1142,7 +1138,7 @@ msgstr "依名稱搜尋"
 
 #: main/forms.py:2000
 msgid "You need to enter full or partial name to search by."
-msgstr "您需要輸入完整或部分姓名以進行搜尋。"
+msgstr "您需要輸入完整或部分名稱以進行搜尋。"
 
 #: main/forms.py:2006 main/forms.py:2012
 msgid "Search by name or email address"
@@ -1166,7 +1162,7 @@ msgstr "依電話號碼或電子郵件地址搜尋"
 
 #: main/forms.py:2036
 msgid "Search by name or ID"
-msgstr "依姓名或代碼搜尋"
+msgstr "依姓名或 ID 搜尋"
 
 #: main/forms.py:2049
 #: templates/views/service-settings/set-inbound-number.html:7
@@ -1515,7 +1511,7 @@ msgstr "他們"
 
 #: main/validators.py:130
 msgid "You can’t use ((double brackets)) to personalise this message"
-msgstr "您不能使用 ((雙括號)) 來個人化此訊息"
+msgstr "您不能使用 ((雙括號)) 來客製化此訊息"
 
 #: main/validators.py:150
 #, python-format
@@ -1789,7 +1785,7 @@ msgstr "您確定要取消發送這封信嗎？"
 
 #: main/views/organisations.py:183 main/views/platform_admin.py:193
 msgid "Service ID"
-msgstr "服務代碼"
+msgstr "服務 ID"
 
 #: main/views/organisations.py:184
 msgid "Service Name"
@@ -1829,8 +1825,7 @@ msgstr "這個組織機構名稱已有人使用"
 #, python-format
 msgid ""
 "Invalid email branding ID %(remove_branding_id)s for %(current_organisation)s"
-msgstr ""
-"%(current_organisation)s 的電子郵件品牌識別碼 %(remove_branding_id)s 無效"
+msgstr "%(current_organisation)s 的電子郵件品牌 ID %(remove_branding_id)s 無效"
 
 #: main/views/organisations.py:409
 #, python-format
@@ -1847,7 +1842,7 @@ msgstr "是，將此電子郵件品牌識別設定為預設"
 msgid ""
 "Email branding ID %(id)s is not present in organisation %(org_name)s's email "
 "branding pool."
-msgstr "電子郵件品牌識別碼 %(id)s 不存在於 %(org_name)s 的電子郵件品牌庫中。"
+msgstr "電子郵件品牌 ID %(id)s 不存在於 %(org_name)s 的電子郵件品牌庫中。"
 
 #: main/views/organisations.py:577
 msgid "1 email branding option added"
@@ -1856,14 +1851,14 @@ msgstr "已加入一個電子郵件品牌選項"
 #: main/views/organisations.py:579
 #, python-format
 msgid "%(selected_mails)s email branding options added"
-msgstr "已加入 %(selected_mails)s 電子郵件品牌選項"
+msgstr "已加入 %(selected_mails)s 個電子郵件品牌選項"
 
 #: main/views/organisations.py:645
 #, python-format
 msgid ""
 "Invalid letter branding ID %(remove_branding_id)s for "
 "%(current_organisation)s"
-msgstr "%(current_organisation)s 的信件品牌識別碼 %(remove_branding_id)s 無效"
+msgstr "%(current_organisation)s 的信件品牌 ID %(remove_branding_id)s 無效"
 
 #: main/views/organisations.py:653
 #, python-format
@@ -2039,7 +2034,7 @@ msgstr "日期查無結果"
 
 #: main/views/platform_admin.py:347
 msgid "organisation id"
-msgstr "組織代碼"
+msgstr "組織 ID"
 
 #: main/views/platform_admin.py:348
 #: templates/views/organisations/organisation/settings/index.html:23
@@ -2048,7 +2043,7 @@ msgstr "組織名稱"
 
 #: main/views/platform_admin.py:349
 msgid "service id"
-msgstr "服務代碼"
+msgstr "服務 ID"
 
 #: main/views/platform_admin.py:350 templates/views/service-settings.html:30
 msgid "service name"
@@ -2127,11 +2122,11 @@ msgstr "已提交的 {} 信件參考編號"
 #: main/views/platform_admin.py:617
 #, python-format
 msgid "Removed %s objects across %s key formats for {%s}"
-msgstr "已移除的 %s 個物件分佈於 %s 主要格式，原因是{%s}"
+msgstr "已移除 %s 個物件，共 %s 筆 Key 於 {%s} 格式"
 
 #: main/views/returned_letters.py:45
 msgid "Notification ID"
-msgstr "通知代碼"
+msgstr "通知 ID"
 
 #: main/views/returned_letters.py:47
 msgid "Date sent"
@@ -2143,7 +2138,7 @@ msgstr "發送方"
 
 #: main/views/returned_letters.py:50
 msgid "Template ID"
-msgstr "範本代碼"
+msgstr "範本 ID"
 
 #: main/views/returned_letters.py:51
 msgid "Template version"
@@ -2305,7 +2300,7 @@ msgstr "電子郵件品牌請求 - %s"
 
 #: main/views/service_settings.py:1196
 msgid "No branding found for this id."
-msgstr "此代碼查無品牌。"
+msgstr "沒有這組 ID 的品牌。"
 
 #: main/views/service_settings.py:1202 main/views/service_settings.py:1226
 #: main/views/service_settings.py:1254
@@ -2470,7 +2465,7 @@ msgstr "透過電子郵件傳送檔案"
 #: templates/views/guidance/upload-a-letter.html:14
 #: templates/views/jobs/jobs.html:30 templates/views/uploads/choose-file.html:8
 msgid "Upload a letter"
-msgstr "上傳一封信"
+msgstr "上傳信件"
 
 #: main/views/sub_navigation_dictionaries.py:95
 #: templates/views/guidance/letter-specification.html:10
@@ -2637,9 +2632,8 @@ msgstr "檔案格式錯誤"
 msgid ""
 "{} contains numbers or dates that Notify cannot understand. Try formatting "
 "all columns as ‘text’ or export your file as CSV."
-msgstr ""
-"{} 含有 Notify 無法處理的數字或日期。請嘗試將所有的欄位轉換成「文字」格式，或"
-"以 CSV 檔格式匯出。"
+msgstr "{} 含有 Notify 無法處理的數字或日期。請嘗試將所有的欄位轉換成「文字」格式，"
+"或以 CSV 檔案格式匯出。"
 
 #: main/views/uploads.py:561
 #, python-format
@@ -2860,7 +2854,7 @@ msgstr "試算表檔案只能含有能逐行讀取的資料，或 CSV 資料"
 
 #: models/template_list.py:333
 msgid "Empty"
-msgstr "空的"
+msgstr "空白"
 
 #: models/template_list.py:336
 msgid "1 template"
@@ -3661,9 +3655,8 @@ msgid ""
 "This website is run by the GOV.UK Notify team at the Government Digital "
 "Service (GDS). It is designed to be used by as many people as possible. You "
 "should be able to:"
-msgstr ""
-"本網站是由政府數位服務團隊（GDS）的 GOV.UK Notify 團隊所營運。本站的設立是希"
-"望盡可能讓更多的人使用。您應該能夠："
+msgstr "本網站是由政府數位服務團隊（GDS）的 GOV.UK Notify "
+"團隊所營運。本站的設立是希望消弭使用限制，盡可能讓更多人使用。您應該能夠："
 
 #: templates/views/accessibility_statement.html:29
 msgid "change colours, contrast levels and fonts"
@@ -3704,7 +3697,7 @@ msgstr ""
 
 #: templates/views/accessibility_statement.html:44
 msgid "How accessible this website is"
-msgstr "本網站的無障礙程度是"
+msgstr "本網站的無障礙程度"
 
 #: templates/views/accessibility_statement.html:47
 msgid "We know some parts of this website are not fully accessible:"
@@ -3712,7 +3705,7 @@ msgstr "我們了解本網站的某些部分仍未完全無障礙化："
 
 #: templates/views/accessibility_statement.html:50
 msgid "validation errors may be confusing for screen reader users"
-msgstr "表單格式驗證的錯誤訊息，可能會讓使用螢幕閱讀器的使用者感到困惑"
+msgstr "表單欄位格式檢查的錯誤訊息，可能會讓使用螢幕閱讀器的使用者感到困惑"
 
 #: templates/views/accessibility_statement.html:51
 msgid "the ‘copy to clipboard’ button does not work with some screen readers"
@@ -3774,7 +3767,7 @@ msgstr ""
 
 #: templates/views/accessibility_statement.html:71
 msgid "We’ll consider your request and get back to you within one working day."
-msgstr "我們會考慮您的提案並在一個工作日內回覆您。"
+msgstr "我們會考慮您的需求，並在一個工作日內回覆您。"
 
 #: templates/views/accessibility_statement.html:74
 msgid "Reporting accessibility problems with this website"
@@ -3806,8 +3799,8 @@ msgid ""
 "Advisory and Support Service (EASS)."
 msgstr ""
 "平等與人權委員會 (EHRC) 負責執行公部門機構（網站與行動應用程式）（第 2 號）"
-"2018 年無障礙條例（「無障礙條例」）的相關規定。如果您不滿意我們回應投訴的方"
-"式，請聯絡平等諮詢和支援服務 (EASS)。"
+"2018 年無障礙條例（簡稱「無障礙條例」）的相關規定。如果您不滿意我們回應投訴的"
+"方式，請聯絡平等諮詢和支援服務 (EASS)。"
 
 #: templates/views/accessibility_statement.html:87
 msgid ""
@@ -3836,9 +3829,8 @@ msgid ""
 "GOV.UK Notify is partially compliant with the Web Content Accessibility "
 "Guidelines (WCAG) version 2.1 AA standard, due to the non-compliances listed "
 "below."
-msgstr ""
-"GOV.UK Notify 僅遵循部分的網站內容無障礙指南 (WCAG) 2.1 版 的 AA 標準，因下列"
-"情況不符合。"
+msgstr "因下方列出的問題，GOV.UK Notify 僅部分符合網站內容無障礙指南 (WCAG) 2.1 版的 "
+"AA 標準。"
 
 #: templates/views/accessibility_statement.html:100
 msgid "Non-accessible content"
@@ -3879,7 +3871,7 @@ msgstr ""
 
 #: templates/views/accessibility_statement.html:117
 msgid "Problems with using the interface"
-msgstr "使用介面遇到的問題"
+msgstr "使用介面上的問題"
 
 #: templates/views/accessibility_statement.html:121
 msgid ""
@@ -3887,8 +3879,9 @@ msgid ""
 "be hard to know when an error has occurred or what to do next. We plan to "
 "fix this in December 2022."
 msgstr ""
-"我們的驗證錯誤會導致螢幕閱讀器出現問題。這意味著很難知道何時發生錯誤或下一步"
-"該怎麼做。我們計劃在 2022 年 12 月解決此問題。"
+"我們的表單欄位格式檢查的錯誤訊息會導致螢幕閱讀器出現問題。對需要螢幕閱讀器的"
+"使用者來說，會比較困難知道是否發生了錯誤或應該如何調整輸入內容。我們計劃在 "
+"2022 年 12 月修正此問題。"
 
 #: templates/views/accessibility_statement.html:124
 msgid ""
@@ -3902,8 +3895,7 @@ msgstr ""
 msgid ""
 "Choosing the date and time you want to send a message using a screen reader "
 "can be confusing. We plan to fix this in March 2023."
-msgstr ""
-"使用螢幕閱讀器選擇要發送訊息的日期和時間可能會造成混淆。我們計劃在 2023 年 3 "
+msgstr "使用螢幕閱讀器選擇要訊息的發送日期和時間可能會造成混淆。我們計劃在 2023 年 3 "
 "月解決此問題。"
 
 #: templates/views/accessibility_statement.html:130
@@ -3916,7 +3908,7 @@ msgstr ""
 
 #: templates/views/accessibility_statement.html:135
 msgid "PDFs and other documents"
-msgstr "PDF文件與其他文件"
+msgstr "PDF 檔案與其他文件"
 
 #: templates/views/accessibility_statement.html:139
 msgid ""
@@ -4062,8 +4054,8 @@ msgstr ""
 msgid ""
 "We plan to have the status page issues addressed by the current supplier or "
 "move to an alternative supplier in 2022."
-msgstr ""
-"我們計劃讓現在的供應商解決狀態頁面問題，或者在 2022 年轉移到替代供應商。"
+msgstr "我們計劃由現在的狀態監控服務供應商解決上述問題，或者在 2022 "
+"年轉移到替代供應商。"
 
 #: templates/views/accessibility_statement.html:182
 msgid "How we tested this service"
@@ -4076,9 +4068,10 @@ msgid ""
 "see when they are sent a file by Notify and a sample letter PDF were last "
 "tested on 11 March 2019. Both tests were carried out by DAC."
 msgstr ""
-"上一次測試用於發送短訊、電子郵件和信件的部分網站是在 2021 年 2 月。上一次測試"
-"我們發送的電子郵件、經由 Notify 發送給網頁使用者的檔案文件和PDF格式的樣本信件"
-"是在 2019 年 3 月11 日 。這兩項測試均由 DAC 進行。"
+"上一次測試用於發送簡訊、電子郵件和信件的網站功能是在 2021 年 2 "
+"月；上一次測試我們發送的電子郵件、經由 Notify 傳送檔案和 PDF "
+"格式的樣本信件時，網頁使用者會看到的內容，是在 2019 年 3 月 11 日 。"
+"這兩項測試均由 DAC 執行。"
 
 #: templates/views/accessibility_statement.html:190
 msgid ""
@@ -4273,7 +4266,7 @@ msgstr ""
 "                  儲存您同意使用 cookie 的設定\n"
 "                </td>\n"
 "                <td>\n"
-"                  一年\n"
+"                  1 年\n"
 "                </td>"
 
 #: templates/views/cookies.html:66
@@ -4670,12 +4663,12 @@ msgstr "範本讓您可以向多人發送相同內容，無需每次都寫一條
 
 #: templates/views/features.html:32
 msgid "Personalised content"
-msgstr "個人化內容"
+msgstr "客製化內容"
 
 #: templates/views/features.html:33
 msgid ""
 "Notify makes it easy to send personalised messages from a single template."
-msgstr "Notify 讓使用單一範本發送個人化訊息變得容易。"
+msgstr "Notify 讓使用單一範本發送客製化訊息變得容易。"
 
 #: templates/views/features.html:34
 #, python-format
@@ -4683,8 +4676,8 @@ msgid ""
 "See <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">how to "
 "personalise your content</a>."
 msgstr ""
-"查看<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">如何個"
-"人化您的內容</a>。"
+"查看<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">如何客製化您的內容</a>。"
 
 #: templates/views/features.html:36
 msgid "Bulk sendin"
@@ -5085,7 +5078,7 @@ msgstr ""
 #: templates/views/organisations/organisation/users/invite-org-user.html:9
 #: templates/views/organisations/organisation/users/invite-org-user.html:18
 msgid "Invite a team member"
-msgstr "邀請一位團隊成員"
+msgstr "邀請團隊成員"
 
 #: templates/views/invite-user.html:17
 msgid "Invite {}"
@@ -5428,7 +5421,7 @@ msgstr "僅顯示前 %%s 天"
 
 #: templates/views/performance.html:86 templates/views/performance.html:99
 msgid "Messages sent within 10 seconds"
-msgstr "過去十秒內寄出的訊息"
+msgstr "過去 10 秒內寄出的訊息"
 
 #: templates/views/performance.html:92
 msgid "on average"
@@ -6495,9 +6488,7 @@ msgstr "選擇緊急連絡人清單"
 msgid ""
 "You cannot use an emergency contact list with this template because it\n"
 "          is personalised with %%s."
-msgstr ""
-"此範本已經\n"
-"          i個人化為 %%s，您無法使用此範本匯入緊急聯絡人清單。"
+msgstr "此範本已經使用 %%s 客製化，您無法使用此範本匯入緊急聯絡人清單。"
 
 #: templates/views/send-contact-list.html:28
 msgid ""
@@ -6784,7 +6775,7 @@ msgstr "傳送訊息給自己與團隊中的其他人"
 
 #: templates/views/service-settings.html:281 templates/views/trial-mode.html:19
 msgid "create letter templates, but not send them"
-msgstr "建立信件範本，但不寄送"
+msgstr "建立紙本信件範本，但無法實際寄出"
 
 #: templates/views/service-settings.html:286
 #, python-format
@@ -6793,9 +6784,8 @@ msgid ""
 "            <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s"
 "\">request to go live</a>."
 msgstr ""
-"若要移除這些限制，您可以傳送\n"
-"            <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s"
-"\">轉正式環境請求</a>給我們。"
+"若要移除這些限制，您可以傳送<a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"%%s\">轉正式環境請求</a>給我們。"
 
 #: templates/views/service-settings.html:289
 msgid "Your service manager can ask to have these restrictions removed."
@@ -7180,13 +7170,12 @@ msgid ""
 "        <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s"
 "\">create one now</a>."
 msgstr ""
-"若您沒有帳號，可以\n"
-"         <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">立"
-"即註冊一組</a>。"
+"若您沒有帳號，可以<a class=\"govuk-link govuk-link--no-visited-state\" href="
+"\"%%s\">立即註冊一組</a>。"
 
 #: templates/views/temp-history.html:7 templates/views/temp-history.html:12
 msgid "Audit events"
-msgstr "稽核事件"
+msgstr "事件稽核紀錄"
 
 #: templates/views/temp-history.html:19
 msgid "Service settings"
@@ -7534,9 +7523,7 @@ msgstr "此人員已接受邀請"
 msgid ""
 "%%(user_name)s has not accepted their invitation to\n"
 "    ‘%%(service_name)s’ yet. You do not need to do anything."
-msgstr ""
-"%%(user_name)s 尚未接受 \n"
-"    ‘%%(service_name)s’ 的邀請。您不需要做任何事。"
+msgstr "%%(user_name)s 尚未接受「%%(service_name)s」的邀請。您不需要做任何事。"
 
 #: templates/views/user-already-team-member.html:6
 #: templates/views/user-already-team-member.html:15
@@ -7626,7 +7613,7 @@ msgstr ""
 
 #: templates/views/activity/notifications.html:14
 msgid "No messages found &thinsp;(messages are kept for {} days)"
-msgstr "找不到訊息&thinsp;（訊息將保留 {} 日）"
+msgstr "找不到訊息（訊息將保留 {} 日）"
 
 #: templates/views/activity/notifications.html:20
 msgid "Checking"
@@ -8247,10 +8234,7 @@ msgid ""
 "Notify can process up to\n"
 "          %%s rows at once. Your\n"
 "          file has %%s rows."
-msgstr ""
-"Notify 一次可處理最多r\n"
-"           %%s 行。您的\n"
-"          檔案有 %%s 行資料。"
+msgstr "Notify 一次可處理最多 %%s 行資料。您的檔案有 %%s 行。"
 
 #: templates/views/check/column-errors.html:38
 #: templates/views/uploads/contact-list/too-many-columns.html:24
@@ -8276,9 +8260,8 @@ msgstr "您的欄位名稱發生問題"
 msgid ""
 "Your file needs at least 3 address columns, for example ‘address line 1’,\n"
 "            ‘address line 2’ and ‘address line 3’."
-msgstr ""
-"您的檔案至少需有三個地址欄，例如：「地址第一行」\n"
-"            、「地址第二行」、「地址第三行」。"
+msgstr "您的檔案至少需有三個地址欄，例如：「地址第一行」、「地址第二行」、「地址第三"
+"行」。"
 
 #: templates/views/check/column-errors.html:65
 #, python-format
@@ -8649,7 +8632,7 @@ msgstr "加入電子郵件品牌"
 
 #: templates/views/email-branding/manage-branding.html:32
 msgid "Logos should be PNG files, 108px high"
-msgstr "圖示應為 PNG 格式，高度 108px"
+msgstr "圖示應為 PNG 格式、高度 108px"
 
 #: templates/views/email-branding/select-branding.html:21
 msgid "Unnamed"
@@ -8658,7 +8641,7 @@ msgstr "未命名"
 #: templates/views/email-branding/select-branding.html:30
 #: templates/views/letter-branding/select-letter-branding.html:30
 msgid "New brand"
-msgstr "新品牌"
+msgstr "新增品牌"
 
 #: templates/views/features/emails.html:15
 msgid "Send an unlimited number of emails for free with GOV.UK Notify."
@@ -8687,7 +8670,7 @@ msgstr "建立可重複使用的電子郵件範本"
 
 #: templates/views/features/emails.html:24
 msgid "personalise the content of your emails"
-msgstr "個人化您的電子郵件內容"
+msgstr "客製化您的電子郵件內容"
 
 #: templates/views/features/emails.html:25
 #: templates/views/features/text-messages.html:25
@@ -8793,7 +8776,7 @@ msgstr "建立可重複使用的紙本信件範本"
 
 #: templates/views/features/letters.html:24
 msgid "personalise the content of your letter"
-msgstr "個人化您的紙本信件內容"
+msgstr "客製化您的紙本信件內容"
 
 #: templates/views/features/letters.html:25
 msgid "send bulk mail"
@@ -8923,7 +8906,7 @@ msgstr "建立可重複使用的簡訊範本"
 
 #: templates/views/features/text-messages.html:24
 msgid "personalise the content of your texts"
-msgstr "個人化您的簡訊內容"
+msgstr "客製化您的簡訊內容"
 
 #: templates/views/features/text-messages.html:26
 #, python-format
@@ -8987,7 +8970,7 @@ msgstr "以名稱來搜尋服務"
 
 #: templates/views/find-services/find-services-by-name.html:23
 msgid "Find services by name, partial name, or service ID"
-msgstr "以名稱、部分名稱、服務 ID來搜尋服務"
+msgstr "以名稱、部分名稱、服務 ID 來搜尋服務"
 
 #: templates/views/find-services/find-services-by-name.html:51
 msgid "No services found."
@@ -9263,7 +9246,7 @@ msgstr "加入連結"
 
 #: templates/views/guidance/edit-and-format-messages.html:20
 msgid "personalise your content"
-msgstr "個人化您的內容"
+msgstr "客製化您的內容"
 
 #: templates/views/guidance/edit-and-format-messages.html:21
 msgid "add optional content"
@@ -9366,13 +9349,13 @@ msgstr "您無法再控制會重新導向到何處"
 
 #: templates/views/guidance/edit-and-format-messages.html:59
 msgid "Personalise your content"
-msgstr "個人化您的內容"
+msgstr "客製化您的內容"
 
 #: templates/views/guidance/edit-and-format-messages.html:61
 msgid ""
 "To personalise the content of your messages, add a placeholder to the "
 "template."
-msgstr "若要個人化您的訊息內容，可以將預留文字加入到範本。"
+msgstr "若要客製化您的訊息內容，可以將預留文字加入到範本。"
 
 #: templates/views/guidance/edit-and-format-messages.html:63
 msgid ""
@@ -9468,7 +9451,7 @@ msgstr "編輯與格式化訊息"
 
 #: templates/views/guidance/index.html:23
 msgid "add branding and customisation"
-msgstr "加入推廣與客製化選項"
+msgstr "加入品牌與客製化選項"
 
 #: templates/views/guidance/index.html:24
 msgid "send files by email"
@@ -9512,7 +9495,7 @@ msgstr "最大檔案大小：2 MB"
 
 #: templates/views/guidance/letter-specification.html:19
 msgid "Your letter must be 10 pages or less (5 double-sided sheets of paper)."
-msgstr "您的信件必須不超過 10 頁（5 張雙面紙）。"
+msgstr "您的信件必須不超過 10 頁（5 張紙，雙面列印）。"
 
 #: templates/views/guidance/letter-specification.html:20
 msgid "The content of your letter must appear inside the printable area."
@@ -9526,7 +9509,7 @@ msgid ""
 "a>."
 msgstr ""
 "為了幫助您設定信件，可以下載我們的<a class=\"govuk-link govuk-link--no-"
-"visited-state\" href=\"%%s\">信件規格 PDF 檔</a>進行套用。"
+"visited-state\" href=\"%%s\">信件規格 PDF 檔</a>進行套版。"
 
 #: templates/views/guidance/letter-specification.html:25
 msgid "Page 1 of 10"
@@ -9562,7 +9545,7 @@ msgstr "位置：距離左邊界 15mm、距離上邊界 5mm"
 
 #: templates/views/guidance/letter-specification.html:35
 msgid "Size: 200mm wide by 25mm high"
-msgstr "尺寸：寬 200mm，高 25mm"
+msgstr "尺寸：寬 200mm、高 25mm"
 
 #: templates/views/guidance/letter-specification.html:37
 msgid "Address block"
@@ -9574,7 +9557,7 @@ msgstr "位置：距離左邊界 24.6mm、距離上邊界 39.5mm"
 
 #: templates/views/guidance/letter-specification.html:40
 msgid "Size: 95.4mm wide by 26.8mm high"
-msgstr "尺寸：寬 94.5mm，高 26.8mm"
+msgstr "尺寸：寬 94.5mm、高 26.8mm"
 
 #: templates/views/guidance/letter-specification.html:42
 msgid "Letter contact block"
@@ -9603,8 +9586,8 @@ msgid ""
 "To send a file by email, follow the instructions in our <a class=\"govuk-"
 "link govuk-link--no-visited-state\" href=\"%%s\">API documentation</a>."
 msgstr ""
-"若要利用電子郵件傳送檔案，請遵循我們的 <a class=\"govuk-link govuk-link--no-"
-"visited-state\" href=\"%%s\">API 文件</a>當中的指示。"
+"請依照我們的 <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%"
+"s\">API 文件</a>當中的教學，來透過傳送檔案。"
 
 #: templates/views/guidance/send-files-by-email.html:16
 #: templates/views/service-settings/send-files-by-email.html:22
@@ -9921,7 +9904,7 @@ msgstr "查看傳送給這個電話號碼的所有簡訊"
 #: templates/views/organisations/add-organisation.html:7
 #: templates/views/organisations/index.html:39
 msgid "New organisation"
-msgstr "新組織"
+msgstr "新增組織"
 
 #: templates/views/organisations/add-organisation.html:13
 msgid "All organisations"
@@ -9983,9 +9966,8 @@ msgstr "%%s 需要同意 GOV.UK Notify 資料共享與財務同意書。"
 msgid ""
 "%%s has not accepted the GOV.UK Notify data sharing and financial agreement, "
 "but we have some service-specific agreements in place."
-msgstr ""
-"%%s 尚未接受 GOV.UK Notify 資料共享與財務同意書，但我們還有一些針對特定服務的"
-"同意書。"
+msgstr "%%s 尚未接受 GOV.UK Notify "
+"資料共享與財務同意書，但我們已經簽署特定服務專屬同意書。"
 
 #: templates/views/organisations/organisation/index.html:60
 msgid "Search by service"
@@ -10104,7 +10086,7 @@ msgstr "移除<span class=\"govuk-visually-hidden\">此品牌的選項</span>"
 #: templates/views/organisations/organisation/settings/email-branding-options.html:75
 #: templates/views/organisations/organisation/settings/letter-branding-options.html:47
 msgid "Add branding options"
-msgstr "加入推廣選項"
+msgstr "加入品牌選項"
 
 #: templates/views/organisations/organisation/settings/index.html:28
 msgid "Sector"
@@ -10128,7 +10110,7 @@ msgstr "未簽署"
 
 #: templates/views/organisations/organisation/settings/index.html:59
 msgid "Not signed (but we have some service-specific agreements in place)"
-msgstr "未簽署（但我們有預備特定服務的同意書）"
+msgstr "未簽署（但已針對特定服務簽署專屬同意書）"
 
 #: templates/views/organisations/organisation/settings/index.html:65
 msgid "data sharing and financial agreement for the organisation"
@@ -10222,7 +10204,7 @@ msgstr "（您）"
 #: templates/views/organisations/organisation/users/index.html:56
 #, python-format
 msgid "Cancel invitation<span class=\"govuk-visually-hidden\"> for %%(mail)s"
-msgstr "取消%%(mail)s邀請<span class=\"govuk-visually-hidden\">"
+msgstr "取消 %%(mail)s 的邀請函<span class=\"govuk-visually-hidden\">"
 
 #: templates/views/organisations/organisation/users/index.html:69
 msgid "Invite team member"
@@ -10269,7 +10251,7 @@ msgstr "回傳簡訊號碼"
 #: templates/views/platform-admin/complaints.html:7
 #: templates/views/platform-admin/complaints.html:13
 msgid "Email complaints"
-msgstr "以電子郵件投訴"
+msgstr "電子郵件收件者抱怨"
 
 #: templates/views/platform-admin/_base_template.html:29
 #: templates/views/platform-admin/clear-cache.html:6
@@ -10283,7 +10265,7 @@ msgstr "清除"
 
 #: templates/views/platform-admin/complaints.html:19
 msgid "Complaints"
-msgstr "投訴"
+msgstr "收件者抱怨"
 
 #: templates/views/platform-admin/complaints.html:21
 msgid "No complaints"
@@ -10295,11 +10277,11 @@ msgstr "通知 ID"
 
 #: templates/views/platform-admin/complaints.html:22
 msgid "Complaint type"
-msgstr "投訴類別"
+msgstr "抱怨類別"
 
 #: templates/views/platform-admin/complaints.html:22
 msgid "Complaint Date"
-msgstr "投訴日期"
+msgstr "抱怨日期"
 
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:6
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:12
@@ -11293,7 +11275,7 @@ msgstr "上次更新"
 #: templates/views/providers/providers.html:50
 #: templates/views/providers/providers.html:73
 msgid "Updated By"
-msgstr "更新者是"
+msgstr "更新者"
 
 #: templates/views/providers/provider.html:31
 #: templates/views/providers/providers.html:22
@@ -11355,7 +11337,7 @@ msgstr "資料預設將保留 7 天"
 
 #: templates/views/service-settings/data-retention.html:34
 msgid "You have not added any data retention"
-msgstr "您尚未新增任何數據保留"
+msgstr "您尚未新增任何資料保留規則"
 
 #: templates/views/service-settings/data-retention.html:47
 #, python-format
@@ -12326,7 +12308,7 @@ msgstr ""
 #: templates/views/templates/_template.html:6
 #, python-format
 msgid "This template was deleted %%s."
-msgstr "範本在 %%s 已被刪除。"
+msgstr "此範本已於 %%s 刪除。"
 
 #: templates/views/templates/_template.html:10
 #, python-format
@@ -12411,7 +12393,7 @@ msgstr "您已刪除%%s"
 #: templates/views/templates/breaking-change.html:28
 #, python-format
 msgid "You added %%s"
-msgstr "您已增加%%s"
+msgstr "您已增加 %%s"
 
 #: templates/views/templates/breaking-change.html:31
 #, python-format
@@ -12493,7 +12475,7 @@ msgstr "加入新寄件人"
 #: templates/views/templates/template.html:19
 msgid ""
 "You will not be able to see personalised content in Notify for this template"
-msgstr "您將無法在 Notify 中檢視此範本的個人化內容"
+msgstr "您將無法在 Notify 中檢視此範本的客製化內容"
 
 #: templates/views/templates/template.html:22
 msgid "You cannot undo this"
@@ -12513,11 +12495,11 @@ msgstr "刪除這個範本"
 
 #: templates/views/templates/template.html:78
 msgid "Hide personalisation after sending"
-msgstr "傳送後隱藏個人化內容"
+msgstr "傳送後隱藏客製化內容"
 
 #: templates/views/templates/template.html:81
 msgid "Personalisation is hidden after sending"
-msgstr "個人化內容在傳送後隱藏"
+msgstr "客製化內容在傳送後隱藏"
 
 #: templates/views/templates/template_history.html:21
 msgid "See all versions of this template"
@@ -12689,7 +12671,7 @@ msgstr "請勿包含一般大眾的聯繫方式。"
 
 #: templates/views/uploads/contact-list/upload.html:48
 msgid "Your file needs to look like one of these examples"
-msgstr "您的檔案看起來需要像這些範本的其中之一"
+msgstr "您的檔案內容，需要長得像下列範本任一"
 
 #: templates/views/uploads/contact-list/upload.html:51
 msgid ""
@@ -12699,7 +12681,7 @@ msgid ""
 "  <acronym title=\"Open Document Spreadsheet\">ODS</acronym>,\n"
 "  or Microsoft Excel spreadsheet"
 msgstr ""
-"將您的檔案儲存成\n"
+"請將您的檔案儲存成\n"
 "  <acronym title=\"逗號分隔值\">CSV</acronym>、\n"
 "  <acronym title=\"Tab 分隔值\">TSV</acronym>、\n"
 "  <acronym title=\"開放文件試算表\">ODS</acronym>、\n"
@@ -12767,19 +12749,19 @@ msgstr "您可以購買任何相容於 WebAuthn 標準的金鑰。"
 #: utils/branding.py:22
 #, python-format
 msgid "GOV.UK and %%s"
-msgstr "GOV.UK與%%s"
+msgstr "GOV.UK 與 %%s"
 
 #: utils/csv.py:16
 msgid "fix 1 phone number"
-msgstr "修正1組電話號碼"
+msgstr "修正 1 組電話號碼"
 
 #: utils/csv.py:18
 msgid "fix {} phone numbers"
-msgstr "修正{}組電話號碼"
+msgstr "修正 {} 組電話號碼"
 
 #: utils/csv.py:21
 msgid "fix 1 email address"
-msgstr "修正1個電子郵件地址"
+msgstr "修正 1 個電子郵件地址"
 
 #: utils/csv.py:23
 msgid "fix {} email addresses"
@@ -12787,35 +12769,35 @@ msgstr "修正 {} 個電子郵件地址"
 
 #: utils/csv.py:26
 msgid "fix 1 address"
-msgstr "修正1個地址"
+msgstr "修正 1 個地址"
 
 #: utils/csv.py:28
 msgid "fix {} addresses"
-msgstr "修正{}個地址"
+msgstr "修正 {} 個地址"
 
 #: utils/csv.py:33
 msgid "enter missing data in 1 row"
-msgstr "輸入1行缺少的數據"
+msgstr "輸入 1 行缺少的資料"
 
 #: utils/csv.py:35
 msgid "enter missing data in {} rows"
-msgstr "輸入{}行缺少的數據"
+msgstr "輸入 {} 行缺少的資料"
 
 #: utils/csv.py:40
 msgid "shorten the message in 1 row"
-msgstr "縮短1行的訊息"
+msgstr "縮短 1 行訊息"
 
 #: utils/csv.py:42
 msgid "shorten the messages in {} rows"
-msgstr "縮短{}行的訊息"
+msgstr "縮短 {} 行訊息"
 
 #: utils/csv.py:47
 msgid "check you have content for the empty message in 1 row"
-msgstr "請在1行的空白訊息中寫入內容"
+msgstr "請在 1 行的空白訊息中輸入內容"
 
 #: utils/csv.py:50
 msgid "check you have content for the empty messages in {} rows"
-msgstr "請組在{}行的空白訊息中寫輸入內容"
+msgstr "請在 {} 行的空白訊息中輸入內容"
 
 #: utils/csv.py:71
 msgid "Row number"
@@ -12906,25 +12888,23 @@ msgid ""
 "visited-state\" href=\"{letter_spec_guidance}\" target=\"_blank\">letter "
 "specification</a>."
 msgstr ""
-"驗證失敗，因為內容超出{invalid_pages}可列印範圍。<br>檔案必須符合我們的<a "
-"class=\"govuk-link govuk-link--no-visited-state\" href="
-"\"{letter_spec_guidance}\" target=\"_blank\">信件規格</a>。"
+"驗證失敗，第 {invalid_pages} 頁超出可列印範圍。<br>檔案必須符合我們的<a class"
+"=\"govuk-link govuk-link--no-visited-state\" href=\"{letter_spec_guidance}\" "
+"target=\"_blank\">信件規格</a>。"
 
 #: utils/letters.py:93
 msgid ""
 "Letters must be 10 pages or less (5 double-sided sheets of paper). <br>Your "
 "letter is {page_count} pages long."
-msgstr ""
-"紙本信件長度必須在 10 頁以內（5 張雙面紙）。<br>您的信件長度有 {page_count} "
-"頁。"
+msgstr "紙本信件長度必須在 10 頁以內（5 張紙，雙面列印）。<br>您的信件長度有 "
+"{page_count} 頁。"
 
 #: utils/letters.py:99
 msgid ""
 "Validation failed because this letter is {page_count} pages long.<br>Letters "
 "must be 10 pages or less (5 double-sided sheets of paper)."
-msgstr ""
-"驗證失敗，因為此信件長達{page_count}頁。<br>信件必須在10（含）頁以內（5張雙面"
-"紙）。"
+msgstr "驗證失敗，因為這封信件有 {page_count} 頁。<br>信件必須不超出 10 頁（5 "
+"張紙，雙面列印）。"
 
 #: utils/letters.py:105
 msgid "Sanitise failed - No encoded string"
@@ -12975,7 +12955,7 @@ msgstr "地址的最後一行必須是真實的英國郵遞區號。"
 msgid ""
 "Validation failed because the last line of the address is not a real UK "
 "postcode."
-msgstr "驗證失敗，因為地址的最後一行不是真實的英國郵遞區號。"
+msgstr "驗證失敗，因為地址的最後一行不是實際的英國郵遞區號。"
 
 #: utils/letters.py:141
 msgid "You do not have permission to send letters to other countries."
@@ -12995,7 +12975,7 @@ msgstr "地址最後一行不是正確的英國或其他國家的郵遞區號。
 msgid ""
 "Validation failed because the last line of the address is not a UK postcode "
 "or another country."
-msgstr "因為地址最後一行不是正確的英國或其他國家的郵遞區號，驗證失敗。"
+msgstr "因為地址最後一行不是正確的英國的郵遞區號或其他國家，驗證失敗。"
 
 #: utils/letters.py:151
 #, python-format
