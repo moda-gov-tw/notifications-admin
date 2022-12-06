@@ -7365,7 +7365,7 @@ msgid ""
 "    ‘%%(service_name)s’ yet. You do not need to do anything."
 msgstr ""
 "%%(user_name)s 尚未接受 \n"
-"    ‘%%(service_name)s 的邀請。您不需要做任何事。"
+"    ‘%%(service_name)s’ 的邀請。您不需要做任何事。"
 
 #: templates/views/user-already-team-member.html:6
 #: templates/views/user-already-team-member.html:15
