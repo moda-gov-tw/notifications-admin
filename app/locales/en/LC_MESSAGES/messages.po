@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-06 10:57+0800\n"
+"POT-Creation-Date: 2022-12-06 11:34+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -256,6 +256,65 @@ msgstr ""
 #: templates/views/signedout.html:9 templates/views/signedout.html:22
 #: webauthn_server.py:18
 msgid "GOV.UK Notify"
+msgstr ""
+
+#: assets/error_pages/404_cloudfront.html:3
+#: assets/error_pages/404_cloudfront.html:6
+#: static/error_pages/404_cloudfront.html:3
+#: static/error_pages/404_cloudfront.html:6
+msgid "404 - Not found"
+msgstr ""
+
+#: assets/error_pages/5xx.html:6 static/error_pages/5xx.html:6
+msgid "Sorry, there is a problem with the service – GOV.UK Notify"
+msgstr ""
+
+#: assets/error_pages/5xx.html:28 static/error_pages/5xx.html:28
+msgid "Skip to main content"
+msgstr ""
+
+#: assets/error_pages/5xx.html:53 main/forms.py:1804
+#: static/error_pages/5xx.html:53 utils/branding.py:8
+msgid "GOV.UK"
+msgstr ""
+
+#: assets/error_pages/5xx.html:58 static/error_pages/5xx.html:58
+#: templates/admin_template.html:133
+msgid "Notify"
+msgstr ""
+
+#: assets/error_pages/5xx.html:72 static/error_pages/5xx.html:72
+msgid "Sorry, there is a problem with the service"
+msgstr ""
+
+#: assets/error_pages/5xx.html:75 static/error_pages/5xx.html:75
+#: templates/error/500.html:10
+msgid "Try again later."
+msgstr ""
+
+#: assets/error_pages/5xx.html:78 static/error_pages/5xx.html:78
+msgid ""
+"You can check our <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://status.notifications.service.gov.uk/\">system status</a> "
+"page to see if there are any known issues.<br/>To report a problem, email"
+" <a href=\"mailto:gov-uk-notify-support@digital.cabinet-office.gov.uk"
+"\">gov-uk-notify-support@digital.cabinet-office.gov.uk</a>"
+msgstr ""
+
+#: assets/error_pages/5xx.html:89 static/error_pages/5xx.html:89
+msgid "Support links"
+msgstr ""
+
+#: assets/error_pages/5xx.html:91 static/error_pages/5xx.html:91
+#: templates/admin_template.html:159
+msgid ""
+"Built by the <a href=\"https://www.gov.uk/government/organisations"
+"/government-digital-service\" class=\"govuk-footer__link\">Government "
+"Digital Service</a>"
+msgstr ""
+
+#: assets/error_pages/5xx.html:121 static/error_pages/5xx.html:121
+msgid "© Crown copyright"
 msgstr ""
 
 #: broadcast_areas/create-broadcast-areas-db.py:45
@@ -880,10 +939,6 @@ msgstr ""
 
 #: main/forms.py:1801
 msgid "a branding style"
-msgstr ""
-
-#: main/forms.py:1804 utils/branding.py:8
-msgid "GOV.UK"
 msgstr ""
 
 #: main/forms.py:1829
@@ -2781,10 +2836,6 @@ msgstr ""
 msgid "Sign in"
 msgstr ""
 
-#: templates/admin_template.html:133
-msgid "Notify"
-msgstr ""
-
 #: templates/admin_template.html:144
 msgid "Privacy"
 msgstr ""
@@ -2806,13 +2857,6 @@ msgid ""
 "/government-digital-service\" class=\"govuk-footer__link\">Government "
 "Digital Service</a><span id=\"research-mode\" class=\"research-"
 "mode\">research mode</span>"
-msgstr ""
-
-#: templates/admin_template.html:159
-msgid ""
-"Built by the <a href=\"https://www.gov.uk/government/organisations"
-"/government-digital-service\" class=\"govuk-footer__link\">Government "
-"Digital Service</a>"
 msgstr ""
 
 #: templates/admin_template.html:171
@@ -3038,10 +3082,6 @@ msgstr ""
 
 #: templates/error/500.html:7
 msgid "Sorry, there’s a problem with GOV.UK Notify"
-msgstr ""
-
-#: templates/error/500.html:10
-msgid "Try again later."
 msgstr ""
 
 #: templates/error/500.html:13

@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-06 10:57+0800\n"
+"POT-Creation-Date: 2022-12-06 11:34+0800\n"
 "PO-Revision-Date: 2022-12-06 03:24+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
-"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.toomore.net/projects/notification-admin/notification-"
+"admin-github/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -259,6 +259,67 @@ msgstr "安全金鑰"
 #: webauthn_server.py:18
 msgid "GOV.UK Notify"
 msgstr "GOV.UK Notify"
+
+#: assets/error_pages/404_cloudfront.html:3
+#: assets/error_pages/404_cloudfront.html:6
+#: static/error_pages/404_cloudfront.html:3
+#: static/error_pages/404_cloudfront.html:6
+msgid "404 - Not found"
+msgstr ""
+
+#: assets/error_pages/5xx.html:6 static/error_pages/5xx.html:6
+msgid "Sorry, there is a problem with the service – GOV.UK Notify"
+msgstr ""
+
+#: assets/error_pages/5xx.html:28 static/error_pages/5xx.html:28
+msgid "Skip to main content"
+msgstr ""
+
+#: assets/error_pages/5xx.html:53 main/forms.py:1804
+#: static/error_pages/5xx.html:53 utils/branding.py:8
+msgid "GOV.UK"
+msgstr "GOV.UK"
+
+#: assets/error_pages/5xx.html:58 static/error_pages/5xx.html:58
+#: templates/admin_template.html:133
+msgid "Notify"
+msgstr "Notify"
+
+#: assets/error_pages/5xx.html:72 static/error_pages/5xx.html:72
+msgid "Sorry, there is a problem with the service"
+msgstr ""
+
+#: assets/error_pages/5xx.html:75 static/error_pages/5xx.html:75
+#: templates/error/500.html:10
+msgid "Try again later."
+msgstr "請稍後再試。"
+
+#: assets/error_pages/5xx.html:78 static/error_pages/5xx.html:78
+msgid ""
+"You can check our <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://status.notifications.service.gov.uk/\">system status</a> "
+"page to see if there are any known issues.<br/>To report a problem, email"
+" <a href=\"mailto:gov-uk-notify-support@digital.cabinet-office.gov.uk"
+"\">gov-uk-notify-support@digital.cabinet-office.gov.uk</a>"
+msgstr ""
+
+#: assets/error_pages/5xx.html:89 static/error_pages/5xx.html:89
+msgid "Support links"
+msgstr ""
+
+#: assets/error_pages/5xx.html:91 static/error_pages/5xx.html:91
+#: templates/admin_template.html:159
+msgid ""
+"Built by the <a href=\"https://www.gov.uk/government/organisations"
+"/government-digital-service\" class=\"govuk-footer__link\">Government "
+"Digital Service</a>"
+msgstr ""
+"由<a href=\"https://www.gov.uk/government/organisations/government-"
+"digital-service\" class=\"govuk-footer__link\">政府數位服務團隊</a>打造"
+
+#: assets/error_pages/5xx.html:121 static/error_pages/5xx.html:121
+msgid "© Crown copyright"
+msgstr ""
 
 #: broadcast_areas/create-broadcast-areas-db.py:45
 msgid "Unknown type: {}"
@@ -890,10 +951,6 @@ msgstr "選項"
 #: main/forms.py:1801
 msgid "a branding style"
 msgstr "品牌樣式"
-
-#: main/forms.py:1804 utils/branding.py:8
-msgid "GOV.UK"
-msgstr "GOV.UK"
 
 #: main/forms.py:1829
 msgid "Name of brand"
@@ -2840,10 +2897,6 @@ msgstr "登出"
 msgid "Sign in"
 msgstr "登入"
 
-#: templates/admin_template.html:133
-msgid "Notify"
-msgstr "Notify"
-
 #: templates/admin_template.html:144
 msgid "Privacy"
 msgstr "隱私"
@@ -2869,15 +2922,6 @@ msgstr ""
 "由<a href=\"https://www.gov.uk/government/organisations/government-"
 "digital-service\" class=\"govuk-footer__link\">政府數位服務團隊</a>打造的<span id"
 "=\"research-mode\" class=\"research-mode\">研究模式</span>"
-
-#: templates/admin_template.html:159
-msgid ""
-"Built by the <a href=\"https://www.gov.uk/government/organisations"
-"/government-digital-service\" class=\"govuk-footer__link\">Government "
-"Digital Service</a>"
-msgstr ""
-"由<a href=\"https://www.gov.uk/government/organisations/government-"
-"digital-service\" class=\"govuk-footer__link\">政府數位服務團隊</a>打造"
 
 #: templates/admin_template.html:171
 msgid "Contact support"
@@ -3107,10 +3151,6 @@ msgstr "很抱歉，此服務遇到一些狀況"
 #: templates/error/500.html:7
 msgid "Sorry, there’s a problem with GOV.UK Notify"
 msgstr "很抱歉，GOV.UK Notify 遇到一些狀況"
-
-#: templates/error/500.html:10
-msgid "Try again later."
-msgstr "請稍後再試。"
 
 #: templates/error/500.html:13
 msgid ""
@@ -11491,8 +11531,8 @@ msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
 " us</a> if you want to be able to receive text messages from your users."
 msgstr ""
-"若您想接受來自您服務的使用者所傳送的簡訊，請<a class=\"govuk-link govuk-link"
-"--no-visited-state\" href=\"%%s\">聯絡我們</a>。"
+"若您想接受來自您服務的使用者所傳送的簡訊，請<a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"%%s\">聯絡我們</a>。"
 
 #: templates/views/service-settings/set-inbound-sms.html:40
 msgid ""
