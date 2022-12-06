@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-05 18:32+0800\n"
-"PO-Revision-Date: 2022-12-05 10:33+0000\n"
+"PO-Revision-Date: 2022-12-06 02:52+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
@@ -7779,7 +7779,7 @@ msgstr "返回 API 金鑰頁面"
 #: templates/views/broadcast/write-new-broadcast.html:9
 #: templates/views/broadcast/write-new-broadcast.html:19
 msgid "New alert"
-msgstr "新的通知"
+msgstr "新通知"
 
 #: templates/views/broadcast/libraries.html:6
 #: templates/views/broadcast/libraries.html:15
@@ -9669,7 +9669,7 @@ msgstr "電話號碼"
 #: templates/views/notifications/notification.html:41
 #, python-format
 msgid "to %%s from"
-msgstr "到 %%s 的是來自"
+msgstr "寄達至 %%s 來自"
 
 #: templates/views/notifications/notification.html:44
 #, python-format
@@ -12102,7 +12102,7 @@ msgstr ""
 #: templates/views/templates/_template.html:6
 #, python-format
 msgid "This template was deleted %%s."
-msgstr "範本被刪除%%s。"
+msgstr "範本在 %%s 已被刪除。"
 
 #: templates/views/templates/_template.html:10
 #, python-format
