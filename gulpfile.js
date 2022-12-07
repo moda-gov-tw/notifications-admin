@@ -127,7 +127,8 @@ const javascripts = () => {
       paths.npm + 'query-command-supported/dist/queryCommandSupported.min.js',
       paths.npm + 'timeago/jquery.timeago.js',
       paths.npm + 'textarea-caret/index.js',
-      paths.npm + 'cbor-js/cbor.js'
+      paths.npm + 'cbor-js/cbor.js',
+      paths.npm + 'i18next/i18next.min.js'
     ]));
 
   // JS local to this application
@@ -136,6 +137,7 @@ const javascripts = () => {
     paths.src + 'javascripts/govuk-frontend-toolkit/show-hide-content.js',
     paths.src + 'javascripts/govuk/cookie-functions.js',
     paths.src + 'javascripts/consent.js',
+    paths.src + 'javascripts/i18nEle.js',
     paths.src + 'javascripts/analytics/analytics.js',
     paths.src + 'javascripts/analytics/init.js',
     paths.src + 'javascripts/cookieMessage.js',
@@ -163,7 +165,7 @@ const javascripts = () => {
     paths.src + 'javascripts/updateStatus.js',
     paths.src + 'javascripts/errorBanner.js',
     paths.src + 'javascripts/homepage.js',
-    paths.src + 'javascripts/main.js',
+    paths.src + 'javascripts/main.js'
   ])
   .pipe(plugins.prettyerror())
   .pipe(plugins.babel({
