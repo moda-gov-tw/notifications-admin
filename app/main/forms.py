@@ -2395,7 +2395,7 @@ class TemplateAndFoldersSelectionForm(Form):
         return None
 
     templates_and_folders = GovukCheckboxesField(
-        "Choose templates or folders",
+        _("Choose templates or folders"),
         validators=[required_for_ops("move-to-new-folder", "move-to-existing-folder")],
         choices=[],  # added to keep order of arguments, added properly in __init__
         param_extensions={"fieldset": {"legend": {"classes": "govuk-visually-hidden"}}},

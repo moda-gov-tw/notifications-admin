@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-08 17:45+0800\n"
-"PO-Revision-Date: 2022-12-08 09:48+0000\n"
+"POT-Creation-Date: 2022-12-08 18:39+0800\n"
+"PO-Revision-Date: 2022-12-08 09:39+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
@@ -1394,6 +1394,10 @@ msgstr "廣播"
 msgid "Copy an existing template"
 msgstr "複製一個既存的範本"
 
+#: main/forms.py:2398
+msgid "Choose templates or folders"
+msgstr ""
+
 #: main/forms.py:2407
 msgid "Choose a folder"
 msgstr "選擇一個資料夾"
@@ -2388,11 +2392,11 @@ msgstr "您已更新電子郵件品牌"
 msgid "Letter branding request - %s"
 msgstr "信件品牌請求 - %s"
 
-#: main/views/sign_in.py:49
+#: main/views/sign_in.py:45
 msgid "You cannot accept an invite for another person."
 msgstr "您無法替他人接受邀請。"
 
-#: main/views/sign_in.py:68
+#: main/views/sign_in.py:69
 #, python-format
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
@@ -2922,6 +2926,10 @@ msgstr "%%s 非服務權限"
 msgid "Spreadsheet must be created from either rows or CSV data"
 msgstr "試算表檔案只能含有能逐行讀取的資料，或 CSV 資料"
 
+#: models/template_list.py:309
+msgid "{type} template"
+msgstr "{type} 範本"
+
 #: models/template_list.py:333
 msgid "Empty"
 msgstr "空白"
@@ -2942,7 +2950,7 @@ msgstr "一個資料夾"
 msgid "{} folders"
 msgstr "{} 資料夾"
 
-#: models/user.py:214
+#: models/user.py:215
 msgid "{} are not valid permissions"
 msgstr "{} 不是有效權限"
 
@@ -11285,10 +11293,11 @@ msgid "Edit SMS provider priorities"
 msgstr "編輯簡訊供應商優先順序"
 
 #: templates/views/providers/edit-sms-provider-ratio.html:15
+#, python-format
 msgid ""
 "If you change one priority you will need to change the others so they add"
-" up to 100%."
-msgstr "若您調整了優先順序，請一併變動其他的部分，使其加總起來達 100%。"
+" up to 100%%."
+msgstr "若您調整了優先順序，請一併變動其他的部分，使其加總起來達 100%%。"
 
 #: templates/views/providers/provider.html:23
 msgid "Only showing the latest 100 versions."
@@ -12392,6 +12401,15 @@ msgstr "已建立"
 msgid "by %%s"
 msgstr "透過 %%s"
 
+#: templates/views/templates/_template_list.html:18
+#: templates/views/templates/copy.html:19
+msgid "This folder is empty"
+msgstr "資料夾是空的"
+
+#: templates/views/templates/_template_list.html:20
+msgid "There are no {type} templates in this folder"
+msgstr ""
+
 #: templates/views/templates/action_blocked.html:7
 #: templates/views/templates/action_blocked.html:18
 msgid "{} are disabled"
@@ -12480,10 +12498,6 @@ msgstr "先前的版本"
 #: templates/views/templates/choose_history.html:17
 msgid "Back to current templates"
 msgstr "返回目前範本頁面"
-
-#: templates/views/templates/copy.html:19
-msgid "This folder is empty"
-msgstr "資料夾是空的"
 
 #: templates/views/templates/edit-template-postage.html:8
 #: templates/views/templates/edit-template-postage.html:17
@@ -13276,3 +13290,9 @@ msgstr "核准發出警報"
 #~ msgstr ""
 #~ "若需更多資訊，可以<a class=\"govuk-link govuk-link"
 #~ "--no-visited-state\" href=\"%%s\">下載一份同意書副本（PDF）。"
+
+#~ msgid ""
+#~ "If you change one priority you "
+#~ "will need to change the others so"
+#~ " they add up to 100%."
+#~ msgstr "若您調整了優先順序，請一併變動其他的部分，使其加總起來達 100%。"

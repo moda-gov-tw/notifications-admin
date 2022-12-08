@@ -306,7 +306,7 @@ class TemplateListTemplate(TemplateListItem):
             if len(self.content) > (max_length_in_chars + 2):
                 return self.content[:max_length_in_chars].strip() + "…"
             return self.content
-        return format_notification_type(self.template_type) + " template"
+        return _("{type} template").format(type=format_notification_type(self.template_type))
 
 
 class TemplateListFolder(TemplateListItem):
