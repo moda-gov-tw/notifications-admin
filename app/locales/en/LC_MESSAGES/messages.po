@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-08 16:59+0800\n"
+"POT-Creation-Date: 2022-12-08 17:24+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -3635,7 +3635,7 @@ msgid ""
 "www.notifications.service.gov.uk domain. It does not apply to the <a "
 "class=\"govuk-link govuk-link--no-visited-state\" "
 "href=\"https://docs.notifications.service.gov.uk\">GOV.UK Notify API "
-"documentation subdomain"
+"documentation subdomain</a>."
 msgstr ""
 
 #: templates/views/accessibility_statement.html:26
@@ -4644,7 +4644,7 @@ msgstr ""
 #, python-format
 msgid ""
 "Read more about <a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">security"
+"href=\"%%s\">security.</a>"
 msgstr ""
 
 #: templates/views/features.html:78
@@ -7311,7 +7311,7 @@ msgstr ""
 #, python-format
 msgid ""
 "For more information, you can <a class=\"govuk-link govuk-link--no-"
-"visited-state\" href=\"%%s\">download a copy of the agreement (PDF)"
+"visited-state\" href=\"%%s\">download a copy of the agreement (PDF)</a>."
 msgstr ""
 
 #: templates/views/agreement/service-agreement-signed.html:27
@@ -9674,7 +9674,9 @@ msgstr ""
 
 #: templates/views/organisations/organisation/users/index.html:56
 #, python-format
-msgid "Cancel invitation<span class=\"govuk-visually-hidden\"> for %%(mail)s"
+msgid ""
+"Cancel invitation<span class=\"govuk-visually-hidden\"> for %%(mail)s "
+"</span>"
 msgstr ""
 
 #: templates/views/organisations/organisation/users/index.html:69
@@ -10869,7 +10871,7 @@ msgid "For example, 50,000"
 msgstr ""
 
 #: templates/views/service-settings/letter-contact-details.html:27
-msgid "Blank (default"
+msgid "Blank (default)"
 msgstr ""
 
 #: templates/views/service-settings/letter-contact-details.html:29
@@ -12640,3 +12642,31 @@ msgstr ""
 #~ msgid "Name"
 #~ msgstr ""
 
+#~ msgid ""
+#~ "This accessibility statement applies to "
+#~ "the www.notifications.service.gov.uk domain. It "
+#~ "does not apply to the <a class"
+#~ "=\"govuk-link govuk-link--no-visited-"
+#~ "state\" "
+#~ "href=\"https://docs.notifications.service.gov.uk\">GOV.UK Notify"
+#~ " API documentation subdomain"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Read more about <a class=\"govuk-link"
+#~ " govuk-link--no-visited-state\" "
+#~ "href=\"%%s\">security"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For more information, you can <a "
+#~ "class=\"govuk-link govuk-link--no-visited-"
+#~ "state\" href=\"%%s\">download a copy of "
+#~ "the agreement (PDF)"
+#~ msgstr ""
+
+#~ msgid "Cancel invitation<span class=\"govuk-visually-hidden\"> for %%(mail)s"
+#~ msgstr ""
+
+#~ msgid "Blank (default"
+#~ msgstr ""
