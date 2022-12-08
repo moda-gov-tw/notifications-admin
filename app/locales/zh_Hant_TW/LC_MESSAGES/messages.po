@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-08 14:21+0800\n"
-"PO-Revision-Date: 2022-12-08 01:46+0000\n"
-"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"PO-Revision-Date: 2022-12-08 06:49+0000\n"
+"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
+"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
-"Language-Team: Chinese (Traditional) "
-"<https://weblate.toomore.net/projects/notification-admin/notification-"
-"admin-github/zh_Hant/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -42,19 +42,19 @@ msgstr "中午"
 
 #: formatters.py:138
 msgid "minute"
-msgstr ""
+msgstr "分鐘"
 
 #: formatters.py:139
 msgid "minutes"
-msgstr ""
+msgstr "分鐘"
 
 #: formatters.py:140
 msgid "hour"
-msgstr ""
+msgstr "小時"
 
 #: formatters.py:141
 msgid "hours"
-msgstr ""
+msgstr "小時"
 
 #: formatters.py:142 main/views/platform_admin.py:402
 #: main/views/platform_admin.py:449
@@ -63,27 +63,27 @@ msgstr "天"
 
 #: formatters.py:143
 msgid "days"
-msgstr ""
+msgstr "天"
 
 #: formatters.py:144
 msgid "month"
-msgstr ""
+msgstr "個月"
 
 #: formatters.py:145
 msgid "months"
-msgstr ""
+msgstr "個月"
 
 #: formatters.py:146
 msgid "year"
-msgstr ""
+msgstr "年"
 
 #: formatters.py:147
 msgid "years"
-msgstr ""
+msgstr "年"
 
 #: formatters.py:151
 msgid "1 {} ago"
-msgstr ""
+msgstr "一{}前"
 
 #: formatters.py:159
 msgid "just now"
@@ -175,7 +175,7 @@ msgstr " 從 {}"
 #: formatters.py:248 formatters.py:250 formatters.py:256 formatters.py:257
 #: formatters.py:258 formatters.py:259
 msgid "error"
-msgstr ""
+msgstr "錯誤"
 
 #: formatters.py:262 formatters.py:263 formatters.py:264
 #: templates/components/table.html:112
@@ -3067,19 +3067,19 @@ msgstr "使用 Notify"
 
 #: templates/flash_messages.html:7
 msgid "Yes, cancel"
-msgstr ""
+msgstr "是，取消"
 
 #: templates/flash_messages.html:9
 msgid "Yes, delete"
-msgstr ""
+msgstr "是，刪除"
 
 #: templates/flash_messages.html:11
 msgid "Yes, suspend"
-msgstr ""
+msgstr "是，停用"
 
 #: templates/flash_messages.html:13
 msgid "Yes, resume"
-msgstr ""
+msgstr "是，恢復啟用"
 
 #: templates/flash_messages.html:15
 #: templates/views/edit-user-permissions.html:21
@@ -3089,11 +3089,11 @@ msgstr "是，移除"
 
 #: templates/flash_messages.html:17
 msgid "Yes, revoke this API key"
-msgstr ""
+msgstr "是，註銷此 API 金鑰"
 
 #: templates/flash_messages.html:19
 msgid "Yes, stop broadcastin"
-msgstr ""
+msgstr "是，停止播送"
 
 #: templates/main_nav.html:8 templates/views/broadcast/dashboard.html:7
 #: templates/views/broadcast/dashboard.html:12
@@ -3186,7 +3186,7 @@ msgstr "回到 %%s"
 #: templates/components/big-number.html:47
 #: templates/components/big-number.html:51
 msgid "failed – "
-msgstr ""
+msgstr "錯誤 - "
 
 #: templates/components/big-number.html:54
 msgid "No failures"
@@ -3230,11 +3230,11 @@ msgstr "隱藏 <span class=\"govuk-visually-hidden\">cookie 訊息</span>"
 
 #: templates/components/table.html:136
 msgid "On"
-msgstr ""
+msgstr "啟用"
 
 #: templates/components/table.html:136
 msgid "Off"
-msgstr ""
+msgstr "關閉"
 
 #: templates/components/task-list.html:5
 msgid "Completed"
@@ -8984,11 +8984,11 @@ msgstr "找不到使用者。"
 
 #: templates/views/find-users/user-information.html:15
 msgid "hint"
-msgstr ""
+msgstr "提示"
 
 #: templates/views/find-users/user-information.html:15
 msgid "No mobile number"
-msgstr ""
+msgstr "無行動裝置號碼"
 
 #: templates/views/find-users/user-information.html:29
 msgid "No live services"
@@ -9078,7 +9078,7 @@ msgstr "前往 %%s 頁面的<b class=\"govuk-!-font-weight-bold\">電子郵件�
 #: templates/views/guidance/branding-and-customisation.html:55
 #: templates/views/guidance/branding-and-customisation.html:67
 msgid "settings"
-msgstr ""
+msgstr "設定"
 
 #: templates/views/guidance/branding-and-customisation.html:33
 msgid ""
@@ -9217,7 +9217,7 @@ msgstr "前往 %%s 頁面並選擇現有的範本。"
 #: templates/views/guidance/edit-and-format-messages.html:68
 #: templates/views/guidance/edit-and-format-messages.html:88
 msgid "templates"
-msgstr ""
+msgstr "範本"
 
 #: templates/views/guidance/create-and-send-messages.html:23
 msgid "Select <b class=\"govuk-!-font-weight-bold\">Send</b>."
@@ -9606,7 +9606,7 @@ msgstr "若要使用 PDF 檔案上傳與傳送信件："
 
 #: templates/views/guidance/upload-a-letter.html:22
 msgid "uploads"
-msgstr ""
+msgstr "上傳"
 
 #: templates/views/guidance/upload-a-letter.html:23
 msgid "Select <b class=\"govuk-!-font-weight-bold\">Upload a letter</b>."
@@ -10474,43 +10474,43 @@ msgstr "載入摘要"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:6
 msgid "Volumes by service report"
-msgstr ""
+msgstr "服務報表使用量"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:26
 msgid "Descriptions of volumes by service data"
-msgstr ""
+msgstr "服務報表使用量說明"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:32
 msgid ""
 "Free allowance set for the service. This is the latest free allowance for"
 " the date range given"
-msgstr ""
+msgstr "設定服務免費額度。這是目前在期間內的免費額度"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:33
 msgid "The number of text messages sent by the service."
-msgstr ""
+msgstr "在服務中已傳送的簡訊數量。"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:34
 msgid ""
 "The number of text message fragments times the rate multiplier sent by "
 "the service."
-msgstr ""
+msgstr "此服務零碎傳送簡訊的比率。"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:35
 msgid "The number of emails sent by a service"
-msgstr ""
+msgstr "此服務已傳送電子郵件的數量"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:36
 msgid "The number of letters sent by a service"
-msgstr ""
+msgstr "此服務已傳送紙本信件的數量"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:37
 msgid "The cost of the letters, rate * letter totals"
-msgstr ""
+msgstr "紙本信件的成本，比率 * 紙本信件數量"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:38
 msgid "The number of sheet sent by a service"
-msgstr ""
+msgstr "此服務已傳送試算表的數量"
 
 #: templates/views/pricing/billing-details-signed-out.html:17
 #, python-format
@@ -11336,7 +11336,7 @@ msgstr "電子郵件供應商"
 
 #: templates/views/providers/providers.html:49
 msgid "No email providers"
-msgstr ""
+msgstr "無電子郵件供應商"
 
 #: templates/views/providers/providers.html:66
 msgid "International SMS Providers"
@@ -12490,7 +12490,7 @@ msgstr "加入新寄件人"
 
 #: templates/views/templates/template.html:16
 msgid "Are you sure you want to hide personalisation after sending?"
-msgstr ""
+msgstr "您確定您要在傳送後隱藏合併列印內容？"
 
 #: templates/views/templates/template.html:19
 msgid ""
