@@ -1380,10 +1380,10 @@ class BaseTemplateForm(StripWhitespaceForm):
     process_type = GovukRadiosField(
         _("Use priority queue?"),
         choices=[
-            ("priority", "Yes"),
-            ("normal", "No"),
+            ("priority", _("Yes")),
+            ("normal", _("No")),
         ],
-        thing="yes or no",
+        thing=_("yes or no"),
         default="normal",
     )
 
@@ -1915,13 +1915,13 @@ class AdminSetEmailBrandingAddToBrandingPoolStepForm(StripWhitespaceForm):
         )
 
     add_to_pool = GovukRadiosField(
-        choices=[("yes", "Yes"), ("no", "No")],
-        thing="yes or no",
+        choices=[("yes", _("Yes")), ("no", _("No"))],
+        thing=_("yes or no"),
     )
 
 
 class AdminEditLetterBrandingForm(StripWhitespaceForm):
-    name = GovukTextInputField("Name of brand", validators=[DataRequired()])
+    name = GovukTextInputField(_("Name of brand"), validators=[DataRequired()])
 
 
 class SVGFileUpload(StripWhitespaceForm):

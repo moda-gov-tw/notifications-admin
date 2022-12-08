@@ -3,7 +3,21 @@
   {% if messages %}
     {% for category, message in messages %}
       {% if category in ['cancel', 'delete', 'suspend', 'resume', 'remove', 'revoke this API key', 'stop broadcasting'] %}
-        {% set delete_button_text = _("Yes, {}").format(category) %}
+        {% if category == 'cancel' %}
+        {% set delete_button_text = _("Yes, cancel") %}
+        {% elif category == 'delete' %}
+        {% set delete_button_text = _("Yes, delete") %}
+        {% elif category == 'suspend' %}
+        {% set delete_button_text = _("Yes, suspend") %}
+        {% elif category == 'resume' %}
+        {% set delete_button_text = _("Yes, resume") %}
+        {% elif category == 'remove' %}
+        {% set delete_button_text = _("Yes, remove") %}
+        {% elif category == 'revoke this API key' %}
+        {% set delete_button_text = _("Yes, revoke this API key") %}
+        {% elif category == 'stop broadcastin' %}
+        {% set delete_button_text = _("Yes, stop broadcastin") %}
+        {% endif %}
       {% elif category == 'try again' %}
         {% set delete_button_text = category|capitalize %}
       {% elif category == _('yes, make this email branding the default') %}

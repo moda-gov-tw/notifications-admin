@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-06 14:02+0800\n"
+"POT-Creation-Date: 2022-12-08 14:21+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "tomorrow"
 msgstr ""
 
-#: formatters.py:79 formatters.py:157 utils/letters.py:24
+#: formatters.py:79 formatters.py:169 utils/letters.py:24
 msgid "today"
 msgstr ""
 
-#: formatters.py:81 formatters.py:159
+#: formatters.py:81 formatters.py:171
 msgid "yesterday"
 msgstr ""
 
@@ -38,25 +38,70 @@ msgstr ""
 msgid "Midday"
 msgstr ""
 
+#: formatters.py:138
+msgid "minute"
+msgstr ""
+
+#: formatters.py:139
+msgid "minutes"
+msgstr ""
+
+#: formatters.py:140
+msgid "hour"
+msgstr ""
+
+#: formatters.py:141
+msgid "hours"
+msgstr ""
+
+#: formatters.py:142 main/views/platform_admin.py:402
+#: main/views/platform_admin.py:449
+msgid "day"
+msgstr ""
+
+#: formatters.py:143
+msgid "days"
+msgstr ""
+
+#: formatters.py:144
+msgid "month"
+msgstr ""
+
+#: formatters.py:145
+msgid "months"
+msgstr ""
+
+#: formatters.py:146
+msgid "year"
+msgstr ""
+
 #: formatters.py:147
+msgid "years"
+msgstr ""
+
+#: formatters.py:151
+msgid "1 {} ago"
+msgstr ""
+
+#: formatters.py:159
 msgid "just now"
 msgstr ""
 
-#: formatters.py:149
+#: formatters.py:161
 msgid "in the last minute"
 msgstr ""
 
-#: formatters.py:172 main/forms.py:2252 main/forms.py:2356
+#: formatters.py:184 main/forms.py:2252 main/forms.py:2356
 #: main/views/templates.py:185 templates/views/providers/providers.html:43
 #: templates/views/register-from-invite.html:25
 msgid "Email"
 msgstr ""
 
-#: formatters.py:172 main/forms.py:2357 main/views/templates.py:184
+#: formatters.py:184 main/forms.py:2357 main/views/templates.py:184
 msgid "Text message"
 msgstr ""
 
-#: formatters.py:172 main/forms.py:2254 main/forms.py:2358
+#: formatters.py:184 main/forms.py:2254 main/forms.py:2358
 #: main/views/templates.py:186
 #: templates/views/dashboard/template-statistics.html:27
 #: templates/views/notifications/invalid_precompiled_letter.html:4
@@ -64,140 +109,163 @@ msgstr ""
 msgid "Letter"
 msgstr ""
 
-#: formatters.py:178 formatters.py:188
+#: formatters.py:190 formatters.py:200
 msgid "Failed"
 msgstr ""
 
-#: formatters.py:179 formatters.py:189 formatters.py:200
+#: formatters.py:191 formatters.py:201 formatters.py:212
 #: templates/views/message-status.html:34
 #: templates/views/message-status.html:64
 #: templates/views/message-status.html:86
 msgid "Technical failure"
 msgstr ""
 
-#: formatters.py:180 templates/views/message-status.html:33
+#: formatters.py:192 templates/views/message-status.html:33
 msgid "Inbox not accepting messages right now"
 msgstr ""
 
-#: formatters.py:181 templates/views/message-status.html:32
+#: formatters.py:193 templates/views/message-status.html:32
 msgid "Email address does not exist"
 msgstr ""
 
-#: formatters.py:182 formatters.py:185 formatters.py:192
+#: formatters.py:194 formatters.py:197 formatters.py:204
 #: templates/views/message-status.html:31
 #: templates/views/message-status.html:61
 msgid "Delivered"
 msgstr ""
 
-#: formatters.py:183 formatters.py:184 formatters.py:193 formatters.py:194
-#: formatters.py:195 templates/partials/jobs/notifications.html:9
+#: formatters.py:195 formatters.py:196 formatters.py:205 formatters.py:206
+#: formatters.py:207 templates/partials/jobs/notifications.html:9
 #: templates/views/message-status.html:30
 #: templates/views/message-status.html:59
 msgid "Sending"
 msgstr ""
 
-#: formatters.py:190 templates/views/message-status.html:63
+#: formatters.py:202 templates/views/message-status.html:63
 msgid "Phone not accepting messages right now"
 msgstr ""
 
-#: formatters.py:191 templates/views/message-status.html:62
+#: formatters.py:203 templates/views/message-status.html:62
 msgid "Not delivered"
 msgstr ""
 
-#: formatters.py:196 templates/views/message-status.html:60
+#: formatters.py:208 templates/views/message-status.html:60
 msgid "Sent to an international number"
 msgstr ""
 
-#: formatters.py:202 templates/views/message-status.html:87
+#: formatters.py:214 templates/views/message-status.html:87
 msgid "Permanent failure"
 msgstr ""
 
-#: formatters.py:210
+#: formatters.py:222
 msgid "Virus detected"
 msgstr ""
 
-#: formatters.py:213 utils/letters.py:189
+#: formatters.py:225 utils/letters.py:189
 msgid "Validation failed"
 msgstr ""
 
-#: formatters.py:219
+#: formatters.py:231
 msgid " since {}"
 msgstr ""
 
-#: formatters.py:350
+#: formatters.py:238 formatters.py:239 formatters.py:240 formatters.py:241
+#: formatters.py:248 formatters.py:250 formatters.py:256 formatters.py:257
+#: formatters.py:258 formatters.py:259
+msgid "error"
+msgstr ""
+
+#: formatters.py:262 formatters.py:263 formatters.py:264
+#: templates/components/table.html:112
+#: templates/views/uploads/contact-list/ok.html:46
+#: templates/views/uploads/contact-list/ok.html:53
+#: templates/views/uploads/contact-list/row-errors.html:77
+#: templates/views/uploads/contact-list/row-errors.html:84
+#: templates/views/uploads/contact-list/too-many-columns.html:91
+#: templates/views/uploads/contact-list/too-many-columns.html:98
+msgid "default"
+msgstr ""
+
+#: formatters.py:362
 msgid "Data available for {}"
 msgstr ""
 
-#: formatters.py:351
+#: formatters.py:363
 msgid "Data no longer available"
 msgstr ""
 
-#: formatters.py:399
+#: formatters.py:402 templates/views/organisations/organisation/index.html:25
+#: templates/views/usage.html:24 templates/views/usage.html:31
+#: templates/views/usage.html:50
+msgid "sent"
+msgstr ""
+
+#: formatters.py:411
 msgid "message"
 msgstr ""
 
-#: formatters.py:401 templates/views/conversations/conversation.html:27
+#: formatters.py:413 templates/views/conversations/conversation.html:27
 #: templates/views/dashboard/inbox.html:22
 msgid "messages"
 msgstr ""
 
-#: formatters.py:405
+#: formatters.py:417
 msgid "text message"
 msgstr ""
 
-#: formatters.py:407 main/forms.py:1624 main/forms.py:1789
+#: formatters.py:419 main/forms.py:1624 main/forms.py:1789
 #: main/validators.py:121 templates/views/features.html:20
 msgid "text messages"
 msgstr ""
 
-#: formatters.py:411 templates/views/dashboard/monthly.html:46
+#: formatters.py:423 templates/views/dashboard/monthly.html:46
 msgid "email"
 msgstr ""
 
-#: formatters.py:413 main/forms.py:1619 main/forms.py:1788
+#: formatters.py:425 main/forms.py:1619 main/forms.py:1788
 #: templates/views/features.html:19
 msgid "emails"
 msgstr ""
 
-#: formatters.py:417 templates/views/dashboard/monthly.html:48
+#: formatters.py:429 templates/views/dashboard/monthly.html:48
 #: templates/views/returned-letter-summary.html:40
 msgid "letter"
 msgstr ""
 
-#: formatters.py:419 main/forms.py:1629 main/forms.py:1790
+#: formatters.py:431 main/forms.py:1629 main/forms.py:1790
 #: templates/views/dashboard/monthly.html:36 templates/views/features.html:21
 #: templates/views/using-notify.html:26
 msgid "letters"
 msgstr ""
 
-#: formatters.py:423
+#: formatters.py:435
 msgid "broadcast"
 msgstr ""
 
-#: formatters.py:425
+#: formatters.py:437
 msgid "broadcasts"
 msgstr ""
 
-#: formatters.py:436 main/views/jobs.py:182
+#: formatters.py:448 main/views/jobs.py:182
 msgid "recipient"
 msgstr ""
 
-#: formatters.py:438
+#: formatters.py:450
 msgid "recipients"
 msgstr ""
 
-#: formatters.py:442 main/views/jobs.py:178
+#: formatters.py:454 main/views/jobs.py:178
 #: templates/views/api/guest-list.html:64
 #: templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:81
 msgid "phone number"
 msgstr ""
 
-#: formatters.py:444
+#: formatters.py:456
 msgid "phone numbers"
 msgstr ""
 
-#: formatters.py:448 main/views/jobs.py:177 main/views/user_profile.py:70
+#: formatters.py:460 main/views/jobs.py:177 main/views/user_profile.py:70
 #: main/views/user_profile.py:91 templates/views/api/guest-list.html:58
 #: templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:63
@@ -205,51 +273,73 @@ msgstr ""
 msgid "email address"
 msgstr ""
 
-#: formatters.py:450
+#: formatters.py:462
 msgid "email addresses"
 msgstr ""
 
-#: formatters.py:454
+#: formatters.py:466
 msgid "address"
 msgstr ""
 
-#: formatters.py:456
+#: formatters.py:468
 msgid "addresses"
 msgstr ""
 
-#: formatters.py:465
+#: formatters.py:477
 msgid "once"
 msgstr ""
 
-#: formatters.py:467
+#: formatters.py:479
 msgid "twice"
 msgstr ""
 
-#: formatters.py:469
+#: formatters.py:481
 #, python-format
 msgid "%%s times"
 msgstr ""
 
-#: formatters.py:474
+#: formatters.py:486
 msgid "1 character"
 msgstr ""
 
-#: formatters.py:475
+#: formatters.py:487
 #, python-format
 msgid "%%s characters"
 msgstr ""
 
-#: formatters.py:500 main/forms.py:1032
+#: formatters.py:502 main/forms.py:1176 main/forms.py:1212 main/forms.py:1224
+#: main/forms.py:1383 main/forms.py:1609 main/forms.py:1635 main/forms.py:1918
+#: main/views/service_settings.py:237 main/views/user_profile.py:221
+#: models/service.py:421
+#: templates/views/organisations/organisation/settings/index.html:41
+#: templates/views/providers/providers.html:32
+#: templates/views/providers/providers.html:56
+#: templates/views/providers/providers.html:79
+msgid "Yes"
+msgstr ""
+
+#: formatters.py:504 formatters.py:506 main/forms.py:1177 main/forms.py:1213
+#: main/forms.py:1225 main/forms.py:1384 main/forms.py:1610 main/forms.py:1636
+#: main/forms.py:1918 main/views/service_settings.py:238
+#: main/views/user_profile.py:222 models/service.py:421
+#: templates/views/organisations/organisation/settings/index.html:42
+#: templates/views/providers/providers.html:32
+#: templates/views/providers/providers.html:56
+#: templates/views/providers/providers.html:79
+msgid "No"
+msgstr ""
+
+#: formatters.py:519 main/forms.py:1032
 msgid "Email link"
 msgstr ""
 
-#: formatters.py:501 main/forms.py:1031 main/forms.py:1120
+#: formatters.py:520 main/forms.py:1031 main/forms.py:1120
 #: templates/views/service-settings.html:40
 #: templates/views/service-settings/set-auth-type.html:32
 msgid "Text message code"
 msgstr ""
 
-#: formatters.py:502
+#: formatters.py:521
 msgid "Security key"
 msgstr ""
 
@@ -313,7 +403,7 @@ msgid ""
 "Digital Service</a>"
 msgstr ""
 
-#: assets/error_pages/5xx.html:109
+#: assets/error_pages/5xx.html:109 static/error_pages/5xx.html:109
 msgid ""
 "All content is available under the\n"
 "              <a\n"
@@ -536,18 +626,6 @@ msgstr ""
 msgid "Is your GP practice called the same name as your service?"
 msgstr ""
 
-#: main/forms.py:1176 main/forms.py:1212 main/forms.py:1224 main/forms.py:1609
-#: main/forms.py:1635 main/views/service_settings.py:237
-#: templates/views/organisations/organisation/settings/index.html:41
-msgid "Yes"
-msgstr ""
-
-#: main/forms.py:1177 main/forms.py:1213 main/forms.py:1225 main/forms.py:1610
-#: main/forms.py:1636 main/views/service_settings.py:238
-#: templates/views/organisations/organisation/settings/index.html:42
-msgid "No"
-msgstr ""
-
 #: main/forms.py:1182
 msgid "What’s your practice called?"
 msgstr ""
@@ -645,6 +723,7 @@ msgstr ""
 #: templates/views/manage-users/confirm-edit-user-email.html:28
 #: templates/views/manage-users/confirm-edit-user-mobile-number.html:27
 #: templates/views/service-settings/service-confirm-broadcast-account-type.html:52
+#: templates/views/templates/template.html:27
 #: templates/views/user-profile/authenticate.html:24
 msgid "Confirm"
 msgstr ""
@@ -695,6 +774,10 @@ msgstr ""
 
 #: main/forms.py:1381
 msgid "Use priority queue?"
+msgstr ""
+
+#: main/forms.py:1386 main/forms.py:1612 main/forms.py:1638 main/forms.py:1919
+msgid "yes or no"
 msgstr ""
 
 #: main/forms.py:1408
@@ -844,10 +927,6 @@ msgstr ""
 msgid "Is it an emergency?"
 msgstr ""
 
-#: main/forms.py:1612 main/forms.py:1638
-msgid "yes or no"
-msgstr ""
-
 #: main/forms.py:1618
 msgid "How many emails do you expect to send in the next year?"
 msgstr ""
@@ -953,7 +1032,7 @@ msgstr ""
 msgid "a branding style"
 msgstr ""
 
-#: main/forms.py:1829
+#: main/forms.py:1829 main/forms.py:1924
 msgid "Name of brand"
 msgstr ""
 
@@ -1781,7 +1860,7 @@ msgid "Email branding ‘%(name)s’ removed."
 msgstr ""
 
 #: main/views/organisations.py:455 main/views/organisations.py:504
-#: templates/flash_messages.html:9
+#: templates/flash_messages.html:23
 msgid "yes, make this email branding the default"
 msgstr ""
 
@@ -1998,7 +2077,8 @@ msgstr ""
 msgid "service name"
 msgstr ""
 
-#: main/views/platform_admin.py:351 templates/views/usage.html:32
+#: main/views/platform_admin.py:351 templates/views/usage.html:25
+#: templates/views/usage.html:32
 msgid "free allowance"
 msgstr ""
 
@@ -2031,10 +2111,6 @@ msgstr ""
 
 #: main/views/platform_admin.py:383
 msgid "attachment; filename=\"Volumes by service report from {} to {}.csv\""
-msgstr ""
-
-#: main/views/platform_admin.py:402 main/views/platform_admin.py:449
-msgid "day"
 msgstr ""
 
 #: main/views/platform_admin.py:403 main/views/platform_admin.py:451
@@ -2260,11 +2336,11 @@ msgstr ""
 msgid "Letter branding request - %s"
 msgstr ""
 
-#: main/views/sign_in.py:49
+#: main/views/sign_in.py:45
 msgid "You cannot accept an invite for another person."
 msgstr ""
 
-#: main/views/sign_in.py:68
+#: main/views/sign_in.py:69
 #, python-format
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
@@ -2799,7 +2875,7 @@ msgstr ""
 msgid "{} folders"
 msgstr ""
 
-#: models/user.py:214
+#: models/user.py:215
 msgid "{} are not valid permissions"
 msgstr ""
 
@@ -2917,8 +2993,34 @@ msgstr ""
 msgid "Using Notify"
 msgstr ""
 
-#: templates/flash_messages.html:6
-msgid "Yes, {}"
+#: templates/flash_messages.html:7
+msgid "Yes, cancel"
+msgstr ""
+
+#: templates/flash_messages.html:9
+msgid "Yes, delete"
+msgstr ""
+
+#: templates/flash_messages.html:11
+msgid "Yes, suspend"
+msgstr ""
+
+#: templates/flash_messages.html:13
+msgid "Yes, resume"
+msgstr ""
+
+#: templates/flash_messages.html:15
+#: templates/views/edit-user-permissions.html:21
+#: templates/views/organisations/organisation/users/index.html:17
+msgid "Yes, remove"
+msgstr ""
+
+#: templates/flash_messages.html:17
+msgid "Yes, revoke this API key"
+msgstr ""
+
+#: templates/flash_messages.html:19
+msgid "Yes, stop broadcastin"
 msgstr ""
 
 #: templates/main_nav.html:8 templates/views/broadcast/dashboard.html:7
@@ -2991,6 +3093,7 @@ msgstr ""
 
 #: templates/org_template.html:16 templates/service_navigation.html:41
 #: templates/views/organisations/add-organisation.html:14
+#: templates/views/platform-admin/_base_template.html:10
 #: templates/views/service-settings/service-already-live.html:25
 msgid "Switch service"
 msgstr ""
@@ -3006,6 +3109,11 @@ msgstr ""
 #: templates/withoutnav_template.html:8
 #, python-format
 msgid "Back to %%s"
+msgstr ""
+
+#: templates/components/big-number.html:47
+#: templates/components/big-number.html:51
+msgid "failed – "
 msgstr ""
 
 #: templates/components/big-number.html:54
@@ -3044,6 +3152,14 @@ msgstr ""
 
 #: templates/components/cookie-banner.html:22
 msgid "Hide<span class=\"govuk-visually-hidden\"> cookies message</span>"
+msgstr ""
+
+#: templates/components/table.html:136
+msgid "On"
+msgstr ""
+
+#: templates/components/table.html:136
+msgid "Off"
 msgstr ""
 
 #: templates/components/task-list.html:5
@@ -4008,6 +4124,7 @@ msgstr ""
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:27
 #: templates/views/platform-admin/daily-volumes-report.html:27
 #: templates/views/platform-admin/get-billing-report.html:27
+#: templates/views/platform-admin/volumes-by-service-report.html:27
 #: templates/views/user-profile.html:51
 msgid "Name"
 msgstr ""
@@ -4242,6 +4359,7 @@ msgstr ""
 #: templates/views/user-profile/change.html:25
 #: templates/views/user-profile/change.html:34
 #: templates/views/user-profile/disable-platform-admin-view.html:33
+#: templates/views/user-profile/manage-security-key.html:25
 msgid "Save"
 msgstr ""
 
@@ -4274,11 +4392,6 @@ msgstr ""
 
 #: templates/views/edit-user-permissions.html:19
 msgid "Are you sure you want to remove {}?"
-msgstr ""
-
-#: templates/views/edit-user-permissions.html:21
-#: templates/views/organisations/organisation/users/index.html:17
-msgid "Yes, remove"
 msgstr ""
 
 #: templates/views/edit-user-permissions.html:31
@@ -4838,6 +4951,7 @@ msgstr ""
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:27
 #: templates/views/platform-admin/daily-volumes-report.html:27
 #: templates/views/platform-admin/get-billing-report.html:27
+#: templates/views/platform-admin/volumes-by-service-report.html:27
 #: templates/views/pricing/index.html:112
 msgid "Description"
 msgstr ""
@@ -6367,6 +6481,8 @@ msgstr ""
 #: templates/views/providers/providers.html:28
 #: templates/views/providers/providers.html:36
 #: templates/views/providers/providers.html:39
+#: templates/views/providers/providers.html:60
+#: templates/views/providers/providers.html:63
 #: templates/views/providers/providers.html:83
 #: templates/views/providers/providers.html:86
 #: templates/views/service-settings.html:346
@@ -6907,9 +7023,8 @@ msgid ""
 "to work."
 msgstr ""
 
-#: templates/views/organisations/organisation/index.html:25
-#: templates/views/usage.html:31 templates/views/usage.html:50
-msgid "sent"
+#: templates/views/dashboard/_usage.html:6 templates/views/usage.html:25
+msgid "Unlimited"
 msgstr ""
 
 #: templates/views/usage.html:34
@@ -7926,10 +8041,6 @@ msgid "sending starts %%s"
 msgstr ""
 
 #: templates/views/dashboard/_usage.html:6
-msgid "Unlimited"
-msgstr ""
-
-#: templates/views/dashboard/_usage.html:6
 msgid "free email allowance"
 msgstr ""
 
@@ -8373,6 +8484,14 @@ msgstr ""
 msgid "No users found."
 msgstr ""
 
+#: templates/views/find-users/user-information.html:15
+msgid "hint"
+msgstr ""
+
+#: templates/views/find-users/user-information.html:15
+msgid "No mobile number"
+msgstr ""
+
 #: templates/views/find-users/user-information.html:29
 msgid "No live services"
 msgstr ""
@@ -8454,6 +8573,13 @@ msgstr ""
 msgid ""
 "Go to the <b class=\"govuk-!-font-weight-bold\">Email settings</b> "
 "section of the %%s page."
+msgstr ""
+
+#: templates/views/guidance/branding-and-customisation.html:32
+#: templates/views/guidance/branding-and-customisation.html:43
+#: templates/views/guidance/branding-and-customisation.html:55
+#: templates/views/guidance/branding-and-customisation.html:67
+msgid "settings"
 msgstr ""
 
 #: templates/views/guidance/branding-and-customisation.html:33
@@ -8572,6 +8698,13 @@ msgstr ""
 #: templates/views/guidance/create-and-send-messages.html:22
 #, python-format
 msgid "Go to the %%s page and choose an existing template."
+msgstr ""
+
+#: templates/views/guidance/create-and-send-messages.html:22
+#: templates/views/guidance/edit-and-format-messages.html:29
+#: templates/views/guidance/edit-and-format-messages.html:68
+#: templates/views/guidance/edit-and-format-messages.html:88
+msgid "templates"
 msgstr ""
 
 #: templates/views/guidance/create-and-send-messages.html:23
@@ -8947,6 +9080,10 @@ msgstr ""
 
 #: templates/views/guidance/upload-a-letter.html:19
 msgid "To upload and send a letter from a PDF file:"
+msgstr ""
+
+#: templates/views/guidance/upload-a-letter.html:22
+msgid "uploads"
 msgstr ""
 
 #: templates/views/guidance/upload-a-letter.html:23
@@ -9617,6 +9754,8 @@ msgstr ""
 #: templates/views/platform-admin/daily-volumes-report.html:17
 #: templates/views/platform-admin/get-billing-report.html:16
 #: templates/views/platform-admin/get-billing-report.html:17
+#: templates/views/platform-admin/volumes-by-service-report.html:16
+#: templates/views/platform-admin/volumes-by-service-report.html:17
 msgid "Use the format YYYY-MM-DD"
 msgstr ""
 
@@ -9624,11 +9763,13 @@ msgstr ""
 #: templates/views/platform-admin/daily-volumes-report.html:18
 #: templates/views/platform-admin/get-billing-report.html:18
 #: templates/views/platform-admin/notifications_by_service.html:17
+#: templates/views/platform-admin/volumes-by-service-report.html:18
 msgid "Download report (CSV)"
 msgstr ""
 
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:22
 #: templates/views/platform-admin/daily-volumes-report.html:22
+#: templates/views/platform-admin/volumes-by-service-report.html:22
 msgid "Data included in the report"
 msgstr ""
 
@@ -9774,6 +9915,7 @@ msgid "Download live services csv report"
 msgstr ""
 
 #: templates/views/platform-admin/reports.html:23
+#: templates/views/platform-admin/volumes-by-service-report.html:12
 msgid "Volumes by service Report"
 msgstr ""
 
@@ -9791,6 +9933,46 @@ msgstr ""
 
 #: templates/views/platform-admin/splash-page.html:14
 msgid "Load summary"
+msgstr ""
+
+#: templates/views/platform-admin/volumes-by-service-report.html:6
+msgid "Volumes by service report"
+msgstr ""
+
+#: templates/views/platform-admin/volumes-by-service-report.html:26
+msgid "Descriptions of volumes by service data"
+msgstr ""
+
+#: templates/views/platform-admin/volumes-by-service-report.html:32
+msgid ""
+"Free allowance set for the service. This is the latest free allowance for"
+" the date range given"
+msgstr ""
+
+#: templates/views/platform-admin/volumes-by-service-report.html:33
+msgid "The number of text messages sent by the service."
+msgstr ""
+
+#: templates/views/platform-admin/volumes-by-service-report.html:34
+msgid ""
+"The number of text message fragments times the rate multiplier sent by "
+"the service."
+msgstr ""
+
+#: templates/views/platform-admin/volumes-by-service-report.html:35
+msgid "The number of emails sent by a service"
+msgstr ""
+
+#: templates/views/platform-admin/volumes-by-service-report.html:36
+msgid "The number of letters sent by a service"
+msgstr ""
+
+#: templates/views/platform-admin/volumes-by-service-report.html:37
+msgid "The cost of the letters, rate * letter totals"
+msgstr ""
+
+#: templates/views/platform-admin/volumes-by-service-report.html:38
+msgid "The number of sheet sent by a service"
 msgstr ""
 
 #: templates/views/pricing/billing-details-signed-out.html:17
@@ -10564,6 +10746,10 @@ msgstr ""
 
 #: templates/views/providers/providers.html:47
 msgid "Email providers"
+msgstr ""
+
+#: templates/views/providers/providers.html:49
+msgid "No email providers"
 msgstr ""
 
 #: templates/views/providers/providers.html:66
@@ -11677,6 +11863,10 @@ msgstr ""
 msgid "Add new sender"
 msgstr ""
 
+#: templates/views/templates/template.html:16
+msgid "Are you sure you want to hide personalisation after sending?"
+msgstr ""
+
 #: templates/views/templates/template.html:19
 msgid ""
 "You will not be able to see personalised content in Notify for this "
@@ -11810,15 +12000,6 @@ msgstr ""
 
 #: templates/views/uploads/contact-list/ok.html:33
 msgid "File preview"
-msgstr ""
-
-#: templates/views/uploads/contact-list/ok.html:46
-#: templates/views/uploads/contact-list/ok.html:53
-#: templates/views/uploads/contact-list/row-errors.html:77
-#: templates/views/uploads/contact-list/row-errors.html:84
-#: templates/views/uploads/contact-list/too-many-columns.html:91
-#: templates/views/uploads/contact-list/too-many-columns.html:98
-msgid "default"
 msgstr ""
 
 #: templates/views/uploads/contact-list/row-errors.html:60
@@ -12438,4 +12619,7 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "email_address"
+#~ msgstr ""
+
+#~ msgid "Yes, {}"
 #~ msgstr ""

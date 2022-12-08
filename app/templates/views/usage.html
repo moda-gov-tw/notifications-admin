@@ -21,8 +21,8 @@
         <div class='govuk-grid-column-one-third'>
           <h2 class='heading-small'>{{_('Emails')}}</h2>
           <div class="keyline-block">
-            {{ big_number(emails_sent, 'sent', smaller=True) }}
-            {{ big_number("Unlimited", 'free allowance', smaller=True) }}
+            {{ big_number(emails_sent, _('sent'), smaller=True) }}
+            {{ big_number(_("Unlimited"), _('free allowance'), smaller=True) }}
           </div>
         </div>
         <div class='govuk-grid-column-one-third'>

@@ -109,7 +109,7 @@
 {% macro optional_text_field(text, default='Not set', truncate=false, wrap=False) -%}
   {{ text_field(
     text or default,
-    status='' if text else 'default',
+    status='' if text else _('default'),
     truncate=truncate,
     wrap=wrap
   ) }}
@@ -133,7 +133,7 @@
 {%- endmacro %}
 
 {% macro boolean_field(value) -%}
-  {{ text_field('On' if value else 'Off') }}
+  {{ text_field(_('On') if value else _('Off')) }}
 {%- endmacro %}
 
 {% macro right_aligned_field_heading(text) %}

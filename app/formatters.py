@@ -134,9 +134,21 @@ def _format_datetime_short(datetime):
 
 
 def naturaltime_without_indefinite_article(date):
+    _base = {
+        "minute": _("minute"),
+        "minutes": _("minutes"),
+        "hour": _("hour"),
+        "hours": _("hours"),
+        "day": _("day"),
+        "days": _("days"),
+        "month": _("month"),
+        "months": _("months"),
+        "year": _("year"),
+        "years": _("years"),
+    }
     return re.sub(
         "an? (.*) ago",
-        lambda match: "1 {} ago".format(match.group(1)),
+        lambda match: _("1 {} ago").format(_base.get(match.group(1), match.group(1))),
         humanize.naturaltime(date),
     )
 
@@ -223,33 +235,33 @@ def format_notification_status_as_field_status(status, notification_type):
     return (
         {
             "letter": {
-                "failed": "error",
-                "technical-failure": "error",
-                "temporary-failure": "error",
-                "permanent-failure": "error",
+                "failed": _("error"),
+                "technical-failure": _("error"),
+                "temporary-failure": _("error"),
+                "permanent-failure": _("error"),
                 "delivered": None,
                 "sent": None,
                 "sending": None,
                 "created": None,
                 "accepted": None,
                 "pending-virus-check": None,
-                "virus-scan-failed": "error",
+                "virus-scan-failed": _("error"),
                 "returned-letter": None,
-                "cancelled": "error",
+                "cancelled": _("error"),
             },
         }
         .get(
             notification_type,
             {
-                "failed": "error",
-                "technical-failure": "error",
-                "temporary-failure": "error",
-                "permanent-failure": "error",
+                "failed": _("error"),
+                "technical-failure": _("error"),
+                "temporary-failure": _("error"),
+                "permanent-failure": _("error"),
                 "delivered": None,
                 "sent": "sent-international" if notification_type == "sms" else None,
-                "sending": "default",
-                "created": "default",
-                "pending": "default",
+                "sending": _("default"),
+                "created": _("default"),
+                "pending": _("default"),
             },
         )
         .get(status, "error")
@@ -387,7 +399,7 @@ def guess_name_from_email_address(email_address):
     )
 
 
-def message_count_label(count, template_type, suffix="sent"):
+def message_count_label(count, template_type, suffix=_("sent")):
     if suffix:
         return f"{message_count_noun(count, template_type)} {suffix}"
     return message_count_noun(count, template_type)
@@ -485,7 +497,14 @@ def format_billions(count):
     return humanize.intword(count)
 
 
-def format_yes_no(value, yes="Yes", no="No", none="No"):
+def format_yes_no(value, yes=None, no=None, none=None):
+    if yes is None:
+        yes = _("Yes")
+    if no is None:
+        no = _("No")
+    if none is None:
+        none = _("No")
+
     if value is None:
         return none
     return yes if value else no

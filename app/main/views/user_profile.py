@@ -218,8 +218,8 @@ def user_profile_disable_platform_admin_view():
     form = ServiceOnOffSettingForm(
         name=_("Use platform admin view"),
         enabled=not session.get("disable_platform_admin_view"),
-        truthy="Yes",
-        falsey="No",
+        truthy=_("Yes"),
+        falsey=_("No"),
     )
 
     form.enabled.param_extensions = {"hint": {"text": _("Signing in again clears this setting")}}

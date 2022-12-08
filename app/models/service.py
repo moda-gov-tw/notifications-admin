@@ -418,7 +418,7 @@ class Service(JSONModel):
 
     @property
     def go_live_checklist_completed_as_yes_no(self):
-        return "Yes" if self.go_live_checklist_completed else "No"
+        return _("Yes") if self.go_live_checklist_completed else _("No")
 
     @cached_property
     def free_sms_fragment_limit(self):

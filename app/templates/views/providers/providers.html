@@ -29,7 +29,7 @@
 
       {{ text_field(item.monthly_traffic) }}
 
-      {{ text_field(item.active) }}
+      {{ text_field(_('Yes') if item.active else _('No')) }}
 
       {{ optional_text_field(
           item.updated_at|format_datetime_short if item.updated_at,
@@ -46,21 +46,21 @@
       email_providers,
       caption=_("Email providers"),
       caption_visible=False,
-      empty_message='No email providers',
+      empty_message=_('No email providers'),
       field_headings=[_('Provider'), _('Active'), _('Last Updated'), _('Updated By')],
       field_headings_visible=True
   ) %}
 
       {{ link_field(item.display_name, url_for('main.view_provider', provider_id=item.id)) }}
 
-      {{ text_field(item.active) }}
+      {{ text_field(_('Yes') if item.active else _('No')) }}
 
       {{ optional_text_field(
         item.updated_at|format_datetime_short if item.updated_at,
-        default='None'
+        default=_('None')
       ) }}
 
-      {{ optional_text_field(item.created_by_name, default='None') }}
+      {{ optional_text_field(item.created_by_name, default=_('None')) }}
   {% endcall %}
 
   <h2 class="heading-medium">{{_('International SMS Providers')}}</h2>
@@ -76,7 +76,7 @@
 
       {{ link_field(item.display_name, url_for('main.view_provider', provider_id=item.id)) }}
 
-      {{ text_field(item.active) }}
+      {{ text_field(_('Yes') if item.active else _('No')) }}
 
       {{ optional_text_field(
         item.updated_at|format_datetime_short if item.updated_at,

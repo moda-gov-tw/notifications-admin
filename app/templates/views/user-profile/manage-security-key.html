@@ -22,7 +22,7 @@
       {% call form_wrapper(autocomplete=True) %}
         {{ form.security_key_name }}
         {{ page_footer(
-          'Save',
+          _('Save'),
           delete_link=url_for(
             '.user_profile_confirm_delete_security_key', key_id=security_key.id),
           delete_link_text=_('Delete')

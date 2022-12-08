@@ -460,7 +460,7 @@ def get_tuples_of_financial_years(
             _("financial year"),
             year,
             partial_url(year=year),
-            "{} to {}".format(year, year + 1),
+            _(f"{year} to {year+1}"),
         )
         for year in reversed(range(start, end + 1))
     )
