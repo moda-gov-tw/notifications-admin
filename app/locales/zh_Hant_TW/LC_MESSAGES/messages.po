@@ -3773,14 +3773,6 @@ msgstr "下次審視時間"
 msgid "20 December 2022"
 msgstr "2022 年 12 月 20 日"
 
-#: templates/views/accessibility_statement.html:22
-msgid ""
-"This accessibility statement applies to the www.notifications.service.gov.uk "
-"domain. It does not apply to the <a class=\"govuk-link govuk-link--no-"
-"visited-state\" href=\"https://docs.notifications.service.gov.uk\">GOV.UK "
-"Notify API documentation subdomain</a>."
-msgstr ""
-
 #: templates/views/accessibility_statement.html:26
 msgid ""
 "This website is run by the GOV.UK Notify team at the Government Digital "
@@ -7890,13 +7882,6 @@ msgid ""
 msgstr ""
 "%%s 已經接受 GOV.UK Notify 的 \n"
 "      資料共享與財務同意書。"
-
-#: templates/views/agreement/service-agreement-signed.html:24
-#, python-format
-msgid ""
-"For more information, you can <a class=\"govuk-link govuk-link--no-visited-"
-"state\" href=\"%%s\">download a copy of the agreement (PDF)</a>."
-msgstr ""
 
 #: templates/views/agreement/service-agreement-signed.html:27
 #: templates/views/agreement/service-agreement.html:34
@@ -13292,7 +13277,7 @@ msgid ""
 "This accessibility statement applies to the www.notifications.service.gov.uk "
 "domain. It does not apply to the <a class=\"govuk-link govuk-link--no-"
 "visited-state\" href=\"https://docs.notifications.service.gov.uk\">GOV.UK "
-"Notify API documentation subdomain"
+"Notify API documentation subdomain</a>."
 msgstr ""
 "此無障礙聲明適用於 www.notifications.service.gov.uk 網域。它不適用於 <a "
 "class=\"govuk-link govuk-link--no-visited-state\" href=\"https://docs."
@@ -13306,7 +13291,7 @@ msgstr ""
 #, python-format
 msgid ""
 "For more information, you can <a class=\"govuk-link govuk-link--no-visited-"
-"state\" href=\"%%s\">download a copy of the agreement (PDF)"
+"state\" href=\"%%s\">download a copy of the agreement (PDF)</a>."
 msgstr ""
 "若需更多資訊，可以<a class=\"govuk-link govuk-link--no-visited-state\" href="
 "\"%%s\">下載一份同意書副本（PDF）。"
