@@ -12,7 +12,7 @@
         <div class="radio-select__column">
           <div class="govuk-radios__item">
             <input class="govuk-radios__input" checked="checked" id="{{name}}-0" name="{{name}}" type="radio" value="">
-            <label class="govuk-label govuk-radios__label" for="{{name}}-0">Now</label>
+            <label class="govuk-label govuk-radios__label" for="{{name}}-0">現在</label>
           </div>
         </div>
       {{/showNowAsDefault}}
@@ -27,7 +27,7 @@
         <div class="radio-select__column">
           <div class="govuk-radios__item">
             <input class="govuk-radios__input" checked="checked" id="{{name}}-0" name="{{name}}" type="radio" value="">
-            <label class="govuk-label govuk-radios__label" for="{{name}}-0">Now</label>
+            <label class="govuk-label govuk-radios__label" for="{{name}}-0">現在</label>
           </div>
         </div>
       {{/showNowAsDefault}}
@@ -38,7 +38,7 @@
             <label class="govuk-label govuk-radios__label" for="{{id}}">{{label}}</label>
           </div>
         {{/choices}}
-        <input type='button' class='govuk-button govuk-button--secondary radio-select__button--done' aria-expanded='true' value='Done' />
+        <input type='button' class='govuk-button govuk-button--secondary radio-select__button--done' aria-expanded='true' value='完成' />
       </div>
     `),
     'chosen': Hogan.compile(`
@@ -46,7 +46,7 @@
         <div class="radio-select__column">
           <div class="govuk-radios__item">
             <input class="govuk-radios__input" id="{{name}}-0" name="{{name}}" type="radio" value="">
-            <label class="govuk-label govuk-radios__label" for="{{name}}-0">Now</label>
+            <label class="govuk-label govuk-radios__label" for="{{name}}-0">現在</label>
           </div>
         </div>
       {{/showNowAsDefault}}
@@ -59,7 +59,7 @@
         {{/choices}}
       </div>
       <div class="radio-select__column">
-        <input type='button' class='govuk-button govuk-button--secondary radio-select__button--reset' aria-expanded='false' value='Choose a different time' />
+        <input type='button' class='govuk-button govuk-button--secondary radio-select__button--reset' aria-expanded='false' value='選擇一個不同的時間' />
       </div>
     `)
   };

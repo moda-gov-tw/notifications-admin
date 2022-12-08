@@ -28,7 +28,7 @@
   ListEntry.prototype.entryTemplate = Hogan.compile(
     '<div class="list-entry">' +
       '<label for="{{{id}}}" class="govuk-input--numbered__label">' +
-        '<span class="govuk-visually-hidden">{{listItemName}} number </span>{{number}}.' +
+        '<span class="govuk-visually-hidden">{{listItemName}} 號碼 </span>{{number}}.' +
       '</label>' +
       '<input' +
         ' name="{{name}}"' +
@@ -38,13 +38,13 @@
       '/>' +
       '{{#button}}' +
         '<button type="button" class="govuk-button govuk-button--secondary input-list__button--remove">' +
-          'Remove<span class="govuk-visually-hidden"> {{listItemName}} number {{number}}</span>' +
+          'Remove<span class="govuk-visually-hidden"> {{listItemName}} 號碼 {{number}}</span>' +
         '</button>' +
       '{{/button}}' +
     '</div>'
   );
   ListEntry.prototype.addButtonTemplate = Hogan.compile(
-    '<button type="button" class="govuk-button govuk-button--secondary input-list__button--add">Add another {{listItemName}} ({{entriesLeft}} remaining)</button>'
+    '<button type="button" class="govuk-button govuk-button--secondary input-list__button--add">新增 {{listItemName}} (目前剩餘 {{entriesLeft}})</button>'
   );
   ListEntry.prototype.getSharedAttributes = function () {
     var $inputs = this.$wrapper.find('input'),

@@ -5,7 +5,7 @@
   let normalize = (string) => string.toLowerCase().replace(/ /g,'');
   let resultsSummary = (num) => {
     if (num === 0) {
-      return "no results";
+      return "無結果";
     } else {
       return num + (num === 1 ? " result" : " results");
     }

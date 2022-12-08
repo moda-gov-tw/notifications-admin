@@ -9,18 +9,18 @@
       'valueVisible': (options) => `
         <span class="copy-to-clipboard__value">${options.valueLabel ? '<span class="govuk-visually-hidden">' + options.thing + ': </span>' : ''}${options.value}</span>
         <span class="copy-to-clipboard__notice govuk-visually-hidden" aria-live="assertive">
-          ${options.onload ? '' : options.thing + ' returned to page, press button to copy to clipboard'}
+          ${options.onload ? '' : options.thing + ' 回到頁面，按下按鈕複製到剪貼簿'}
         </span>
         <button type="button" class="govuk-button govuk-button--secondary copy-to-clipboard__button--copy">
-          Copy ${options.thing} to clipboard${options.name ? '<span class="govuk-visually-hidden"> for ' + options.name + '</span>' : ''}
+          複製 ${options.thing} 到剪貼簿 ${options.name ? '<span class="govuk-visually-hidden"> 為 ' + options.name + '</span>' : ''}
         </button>
       `,
       'valueCopied': (options) => `
         <span class="copy-to-clipboard__notice" aria-live="assertive">
-          <span class="govuk-visually-hidden">${options.thing} </span>Copied to clipboard<span class="govuk-visually-hidden">, press button to show in page</span>
+          <span class="govuk-visually-hidden">${options.thing} </span>已複製到剪貼簿<span class="govuk-visually-hidden">按下按鈕在頁面中顯示</span>
         </span>
         <button type="button" class="govuk-button govuk-button--secondary copy-to-clipboard__button--show">
-          Show ${options.thing}${options.name ? '<span class="govuk-visually-hidden"> for ' + options.name + '</span>' : ''}
+          顯示 ${options.thing}${options.name ? '<span class="govuk-visually-hidden"> 為 ' + options.name + '</span>' : ''}
         </button>
       `
     };

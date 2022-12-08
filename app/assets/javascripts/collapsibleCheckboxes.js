@@ -55,8 +55,8 @@
     this.module.$formGroup.append(this.$el);
   }
   Footer.prototype.buttonContent = {
-    change: (fieldLabel) => `Choose ${fieldLabel}s`,
-    done: (fieldLabel) => `Done<span class="govuk-visually-hidden"> choosing ${fieldLabel}s</span>`
+    change: (fieldLabel) => `選擇 ${fieldLabel}s`,
+    done: (fieldLabel) => `完成<span class="govuk-visually-hidden"> 已選擇 ${fieldLabel}s</span>`
   };
   Footer.prototype.getEl = function (expanded) {
     const buttonState = expanded ? 'done' : 'change';

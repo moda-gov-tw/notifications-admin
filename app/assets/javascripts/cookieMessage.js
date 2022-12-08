@@ -85,7 +85,7 @@ window.GOVUK.NotifyModules = window.GOVUK.NotifyModules || {};
   };
 
   CookieBanner.prototype.showConfirmationMessage = function (analyticsConsent) {
-    var messagePrefix = analyticsConsent ? 'You’ve accepted analytics cookies.' : 'You told us not to use analytics cookies.';
+    var messagePrefix = analyticsConsent ? '您已同意分析型的 cookies。' : '您已告知我們不同意分析型的 cookies。';
 
     this.$cookieBannerMainContent = document.querySelector('.notify-cookie-banner__wrapper');
     this.$cookieBannerConfirmationMessage = document.querySelector('.notify-cookie-banner__confirmation-message');
@@ -101,4 +101,3 @@ window.GOVUK.NotifyModules = window.GOVUK.NotifyModules || {};
 
   Modules.CookieBanner = CookieBanner;
 })(window.GOVUK.NotifyModules);
-

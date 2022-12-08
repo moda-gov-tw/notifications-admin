@@ -9,7 +9,7 @@
 
       var $cancelButton = $(`
         <a href="" role="button" class="file-upload-button govuk-button govuk-button--warning">
-          Cancel upload
+          取消上傳
         </a>
       `);
 

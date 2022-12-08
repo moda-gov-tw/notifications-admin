@@ -32,32 +32,32 @@
           $el: this.$form.find('#move_to_folder_radios'),
           cancellable: true,
           setFocus: () => $('#move_to_folder_radios').focus(),
-          action: 'move to folder',
-          description: 'Press move to confirm or cancel to close'
+          action: '移到資料夾',
+          description: '按下移動來確認或是取消並關閉'
         },
         {
           key: 'move-to-new-folder',
           $el: this.$form.find('#move_to_new_folder_form'),
           cancellable: true,
           setFocus: () => $('#move_to_new_folder_form').focus(),
-          action: 'move to new folder',
-          description: 'Press add to new folder to confirm name or cancel to close'
+          action: '移到新資料夾',
+          description: '按下加入到新資料夾來確認名稱或取消並關閉'
         },
         {
           key: 'add-new-folder',
           $el: this.$form.find('#add_new_folder_form'),
           cancellable: true,
           setFocus: () => $('#add_new_folder_form').focus(),
-          action: 'new folder',
-          description: 'Press add new folder to confirm name or cancel to close'
+          action: '新資料夾',
+          description: '按下加入新資料夾來確認名稱或取消並關閉'
         },
         {
           key: 'add-new-template',
           $el: this.$form.find('#add_new_template_form'),
           cancellable: true,
           setFocus: () => $('#add_new_template_form').focus(),
-          action: 'new template',
-          description: 'Press continue to confirm selection or cancel to close'
+          action: '新範本',
+          description: '按下繼續來確認選擇或取消並關閉'
         }
       ];
 
@@ -112,7 +112,7 @@
 
     this.addCancelButton = function(state) {
       let selector = `[value=${state.key}]`;
-      let $cancel = this.makeButton('Cancel', {
+      let $cancel = this.makeButton('取消', {
         'onclick': () => {
 
           // clear existing data
@@ -131,7 +131,7 @@
 
     this.addClearButton = function(state) {
       let selector = 'button[value=add-new-template]';
-      let $clear = this.makeButton('Clear', {
+      let $clear = this.makeButton('清除', {
         'onclick': () => {
 
           // uncheck all templates and folders
@@ -140,7 +140,7 @@
           // go back to action buttons
           this.selectActionButtons(selector);
         },
-        'nonvisualText': "selection"
+        'nonvisualText': "選擇"
       });
 
       state.$el.find('.checkbox-list-selected-counter').append($clear);
@@ -204,7 +204,7 @@
     };
 
     this.selectionStatus = {
-      'default': 'Nothing selected',
+      'default': '未選擇',
       'selected': numSelected => {
         const getString = key => {
           if (numSelected[key] === 0) {
@@ -224,7 +224,7 @@
         if (numSelected.folders > 0) {
           results.push(getString('folders'));
         }
-        return results.join(', ') + ' selected';
+        return results.join(', ') + ' 已選擇';
       },
       'update': numSelected => {
         let message = (numSelected.total > 0) ? this.selectionStatus.selected(numSelected) : this.selectionStatus.default;
@@ -300,9 +300,9 @@
       <div id="nothing_selected">
         <div class="js-stick-at-bottom-when-scrolling">
           <button type="button" class="govuk-button govuk-button--secondary govuk-!-margin-right-3 govuk-!-margin-bottom-1" value="add-new-template" aria-expanded="false">
-            New template
+            新範本
           </button>
-          <button type="button" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-1" value="add-new-folder" aria-expanded="false">New folder</button>
+          <button type="button" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-1" value="add-new-folder" aria-expanded="false">新資料夾</button>
           <div class="checkbox-list-selected-counter">
             <span class="checkbox-list-selected-counter__count" aria-hidden="true">
               ${this.selectionStatus.default}
@@ -316,9 +316,9 @@
       <div id="items_selected">
         <div class="js-stick-at-bottom-when-scrolling">
           <button type="button" class="govuk-button govuk-button--secondary govuk-!-margin-right-3 govuk-!-margin-bottom-1" value="move-to-existing-folder" aria-expanded="false">
-            Move<span class="govuk-visually-hidden"> selection to folder</span>
+            移到<span class="govuk-visually-hidden"> 所選擇的到資料夾</span>
           </button>
-          <button type="button" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-1" value="move-to-new-folder" aria-expanded="false">Add to new folder</button>
+          <button type="button" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-1" value="move-to-new-folder" aria-expanded="false">加到新資料夾</button>
           <div class="checkbox-list-selected-counter" aria-hidden="true">
             <span class="checkbox-list-selected-counter__count" aria-hidden="true">
               ${this.selectionStatus.selected(1)}
