@@ -13314,6 +13314,30 @@ msgstr "取消 %%(mail)s 的邀請函<span class=\"govuk-visually-hidden\">"
 msgid "Blank (default"
 msgstr "空白（預設值）"
 
+#: templates/views/accessibility_statement.html:22
+msgid ""
+"This accessibility statement applies to the www.notifications.service.gov.uk "
+"domain. It does not apply to the <a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"https://docs.notifications.service.gov.uk\">GOV.UK "
+"Notify API documentation subdomain"
+msgstr ""
+"此無障礙聲明適用於 www.notifications.service.gov.uk 網域。它不適用於 <a "
+"class=\"govuk-link govuk-link--no-visited-state\" href=\"https://docs."
+"notifications.service.gov.uk\">GOV.UK Notify 的 API 文件子網域This "
+"accessibility statement applies to the www.notifications.service.gov.uk "
+"domain. It does not apply to the <a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"https://docs.notifications.service.gov.uk\">GOV.UK "
+"Notify API documentation subdomain</a>."
+
+#: templates/views/agreement/service-agreement-signed.html:24
+#, python-format
+msgid ""
+"For more information, you can <a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"%%s\">download a copy of the agreement (PDF)"
+msgstr ""
+"若需更多資訊，可以<a class=\"govuk-link govuk-link--no-visited-state\" href="
+"\"%%s\">下載一份同意書副本（PDF）。"
+
 #~ msgid "Select %%s"
 #~ msgstr "選擇 %%s"
 
