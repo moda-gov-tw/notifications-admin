@@ -11,9 +11,8 @@ msgstr ""
 "PO-Revision-Date: 2022-12-08 09:39+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
 "Language: zh_Hant_TW\n"
-"Language-Team: Chinese (Traditional) "
-"<https://weblate.toomore.net/projects/notification-admin/notification-"
-"admin-github/zh_Hant/>\n"
+"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
+"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -2390,11 +2389,11 @@ msgstr "您已更新電子郵件品牌"
 msgid "Letter branding request - %s"
 msgstr "信件品牌請求 - %s"
 
-#: main/views/sign_in.py:49
+#: main/views/sign_in.py:49 main/views/sign_in.py:45
 msgid "You cannot accept an invite for another person."
 msgstr "您無法替他人接受邀請。"
 
-#: main/views/sign_in.py:68
+#: main/views/sign_in.py:68 main/views/sign_in.py:69
 #, python-format
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a href=\"%s\" "
@@ -2955,7 +2954,7 @@ msgstr "一個資料夾"
 msgid "{} folders"
 msgstr "{} 資料夾"
 
-#: models/user.py:214
+#: models/user.py:214 models/user.py:215
 msgid "{} are not valid permissions"
 msgstr "{} 不是有效權限"
 
@@ -4643,7 +4642,7 @@ msgstr "%%s 電子郵件範本"
 #: templates/views/edit-letter-template.html:27
 #: templates/views/edit-sms-template.html:31
 msgid "Your recipients will not see this"
-msgstr "您的收件人將不會看到這個"
+msgstr "您的收件人不會看到此欄位內容"
 
 #: templates/views/edit-letter-template.html:9
 #, python-format
@@ -4950,8 +4949,8 @@ msgid ""
 "Read more about <a class=\"govuk-link govuk-link--no-visited-state\" href="
 "\"%%s\">security</a>."
 msgstr ""
-"了解<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">安全性</a>的更多資訊。"
+"了解<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">安全性"
+"</a>的更多資訊。"
 
 #: templates/views/features.html:78
 msgid ""
@@ -13279,6 +13278,10 @@ msgid ""
 "If you change one priority you will need to change the others so they add up "
 "to 100%."
 msgstr "若您調整了優先順序，請一併變動其他的部分，使其加總起來達 100%。"
+
+#: templates/views/features.html:36
+msgid "Bulk sendin"
+msgstr "大宗郵件寄送"
 
 #~ msgid "Select %%s"
 #~ msgstr "選擇 %%s"
