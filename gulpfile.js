@@ -10,6 +10,7 @@ const rollupPluginCommonjs = require('rollup-plugin-commonjs');
 const rollupPluginNodeResolve = require('rollup-plugin-node-resolve');
 const streamqueue = require('streamqueue');
 const stylish = require('jshint-stylish');
+const scanner = require('i18next-scanner');
 
 const plugins = {};
 plugins.addSrc = require('gulp-add-src');
@@ -180,6 +181,23 @@ const javascripts = () => {
     .pipe(dest(paths.dist + 'javascripts/'))
 };
 
+const extract_i18next = () => {
+  return src([
+    paths.src + 'javascripts/*.js',
+  ]).pipe(scanner({
+    lngs: ['en', 'zh_Hant_TW'],
+    resource: {
+      loadPath: paths.src + 'i18n/{{lng}}/{{ns}}.json',
+      savePath: 'i18n/{{lng}}/{{ns}}.json'
+    },
+    debug: true,
+    func: {
+      list: ['_'],
+      extensions: ['.js']
+    }
+  })).pipe(dest(paths.src))
+};
+
 
 const sass = () => {
   return src([
@@ -265,7 +283,8 @@ const defaultTask = parallel(
     copy.govuk_frontend.fonts,
     copy.govuk_frontend.templates,
     images,
-    copy.leaflet.js
+    copy.leaflet.js,
+    extract_i18next
   ),
   series(
     copy.error_pages,

@@ -1,9 +1,13 @@
-(function(Modules) {
+(function(Modules, _) {
   "use strict";
 
   if (!document.queryCommandSupported('copy')) return;
 
   Modules.CopyToClipboard = function() {
+
+    console.info(_);
+    console.info(_('hello'));
+    console.info(_('hello~~~'));
 
     const states = {
       'valueVisible': (options) => `
@@ -17,7 +21,7 @@
       `,
       'valueCopied': (options) => `
         <span class="copy-to-clipboard__notice" aria-live="assertive">
-          <span class="govuk-visually-hidden">${options.thing} </span>Copied to clipboard<span class="govuk-visually-hidden">, press button to show in page</span>
+          <span class="govuk-visually-hidden">${options.thing} </span>${_('Copied to clipboard<span class="govuk-visually-hidden">, press button to show in page</span>')}
         </span>
         <button type="button" class="govuk-button govuk-button--secondary copy-to-clipboard__button--show">
           Show ${options.thing}${options.name ? '<span class="govuk-visually-hidden"> for ' + options.name + '</span>' : ''}
@@ -97,4 +101,4 @@
     };
   };
 
-})(window.GOVUK.NotifyModules);
+})(window.GOVUK.NotifyModules, window.GOVUK.i18next);

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-06 14:02+0800\n"
+"POT-Creation-Date: 2022-12-07 22:22+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -313,7 +313,7 @@ msgid ""
 "Digital Service</a>"
 msgstr ""
 
-#: assets/error_pages/5xx.html:109
+#: assets/error_pages/5xx.html:109 static/error_pages/5xx.html:109
 msgid ""
 "All content is available under the\n"
 "              <a\n"
@@ -327,6 +327,14 @@ msgstr ""
 
 #: assets/error_pages/5xx.html:121 static/error_pages/5xx.html:121
 msgid "© Crown copyright"
+msgstr ""
+
+#: assets/javascripts/copyToClipboard.js:9
+msgid "hello"
+msgstr ""
+
+#: assets/javascripts/copyToClipboard.js:10
+msgid "hello~~~"
 msgstr ""
 
 #: broadcast_areas/create-broadcast-areas-db.py:45
@@ -2260,11 +2268,11 @@ msgstr ""
 msgid "Letter branding request - %s"
 msgstr ""
 
-#: main/views/sign_in.py:49
+#: main/views/sign_in.py:45
 msgid "You cannot accept an invite for another person."
 msgstr ""
 
-#: main/views/sign_in.py:68
+#: main/views/sign_in.py:69
 #, python-format
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
@@ -2799,7 +2807,7 @@ msgstr ""
 msgid "{} folders"
 msgstr ""
 
-#: models/user.py:214
+#: models/user.py:215
 msgid "{} are not valid permissions"
 msgstr ""
 
