@@ -2,6 +2,7 @@ import itertools
 import re
 from collections import OrderedDict
 from datetime import datetime
+from gettext import pgettext
 
 from flask import abort, flash, redirect, render_template, request, url_for
 from flask_babel import _
@@ -480,7 +481,11 @@ def get_daily_sms_provider_volumes():
             )
         else:
             flash(_("No results for dates"))
-    return render_template("views/platform-admin/daily-sms-provider-volumes-report.html", form=form)
+    return render_template(
+        "views/platform-admin/daily-sms-provider-volumes-report.html",
+        form=form,
+        pgettext=pgettext,
+    )
 
 
 @main.route("/platform-admin/complaints")

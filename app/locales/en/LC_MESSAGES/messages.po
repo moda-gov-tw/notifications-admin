@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-08 16:25+0800\n"
+"POT-Creation-Date: 2022-12-08 16:59+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -54,8 +54,8 @@ msgstr ""
 msgid "hours"
 msgstr ""
 
-#: formatters.py:142 main/views/platform_admin.py:402
-#: main/views/platform_admin.py:449
+#: formatters.py:142 main/views/platform_admin.py:403
+#: main/views/platform_admin.py:450
 msgid "day"
 msgstr ""
 
@@ -136,8 +136,6 @@ msgstr ""
 
 #: formatters.py:195 formatters.py:196 formatters.py:205 formatters.py:206
 #: formatters.py:207 templates/partials/jobs/notifications.html:9
-#: templates/views/message-status.html:30
-#: templates/views/message-status.html:59
 msgid "Sending"
 msgstr ""
 
@@ -1753,7 +1751,7 @@ msgstr ""
 msgid "reference"
 msgstr ""
 
-#: main/views/jobs.py:213 main/views/platform_admin.py:491
+#: main/views/jobs.py:213 main/views/platform_admin.py:496
 #: main/views/uploads.py:97
 msgid "Invalid page argument ({})."
 msgstr ""
@@ -1790,7 +1788,7 @@ msgstr ""
 msgid "You cannot remove the only user for a service"
 msgstr ""
 
-#: main/views/manage_users.py:281 main/views/organisations.py:279
+#: main/views/manage_users.py:281 main/views/organisations.py:280
 #, python-format
 msgid "Invitation cancelled for %(mail)s"
 msgstr ""
@@ -1809,117 +1807,117 @@ msgstr ""
 msgid "Are you sure you want to cancel sending this letter?"
 msgstr ""
 
-#: main/views/organisations.py:183 main/views/platform_admin.py:193
+#: main/views/organisations.py:184 main/views/platform_admin.py:194
 msgid "Service ID"
 msgstr ""
 
-#: main/views/organisations.py:184
+#: main/views/organisations.py:185
 msgid "Service Name"
 msgstr ""
 
-#: main/views/organisations.py:185
+#: main/views/organisations.py:186
 msgid "Emails sent"
 msgstr ""
 
-#: main/views/organisations.py:186
+#: main/views/organisations.py:187
 msgid "Free text message allowance remaining"
 msgstr ""
 
-#: main/views/organisations.py:191
+#: main/views/organisations.py:192
 msgid "Spent on text messages (£)"
 msgstr ""
 
-#: main/views/organisations.py:191
+#: main/views/organisations.py:192
 msgid "Spent on letters (£)"
 msgstr ""
 
-#: main/views/organisations.py:206
+#: main/views/organisations.py:207
 msgid ""
 "inline;filename=\"{} organisation usage report for year {} - generated on"
 " {}.csv\""
 msgstr ""
 
-#: main/views/organisations.py:302
+#: main/views/organisations.py:305
 msgid "Organisation name already exists"
 msgstr ""
 
-#: main/views/organisations.py:304
+#: main/views/organisations.py:307
 msgid "This organisation name is already in use"
 msgstr ""
 
-#: main/views/organisations.py:403
+#: main/views/organisations.py:406
 #, python-format
 msgid ""
 "Invalid email branding ID %(remove_branding_id)s for "
 "%(current_organisation)s"
 msgstr ""
 
-#: main/views/organisations.py:409
+#: main/views/organisations.py:412
 #, python-format
 msgid "Email branding ‘%(name)s’ removed."
 msgstr ""
 
-#: main/views/organisations.py:455 main/views/organisations.py:504
+#: main/views/organisations.py:458 main/views/organisations.py:507
 #: templates/flash_messages.html:23
 msgid "yes, make this email branding the default"
 msgstr ""
 
-#: main/views/organisations.py:473
+#: main/views/organisations.py:476
 #, python-format
 msgid ""
 "Email branding ID %(id)s is not present in organisation %(org_name)s's "
 "email branding pool."
 msgstr ""
 
-#: main/views/organisations.py:577
+#: main/views/organisations.py:580
 msgid "1 email branding option added"
 msgstr ""
 
-#: main/views/organisations.py:579
+#: main/views/organisations.py:582
 #, python-format
 msgid "%(selected_mails)s email branding options added"
 msgstr ""
 
-#: main/views/organisations.py:645
+#: main/views/organisations.py:648
 #, python-format
 msgid ""
 "Invalid letter branding ID %(remove_branding_id)s for "
 "%(current_organisation)s"
 msgstr ""
 
-#: main/views/organisations.py:653
+#: main/views/organisations.py:656
 #, python-format
 msgid "Are you sure you want to remove the letter brand ‘%s’?"
 msgstr ""
 
-#: main/views/organisations.py:656
+#: main/views/organisations.py:659
 #, python-format
 msgid "Letter branding ‘%s’ removed."
 msgstr ""
 
-#: main/views/organisations.py:680
+#: main/views/organisations.py:683
 msgid "1 letter branding option added"
 msgstr ""
 
-#: main/views/organisations.py:682
+#: main/views/organisations.py:685
 #, python-format
 msgid "%s letter branding options added"
 msgstr ""
 
-#: main/views/organisations.py:707
+#: main/views/organisations.py:710
 msgid "Domain already exists"
 msgstr ""
 
-#: main/views/organisations.py:709
+#: main/views/organisations.py:712
 msgid "This domain is already in use"
 msgstr ""
 
-#: main/views/organisations.py:808
+#: main/views/organisations.py:811
 #, python-format
 msgid "‘%s’ was deleted"
 msgstr ""
 
-#: main/views/organisations.py:812
+#: main/views/organisations.py:815
 #, python-format
 msgid "Are you sure you want to delete ‘%s’? There’s no way to undo this."
 msgstr ""
@@ -1928,224 +1926,224 @@ msgstr ""
 msgid "No organisation"
 msgstr ""
 
-#: main/views/platform_admin.py:88
+#: main/views/platform_admin.py:89
 msgid "technical failures"
 msgstr ""
 
-#: main/views/platform_admin.py:100 main/views/platform_admin.py:119
+#: main/views/platform_admin.py:101 main/views/platform_admin.py:120
 msgid "permanent failures"
 msgstr ""
 
-#: main/views/platform_admin.py:101 main/views/platform_admin.py:120
+#: main/views/platform_admin.py:102 main/views/platform_admin.py:121
 msgid "temporary failures"
 msgstr ""
 
-#: main/views/platform_admin.py:104
+#: main/views/platform_admin.py:105
 msgid "complaints"
 msgstr ""
 
-#: main/views/platform_admin.py:112
+#: main/views/platform_admin.py:113
 msgid "test emails"
 msgstr ""
 
-#: main/views/platform_admin.py:122
+#: main/views/platform_admin.py:123
 msgid "test text messages"
 msgstr ""
 
-#: main/views/platform_admin.py:130
+#: main/views/platform_admin.py:131
 msgid "virus scan failures"
 msgstr ""
 
-#: main/views/platform_admin.py:133
+#: main/views/platform_admin.py:134
 msgid "test letters"
 msgstr ""
 
-#: main/views/platform_admin.py:175
+#: main/views/platform_admin.py:176
 msgid "{} services"
 msgstr ""
 
-#: main/views/platform_admin.py:175
+#: main/views/platform_admin.py:176
 #: main/views/sub_navigation_dictionaries.py:67
 #: templates/admin_template.html:245 templates/views/trial-mode.html:7
 #: templates/views/trial-mode.html:12
 msgid "Trial mode"
 msgstr ""
 
-#: main/views/platform_admin.py:175 templates/service_navigation.html:22
+#: main/views/platform_admin.py:176 templates/service_navigation.html:22
 #: templates/views/service-settings.html:322
 msgid "Live"
 msgstr ""
 
-#: main/views/platform_admin.py:194 templates/views/performance.html:143
+#: main/views/platform_admin.py:195 templates/views/performance.html:143
 #: templates/views/service-settings.html:352
 msgid "Organisation"
 msgstr ""
 
-#: main/views/platform_admin.py:195
+#: main/views/platform_admin.py:196
 msgid "Organisation type"
 msgstr ""
 
-#: main/views/platform_admin.py:196 templates/views/service-settings.html:24
+#: main/views/platform_admin.py:197 templates/views/service-settings.html:24
 msgid "Service name"
 msgstr ""
 
-#: main/views/platform_admin.py:197
+#: main/views/platform_admin.py:198
 msgid "Consent to research"
 msgstr ""
 
-#: main/views/platform_admin.py:198
+#: main/views/platform_admin.py:199
 msgid "Main contact"
 msgstr ""
 
-#: main/views/platform_admin.py:199
+#: main/views/platform_admin.py:200
 msgid "Contact email"
 msgstr ""
 
-#: main/views/platform_admin.py:200
+#: main/views/platform_admin.py:201
 msgid "Contact mobile"
 msgstr ""
 
-#: main/views/platform_admin.py:201
+#: main/views/platform_admin.py:202
 msgid "Live date"
 msgstr ""
 
-#: main/views/platform_admin.py:202
+#: main/views/platform_admin.py:203
 msgid "SMS volume intent"
 msgstr ""
 
-#: main/views/platform_admin.py:203
+#: main/views/platform_admin.py:204
 msgid "Email volume intent"
 msgstr ""
 
-#: main/views/platform_admin.py:204
+#: main/views/platform_admin.py:205
 msgid "Letter volume intent"
 msgstr ""
 
-#: main/views/platform_admin.py:205
+#: main/views/platform_admin.py:206
 msgid "SMS sent this year"
 msgstr ""
 
-#: main/views/platform_admin.py:206
+#: main/views/platform_admin.py:207
 msgid "Emails sent this year"
 msgstr ""
 
-#: main/views/platform_admin.py:207
+#: main/views/platform_admin.py:208
 msgid "Letters sent this year"
 msgstr ""
 
-#: main/views/platform_admin.py:208
+#: main/views/platform_admin.py:209
 msgid "Free sms allowance"
 msgstr ""
 
-#: main/views/platform_admin.py:226
+#: main/views/platform_admin.py:227
 msgid "inline; filename=\"{} live services report.csv\""
 msgstr ""
 
-#: main/views/platform_admin.py:262
+#: main/views/platform_admin.py:263
 msgid ""
 "attachment; filename=\"{} to {} notification status per service "
 "report.csv\""
 msgstr ""
 
-#: main/views/platform_admin.py:298
+#: main/views/platform_admin.py:299
 msgid "Date must be in a single financial year."
 msgstr ""
 
-#: main/views/platform_admin.py:328
+#: main/views/platform_admin.py:329
 msgid "attachment; filename=\"Billing Report from {} to {}.csv\""
 msgstr ""
 
-#: main/views/platform_admin.py:334 main/views/platform_admin.py:436
-#: main/views/platform_admin.py:482
+#: main/views/platform_admin.py:335 main/views/platform_admin.py:437
+#: main/views/platform_admin.py:483
 msgid "No results for dates"
 msgstr ""
 
-#: main/views/platform_admin.py:347
+#: main/views/platform_admin.py:348
 msgid "organisation id"
 msgstr ""
 
-#: main/views/platform_admin.py:348
+#: main/views/platform_admin.py:349
 #: templates/views/organisations/organisation/settings/index.html:23
 msgid "organisation name"
 msgstr ""
 
-#: main/views/platform_admin.py:349
+#: main/views/platform_admin.py:350
 msgid "service id"
 msgstr ""
 
-#: main/views/platform_admin.py:350 templates/views/service-settings.html:30
+#: main/views/platform_admin.py:351 templates/views/service-settings.html:30
 msgid "service name"
 msgstr ""
 
-#: main/views/platform_admin.py:351 templates/views/usage.html:25
+#: main/views/platform_admin.py:352 templates/views/usage.html:25
 #: templates/views/usage.html:32
 msgid "free allowance"
 msgstr ""
 
-#: main/views/platform_admin.py:352
+#: main/views/platform_admin.py:353
 msgid "sms notifications"
 msgstr ""
 
-#: main/views/platform_admin.py:353 main/views/platform_admin.py:405
-#: main/views/platform_admin.py:453
+#: main/views/platform_admin.py:354 main/views/platform_admin.py:406
+#: main/views/platform_admin.py:454
 #: templates/views/platform-admin/get-billing-report.html:33
 msgid "sms chargeable units"
 msgstr ""
 
-#: main/views/platform_admin.py:354 main/views/platform_admin.py:406
+#: main/views/platform_admin.py:355 main/views/platform_admin.py:407
 msgid "email totals"
 msgstr ""
 
-#: main/views/platform_admin.py:355 main/views/platform_admin.py:407
+#: main/views/platform_admin.py:356 main/views/platform_admin.py:408
 msgid "letter totals"
 msgstr ""
 
-#: main/views/platform_admin.py:356
+#: main/views/platform_admin.py:357
 #: templates/views/platform-admin/get-billing-report.html:34
 msgid "letter cost"
 msgstr ""
 
-#: main/views/platform_admin.py:357 main/views/platform_admin.py:408
+#: main/views/platform_admin.py:358 main/views/platform_admin.py:409
 msgid "letter sheet totals"
 msgstr ""
 
-#: main/views/platform_admin.py:383
+#: main/views/platform_admin.py:384
 msgid "attachment; filename=\"Volumes by service report from {} to {}.csv\""
 msgstr ""
 
-#: main/views/platform_admin.py:403 main/views/platform_admin.py:451
+#: main/views/platform_admin.py:404 main/views/platform_admin.py:452
 msgid "sms totals"
 msgstr ""
 
-#: main/views/platform_admin.py:404 main/views/platform_admin.py:452
+#: main/views/platform_admin.py:405 main/views/platform_admin.py:453
 msgid "sms fragment totals"
 msgstr ""
 
-#: main/views/platform_admin.py:430
+#: main/views/platform_admin.py:431
 msgid "attachment; filename=\"Daily volumes report from {} to {}.csv\""
 msgstr ""
 
-#: main/views/platform_admin.py:450
+#: main/views/platform_admin.py:451
 msgid "provider"
 msgstr ""
 
-#: main/views/platform_admin.py:454
+#: main/views/platform_admin.py:455
 #: templates/views/platform-admin/get-billing-report.html:32
 msgid "sms cost"
 msgstr ""
 
-#: main/views/platform_admin.py:476
+#: main/views/platform_admin.py:477
 #, python-format
 msgid ""
 "attachment; filename=\"Daily SMS provider volumes report from %s to "
 "%s.csv\""
 msgstr ""
 
-#: main/views/platform_admin.py:532
+#: main/views/platform_admin.py:537
 msgid "Submitted {} letter references"
 msgstr ""
 
-#: main/views/platform_admin.py:617
+#: main/views/platform_admin.py:622
 #, python-format
 msgid "Removed %s objects across %s key formats for {%s}"
 msgstr ""
@@ -2336,11 +2334,11 @@ msgstr ""
 msgid "Letter branding request - %s"
 msgstr ""
 
-#: main/views/sign_in.py:45
+#: main/views/sign_in.py:49
 msgid "You cannot accept an invite for another person."
 msgstr ""
 
-#: main/views/sign_in.py:69
+#: main/views/sign_in.py:68
 #, python-format
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
@@ -2875,7 +2873,7 @@ msgstr ""
 msgid "{} folders"
 msgstr ""
 
-#: models/user.py:215
+#: models/user.py:214
 msgid "{} are not valid permissions"
 msgstr ""
 
@@ -4119,8 +4117,13 @@ msgid ""
 "do not need to ask permission to use them."
 msgstr ""
 
-#: templates/views/cookies.html:35
-msgctxt "in cookies.html"
+#: templates/views/cookies.html:35 templates/views/cookies.html:85
+#: templates/views/organisations/organisation/settings/index.html:18
+#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:27
+#: templates/views/platform-admin/daily-volumes-report.html:27
+#: templates/views/platform-admin/get-billing-report.html:27
+#: templates/views/platform-admin/volumes-by-service-report.html:27
+msgctxt "in table list"
 msgid "Name"
 msgstr ""
 
@@ -4188,16 +4191,6 @@ msgstr ""
 
 #: templates/views/cookies.html:82
 msgid "Google Analytics cookies"
-msgstr ""
-
-#: templates/views/cookies.html:85
-#: templates/views/organisations/organisation/settings/index.html:18
-#: templates/views/platform-admin/daily-sms-provider-volumes-report.html:27
-#: templates/views/platform-admin/daily-volumes-report.html:27
-#: templates/views/platform-admin/get-billing-report.html:27
-#: templates/views/platform-admin/volumes-by-service-report.html:27
-#: templates/views/user-profile.html:51
-msgid "Name"
 msgstr ""
 
 #: templates/views/cookies.html:92
@@ -4962,6 +4955,11 @@ msgid "Description"
 msgstr ""
 
 #: templates/views/message-status.html:30
+msgctxt "for emails"
+msgid "Sending"
+msgstr ""
+
+#: templates/views/message-status.html:30
 #: templates/views/message-status.html:59
 msgid ""
 "Notify has sent the message to the provider. The provider will try to "
@@ -5024,6 +5022,11 @@ msgstr ""
 
 #: templates/views/message-status.html:53
 msgid "Message statuses – text messages"
+msgstr ""
+
+#: templates/views/message-status.html:59
+msgctxt "for text messges"
+msgid "Sending"
 msgstr ""
 
 #: templates/views/message-status.html:60
@@ -7100,6 +7103,10 @@ msgstr ""
 #: templates/views/user-already-team-member.html:18
 #, python-format
 msgid "%%(user_name)s is already member of ‘%%(service_name)s’."
+msgstr ""
+
+#: templates/views/user-profile.html:51
+msgid "Name"
 msgstr ""
 
 #: templates/views/user-profile.html:95
@@ -12628,3 +12635,8 @@ msgstr ""
 
 #~ msgid "Yes, {}"
 #~ msgstr ""
+
+#~ msgctxt "in cookies.html"
+#~ msgid "Name"
+#~ msgstr ""
+

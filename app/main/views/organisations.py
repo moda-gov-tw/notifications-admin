@@ -1,6 +1,7 @@
 from collections import OrderedDict
 from datetime import datetime
 from functools import partial
+from gettext import pgettext
 from typing import Optional
 
 from flask import (
@@ -285,7 +286,9 @@ def cancel_invited_org_user(org_id, invited_user_id):
 def organisation_settings(org_id):
     letter_branding_pool_names = [option.name for option in current_organisation.letter_branding_pool]
     return render_template(
-        "views/organisations/organisation/settings/index.html", letter_branding_pool_names=letter_branding_pool_names
+        "views/organisations/organisation/settings/index.html",
+        letter_branding_pool_names=letter_branding_pool_names,
+        pgettext=pgettext,
     )
 
 

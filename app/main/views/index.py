@@ -1,3 +1,5 @@
+from gettext import pgettext
+
 from flask import (
     abort,
     current_app,
@@ -40,7 +42,7 @@ def error(status_code):
 
 @main.route("/cookies")
 def cookies():
-    return render_template("views/cookies.html")
+    return render_template("views/cookies.html", pgettext=pgettext)
 
 
 @main.route("/privacy")
@@ -222,6 +224,7 @@ def message_status():
     return render_template(
         "views/message-status.html",
         navigation_links=using_notify_nav(),
+        pgettext=pgettext,
     )
 
 
@@ -270,6 +273,7 @@ def guidance_index():
     return render_template(
         "views/guidance/index.html",
         navigation_links=using_notify_nav(),
+        pgettext=pgettext,
     )
 
 

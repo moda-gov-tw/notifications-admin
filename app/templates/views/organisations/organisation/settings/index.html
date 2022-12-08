@@ -15,7 +15,7 @@
       caption_visible=False
     ) %}
       {% call row() %}
-        {{ text_field(_('Name')) }}
+        {{ text_field(pgettext('in table list', 'Name')) }}
         {{ text_field(current_org.name) }}
         {{ edit_field(
             _('Change'),
