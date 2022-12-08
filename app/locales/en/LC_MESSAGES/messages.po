@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-08 17:24+0800\n"
+"POT-Creation-Date: 2022-12-08 17:45+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -4644,7 +4644,7 @@ msgstr ""
 #, python-format
 msgid ""
 "Read more about <a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">security.</a>"
+"href=\"%%s\">security</a>."
 msgstr ""
 
 #: templates/views/features.html:78
@@ -12669,4 +12669,10 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Blank (default"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Read more about <a class=\"govuk-link"
+#~ " govuk-link--no-visited-state\" "
+#~ "href=\"%%s\">security.</a>"
 #~ msgstr ""
