@@ -35,7 +35,7 @@
       <div class="govuk-grid-column-one-third">
         {{ big_number_simple(
             noti_type.black_box.number,
-            noti_type.black_box.number|message_count_label(noti_type.black_box.notification_type)
+            noti_type.black_box.number|message_count_label(noti_type.black_box.notification_type, _('sent'))
           ) }}
 
         {% for item in noti_type.other_data %}
