@@ -32,7 +32,7 @@ class Spreadsheet:
                 output = csv.writer(converted)
                 for row in self._rows:
                     output.writerow(row)
-                self._csv_data = converted.getvalue()
+                self._csv_data = converted.getvalue().encode("utf_8_sig")
         return self._csv_data
 
     @classmethod
