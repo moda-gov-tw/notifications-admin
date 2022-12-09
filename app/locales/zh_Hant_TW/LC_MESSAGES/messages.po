@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-09 10:59+0800\n"
-"PO-Revision-Date: 2022-12-09 02:05+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"PO-Revision-Date: 2022-12-09 08:46+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
+"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
-"Language-Team: Chinese (Traditional) "
-"<https://weblate.toomore.net/projects/notification-admin/notification-"
-"admin-github/zh_Hant/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -1404,7 +1404,7 @@ msgstr "選擇一個資料夾"
 
 #: main/forms.py:2413
 msgid "New template"
-msgstr "新範本"
+msgstr "新增範本"
 
 #: main/forms.py:2418
 msgid "Select the type of template you want to add"
@@ -2997,7 +2997,7 @@ msgstr "隱私權"
 #: templates/admin_template.html:148 templates/views/cookies.html:6
 #: templates/views/cookies.html:21
 msgid "Cookies"
-msgstr "Cookies"
+msgstr "Cookie"
 
 #: templates/admin_template.html:152
 #: templates/views/accessibility_statement.html:6
@@ -3094,7 +3094,7 @@ msgstr "是，註銷此 API 金鑰"
 
 #: templates/flash_messages.html:19
 msgid "Yes, stop broadcastin"
-msgstr "是，停止播送"
+msgstr "是，停止發送廣播"
 
 #: templates/main_nav.html:8 templates/views/broadcast/dashboard.html:7
 #: templates/views/broadcast/dashboard.html:12
@@ -3217,7 +3217,7 @@ msgstr ""
 
 #: templates/components/cookie-banner.html:14
 msgid "How Notify uses cookies"
-msgstr "Notify 如何使用 cookies"
+msgstr "Notify 如何使用 cookie"
 
 #: templates/components/cookie-banner.html:20
 msgid ""
@@ -3551,7 +3551,7 @@ msgstr "# 這是標題"
 #: templates/partials/templates/guidance-formatting-letters.html:12
 #: templates/partials/templates/guidance-formatting.html:11
 msgid "To make bullet points, use asterisks:"
-msgstr "如要建立項目符號，請使用星號："
+msgstr "如要加入項目符號，請使用星號："
 
 #: templates/partials/templates/guidance-formatting-letters.html:15
 msgid ""
@@ -3659,7 +3659,7 @@ msgstr "合併內容"
 
 #: templates/partials/templates/guidance-personalisation.html:7
 msgid "Use double brackets to personalise your message:"
-msgstr "使用雙括號來將內容合併您的訊息："
+msgstr "使用雙括號來將內容合併進的訊息中的預留位置："
 
 #: templates/partials/templates/guidance-personalisation.html:10
 msgid "Hello ((first name)), your reference is ((ref number))"
@@ -3702,7 +3702,7 @@ msgstr "透過電子郵件發送文件"
 msgid ""
 "Use double brackets to add a placeholder field to your template. This "
 "will contain a secure link to download the document."
-msgstr "使用雙括號將預留文字加入您的範本。這將包含一個可安全下載文件的連結。"
+msgstr "使用雙括號將預留文字加入您的範本。將包含可安全下載文件的連結。"
 
 #: templates/partials/templates/guidance-send-a-document.html:10
 msgid "Download your document at: ((link_to_file))"
@@ -4283,13 +4283,13 @@ msgstr "我們使用 cookie 使 GOV.UK Notify 正常運作並收集有關您使�
 
 #: templates/views/cookies.html:27 templates/views/cookies.html:32
 msgid "Essential cookies"
-msgstr "必要的 Cookies"
+msgstr "必要的 Cookie"
 
 #: templates/views/cookies.html:29
 msgid ""
 "Essential cookies keep your information secure while you use Notify. We "
 "do not need to ask permission to use them."
-msgstr "必要的 cookies 能在您使用 Notify 時保護您的資訊安全。我們不需要徵求許可就可以使用它們。"
+msgstr "必要的 cookie 能在您使用 Notify 時保護您的資訊安全。不需要您同意就可以使用。"
 
 #: templates/views/cookies.html:35 templates/views/cookies.html:85
 #: templates/views/organisations/organisation/settings/index.html:18
@@ -4357,7 +4357,7 @@ msgstr ""
 
 #: templates/views/cookies.html:66
 msgid "Analytics cookies (optional)"
-msgstr "分析性 cookies（選擇性）"
+msgstr "分析性 cookie（選擇性）"
 
 #: templates/views/cookies.html:68
 msgid ""
@@ -4386,7 +4386,7 @@ msgstr ""
 
 #: templates/views/cookies.html:82
 msgid "Google Analytics cookies"
-msgstr "Google Analytics cookies"
+msgstr "Google Analytics cookie"
 
 #: templates/views/cookies.html:92
 #, python-format
@@ -8108,7 +8108,7 @@ msgstr "廣播停止 %%s。"
 #: templates/views/broadcast/view-message.html:214
 #, python-format
 msgid "Stopped by %%s %%s."
-msgstr "由 %%s %%s 寄出。"
+msgstr "由 %%s %%s 停止。"
 
 #: templates/views/broadcast/view-message.html:218
 #, python-format
@@ -10034,7 +10034,7 @@ msgstr ""
 
 #: templates/views/organisations/organisation/settings/edit-domains.html:49
 msgid "For example cabinet-office.gov.uk"
-msgstr "例如cabinet-office.gov.uk"
+msgstr "例如 cabinet-office.gov.uk"
 
 #: templates/views/organisations/organisation/settings/edit-go-live-notes.html:9
 #: templates/views/organisations/organisation/settings/edit-go-live-notes.html:17
@@ -10488,11 +10488,11 @@ msgstr "載入摘要"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:6
 msgid "Volumes by service report"
-msgstr "服務報表使用量"
+msgstr "服務傳送量報表"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:26
 msgid "Descriptions of volumes by service data"
-msgstr "服務報表使用量說明"
+msgstr "服務傳送量報表說明"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:32
 msgid ""
