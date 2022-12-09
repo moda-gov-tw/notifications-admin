@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-08 18:39+0800\n"
-"PO-Revision-Date: 2022-12-08 10:48+0000\n"
+"POT-Creation-Date: 2022-12-09 09:57+0800\n"
+"PO-Revision-Date: 2022-12-08 09:39+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
-"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.toomore.net/projects/notification-admin/notification-"
+"admin-github/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -2390,11 +2390,11 @@ msgstr "您已更新電子郵件品牌"
 msgid "Letter branding request - %s"
 msgstr "信件品牌請求 - %s"
 
-#: main/views/sign_in.py:45 main/views/sign_in.py:49
+#: main/views/sign_in.py:49
 msgid "You cannot accept an invite for another person."
 msgstr "您無法替他人接受邀請。"
 
-#: main/views/sign_in.py:69 main/views/sign_in.py:68
+#: main/views/sign_in.py:68
 #, python-format
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a href=\"%s\" "
@@ -2955,7 +2955,7 @@ msgstr "一個資料夾"
 msgid "{} folders"
 msgstr "{} 資料夾"
 
-#: models/user.py:215 models/user.py:214
+#: models/user.py:214
 msgid "{} are not valid permissions"
 msgstr "{} 不是有效權限"
 
@@ -4801,7 +4801,8 @@ msgstr ""
 "併訊息內容</a>。"
 
 #: templates/views/features.html:36
-msgid "Bulk sendin"
+#: templates/views/guidance/create-and-send-messages.html:18
+msgid "Bulk sending"
 msgstr "大宗郵件寄送"
 
 #: templates/views/features.html:37
@@ -4949,8 +4950,8 @@ msgid ""
 "Read more about <a class=\"govuk-link govuk-link--no-visited-state\" href="
 "\"%%s\">security</a>."
 msgstr ""
-"了解<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">安全性"
-"</a>的更多資訊。"
+"了解<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">安全性</a>的更多資訊。"
 
 #: templates/views/features.html:78
 msgid ""
@@ -9343,10 +9344,6 @@ msgid ""
 msgstr ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">建立帳號</"
 "a>後會看到一段簡短教學，解釋如何建立訊息並寄出訊息。"
-
-#: templates/views/guidance/create-and-send-messages.html:18
-msgid "Bulk sending"
-msgstr "大宗發送"
 
 #: templates/views/guidance/create-and-send-messages.html:20
 msgid "To send a batch of messages at once:"

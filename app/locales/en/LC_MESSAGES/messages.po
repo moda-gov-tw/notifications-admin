@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-08 18:39+0800\n"
+"POT-Creation-Date: 2022-12-09 09:57+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -2338,11 +2338,11 @@ msgstr ""
 msgid "Letter branding request - %s"
 msgstr ""
 
-#: main/views/sign_in.py:45
+#: main/views/sign_in.py:49
 msgid "You cannot accept an invite for another person."
 msgstr ""
 
-#: main/views/sign_in.py:69
+#: main/views/sign_in.py:68
 #, python-format
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
@@ -2881,7 +2881,7 @@ msgstr ""
 msgid "{} folders"
 msgstr ""
 
-#: models/user.py:215
+#: models/user.py:214
 msgid "{} are not valid permissions"
 msgstr ""
 
@@ -4523,7 +4523,8 @@ msgid ""
 msgstr ""
 
 #: templates/views/features.html:36
-msgid "Bulk sendin"
+#: templates/views/guidance/create-and-send-messages.html:18
+msgid "Bulk sending"
 msgstr ""
 
 #: templates/views/features.html:37
@@ -8707,10 +8708,6 @@ msgid ""
 "messages."
 msgstr ""
 
-#: templates/views/guidance/create-and-send-messages.html:18
-msgid "Bulk sending"
-msgstr ""
-
 #: templates/views/guidance/create-and-send-messages.html:20
 msgid "To send a batch of messages at once:"
 msgstr ""
@@ -12695,4 +12692,7 @@ msgstr ""
 #~ "If you change one priority you "
 #~ "will need to change the others so"
 #~ " they add up to 100%."
+#~ msgstr ""
+
+#~ msgid "Bulk sendin"
 #~ msgstr ""
