@@ -2,6 +2,7 @@ import itertools
 import re
 from collections import OrderedDict
 from datetime import datetime
+from email.charset import Charset
 from gettext import pgettext
 
 from flask import abort, flash, redirect, render_template, request, url_for
@@ -254,16 +255,19 @@ def notifications_sent_by_service():
         ]
         result = notification_api_client.get_notification_status_by_service(start_date, end_date)
 
+        filename = Charset("UTF8").header_encode(
+            _("{start_date} to {end_date} notification status per service report.csv").format(
+                start_date=start_date,
+                end_date=end_date,
+            )
+        )
+
         return (
             Spreadsheet.from_rows([headers] + result).as_csv_data,
             200,
             {
                 "Content-Type": "text/csv; charset=utf-8",
-                "Content-Disposition": (
-                    _('attachment; filename="{} to {} notification status per service report.csv"').format(
-                        start_date, end_date
-                    )
-                ),
+                "Content-Disposition": f'attachment; filename="{filename}"',
             },
         )
 
@@ -321,14 +325,18 @@ def get_billing_report():
             for r in result
         ]
         if rows:
+            filename = Charset("UTF8").header_encode(
+                _("Billing Report from {start_date} to {end_date}.csv").format(
+                    start_date=start_date,
+                    end_date=end_date,
+                )
+            )
             return (
                 Spreadsheet.from_rows([headers] + rows).as_csv_data,
                 200,
                 {
                     "Content-Type": "text/csv; charset=utf-8",
-                    "Content-Disposition": _('attachment; filename="Billing Report from {} to {}.csv"').format(
-                        start_date, end_date
-                    ),
+                    "Content-Disposition": f'attachment; filename="{filename}"',
                 },
             )
         else:
@@ -376,14 +384,18 @@ def get_volumes_by_service():
             for r in result
         ]
         if rows:
+            filename = Charset("UTF8").header_encode(
+                _("Volumes by service report from {start_date} to {end_date}.csv").format(
+                    start_date=start_date,
+                    end_date=end_date,
+                )
+            )
             return (
                 Spreadsheet.from_rows([headers] + rows).as_csv_data,
                 200,
                 {
                     "Content-Type": "text/csv; charset=utf-8",
-                    "Content-Disposition": _(
-                        'attachment; filename="Volumes by service report from {} to {}.csv"'
-                    ).format(start_date, end_date),
+                    "Content-Disposition": f'attachment; filename="{filename}"',
                 },
             )
         else:
@@ -423,14 +435,18 @@ def get_daily_volumes():
             for r in result
         ]
         if rows:
+            filename = Charset("UTF8").header_encode(
+                _("Daily volumes report from {start_date} to {end_date}.csv").format(
+                    start_date=start_date,
+                    end_date=end_date,
+                )
+            )
             return (
                 Spreadsheet.from_rows([headers] + rows).as_csv_data,
                 200,
                 {
                     "Content-Type": "text/csv; charset=utf-8",
-                    "Content-Disposition": _('attachment; filename="Daily volumes report from {} to {}.csv"').format(
-                        start_date, end_date
-                    ),
+                    "Content-Disposition": f'attachment; filename="{filename}"',
                 },
             )
         else:
@@ -468,15 +484,18 @@ def get_daily_sms_provider_volumes():
             for r in result
         ]
         if rows:
+            filename = Charset("UTF8").header_encode(
+                _("Daily SMS provider volumes report from {start_date} to {end_date}.csv").format(
+                    start_date=start_date,
+                    end_date=end_date,
+                )
+            )
             return (
                 Spreadsheet.from_rows([headers] + rows).as_csv_data,
                 200,
                 {
                     "Content-Type": "text/csv; charset=utf-8",
-                    "Content-Disposition": (
-                        _('attachment; filename="Daily SMS provider volumes report from %s to %s.csv"')
-                        % (start_date, end_date)
-                    ),
+                    "Content-Disposition": f'attachment; filename="{filename}"',
                 },
             )
         else:
