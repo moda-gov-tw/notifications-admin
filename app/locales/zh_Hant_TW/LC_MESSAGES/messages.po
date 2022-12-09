@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-09 10:59+0800\n"
-"PO-Revision-Date: 2022-12-09 08:46+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"PO-Revision-Date: 2022-12-10 09:05+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -2163,7 +2163,7 @@ msgstr "信件總頁數"
 
 #: main/views/platform_admin.py:386
 msgid "Volumes by service report from {start_date} to {end_date}.csv"
-msgstr "服務傳送量報表 從 {start_date} 至 {end_date}.csv"
+msgstr "服務傳送量報表從 {start_date} 至 {end_date}.csv"
 
 #: main/views/platform_admin.py:413 main/views/platform_admin.py:464
 msgid "sms totals"
@@ -10520,11 +10520,11 @@ msgstr "此服務已傳送紙本信件的數量"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:37
 msgid "The cost of the letters, rate * letter totals"
-msgstr "紙本信件的成本，比率 * 紙本信件數量"
+msgstr "紙本信件的成本，單價 * 紙本信件數量"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:38
 msgid "The number of sheet sent by a service"
-msgstr "此服務已傳送試算表的數量"
+msgstr "此服務已傳送信件所使用的紙張數量"
 
 #: templates/views/pricing/billing-details-signed-out.html:17
 #, python-format
