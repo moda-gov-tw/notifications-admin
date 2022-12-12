@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-09 10:59+0800\n"
-"PO-Revision-Date: 2022-12-11 07:44+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"PO-Revision-Date: 2022-12-12 12:16+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -8953,8 +8953,8 @@ msgid ""
 "href=\"%%s\">integrate with our API</a> to send text messages "
 "automatically."
 msgstr ""
-"您也可以<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">串接我們的 API</a>來自動發送手機簡訊。"
+"您也可以<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">串接我們的 API</a> 來自動發送手機簡訊。"
 
 #: templates/views/features/text-messages.html:29
 msgid "Let people send messages to your service or reply to your texts."
@@ -8973,8 +8973,8 @@ msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
 " us</a> to request a unique number for text message replies."
 msgstr ""
-"<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">聯絡我們</a>以取得一組特別的號碼來接收簡訊回覆。"
+"若希望透過專屬門號來接收簡訊回覆，請<a class=\"govuk-link govuk-link--no-"
+"visited-state\" href=\"%%s\">聯絡我們</a>申請。"
 
 #: templates/views/features/text-messages.html:33
 msgid "Show people who your texts are from"
@@ -10561,7 +10561,7 @@ msgstr "此服務已傳送紙本信件的數量"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:37
 msgid "The cost of the letters, rate * letter totals"
-msgstr "紙本信件的成本，單價 * 紙本信件數量"
+msgstr "信件總成本，單價 * 紙本信件數量"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:38
 msgid "The number of sheet sent by a service"
@@ -11031,7 +11031,7 @@ msgstr "使用其他重音字元會增加傳送簡訊的成本。"
 #: templates/views/pricing/index.html:111
 #: templates/views/pricing/index.html:170
 msgid "Accented characters that affect text message charges"
-msgstr "重音字元會影響簡訊費用"
+msgstr "會影響簡訊費用的重音字元"
 
 #: templates/views/pricing/index.html:112
 msgid "Character"
