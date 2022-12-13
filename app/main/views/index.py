@@ -1,5 +1,3 @@
-from gettext import pgettext
-
 from flask import (
     abort,
     current_app,
@@ -9,6 +7,7 @@ from flask import (
     request,
     url_for,
 )
+from flask_babel import pgettext
 from flask_login import current_user
 from notifications_utils.template import HTMLEmailTemplate, LetterImageTemplate
 

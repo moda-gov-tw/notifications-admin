@@ -3,10 +3,9 @@ import re
 from collections import OrderedDict
 from datetime import datetime
 from email.charset import Charset
-from gettext import pgettext
 
 from flask import abort, flash, redirect, render_template, request, url_for
-from flask_babel import _
+from flask_babel import _, pgettext
 from notifications_python_client.errors import HTTPError
 
 from app import (

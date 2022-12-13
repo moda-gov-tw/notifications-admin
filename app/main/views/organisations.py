@@ -1,7 +1,6 @@
 from collections import OrderedDict
 from datetime import datetime
 from functools import partial
-from gettext import pgettext
 from typing import Optional
 
 from flask import (
@@ -14,7 +13,7 @@ from flask import (
     send_file,
     url_for,
 )
-from flask_babel import _
+from flask_babel import _, pgettext
 from flask_login import current_user
 from notifications_python_client.errors import HTTPError
 from werkzeug import Response
