@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-13 17:54+0800\n"
-"PO-Revision-Date: 2022-12-13 09:56+0000\n"
-"Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
+"PO-Revision-Date: 2022-12-14 03:43+0000\n"
+"Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
 "notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
@@ -1665,11 +1665,11 @@ msgstr "無法用來發送紙本信件"
 msgid ""
 "Are you sure you want to revoke ‘{}’? You will not be able to use this "
 "API key to connect to GOV.UK Notify."
-msgstr "您確定要撤銷「{}」嗎？將無法再使用此 API 金鑰連線至 GOV.UK Notify。"
+msgstr "您確定要廢止「{}」嗎？將無法再使用此 API 金鑰連線至 GOV.UK Notify。"
 
 #: main/views/api_keys.py:129
 msgid "‘{}’ was revoked"
-msgstr "‘{}’ 已撤銷"
+msgstr "已廢止「{}」"
 
 #: main/views/broadcast.py:66 templates/main_nav.html:9
 msgid "Past alerts"
@@ -2097,7 +2097,7 @@ msgstr "免費簡訊額度"
 
 #: main/views/platform_admin.py:223
 msgid "{} live services report.csv"
-msgstr "{} 正式服務報告.csv"
+msgstr "{} 正式環境服務報表.csv"
 
 #: main/views/platform_admin.py:257
 msgid "{start_date} to {end_date} notification status per service report.csv"
@@ -2875,7 +2875,7 @@ msgstr "申請讓此服務上線"
 
 #: models/event.py:133
 msgid "Revoked the ‘{}’ API key"
-msgstr "已撤銷「 {} 」API 金鑰"
+msgstr "已廢止「 {} 」API 金鑰"
 
 #: models/event.py:135
 msgid "Created an API key called ‘{}’"
@@ -3095,7 +3095,7 @@ msgstr "是，移除"
 
 #: templates/flash_messages.html:17
 msgid "Yes, revoke this API key"
-msgstr "是，註銷此 API 金鑰"
+msgstr "是，廢止此 API 金鑰"
 
 #: templates/flash_messages.html:19
 msgid "Yes, stop broadcastin"
@@ -5218,8 +5218,9 @@ msgid ""
 "after a message has been sent. You can download a report, including a "
 "list of sent messages, for your own records."
 msgstr ""
-"為了<a class=\"govuk-link govuk-link--no-visited-state\" "
-"href=\"%%s\">安全</a>，此資訊僅在訊息寄發後 7 天內提供。您可下載含有寄出訊息清單的報告留存。"
+"為了<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
+">安全</a>，此資訊僅在訊息寄發後 7 "
+"天內提供。您可下載含有寄出訊息清單的報表留存。"
 
 #: templates/views/message-status.html:18
 msgid ""
@@ -5980,7 +5981,7 @@ msgstr "紙本退信"
 
 #: templates/views/returned-letter-summary.html:20
 msgid "Reports are published once a month."
-msgstr "每月發布一次的報告。"
+msgstr "報表每月會發布一次。"
 
 #: templates/views/returned-letter-summary.html:23
 msgid "You’ll only get a report if one or more of your letters is returned."
@@ -7922,12 +7923,12 @@ msgstr "您還沒有建立過任何 API 金鑰"
 #: templates/views/api/keys.html:47
 #, python-format
 msgid "Revoked %%s"
-msgstr "已註銷 %%s"
+msgstr "已廢止 %%s"
 
 #: templates/views/api/keys.html:52
 #, python-format
 msgid "Revoke <span class=\"govuk-visually-hidden\">%%s</span>"
-msgstr "註銷 <span class=\"govuk-visually-hidden\">%%s</span>"
+msgstr "廢止 <span class=\"govuk-visually-hidden\">%%s</span>"
 
 #: templates/views/api/keys.html:62 templates/views/api/keys/create.html:9
 #: templates/views/api/keys/create.html:18
@@ -10409,12 +10410,12 @@ msgstr "已傳送的簡訊數量"
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:35
 #: templates/views/platform-admin/daily-volumes-report.html:35
 msgid "The number of text message fragments sent"
-msgstr "已傳送的簡訊封數"
+msgstr "已傳送的簡訊片段數量"
 
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:36
 #: templates/views/platform-admin/daily-volumes-report.html:34
 msgid "The number of text message fragments sent times the rate multiplier"
-msgstr "已傳送的簡訊封數乘上費率倍數的總值"
+msgstr "已傳送的簡訊片段數乘上費率倍數的總值"
 
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:37
 msgid "The cost to Notify’s users of text messages sent"
@@ -10447,7 +10448,7 @@ msgstr "已傳送的信件數量"
 
 #: templates/views/platform-admin/daily-volumes-report.html:38
 msgid "The number of sheets sent"
-msgstr "已傳送的頁數"
+msgstr "已傳送的信件紙張數"
 
 #: templates/views/platform-admin/get-billing-report.html:6
 #: templates/views/platform-admin/get-billing-report.html:12
@@ -10463,7 +10464,7 @@ msgstr "帳務報表資料說明"
 msgid ""
 "The total cost of text messages sent after a service has used its free "
 "allowance."
-msgstr "服務用罄免費額度後傳送簡訊的總費用。"
+msgstr "服務超出免費額度後傳送簡訊的總費用。"
 
 #: templates/views/platform-admin/get-billing-report.html:33
 msgid ""
@@ -10473,9 +10474,9 @@ msgid ""
 "href=\"https://www.notifications.service.gov.uk/pricing#international-"
 "numbers\">sending international text messages</a>."
 msgstr ""
-"超出免費額度後所寄出的簡訊封數。此數量包含<a class=\"govuk-link govuk-link--no-visited-state\""
-" href=\"https://www.notifications.service.gov.uk/pricing#international-"
-"numbers\">傳送國際簡訊的成本倍數</a>。"
+"服務超出免費額度後所寄出的簡訊封數。此數量包含<a class=\"govuk-link govuk-"
+"link--no-visited-state\" href=\"https://www.notifications.service.gov.uk/"
+"pricing#international-numbers\">傳送國際簡訊的成本倍數</a>。"
 
 #: templates/views/platform-admin/get-billing-report.html:34
 msgid "The total cost of letters sent by a service."
@@ -10499,7 +10500,8 @@ msgstr "訂購單編號、聯絡人姓名、聯絡電子郵件地址與帳務資
 msgid ""
 "We add this data manually based on the information we get from services. "
 "You can help by adding it to the service settings page."
-msgstr "我們會依照服務提供的資訊手動加入此資料。您可以也在服務設定頁面協助我們增加此資料。"
+msgstr "我們會依照服務提供的資訊手動加入此資料。您可以也在「服務設定」頁面自行加入此"
+"資料。"
 
 #: templates/views/platform-admin/index.html:20
 #: templates/views/platform-admin/notifications_by_service.html:15
@@ -10566,33 +10568,33 @@ msgstr "服務傳送量報表說明"
 msgid ""
 "Free allowance set for the service. This is the latest free allowance for"
 " the date range given"
-msgstr "設定服務免費額度。這是目前在期間內的免費額度"
+msgstr "服務的免費額度。這是在指定期間內的最新免費額度"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:33
 msgid "The number of text messages sent by the service."
-msgstr "在服務中已傳送的簡訊數量。"
+msgstr "服務已傳送的簡訊數量。"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:34
 msgid ""
 "The number of text message fragments times the rate multiplier sent by "
 "the service."
-msgstr "服務已傳送的簡訊封數乘上費率倍數的總值。"
+msgstr "服務已傳送的簡訊片段數乘上費率倍數的總值。"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:35
 msgid "The number of emails sent by a service"
-msgstr "此服務已傳送電子郵件的數量"
+msgstr "服務已傳送電子郵件的數量"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:36
 msgid "The number of letters sent by a service"
-msgstr "此服務已傳送紙本信件的數量"
+msgstr "服務已傳送紙本信件的數量"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:37
 msgid "The cost of the letters, rate * letter totals"
-msgstr "信件總成本，單價 * 紙本信件數量"
+msgstr "信件總成本，單價 * 信件數量"
 
 #: templates/views/platform-admin/volumes-by-service-report.html:38
 msgid "The number of sheet sent by a service"
-msgstr "此服務已傳送信件所使用的紙張數量"
+msgstr "服務已傳送信件所使用的紙張數量"
 
 #: templates/views/pricing/billing-details-signed-out.html:17
 #, python-format
