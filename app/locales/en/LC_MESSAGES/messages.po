@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-09 10:59+0800\n"
+"POT-Creation-Date: 2022-12-13 12:42+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -54,8 +54,8 @@ msgstr ""
 msgid "hours"
 msgstr ""
 
-#: formatters.py:142 main/views/platform_admin.py:412
-#: main/views/platform_admin.py:462
+#: formatters.py:142 main/views/platform_admin.py:415
+#: main/views/platform_admin.py:466
 msgid "day"
 msgstr ""
 
@@ -1755,7 +1755,7 @@ msgstr ""
 msgid "reference"
 msgstr ""
 
-#: main/views/jobs.py:213 main/views/platform_admin.py:510
+#: main/views/jobs.py:213 main/views/platform_admin.py:515
 #: main/views/uploads.py:97
 msgid "Invalid page argument ({})."
 msgstr ""
@@ -2047,102 +2047,102 @@ msgstr ""
 msgid "{start_date} to {end_date} notification status per service report.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:302
+#: main/views/platform_admin.py:303
 msgid "Date must be in a single financial year."
 msgstr ""
 
-#: main/views/platform_admin.py:328
+#: main/views/platform_admin.py:329
 msgid "Billing Report from {start_date} to {end_date}.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:341 main/views/platform_admin.py:449
-#: main/views/platform_admin.py:497
+#: main/views/platform_admin.py:343 main/views/platform_admin.py:453
+#: main/views/platform_admin.py:502
 msgid "No results for dates"
 msgstr ""
 
-#: main/views/platform_admin.py:354
+#: main/views/platform_admin.py:356
 msgid "organisation id"
 msgstr ""
 
-#: main/views/platform_admin.py:355
+#: main/views/platform_admin.py:357
 #: templates/views/organisations/organisation/settings/index.html:23
 msgid "organisation name"
 msgstr ""
 
-#: main/views/platform_admin.py:356
+#: main/views/platform_admin.py:358
 msgid "service id"
 msgstr ""
 
-#: main/views/platform_admin.py:357 templates/views/service-settings.html:30
+#: main/views/platform_admin.py:359 templates/views/service-settings.html:30
 msgid "service name"
 msgstr ""
 
-#: main/views/platform_admin.py:358 templates/views/usage.html:25
+#: main/views/platform_admin.py:360 templates/views/usage.html:25
 #: templates/views/usage.html:32
 msgid "free allowance"
 msgstr ""
 
-#: main/views/platform_admin.py:359
+#: main/views/platform_admin.py:361
 msgid "sms notifications"
 msgstr ""
 
-#: main/views/platform_admin.py:360 main/views/platform_admin.py:415
-#: main/views/platform_admin.py:466
+#: main/views/platform_admin.py:362 main/views/platform_admin.py:418
+#: main/views/platform_admin.py:470
 #: templates/views/platform-admin/get-billing-report.html:33
 msgid "sms chargeable units"
 msgstr ""
 
-#: main/views/platform_admin.py:361 main/views/platform_admin.py:416
+#: main/views/platform_admin.py:363 main/views/platform_admin.py:419
 msgid "email totals"
 msgstr ""
 
-#: main/views/platform_admin.py:362 main/views/platform_admin.py:417
+#: main/views/platform_admin.py:364 main/views/platform_admin.py:420
 msgid "letter totals"
 msgstr ""
 
-#: main/views/platform_admin.py:363
+#: main/views/platform_admin.py:365
 #: templates/views/platform-admin/get-billing-report.html:34
 msgid "letter cost"
 msgstr ""
 
-#: main/views/platform_admin.py:364 main/views/platform_admin.py:418
+#: main/views/platform_admin.py:366 main/views/platform_admin.py:421
 msgid "letter sheet totals"
 msgstr ""
 
-#: main/views/platform_admin.py:386
+#: main/views/platform_admin.py:388
 msgid "Volumes by service report from {start_date} to {end_date}.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:413 main/views/platform_admin.py:464
+#: main/views/platform_admin.py:416 main/views/platform_admin.py:468
 msgid "sms totals"
 msgstr ""
 
-#: main/views/platform_admin.py:414 main/views/platform_admin.py:465
+#: main/views/platform_admin.py:417 main/views/platform_admin.py:469
 msgid "sms fragment totals"
 msgstr ""
 
-#: main/views/platform_admin.py:436
+#: main/views/platform_admin.py:439
 msgid "Daily volumes report from {start_date} to {end_date}.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:463
+#: main/views/platform_admin.py:467
 msgid "provider"
 msgstr ""
 
-#: main/views/platform_admin.py:467
+#: main/views/platform_admin.py:471
 #: templates/views/platform-admin/get-billing-report.html:32
 msgid "sms cost"
 msgstr ""
 
-#: main/views/platform_admin.py:484
+#: main/views/platform_admin.py:488
 msgid "Daily SMS provider volumes report from {start_date} to {end_date}.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:551
+#: main/views/platform_admin.py:556
 msgid "Submitted {} letter references"
 msgstr ""
 
-#: main/views/platform_admin.py:636
+#: main/views/platform_admin.py:641
 #, python-format
 msgid "Removed %s objects across %s key formats for {%s}"
 msgstr ""
@@ -4303,13 +4303,25 @@ msgid ""
 msgstr ""
 
 #: templates/views/edit-broadcast-template.html:9
+#: templates/views/edit-broadcast-template.html:20
 #, python-format
 msgid "%%s template"
+msgstr ""
+
+#: templates/views/broadcast/write-new-broadcast.html:26
+#: templates/views/edit-broadcast-template.html:27
+#: templates/views/edit-email-template.html:27
+#: templates/views/edit-letter-template.html:27
+#: templates/views/edit-sms-template.html:31
+msgid "Your recipients will not see this"
 msgstr ""
 
 #: templates/views/api/callbacks/delivery-status-callback.html:39
 #: templates/views/api/guest-list.html:71
 #: templates/views/edit-broadcast-template.html:44
+#: templates/views/edit-email-template.html:35
+#: templates/views/edit-letter-template.html:32
+#: templates/views/edit-sms-template.html:51
 #: templates/views/edit-user-permissions.html:47
 #: templates/views/email-branding/manage-branding.html:42
 #: templates/views/find-users/auth_type.html:23
@@ -4365,18 +4377,13 @@ msgid "Save"
 msgstr ""
 
 #: templates/views/edit-email-template.html:9
+#: templates/views/edit-email-template.html:20
 #, python-format
 msgid "%%s email template"
 msgstr ""
 
-#: templates/views/broadcast/write-new-broadcast.html:26
-#: templates/views/edit-email-template.html:27
-#: templates/views/edit-letter-template.html:27
-#: templates/views/edit-sms-template.html:31
-msgid "Your recipients will not see this"
-msgstr ""
-
 #: templates/views/edit-letter-template.html:9
+#: templates/views/edit-letter-template.html:20
 #, python-format
 msgid "%%s letter template"
 msgstr ""

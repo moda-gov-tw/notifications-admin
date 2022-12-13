@@ -17,7 +17,7 @@
 
 {% block maincolumn_content %}
 
-    {{ page_header('{} email template'.format(heading_action)) }}
+    {{ page_header(_('%%s email template') % heading_action) }}
 
     {% call form_wrapper() %}
       <div class="govuk-grid-row">
@@ -32,7 +32,7 @@
              {{ form.process_type }}
           {% endif %}
           {{ sticky_page_footer(
-            'Save'
+            _('Save')
           ) }}
         </div>
         <div class="govuk-grid-column-full">

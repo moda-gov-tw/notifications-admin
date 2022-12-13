@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-09 10:59+0800\n"
+"POT-Creation-Date: 2022-12-13 12:42+0800\n"
 "PO-Revision-Date: 2022-12-12 12:16+0000\n"
 "Last-Translator: Peter Chen <petercpg@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
-"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.toomore.net/projects/notification-admin/notification-"
+"admin-github/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -56,8 +56,8 @@ msgstr "小時"
 msgid "hours"
 msgstr "小時"
 
-#: formatters.py:142 main/views/platform_admin.py:412
-#: main/views/platform_admin.py:462
+#: formatters.py:142 main/views/platform_admin.py:415
+#: main/views/platform_admin.py:466
 msgid "day"
 msgstr "天"
 
@@ -423,8 +423,8 @@ msgstr ""
 "除非另有聲明，所有頁面內容均以\n"
 "<a\n"
 "  class=\"govuk-footer__link\"\n"
-"  href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/"
-"version/3/\"\n"
+"  href=\"https://www.nationalarchives.gov.uk/doc/open-government-"
+"licence/version/3/\"\n"
 "  rel=\"license\"\n"
 "     >\n"
 "Open Government Licence v3.0</a> 條款進行授權"
@@ -1811,7 +1811,7 @@ msgstr "檔案名稱"
 msgid "reference"
 msgstr "參考編號"
 
-#: main/views/jobs.py:213 main/views/platform_admin.py:510
+#: main/views/jobs.py:213 main/views/platform_admin.py:515
 #: main/views/uploads.py:97
 msgid "Invalid page argument ({})."
 msgstr "無效的頁面參數（{}）。"
@@ -2103,102 +2103,102 @@ msgstr "inline; filename=\"{} 正式環境服務報表.csv\""
 msgid "{start_date} to {end_date} notification status per service report.csv"
 msgstr "從 {start_date} 到 {end_date} 各服務通知狀態報表.csv"
 
-#: main/views/platform_admin.py:302
+#: main/views/platform_admin.py:303
 msgid "Date must be in a single financial year."
 msgstr "日期必須介於相同財政年度中。"
 
-#: main/views/platform_admin.py:328
+#: main/views/platform_admin.py:329
 msgid "Billing Report from {start_date} to {end_date}.csv"
 msgstr "帳務報表 從 {start_date} 至 {end_date}.csv"
 
-#: main/views/platform_admin.py:341 main/views/platform_admin.py:449
-#: main/views/platform_admin.py:497
+#: main/views/platform_admin.py:343 main/views/platform_admin.py:453
+#: main/views/platform_admin.py:502
 msgid "No results for dates"
 msgstr "日期查無結果"
 
-#: main/views/platform_admin.py:354
+#: main/views/platform_admin.py:356
 msgid "organisation id"
 msgstr "組織 ID"
 
-#: main/views/platform_admin.py:355
+#: main/views/platform_admin.py:357
 #: templates/views/organisations/organisation/settings/index.html:23
 msgid "organisation name"
 msgstr "組織名稱"
 
-#: main/views/platform_admin.py:356
+#: main/views/platform_admin.py:358
 msgid "service id"
 msgstr "服務 ID"
 
-#: main/views/platform_admin.py:357 templates/views/service-settings.html:30
+#: main/views/platform_admin.py:359 templates/views/service-settings.html:30
 msgid "service name"
 msgstr "服務名稱"
 
-#: main/views/platform_admin.py:358 templates/views/usage.html:25
+#: main/views/platform_admin.py:360 templates/views/usage.html:25
 #: templates/views/usage.html:32
 msgid "free allowance"
 msgstr "免費額度"
 
-#: main/views/platform_admin.py:359
+#: main/views/platform_admin.py:361
 msgid "sms notifications"
 msgstr "簡訊通知"
 
-#: main/views/platform_admin.py:360 main/views/platform_admin.py:415
-#: main/views/platform_admin.py:466
+#: main/views/platform_admin.py:362 main/views/platform_admin.py:418
+#: main/views/platform_admin.py:470
 #: templates/views/platform-admin/get-billing-report.html:33
 msgid "sms chargeable units"
 msgstr "簡訊可收費單位"
 
-#: main/views/platform_admin.py:361 main/views/platform_admin.py:416
+#: main/views/platform_admin.py:363 main/views/platform_admin.py:419
 msgid "email totals"
 msgstr "電子郵件總數"
 
-#: main/views/platform_admin.py:362 main/views/platform_admin.py:417
+#: main/views/platform_admin.py:364 main/views/platform_admin.py:420
 msgid "letter totals"
 msgstr "信件總數"
 
-#: main/views/platform_admin.py:363
+#: main/views/platform_admin.py:365
 #: templates/views/platform-admin/get-billing-report.html:34
 msgid "letter cost"
 msgstr "信件費用"
 
-#: main/views/platform_admin.py:364 main/views/platform_admin.py:418
+#: main/views/platform_admin.py:366 main/views/platform_admin.py:421
 msgid "letter sheet totals"
 msgstr "信件總頁數"
 
-#: main/views/platform_admin.py:386
+#: main/views/platform_admin.py:388
 msgid "Volumes by service report from {start_date} to {end_date}.csv"
 msgstr "服務傳送量報表從 {start_date} 至 {end_date}.csv"
 
-#: main/views/platform_admin.py:413 main/views/platform_admin.py:464
+#: main/views/platform_admin.py:416 main/views/platform_admin.py:468
 msgid "sms totals"
 msgstr "簡訊總數"
 
-#: main/views/platform_admin.py:414 main/views/platform_admin.py:465
+#: main/views/platform_admin.py:417 main/views/platform_admin.py:469
 msgid "sms fragment totals"
 msgstr "總簡訊封數"
 
-#: main/views/platform_admin.py:436
+#: main/views/platform_admin.py:439
 msgid "Daily volumes report from {start_date} to {end_date}.csv"
 msgstr "每日傳送量報表 從 {start_date} 至 {end_date}.csv"
 
-#: main/views/platform_admin.py:463
+#: main/views/platform_admin.py:467
 msgid "provider"
 msgstr "供應商"
 
-#: main/views/platform_admin.py:467
+#: main/views/platform_admin.py:471
 #: templates/views/platform-admin/get-billing-report.html:32
 msgid "sms cost"
 msgstr "簡訊費用"
 
-#: main/views/platform_admin.py:484
+#: main/views/platform_admin.py:488
 msgid "Daily SMS provider volumes report from {start_date} to {end_date}.csv"
 msgstr "每日簡訊業者傳送量報表 從 {start_date} 到 {end_date}.csv"
 
-#: main/views/platform_admin.py:551
+#: main/views/platform_admin.py:556
 msgid "Submitted {} letter references"
 msgstr "已送出的 {} 信件參考編號"
 
-#: main/views/platform_admin.py:636
+#: main/views/platform_admin.py:641
 #, python-format
 msgid "Removed %s objects across %s key formats for {%s}"
 msgstr "已移除 %s 個物件，共 %s 筆 Key 於 {%s} 格式"
@@ -3361,8 +3361,8 @@ msgid ""
 "href=\"%%s\">trial mode</a> you can only\n"
 "  send to yourself and members of your team"
 msgstr ""
-"在<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">試用模式</a>中只能\n"
+"在<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">試用模式</a>中只能\n"
 "傳送通知給自己和您的團隊成員"
 
 #: templates/partials/check/sent-previously.html:2
@@ -3416,8 +3416,8 @@ msgid ""
 "href=\"%%s\">trial mode</a> you\n"
 "  can only preview how your letters will look"
 msgstr ""
-"在<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">測試模式</a>您\n"
+"在<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">測試模式</a>您\n"
 "只能預覽信件外觀"
 
 #: templates/partials/flash_messages/email_branding_confirm_change_brand_from_govuk.html:2
@@ -4536,13 +4536,25 @@ msgstr ""
 "target=\"_blank\" rel=\"noopener\">REST API 文件</a>（此連結將在新的分頁開啟）。"
 
 #: templates/views/edit-broadcast-template.html:9
+#: templates/views/edit-broadcast-template.html:20
 #, python-format
 msgid "%%s template"
 msgstr "%%s 範本"
 
+#: templates/views/broadcast/write-new-broadcast.html:26
+#: templates/views/edit-broadcast-template.html:27
+#: templates/views/edit-email-template.html:27
+#: templates/views/edit-letter-template.html:27
+#: templates/views/edit-sms-template.html:31
+msgid "Your recipients will not see this"
+msgstr "您的收件人不會看到此欄位內容"
+
 #: templates/views/api/callbacks/delivery-status-callback.html:39
 #: templates/views/api/guest-list.html:71
 #: templates/views/edit-broadcast-template.html:44
+#: templates/views/edit-email-template.html:35
+#: templates/views/edit-letter-template.html:32
+#: templates/views/edit-sms-template.html:51
 #: templates/views/edit-user-permissions.html:47
 #: templates/views/email-branding/manage-branding.html:42
 #: templates/views/find-users/auth_type.html:23
@@ -4598,18 +4610,13 @@ msgid "Save"
 msgstr "儲存"
 
 #: templates/views/edit-email-template.html:9
+#: templates/views/edit-email-template.html:20
 #, python-format
 msgid "%%s email template"
 msgstr "%%s 電子郵件範本"
 
-#: templates/views/broadcast/write-new-broadcast.html:26
-#: templates/views/edit-email-template.html:27
-#: templates/views/edit-letter-template.html:27
-#: templates/views/edit-sms-template.html:31
-msgid "Your recipients will not see this"
-msgstr "您的收件人不會看到此欄位內容"
-
 #: templates/views/edit-letter-template.html:9
+#: templates/views/edit-letter-template.html:20
 #, python-format
 msgid "%%s letter template"
 msgstr "%%s 信件範本"
@@ -5579,9 +5586,8 @@ msgid ""
 "Register</a>.\n"
 "    The Cabinet Office registration number is: Z7414053"
 msgstr ""
-"若需更多資訊，請參考資訊專員辦公室（ICO）的<a class=\"govuk-link govuk-link"
-"--no-visited-state\" href=\"https://ico.org.uk/esdwebpages/search\""
-">資料保護公開登記資料</a>。\n"
+"若需更多資訊，請參考資訊專員辦公室（ICO）的<a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"https://ico.org.uk/esdwebpages/search\">資料保護公開登記資料</a>。\n"
 "    內閣辦公室的登記編號為：Z7414053"
 
 #: templates/views/privacy.html:34
@@ -6830,8 +6836,8 @@ msgid ""
 "href=\"%%s\">request to go live</a>."
 msgstr ""
 "若要移除這些限制，您可以傳送\n"
-"                  <a class=\"govuk-link govuk-link--no-visited-state\" href="
-"\"%%s\">轉正式環境請求</a>給我們。"
+"                  <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">轉正式環境請求</a>給我們。"
 
 #: templates/views/service-settings.html:289
 msgid "Your service manager can ask to have these restrictions removed."
@@ -7124,8 +7130,8 @@ msgid ""
 "href=\"%%s\">list of services and organisations</a>."
 msgstr ""
 "看看有哪些\n"
-"         <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">服務和組織</a>使用本服務。"
+"         <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">服務和組織</a>使用本服務。"
 
 #: templates/views/signedout.html:148
 msgid ""
@@ -7191,8 +7197,8 @@ msgstr ""
 "        </p>\n"
 "        <p class=\"govuk-body\">\n"
 "          若您有任何問題或意見想回饋，\n"
-"          <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">歡迎聯絡我們</a>。\n"
+"          <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">歡迎聯絡我們</a>。\n"
 "        </p>"
 
 #: templates/views/signedout.html:190
@@ -7221,8 +7227,8 @@ msgid ""
 "href=\"%%s\">create one now</a>."
 msgstr ""
 "若您沒有帳號，可以\n"
-"            <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">立即註冊一組</a>。"
+"            <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">立即註冊一組</a>。"
 
 #: templates/views/temp-history.html:7 templates/views/temp-history.html:12
 msgid "Audit events"
@@ -7552,8 +7558,8 @@ msgid ""
 "href=\"{{ url_for('.pricing') }}\">pricing</a>."
 msgstr ""
 "一則簡訊多少錢？<br />\n"
-"              可參閱我們的<a class=\"govuk-link govuk-link--no-visited-"
-"state\" href=\"{{ url_for('.pricing') }}\">計價方式</a>。"
+"              可參閱我們的<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"{{ url_for('.pricing') }}\">計價方式</a>。"
 
 #: templates/views/user-already-invited.html:6
 #: templates/views/user-already-invited.html:15
@@ -8953,8 +8959,8 @@ msgid ""
 "href=\"%%s\">integrate with our API</a> to send text messages "
 "automatically."
 msgstr ""
-"您也可以<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">串接我們的 API</a> 來自動發送手機簡訊。"
+"您也可以<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">串接我們的 API</a> 來自動發送手機簡訊。"
 
 #: templates/views/features/text-messages.html:29
 msgid "Let people send messages to your service or reply to your texts."
@@ -8973,8 +8979,8 @@ msgid ""
 "<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\">Contact"
 " us</a> to request a unique number for text message replies."
 msgstr ""
-"若希望透過專屬門號來接收簡訊回覆，請<a class=\"govuk-link govuk-link--no-"
-"visited-state\" href=\"%%s\">聯絡我們</a>申請。"
+"若希望透過專屬門號來接收簡訊回覆，請<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">聯絡我們</a>申請。"
 
 #: templates/views/features/text-messages.html:33
 msgid "Show people who your texts are from"
@@ -11767,8 +11773,8 @@ msgid ""
 "href=\"%%s\">API integration page</a>."
 msgstr ""
 "您可以在  \n"
-"                  <a class=\"govuk-link govuk-link--no-visited-state\" href="
-"\"%%s\">API 整合頁面</a>設定收到簡訊時的 callback。"
+"                  <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">API 整合頁面</a>設定收到簡訊時的 callback。"
 
 #: templates/views/service-settings/set-inbound-sms.html:37
 #, python-format
@@ -11818,8 +11824,8 @@ msgid ""
 "        of rates."
 msgstr ""
 "查看\n"
-"            <a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">費率表</a>。"
+"            <a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">費率表</a>。"
 
 #: templates/views/service-settings/set-international-sms.html:8
 #: templates/views/service-settings/set-international-sms.html:19
@@ -11931,9 +11937,9 @@ msgid ""
 msgstr ""
 "若您的組織\n"
 "<a class=\"govuk-link govuk-link--no-visited-state\"\n"
-"      href=\"https://www.gov.uk/government/publications/govuk-proposition/"
-"govuk-proposition#organisations-independent-from-government\""
-">獨立於政府之外</a>，\n"
+"      href=\"https://www.gov.uk/government/publications/govuk-proposition"
+"/govuk-proposition#organisations-independent-from-"
+"government\">獨立於政府之外</a>，\n"
 "      就無法使用 GOV.UK 品牌。"
 
 #: templates/views/service-settings/branding/email-branding-govuk-org.html:30
@@ -12169,8 +12175,8 @@ msgid ""
 "          the problem you’re having is listed on that page."
 msgstr ""
 "首先，請先看看\n"
-"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"https://status."
-"notifications.service.gov.uk\">系統狀態頁面</a>。\n"
+"<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://status.notifications.service.gov.uk\">系統狀態頁面</a>。\n"
 "若您遇到的問題已經列於該頁面中，\n"
 "就不需聯絡我們。"
 
@@ -12209,8 +12215,8 @@ msgid ""
 " this form</a>\n"
 "          and we’ll get back to you by the next working day."
 msgstr ""
-"<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">請填寫這份表格</a>，\n"
+"<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">請填寫這份表格</a>，\n"
 "我們會在下一個工作天回覆您。"
 
 #: templates/views/support/form.html:24
@@ -12220,8 +12226,8 @@ msgid ""
 "              page to see if there are any known issues with GOV.UK "
 "Notify."
 msgstr ""
-"可到我們的<a class=\"govuk-link govuk-link--no-visited-state\" href=\"https"
-"://status.notifications.service.gov.uk\">系統狀態</a>\n"
+"可到我們的<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"https://status.notifications.service.gov.uk\">系統狀態</a>\n"
 "頁面看看是否有 GOV.UK Notify 網站的已知問題。"
 
 #: templates/views/support/index.html:12
