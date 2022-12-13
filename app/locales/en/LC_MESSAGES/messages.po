@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-13 17:22+0800\n"
+"POT-Creation-Date: 2022-12-13 17:54+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -54,8 +54,8 @@ msgstr ""
 msgid "hours"
 msgstr ""
 
-#: formatters.py:142 main/views/platform_admin.py:414
-#: main/views/platform_admin.py:465
+#: formatters.py:142 main/views/platform_admin.py:413
+#: main/views/platform_admin.py:464
 msgid "day"
 msgstr ""
 
@@ -1755,7 +1755,7 @@ msgstr ""
 msgid "reference"
 msgstr ""
 
-#: main/views/jobs.py:213 main/views/platform_admin.py:514
+#: main/views/jobs.py:213 main/views/platform_admin.py:513
 #: main/views/uploads.py:97
 msgid "Invalid page argument ({})."
 msgstr ""
@@ -2039,110 +2039,110 @@ msgstr ""
 msgid "Free sms allowance"
 msgstr ""
 
-#: main/views/platform_admin.py:227
-msgid "inline; filename=\"{} live services report.csv\""
+#: main/views/platform_admin.py:223
+msgid "{} live services report.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:258
+#: main/views/platform_admin.py:257
 msgid "{start_date} to {end_date} notification status per service report.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:302
+#: main/views/platform_admin.py:301
 msgid "Date must be in a single financial year."
 msgstr ""
 
-#: main/views/platform_admin.py:328
+#: main/views/platform_admin.py:327
 msgid "Billing Report from {start_date} to {end_date}.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:342 main/views/platform_admin.py:452
-#: main/views/platform_admin.py:501
+#: main/views/platform_admin.py:341 main/views/platform_admin.py:451
+#: main/views/platform_admin.py:500
 msgid "No results for dates"
 msgstr ""
 
-#: main/views/platform_admin.py:355
+#: main/views/platform_admin.py:354
 msgid "organisation id"
 msgstr ""
 
-#: main/views/platform_admin.py:356
+#: main/views/platform_admin.py:355
 #: templates/views/organisations/organisation/settings/index.html:23
 msgid "organisation name"
 msgstr ""
 
-#: main/views/platform_admin.py:357
+#: main/views/platform_admin.py:356
 msgid "service id"
 msgstr ""
 
-#: main/views/platform_admin.py:358 templates/views/service-settings.html:30
+#: main/views/platform_admin.py:357 templates/views/service-settings.html:30
 msgid "service name"
 msgstr ""
 
-#: main/views/platform_admin.py:359 templates/views/usage.html:25
+#: main/views/platform_admin.py:358 templates/views/usage.html:25
 #: templates/views/usage.html:32
 msgid "free allowance"
 msgstr ""
 
-#: main/views/platform_admin.py:360
+#: main/views/platform_admin.py:359
 msgid "sms notifications"
 msgstr ""
 
-#: main/views/platform_admin.py:361 main/views/platform_admin.py:417
-#: main/views/platform_admin.py:469
+#: main/views/platform_admin.py:360 main/views/platform_admin.py:416
+#: main/views/platform_admin.py:468
 #: templates/views/platform-admin/get-billing-report.html:33
 msgid "sms chargeable units"
 msgstr ""
 
-#: main/views/platform_admin.py:362 main/views/platform_admin.py:418
+#: main/views/platform_admin.py:361 main/views/platform_admin.py:417
 msgid "email totals"
 msgstr ""
 
-#: main/views/platform_admin.py:363 main/views/platform_admin.py:419
+#: main/views/platform_admin.py:362 main/views/platform_admin.py:418
 msgid "letter totals"
 msgstr ""
 
-#: main/views/platform_admin.py:364
+#: main/views/platform_admin.py:363
 #: templates/views/platform-admin/get-billing-report.html:34
 msgid "letter cost"
 msgstr ""
 
-#: main/views/platform_admin.py:365 main/views/platform_admin.py:420
+#: main/views/platform_admin.py:364 main/views/platform_admin.py:419
 msgid "letter sheet totals"
 msgstr ""
 
-#: main/views/platform_admin.py:387
+#: main/views/platform_admin.py:386
 msgid "Volumes by service report from {start_date} to {end_date}.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:415 main/views/platform_admin.py:467
+#: main/views/platform_admin.py:414 main/views/platform_admin.py:466
 msgid "sms totals"
 msgstr ""
 
-#: main/views/platform_admin.py:416 main/views/platform_admin.py:468
+#: main/views/platform_admin.py:415 main/views/platform_admin.py:467
 msgid "sms fragment totals"
 msgstr ""
 
-#: main/views/platform_admin.py:438
+#: main/views/platform_admin.py:437
 msgid "Daily volumes report from {start_date} to {end_date}.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:466
+#: main/views/platform_admin.py:465
 msgid "provider"
 msgstr ""
 
-#: main/views/platform_admin.py:470
+#: main/views/platform_admin.py:469
 #: templates/views/platform-admin/get-billing-report.html:32
 msgid "sms cost"
 msgstr ""
 
-#: main/views/platform_admin.py:487
+#: main/views/platform_admin.py:486
 msgid "Daily SMS provider volumes report from {start_date} to {end_date}.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:555
+#: main/views/platform_admin.py:554
 msgid "Submitted {} letter references"
 msgstr ""
 
-#: main/views/platform_admin.py:640
+#: main/views/platform_admin.py:639
 #, python-format
 msgid "Removed %s objects across %s key formats for {%s}"
 msgstr ""
@@ -12738,4 +12738,7 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "revoke this API key"
+#~ msgstr ""
+
+#~ msgid "inline; filename=\"{} live services report.csv\""
 #~ msgstr ""

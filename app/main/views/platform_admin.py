@@ -219,15 +219,14 @@ def live_services_csv():
 
         live_services_data.append([row[api_key] for api_key in column_names.keys()])
 
+    filename = Charset("UTF8").header_encode(
+        _("{} live services report.csv").format(format_date_numeric(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%fZ")))
+    )
+
     return (
         Spreadsheet.from_rows(live_services_data).as_csv_data,
         200,
-        {
-            "Content-Type": "text/csv; charset=utf-8",
-            "Content-Disposition": _('inline; filename="{} live services report.csv"').format(
-                format_date_numeric(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%fZ")),
-            ),
-        },
+        {"Content-Type": "text/csv; charset=utf-8", "Content-Disposition": f'inline; filename="{filename}"'},
     )
 
 
