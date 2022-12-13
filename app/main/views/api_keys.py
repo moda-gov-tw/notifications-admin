@@ -119,7 +119,7 @@ def revoke_api_key(service_id, key_id):
                     " You will not be able to use this API key to connect to GOV.UK Notify."
                 ).format(key_name)
             ],
-            _("revoke this API key"),
+            "revoke this API key",
         )
         return render_template(
             "views/api/keys.html",
