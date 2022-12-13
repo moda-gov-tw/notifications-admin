@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-13 12:42+0800\n"
+"POT-Creation-Date: 2022-12-13 14:11+0800\n"
 "PO-Revision-Date: 2022-12-12 12:16+0000\n"
 "Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -10814,6 +10814,10 @@ msgstr ""
 #: templates/views/pricing/index.html:21
 msgid "1 May 2022"
 msgstr "2022 年 5 月 1 日"
+
+#: templates/views/pricing/index.html:25
+msgid "GOV.UK Notify is free to use unless you:"
+msgstr ""
 
 #: templates/views/pricing/index.html:27
 msgid ""
