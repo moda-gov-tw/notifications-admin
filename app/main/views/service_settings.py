@@ -11,7 +11,7 @@ from flask import (
     request,
     url_for,
 )
-from flask_babel import lazy_gettext as _
+from flask_babel import _
 from flask_login import current_user
 from notifications_python_client.errors import HTTPError
 from notifications_utils.clients.zendesk.zendesk_client import NotifySupportTicket
@@ -83,7 +83,9 @@ from app.utils.user import (
     user_is_platform_admin,
 )
 
-PLATFORM_ADMIN_SERVICE_PERMISSIONS = OrderedDict(
+
+def get_platform_admin_service_permissions():
+    return OrderedDict(
     [
         (
             "inbound_sms",
@@ -94,9 +96,10 @@ PLATFORM_ADMIN_SERVICE_PERMISSIONS = OrderedDict(
     ]
 )
 
-THANKS_FOR_BRANDING_REQUEST_MESSAGE = _(
+def get_thanks_for_branding_request_message():
+    return _(
     "Thanks for your branding request. We’ll get back to you within one working day."
-)
+    )
 
 
 @main.route("/services/<uuid:service_id>/service-settings")
@@ -104,7 +107,7 @@ THANKS_FOR_BRANDING_REQUEST_MESSAGE = _(
 def service_settings(service_id):
     return render_template(
         "views/service-settings.html",
-        service_permissions=PLATFORM_ADMIN_SERVICE_PERMISSIONS,
+        service_permissions=get_platform_admin_service_permissions(),
     )
 
 
@@ -252,10 +255,10 @@ def service_switch_count_as_live(service_id):
 @main.route("/services/<uuid:service_id>/service-settings/permissions/<permission>", methods=["GET", "POST"])
 @user_is_platform_admin
 def service_set_permission(service_id, permission):
-    if permission not in PLATFORM_ADMIN_SERVICE_PERMISSIONS:
+    if permission not in get_platform_admin_service_permissions():
         abort(404)
 
-    title = PLATFORM_ADMIN_SERVICE_PERMISSIONS[permission]["title"]
+    title = get_platform_admin_service_permissions()[permission]["title"]
     form = ServiceOnOffSettingForm(name=title, enabled=current_service.has_permission(permission))
 
     if form.validate_on_submit():
@@ -1237,7 +1240,7 @@ def email_branding_govuk_and_org(service_id):
     if request.method == "POST":
         create_email_branding_zendesk_ticket("govuk_and_org")
 
-        flash(THANKS_FOR_BRANDING_REQUEST_MESSAGE, "default")
+        flash(get_platform_admin_service_permissions(), "default")
         return redirect(url_for(".service_settings", service_id=current_service.id))
 
     return render_template("views/service-settings/branding/email-branding-govuk-org.html")
@@ -1267,7 +1270,7 @@ def email_branding_organisation(service_id):
     if request.method == "POST":
         create_email_branding_zendesk_ticket("organisation")
 
-        flash(THANKS_FOR_BRANDING_REQUEST_MESSAGE, "default")
+        flash(get_platform_admin_service_permissions(), "default")
         return redirect(url_for(".service_settings", service_id=current_service.id))
 
     return render_template("views/service-settings/branding/email-branding-organisation.html")
@@ -1281,7 +1284,7 @@ def email_branding_something_else(service_id):
     if form.validate_on_submit():
         create_email_branding_zendesk_ticket("something_else", detail=form.something_else.data)
 
-        flash(THANKS_FOR_BRANDING_REQUEST_MESSAGE, "default")
+        flash(get_platform_admin_service_permissions(), "default")
         return redirect(url_for(".service_settings", service_id=current_service.id))
 
     return render_template(
@@ -1329,7 +1332,7 @@ def email_branding_enter_government_identity_logo_text(service_id):
             service_id=current_service.id,
         )
         zendesk_client.send_ticket_to_zendesk(ticket)
-        flash((THANKS_FOR_BRANDING_REQUEST_MESSAGE), "default")
+        flash((get_platform_admin_service_permissions()), "default")
         return redirect(url_for(".service_settings", service_id=current_service.id))
 
     return render_template(
@@ -1427,7 +1430,7 @@ def letter_branding_request(service_id):
             service_id=current_service.id,
         )
         zendesk_client.send_ticket_to_zendesk(ticket)
-        flash((THANKS_FOR_BRANDING_REQUEST_MESSAGE), "default")
+        flash((get_platform_admin_service_permissions()), "default")
         return redirect(
             url_for(".view_template", service_id=current_service.id, template_id=from_template)
             if from_template
