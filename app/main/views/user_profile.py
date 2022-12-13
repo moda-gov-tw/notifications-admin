@@ -1,4 +1,5 @@
 import json
+from gettext import pgettext
 
 from flask import (
     abort,
@@ -41,6 +42,7 @@ def user_profile():
     return render_template(
         "views/user-profile.html",
         can_see_edit=current_user.is_gov_user,
+        pgettext=pgettext,
     )
 
 

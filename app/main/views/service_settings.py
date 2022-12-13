@@ -11,7 +11,7 @@ from flask import (
     request,
     url_for,
 )
-from flask_babel import _
+from flask_babel import lazy_gettext as _
 from flask_login import current_user
 from notifications_python_client.errors import HTTPError
 from notifications_utils.clients.zendesk.zendesk_client import NotifySupportTicket

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-13 14:11+0800\n"
+"POT-Creation-Date: 2022-12-13 14:54+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -263,8 +263,8 @@ msgstr ""
 msgid "phone numbers"
 msgstr ""
 
-#: formatters.py:460 main/views/jobs.py:177 main/views/user_profile.py:70
-#: main/views/user_profile.py:91 templates/views/api/guest-list.html:58
+#: formatters.py:460 main/views/jobs.py:177 main/views/user_profile.py:72
+#: main/views/user_profile.py:93 templates/views/api/guest-list.html:58
 #: templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:63
 #: templates/views/user-profile.html:26
@@ -307,7 +307,7 @@ msgstr ""
 
 #: formatters.py:502 main/forms.py:1176 main/forms.py:1212 main/forms.py:1224
 #: main/forms.py:1383 main/forms.py:1609 main/forms.py:1635 main/forms.py:1918
-#: main/views/service_settings.py:237 main/views/user_profile.py:221
+#: main/views/service_settings.py:237 main/views/user_profile.py:223
 #: models/service.py:421
 #: templates/views/organisations/organisation/settings/index.html:41
 #: templates/views/providers/providers.html:32
@@ -319,7 +319,7 @@ msgstr ""
 #: formatters.py:504 formatters.py:506 main/forms.py:1177 main/forms.py:1213
 #: main/forms.py:1225 main/forms.py:1384 main/forms.py:1610 main/forms.py:1636
 #: main/forms.py:1918 main/views/service_settings.py:238
-#: main/views/user_profile.py:222 models/service.py:421
+#: main/views/user_profile.py:224 models/service.py:421
 #: templates/views/organisations/organisation/settings/index.html:42
 #: templates/views/providers/providers.html:32
 #: templates/views/providers/providers.html:56
@@ -2641,37 +2641,37 @@ msgstr ""
 msgid "Are you sure you want to delete ‘%s’?"
 msgstr ""
 
-#: main/views/user_profile.py:57 templates/views/user-profile.html:61
+#: main/views/user_profile.py:59
 msgid "name"
 msgstr ""
 
-#: main/views/user_profile.py:127
+#: main/views/user_profile.py:129
 msgid "Are you sure you want to delete your mobile number from Notify?"
 msgstr ""
 
-#: main/views/user_profile.py:165 templates/views/user-profile.html:82
+#: main/views/user_profile.py:167 templates/views/user-profile.html:82
 msgid "mobile number"
 msgstr ""
 
-#: main/views/user_profile.py:219 templates/views/user-profile.html:140
+#: main/views/user_profile.py:221 templates/views/user-profile.html:140
 #: templates/views/user-profile/disable-platform-admin-view.html:6
 msgid "Use platform admin view"
 msgstr ""
 
-#: main/views/user_profile.py:225
+#: main/views/user_profile.py:227
 #: templates/views/user-profile/disable-platform-admin-view.html:30
 msgid "Signing in again clears this setting"
 msgstr ""
 
-#: main/views/user_profile.py:275
+#: main/views/user_profile.py:277
 msgid "Are you sure you want to delete this security key?"
 msgstr ""
 
-#: main/views/user_profile.py:289
+#: main/views/user_profile.py:291
 msgid "Cannot delete last remaining webauthn credential for user"
 msgstr ""
 
-#: main/views/user_profile.py:291
+#: main/views/user_profile.py:293
 msgid "You cannot delete your last security key."
 msgstr ""
 
@@ -6277,6 +6277,12 @@ msgstr ""
 msgid "Change"
 msgstr ""
 
+#: templates/views/service-settings.html:36
+#: templates/views/service-settings/set-auth-type.html:7
+#: templates/views/service-settings/set-auth-type.html:18
+msgid "Sign-in method"
+msgstr ""
+
 #: templates/views/service-settings.html:38
 #: templates/views/service-settings/set-auth-type.html:21
 msgid "Email link or text message code"
@@ -7117,7 +7123,13 @@ msgid "%%(user_name)s is already member of ‘%%(service_name)s’."
 msgstr ""
 
 #: templates/views/user-profile.html:51
+msgctxt "user profile"
 msgid "Name"
+msgstr ""
+
+#: templates/views/user-profile.html:61
+msgctxt "user profile"
+msgid "name"
 msgstr ""
 
 #: templates/views/user-profile.html:95
@@ -9490,6 +9502,7 @@ msgid "Crown organisation"
 msgstr ""
 
 #: templates/views/organisations/organisation/settings/edit-domains.html:10
+#: templates/views/organisations/organisation/settings/edit-domains.html:37
 #: templates/views/organisations/organisation/settings/index.html:154
 msgid "Known email domains"
 msgstr ""
@@ -11059,11 +11072,6 @@ msgstr ""
 
 #: templates/views/service-settings/service-confirm-broadcast-account-type.html:48
 msgid "All team member permissions will be removed."
-msgstr ""
-
-#: templates/views/service-settings/set-auth-type.html:7
-#: templates/views/service-settings/set-auth-type.html:18
-msgid "Sign-in method"
 msgstr ""
 
 #: templates/views/service-settings/set-auth-type.html:24
@@ -12655,7 +12663,6 @@ msgstr ""
 #~ msgid "Yes, {}"
 #~ msgstr ""
 
-#~ msgctxt "in cookies.html"
 #~ msgid "Name"
 #~ msgstr ""
 

@@ -48,7 +48,7 @@
     {
       "key": {
         "classes": "notify-summary-list__key notify-summary-list__key--one-quarter",
-        "text": _("Name")
+        "text": pgettext("user profile", "Name")
       },
       "value": {
         "text": current_user.name
@@ -58,7 +58,7 @@
           {
             "href": url_for('.user_profile_name'),
             "text": _("Change"),
-            "visuallyHiddenText": _("name"),
+            "visuallyHiddenText": pgettext("user profile", "name"),
             "classes": "govuk-link--no-visited-state"
           }
         ]
