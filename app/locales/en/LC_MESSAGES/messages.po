@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-13 15:44+0800\n"
+"POT-Creation-Date: 2022-12-13 17:22+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -54,8 +54,8 @@ msgstr ""
 msgid "hours"
 msgstr ""
 
-#: formatters.py:142 main/views/platform_admin.py:415
-#: main/views/platform_admin.py:466
+#: formatters.py:142 main/views/platform_admin.py:414
+#: main/views/platform_admin.py:465
 msgid "day"
 msgstr ""
 
@@ -91,19 +91,17 @@ msgstr ""
 msgid "in the last minute"
 msgstr ""
 
-#: formatters.py:184 main/forms.py:2252 main/forms.py:2356
-#: main/views/templates.py:185
-#: templates/views/organisations/organisation/index.html:21
-#: templates/views/providers/providers.html:43
+#: formatters.py:184 main/forms.py:2260 main/forms.py:2364
+#: main/views/templates.py:185 templates/views/providers/providers.html:43
 #: templates/views/register-from-invite.html:25
 msgid "Email"
 msgstr ""
 
-#: formatters.py:184 main/forms.py:2357 main/views/templates.py:184
+#: formatters.py:184 main/forms.py:2365 main/views/templates.py:184
 msgid "Text message"
 msgstr ""
 
-#: formatters.py:184 main/forms.py:2254 main/forms.py:2358
+#: formatters.py:184 main/forms.py:2262 main/forms.py:2366
 #: main/views/templates.py:186
 #: templates/views/dashboard/template-statistics.html:27
 #: templates/views/notifications/invalid_precompiled_letter.html:4
@@ -194,122 +192,122 @@ msgstr ""
 msgid "Data no longer available"
 msgstr ""
 
-#: formatters.py:402 templates/views/organisations/organisation/index.html:25
+#: formatters.py:404 templates/views/organisations/organisation/index.html:25
 #: templates/views/platform-admin/index.html:38 templates/views/usage.html:24
 #: templates/views/usage.html:31 templates/views/usage.html:50
 msgid "sent"
 msgstr ""
 
-#: formatters.py:411
+#: formatters.py:415
 msgid "message"
 msgstr ""
 
-#: formatters.py:413 templates/views/conversations/conversation.html:27
+#: formatters.py:417 templates/views/conversations/conversation.html:27
 #: templates/views/dashboard/inbox.html:22
 msgid "messages"
 msgstr ""
 
-#: formatters.py:417
+#: formatters.py:421
 msgid "text message"
 msgstr ""
 
-#: formatters.py:419 main/forms.py:1624 main/forms.py:1789
-#: main/validators.py:121 templates/views/features.html:20
+#: formatters.py:423 main/forms.py:1632 main/forms.py:1797
+#: main/validators.py:125 templates/views/features.html:20
 msgid "text messages"
 msgstr ""
 
-#: formatters.py:423 templates/views/dashboard/monthly.html:46
+#: formatters.py:427 templates/views/dashboard/monthly.html:46
 msgid "email"
 msgstr ""
 
-#: formatters.py:425 main/forms.py:1619 main/forms.py:1788
+#: formatters.py:429 main/forms.py:1627 main/forms.py:1796
 #: templates/views/features.html:19
 msgid "emails"
 msgstr ""
 
-#: formatters.py:429 templates/views/dashboard/monthly.html:48
+#: formatters.py:433 templates/views/dashboard/monthly.html:48
 #: templates/views/returned-letter-summary.html:40
 msgid "letter"
 msgstr ""
 
-#: formatters.py:431 main/forms.py:1629 main/forms.py:1790
+#: formatters.py:435 main/forms.py:1637 main/forms.py:1798
 #: templates/views/dashboard/monthly.html:36 templates/views/features.html:21
 #: templates/views/using-notify.html:26
 msgid "letters"
 msgstr ""
 
-#: formatters.py:435
+#: formatters.py:439
 msgid "broadcast"
 msgstr ""
 
-#: formatters.py:437
+#: formatters.py:441
 msgid "broadcasts"
 msgstr ""
 
-#: formatters.py:448 main/views/jobs.py:182
+#: formatters.py:452 main/views/jobs.py:182
 msgid "recipient"
 msgstr ""
 
-#: formatters.py:450
+#: formatters.py:454
 msgid "recipients"
 msgstr ""
 
-#: formatters.py:454 main/views/jobs.py:178
+#: formatters.py:458 main/views/jobs.py:178
 #: templates/views/api/guest-list.html:64
 #: templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:81
 msgid "phone number"
 msgstr ""
 
-#: formatters.py:456
+#: formatters.py:460
 msgid "phone numbers"
 msgstr ""
 
-#: formatters.py:460 main/views/jobs.py:177 main/views/user_profile.py:72
-#: main/views/user_profile.py:93 templates/views/api/guest-list.html:58
+#: formatters.py:464 main/views/jobs.py:177 main/views/user_profile.py:71
+#: main/views/user_profile.py:92 templates/views/api/guest-list.html:58
 #: templates/views/notifications/check.html:33
 #: templates/views/uploads/contact-list/upload.html:63
 #: templates/views/user-profile.html:26
 msgid "email address"
 msgstr ""
 
-#: formatters.py:462
+#: formatters.py:466
 msgid "email addresses"
 msgstr ""
 
-#: formatters.py:466
+#: formatters.py:470
 msgid "address"
 msgstr ""
 
-#: formatters.py:468
+#: formatters.py:472
 msgid "addresses"
 msgstr ""
 
-#: formatters.py:477
+#: formatters.py:481
 msgid "once"
 msgstr ""
 
-#: formatters.py:479
+#: formatters.py:483
 msgid "twice"
 msgstr ""
 
-#: formatters.py:481
+#: formatters.py:485
 #, python-format
 msgid "%%s times"
 msgstr ""
 
-#: formatters.py:486
+#: formatters.py:490
 msgid "1 character"
 msgstr ""
 
-#: formatters.py:487
+#: formatters.py:491
 #, python-format
 msgid "%%s characters"
 msgstr ""
 
-#: formatters.py:502 main/forms.py:1176 main/forms.py:1212 main/forms.py:1224
-#: main/forms.py:1383 main/forms.py:1609 main/forms.py:1635 main/forms.py:1918
-#: main/views/service_settings.py:240 main/views/user_profile.py:223
+#: formatters.py:506 main/forms.py:1184 main/forms.py:1220 main/forms.py:1232
+#: main/forms.py:1391 main/forms.py:1617 main/forms.py:1643 main/forms.py:1926
+#: main/views/service_settings.py:240 main/views/user_profile.py:222
 #: models/service.py:421
 #: templates/views/organisations/organisation/settings/index.html:41
 #: templates/views/providers/providers.html:32
@@ -318,10 +316,10 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: formatters.py:504 formatters.py:506 main/forms.py:1177 main/forms.py:1213
-#: main/forms.py:1225 main/forms.py:1384 main/forms.py:1610 main/forms.py:1636
-#: main/forms.py:1918 main/views/service_settings.py:241
-#: main/views/user_profile.py:224 models/service.py:421
+#: formatters.py:508 formatters.py:510 main/forms.py:1185 main/forms.py:1221
+#: main/forms.py:1233 main/forms.py:1392 main/forms.py:1618 main/forms.py:1644
+#: main/forms.py:1926 main/views/service_settings.py:241
+#: main/views/user_profile.py:223 models/service.py:421
 #: templates/views/organisations/organisation/settings/index.html:42
 #: templates/views/providers/providers.html:32
 #: templates/views/providers/providers.html:56
@@ -329,17 +327,17 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: formatters.py:519 main/forms.py:1032
+#: formatters.py:523 main/forms.py:1040
 msgid "Email link"
 msgstr ""
 
-#: formatters.py:520 main/forms.py:1031 main/forms.py:1120
+#: formatters.py:524 main/forms.py:1039 main/forms.py:1128
 #: templates/views/service-settings.html:40
 #: templates/views/service-settings/set-auth-type.html:32
 msgid "Text message code"
 msgstr ""
 
-#: formatters.py:521
+#: formatters.py:525
 msgid "Security key"
 msgstr ""
 
@@ -363,7 +361,7 @@ msgstr ""
 msgid "Skip to main content"
 msgstr ""
 
-#: assets/error_pages/5xx.html:53 main/forms.py:1804
+#: assets/error_pages/5xx.html:53 main/forms.py:1812
 #: static/error_pages/5xx.html:53 utils/branding.py:8
 msgid "GOV.UK"
 msgstr ""
@@ -515,211 +513,211 @@ msgstr ""
 msgid "Select %s"
 msgstr ""
 
-#: main/forms.py:190 main/forms.py:608 main/forms.py:1601 main/forms.py:1693
-#: main/forms.py:1699 templates/views/user-profile.html:17
+#: main/forms.py:192 main/forms.py:616 main/forms.py:1609 main/forms.py:1701
+#: main/forms.py:1707 templates/views/user-profile.html:17
 #: templates/views/user-profile.html:38
 msgid "Email address"
 msgstr ""
 
-#: main/forms.py:200 main/forms.py:245 main/forms.py:249 main/forms.py:256
-#: main/forms.py:389 main/forms.py:609 main/forms.py:615 main/forms.py:639
-#: main/forms.py:649 main/forms.py:652 main/forms.py:1144 main/forms.py:1155
-#: main/forms.py:1263 main/forms.py:1298 main/forms.py:1305 main/forms.py:1375
-#: main/forms.py:1378 main/forms.py:1408 main/forms.py:1437 main/forms.py:1441
-#: main/forms.py:1444 main/forms.py:1602 main/forms.py:1734 main/forms.py:1762
-#: main/forms.py:2058 main/forms.py:2065 main/forms.py:2092 main/forms.py:2156
-#: main/forms.py:2165 main/forms.py:2179 main/forms.py:2275 main/forms.py:2290
-#: main/forms.py:2301 main/forms.py:2558 main/forms.py:2609
+#: main/forms.py:202 main/forms.py:249 main/forms.py:255 main/forms.py:264
+#: main/forms.py:397 main/forms.py:617 main/forms.py:623 main/forms.py:647
+#: main/forms.py:657 main/forms.py:660 main/forms.py:1152 main/forms.py:1163
+#: main/forms.py:1271 main/forms.py:1306 main/forms.py:1313 main/forms.py:1383
+#: main/forms.py:1386 main/forms.py:1416 main/forms.py:1445 main/forms.py:1449
+#: main/forms.py:1452 main/forms.py:1610 main/forms.py:1742 main/forms.py:1770
+#: main/forms.py:2066 main/forms.py:2073 main/forms.py:2100 main/forms.py:2164
+#: main/forms.py:2173 main/forms.py:2187 main/forms.py:2283 main/forms.py:2298
+#: main/forms.py:2309 main/forms.py:2566 main/forms.py:2617
 msgid "Cannot be empty"
 msgstr ""
 
-#: main/forms.py:244 main/forms.py:248 main/forms.py:632 main/forms.py:652
+#: main/forms.py:248 main/forms.py:254 main/forms.py:640 main/forms.py:660
 #: templates/views/user-profile.html:71
 msgid "Mobile number"
 msgstr ""
 
-#: main/forms.py:252 main/forms.py:611 templates/views/user-profile.html:92
+#: main/forms.py:260 main/forms.py:619 templates/views/user-profile.html:92
 msgid "Password"
 msgstr ""
 
-#: main/forms.py:257
+#: main/forms.py:265
 msgid "Must be at least 8 characters"
 msgstr ""
 
-#: main/forms.py:258
+#: main/forms.py:266
 msgid "Choose a password that’s harder to guess"
 msgstr ""
 
-#: main/forms.py:390
+#: main/forms.py:398
 msgid "Numbers only"
 msgstr ""
 
-#: main/forms.py:391
+#: main/forms.py:399
 msgid "Not enough numbers"
 msgstr ""
 
-#: main/forms.py:392
+#: main/forms.py:400
 msgid "Too many numbers"
 msgstr ""
 
-#: main/forms.py:439
+#: main/forms.py:447
 msgid "Number of {} must be {} or less"
 msgstr ""
 
-#: main/forms.py:444
+#: main/forms.py:452
 msgid "Enter the number of {} {}"
 msgstr ""
 
-#: main/forms.py:560
+#: main/forms.py:568
 msgid "Not a valid choice"
 msgstr ""
 
-#: main/forms.py:611
+#: main/forms.py:619
 msgid "Enter your password"
 msgstr ""
 
-#: main/forms.py:615 main/forms.py:649
+#: main/forms.py:623 main/forms.py:657
 msgid "Full name"
 msgstr ""
 
-#: main/forms.py:961
+#: main/forms.py:969
 msgid "Must provide `image_data` to initialiser"
 msgstr ""
 
-#: main/forms.py:1025
+#: main/forms.py:1033
 msgid "Folders this team member can see"
 msgstr ""
 
-#: main/forms.py:1034
+#: main/forms.py:1042
 msgid "how this team member should sign in"
 msgstr ""
 
-#: main/forms.py:1042
+#: main/forms.py:1050
 msgid "All team members can see sent messages."
 msgstr ""
 
-#: main/forms.py:1073
+#: main/forms.py:1081
 msgid "Team members who can create or approve alerts can also reject them."
 msgstr ""
 
-#: main/forms.py:1092 main/forms.py:1104
+#: main/forms.py:1100 main/forms.py:1112
 msgid "You cannot send an invitation to yourself"
 msgstr ""
 
-#: main/forms.py:1146 main/forms.py:1265
+#: main/forms.py:1154 main/forms.py:1273
 msgid "Service name must be 255 characters or fewer"
 msgstr ""
 
-#: main/forms.py:1153
+#: main/forms.py:1161
 msgid "Organisation name"
 msgstr ""
 
-#: main/forms.py:1157
+#: main/forms.py:1165
 msgid "Organisation name must be 255 characters or fewer"
 msgstr ""
 
-#: main/forms.py:1165
+#: main/forms.py:1173
 msgid "Is your GP practice called ‘{}’?"
 msgstr ""
 
-#: main/forms.py:1174
+#: main/forms.py:1182
 msgid "Is your GP practice called the same name as your service?"
 msgstr ""
 
-#: main/forms.py:1182
+#: main/forms.py:1190
 msgid "What’s your practice called?"
 msgstr ""
 
-#: main/forms.py:1199
+#: main/forms.py:1207
 msgid "Which NHS Trust or Clinical Commissioning Group do you work for?"
 msgstr ""
 
-#: main/forms.py:1200
+#: main/forms.py:1208
 msgid "an NHS Trust or Clinical Commissioning Group"
 msgstr ""
 
-#: main/forms.py:1205
+#: main/forms.py:1213
 msgid "What type of organisation is this?"
 msgstr ""
 
-#: main/forms.py:1210
+#: main/forms.py:1218
 msgid "Is this organisation a crown body?"
 msgstr ""
 
-#: main/forms.py:1214
+#: main/forms.py:1222
 #: templates/views/organisations/organisation/settings/index.html:44
 msgid "Not sure"
 msgstr ""
 
-#: main/forms.py:1216
+#: main/forms.py:1224
 msgid "whether this organisation is a crown body"
 msgstr ""
 
-#: main/forms.py:1222
+#: main/forms.py:1230
 msgid "Has this organisation signed the agreement?"
 msgstr ""
 
-#: main/forms.py:1226
+#: main/forms.py:1234
 msgid "No (but we have some service-specific agreements in place)"
 msgstr ""
 
-#: main/forms.py:1231
+#: main/forms.py:1239
 msgid "Users will be told their organisation has already signed the agreement"
 msgstr ""
 
-#: main/forms.py:1232
+#: main/forms.py:1240
 msgid "Users will be prompted to sign the agreement before they can go live"
 msgstr ""
 
-#: main/forms.py:1233
+#: main/forms.py:1241
 msgid "Users will not be prompted to sign the agreement"
 msgstr ""
 
-#: main/forms.py:1255
+#: main/forms.py:1263
 msgid "Domain names"
 msgstr ""
 
-#: main/forms.py:1261
+#: main/forms.py:1269
 msgid "What’s your service called?"
 msgstr ""
 
-#: main/forms.py:1268 main/forms.py:1273
+#: main/forms.py:1276 main/forms.py:1281
 msgid "Who runs this service?"
 msgstr ""
 
-#: main/forms.py:1291
+#: main/forms.py:1299
 msgid "Numbers of text message fragments per year"
 msgstr ""
 
-#: main/forms.py:1297
+#: main/forms.py:1305
 msgid "Number of messages the service is allowed to send each day"
 msgstr ""
 
-#: main/forms.py:1304
+#: main/forms.py:1312
 msgid "Number of messages the service can send in a rolling 60 second window"
 msgstr ""
 
-#: main/forms.py:1314
+#: main/forms.py:1322
 msgid "Enter password"
 msgstr ""
 
-#: main/forms.py:1318 main/forms.py:1501
+#: main/forms.py:1326 main/forms.py:1509
 msgid "Invalid password"
 msgstr ""
 
-#: main/forms.py:1325
+#: main/forms.py:1333
 msgid "Write your own message"
 msgstr ""
 
-#: main/forms.py:1326
+#: main/forms.py:1334
 msgid "Use a template"
 msgstr ""
 
-#: main/forms.py:1343
+#: main/forms.py:1351
 msgid "You need to confirm that you understand"
 msgstr ""
 
-#: main/forms.py:1345
+#: main/forms.py:1353
 #: templates/views/manage-users/confirm-edit-user-email.html:28
 #: templates/views/manage-users/confirm-edit-user-mobile-number.html:27
 #: templates/views/service-settings/service-confirm-broadcast-account-type.html:52
@@ -728,376 +726,376 @@ msgstr ""
 msgid "Confirm"
 msgstr ""
 
-#: main/forms.py:1350
+#: main/forms.py:1358
 #, python-format
 msgid "I understand this will alert anyone who has switched on the %s channel"
 msgstr ""
 
-#: main/forms.py:1352
+#: main/forms.py:1360
 #, python-format
 msgid "I understand this will alert %s of people"
 msgstr ""
 
-#: main/forms.py:1356
+#: main/forms.py:1364
 #, python-format
 msgid "I understand this will alert %s of people, even if they’ve opted out"
 msgstr ""
 
-#: main/forms.py:1363
+#: main/forms.py:1371
 msgid "millions"
 msgstr ""
 
-#: main/forms.py:1364
+#: main/forms.py:1372
 msgid "hundreds of thousands"
 msgstr ""
 
-#: main/forms.py:1365
+#: main/forms.py:1373
 msgid "tens of thousands"
 msgstr ""
 
-#: main/forms.py:1366
+#: main/forms.py:1374
 msgid "thousands"
 msgstr ""
 
-#: main/forms.py:1367
+#: main/forms.py:1375
 msgid "hundreds"
 msgstr ""
 
-#: main/forms.py:1368
+#: main/forms.py:1376
 msgid "an unknown number"
 msgstr ""
 
-#: main/forms.py:1375 main/views/returned_letters.py:49
+#: main/forms.py:1383 main/views/returned_letters.py:49
 #: templates/views/returned-letters.html:29
 msgid "Template name"
 msgstr ""
 
-#: main/forms.py:1381
+#: main/forms.py:1389
 msgid "Use priority queue?"
 msgstr ""
 
-#: main/forms.py:1386 main/forms.py:1612 main/forms.py:1638 main/forms.py:1919
+#: main/forms.py:1394 main/forms.py:1620 main/forms.py:1646 main/forms.py:1927
 msgid "yes or no"
 msgstr ""
 
-#: main/forms.py:1408
+#: main/forms.py:1416
 msgid "Address"
 msgstr ""
 
-#: main/forms.py:1418
+#: main/forms.py:1426
 #, python-format
 msgid "Address must be at least %s lines long"
 msgstr ""
 
-#: main/forms.py:1421
+#: main/forms.py:1429
 #, python-format
 msgid "Address must be no more than %s lines long"
 msgstr ""
 
-#: main/forms.py:1425 templates/views/check/row-errors.html:83
+#: main/forms.py:1433 templates/views/check/row-errors.html:83
 msgid "Last line of the address must be a UK postcode or another country"
 msgstr ""
 
-#: main/forms.py:1427 templates/views/check/row-errors.html:85
+#: main/forms.py:1435 templates/views/check/row-errors.html:85
 msgid "You do not have permission to send letters to other countries"
 msgstr ""
 
-#: main/forms.py:1428 templates/views/check/row-errors.html:87
+#: main/forms.py:1436 templates/views/check/row-errors.html:87
 msgid "Last line of the address must be a real UK postcode"
 msgstr ""
 
-#: main/forms.py:1432 templates/views/check/row-errors.html:90
+#: main/forms.py:1440 templates/views/check/row-errors.html:90
 #: utils/letters.py:165
 msgid ""
 "Address lines must not start with any of the following characters: @ ( ) "
 "= [ ] ” \\ / , < > ~"
 msgstr ""
 
-#: main/forms.py:1450
+#: main/forms.py:1458
 msgid "Choose the postage for this letter template"
 msgstr ""
 
-#: main/forms.py:1452 templates/views/pricing/index.html:248
+#: main/forms.py:1460 templates/views/pricing/index.html:248
 msgid "First class"
 msgstr ""
 
-#: main/forms.py:1453 templates/views/pricing/index.html:248
+#: main/forms.py:1461 templates/views/pricing/index.html:248
 msgid "Second class"
 msgstr ""
 
-#: main/forms.py:1455
+#: main/forms.py:1463
 msgid "first class or second class"
 msgstr ""
 
-#: main/forms.py:1473
+#: main/forms.py:1481
 msgid "Choose the postage for this letter"
 msgstr ""
 
-#: main/forms.py:1475
+#: main/forms.py:1483
 msgid "First class post"
 msgstr ""
 
-#: main/forms.py:1476
+#: main/forms.py:1484
 msgid "Second class post"
 msgstr ""
 
-#: main/forms.py:1496
+#: main/forms.py:1504
 msgid "Current password"
 msgstr ""
 
-#: main/forms.py:1497
+#: main/forms.py:1505
 msgid "New password"
 msgstr ""
 
-#: main/forms.py:1506
+#: main/forms.py:1514
 msgid "Add recipients"
 msgstr ""
 
-#: main/forms.py:1508
+#: main/forms.py:1516
 msgid "Please pick a file"
 msgstr ""
 
-#: main/forms.py:1510
+#: main/forms.py:1518
 msgid "File must be smaller than 10Mb"
 msgstr ""
 
-#: main/forms.py:1516
+#: main/forms.py:1524
 msgid "Your name"
 msgstr ""
 
-#: main/forms.py:1535
+#: main/forms.py:1543
 msgid "The email address is already in use"
 msgstr ""
 
-#: main/forms.py:1555
+#: main/forms.py:1563
 msgid "When should Notify send these messages?"
 msgstr ""
 
-#: main/forms.py:1566
+#: main/forms.py:1574
 msgid "Type of key"
 msgstr ""
 
-#: main/forms.py:1567
+#: main/forms.py:1575
 msgid "the type of key"
 msgstr ""
 
-#: main/forms.py:1571
+#: main/forms.py:1579
 msgid "You need to give the key a name"
 msgstr ""
 
-#: main/forms.py:1576
+#: main/forms.py:1584
 msgid "A key with this name already exists"
 msgstr ""
 
-#: main/forms.py:1581
+#: main/forms.py:1589
 msgid "How can we help you?"
 msgstr ""
 
-#: main/forms.py:1583 main/views/feedback.py:70
+#: main/forms.py:1591 main/views/feedback.py:70
 msgid "Report a problem"
 msgstr ""
 
-#: main/forms.py:1584
+#: main/forms.py:1592
 msgid "Ask a question or give feedback"
 msgstr ""
 
-#: main/forms.py:1591
+#: main/forms.py:1599
 msgid "What do you need help with?"
 msgstr ""
 
-#: main/forms.py:1593
+#: main/forms.py:1601
 msgid ""
 "I work in the public sector and need to send emails, text messages or "
 "letters"
 msgstr ""
 
-#: main/forms.py:1594
+#: main/forms.py:1602
 msgid "I’m a member of the public with a question for the government"
 msgstr ""
 
-#: main/forms.py:1600
+#: main/forms.py:1608
 msgid "Name (optional)"
 msgstr ""
 
-#: main/forms.py:1602
+#: main/forms.py:1610
 msgid "Your message"
 msgstr ""
 
-#: main/forms.py:1607
+#: main/forms.py:1615
 msgid "Is it an emergency?"
 msgstr ""
 
-#: main/forms.py:1618
+#: main/forms.py:1626
 msgid "How many emails do you expect to send in the next year?"
 msgstr ""
 
-#: main/forms.py:1620 main/forms.py:1625 main/forms.py:1630
+#: main/forms.py:1628 main/forms.py:1633 main/forms.py:1638
 msgid "you expect to send"
 msgstr ""
 
-#: main/forms.py:1623
+#: main/forms.py:1631
 msgid "How many text messages do you expect to send in the next year?"
 msgstr ""
 
-#: main/forms.py:1628
+#: main/forms.py:1636
 msgid "How many letters do you expect to send in the next year?"
 msgstr ""
 
-#: main/forms.py:1633
+#: main/forms.py:1641
 msgid "Can we contact you when we’re doing user research?"
 msgstr ""
 
-#: main/forms.py:1639
+#: main/forms.py:1647
 msgid "You do not have to take part and you can unsubscribe at any time"
 msgstr ""
 
-#: main/forms.py:1662
+#: main/forms.py:1670
 msgid "Must be between 0 and 100"
 msgstr ""
 
-#: main/forms.py:1683
+#: main/forms.py:1691
 msgid "Must add up to 100%"
 msgstr ""
 
-#: main/forms.py:1692
+#: main/forms.py:1700
 msgid "Link"
 msgstr ""
 
-#: main/forms.py:1694 main/forms.py:1701 main/views/dashboard.py:184
+#: main/forms.py:1702 main/forms.py:1709 main/views/dashboard.py:184
 msgid "Phone number"
 msgstr ""
 
-#: main/forms.py:1698 main/forms.py:2056
+#: main/forms.py:1706 main/forms.py:2064
 msgid "URL"
 msgstr ""
 
-#: main/forms.py:1706
+#: main/forms.py:1714
 msgid "Must be a valid URL"
 msgstr ""
 
-#: main/forms.py:1718
+#: main/forms.py:1726
 msgid "Must be a valid phone number"
 msgstr ""
 
-#: main/forms.py:1727
+#: main/forms.py:1735
 msgid "Make this email address the default"
 msgstr ""
 
-#: main/forms.py:1732
+#: main/forms.py:1740
 msgid "Text message sender"
 msgstr ""
 
-#: main/forms.py:1735
+#: main/forms.py:1743
 msgid "Enter 11 characters or fewer"
 msgstr ""
 
-#: main/forms.py:1736
+#: main/forms.py:1744
 msgid "Enter 3 characters or more"
 msgstr ""
 
-#: main/forms.py:1741 main/forms.py:1745
+#: main/forms.py:1749 main/forms.py:1753
 msgid "Make this text message sender the default"
 msgstr ""
 
-#: main/forms.py:1753
+#: main/forms.py:1761
 msgid "Contact email addresses"
 msgstr ""
 
-#: main/forms.py:1754
+#: main/forms.py:1762
 msgid "Contact names"
 msgstr ""
 
-#: main/forms.py:1755 main/views/returned_letters.py:46
+#: main/forms.py:1763 main/views/returned_letters.py:46
 #: templates/views/broadcast/write-new-broadcast.html:27 utils/csv.py:76
 msgid "Reference"
 msgstr ""
 
-#: main/forms.py:1756
+#: main/forms.py:1764
 msgid "Purchase order number"
 msgstr ""
 
-#: main/forms.py:1764
+#: main/forms.py:1772
 msgid "Set as your default address"
 msgstr ""
 
-#: main/forms.py:1769
+#: main/forms.py:1777
 msgid "Contains {} lines, maximum is 10"
 msgstr ""
 
-#: main/forms.py:1781
+#: main/forms.py:1789
 msgid "Choices"
 msgstr ""
 
-#: main/forms.py:1801
+#: main/forms.py:1809
 msgid "a branding style"
 msgstr ""
 
-#: main/forms.py:1829 main/forms.py:1924
+#: main/forms.py:1837 main/forms.py:1932
 msgid "Name of brand"
 msgstr ""
 
-#: main/forms.py:1830
+#: main/forms.py:1838
 msgid "Text"
 msgstr ""
 
-#: main/forms.py:1832
+#: main/forms.py:1840
 msgid "Colour"
 msgstr ""
 
-#: main/forms.py:1834
+#: main/forms.py:1842
 msgid "Must be a valid color hex code (starting with #)"
 msgstr ""
 
-#: main/forms.py:1838
+#: main/forms.py:1846
 msgid "Upload a PNG logo"
 msgstr ""
 
-#: main/forms.py:1838
+#: main/forms.py:1846
 msgid "PNG Images only!"
 msgstr ""
 
-#: main/forms.py:1840
+#: main/forms.py:1848
 msgid "Brand type"
 msgstr ""
 
-#: main/forms.py:1842
+#: main/forms.py:1850
 msgid "GOV.UK and branding"
 msgstr ""
 
-#: main/forms.py:1843
+#: main/forms.py:1851
 msgid "Branding only"
 msgstr ""
 
-#: main/forms.py:1844
+#: main/forms.py:1852
 msgid "Branding banner"
 msgstr ""
 
-#: main/forms.py:1851
+#: main/forms.py:1859
 msgid "This field is required"
 msgstr ""
 
-#: main/forms.py:1856
+#: main/forms.py:1864
 msgid "Email branding id"
 msgstr ""
 
-#: main/forms.py:1863 main/forms.py:1871
+#: main/forms.py:1871 main/forms.py:1879
 msgid "Branding options"
 msgstr ""
 
-#: main/forms.py:1864
+#: main/forms.py:1872
 msgid "Select at least 1 email branding option"
 msgstr ""
 
-#: main/forms.py:1872
+#: main/forms.py:1880
 msgid "Select at least 1 letter branding option"
 msgstr ""
 
-#: main/forms.py:1880
+#: main/forms.py:1888
 #, python-format
 msgid "Should other teams in %s have the option to use this branding?"
 msgstr ""
 
-#: main/forms.py:1896
+#: main/forms.py:1904
 #, python-format
 msgid ""
 "\n"
@@ -1109,7 +1107,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: main/forms.py:1907
+#: main/forms.py:1915
 #, python-format
 msgid ""
 "\n"
@@ -1120,59 +1118,59 @@ msgid ""
 "        "
 msgstr ""
 
-#: main/forms.py:1929
+#: main/forms.py:1937
 msgid "Upload an SVG logo"
 msgstr ""
 
-#: main/forms.py:1931
+#: main/forms.py:1939
 msgid "SVG Images only!"
 msgstr ""
 
-#: main/forms.py:1932
+#: main/forms.py:1940
 msgid "You need to upload a file to submit"
 msgstr ""
 
-#: main/forms.py:1941
+#: main/forms.py:1949
 msgid "Upload a letter in PDF format"
 msgstr ""
 
-#: main/forms.py:1943
+#: main/forms.py:1951
 msgid "Save your letter as a PDF and try again."
 msgstr ""
 
-#: main/forms.py:1944
+#: main/forms.py:1952
 msgid "You need to choose a file to upload"
 msgstr ""
 
-#: main/forms.py:1970 templates/views/pricing/billing-details.html:41
+#: main/forms.py:1978 templates/views/pricing/billing-details.html:41
 msgid "Email addresses"
 msgstr ""
 
-#: main/forms.py:1977
+#: main/forms.py:1985
 msgid "Mobile numbers"
 msgstr ""
 
-#: main/forms.py:1982 main/forms.py:1988
+#: main/forms.py:1990 main/forms.py:1996
 msgid "Start Date"
 msgstr ""
 
-#: main/forms.py:1983 main/forms.py:1989
+#: main/forms.py:1991 main/forms.py:1997
 msgid "End Date"
 msgstr ""
 
-#: main/forms.py:1984
+#: main/forms.py:1992
 msgid "Include test keys"
 msgstr ""
 
-#: main/forms.py:1993
+#: main/forms.py:2001
 msgid "First day covered by report"
 msgstr ""
 
-#: main/forms.py:1994
+#: main/forms.py:2002
 msgid "Last day covered by report"
 msgstr ""
 
-#: main/forms.py:1999 main/forms.py:2036
+#: main/forms.py:2007 main/forms.py:2044
 #: templates/views/broadcast/areas-with-sub-areas.html:22
 #: templates/views/broadcast/areas.html:24
 #: templates/views/organisations/add-nhs-local-organisation.html:28
@@ -1184,81 +1182,81 @@ msgstr ""
 msgid "Search by name"
 msgstr ""
 
-#: main/forms.py:2000
+#: main/forms.py:2008
 msgid "You need to enter full or partial name to search by."
 msgstr ""
 
-#: main/forms.py:2006 main/forms.py:2012
+#: main/forms.py:2014 main/forms.py:2020
 msgid "Search by name or email address"
 msgstr ""
 
-#: main/forms.py:2007
+#: main/forms.py:2015
 msgid "You need to enter full or partial email address to search by."
 msgstr ""
 
-#: main/forms.py:2019
+#: main/forms.py:2027
 msgid "Search by email address"
 msgstr ""
 
-#: main/forms.py:2020
+#: main/forms.py:2028
 msgid "Search by phone number"
 msgstr ""
 
-#: main/forms.py:2027
+#: main/forms.py:2035
 msgid "Search by phone number or email address"
 msgstr ""
 
-#: main/forms.py:2036
+#: main/forms.py:2044
 msgid "Search by name or ID"
 msgstr ""
 
-#: main/forms.py:2049
+#: main/forms.py:2057
 #: templates/views/service-settings/set-inbound-number.html:7
 msgid "Set inbound number"
 msgstr ""
 
-#: main/forms.py:2050
+#: main/forms.py:2058
 msgid "an inbound number"
 msgstr ""
 
-#: main/forms.py:2059
+#: main/forms.py:2067
 msgid "Must be a valid https URL"
 msgstr ""
 
-#: main/forms.py:2063
+#: main/forms.py:2071
 msgid "Bearer token"
 msgstr ""
 
-#: main/forms.py:2066
+#: main/forms.py:2074
 msgid "Must be at least 10 characters"
 msgstr ""
 
-#: main/forms.py:2112
+#: main/forms.py:2120
 msgid "Select your sender"
 msgstr ""
 
-#: main/forms.py:2122
+#: main/forms.py:2130
 msgid "Select an organisation"
 msgstr ""
 
-#: main/forms.py:2127
+#: main/forms.py:2135
 msgid "Something else"
 msgstr ""
 
-#: main/forms.py:2135
+#: main/forms.py:2143
 msgid "Choose your new email branding"
 msgstr ""
 
-#: main/forms.py:2143
+#: main/forms.py:2151
 msgid "Choose your new letter branding"
 msgstr ""
 
-#: main/forms.py:2144 main/forms.py:2164
+#: main/forms.py:2152 main/forms.py:2172
 #: templates/views/service-settings/branding/email-branding-something-else.html:8
 msgid "Describe the branding you want"
 msgstr ""
 
-#: main/forms.py:2171
+#: main/forms.py:2179
 #: templates/views/service-settings/branding/letter-branding-options.html:32
 #: templates/views/service-settings/branding/letter-branding-options.html:44
 msgid ""
@@ -1266,241 +1264,241 @@ msgid ""
 "branding."
 msgstr ""
 
-#: main/forms.py:2178
+#: main/forms.py:2186
 msgid "Enter the text that will appear in your logo"
 msgstr ""
 
-#: main/forms.py:2187
+#: main/forms.py:2195
 msgid ""
 "This is usually the full name of your organisation.<br/><br/>For example,"
 " {organisation_name}"
 msgstr ""
 
-#: main/forms.py:2196
+#: main/forms.py:2204
 msgid "Department of Education"
 msgstr ""
 
-#: main/forms.py:2204
+#: main/forms.py:2212
 #: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:10
 #: templates/views/service-settings/branding/email-branding-create-government-identity-logo.html:19
 msgid "Create a government identity logo"
 msgstr ""
 
-#: main/forms.py:2205
+#: main/forms.py:2213
 msgid "Upload a logo"
 msgstr ""
 
-#: main/forms.py:2209
+#: main/forms.py:2217
 msgid "Choose a logo for your emails"
 msgstr ""
 
-#: main/forms.py:2218
+#: main/forms.py:2226
 msgid "No banner"
 msgstr ""
 
-#: main/forms.py:2221
+#: main/forms.py:2229
 msgid ""
 "An example of an email with the heading \"Your logo\" in blue text on a "
 "white background."
 msgstr ""
 
-#: main/forms.py:2228
+#: main/forms.py:2236
 msgid "Coloured banner"
 msgstr ""
 
-#: main/forms.py:2231
+#: main/forms.py:2239
 msgid "An example of an email with a logo on a blue banner."
 msgstr ""
 
-#: main/forms.py:2238
+#: main/forms.py:2246
 msgid "Add a banner to your logo"
 msgstr ""
 
-#: main/forms.py:2250
+#: main/forms.py:2258
 msgid "What notification type?"
 msgstr ""
 
-#: main/forms.py:2253 templates/views/providers/providers.html:13
+#: main/forms.py:2261 templates/views/providers/providers.html:13
 msgid "SMS"
 msgstr ""
 
-#: main/forms.py:2256
+#: main/forms.py:2264
 msgid "notification type"
 msgstr ""
 
-#: main/forms.py:2259 main/forms.py:2266
+#: main/forms.py:2267 main/forms.py:2274
 msgid "Days of retention"
 msgstr ""
 
-#: main/forms.py:2260 main/forms.py:2267
+#: main/forms.py:2268 main/forms.py:2275
 msgid "Must be between 3 and 90"
 msgstr ""
 
-#: main/forms.py:2273
+#: main/forms.py:2281
 msgid "Letter references"
 msgstr ""
 
-#: main/forms.py:2288
+#: main/forms.py:2296
 msgid "Team members who can see this folder"
 msgstr ""
 
-#: main/forms.py:2290
+#: main/forms.py:2298
 msgid "Folder name"
 msgstr ""
 
-#: main/forms.py:2299
+#: main/forms.py:2307
 msgid "Must be empty"
 msgstr ""
 
-#: main/forms.py:2324 models/service.py:514 templates/main_nav.html:14
+#: main/forms.py:2332 models/service.py:514 templates/main_nav.html:14
 #: templates/views/templates/choose.html:10
 msgid "Templates"
 msgstr ""
 
-#: main/forms.py:2359 main/views/templates.py:187
+#: main/forms.py:2367 main/views/templates.py:187
 msgid "Broadcast"
 msgstr ""
 
-#: main/forms.py:2360 templates/views/templates/copy.html:5
+#: main/forms.py:2368 templates/views/templates/copy.html:5
 msgid "Copy an existing template"
 msgstr ""
 
-#: main/forms.py:2398
+#: main/forms.py:2406
 msgid "Choose templates or folders"
 msgstr ""
 
-#: main/forms.py:2407
+#: main/forms.py:2415
 msgid "Choose a folder"
 msgstr ""
 
-#: main/forms.py:2413
+#: main/forms.py:2421
 msgid "New template"
 msgstr ""
 
-#: main/forms.py:2418
+#: main/forms.py:2426
 msgid "Select the type of template you want to add"
 msgstr ""
 
-#: main/forms.py:2424
+#: main/forms.py:2432
 msgid "What do you want to clear today"
 msgstr ""
 
-#: main/forms.py:2429
+#: main/forms.py:2437
 msgid "Select at least one option"
 msgstr ""
 
-#: main/forms.py:2434
+#: main/forms.py:2442
 msgid "Go live notes"
 msgstr ""
 
-#: main/forms.py:2453
+#: main/forms.py:2461
 #: templates/views/service-settings/service-set-broadcast-channel.html:7
 msgid "Emergency alerts settings"
 msgstr ""
 
-#: main/forms.py:2454
+#: main/forms.py:2462
 msgid "mode or channel"
 msgstr ""
 
-#: main/forms.py:2456
+#: main/forms.py:2464
 msgid "Training mode"
 msgstr ""
 
-#: main/forms.py:2457
+#: main/forms.py:2465
 msgid "Operator channel"
 msgstr ""
 
-#: main/forms.py:2458
+#: main/forms.py:2466
 msgid "Test channel"
 msgstr ""
 
-#: main/forms.py:2459
+#: main/forms.py:2467
 msgid "Live channel"
 msgstr ""
 
-#: main/forms.py:2460
+#: main/forms.py:2468
 msgid "Government channel"
 msgstr ""
 
-#: main/forms.py:2471 main/forms.py:2475
+#: main/forms.py:2479 main/forms.py:2483
 #: templates/views/service-settings/service-set-broadcast-network.html:10
 #: templates/views/service-settings/service-set-broadcast-network.html:21
 msgid "Choose a mobile network"
 msgstr ""
 
-#: main/forms.py:2472
+#: main/forms.py:2480
 msgid "All networks"
 msgstr ""
 
-#: main/forms.py:2472
+#: main/forms.py:2480
 msgid "A single network"
 msgstr ""
 
-#: main/forms.py:2496
+#: main/forms.py:2504
 msgid "Select a mobile network"
 msgstr ""
 
-#: main/forms.py:2501
+#: main/forms.py:2509
 msgid "Change cell broadcast service type"
 msgstr ""
 
-#: main/forms.py:2502
+#: main/forms.py:2510
 msgid "which type of account this cell broadcast service is"
 msgstr ""
 
-#: main/forms.py:2531
+#: main/forms.py:2539
 msgid "Which version of the agreement do you want to accept?"
 msgstr ""
 
-#: main/forms.py:2534
+#: main/forms.py:2542
 msgid "Who are you accepting the agreement for?"
 msgstr ""
 
-#: main/forms.py:2537
+#: main/forms.py:2545
 msgid "me"
 msgstr ""
 
-#: main/forms.py:2538
+#: main/forms.py:2546
 msgid "Yourself"
 msgstr ""
 
-#: main/forms.py:2547
+#: main/forms.py:2555
 msgid "What’s their name?"
 msgstr ""
 
-#: main/forms.py:2550
+#: main/forms.py:2558
 msgid "What’s their email address?"
 msgstr ""
 
-#: main/forms.py:2569
+#: main/forms.py:2577
 msgid "Must be a number"
 msgstr ""
 
-#: main/forms.py:2573
+#: main/forms.py:2581
 msgid "Choose areas to broadcast to"
 msgstr ""
 
-#: main/forms.py:2587
+#: main/forms.py:2595
 msgid "Select all"
 msgstr ""
 
-#: main/forms.py:2607
+#: main/forms.py:2615
 msgid "Name of key"
 msgstr ""
 
-#: main/forms.py:2611
+#: main/forms.py:2619
 msgid "Name of key must be 255 characters or fewer"
 msgstr ""
 
-#: main/forms.py:2642
+#: main/forms.py:2650
 msgid "Coat of arms or insignia"
 msgstr ""
 
-#: main/forms.py:2667
+#: main/forms.py:2675
 msgid "Colour for stripe"
 msgstr ""
 
-#: main/forms.py:2668
+#: main/forms.py:2676
 msgid "a colour for the stripe"
 msgstr ""
 
@@ -1508,15 +1506,15 @@ msgstr ""
 msgid "Password is in list of commonly used passwords."
 msgstr ""
 
-#: main/validators.py:30
+#: main/validators.py:32
 msgid "Not a csv file"
 msgstr ""
 
-#: main/validators.py:35
+#: main/validators.py:37
 msgid "{} is not a spreadsheet that Notify can read"
 msgstr ""
 
-#: main/validators.py:46
+#: main/validators.py:48
 msgid ""
 "\n"
 "            Enter a public sector email address or\n"
@@ -1525,60 +1523,60 @@ msgid ""
 "        "
 msgstr ""
 
-#: main/validators.py:58
+#: main/validators.py:60
 msgid "Enter a valid email address"
 msgstr ""
 
-#: main/validators.py:72
+#: main/validators.py:76
 msgid "You cannot put commas between double brackets"
 msgstr ""
 
-#: main/validators.py:100
+#: main/validators.py:104
 msgid "This SVG has an embedded raster image in it and will not render well"
 msgstr ""
 
-#: main/validators.py:105
+#: main/validators.py:109
 msgid ""
 "This SVG has text which has not been converted to paths and may not "
 "render well"
 msgstr ""
 
-#: main/validators.py:117
+#: main/validators.py:121
 msgid ""
 "You cannot use {} in {}. {} will not show up properly on everyone’s "
 "phones."
 msgstr ""
 
-#: main/validators.py:123
+#: main/validators.py:127
 msgid "It"
 msgstr ""
 
-#: main/validators.py:123
+#: main/validators.py:127
 msgid "They"
 msgstr ""
 
-#: main/validators.py:130
+#: main/validators.py:134
 msgid "You can’t use ((double brackets)) to personalise this message"
 msgstr ""
 
-#: main/validators.py:150
+#: main/validators.py:154
 #, python-format
 msgid "Content must be %s characters or fewer because it contains %s"
 msgstr ""
 
-#: main/validators.py:163
+#: main/validators.py:169
 msgid "Use letters and numbers only"
 msgstr ""
 
-#: main/validators.py:172
+#: main/validators.py:180
 msgid "Cannot start with 00"
 msgstr ""
 
-#: main/validators.py:184
+#: main/validators.py:194
 msgid "Must include at least two alphanumeric characters"
 msgstr ""
 
-#: main/validators.py:204
+#: main/validators.py:214
 #, python-format
 msgid "Cannot contain %s"
 msgstr ""
@@ -1627,8 +1625,8 @@ msgid ""
 "API key to connect to GOV.UK Notify."
 msgstr ""
 
-#: main/views/api_keys.py:122
-msgid "revoke this API key"
+#: main/views/api_keys.py:129
+msgid "‘{}’ was revoked"
 msgstr ""
 
 #: main/views/broadcast.py:66 templates/main_nav.html:9
@@ -1757,7 +1755,7 @@ msgstr ""
 msgid "reference"
 msgstr ""
 
-#: main/views/jobs.py:213 main/views/platform_admin.py:515
+#: main/views/jobs.py:213 main/views/platform_admin.py:514
 #: main/views/uploads.py:97
 msgid "Invalid page argument ({})."
 msgstr ""
@@ -1794,7 +1792,7 @@ msgstr ""
 msgid "You cannot remove the only user for a service"
 msgstr ""
 
-#: main/views/manage_users.py:281 main/views/organisations.py:280
+#: main/views/manage_users.py:281 main/views/organisations.py:279
 #, python-format
 msgid "Invitation cancelled for %(mail)s"
 msgstr ""
@@ -1813,117 +1811,117 @@ msgstr ""
 msgid "Are you sure you want to cancel sending this letter?"
 msgstr ""
 
-#: main/views/organisations.py:184 main/views/platform_admin.py:195
+#: main/views/organisations.py:183 main/views/platform_admin.py:194
 msgid "Service ID"
 msgstr ""
 
-#: main/views/organisations.py:185
+#: main/views/organisations.py:184
 msgid "Service Name"
 msgstr ""
 
-#: main/views/organisations.py:186
+#: main/views/organisations.py:185
 msgid "Emails sent"
 msgstr ""
 
-#: main/views/organisations.py:187
+#: main/views/organisations.py:186
 msgid "Free text message allowance remaining"
 msgstr ""
 
-#: main/views/organisations.py:192
+#: main/views/organisations.py:191
 msgid "Spent on text messages (£)"
 msgstr ""
 
-#: main/views/organisations.py:192
+#: main/views/organisations.py:191
 msgid "Spent on letters (£)"
 msgstr ""
 
-#: main/views/organisations.py:207
+#: main/views/organisations.py:206
 msgid ""
 "inline;filename=\"{} organisation usage report for year {} - generated on"
 " {}.csv\""
 msgstr ""
 
-#: main/views/organisations.py:305
+#: main/views/organisations.py:304
 msgid "Organisation name already exists"
 msgstr ""
 
-#: main/views/organisations.py:307
+#: main/views/organisations.py:306
 msgid "This organisation name is already in use"
 msgstr ""
 
-#: main/views/organisations.py:406
+#: main/views/organisations.py:405
 #, python-format
 msgid ""
 "Invalid email branding ID %(remove_branding_id)s for "
 "%(current_organisation)s"
 msgstr ""
 
-#: main/views/organisations.py:412
+#: main/views/organisations.py:411
 #, python-format
 msgid "Email branding ‘%(name)s’ removed."
 msgstr ""
 
-#: main/views/organisations.py:458 main/views/organisations.py:507
+#: main/views/organisations.py:457 main/views/organisations.py:506
 #: templates/flash_messages.html:23
 msgid "yes, make this email branding the default"
 msgstr ""
 
-#: main/views/organisations.py:476
+#: main/views/organisations.py:475
 #, python-format
 msgid ""
 "Email branding ID %(id)s is not present in organisation %(org_name)s's "
 "email branding pool."
 msgstr ""
 
-#: main/views/organisations.py:580
+#: main/views/organisations.py:579
 msgid "1 email branding option added"
 msgstr ""
 
-#: main/views/organisations.py:582
+#: main/views/organisations.py:581
 #, python-format
 msgid "%(selected_mails)s email branding options added"
 msgstr ""
 
-#: main/views/organisations.py:648
+#: main/views/organisations.py:647
 #, python-format
 msgid ""
 "Invalid letter branding ID %(remove_branding_id)s for "
 "%(current_organisation)s"
 msgstr ""
 
-#: main/views/organisations.py:656
+#: main/views/organisations.py:655
 #, python-format
 msgid "Are you sure you want to remove the letter brand ‘%s’?"
 msgstr ""
 
-#: main/views/organisations.py:659
+#: main/views/organisations.py:658
 #, python-format
 msgid "Letter branding ‘%s’ removed."
 msgstr ""
 
-#: main/views/organisations.py:683
+#: main/views/organisations.py:682
 msgid "1 letter branding option added"
 msgstr ""
 
-#: main/views/organisations.py:685
+#: main/views/organisations.py:684
 #, python-format
 msgid "%s letter branding options added"
 msgstr ""
 
-#: main/views/organisations.py:710
+#: main/views/organisations.py:709
 msgid "Domain already exists"
 msgstr ""
 
-#: main/views/organisations.py:712
+#: main/views/organisations.py:711
 msgid "This domain is already in use"
 msgstr ""
 
-#: main/views/organisations.py:811
+#: main/views/organisations.py:810
 #, python-format
 msgid "‘%s’ was deleted"
 msgstr ""
 
-#: main/views/organisations.py:815
+#: main/views/organisations.py:814
 #, python-format
 msgid "Are you sure you want to delete ‘%s’? There’s no way to undo this."
 msgstr ""
@@ -1932,219 +1930,219 @@ msgstr ""
 msgid "No organisation"
 msgstr ""
 
-#: main/views/platform_admin.py:90
+#: main/views/platform_admin.py:89
 msgid "technical failures"
 msgstr ""
 
-#: main/views/platform_admin.py:102 main/views/platform_admin.py:121
+#: main/views/platform_admin.py:101 main/views/platform_admin.py:120
 msgid "permanent failures"
 msgstr ""
 
-#: main/views/platform_admin.py:103 main/views/platform_admin.py:122
+#: main/views/platform_admin.py:102 main/views/platform_admin.py:121
 msgid "temporary failures"
 msgstr ""
 
-#: main/views/platform_admin.py:106
+#: main/views/platform_admin.py:105
 msgid "complaints"
 msgstr ""
 
-#: main/views/platform_admin.py:114
+#: main/views/platform_admin.py:113
 msgid "test emails"
 msgstr ""
 
-#: main/views/platform_admin.py:124
+#: main/views/platform_admin.py:123
 msgid "test text messages"
 msgstr ""
 
-#: main/views/platform_admin.py:132
+#: main/views/platform_admin.py:131
 msgid "virus scan failures"
 msgstr ""
 
-#: main/views/platform_admin.py:135
+#: main/views/platform_admin.py:134
 msgid "test letters"
 msgstr ""
 
-#: main/views/platform_admin.py:177
+#: main/views/platform_admin.py:176
 msgid "{} services"
 msgstr ""
 
-#: main/views/platform_admin.py:177
+#: main/views/platform_admin.py:176
 #: main/views/sub_navigation_dictionaries.py:67
 #: templates/admin_template.html:245 templates/views/trial-mode.html:7
 #: templates/views/trial-mode.html:12
 msgid "Trial mode"
 msgstr ""
 
-#: main/views/platform_admin.py:177 templates/service_navigation.html:22
+#: main/views/platform_admin.py:176 templates/service_navigation.html:22
 #: templates/views/service-settings.html:322
 msgid "Live"
 msgstr ""
 
-#: main/views/platform_admin.py:196 templates/views/performance.html:143
+#: main/views/platform_admin.py:195 templates/views/performance.html:143
 #: templates/views/service-settings.html:352
 msgid "Organisation"
 msgstr ""
 
-#: main/views/platform_admin.py:197
+#: main/views/platform_admin.py:196
 msgid "Organisation type"
 msgstr ""
 
-#: main/views/platform_admin.py:198 templates/views/service-settings.html:24
+#: main/views/platform_admin.py:197 templates/views/service-settings.html:24
 msgid "Service name"
 msgstr ""
 
-#: main/views/platform_admin.py:199
+#: main/views/platform_admin.py:198
 msgid "Consent to research"
 msgstr ""
 
-#: main/views/platform_admin.py:200
+#: main/views/platform_admin.py:199
 msgid "Main contact"
 msgstr ""
 
-#: main/views/platform_admin.py:201
+#: main/views/platform_admin.py:200
 msgid "Contact email"
 msgstr ""
 
-#: main/views/platform_admin.py:202
+#: main/views/platform_admin.py:201
 msgid "Contact mobile"
 msgstr ""
 
-#: main/views/platform_admin.py:203
+#: main/views/platform_admin.py:202
 msgid "Live date"
 msgstr ""
 
-#: main/views/platform_admin.py:204
+#: main/views/platform_admin.py:203
 msgid "SMS volume intent"
 msgstr ""
 
-#: main/views/platform_admin.py:205
+#: main/views/platform_admin.py:204
 msgid "Email volume intent"
 msgstr ""
 
-#: main/views/platform_admin.py:206
+#: main/views/platform_admin.py:205
 msgid "Letter volume intent"
 msgstr ""
 
-#: main/views/platform_admin.py:207
+#: main/views/platform_admin.py:206
 msgid "SMS sent this year"
 msgstr ""
 
-#: main/views/platform_admin.py:208
+#: main/views/platform_admin.py:207
 msgid "Emails sent this year"
 msgstr ""
 
-#: main/views/platform_admin.py:209
+#: main/views/platform_admin.py:208
 msgid "Letters sent this year"
 msgstr ""
 
-#: main/views/platform_admin.py:210
+#: main/views/platform_admin.py:209
 msgid "Free sms allowance"
 msgstr ""
 
-#: main/views/platform_admin.py:228
+#: main/views/platform_admin.py:227
 msgid "inline; filename=\"{} live services report.csv\""
 msgstr ""
 
-#: main/views/platform_admin.py:259
+#: main/views/platform_admin.py:258
 msgid "{start_date} to {end_date} notification status per service report.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:303
+#: main/views/platform_admin.py:302
 msgid "Date must be in a single financial year."
 msgstr ""
 
-#: main/views/platform_admin.py:329
+#: main/views/platform_admin.py:328
 msgid "Billing Report from {start_date} to {end_date}.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:343 main/views/platform_admin.py:453
-#: main/views/platform_admin.py:502
+#: main/views/platform_admin.py:342 main/views/platform_admin.py:452
+#: main/views/platform_admin.py:501
 msgid "No results for dates"
 msgstr ""
 
-#: main/views/platform_admin.py:356
+#: main/views/platform_admin.py:355
 msgid "organisation id"
 msgstr ""
 
-#: main/views/platform_admin.py:357
+#: main/views/platform_admin.py:356
 #: templates/views/organisations/organisation/settings/index.html:23
 msgid "organisation name"
 msgstr ""
 
-#: main/views/platform_admin.py:358
+#: main/views/platform_admin.py:357
 msgid "service id"
 msgstr ""
 
-#: main/views/platform_admin.py:359 templates/views/service-settings.html:30
+#: main/views/platform_admin.py:358 templates/views/service-settings.html:30
 msgid "service name"
 msgstr ""
 
-#: main/views/platform_admin.py:360 templates/views/usage.html:25
+#: main/views/platform_admin.py:359 templates/views/usage.html:25
 #: templates/views/usage.html:32
 msgid "free allowance"
 msgstr ""
 
-#: main/views/platform_admin.py:361
+#: main/views/platform_admin.py:360
 msgid "sms notifications"
 msgstr ""
 
-#: main/views/platform_admin.py:362 main/views/platform_admin.py:418
-#: main/views/platform_admin.py:470
+#: main/views/platform_admin.py:361 main/views/platform_admin.py:417
+#: main/views/platform_admin.py:469
 #: templates/views/platform-admin/get-billing-report.html:33
 msgid "sms chargeable units"
 msgstr ""
 
-#: main/views/platform_admin.py:363 main/views/platform_admin.py:419
+#: main/views/platform_admin.py:362 main/views/platform_admin.py:418
 msgid "email totals"
 msgstr ""
 
-#: main/views/platform_admin.py:364 main/views/platform_admin.py:420
+#: main/views/platform_admin.py:363 main/views/platform_admin.py:419
 msgid "letter totals"
 msgstr ""
 
-#: main/views/platform_admin.py:365
+#: main/views/platform_admin.py:364
 #: templates/views/platform-admin/get-billing-report.html:34
 msgid "letter cost"
 msgstr ""
 
-#: main/views/platform_admin.py:366 main/views/platform_admin.py:421
+#: main/views/platform_admin.py:365 main/views/platform_admin.py:420
 msgid "letter sheet totals"
 msgstr ""
 
-#: main/views/platform_admin.py:388
+#: main/views/platform_admin.py:387
 msgid "Volumes by service report from {start_date} to {end_date}.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:416 main/views/platform_admin.py:468
+#: main/views/platform_admin.py:415 main/views/platform_admin.py:467
 msgid "sms totals"
 msgstr ""
 
-#: main/views/platform_admin.py:417 main/views/platform_admin.py:469
+#: main/views/platform_admin.py:416 main/views/platform_admin.py:468
 msgid "sms fragment totals"
 msgstr ""
 
-#: main/views/platform_admin.py:439
+#: main/views/platform_admin.py:438
 msgid "Daily volumes report from {start_date} to {end_date}.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:467
+#: main/views/platform_admin.py:466
 msgid "provider"
 msgstr ""
 
-#: main/views/platform_admin.py:471
+#: main/views/platform_admin.py:470
 #: templates/views/platform-admin/get-billing-report.html:32
 msgid "sms cost"
 msgstr ""
 
-#: main/views/platform_admin.py:488
+#: main/views/platform_admin.py:487
 msgid "Daily SMS provider volumes report from {start_date} to {end_date}.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:556
+#: main/views/platform_admin.py:555
 msgid "Submitted {} letter references"
 msgstr ""
 
-#: main/views/platform_admin.py:641
+#: main/views/platform_admin.py:640
 #, python-format
 msgid "Removed %s objects across %s key formats for {%s}"
 msgstr ""
@@ -2335,11 +2333,11 @@ msgstr ""
 msgid "Letter branding request - %s"
 msgstr ""
 
-#: main/views/sign_in.py:45
+#: main/views/sign_in.py:49
 msgid "You cannot accept an invite for another person."
 msgstr ""
 
-#: main/views/sign_in.py:69
+#: main/views/sign_in.py:68
 #, python-format
 msgid ""
 "The email address or password you entered is incorrect.&ensp;<a "
@@ -2361,6 +2359,7 @@ msgstr ""
 #: templates/views/features/emails.html:9
 #: templates/views/features/emails.html:14
 #: templates/views/message-status.html:21
+#: templates/views/organisations/organisation/index.html:21
 #: templates/views/platform-admin/services.html:14
 #: templates/views/pricing/index.html:43 templates/views/signedout.html:147
 #: templates/views/usage.html:22
@@ -2643,37 +2642,37 @@ msgstr ""
 msgid "Are you sure you want to delete ‘%s’?"
 msgstr ""
 
-#: main/views/user_profile.py:59
+#: main/views/user_profile.py:58
 msgid "name"
 msgstr ""
 
-#: main/views/user_profile.py:129
+#: main/views/user_profile.py:128
 msgid "Are you sure you want to delete your mobile number from Notify?"
 msgstr ""
 
-#: main/views/user_profile.py:167 templates/views/user-profile.html:82
+#: main/views/user_profile.py:166 templates/views/user-profile.html:82
 msgid "mobile number"
 msgstr ""
 
-#: main/views/user_profile.py:221 templates/views/user-profile.html:140
+#: main/views/user_profile.py:220 templates/views/user-profile.html:140
 #: templates/views/user-profile/disable-platform-admin-view.html:6
 msgid "Use platform admin view"
 msgstr ""
 
-#: main/views/user_profile.py:227
+#: main/views/user_profile.py:226
 #: templates/views/user-profile/disable-platform-admin-view.html:30
 msgid "Signing in again clears this setting"
 msgstr ""
 
-#: main/views/user_profile.py:277
+#: main/views/user_profile.py:276
 msgid "Are you sure you want to delete this security key?"
 msgstr ""
 
-#: main/views/user_profile.py:291
+#: main/views/user_profile.py:290
 msgid "Cannot delete last remaining webauthn credential for user"
 msgstr ""
 
-#: main/views/user_profile.py:293
+#: main/views/user_profile.py:292
 msgid "You cannot delete your last security key."
 msgstr ""
 
@@ -2878,7 +2877,7 @@ msgstr ""
 msgid "{} folders"
 msgstr ""
 
-#: models/user.py:215
+#: models/user.py:214
 msgid "{} are not valid permissions"
 msgstr ""
 
@@ -12736,4 +12735,7 @@ msgstr ""
 #~ msgid ""
 #~ "attachment; filename=\"Daily SMS provider "
 #~ "volumes report from %s to %s.csv\""
+#~ msgstr ""
+
+#~ msgid "revoke this API key"
 #~ msgstr ""
