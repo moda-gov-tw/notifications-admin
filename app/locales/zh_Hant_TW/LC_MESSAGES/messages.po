@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-13 14:54+0800\n"
+"POT-Creation-Date: 2022-12-13 15:44+0800\n"
 "PO-Revision-Date: 2022-12-13 07:01+0000\n"
 "Last-Translator: Weblate Admin <toomore0929@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
-"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.toomore.net/projects/notification-admin/notification-"
+"admin-github/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -94,7 +94,9 @@ msgid "in the last minute"
 msgstr "前一分鐘內"
 
 #: formatters.py:184 main/forms.py:2252 main/forms.py:2356
-#: main/views/templates.py:185 templates/views/providers/providers.html:43
+#: main/views/templates.py:185
+#: templates/views/organisations/organisation/index.html:21
+#: templates/views/providers/providers.html:43
 #: templates/views/register-from-invite.html:25
 msgid "Email"
 msgstr "電子郵件"
@@ -309,7 +311,7 @@ msgstr "%%s 個字元"
 
 #: formatters.py:502 main/forms.py:1176 main/forms.py:1212 main/forms.py:1224
 #: main/forms.py:1383 main/forms.py:1609 main/forms.py:1635 main/forms.py:1918
-#: main/views/service_settings.py:237 main/views/user_profile.py:223
+#: main/views/service_settings.py:240 main/views/user_profile.py:223
 #: models/service.py:421
 #: templates/views/organisations/organisation/settings/index.html:41
 #: templates/views/providers/providers.html:32
@@ -320,7 +322,7 @@ msgstr "是"
 
 #: formatters.py:504 formatters.py:506 main/forms.py:1177 main/forms.py:1213
 #: main/forms.py:1225 main/forms.py:1384 main/forms.py:1610 main/forms.py:1636
-#: main/forms.py:1918 main/views/service_settings.py:238
+#: main/forms.py:1918 main/views/service_settings.py:241
 #: main/views/user_profile.py:224 models/service.py:421
 #: templates/views/organisations/organisation/settings/index.html:42
 #: templates/views/providers/providers.html:32
@@ -2293,100 +2295,100 @@ msgstr "使用我的 {}"
 msgid "Service {} could not send notification: \"{}\""
 msgstr "{} 服務無法傳送通知：「{}」"
 
-#: main/views/service_settings.py:90
+#: main/views/service_settings.py:92
 msgid "Receive inbound SMS"
 msgstr "接收回傳簡訊"
 
-#: main/views/service_settings.py:92
+#: main/views/service_settings.py:94
 msgid "Email authentication"
 msgstr "電子郵件認證"
 
-#: main/views/service_settings.py:93 templates/views/service-settings.html:223
+#: main/views/service_settings.py:95 templates/views/service-settings.html:223
 #: templates/views/service-settings/set-international-letters.html:8
 msgid "Send international letters"
 msgstr "寄送國際郵件"
 
-#: main/views/service_settings.py:97
+#: main/views/service_settings.py:100
 msgid ""
 "Thanks for your branding request. We’ll get back to you within one "
 "working day."
 msgstr "感謝您提出品牌識別申請，我們會在一個工作天內與您聯絡。"
 
-#: main/views/service_settings.py:196
+#: main/views/service_settings.py:199
 #, python-format
 msgid "Request to go live - %s"
 msgstr "請求轉換正式環境 - %s"
 
-#: main/views/service_settings.py:210
+#: main/views/service_settings.py:213
 msgid ""
 "Thanks for your request to go live. We’ll get back to you within one "
 "working day."
 msgstr "感謝您申請轉為正式環境，我們會在一個工作天內與您聯絡。"
 
-#: main/views/service_settings.py:217 main/views/service_settings.py:225
+#: main/views/service_settings.py:220 main/views/service_settings.py:228
 msgid "Make service live"
 msgstr "讓服務上線"
 
-#: main/views/service_settings.py:235 main/views/service_settings.py:247
+#: main/views/service_settings.py:238 main/views/service_settings.py:250
 #: templates/views/service-settings.html:333
 msgid "Count in list of live services"
 msgstr "列出於已上線服務清單"
 
-#: main/views/service_settings.py:387
+#: main/views/service_settings.py:390
 msgid "‘{}’ was deleted"
 msgstr "「{}」已被刪除"
 
-#: main/views/service_settings.py:393
+#: main/views/service_settings.py:396
 msgid "Are you sure you want to delete ‘{}’? There’s no way to undo this."
 msgstr "您確定要刪除「{}」嗎？這個動作將無法復原。"
 
-#: main/views/service_settings.py:600
+#: main/views/service_settings.py:603
 msgid "Are you sure you want to delete this reply-to email address?"
 msgstr "您確定要刪除此回信電子郵件地址？"
 
-#: main/views/service_settings.py:652
+#: main/views/service_settings.py:655
 msgid "Start all text messages with ‘{}:’"
 msgstr "將所有簡訊開頭設為「{}：」"
 
-#: main/views/service_settings.py:665
+#: main/views/service_settings.py:668
 msgid "Send text messages to international phone numbers"
 msgstr "傳送簡訊訊息給國際電話"
 
-#: main/views/service_settings.py:670
+#: main/views/service_settings.py:673
 msgid "international_sms"
 msgstr "國際簡訊"
 
-#: main/views/service_settings.py:899
+#: main/views/service_settings.py:902
 msgid "Are you sure you want to delete this text message sender?"
 msgstr "您確定要刪除此簡訊發送者？"
 
-#: main/views/service_settings.py:1011
+#: main/views/service_settings.py:1014
 #, python-format
 msgid "The email branding has been set to %s"
 msgstr "已將電子郵件品牌設定為 %s"
 
-#: main/views/service_settings.py:1018
+#: main/views/service_settings.py:1021
 #, python-format
 msgid ""
 "The email branding has been set to %s and it has been added to %s's email"
 " branding pool"
 msgstr "電子郵件品牌已經設定到 %s 並加入 %s 電子郵件品牌列表中"
 
-#: main/views/service_settings.py:1143 main/views/service_settings.py:1322
+#: main/views/service_settings.py:1146 main/views/service_settings.py:1325
 #, python-format
 msgid "Email branding request - %s"
 msgstr "電子郵件品牌請求 - %s"
 
-#: main/views/service_settings.py:1196
+#: main/views/service_settings.py:1199
 msgid "No branding found for this id."
 msgstr "沒有這組 ID 的品牌。"
 
-#: main/views/service_settings.py:1202 main/views/service_settings.py:1226
-#: main/views/service_settings.py:1254
+#: main/views/service_settings.py:1205 main/views/service_settings.py:1229
+#: main/views/service_settings.py:1257
 msgid "You’ve updated your email branding"
 msgstr "您已更新電子郵件品牌"
 
-#: main/views/service_settings.py:1420
+#: main/views/service_settings.py:1423
 #, python-format
 msgid "Letter branding request - %s"
 msgstr "信件品牌請求 - %s"
@@ -8612,6 +8614,19 @@ msgstr "使用範本"
 msgid "No messages sent"
 msgstr "未寄出訊息"
 
+#: templates/views/dashboard/all-template-statistics.html:38
+#: templates/views/dashboard/template-statistics.html:15
+#: templates/views/uploads/contact-list/contact-list.html:39 utils/csv.py:71
+#: utils/csv.py:77
+msgid "Template"
+msgstr "範本"
+
+#: templates/views/dashboard/all-template-statistics.html:39
+#: templates/views/dashboard/monthly.html:17
+#: templates/views/dashboard/template-statistics.html:16
+msgid "Messages sent"
+msgstr "寄出的訊息"
+
 #: templates/views/dashboard/dashboard.html:20
 msgid "upcoming"
 msgstr "即將到來"
@@ -8658,16 +8673,6 @@ msgstr "簡訊"
 #: templates/views/dashboard/monthly.html:71
 msgid "Financial year ends 31 March."
 msgstr "會計年度結束於 3 月 31 日。"
-
-#: templates/views/dashboard/template-statistics.html:15
-#: templates/views/uploads/contact-list/contact-list.html:39 utils/csv.py:71
-#: utils/csv.py:77
-msgid "Template"
-msgstr "範本"
-
-#: templates/views/dashboard/template-statistics.html:16
-msgid "Messages sent"
-msgstr "寄出的訊息"
 
 #: templates/views/dashboard/template-statistics.html:41
 msgid "See templates used by month"
@@ -10040,6 +10045,10 @@ msgstr "依服務搜尋"
 #: templates/views/organisations/organisation/index.html:65
 msgid "By service"
 msgstr "依服務"
+
+#: templates/views/organisations/organisation/index.html:91
+msgid "free {}"
+msgstr "免費{}"
 
 #: templates/views/organisations/organisation/index.html:110
 #, python-format

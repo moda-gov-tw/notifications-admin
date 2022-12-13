@@ -18,7 +18,7 @@
 
   <div class="govuk-grid-row bottom-gutter">
     <div class="govuk-grid-column-one-third">
-      <h2 class="heading-small">Emails</h2>
+      <h2 class="heading-small">{{_('Email')}}s</h2>
       <div class="keyline-block">
         {{ big_number(
           total_emails_sent,
@@ -88,7 +88,7 @@
           {% else %}
             {{ big_number(
               service.sms_billable_units,
-              'free {}'.format(service.sms_billable_units|message_count_label('sms')),
+              _('free {}').format(service.sms_billable_units|message_count_label('sms')),
               smallest=True
             ) }}
           {% endif %}

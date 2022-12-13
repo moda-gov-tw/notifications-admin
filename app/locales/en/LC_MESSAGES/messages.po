@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-13 14:54+0800\n"
+"POT-Creation-Date: 2022-12-13 15:44+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -92,7 +92,9 @@ msgid "in the last minute"
 msgstr ""
 
 #: formatters.py:184 main/forms.py:2252 main/forms.py:2356
-#: main/views/templates.py:185 templates/views/providers/providers.html:43
+#: main/views/templates.py:185
+#: templates/views/organisations/organisation/index.html:21
+#: templates/views/providers/providers.html:43
 #: templates/views/register-from-invite.html:25
 msgid "Email"
 msgstr ""
@@ -307,7 +309,7 @@ msgstr ""
 
 #: formatters.py:502 main/forms.py:1176 main/forms.py:1212 main/forms.py:1224
 #: main/forms.py:1383 main/forms.py:1609 main/forms.py:1635 main/forms.py:1918
-#: main/views/service_settings.py:237 main/views/user_profile.py:223
+#: main/views/service_settings.py:240 main/views/user_profile.py:223
 #: models/service.py:421
 #: templates/views/organisations/organisation/settings/index.html:41
 #: templates/views/providers/providers.html:32
@@ -318,7 +320,7 @@ msgstr ""
 
 #: formatters.py:504 formatters.py:506 main/forms.py:1177 main/forms.py:1213
 #: main/forms.py:1225 main/forms.py:1384 main/forms.py:1610 main/forms.py:1636
-#: main/forms.py:1918 main/views/service_settings.py:238
+#: main/forms.py:1918 main/views/service_settings.py:241
 #: main/views/user_profile.py:224 models/service.py:421
 #: templates/views/organisations/organisation/settings/index.html:42
 #: templates/views/providers/providers.html:32
@@ -2235,100 +2237,100 @@ msgstr ""
 msgid "Service {} could not send notification: \"{}\""
 msgstr ""
 
-#: main/views/service_settings.py:90
+#: main/views/service_settings.py:92
 msgid "Receive inbound SMS"
 msgstr ""
 
-#: main/views/service_settings.py:92
+#: main/views/service_settings.py:94
 msgid "Email authentication"
 msgstr ""
 
-#: main/views/service_settings.py:93 templates/views/service-settings.html:223
+#: main/views/service_settings.py:95 templates/views/service-settings.html:223
 #: templates/views/service-settings/set-international-letters.html:8
 msgid "Send international letters"
 msgstr ""
 
-#: main/views/service_settings.py:97
+#: main/views/service_settings.py:100
 msgid ""
 "Thanks for your branding request. We’ll get back to you within one "
 "working day."
 msgstr ""
 
-#: main/views/service_settings.py:196
+#: main/views/service_settings.py:199
 #, python-format
 msgid "Request to go live - %s"
 msgstr ""
 
-#: main/views/service_settings.py:210
+#: main/views/service_settings.py:213
 msgid ""
 "Thanks for your request to go live. We’ll get back to you within one "
 "working day."
 msgstr ""
 
-#: main/views/service_settings.py:217 main/views/service_settings.py:225
+#: main/views/service_settings.py:220 main/views/service_settings.py:228
 msgid "Make service live"
 msgstr ""
 
-#: main/views/service_settings.py:235 main/views/service_settings.py:247
+#: main/views/service_settings.py:238 main/views/service_settings.py:250
 #: templates/views/service-settings.html:333
 msgid "Count in list of live services"
 msgstr ""
 
-#: main/views/service_settings.py:387
+#: main/views/service_settings.py:390
 msgid "‘{}’ was deleted"
 msgstr ""
 
-#: main/views/service_settings.py:393
+#: main/views/service_settings.py:396
 msgid "Are you sure you want to delete ‘{}’? There’s no way to undo this."
 msgstr ""
 
-#: main/views/service_settings.py:600
+#: main/views/service_settings.py:603
 msgid "Are you sure you want to delete this reply-to email address?"
 msgstr ""
 
-#: main/views/service_settings.py:652
+#: main/views/service_settings.py:655
 msgid "Start all text messages with ‘{}:’"
 msgstr ""
 
-#: main/views/service_settings.py:665
+#: main/views/service_settings.py:668
 msgid "Send text messages to international phone numbers"
 msgstr ""
 
-#: main/views/service_settings.py:670
+#: main/views/service_settings.py:673
 msgid "international_sms"
 msgstr ""
 
-#: main/views/service_settings.py:899
+#: main/views/service_settings.py:902
 msgid "Are you sure you want to delete this text message sender?"
 msgstr ""
 
-#: main/views/service_settings.py:1011
+#: main/views/service_settings.py:1014
 #, python-format
 msgid "The email branding has been set to %s"
 msgstr ""
 
-#: main/views/service_settings.py:1018
+#: main/views/service_settings.py:1021
 #, python-format
 msgid ""
 "The email branding has been set to %s and it has been added to %s's email"
 " branding pool"
 msgstr ""
 
-#: main/views/service_settings.py:1143 main/views/service_settings.py:1322
+#: main/views/service_settings.py:1146 main/views/service_settings.py:1325
 #, python-format
 msgid "Email branding request - %s"
 msgstr ""
 
-#: main/views/service_settings.py:1196
+#: main/views/service_settings.py:1199
 msgid "No branding found for this id."
 msgstr ""
 
-#: main/views/service_settings.py:1202 main/views/service_settings.py:1226
-#: main/views/service_settings.py:1254
+#: main/views/service_settings.py:1205 main/views/service_settings.py:1229
+#: main/views/service_settings.py:1257
 msgid "You’ve updated your email branding"
 msgstr ""
 
-#: main/views/service_settings.py:1420
+#: main/views/service_settings.py:1423
 #, python-format
 msgid "Letter branding request - %s"
 msgstr ""
@@ -8102,6 +8104,19 @@ msgstr ""
 msgid "No messages sent"
 msgstr ""
 
+#: templates/views/dashboard/all-template-statistics.html:38
+#: templates/views/dashboard/template-statistics.html:15
+#: templates/views/uploads/contact-list/contact-list.html:39 utils/csv.py:71
+#: utils/csv.py:77
+msgid "Template"
+msgstr ""
+
+#: templates/views/dashboard/all-template-statistics.html:39
+#: templates/views/dashboard/monthly.html:17
+#: templates/views/dashboard/template-statistics.html:16
+msgid "Messages sent"
+msgstr ""
+
 #: templates/views/dashboard/dashboard.html:20
 msgid "upcoming"
 msgstr ""
@@ -8147,16 +8162,6 @@ msgstr ""
 
 #: templates/views/dashboard/monthly.html:71
 msgid "Financial year ends 31 March."
-msgstr ""
-
-#: templates/views/dashboard/template-statistics.html:15
-#: templates/views/uploads/contact-list/contact-list.html:39 utils/csv.py:71
-#: utils/csv.py:77
-msgid "Template"
-msgstr ""
-
-#: templates/views/dashboard/template-statistics.html:16
-msgid "Messages sent"
 msgstr ""
 
 #: templates/views/dashboard/template-statistics.html:41
@@ -9469,6 +9474,10 @@ msgstr ""
 
 #: templates/views/organisations/organisation/index.html:65
 msgid "By service"
+msgstr ""
+
+#: templates/views/organisations/organisation/index.html:91
+msgid "free {}"
 msgstr ""
 
 #: templates/views/organisations/organisation/index.html:110
