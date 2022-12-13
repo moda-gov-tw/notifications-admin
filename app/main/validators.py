@@ -27,7 +27,9 @@ class CommonlyUsedPassword:
 
 
 class CsvFileValidator:
-    def __init__(self, message=_("Not a csv file")):
+    def __init__(self, message=None):
+        if message is None:
+            message = _("Not a csv file")
         self.message = message
 
     def __call__(self, form, field):
@@ -69,7 +71,9 @@ class ValidEmail:
 
 
 class NoCommasInPlaceHolders:
-    def __init__(self, message=_("You cannot put commas between double brackets")):
+    def __init__(self, message=None):
+        if message is None:
+            message = _("You cannot put commas between double brackets")
         self.message = message
 
     def __call__(self, form, field):
@@ -160,7 +164,9 @@ class LettersNumbersSingleQuotesFullStopsAndUnderscoresOnly:
 
     regex = re.compile(r"^[a-zA-Z0-9\s\._']+$")
 
-    def __init__(self, message=_("Use letters and numbers only")):
+    def __init__(self, message=None):
+        if message is None:
+            message = _("Use letters and numbers only")
         self.message = message
 
     def __call__(self, form, field):
@@ -169,7 +175,9 @@ class LettersNumbersSingleQuotesFullStopsAndUnderscoresOnly:
 
 
 class DoesNotStartWithDoubleZero:
-    def __init__(self, message=_("Cannot start with 00")):
+    def __init__(self, message=None):
+        if message is None:
+            message = _("Cannot start with 00")
         self.message = message
 
     def __call__(self, form, field):
@@ -181,7 +189,9 @@ class MustContainAlphanumericCharacters:
 
     regex = re.compile(r".*[a-zA-Z0-9].*[a-zA-Z0-9].*")
 
-    def __init__(self, message=_("Must include at least two alphanumeric characters")):
+    def __init__(self, message=None):
+        if message is None:
+            message = _("Must include at least two alphanumeric characters")
         self.message = message
 
     def __call__(self, form, field):

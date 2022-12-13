@@ -399,9 +399,13 @@ def guess_name_from_email_address(email_address):
     )
 
 
-def message_count_label(count, template_type, suffix=_("sent")):
+def message_count_label(count, template_type, suffix=None):
+    if suffix is None:
+        suffix = _("sent")
+
     if suffix:
         return f"{message_count_noun(count, template_type)} {suffix}"
+
     return message_count_noun(count, template_type)
 
 

@@ -187,7 +187,9 @@ class RadioField(WTFormsRadioField):
             raise ValidationError(_("Select %s") % self.thing)
 
 
-def email_address(label=_("Email address"), gov_user=True, required=True):
+def email_address(label=None, gov_user=True, required=True):
+    if label is None:
+        label = _("Email address")
 
     validators = [
         ValidEmail(),
@@ -241,15 +243,21 @@ class InternationalPhoneNumber(TelField):
             raise ValidationError(str(e))
 
 
-def uk_mobile_number(label=_("Mobile number")):
+def uk_mobile_number(label=None):
+    if label is None:
+        label = _("Mobile number")
     return UKMobileNumber(label, validators=[DataRequired(message=_("Cannot be empty"))])
 
 
-def international_phone_number(label=_("Mobile number")):
+def international_phone_number(label=None):
+    if label is None:
+        label = _("Mobile number")
     return InternationalPhoneNumber(label, validators=[DataRequired(message=_("Cannot be empty"))])
 
 
-def password(label=_("Password")):
+def password(label=None):
+    if label is None:
+        label = _("Password")
     return GovukPasswordField(
         label,
         validators=[
