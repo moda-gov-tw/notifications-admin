@@ -302,7 +302,7 @@ def get_billing_report():
             message = _("Date must be in a single financial year.")
             if e.status_code == 400 and e.message == message:
                 flash(message)
-                return render_template("views/platform-admin/get-billing-report.html", form=form)
+                return render_template("views/platform-admin/get-billing-report.html", form=form, pgettext=pgettext)
             else:
                 raise e
         rows = [
@@ -340,7 +340,7 @@ def get_billing_report():
             )
         else:
             flash(_("No results for dates"))
-    return render_template("views/platform-admin/get-billing-report.html", form=form)
+    return render_template("views/platform-admin/get-billing-report.html", form=form, pgettext=pgettext)
 
 
 @main.route("/platform-admin/reports/volumes-by-service", methods=["GET", "POST"])
@@ -399,7 +399,7 @@ def get_volumes_by_service():
             )
         else:
             flash("No results for dates")
-    return render_template("views/platform-admin/volumes-by-service-report.html", form=form)
+    return render_template("views/platform-admin/volumes-by-service-report.html", form=form, pgettext=pgettext)
 
 
 @main.route("/platform-admin/reports/daily-volumes-report", methods=["GET", "POST"])
@@ -450,7 +450,7 @@ def get_daily_volumes():
             )
         else:
             flash(_("No results for dates"))
-    return render_template("views/platform-admin/daily-volumes-report.html", form=form)
+    return render_template("views/platform-admin/daily-volumes-report.html", form=form, pgettext=pgettext)
 
 
 @main.route("/platform-admin/reports/daily-sms-provider-volumes-report", methods=["GET", "POST"])
