@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-14 11:48+0800\n"
+"POT-Creation-Date: 2022-12-14 11:50+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -1598,7 +1598,7 @@ msgid "About your service"
 msgstr ""
 
 #: main/views/api_keys.py:54
-msgid "\"Guest list updated\""
+msgid "Guest list updated"
 msgstr ""
 
 #: main/views/api_keys.py:74 templates/views/api/keys.html:36
@@ -12751,4 +12751,7 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "inline; filename=\"{} live services report.csv\""
+#~ msgstr ""
+
+#~ msgid "\"Guest list updated\""
 #~ msgstr ""

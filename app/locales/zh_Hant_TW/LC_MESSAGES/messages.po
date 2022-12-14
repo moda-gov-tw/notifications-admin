@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-14 11:48+0800\n"
+"POT-Creation-Date: 2022-12-14 11:50+0800\n"
 "PO-Revision-Date: 2022-12-14 03:43+0000\n"
 "Last-Translator: Peter Chen <petercpg@gmail.com>\n"
 "Language: zh_Hant_TW\n"
@@ -1638,7 +1638,7 @@ msgid "About your service"
 msgstr "關於您的服務"
 
 #: main/views/api_keys.py:54
-msgid "\"Guest list updated\""
+msgid "Guest list updated"
 msgstr ""
 
 #: main/views/api_keys.py:74 templates/views/api/keys.html:36
@@ -13421,3 +13421,6 @@ msgstr "核准發出警報"
 
 #~ msgid "revoke this API key"
 #~ msgstr "撤銷這個 API 金鑰"
+
+#~ msgid "\"Guest list updated\""
+#~ msgstr ""
