@@ -51,7 +51,7 @@ def guest_list(service_id):
                 "phone_numbers": list(filter(None, form.phone_numbers.data)),
             },
         )
-        flash("Guest list updated", "default_with_tick")
+        flash(_('"Guest list updated"'), "default_with_tick")
         return redirect(url_for(".api_integration", service_id=service_id))
     if not form.errors:
         form.populate(**service_api_client.get_guest_list(service_id))

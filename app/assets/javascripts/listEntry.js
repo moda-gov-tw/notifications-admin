@@ -38,7 +38,7 @@
       '/>' +
       '{{#button}}' +
         '<button type="button" class="govuk-button govuk-button--secondary input-list__button--remove">' +
-          'Remove<span class="govuk-visually-hidden"> {{listItemName}} 號碼 {{number}}</span>' +
+          '移除<span class="govuk-visually-hidden"> {{listItemName}} 號碼 {{number}}</span>' +
         '</button>' +
       '{{/button}}' +
     '</div>'

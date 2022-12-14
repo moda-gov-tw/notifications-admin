@@ -397,7 +397,7 @@ def get_volumes_by_service():
                 },
             )
         else:
-            flash("No results for dates")
+            flash(_("No results for dates"))
     return render_template("views/platform-admin/volumes-by-service-report.html", form=form, pgettext=pgettext)
 
 

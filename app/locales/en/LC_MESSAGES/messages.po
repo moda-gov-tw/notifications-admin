@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-13 17:54+0800\n"
+"POT-Creation-Date: 2022-12-14 11:48+0800\n"
 "PO-Revision-Date: 2022-11-15 16:51+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -1597,6 +1597,10 @@ msgstr ""
 msgid "About your service"
 msgstr ""
 
+#: main/views/api_keys.py:54
+msgid "\"Guest list updated\""
+msgstr ""
+
 #: main/views/api_keys.py:74 templates/views/api/keys.html:36
 msgid "Live – sends to anyone"
 msgstr ""
@@ -2055,8 +2059,8 @@ msgstr ""
 msgid "Billing Report from {start_date} to {end_date}.csv"
 msgstr ""
 
-#: main/views/platform_admin.py:341 main/views/platform_admin.py:451
-#: main/views/platform_admin.py:500
+#: main/views/platform_admin.py:341 main/views/platform_admin.py:400
+#: main/views/platform_admin.py:451 main/views/platform_admin.py:500
 msgid "No results for dates"
 msgstr ""
 
@@ -7375,7 +7379,8 @@ msgstr ""
 msgid "Received text messages"
 msgstr ""
 
-#: templates/views/api/guest-list.html:11 templates/views/api/index.html:21
+#: templates/views/api/guest-list.html:11
+#: templates/views/api/guest-list.html:40 templates/views/api/index.html:21
 msgid "Guest list"
 msgstr ""
 
@@ -9707,6 +9712,10 @@ msgid ""
 "</span>"
 msgstr ""
 
+#: templates/views/organisations/organisation/users/index.html:58
+msgid "Remove"
+msgstr ""
+
 #: templates/views/organisations/organisation/users/index.html:69
 msgid "Invite team member"
 msgstr ""
@@ -9811,6 +9820,7 @@ msgstr ""
 
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:22
 #: templates/views/platform-admin/daily-volumes-report.html:22
+#: templates/views/platform-admin/get-billing-report.html:22
 #: templates/views/platform-admin/volumes-by-service-report.html:22
 msgid "Data included in the report"
 msgstr ""

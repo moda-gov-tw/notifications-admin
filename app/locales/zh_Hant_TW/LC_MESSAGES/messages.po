@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-13 17:54+0800\n"
+"POT-Creation-Date: 2022-12-14 11:48+0800\n"
 "PO-Revision-Date: 2022-12-14 03:43+0000\n"
 "Last-Translator: Peter Chen <petercpg@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://weblate.toomore.net/projects/"
-"notification-admin/notification-admin-github/zh_Hant/>\n"
 "Language: zh_Hant_TW\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.toomore.net/projects/notification-admin/notification-"
+"admin-github/zh_Hant/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: formatters.py:77 utils/letters.py:26
@@ -1637,6 +1637,10 @@ msgstr "嗨((姓名))，我正在測試 Notify。今天是((星期幾))、我最
 msgid "About your service"
 msgstr "關於您的服務"
 
+#: main/views/api_keys.py:54
+msgid "\"Guest list updated\""
+msgstr ""
+
 #: main/views/api_keys.py:74 templates/views/api/keys.html:36
 msgid "Live – sends to anyone"
 msgstr "正式環境 - 傳送給任何人"
@@ -2111,8 +2115,8 @@ msgstr "日期必須介於相同財政年度中。"
 msgid "Billing Report from {start_date} to {end_date}.csv"
 msgstr "帳務報表 從 {start_date} 至 {end_date}.csv"
 
-#: main/views/platform_admin.py:341 main/views/platform_admin.py:451
-#: main/views/platform_admin.py:500
+#: main/views/platform_admin.py:341 main/views/platform_admin.py:400
+#: main/views/platform_admin.py:451 main/views/platform_admin.py:500
 msgid "No results for dates"
 msgstr "日期查無結果"
 
@@ -5218,9 +5222,8 @@ msgid ""
 "after a message has been sent. You can download a report, including a "
 "list of sent messages, for your own records."
 msgstr ""
-"為了<a class=\"govuk-link govuk-link--no-visited-state\" href=\"%%s\""
-">安全</a>，此資訊僅在訊息寄發後 7 "
-"天內提供。您可下載含有寄出訊息清單的報表留存。"
+"為了<a class=\"govuk-link govuk-link--no-visited-state\" "
+"href=\"%%s\">安全</a>，此資訊僅在訊息寄發後 7 天內提供。您可下載含有寄出訊息清單的報表留存。"
 
 #: templates/views/message-status.html:18
 msgid ""
@@ -7855,7 +7858,8 @@ msgstr "郵件回執"
 msgid "Received text messages"
 msgstr "收到的簡訊"
 
-#: templates/views/api/guest-list.html:11 templates/views/api/index.html:21
+#: templates/views/api/guest-list.html:11
+#: templates/views/api/guest-list.html:40 templates/views/api/index.html:21
 msgid "Guest list"
 msgstr "訪客清單"
 
@@ -10282,6 +10286,10 @@ msgid ""
 "</span>"
 msgstr "取消<span class=\"govuk-visually-hidden\"> %%(mail)s 的</span>邀請函"
 
+#: templates/views/organisations/organisation/users/index.html:58
+msgid "Remove"
+msgstr ""
+
 #: templates/views/organisations/organisation/users/index.html:69
 msgid "Invite team member"
 msgstr "邀請團隊成員"
@@ -10386,6 +10394,7 @@ msgstr "下載報表（CSV）"
 
 #: templates/views/platform-admin/daily-sms-provider-volumes-report.html:22
 #: templates/views/platform-admin/daily-volumes-report.html:22
+#: templates/views/platform-admin/get-billing-report.html:22
 #: templates/views/platform-admin/volumes-by-service-report.html:22
 msgid "Data included in the report"
 msgstr "報表包含的資料"
@@ -10474,9 +10483,9 @@ msgid ""
 "href=\"https://www.notifications.service.gov.uk/pricing#international-"
 "numbers\">sending international text messages</a>."
 msgstr ""
-"服務超出免費額度後所寄出的簡訊封數。此數量包含<a class=\"govuk-link govuk-"
-"link--no-visited-state\" href=\"https://www.notifications.service.gov.uk/"
-"pricing#international-numbers\">傳送國際簡訊的成本倍數</a>。"
+"服務超出免費額度後所寄出的簡訊封數。此數量包含<a class=\"govuk-link govuk-link--no-visited-"
+"state\" href=\"https://www.notifications.service.gov.uk/pricing"
+"#international-numbers\">傳送國際簡訊的成本倍數</a>。"
 
 #: templates/views/platform-admin/get-billing-report.html:34
 msgid "The total cost of letters sent by a service."
@@ -10500,8 +10509,7 @@ msgstr "訂購單編號、聯絡人姓名、聯絡電子郵件地址與帳務資
 msgid ""
 "We add this data manually based on the information we get from services. "
 "You can help by adding it to the service settings page."
-msgstr "我們會依照服務提供的資訊手動加入此資料。您可以也在「服務設定」頁面自行加入此"
-"資料。"
+msgstr "我們會依照服務提供的資訊手動加入此資料。您可以也在「服務設定」頁面自行加入此資料。"
 
 #: templates/views/platform-admin/index.html:20
 #: templates/views/platform-admin/notifications_by_service.html:15
