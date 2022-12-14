@@ -1,6 +1,6 @@
 from itertools import chain
 
-from flask_babel import _
+from flask_babel import lazy_gettext as _
 
 permission_mappings = {
     "send_messages": ["send_texts", "send_emails", "send_letters"],
