@@ -87,3 +87,7 @@ To run a specific JavaScript test, you'll need to copy the full command from `pa
 - [Working with static assets](docs/static-assets.md)
 - [JavaScript documentation](https://github.com/alphagov/notifications-manuals/wiki/JavaScript-Documentation)
 - [Updating dependencies](https://github.com/alphagov/notifications-manuals/wiki/Dependencies)
+
+## 軟體中文化
+
+本專案為數位部開放原始碼軟體中文化專案項目之一，其中文化與專案應用可參考 [Wiki](https://github.com/moda-gov-tw/notifications-admin/wiki)。
